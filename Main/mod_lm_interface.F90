@@ -57,8 +57,8 @@ module mod_lm_interface
 
   ! Coupling variables
   real(rkx) :: runoffcount = 1.0_rkx
-  public :: lms
-
+  public :: lms , lm
+  
   public :: dtbat
 
   public :: ocncomm , lndcomm

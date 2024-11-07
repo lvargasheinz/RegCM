@@ -210,8 +210,22 @@ module mod_params
                           l_cpl_ex_uwsw , &
                           l_cpl_ex_dwsw , &
                           l_cpl_ex_ndsw , &
-                          l_cpl_ex_rhoa
+                          l_cpl_ex_rhoa , &
     ! OASIS field +++
+                          l_cpl_ex_tatm , &
+                          l_cpl_ex_uatm , &
+                          l_cpl_ex_vatm , &
+                          l_cpl_ex_qatm , &
+                          l_cpl_ex_hgt , &
+                          l_cpl_ex_patm , &
+                          l_cpl_ex_thatm , &
+                          l_cpl_ex_sfps , &
+                          l_cpl_ex_dwrlwf , &
+                          l_cpl_ex_solar , &
+                          l_cpl_ex_drydepflx , &
+                          l_cpl_ex_wetdepflx , &
+                          l_cpl_ex_swdir , &
+                          l_cpl_ex_lwdir 
 #endif
 
     namelist /slabocparam/ do_qflux_adj , do_restore_sst , &
@@ -657,6 +671,21 @@ module mod_params
     l_cpl_ex_ndsw = .false.
     l_cpl_ex_rhoa = .false.
     ! OASIS field +++
+    l_cpl_ex_tatm  = .false. 
+    l_cpl_ex_uatm  = .false.
+    l_cpl_ex_vatm  = .false.
+    l_cpl_ex_qatm  = .false.
+    l_cpl_ex_hgt  = .false.
+    l_cpl_ex_patm  = .false.
+    l_cpl_ex_thatm  = .false.
+    l_cpl_ex_sfps  = .false.
+    l_cpl_ex_dwrlwf  = .false.
+    l_cpl_ex_solar  = .false.
+    l_cpl_ex_drydepflx  = .false.
+    l_cpl_ex_wetdepflx  = .false.
+    l_cpl_ex_swdir  = .false.
+    l_cpl_ex_lwdir = .false.
+
 #endif
 
 #ifdef CLM
@@ -1475,6 +1504,20 @@ module mod_params
       call bcast(l_cpl_ex_dwsw)
       call bcast(l_cpl_ex_ndsw)
       call bcast(l_cpl_ex_rhoa)
+      call bcast(l_cpl_ex_tatm)
+      call bcast(l_cpl_ex_uatm)
+      call bcast(l_cpl_ex_vatm)
+      call bcast(l_cpl_ex_qatm)
+      call bcast(l_cpl_ex_hgt)
+      call bcast(l_cpl_ex_patm)
+      call bcast(l_cpl_ex_thatm)
+      call bcast(l_cpl_ex_sfps)
+      call bcast(l_cpl_ex_dwrlwf)
+      call bcast(l_cpl_ex_swdir)
+      call bcast(l_cpl_ex_lwdir)
+      call bcast(l_cpl_ex_solar)
+      call bcast(l_cpl_ex_drydepflx)
+      call bcast(l_cpl_ex_wetdepflx)
       ! OASIS field +++
     end if
 #endif
@@ -2878,6 +2921,20 @@ module mod_params
    l_cpl_ex_dwsw = ( ioasiscpl == 1 ) .and. ( l_cpl_ex_dwsw )
    l_cpl_ex_ndsw = ( ioasiscpl == 1 ) .and. ( l_cpl_ex_ndsw )
    l_cpl_ex_rhoa = ( ioasiscpl == 1 ) .and. ( l_cpl_ex_rhoa )
+   l_cpl_ex_tatm = ( ioasiscpl == 1 ) .and. ( l_cpl_ex_tatm )
+   l_cpl_ex_uatm = ( ioasiscpl == 1 ) .and. ( l_cpl_ex_uatm )
+   l_cpl_ex_vatm = ( ioasiscpl == 1 ) .and. ( l_cpl_ex_vatm )
+   l_cpl_ex_qatm = ( ioasiscpl == 1 ) .and. ( l_cpl_ex_qatm )
+   l_cpl_ex_hgt = ( ioasiscpl == 1 ) .and. ( l_cpl_ex_hgt )
+   l_cpl_ex_patm = ( ioasiscpl == 1 ) .and. ( l_cpl_ex_patm )
+   l_cpl_ex_thatm = ( ioasiscpl == 1 ) .and. ( l_cpl_ex_thatm )
+   l_cpl_ex_sfps = ( ioasiscpl == 1 ) .and. ( l_cpl_ex_sfps )
+   l_cpl_ex_dwrlwf = ( ioasiscpl == 1 ) .and. ( l_cpl_ex_dwrlwf )
+   l_cpl_ex_swdir = ( ioasiscpl == 1 ) .and. ( l_cpl_ex_swdir )
+   l_cpl_ex_lwdir = ( ioasiscpl == 1 ) .and. ( l_cpl_ex_lwdir )
+   l_cpl_ex_solar = ( ioasiscpl == 1 ) .and. ( l_cpl_ex_solar )
+   l_cpl_ex_drydepflx = ( ioasiscpl == 1 ) .and. ( l_cpl_ex_drydepflx )
+   l_cpl_ex_wetdepflx = ( ioasiscpl == 1 ) .and. ( l_cpl_ex_wetdepflx )
    ! OASIS field +++
    if ( ioasiscpl == 1 ) then
      if ( myid == italk ) then
@@ -2914,7 +2971,21 @@ module mod_params
           .not. l_cpl_ex_uwsw .and. &
           .not. l_cpl_ex_dwsw .and. &
           .not. l_cpl_ex_ndsw .and. &
-          .not. l_cpl_ex_rhoa ) then
+          .not. l_cpl_ex_rhoa .and. &
+          .not. l_cpl_ex_tatm .and. &
+          .not. l_cpl_ex_uatm .and. &
+          .not. l_cpl_ex_vatm .and. &
+          .not. l_cpl_ex_qatm .and. &
+          .not. l_cpl_ex_hgt .and. &
+          .not. l_cpl_ex_patm .and. &
+          .not. l_cpl_ex_thatm .and. &
+          .not. l_cpl_ex_sfps .and. &
+          .not. l_cpl_ex_dwrlwf .and. &
+          .not. l_cpl_ex_swdir .and. &
+          .not. l_cpl_ex_lwdir .and. &
+          .not. l_cpl_ex_solar .and. &
+          .not. l_cpl_ex_drydepflx .and. &
+          .not. l_cpl_ex_wetdepflx) then
           ! OASIS field +++
        if ( myid == italk ) then
          write(stdout,*) 'Warning: no enabled coupling field found.'
