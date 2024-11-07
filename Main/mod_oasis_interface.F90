@@ -51,9 +51,9 @@ module mod_oasis_interface
   ! for grid and partition activation
   ! (dot/cross , external/internal)
   logical :: l_make_grdde , l_make_grddi , &
-             l_make_grdce , l_make_grdci
+             l_make_grdce , l_make_grdci , l_make_grdtest
   type(infogrd) , target , allocatable :: grdde , grddi , &
-                                          grdce , grdci
+                                          grdce , grdci , grdtest
 
   !--------------------------------------------------------------------
   ! below the namelist parameters (namelist oasisparam)
@@ -87,7 +87,8 @@ module mod_oasis_interface
                       l_cpl_ex_uwsw , &
                       l_cpl_ex_dwsw , &
                       l_cpl_ex_ndsw , &
-                      l_cpl_ex_rhoa ! not tested
+                      l_cpl_ex_rhoa !, & ! not tested
+                  !    l_cpl_ex_pr
   ! OASIS field +++
 
   !--------------------------------------------------------------------
@@ -166,6 +167,7 @@ module mod_oasis_interface
     ! OASIS field +++
     l_make_grdce   = l_cpl_ex_slp
     ! OASIS field +++
+    l_make_grdtest =  .false. !l_cpl_ex_ushf
     l_make_grdci   = l_cpl_im_sst  .or. &
 !                     l_cpl_im_sit  .or. &
                      l_cpl_im_wz0  .or. &
@@ -206,6 +208,9 @@ module mod_oasis_interface
     if ( l_make_grdce )   call oasisxregcm_setup_grid(grdce, 'rcen', 'rcem', &
                                jce1, jce2, ice1, ice2, 1, jx-1, 1, iy-1, 4)
     if ( l_make_grdci )   call oasisxregcm_setup_grid(grdci, 'rcin', 'rcim', &
+                               jci1, jci2, ici1, ici2, 2, jx-2, 2, iy-2, 4)
+
+    if ( l_make_grdtest )   call oasisxregcm_setup_grid(grdtest, 'rcin', 'rcim', &
                                jci1, jci2, ici1, ici2, 2, jx-2, 2, iy-2, 4)
     !
     ! initialize fields: field variable, name, grid, field array (optional), initialization value
@@ -254,6 +259,7 @@ module mod_oasis_interface
     if ( l_make_grddi ) call oasisxregcm_def_partition(grddi)
     if ( l_make_grdce ) call oasisxregcm_def_partition(grdce)
     if ( l_make_grdci ) call oasisxregcm_def_partition(grdci)
+    if ( l_make_grdtest ) call oasisxregcm_def_partition(grdtest)
     ! grid definition
 #ifdef DEBUG
     write(ndebug,*) oasis_prefix, 'definition phase: grids'
@@ -386,7 +392,7 @@ module mod_oasis_interface
         !
       end if
       !
-      if ( l_make_grdce .or. l_make_grdci) then ! crosses
+      if ( l_make_grdce .or. l_make_grdci .or. l_make_grdtest) then ! crosses
         !
         call oasisxregcm_make_oasisgrids_c( &
              oasisgrid_lon,oasisgrid_lat,oasisgrid_clon,oasisgrid_clat,oasisgrid_srf,oasisgrid_mask, &
@@ -396,6 +402,8 @@ module mod_oasis_interface
              oasisgrid_lon,oasisgrid_lat,oasisgrid_clon,oasisgrid_clat,oasisgrid_srf,oasisgrid_mask)
         !
         if ( l_make_grdci ) call oasisxregcm_write_oasisgrids(grdci, &
+             oasisgrid_lon,oasisgrid_lat,oasisgrid_clon,oasisgrid_clat,oasisgrid_srf,oasisgrid_mask)
+        if ( l_make_grdtest ) call oasisxregcm_write_oasisgrids(grdtest, &
              oasisgrid_lon,oasisgrid_lat,oasisgrid_clon,oasisgrid_clat,oasisgrid_srf,oasisgrid_mask)
         !
         call oasisxregcm_deallocate_oasisgrids( &
@@ -499,7 +507,7 @@ module mod_oasis_interface
         srf(j,i) = srf_sqm(clon(j,i,:),clat(j,i,:))
         ! mask
         if ( isocean(lndcat(j,i)) ) then
-          mask(j,i) = 0
+          mask(j,i) = 1
         else
           mask(j,i) = 1
         end if
@@ -556,7 +564,7 @@ module mod_oasis_interface
         srf(j,i) = srf_sqm(clon(j,i,:),clat(j,i,:))
         ! mask
         if ( isocean(lndcat(j,i)) ) then
-          mask(j,i) = 0
+          mask(j,i) = 1
         else
           mask(j,i) = 1
         end if
@@ -1009,6 +1017,7 @@ module mod_oasis_interface
     if ( allocated(grddi) ) deallocate(grddi)
     if ( allocated(grdce) ) deallocate(grdce)
     if ( allocated(grdci) ) deallocate(grdci)
+    if ( allocated(grdtest) ) deallocate(grdtest)
   end subroutine oasisxregcm_release
 
 end module mod_oasis_interface
