@@ -103,9 +103,28 @@ module mod_oasis_interface
                       l_cpl_ex_drydepflx, &
                       l_cpl_ex_wetdepflx, &
                       l_cpl_ex_swdir, &
-                      l_cpl_ex_lwdir
+                      l_cpl_ex_lwdir, &
+                      l_cpl_im_tgbb, &
+                      l_cpl_im_t2m, &
+                      l_cpl_im_q2m, &
+                      l_cpl_im_u10m, &
+                      l_cpl_im_v10m, &
+                      l_cpl_im_sent, &
+                      l_cpl_im_evpr, &
+                      l_cpl_im_ram1, &
+                      l_cpl_im_rah1, &
+                      l_cpl_im_br, &
+                      l_cpl_im_tauy, &
+                      l_cpl_im_taux, &
+                      l_cpl_im_drag, &
+                      l_cpl_im_sncv, &
+                      l_cpl_im_wt, &
+                      l_cpl_im_zo, &
+                      l_cpl_im_tlef, &
+                      l_cpl_ex_rainf, &
+                      l_cpl_ex_snow
   ! OASIS field +++
-
+! l_cpl_im_wust
   !--------------------------------------------------------------------
   ! below the variables for the fields' information
   type(infofld) , allocatable :: im_sst , &
@@ -152,7 +171,26 @@ module mod_oasis_interface
                                  ex_lwdir , & 
                                  ex_solar , & 
                                  ex_drydepflx , & 
-                                 ex_wetdepflx ! , & 
+                                 ex_wetdepflx  , & 
+                                 im_tgbb , & 
+                                 im_t2m , & 
+                                 im_q2m , & 
+                                 im_u10m , & 
+                                 im_v10m , & 
+                                 im_sent , & 
+                                 im_evpr , & 
+                                 im_ram1 , & 
+                                 im_rah1 , & 
+                                 im_br , & 
+                                 im_taux , & 
+                                 im_tauy , & 
+                                 im_drag , & 
+                                 im_sncv , & 
+                                 im_wt , & 
+                                 im_zo , & 
+                                 im_tlef , & 
+                                 ex_rainf , & 
+                                 ex_snow  
 
   ! OASIS needs double precision arrays. These variables are optional.
   ! Required for the fields to import; recommended for the fields to
@@ -161,7 +199,24 @@ module mod_oasis_interface
 !                                              cpl_sit , &
                                               cpl_wz0 , &
                                               cpl_wust , &
-                                              cpl_wdir
+                                              cpl_wdir , &
+                                              cpl_tgbb , &
+                                              cpl_t2m , &
+                                              cpl_q2m , &
+                                              cpl_u10m , &
+                                              cpl_v10m , &
+                                              cpl_sent , &
+                                              cpl_evpr , &
+                                              cpl_ram1 , &
+                                              cpl_rah1 , &
+                                              cpl_br , &
+                                              cpl_taux , &
+                                              cpl_tauy , &
+                                              cpl_drag , &
+                                              cpl_sncv , &
+                                              cpl_wt , &
+                                              cpl_zo , &
+                                              cpl_tlef 
   ! OASIS field +++
 
   ! OASIS needs double precision arrays. These variables are optional.
@@ -210,9 +265,28 @@ module mod_oasis_interface
                       l_cpl_ex_drydepflx .or. &
                       l_cpl_ex_wetdepflx .or. &
                       l_cpl_ex_swdir .or. &
-                      l_cpl_ex_lwdir 
+                      l_cpl_ex_tatm .or. & 
+                      l_cpl_ex_lwdir .or. &
+                      l_cpl_im_tgbb .or. & 
+                      l_cpl_im_t2m .or. & 
+                      l_cpl_im_q2m .or. & 
+                      l_cpl_im_u10m .or. & 
+                      l_cpl_im_v10m .or. & 
+                      l_cpl_im_sent .or. & 
+                      l_cpl_im_evpr .or. & 
+                      l_cpl_im_ram1 .or. & 
+                      l_cpl_im_rah1 .or. & 
+                      l_cpl_im_br .or. & 
+                      l_cpl_im_tauy .or. & 
+                      l_cpl_im_taux .or. & 
+                      l_cpl_im_drag .or. & 
+                      l_cpl_im_sncv .or. & 
+                      l_cpl_im_wt .or. & 
+                      l_cpl_im_zo .or. & 
+                      l_cpl_im_tlef .or. &  
+                      l_cpl_ex_rainf .or. &
+                      l_cpl_ex_snow 
     l_make_grdci   = l_cpl_im_sst  .or. &
-                     l_cpl_ex_tatm .or. & 
 !                     l_cpl_im_sit  .or. &
                      l_cpl_im_wz0  .or. &
                      l_cpl_im_wust .or. &
@@ -288,7 +362,7 @@ module mod_oasis_interface
     if ( l_cpl_ex_dwsw ) call oasisxregcm_setup_field(ex_dwsw, 'RCM_DWSW', grdci)
     if ( l_cpl_ex_ndsw ) call oasisxregcm_setup_field(ex_ndsw, 'RCM_NDSW', grdci)
     if ( l_cpl_ex_rhoa ) call oasisxregcm_setup_field(ex_rhoa, 'RCM_RHOA', grdci)
-    if ( l_cpl_ex_tatm ) call oasisxregcm_setup_field(ex_tatm, 'RCM_TATM', grdci)
+    if ( l_cpl_ex_tatm ) call oasisxregcm_setup_field(ex_tatm, 'RCM_TATM', grdtest)
     if ( l_cpl_ex_uatm ) call oasisxregcm_setup_field(ex_uatm, 'RCM_UATM', grdtest)
     if ( l_cpl_ex_vatm ) call oasisxregcm_setup_field(ex_vatm, 'RCM_VATM', grdtest)
     if ( l_cpl_ex_qatm ) call oasisxregcm_setup_field(ex_qatm, 'RCM_QATM', grdtest)
@@ -302,6 +376,25 @@ module mod_oasis_interface
     if ( l_cpl_ex_solar ) call oasisxregcm_setup_field(ex_solar, 'RCM_SOLAR', grdtest)
     if ( l_cpl_ex_drydepflx ) call oasisxregcm_setup_field(ex_drydepflx, 'RCM_DRYDEPFLX', grdtest)
     if ( l_cpl_ex_wetdepflx ) call oasisxregcm_setup_field(ex_wetdepflx, 'RCM_WETDEPFLX', grdtest)
+    if ( l_cpl_im_tgbb )  call oasisxregcm_setup_field(im_tgbb,  'RCM_TGBB',grdtest, cpl_tgbb)
+    if ( l_cpl_im_t2m )  call oasisxregcm_setup_field(im_t2m,  'RCM_T2M',grdtest, cpl_t2m)
+    if ( l_cpl_im_q2m )  call oasisxregcm_setup_field(im_q2m,  'RCM_Q2M',grdtest, cpl_q2m)
+    if ( l_cpl_im_u10m )  call oasisxregcm_setup_field(im_u10m,  'RCM_U10M',grdtest, cpl_u10m)
+    if ( l_cpl_im_v10m )  call oasisxregcm_setup_field(im_v10m,  'RCM_V10M',grdtest, cpl_v10m)
+    if ( l_cpl_im_sent )  call oasisxregcm_setup_field(im_sent,  'RCM_SENT',grdtest, cpl_sent)
+    if ( l_cpl_im_evpr )  call oasisxregcm_setup_field(im_evpr,  'RCM_EVPR',grdtest, cpl_evpr)
+    if ( l_cpl_im_ram1 )  call oasisxregcm_setup_field(im_ram1,  'RCM_RAM1',grdtest, cpl_ram1)
+    if ( l_cpl_im_rah1 )  call oasisxregcm_setup_field(im_rah1,  'RCM_RAH1',grdtest, cpl_rah1)
+    if ( l_cpl_im_br )  call oasisxregcm_setup_field(im_br,  'RCM_BR',grdtest, cpl_br)
+    if ( l_cpl_im_taux )  call oasisxregcm_setup_field(im_taux,  'RCM_TAUX',grdtest, cpl_taux)
+    if ( l_cpl_im_tauy )  call oasisxregcm_setup_field(im_tauy,  'RCM_TAUY',grdtest, cpl_tauy)
+    if ( l_cpl_im_drag )  call oasisxregcm_setup_field(im_drag,  'RCM_DRAG',grdtest, cpl_drag)
+    if ( l_cpl_im_sncv )  call oasisxregcm_setup_field(im_sncv,  'RCM_SNCV',grdtest, cpl_sncv)
+    if ( l_cpl_im_wt )  call oasisxregcm_setup_field(im_wt,  'RCM_WT',grdtest, cpl_wt)
+    if ( l_cpl_im_zo )  call oasisxregcm_setup_field(im_zo,  'RCM_ZO',grdtest, cpl_zo)
+    if ( l_cpl_im_tlef )  call oasisxregcm_setup_field(im_tlef,  'RCM_TLEF',grdtest, cpl_tlef)
+    if ( l_cpl_ex_rainf ) call oasisxregcm_setup_field(ex_rainf, 'RCM_RAINF', grdtest)
+    if ( l_cpl_ex_snow ) call oasisxregcm_setup_field(ex_snow, 'RCM_SNOW', grdtest)
     ! OASIS field +++
   end subroutine oasisxregcm_params
 
@@ -380,6 +473,25 @@ module mod_oasis_interface
     if ( l_cpl_ex_solar ) call oasisxregcm_def_field(ex_solar, OASIS_Out)
     if ( l_cpl_ex_drydepflx ) call oasisxregcm_def_field(ex_drydepflx, OASIS_Out)
     if ( l_cpl_ex_wetdepflx ) call oasisxregcm_def_field(ex_wetdepflx, OASIS_Out)
+    if ( l_cpl_im_tgbb )  call oasisxregcm_def_field(im_tgbb,  OASIS_In)
+    if ( l_cpl_im_t2m )  call oasisxregcm_def_field(im_t2m,  OASIS_In)
+    if ( l_cpl_im_q2m )  call oasisxregcm_def_field(im_q2m,  OASIS_In)
+    if ( l_cpl_im_u10m )  call oasisxregcm_def_field(im_u10m,  OASIS_In)
+    if ( l_cpl_im_v10m )  call oasisxregcm_def_field(im_v10m,  OASIS_In)
+    if ( l_cpl_im_sent )  call oasisxregcm_def_field(im_sent,  OASIS_In)
+    if ( l_cpl_im_evpr )  call oasisxregcm_def_field(im_evpr,  OASIS_In)
+    if ( l_cpl_im_ram1 )  call oasisxregcm_def_field(im_ram1,  OASIS_In)
+    if ( l_cpl_im_rah1 )  call oasisxregcm_def_field(im_rah1,  OASIS_In)
+    if ( l_cpl_im_br )  call oasisxregcm_def_field(im_br,  OASIS_In)
+    if ( l_cpl_im_taux )  call oasisxregcm_def_field(im_taux,  OASIS_In)
+    if ( l_cpl_im_tauy )  call oasisxregcm_def_field(im_tauy,  OASIS_In)
+    if ( l_cpl_im_drag )  call oasisxregcm_def_field(im_drag,  OASIS_In)
+    if ( l_cpl_im_sncv )  call oasisxregcm_def_field(im_sncv,  OASIS_In)
+    if ( l_cpl_im_wt )  call oasisxregcm_def_field(im_wt,  OASIS_In)
+    if ( l_cpl_im_zo )  call oasisxregcm_def_field(im_zo,  OASIS_In)
+    if ( l_cpl_im_tlef )  call oasisxregcm_def_field(im_tlef,  OASIS_In)
+    if ( l_cpl_ex_rainf ) call oasisxregcm_def_field(ex_rainf, OASIS_Out)
+    if ( l_cpl_ex_snow ) call oasisxregcm_def_field(ex_snow, OASIS_Out)
 
     ! termination of definition phase
 #ifdef DEBUG
@@ -1075,7 +1187,19 @@ module mod_oasis_interface
            ex_drydepflx, time, .false. .or. l_write_restart)
       nullify(grd)
     end if
-
+!    if ( l_cpl_ex_rainf ) then ! 
+     ! grd => ex_rainf%grd
+    !  call oasisxregcm_snd( &
+   !        lms%prcp(:, grd%j1:grd%j2 , grd%i1:grd%i2), &
+  !         ex_rainf, time, .false. .or. l_write_restart)
+ !     nullify(grd)
+!    if ( l_cpl_ex_snow ) then ! 
+  !    grd => ex_snow%grd
+ !     call oasisxregcm_snd( &
+   !        lms%prcp(:, grd%j1:grd%j2 , grd%i1:grd%i2), &
+    !       ex_snow, time, .false. .or. l_write_restart)
+    !  nullify(grd)
+   ! end if
 !!!
    !
     if ( myid == italk ) then
@@ -1198,6 +1322,25 @@ module mod_oasis_interface
     call oasisxregcm_deallocate_field(ex_solar)
     call oasisxregcm_deallocate_field(ex_drydepflx)
     call oasisxregcm_deallocate_field(ex_wetdepflx)
+    call oasisxregcm_deallocate_field(im_tgbb, cpl_tgbb)
+    call oasisxregcm_deallocate_field(im_t2m, cpl_t2m)
+    call oasisxregcm_deallocate_field(im_q2m, cpl_q2m)
+    call oasisxregcm_deallocate_field(im_u10m, cpl_u10m)
+    call oasisxregcm_deallocate_field(im_v10m, cpl_v10m)
+    call oasisxregcm_deallocate_field(im_sent, cpl_sent)
+    call oasisxregcm_deallocate_field(im_evpr, cpl_evpr)
+    call oasisxregcm_deallocate_field(im_ram1, cpl_ram1)
+    call oasisxregcm_deallocate_field(im_rah1, cpl_rah1)
+    call oasisxregcm_deallocate_field(im_br, cpl_br)
+    call oasisxregcm_deallocate_field(im_taux, cpl_taux)
+    call oasisxregcm_deallocate_field(im_tauy, cpl_tauy)
+    call oasisxregcm_deallocate_field(im_drag, cpl_drag)
+    call oasisxregcm_deallocate_field(im_sncv, cpl_sncv)
+    call oasisxregcm_deallocate_field(im_wt, cpl_wt)
+    call oasisxregcm_deallocate_field(im_zo, cpl_zo)
+    call oasisxregcm_deallocate_field(im_tlef, cpl_tlef)
+    call oasisxregcm_deallocate_field(ex_rainf)
+    call oasisxregcm_deallocate_field(ex_snow)
     ! OASIS field +++
     if ( allocated(grdde) ) deallocate(grdde)
     if ( allocated(grddi) ) deallocate(grddi)
