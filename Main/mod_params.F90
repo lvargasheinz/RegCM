@@ -226,6 +226,8 @@ module mod_params
                           l_cpl_ex_wetdepflx , &
                           l_cpl_ex_swdir , &
                           l_cpl_ex_lwdir , &
+                          l_cpl_ex_snow , &
+                          l_cpl_ex_rainf , &
                           l_cpl_im_tgbb , &
                           l_cpl_im_t2m , &
                           l_cpl_im_q2m , &
@@ -702,6 +704,8 @@ module mod_params
     l_cpl_ex_wetdepflx  = .false.
     l_cpl_ex_swdir  = .false.
     l_cpl_ex_lwdir = .false.
+    l_cpl_ex_rainf = .false.
+    l_cpl_ex_snow = .false.
     l_cpl_im_tgbb = .false.
     l_cpl_im_t2m = .false.
     l_cpl_im_q2m = .false.
@@ -1549,7 +1553,8 @@ module mod_params
       call bcast(l_cpl_ex_dwrlwf)
       call bcast(l_cpl_ex_swdir)
       call bcast(l_cpl_ex_lwdir)
-      call bcast(l_cpl_ex_solar)
+      call bcast(l_cpl_ex_snow)
+      call bcast(l_cpl_ex_rainf)
       call bcast(l_cpl_ex_drydepflx)
       call bcast(l_cpl_ex_wetdepflx)
       call bcast(l_cpl_im_tgbb)
@@ -2984,6 +2989,8 @@ module mod_params
    l_cpl_ex_swdir = ( ioasiscpl == 1 ) .and. ( l_cpl_ex_swdir )
    l_cpl_ex_lwdir = ( ioasiscpl == 1 ) .and. ( l_cpl_ex_lwdir )
    l_cpl_ex_solar = ( ioasiscpl == 1 ) .and. ( l_cpl_ex_solar )
+   l_cpl_ex_snow = ( ioasiscpl == 1 ) .and. ( l_cpl_ex_snow )
+   l_cpl_ex_rainf = ( ioasiscpl == 1 ) .and. ( l_cpl_ex_rainf )
    l_cpl_ex_drydepflx = ( ioasiscpl == 1 ) .and. ( l_cpl_ex_drydepflx )
    l_cpl_ex_wetdepflx = ( ioasiscpl == 1 ) .and. ( l_cpl_ex_wetdepflx )
    l_cpl_im_br = ( ioasiscpl == 1 ) .and. ( l_cpl_im_br )
@@ -3052,6 +3059,8 @@ module mod_params
           .not. l_cpl_ex_swdir .and. &
           .not. l_cpl_ex_lwdir .and. &
           .not. l_cpl_ex_solar .and. &
+          .not. l_cpl_ex_snow .and. &
+          .not. l_cpl_ex_rainf .and. &
           .not. l_cpl_ex_drydepflx .and. &
           .not. l_cpl_ex_wetdepflx .and. &
           .not. l_cpl_im_tgbb .and. &

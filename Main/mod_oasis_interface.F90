@@ -34,6 +34,7 @@ module mod_oasis_interface
   use mod_atm_interface , only : atms , sfs , flwd , flw , fsw , sinc , mddom
   use mod_lm_interface , only : lms , lm
   use mod_date , only : lfdomonth , lmidnight
+  use mod_memutil  
 
   use mod_oasis
   use mod_oasis_params
@@ -46,7 +47,7 @@ module mod_oasis_interface
 
   public :: comp_name , comp_id ! -> mod_oasis_params
   public :: oasis_lag           ! -> mod_oasis_params
-
+  real(rkx) , dimension(:,:) , pointer :: temps , temps_rf , temps_snw
   !--------------------------------------------------------------------
   ! for grid and partition activation
   ! (dot/cross , external/internal)
@@ -862,6 +863,9 @@ module mod_oasis_interface
     type(infogrd) , pointer :: grd
     integer(ik4) :: i , j , ishift , jshift
     logical :: l_write_restart
+    call getmem2d(temps,jci1,jci2,ici1,ici2,'sendoasis:temps')
+    call getmem2d(temps_rf,jci1,jci2,ici1,ici2,'sendoasis:temps_rf')
+    call getmem2d(temps_snw,jci1,jci2,ici1,ici2,'sendoasis:temps_snw')
     !--------------------------------------------------------------------------
     l_write_restart = .false.
     if ( associated(alarm_out_sav) ) then
@@ -1187,19 +1191,51 @@ module mod_oasis_interface
            ex_drydepflx, time, .false. .or. l_write_restart)
       nullify(grd)
     end if
-!    if ( l_cpl_ex_rainf ) then ! 
-     ! grd => ex_rainf%grd
-    !  call oasisxregcm_snd( &
-   !        lms%prcp(:, grd%j1:grd%j2 , grd%i1:grd%i2), &
-  !         ex_rainf, time, .false. .or. l_write_restart)
- !     nullify(grd)
-!    if ( l_cpl_ex_snow ) then ! 
-  !    grd => ex_snow%grd
- !     call oasisxregcm_snd( &
-   !        lms%prcp(:, grd%j1:grd%j2 , grd%i1:grd%i2), &
-    !       ex_snow, time, .false. .or. l_write_restart)
-    !  nullify(grd)
-   ! end if
+    if ( l_cpl_ex_snow .or. l_cpl_ex_rainf) then
+     temps=(lm%cprate+lm%ncprate) * syncro_srf%rw
+     do i = ici1 , ici2
+      do j = jci1 , jci2
+       if ( lm%tatm(j,i)  <273.15 ) then
+      !  print *, 2
+        temps_rf(j,i)=d_zero
+        temps_snw(j,i)=temps(j,i) !lm%cprate+lm%ncprate) * syncro_srf%rw
+       else 
+    !   ! print *, 3
+        temps_snw(j,i)=d_zero
+        temps_rf(j,i)=temps(j,i) !(lm%cprate+lm%ncprate) * syncro_srf%rw
+       end if
+      end do
+     end do
+    end if
+    if ( l_cpl_ex_rainf ) then ! 
+      grd => ex_rainf%grd
+      call oasisxregcm_snd( &
+           !lms%prcp(:, grd%j1:grd%j2 , grd%i1:grd%i2), &
+!           (lm%cprate+lm%ncprate) * syncro_srf%rw , &  
+           temps_rf, &
+           ex_rainf, time, .false. .or. l_write_restart)
+      nullify(grd)
+    end if
+!    do i = begg , endg
+
+
+    if ( l_cpl_ex_snow ) then ! 
+      grd => ex_snow%grd
+
+!     if ( lm%tatm(grd%j1:grd%j2 , grd%i1:grd%i2)  <273.15 ) then
+!         temps=(lm%cprate+lm%ncprate) * syncro_srf%rw
+ !     else
+  !       temps=0
+!if ( clm_a2l%forc_t(i)-tfrz < tcrit ) then
+ !       clm_a2l%forc_snow(i) = clm_a2l%rainf(i)
+  !     clm_a2l%forc_rain(i) = d_zero
+      call oasisxregcm_snd( &
+           temps_snw, &
+           !lms%prcp(:, grd%j1:grd%j2 , grd%i1:grd%i2), &
+           !(lm%cprate+lm%ncprate) * syncro_srf%rw , &  
+           ex_snow, time, .false. .or. l_write_restart)
+      nullify(grd)
+    end if
 !!!
    !
     if ( myid == italk ) then
