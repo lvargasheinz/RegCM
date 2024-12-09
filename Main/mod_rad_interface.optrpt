@@ -1,0 +1,116 @@
+Global optimization report for : mod_rad_interface._
+=================================================================
+
+Global optimization report for : mod_rad_interface_mp_allocate_radiation_
+
+LOOP BEGIN at mod_rad_interface.F90 (94, 28)
+    remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+LOOP END
+
+LOOP BEGIN at mod_rad_interface.F90 (94, 28)
+    remark #25530: Stmt at line 0 sinked after loop using last value computation
+    remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+LOOP END
+
+LOOP BEGIN at mod_rad_interface.F90 (102, 34)
+    remark #25530: Stmt at line 0 sinked after loop using last value computation
+    remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+LOOP END
+=================================================================
+
+Global optimization report for : mod_rad_interface_mp_init_radiation_
+=================================================================
+
+Global optimization report for : mod_rad_interface_mp_radiation_
+=================================================================
+
+Global optimization report for : mod_rad_interface_mp_inito3_
+=================================================================
+
+Global optimization report for : mod_rad_interface_mp_updateaerosol_
+=================================================================
+
+Global optimization report for : mod_rad_interface_mp_closeaerosol_
+=================================================================
+
+Global optimization report for : mod_rad_interface_mp_updateo3_
+=================================================================
+
+Global optimization report for : mod_rad_interface_mp_updateaeropp_
+=================================================================
+
+Global optimization report for : mod_rad_interface_mp_updateaeropp_cmip6_
+=================================================================
+
+Global optimization report for : mod_rad_interface_mp_closeo3_
+=================================================================
+
+Global optimization report for : mod_rad_interface_mp_export_data_from_rad_
+=================================================================
+
+Global optimization report for : mod_rad_interface_mp_export_data_from_rad_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split291.split
+
+LOOP BEGIN at mod_rad_interface.F90 (258, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (258:5) and (259:34) 
+    remark #15346: vector dependence: assumed FLOW dependence between (258:5) and (259:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (258:5) and (260:34) 
+    remark #15346: vector dependence: assumed FLOW dependence between (258:5) and (260:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (258:5) and (259:34) 
+    remark #15346: vector dependence: assumed FLOW dependence between (258:5) and (259:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (258:5) and (260:34) 
+    remark #15346: vector dependence: assumed FLOW dependence between (258:5) and (260:7) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_rad_interface_mp_export_data_from_rad_.DIR.OMP.TEAMS.2.split303
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.directive.region.entry
+
+DEAD STATIC FUNC: llvm.directive.region.exit
+
+COMPILE FUNC: mod_rad_interface._
+
+COMPILE FUNC: mod_rad_interface_mp_allocate_radiation_
+
+COMPILE FUNC: mod_rad_interface_mp_init_radiation_
+   -> DELETE: mod_memutil_mp_assignp2d_d_ /scratch_local/ifx1738329426ntjBSa/ifxBKa9eS.i90 (174,14)
+   -> DELETE: mod_memutil_mp_assignp2d_d_ /scratch_local/ifx1738329426ntjBSa/ifxBKa9eS.i90 (175,14)
+   -> DELETE: mod_memutil_mp_assignp3d_d_ /scratch_local/ifx1738329426ntjBSa/ifxBKa9eS.i90 (176,14)
+   -> DELETE: mod_memutil_mp_assignp3d_d_ /scratch_local/ifx1738329426ntjBSa/ifxBKa9eS.i90 (177,14)
+
+COMPILE FUNC: mod_rad_interface_mp_radiation_
+
+COMPILE FUNC: mod_rad_interface_mp_inito3_
+
+COMPILE FUNC: mod_rad_interface_mp_updateaerosol_
+
+COMPILE FUNC: mod_rad_interface_mp_closeaerosol_
+
+COMPILE FUNC: mod_rad_interface_mp_updateo3_
+
+COMPILE FUNC: mod_rad_interface_mp_updateaeropp_
+
+COMPILE FUNC: mod_rad_interface_mp_updateaeropp_cmip6_
+
+COMPILE FUNC: mod_rad_interface_mp_closeo3_
+
+COMPILE FUNC: mod_rad_interface_mp_export_data_from_rad_
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx1738329426ntjBSa/ifxBKa9eS.i90 (258,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx1738329426ntjBSa/ifxBKa9eS.i90 (258,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx1738329426ntjBSa/ifxBKa9eS.i90 (258,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx1738329426ntjBSa/ifxBKa9eS.i90 (258,5)
+
+COMPILE FUNC: mod_rad_interface_mp_export_data_from_rad_.DIR.OMP.TEAMS.2.split303
+
+COMPILE FUNC: mod_rad_interface_mp_export_data_from_rad_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split291.split
+
+---- End Inlining Report ------

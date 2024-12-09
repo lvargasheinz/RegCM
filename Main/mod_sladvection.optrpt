@@ -1,0 +1,480 @@
+Global optimization report for : mod_sladvection._
+=================================================================
+
+Global optimization report for : mod_sladvection_mp_init_sladvection_
+=================================================================
+
+Global optimization report for : mod_sladvection_mp_adv_velocity_
+
+LOOP BEGIN at mod_sladvection.F90 (80, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_sladvection.F90 (81, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_sladvection.F90 (88, 11)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between uadvx_d (82:13) and ua (82:13) 
+            remark #15346: vector dependence: assumed FLOW dependence between uadvx_d (82:13) and mapfd (82:13) 
+            remark #15346: vector dependence: assumed ANTI dependence between ua (83:13) and uadvx_d (82:13) 
+            remark #15346: vector dependence: assumed ANTI dependence between mapfd (83:13) and uadvx_d (82:13) 
+            remark #15346: vector dependence: assumed FLOW dependence between uadxp1_d (83:13) and ua (82:13) 
+            remark #15346: vector dependence: assumed FLOW dependence between uadxp1_d (83:13) and mapfd (82:13) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between uadxp1_d (83:13) and uadvx_d (82:13) 
+            remark #15346: vector dependence: assumed FLOW dependence between uadxp1_d (83:13) and ua (83:13) 
+            remark #15346: vector dependence: assumed FLOW dependence between uadxp1_d (83:13) and mapfd (83:13) 
+            remark #15346: vector dependence: assumed ANTI dependence between ua (84:13) and uadvx_d (82:13) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_sladvection.F90 (93, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_sladvection.F90 (94, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_sladvection.F90 (113, 11)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between uadvx_x (95:13) and ua (95:13) 
+            remark #15346: vector dependence: assumed FLOW dependence between uadvx_x (95:13) and ua (95:13) 
+            remark #15346: vector dependence: assumed FLOW dependence between uadvx_x (95:13) and ua (96:30) 
+            remark #15346: vector dependence: assumed FLOW dependence between uadvx_x (95:13) and ua (96:44) 
+            remark #15346: vector dependence: assumed FLOW dependence between uadvx_x (95:13) and mapfx (95:39) 
+            remark #15346: vector dependence: assumed ANTI dependence between ua (98:13) and uadvx_x (95:13) 
+            remark #15346: vector dependence: assumed ANTI dependence between ua (98:13) and uadvx_x (95:13) 
+            remark #15346: vector dependence: assumed ANTI dependence between ua (99:31) and uadvx_x (95:13) 
+            remark #15346: vector dependence: assumed ANTI dependence between ua (99:47) and uadvx_x (95:13) 
+            remark #15346: vector dependence: assumed ANTI dependence between mapfx (98:40) and uadvx_x (95:13) 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sladvection_mp_trajcalc_x_
+
+LOOP BEGIN at mod_sladvection.F90 (141, 7)
+
+    LOOP BEGIN at mod_sladvection.F90 (142, 9)
+
+        LOOP BEGIN at mod_sladvection.F90 (150, 25)
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sladvection_mp_trajcalc_d_
+
+LOOP BEGIN at mod_sladvection.F90 (251, 7)
+
+    LOOP BEGIN at mod_sladvection.F90 (252, 9)
+
+        LOOP BEGIN at mod_sladvection.F90 (260, 25)
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sladvection_mp_slhadv_x3d_
+
+LOOP BEGIN at mod_sladvection.F90 (349, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_sladvection.F90 (370, 22)
+    <Predicate Optimized v2>
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_sladvection.F90 (350, 9)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between (392:13) and alffbl_x (352:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between (392:13) and xnnm1dp_x (352:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between (392:13) and ynnp1dp_x (352:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between (392:13) and (352:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between (392:13) and xndp_x (353:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between (392:13) and (353:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between (392:13) and ynnm2dp_x (354:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between (392:13) and (354:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between (392:13) and (355:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between (392:13) and alfm2dp_x (357:11) 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_sladvection.F90 (370, 22)
+    <Predicate Optimized v1>
+        remark #25423: Invariant If condition at line 370 hoisted out of this loop
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_sladvection.F90 (350, 9)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between (392:13) and alffbl_x (352:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between (392:13) and xnnm1dp_x (352:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between (392:13) and ynnp1dp_x (352:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between (392:13) and (352:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between (392:13) and xndp_x (353:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between (392:13) and (353:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between (392:13) and ynnm2dp_x (354:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between (392:13) and (354:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between (392:13) and (355:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between (392:13) and alfm2dp_x (357:11) 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sladvection_mp_slhadv_x4d_
+
+LOOP BEGIN at mod_sladvection.F90 (427, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_sladvection.F90 (427, 7)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_sladvection.F90 (449, 24)
+        <Predicate Optimized v2>
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_sladvection.F90 (429, 11)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between (471:15) and alffbl_x (431:13) 
+                remark #15346: vector dependence: assumed FLOW dependence between (471:15) and xnnm1dp_x (431:13) 
+                remark #15346: vector dependence: assumed FLOW dependence between (471:15) and ynnp1dp_x (431:13) 
+                remark #15346: vector dependence: assumed FLOW dependence between (471:15) and (431:13) 
+                remark #15346: vector dependence: assumed FLOW dependence between (471:15) and xndp_x (432:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (471:15) and (432:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (471:15) and ynnm2dp_x (433:13) 
+                remark #15346: vector dependence: assumed FLOW dependence between (471:15) and (433:13) 
+                remark #15346: vector dependence: assumed FLOW dependence between (471:15) and (434:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (471:15) and alfm2dp_x (436:13) 
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at mod_sladvection.F90 (449, 24)
+        <Predicate Optimized v1>
+            remark #25423: Invariant If condition at line 449 hoisted out of this loop
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_sladvection.F90 (429, 11)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between (471:15) and alffbl_x (431:13) 
+                remark #15346: vector dependence: assumed FLOW dependence between (471:15) and xnnm1dp_x (431:13) 
+                remark #15346: vector dependence: assumed FLOW dependence between (471:15) and ynnp1dp_x (431:13) 
+                remark #15346: vector dependence: assumed FLOW dependence between (471:15) and (431:13) 
+                remark #15346: vector dependence: assumed FLOW dependence between (471:15) and xndp_x (432:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (471:15) and (432:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (471:15) and ynnm2dp_x (433:13) 
+                remark #15346: vector dependence: assumed FLOW dependence between (471:15) and (433:13) 
+                remark #15346: vector dependence: assumed FLOW dependence between (471:15) and (434:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (471:15) and alfm2dp_x (436:13) 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sladvection_mp_slhadv_d_
+
+LOOP BEGIN at mod_sladvection.F90 (496, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_sladvection.F90 (516, 22)
+    <Predicate Optimized v2>
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_sladvection.F90 (497, 9)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between (537:11) and alffbl_d (499:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between (537:11) and xnnm1dp_d (499:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between (537:11) and ynnp1dp_d (499:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between (537:11) and (499:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between (537:11) and xndp_d (500:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between (537:11) and (500:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between (537:11) and ynnm2dp_d (501:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between (537:11) and (501:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between (537:11) and (502:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between (537:11) and alfm2dp_d (504:11) 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_sladvection.F90 (516, 22)
+    <Predicate Optimized v1>
+        remark #25423: Invariant If condition at line 516 hoisted out of this loop
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_sladvection.F90 (497, 9)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between (537:11) and alffbl_d (499:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between (537:11) and xnnm1dp_d (499:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between (537:11) and ynnp1dp_d (499:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between (537:11) and (499:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between (537:11) and xndp_d (500:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between (537:11) and (500:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between (537:11) and ynnm2dp_d (501:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between (537:11) and (501:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between (537:11) and (502:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between (537:11) and alfm2dp_d (504:11) 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sladvection_mp_hdvg_x3d_
+
+LOOP BEGIN at mod_sladvection.F90 (560, 7)
+    remark #25423: Invariant If condition at line 560 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_sladvection.F90 (561, 9)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_sladvection.F90 (589, 9)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_sladvection.F90 (561, 9)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_sladvection.F90 (561, 9)
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 6
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sladvection_mp_hdvg_x4d_
+
+LOOP BEGIN at mod_sladvection.F90 (623, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_sladvection.F90 (624, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_sladvection.F90 (625, 11)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_sladvection.F90 (652, 31)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between (657:13) and (652:13) 
+                remark #15346: vector dependence: assumed FLOW dependence between (657:13) and mapfd (626:13) 
+                remark #15346: vector dependence: assumed FLOW dependence between (657:13) and ua (626:13) 
+                remark #15346: vector dependence: assumed FLOW dependence between (657:13) and mapfd (626:38) 
+                remark #15346: vector dependence: assumed FLOW dependence between (657:13) and ua (626:38) 
+                remark #15346: vector dependence: assumed FLOW dependence between (657:13) and mapfd (628:13) 
+                remark #15346: vector dependence: assumed FLOW dependence between (657:13) and ua (628:13) 
+                remark #15346: vector dependence: assumed FLOW dependence between (657:13) and mapfd (628:38) 
+                remark #15346: vector dependence: assumed FLOW dependence between (657:13) and ua (628:38) 
+                remark #15346: vector dependence: assumed FLOW dependence between (657:13) and va (630:13) 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sladvection_mp_hdvg_d_
+
+LOOP BEGIN at mod_sladvection.F90 (680, 7)
+    remark #25423: Invariant If condition at line 680 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_sladvection.F90 (681, 9)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_sladvection.F90 (691, 9)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_sladvection.F90 (681, 9)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_sladvection.F90 (681, 9)
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 3
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_sladvection._
+
+COMPILE FUNC: mod_sladvection_mp_init_sladvection_
+
+COMPILE FUNC: mod_sladvection_mp_adv_velocity_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (96,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (99,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (102,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (105,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (108,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (111,16)
+
+COMPILE FUNC: mod_sladvection_mp_trajcalc_x_
+   -> mod_sladvection_mp_adv_velocity_ /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (135,10)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (143,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (144,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (145,62)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (146,51)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (147,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (147,43)
+   -> llvm.abs.i32 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (150,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (156,24)
+   -> llvm.fabs.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (156,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (177,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (178,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (180,49)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (181,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (181,42)
+   -> llvm.abs.i32 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (185,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (191,24)
+   -> llvm.fabs.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (191,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (216,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (216,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (217,38)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (217,56)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (217,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (218,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (219,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (219,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (220,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (220,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (221,38)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (221,56)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (221,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (222,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (223,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (223,32)
+
+COMPILE FUNC: mod_sladvection_mp_trajcalc_d_
+   -> mod_sladvection_mp_adv_velocity_ /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (245,10)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (253,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (254,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (255,62)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (256,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (257,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (257,43)
+   -> llvm.abs.i32 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (260,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (264,24)
+   -> llvm.fabs.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (264,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (285,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (286,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (288,49)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (289,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (289,41)
+   -> llvm.abs.i32 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (292,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (296,24)
+   -> llvm.fabs.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (296,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (320,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (320,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (321,38)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (321,56)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (321,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (322,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (323,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (323,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (324,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (324,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (325,38)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (325,56)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (325,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (326,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (327,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (327,32)
+
+COMPILE FUNC: mod_sladvection_mp_slhadv_x3d_
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (353,15)
+   -> DELETE: llvm.fabs.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (391,16)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (392,42)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (353,15)
+   -> llvm.fabs.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (391,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (392,42)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (353,15)
+   -> llvm.fabs.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (391,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (392,42)
+
+COMPILE FUNC: mod_sladvection_mp_slhadv_x4d_
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (432,17)
+   -> DELETE: llvm.fabs.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (470,18)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (471,49)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (432,17)
+   -> llvm.fabs.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (470,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (471,49)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (432,17)
+   -> llvm.fabs.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (470,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (471,49)
+   -> llvm.smax.i32 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (427,7)
+
+COMPILE FUNC: mod_sladvection_mp_slhadv_d_
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (500,15)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (537,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (500,15)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (537,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (500,15)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (537,41)
+
+COMPILE FUNC: mod_sladvection_mp_hdvg_x3d_
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (562,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (564,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (566,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (568,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (570,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (571,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (586,19)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (586,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (562,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (564,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (566,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (568,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (570,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (571,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (586,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (586,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (562,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (564,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (566,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (568,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (570,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (571,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (586,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (586,41)
+
+COMPILE FUNC: mod_sladvection_mp_hdvg_x4d_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (626,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (628,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (634,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (630,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (632,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (635,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (650,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (650,43)
+   -> llvm.smax.i32 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (623,7)
+
+COMPILE FUNC: mod_sladvection_mp_hdvg_d_
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (684,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (684,40)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (687,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (688,19)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (688,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (684,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (684,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (687,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (688,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (688,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (684,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (687,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (688,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0038365934S2zJHo/ifxDuqTnD.i90 (688,41)
+
+---- End Inlining Report ------

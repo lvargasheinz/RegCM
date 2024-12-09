@@ -1,0 +1,90 @@
+Global optimization report for : rrtmg_lw_cldprop._
+=================================================================
+
+Global optimization report for : rrtmg_lw_cldprop_mp_cldprop_
+
+LOOP BEGIN at rrtmg_lw_cldprop.F90 (175, 7)
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at rrtmg_lw_cldprop.F90 (175, 7)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at rrtmg_lw_cldprop.F90 (178, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_lw_cldprop.F90 (178, 10)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (180:41) and (180:41) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_lw_cldprop.F90 (187, 39)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_lw_cldprop.F90 (265, 22)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+
+    LOOP BEGIN at rrtmg_lw_cldprop.F90 (246, 22)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+
+    LOOP BEGIN at rrtmg_lw_cldprop.F90 (227, 19)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at rrtmg_lw_cldprop.F90 (296, 19)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+
+    LOOP BEGIN at rrtmg_lw_cldprop.F90 (304, 16)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at rrtmg_lw_cldprop.F90 (201, 16)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at rrtmg_lw_cldprop.F90 (195, 16)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.memset.p0.i64
+
+DEAD STATIC FUNC: llvm.stackrestore
+
+DEAD STATIC FUNC: llvm.stacksave
+
+COMPILE FUNC: rrtmg_lw_cldprop_mp_cldprop_
+   -> DELETE: llvm.stacksave /scratch_local/ifx0744657863s4tWzk/ifxIl3BzV.i90 (50,18)
+   -> llvm.smax.i64 /scratch_local/ifx0744657863s4tWzk/ifxIl3BzV.i90 (50,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0744657863s4tWzk/ifxIl3BzV.i90 (50,18)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0744657863s4tWzk/ifxIl3BzV.i90 (170,7)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx0744657863s4tWzk/ifxIl3BzV.i90 (170,7)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0744657863s4tWzk/ifxIl3BzV.i90 (245,53)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0744657863s4tWzk/ifxIl3BzV.i90 (245,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0744657863s4tWzk/ifxIl3BzV.i90 (264,51)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0744657863s4tWzk/ifxIl3BzV.i90 (264,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0744657863s4tWzk/ifxIl3BzV.i90 (257,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0744657863s4tWzk/ifxIl3BzV.i90 (238,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0744657863s4tWzk/ifxIl3BzV.i90 (295,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0744657863s4tWzk/ifxIl3BzV.i90 (295,27)
+   -> DELETE: llvm.stackrestore /scratch_local/ifx0744657863s4tWzk/ifxIl3BzV.i90 (309,7)
+
+COMPILE FUNC: rrtmg_lw_cldprop._
+
+---- End Inlining Report ------

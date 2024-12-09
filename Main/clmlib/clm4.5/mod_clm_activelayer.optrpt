@@ -1,0 +1,59 @@
+Global optimization report for : mod_clm_activelayer._
+=================================================================
+
+Global optimization report for : mod_clm_activelayer_mp_alt_calc_
+
+LOOP BEGIN at mod_clm_activelayer.F90 (84, 21)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (85:11) and (83:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (85:11) and (84:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (85:11) and (85:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (86:11) and (83:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (86:11) and (84:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (86:11) and (85:11) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between (86:11) and (85:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (86:11) and (86:11) 
+    remark #15346: vector dependence: assumed ANTI dependence between (86:11) and (85:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (87:11) and (83:9) 
+LOOP END
+
+LOOP BEGIN at mod_clm_activelayer.F90 (96, 21)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (97:11) and (95:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (97:11) and (96:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (97:11) and (97:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (98:11) and (95:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (98:11) and (96:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (98:11) and (97:11) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between (98:11) and (97:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (98:11) and (98:11) 
+    remark #15346: vector dependence: assumed ANTI dependence between (98:11) and (97:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (99:11) and (95:9) 
+LOOP END
+
+LOOP BEGIN at mod_clm_activelayer.F90 (113, 33)
+
+    LOOP BEGIN at mod_clm_activelayer.F90 (124, 9)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between k_frz (120:42) and k_frz (120:42) 
+        remark #15346: vector dependence: assumed FLOW dependence between found_thawlayer (120:42) and found_thawlayer (120:54) 
+        remark #15346: vector dependence: assumed FLOW dependence between found_thawlayer (120:42) and found_thawlayer (120:42) 
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_clm_activelayer._
+
+COMPILE FUNC: mod_clm_activelayer_mp_alt_calc_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1250987396uJbUKf/ifxjbLxPi.i90 (132,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1250987396uJbUKf/ifxjbLxPi.i90 (132,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1250987396uJbUKf/ifxjbLxPi.i90 (132,45)
+
+---- End Inlining Report ------

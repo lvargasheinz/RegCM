@@ -1,0 +1,101 @@
+Global optimization report for : rrtmg_sw_cldprmc._
+=================================================================
+
+Global optimization report for : rrtmg_sw_cldprmc_mp_cldprmc_sw_
+
+LOOP BEGIN at rrtmg_sw_cldprmc.F90 (133, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_cldprmc.F90 (133, 10)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_cldprmc.F90 (396, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_cldprmc.F90 (147, 44)
+        remark #25529: Dead stores eliminated in loop
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.memset.p0.i64
+
+COMPILE FUNC: rrtmg_sw_cldprmc_mp_cldprmc_sw_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (128,7)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (128,7)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (200,38)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (261,32)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (267,35)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (269,35)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (271,33)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (273,35)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (228,32)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (234,34)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (236,34)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (238,34)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (325,33)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (319,34)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (321,34)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (346,44)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (347,28)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (350,44)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (351,28)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (363,37)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (371,40)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (372,35)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (373,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (374,38)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (375,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (374,37)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (372,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (382,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (383,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (384,37)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (385,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (381,40)
+   -> DELETE: for_stop_core_quiet /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (167,24)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (164,37)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (164,62)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (164,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (164,62)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (200,38)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (228,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (234,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (236,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (238,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (261,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (267,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (269,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (271,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (273,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (319,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (321,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (325,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (346,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (347,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (350,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (351,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (363,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (372,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (374,38)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (371,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (374,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (372,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (381,40)
+   -> llvm.umax.i1 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (148,33)
+   -> llvm.umax.i32 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (314,31)
+   -> DELETE: llvm.umax.i32 /scratch_local/ifx18602982934TW4Ox/ifx21xm0r.i90 (314,31)
+
+COMPILE FUNC: rrtmg_sw_cldprmc._
+
+---- End Inlining Report ------

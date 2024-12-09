@@ -1,0 +1,129 @@
+Global optimization report for : mod_clm_megan._
+=================================================================
+
+Global optimization report for : mod_clm_megan_mp_shr_megan_readnl_
+
+LOOP BEGIN at mod_clm_megan.F90 (178, 5)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_megan_mp_shr_megan_init_
+
+LOOP BEGIN at mod_clm_megan.F90 (209, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_megan.F90 (213, 20)
+
+    LOOP BEGIN at mod_clm_megan.F90 (217, 50)
+        remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+    LOOP END
+
+    LOOP BEGIN at mod_clm_megan.F90 (303, 8)
+
+        LOOP BEGIN at mod_clm_megan.F90 (347, 7)
+            remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_megan_mp_get_parser_items_
+
+LOOP BEGIN at mod_clm_megan.F90 (271, 5)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+
+LOOP BEGIN at mod_clm_megan.F90 (283, 8)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed ANTI dependence between (284:21) and (284:21) 
+    remark #15346: vector dependence: assumed ANTI dependence
+    remark #15346: vector dependence: assumed OUTPUT dependence between (284:21) and (284:21) 
+    remark #15346: vector dependence: assumed OUTPUT dependence
+    remark #15346: vector dependence: assumed FLOW dependence between (284:21) and (284:21) 
+    remark #15346: vector dependence: assumed ANTI dependence between (284:21) and (284:21) 
+    remark #15346: vector dependence: assumed ANTI dependence
+    remark #15346: vector dependence: assumed ANTI dependence between (284:16) and (284:16) 
+    remark #15346: vector dependence: assumed ANTI dependence
+    remark #15346: vector dependence: assumed OUTPUT dependence between (284:16) and (284:16) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_megan_mp_destroy_parser_items_
+=================================================================
+
+Global optimization report for : mod_clm_megan_mp_add_megan_comp_
+
+LOOP BEGIN at mod_clm_megan.F90 (347, 7)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_megan_mp_get_megan_comp_by_name_
+=================================================================
+
+Global optimization report for : mod_clm_megan_mp_add_megan_comp_to_list_
+
+LOOP BEGIN at mod_clm_megan.F90 (347, 7)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.memmove.p0.p0.i64
+
+COMPILE FUNC: mod_clm_megan._
+
+COMPILE FUNC: mod_clm_megan_mp_get_megan_comp_by_name_
+   -> mod_clm_megan_mp_get_megan_comp_by_name_ /scratch_local/ifx0654775729iT3Ht9/ifxaKC3y6.i90 (333,23)
+
+COMPILE FUNC: mod_clm_megan_mp_add_megan_comp_to_list_
+
+COMPILE FUNC: mod_clm_megan_mp_add_megan_comp_
+   -> mod_clm_megan_mp_get_megan_comp_by_name_ /scratch_local/ifx0654775729iT3Ht9/ifxaKC3y6.i90 (302,19)
+   -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx0654775729iT3Ht9/ifxaKC3y6.i90 (316,5)
+   -> INLINE: mod_clm_megan_mp_add_megan_comp_to_list_ /scratch_local/ifx0654775729iT3Ht9/ifxaKC3y6.i90 (319,10)
+
+COMPILE FUNC: mod_clm_megan_mp_destroy_parser_items_
+
+COMPILE FUNC: mod_clm_megan_mp_get_parser_items_
+   -> llvm.smax.i64 /scratch_local/ifx0654775729iT3Ht9/ifxaKC3y6.i90 (268,21)
+   -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx0654775729iT3Ht9/ifxaKC3y6.i90 (268,5)
+   -> llvm.smax.i64 /scratch_local/ifx0654775729iT3Ht9/ifxaKC3y6.i90 (274,17)
+   -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx0654775729iT3Ht9/ifxaKC3y6.i90 (274,7)
+   -> llvm.smax.i32 /scratch_local/ifx0654775729iT3Ht9/ifxaKC3y6.i90 (280,42)
+   -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx0654775729iT3Ht9/ifxaKC3y6.i90 (280,5)
+   -> llvm.smax.i64 /scratch_local/ifx0654775729iT3Ht9/ifxaKC3y6.i90 (284,30)
+   -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx0654775729iT3Ht9/ifxaKC3y6.i90 (283,8)
+
+COMPILE FUNC: mod_clm_megan_mp_shr_megan_init_
+   -> llvm.smax.i64 /scratch_local/ifx0654775729iT3Ht9/ifxaKC3y6.i90 (207,5)
+   -> llvm.smax.i64 /scratch_local/ifx0654775729iT3Ht9/ifxaKC3y6.i90 (208,5)
+   -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx0654775729iT3Ht9/ifxaKC3y6.i90 (210,5)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0654775729iT3Ht9/ifxaKC3y6.i90 (225,9)
+   -> llvm.smax.i32 /scratch_local/ifx0654775729iT3Ht9/ifxaKC3y6.i90 (227,9)
+   -> INLINE: mod_clm_megan_mp_add_megan_comp_ /scratch_local/ifx0654775729iT3Ht9/ifxaKC3y6.i90 (231,19)
+      -> mod_clm_megan_mp_get_megan_comp_by_name_ /scratch_local/ifx0654775729iT3Ht9/ifxaKC3y6.i90 (302,19)
+      -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx0654775729iT3Ht9/ifxaKC3y6.i90 (316,5)
+      -> INLINE: mod_clm_megan_mp_add_megan_comp_to_list_ /scratch_local/ifx0654775729iT3Ht9/ifxaKC3y6.i90 (319,10)
+   -> INLINE: mod_clm_megan_mp_destroy_parser_items_ /scratch_local/ifx0654775729iT3Ht9/ifxaKC3y6.i90 (235,14)
+   -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx0654775729iT3Ht9/ifxaKC3y6.i90 (242,11)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx0654775729iT3Ht9/ifxaKC3y6.i90 (243,11)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0654775729iT3Ht9/ifxaKC3y6.i90 (243,11)
+   -> mod_clm_megan_mp_get_parser_items_ /scratch_local/ifx0654775729iT3Ht9/ifxaKC3y6.i90 (214,18)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx0654775729iT3Ht9/ifxaKC3y6.i90 (231,19)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0654775729iT3Ht9/ifxaKC3y6.i90 (231,19)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0654775729iT3Ht9/ifxaKC3y6.i90 (235,14)
+
+COMPILE FUNC: mod_clm_megan_mp_shr_megan_readnl_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0654775729iT3Ht9/ifxaKC3y6.i90 (182,5)
+   -> mod_clm_megan_mp_shr_megan_init_ /scratch_local/ifx0654775729iT3Ht9/ifxaKC3y6.i90 (188,10)
+
+---- End Inlining Report ------

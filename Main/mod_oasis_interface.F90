@@ -109,15 +109,15 @@ module mod_oasis_interface
                       l_cpl_im_t2m, &
                       l_cpl_im_q2m, &
                       l_cpl_im_u10m, &
-                      l_cpl_im_v10m, &
+!                      l_cpl_im_v10m, &
                       l_cpl_im_sent, &
                       l_cpl_im_evpr, &
                       l_cpl_im_ram1, &
                       l_cpl_im_rah1, &
-                      l_cpl_im_br, &
+ !                     l_cpl_im_br, &
                       l_cpl_im_tauy, &
                       l_cpl_im_taux, &
-                      l_cpl_im_drag, &
+  !                    l_cpl_im_drag, &
                       l_cpl_im_sncv, &
                       l_cpl_im_wt, &
                       l_cpl_im_zo, &
@@ -177,15 +177,15 @@ module mod_oasis_interface
                                  im_t2m , & 
                                  im_q2m , & 
                                  im_u10m , & 
-                                 im_v10m , & 
+  !                               im_v10m , & 
                                  im_sent , & 
                                  im_evpr , & 
                                  im_ram1 , & 
                                  im_rah1 , & 
-                                 im_br , & 
+ !                                im_br , & 
                                  im_taux , & 
                                  im_tauy , & 
-                                 im_drag , & 
+!                                 im_drag , & 
                                  im_sncv , & 
                                  im_wt , & 
                                  im_zo , & 
@@ -205,15 +205,15 @@ module mod_oasis_interface
                                               cpl_t2m , &
                                               cpl_q2m , &
                                               cpl_u10m , &
-                                              cpl_v10m , &
+ !                                             cpl_v10m , &
                                               cpl_sent , &
                                               cpl_evpr , &
                                               cpl_ram1 , &
                                               cpl_rah1 , &
-                                              cpl_br , &
+  !                                            cpl_br , &
                                               cpl_taux , &
                                               cpl_tauy , &
-                                              cpl_drag , &
+!                                              cpl_drag , &
                                               cpl_sncv , &
                                               cpl_wt , &
                                               cpl_zo , &
@@ -272,15 +272,15 @@ module mod_oasis_interface
                       l_cpl_im_t2m .or. & 
                       l_cpl_im_q2m .or. & 
                       l_cpl_im_u10m .or. & 
-                      l_cpl_im_v10m .or. & 
+ !                     l_cpl_im_v10m .or. & 
                       l_cpl_im_sent .or. & 
                       l_cpl_im_evpr .or. & 
                       l_cpl_im_ram1 .or. & 
                       l_cpl_im_rah1 .or. & 
-                      l_cpl_im_br .or. & 
+ !                     l_cpl_im_br .or. & 
                       l_cpl_im_tauy .or. & 
                       l_cpl_im_taux .or. & 
-                      l_cpl_im_drag .or. & 
+!                      l_cpl_im_drag .or. & 
                       l_cpl_im_sncv .or. & 
                       l_cpl_im_wt .or. & 
                       l_cpl_im_zo .or. & 
@@ -381,15 +381,15 @@ module mod_oasis_interface
     if ( l_cpl_im_t2m )  call oasisxregcm_setup_field(im_t2m,  'RCM_T2M',grdtest, cpl_t2m)
     if ( l_cpl_im_q2m )  call oasisxregcm_setup_field(im_q2m,  'RCM_Q2M',grdtest, cpl_q2m)
     if ( l_cpl_im_u10m )  call oasisxregcm_setup_field(im_u10m,  'RCM_U10M',grdtest, cpl_u10m)
-    if ( l_cpl_im_v10m )  call oasisxregcm_setup_field(im_v10m,  'RCM_V10M',grdtest, cpl_v10m)
+!    if ( l_cpl_im_v10m )  call oasisxregcm_setup_field(im_v10m,  'RCM_V10M',grdtest, cpl_v10m)
     if ( l_cpl_im_sent )  call oasisxregcm_setup_field(im_sent,  'RCM_SENT',grdtest, cpl_sent)
     if ( l_cpl_im_evpr )  call oasisxregcm_setup_field(im_evpr,  'RCM_EVPR',grdtest, cpl_evpr)
     if ( l_cpl_im_ram1 )  call oasisxregcm_setup_field(im_ram1,  'RCM_RAM1',grdtest, cpl_ram1)
     if ( l_cpl_im_rah1 )  call oasisxregcm_setup_field(im_rah1,  'RCM_RAH1',grdtest, cpl_rah1)
-    if ( l_cpl_im_br )  call oasisxregcm_setup_field(im_br,  'RCM_BR',grdtest, cpl_br)
+!    if ( l_cpl_im_br )  call oasisxregcm_setup_field(im_br,  'RCM_BR',grdtest, cpl_br)
     if ( l_cpl_im_taux )  call oasisxregcm_setup_field(im_taux,  'RCM_TAUX',grdtest, cpl_taux)
     if ( l_cpl_im_tauy )  call oasisxregcm_setup_field(im_tauy,  'RCM_TAUY',grdtest, cpl_tauy)
-    if ( l_cpl_im_drag )  call oasisxregcm_setup_field(im_drag,  'RCM_DRAG',grdtest, cpl_drag)
+!    if ( l_cpl_im_drag )  call oasisxregcm_setup_field(im_drag,  'RCM_DRAG',grdtest, cpl_drag)
     if ( l_cpl_im_sncv )  call oasisxregcm_setup_field(im_sncv,  'RCM_SNCV',grdtest, cpl_sncv)
     if ( l_cpl_im_wt )  call oasisxregcm_setup_field(im_wt,  'RCM_WT',grdtest, cpl_wt)
     if ( l_cpl_im_zo )  call oasisxregcm_setup_field(im_zo,  'RCM_ZO',grdtest, cpl_zo)
@@ -478,15 +478,15 @@ module mod_oasis_interface
     if ( l_cpl_im_t2m )  call oasisxregcm_def_field(im_t2m,  OASIS_In)
     if ( l_cpl_im_q2m )  call oasisxregcm_def_field(im_q2m,  OASIS_In)
     if ( l_cpl_im_u10m )  call oasisxregcm_def_field(im_u10m,  OASIS_In)
-    if ( l_cpl_im_v10m )  call oasisxregcm_def_field(im_v10m,  OASIS_In)
+!    if ( l_cpl_im_v10m )  call oasisxregcm_def_field(im_v10m,  OASIS_In)
     if ( l_cpl_im_sent )  call oasisxregcm_def_field(im_sent,  OASIS_In)
     if ( l_cpl_im_evpr )  call oasisxregcm_def_field(im_evpr,  OASIS_In)
     if ( l_cpl_im_ram1 )  call oasisxregcm_def_field(im_ram1,  OASIS_In)
     if ( l_cpl_im_rah1 )  call oasisxregcm_def_field(im_rah1,  OASIS_In)
-    if ( l_cpl_im_br )  call oasisxregcm_def_field(im_br,  OASIS_In)
+!    if ( l_cpl_im_br )  call oasisxregcm_def_field(im_br,  OASIS_In)
     if ( l_cpl_im_taux )  call oasisxregcm_def_field(im_taux,  OASIS_In)
     if ( l_cpl_im_tauy )  call oasisxregcm_def_field(im_tauy,  OASIS_In)
-    if ( l_cpl_im_drag )  call oasisxregcm_def_field(im_drag,  OASIS_In)
+!    if ( l_cpl_im_drag )  call oasisxregcm_def_field(im_drag,  OASIS_In)
     if ( l_cpl_im_sncv )  call oasisxregcm_def_field(im_sncv,  OASIS_In)
     if ( l_cpl_im_wt )  call oasisxregcm_def_field(im_wt,  OASIS_In)
     if ( l_cpl_im_zo )  call oasisxregcm_def_field(im_zo,  OASIS_In)
@@ -1362,15 +1362,15 @@ module mod_oasis_interface
     call oasisxregcm_deallocate_field(im_t2m, cpl_t2m)
     call oasisxregcm_deallocate_field(im_q2m, cpl_q2m)
     call oasisxregcm_deallocate_field(im_u10m, cpl_u10m)
-    call oasisxregcm_deallocate_field(im_v10m, cpl_v10m)
+  !  call oasisxregcm_deallocate_field(im_v10m, cpl_v10m)
     call oasisxregcm_deallocate_field(im_sent, cpl_sent)
     call oasisxregcm_deallocate_field(im_evpr, cpl_evpr)
     call oasisxregcm_deallocate_field(im_ram1, cpl_ram1)
     call oasisxregcm_deallocate_field(im_rah1, cpl_rah1)
-    call oasisxregcm_deallocate_field(im_br, cpl_br)
+ !   call oasisxregcm_deallocate_field(im_br, cpl_br)
     call oasisxregcm_deallocate_field(im_taux, cpl_taux)
     call oasisxregcm_deallocate_field(im_tauy, cpl_tauy)
-    call oasisxregcm_deallocate_field(im_drag, cpl_drag)
+!    call oasisxregcm_deallocate_field(im_drag, cpl_drag)
     call oasisxregcm_deallocate_field(im_sncv, cpl_sncv)
     call oasisxregcm_deallocate_field(im_wt, cpl_wt)
     call oasisxregcm_deallocate_field(im_zo, cpl_zo)

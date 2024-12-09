@@ -1,0 +1,183 @@
+Global optimization report for : mod_che_start._
+=================================================================
+
+Global optimization report for : mod_che_start_mp_start_chem_
+
+LOOP BEGIN at mod_che_start.F90 (75, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_che_start.F90 (76, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_che_start.F90 (77, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_che_start.F90 (122, 22)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_start.F90 (122, 22)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_start.F90 (133, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_che_start.F90 (137, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_che_start.F90 (138, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_che_start.F90 (146, 26)
+
+    LOOP BEGIN at mod_che_start.F90 (240, 12)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+
+    LOOP BEGIN at mod_che_start.F90 (264, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (267:11) and chtrname 
+        remark #15346: vector dependence: assumed FLOW dependence between (267:11) and cbmzspec 
+        remark #15346: vector dependence: assumed FLOW dependence between (269:11) and chtrname 
+        remark #15346: vector dependence: assumed FLOW dependence between (269:11) and cbmzspec 
+        remark #15346: vector dependence: assumed OUTPUT dependence between (269:11) and (267:11) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_start.F90 (343, 10)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (343:10) and (343:10) 
+    remark #15346: vector dependence: assumed FLOW dependence between (343:10) and (343:10) 
+    remark #15346: vector dependence: assumed FLOW dependence between (343:10) and (343:10) 
+LOOP END
+
+LOOP BEGIN at mod_che_start.F90 (351, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_che_start.F90 (355, 9)
+
+    LOOP BEGIN at mod_che_start.F90 (356, 27)
+        remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_start.F90 (368, 9)
+
+    LOOP BEGIN at mod_che_start.F90 (369, 26)
+        remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_start.F90 (381, 9)
+
+    LOOP BEGIN at mod_che_start.F90 (382, 26)
+        remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_start.F90 (391, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_che_start.F90 (446, 13)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 446 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_start.F90 (445, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_start.F90 (447, 15)
+        <Multiversioned v2>
+            remark #15319: Loop was not vectorized: novector directive used
+
+            LOOP BEGIN at mod_che_start.F90 (450, 15)
+                remark #15319: Loop was not vectorized: novector directive used
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at mod_che_start.F90 (447, 15)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_start.F90 (450, 15)
+                remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_start.F90 (453, 9)
+<Predicate Optimized v2>
+
+    LOOP BEGIN at mod_che_start.F90 (452, 11)
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_start.F90 (436, 13)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 436 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_start.F90 (435, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_start.F90 (437, 15)
+        <Multiversioned v2>
+            remark #15319: Loop was not vectorized: novector directive used
+
+            LOOP BEGIN at mod_che_start.F90 (439, 15)
+                remark #15319: Loop was not vectorized: novector directive used
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at mod_che_start.F90 (437, 15)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_start.F90 (439, 15)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_start.F90 (442, 9)
+<Predicate Optimized v2>
+
+    LOOP BEGIN at mod_che_start.F90 (441, 11)
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.memmove.p0.p0.i64
+
+COMPILE FUNC: mod_che_start_mp_start_chem_
+   -> llvm.memset.p0.i64 /scratch_local/ifx1999252480FLLkRz/ifxuL0kDC.i90 (69,5)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1999252480FLLkRz/ifxuL0kDC.i90 (73,5)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx1999252480FLLkRz/ifxuL0kDC.i90 (247,9)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx1999252480FLLkRz/ifxuL0kDC.i90 (247,9)
+
+COMPILE FUNC: mod_che_start._
+
+---- End Inlining Report ------

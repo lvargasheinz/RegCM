@@ -1,0 +1,1973 @@
+Global optimization report for : mod_clm_regcm._
+=================================================================
+
+Global optimization report for : mod_clm_regcm_mp_initsaclm45_
+
+LOOP BEGIN at mod_clm_regcm.F90 (71, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (101, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (105, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (108, 7)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (115, 7)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (122, 11)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (122, 11)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_regcm_mp_initclm45_
+
+LOOP BEGIN at mod_clm_regcm.F90 (155, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (185, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (189, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (192, 7)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (199, 7)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (206, 11)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (206, 11)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (216, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (217, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_regcm.F90 (218, 35)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between (219:15) and (218:21) 
+            remark #15346: vector dependence: assumed FLOW dependence between (220:15) and (218:21) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between (220:15) and (219:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between (221:15) and (218:21) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between (221:15) and (219:15) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between (221:15) and (220:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between (222:15) and (218:21) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between (222:15) and (219:15) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between (222:15) and (220:15) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between (222:15) and (221:15) 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_regcm_mp_runsaclm45_
+=================================================================
+
+Global optimization report for : mod_clm_regcm_mp_runclm45_
+=================================================================
+
+Global optimization report for : mod_clm_regcm_mp_albedoclm45_
+
+LOOP BEGIN at mod_clm_regcm.F90 (395, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (395, 5)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_regcm.F90 (395, 5)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (396, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (396, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (400, 9)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 400 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (399, 7)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_regcm.F90 (399, 7)
+        <Multiversioned v2>
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+
+        LOOP BEGIN at mod_clm_regcm.F90 (399, 7)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (408, 5)
+<Predicate Optimized v2>
+
+    LOOP BEGIN at mod_clm_regcm.F90 (407, 7)
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (409, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (409, 5)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_regcm.F90 (409, 5)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (410, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (410, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (414, 9)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 414 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (413, 7)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_regcm.F90 (413, 7)
+        <Multiversioned v2>
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+
+        LOOP BEGIN at mod_clm_regcm.F90 (413, 7)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (422, 5)
+<Predicate Optimized v2>
+
+    LOOP BEGIN at mod_clm_regcm.F90 (421, 7)
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (423, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (423, 5)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_regcm.F90 (423, 5)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (424, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (424, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (428, 9)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 428 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (427, 7)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_regcm.F90 (427, 7)
+        <Multiversioned v2>
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+
+        LOOP BEGIN at mod_clm_regcm.F90 (427, 7)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (436, 5)
+<Predicate Optimized v2>
+
+    LOOP BEGIN at mod_clm_regcm.F90 (435, 7)
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (437, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (437, 5)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_regcm.F90 (437, 5)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (438, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (438, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (442, 9)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 442 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (441, 7)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_regcm.F90 (441, 7)
+        <Multiversioned v2>
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+
+        LOOP BEGIN at mod_clm_regcm.F90 (441, 7)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (450, 5)
+<Predicate Optimized v2>
+
+    LOOP BEGIN at mod_clm_regcm.F90 (449, 7)
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (453, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (453, 7)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_regcm.F90 (454, 9)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between (456:13) and (455:19) 
+            remark #15346: vector dependence: assumed FLOW dependence between (456:13) and (456:40) 
+            remark #15346: vector dependence: assumed FLOW dependence between (456:13) and (456:60) 
+            remark #15346: vector dependence: assumed ANTI dependence between (457:40) and (456:13) 
+            remark #15346: vector dependence: assumed ANTI dependence between (457:60) and (456:13) 
+            remark #15346: vector dependence: assumed FLOW dependence between (457:13) and (455:19) 
+            remark #15346: vector dependence: assumed FLOW dependence between (457:13) and (456:40) 
+            remark #15346: vector dependence: assumed FLOW dependence between (457:13) and (456:60) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between (457:13) and (456:13) 
+            remark #15346: vector dependence: assumed FLOW dependence between (457:13) and (457:40) 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_regcm_mp_atmosphere_to_land_
+
+LOOP BEGIN at mod_clm_regcm.F90 (483, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (483, 5)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (483, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (483, 5)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (490, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (490, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (492, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (492, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (494, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (494, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (496, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (496, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (499, 5)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (499, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15300: LOOP WAS VECTORIZED
+    remark #15305: vectorization support: vector length 2
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (499, 5)
+<Remainder loop for vectorization>
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (499, 5)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (499, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (500, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (500, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (501, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (501, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (502, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (502, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at /leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc (42, 13)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (505:7) and clm_a2l (505:64) 
+    remark #15346: vector dependence: assumed FLOW dependence between (505:7) and (505:37) 
+    remark #15346: vector dependence: assumed ANTI dependence between (507:34) and (505:7) 
+    remark #15346: vector dependence: assumed ANTI dependence between clm_a2l (506:34) and (505:7) 
+    remark #15346: vector dependence: assumed ANTI dependence between (510:36) and (505:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (513:7) and clm_a2l (505:64) 
+    remark #15346: vector dependence: assumed FLOW dependence between (513:7) and (505:37) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between (513:7) and (505:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (513:7) and (507:34) 
+    remark #15346: vector dependence: assumed FLOW dependence between (513:7) and clm_a2l (506:34) 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (523, 5)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (538, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (530:9) and adomain (529:28) 
+    remark #15346: vector dependence: assumed FLOW dependence between (530:9) and igh_co2 
+    remark #15346: vector dependence: assumed FLOW dependence between (530:9) and rcmtimer 
+    remark #15346: vector dependence: assumed FLOW dependence between (530:9) and rcmtimer 
+    remark #15346: vector dependence: assumed FLOW dependence between (530:9) and lat lat 
+    remark #15346: vector dependence: assumed FLOW dependence between (530:9) and (532:19) 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (541, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (541, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (543, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (543, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (545, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (545, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (560, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (552:9) and adomain (551:28) 
+    remark #15346: vector dependence: assumed FLOW dependence between (552:9) and igh_co2 
+    remark #15346: vector dependence: assumed FLOW dependence between (552:9) and rcmtimer 
+    remark #15346: vector dependence: assumed FLOW dependence between (552:9) and rcmtimer 
+    remark #15346: vector dependence: assumed FLOW dependence between (552:9) and lat lat 
+    remark #15346: vector dependence: assumed FLOW dependence between (552:9) and (554:19) 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (563, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (563, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (566, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (566, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (577, 11)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (577, 11)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (578, 11)
+
+    LOOP BEGIN at mod_clm_regcm.F90 (579, 13)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_regcm.F90 (579, 13)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_clm_regcm.F90 (579, 13)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_regcm.F90 (579, 13)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (583, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (583, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (587, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (587, 11)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (587, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (587, 11)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (589, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (589, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (593, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (593, 11)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (593, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (593, 11)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (595, 13)
+
+    LOOP BEGIN at mod_clm_regcm.F90 (595, 13)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_regcm.F90 (595, 13)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_clm_regcm.F90 (595, 13)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_regcm.F90 (595, 13)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (599, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (599, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (603, 11)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (603, 11)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (604, 11)
+
+    LOOP BEGIN at mod_clm_regcm.F90 (605, 13)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_regcm.F90 (605, 13)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_clm_regcm.F90 (605, 13)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_regcm.F90 (605, 13)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (609, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (609, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (613, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (613, 11)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (613, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (613, 11)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (615, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (615, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (619, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (619, 11)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (619, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (619, 11)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (621, 13)
+
+    LOOP BEGIN at mod_clm_regcm.F90 (621, 13)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_regcm.F90 (621, 13)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_clm_regcm.F90 (621, 13)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_regcm.F90 (621, 13)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (625, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (625, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (629, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (629, 11)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (629, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (629, 11)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (632, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (632, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (634, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (634, 11)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (634, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (634, 11)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (637, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (637, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (640, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (640, 11)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (640, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (640, 11)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (643, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (643, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (645, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (645, 11)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (645, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (645, 11)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (648, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (648, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (651, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (651, 11)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (651, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (651, 11)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (654, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (654, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (656, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (656, 11)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (656, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (656, 11)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (659, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (659, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (662, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (662, 11)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (662, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (662, 11)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (665, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (665, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (667, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (667, 11)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (667, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (667, 11)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (670, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (670, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (675, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (675, 9)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (675, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (675, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (680, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (680, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (687, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (688, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_regcmatmosphere_to_land_mp_pfesat_
+=================================================================
+
+Global optimization report for : mod_clm_regcmatmosphere_to_land_mp_pfesat_water_
+=================================================================
+
+Global optimization report for : mod_clm_regcmatmosphere_to_land_mp_pfesat_ice_
+=================================================================
+
+Global optimization report for : mod_clm_regcmatmosphere_to_land_mp_pfwsat_
+=================================================================
+
+Global optimization report for : mod_clm_regcm_mp_land_to_atmosphere_
+
+LOOP BEGIN at mod_clm_regcm.F90 (717, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (717, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (718, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (718, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (720, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (720, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (728, 5)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (728, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15300: LOOP WAS VECTORIZED
+    remark #15305: vectorization support: vector length 2
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (728, 5)
+<Remainder loop for vectorization>
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (728, 5)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (728, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (737, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (743, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (745, 7)
+
+    LOOP BEGIN at mod_clm_regcm.F90 (745, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_regcm.F90 (745, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_regcm.F90 (747, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_regcm.F90 (747, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_clm_regcm.F90 (747, 7)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_clm_regcm.F90 (747, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_regcm.F90 (747, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_clm_regcm.F90 (747, 7)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (751, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (752, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_regcm.F90 (753, 33)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between (754:13) and (753:19) 
+            remark #15346: vector dependence: assumed FLOW dependence between (754:13) and (754:35) 
+            remark #15346: vector dependence: assumed FLOW dependence between (755:13) and (753:19) 
+            remark #15346: vector dependence: assumed FLOW dependence between (755:13) and (754:35) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between (755:13) and (754:13) 
+            remark #15346: vector dependence: assumed FLOW dependence between (755:13) and (755:36) 
+            remark #15346: vector dependence: assumed ANTI dependence between (755:36) and (754:13) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (761, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (764, 7)
+
+    LOOP BEGIN at mod_clm_regcm.F90 (764, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_regcm.F90 (764, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_regcm.F90 (766, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_regcm.F90 (766, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_clm_regcm.F90 (766, 7)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_clm_regcm.F90 (766, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_regcm.F90 (766, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_clm_regcm.F90 (766, 7)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (770, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (772, 7)
+
+    LOOP BEGIN at mod_clm_regcm.F90 (772, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_regcm.F90 (772, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_regcm.F90 (774, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_regcm.F90 (774, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_clm_regcm.F90 (774, 7)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_clm_regcm.F90 (774, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_regcm.F90 (774, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_clm_regcm.F90 (774, 7)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (785, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (785, 5)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_regcm.F90 (785, 5)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (814, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (814, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_regcm.F90 (814, 9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (816, 53)
+
+    LOOP BEGIN at mod_clm_regcm.F90 (817, 13)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_regcm.F90 (817, 13)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_regcm.F90 (819, 13)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_regcm.F90 (819, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_clm_regcm.F90 (819, 13)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_clm_regcm.F90 (819, 13)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_regcm.F90 (819, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_clm_regcm.F90 (819, 13)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (833, 11)
+
+    LOOP BEGIN at mod_clm_regcm.F90 (833, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_regcm.F90 (833, 11)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_clm_regcm.F90 (833, 11)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_clm_regcm.F90 (834, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_regcm.F90 (834, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_regcm.F90 (836, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_regcm.F90 (836, 11)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_clm_regcm.F90 (836, 11)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_clm_regcm.F90 (836, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_regcm.F90 (836, 11)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_clm_regcm.F90 (836, 11)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (851, 11)
+
+    LOOP BEGIN at mod_clm_regcm.F90 (851, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_regcm.F90 (851, 11)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_clm_regcm.F90 (851, 11)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_clm_regcm.F90 (853, 13)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_regcm.F90 (853, 13)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_regcm.F90 (855, 13)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_regcm.F90 (855, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_clm_regcm.F90 (855, 13)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_clm_regcm.F90 (855, 13)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_regcm.F90 (855, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_clm_regcm.F90 (855, 13)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_regcm_mp_read_cru_pre_
+
+LOOP BEGIN at mod_clm_regcm.F90 (1056, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (1056, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (1056, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (1056, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (1057, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (1057, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (1057, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (1057, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (1011, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (1011, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (1011, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (1011, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (1012, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (1012, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (1012, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (1012, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (1028, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (1028, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (980, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (980, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (990, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (990, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (1006, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (1006, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (1074, 9)
+    remark #25423: Invariant If condition at line 1074 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (1075, 36)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+    LOOP END
+
+    LOOP BEGIN at mod_clm_regcm.F90 (1075, 36)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_regcm.F90 (1084, 9)
+    remark #25423: Invariant If condition at line 1084 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_regcm.F90 (1085, 36)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+    LOOP END
+
+    LOOP BEGIN at mod_clm_regcm.F90 (1085, 36)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_regcm_mp_land_to_atmosphere_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split5102.split
+
+LOOP BEGIN at mod_clm_regcm.F90 (797, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (797:5) and (798:15) 
+    remark #15346: vector dependence: assumed FLOW dependence between (797:5) and (798:36) 
+    remark #15346: vector dependence: assumed FLOW dependence between (797:5) and (798:15) 
+    remark #15346: vector dependence: assumed FLOW dependence between (797:5) and (798:36) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_regcm_mp_land_to_atmosphere_.DIR.OMP.TEAMS.2.split5114
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.directive.region.entry
+
+DEAD STATIC FUNC: llvm.directive.region.exit
+
+COMPILE FUNC: mod_clm_regcm_mp_albedoclm45_
+   -> llvm.smax.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (388,14)
+   -> llvm.smax.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (388,14)
+   -> llvm.smax.i32 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (388,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (388,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (388,14)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (396,5)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (410,5)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (424,5)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (438,5)
+
+COMPILE FUNC: mod_clm_regcm._
+
+COMPILE FUNC: mod_clm_regcm_mp_initsaclm45_
+   -> llvm.smax.i32 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (62,5)
+   -> llvm.smax.i32 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (63,5)
+   -> llvm.smax.i32 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (64,5)
+   -> llvm.smax.i32 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (65,5)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (73,5)
+   -> llvm.smax.i32 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (93,5)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (73,5)
+
+COMPILE FUNC: mod_clm_regcm_mp_initclm45_
+   -> llvm.smax.i32 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (146,5)
+   -> llvm.smax.i32 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (147,5)
+   -> llvm.smax.i32 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (148,5)
+   -> llvm.smax.i32 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (149,5)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (157,5)
+   -> llvm.smax.i32 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (177,5)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (223,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (224,35)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (157,5)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (214,10)
+
+COMPILE FUNC: mod_clm_regcm_mp_read_cru_pre_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (1076,48)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (1077,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (1078,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (1078,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (1086,48)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (1087,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (1088,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (1088,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (1078,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (1078,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (1088,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (1088,27)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (1011,9)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (1012,9)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (1056,9)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (1057,9)
+
+COMPILE FUNC: mod_clm_regcmatmosphere_to_land_mp_pfesat_
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (44,34)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (44,25)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (44,16)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (43,50)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (43,41)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (43,32)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (43,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (47,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (47,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (47,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (46,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (46,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (46,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (46,23)
+
+COMPILE FUNC: mod_clm_regcmatmosphere_to_land_mp_pfwsat_
+   -> INLINE: mod_clm_regcmatmosphere_to_land_mp_pfesat_ /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (12,12)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (44,34)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (44,25)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (44,16)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (43,50)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (43,41)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (43,32)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (43,23)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (47,34)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (47,25)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (47,16)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (46,50)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (46,41)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (46,32)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (46,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (14,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (14,17)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (12,12)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (12,12)
+
+COMPILE FUNC: mod_clm_regcm_mp_atmosphere_to_land_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (483,14)
+   -> mod_clm_regcm_mp_read_cru_pre_ /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (485,12)
+   -> DELETE: llvm.sqrt.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (499,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (505,51)
+   -> INLINE: mod_clm_regcmatmosphere_to_land_mp_pfesat_ /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (506,14)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (44,34)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (44,25)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (44,16)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (43,50)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (43,41)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (43,32)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (43,23)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (47,34)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (47,25)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (47,16)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (46,50)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (46,41)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (46,32)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (46,23)
+   -> INLINE: mod_clm_regcmatmosphere_to_land_mp_pfwsat_ /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (508,14)
+      -> INLINE: mod_clm_regcmatmosphere_to_land_mp_pfesat_ /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (12,12)
+         -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (44,34)
+         -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (44,25)
+         -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (44,16)
+         -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (43,50)
+         -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (43,41)
+         -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (43,32)
+         -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (43,23)
+         -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (47,34)
+         -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (47,25)
+         -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (47,16)
+         -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (46,50)
+         -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (46,41)
+         -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (46,32)
+         -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (46,23)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (14,23)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (14,17)
+      -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (12,12)
+      -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (12,12)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (523,38)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (629,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (640,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (651,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (662,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (675,23)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (506,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (506,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (508,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (508,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (508,14)
+   -> llvm.sqrt.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (499,25)
+   -> llvm.sqrt.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (499,25)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (483,5)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (490,5)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (492,5)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (494,5)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (496,5)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (499,5)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (500,5)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (501,5)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (502,5)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (541,9)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (543,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (563,9)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (566,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (579,13)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (583,11)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (587,11)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (589,11)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (593,11)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (595,13)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (599,11)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (605,13)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (609,11)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (613,11)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (615,11)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (619,11)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (621,13)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (625,11)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (629,11)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (632,11)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (634,11)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (637,11)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (640,11)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (643,11)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (645,11)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (648,11)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (651,11)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (654,11)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (656,11)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (659,11)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (662,11)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (665,11)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (667,11)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (670,11)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (675,9)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (680,9)
+   -> DELETE: llvm.masked.gather.v2f64.v2p0 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (499,25)
+   -> DELETE: llvm.masked.gather.v2f64.v2p0 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (499,44)
+   -> llvm.sqrt.v2f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (499,25)
+
+COMPILE FUNC: mod_clm_regcm_mp_runsaclm45_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (234,14)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (234,14)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (234,14)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (234,14)
+   -> mod_clm_regcm_mp_atmosphere_to_land_ /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (243,10)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (254,10)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (254,33)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (256,52)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (265,10)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (276,18)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (283,18)
+
+COMPILE FUNC: mod_clm_regcm_mp_land_to_atmosphere_
+   -> DELETE: llvm.sqrt.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (728,23)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (797,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (797,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (797,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (797,5)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (717,5)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (718,5)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (720,5)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (728,5)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (745,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (747,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (764,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (766,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (772,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (774,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (817,13)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (819,13)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (834,11)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (836,11)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (853,13)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (855,13)
+   -> llvm.sqrt.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (728,23)
+   -> llvm.sqrt.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (728,23)
+   -> DELETE: llvm.masked.gather.v2f64.v2p0 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (728,23)
+   -> DELETE: llvm.masked.gather.v2f64.v2p0 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (728,40)
+   -> llvm.sqrt.v2f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (728,23)
+   -> DELETE: llvm.masked.gather.v2f64.v2p0 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (728,23)
+
+COMPILE FUNC: mod_clm_regcm_mp_runclm45_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (310,14)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (310,14)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (310,14)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (310,14)
+   -> mod_clm_regcm_mp_atmosphere_to_land_ /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (320,10)
+   -> mod_clm_regcm_mp_land_to_atmosphere_ /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (384,10)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (331,10)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (331,33)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (333,52)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (342,10)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (353,18)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (360,18)
+
+COMPILE FUNC: mod_clm_regcmatmosphere_to_land_mp_pfesat_water_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (74,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (74,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (74,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (73,48)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (73,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (73,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (73,21)
+
+COMPILE FUNC: mod_clm_regcmatmosphere_to_land_mp_pfesat_ice_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (100,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (100,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (100,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (99,48)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (99,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (99,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06756051657euQo9/ifxETRsLj.i90 (99,21)
+
+COMPILE FUNC: mod_clm_regcm_mp_land_to_atmosphere_.DIR.OMP.TEAMS.2.split5114
+
+COMPILE FUNC: mod_clm_regcm_mp_land_to_atmosphere_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split5102.split
+
+---- End Inlining Report ------

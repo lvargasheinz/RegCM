@@ -1,0 +1,27 @@
+Global optimization report for : mod_header._
+=================================================================
+
+Global optimization report for : mod_header_mp_header_
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: getcwd_.t119p.t3v
+
+DEAD STATIC FUNC: getlog_.t104p.t3v
+
+DEAD STATIC FUNC: hostnm_.t99p.t3v
+
+COMPILE FUNC: mod_header._
+
+COMPILE FUNC: mod_header_mp_header_
+   -> INLINE: hostnm_.t99p.t3v /scratch_local/ifx10352909983ifRFi/ifx2LmrgI.i90 (52,13)
+   -> INLINE: getlog_.t104p.t3v /scratch_local/ifx10352909983ifRFi/ifx2LmrgI.i90 (53,10)
+   -> INLINE: getcwd_.t119p.t3v /scratch_local/ifx10352909983ifRFi/ifx2LmrgI.i90 (56,12)
+
+---- End Inlining Report ------

@@ -1,0 +1,187 @@
+Global optimization report for : mod_clm_pftdyn._
+=================================================================
+
+Global optimization report for : mod_clm_pftdyn_mp_pftdyn_init_
+
+LOOP BEGIN at mod_clm_pftdyn.F90 (169, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+
+    LOOP BEGIN at mod_clm_pftdyn.F90 (172, 7)
+        remark #15319: Loop was not vectorized: novector directive used
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_pftdyn.F90 (169, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_pftdyn.F90 (169, 7)
+        remark #15300: LOOP WAS VECTORIZED
+        remark #15305: vectorization support: vector length 2
+    LOOP END
+
+    LOOP BEGIN at mod_clm_pftdyn.F90 (169, 7)
+    <Remainder loop for vectorization>
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_pftdyn_mp_pftdyn_interp_
+
+LOOP BEGIN at mod_clm_pftdyn.F90 (222, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_pftdyn.F90 (223, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_pftdyn.F90 (265, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_pftdyn.F90 (268, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_pftdyn.F90 (278, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_pftdyn.F90 (281, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_pftdyn.F90 (299, 37)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between wtcol_old (301:9) and (298:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between wtcol_old (301:9) and (299:17) 
+    remark #15346: vector dependence: assumed FLOW dependence between wtcol_old (301:9) and (297:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between wtcol_old (301:9) and clm3 (296:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between wtcol_old (301:9) and (300:18) 
+    remark #15346: vector dependence: assumed FLOW dependence between wtcol_old (301:9) and (301:34) 
+    remark #15346: vector dependence: assumed ANTI dependence between (304:9) and wtcol_old (301:9) 
+    remark #15346: vector dependence: assumed ANTI dependence between (304:42) and wtcol_old (301:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (304:9) and (298:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between (304:9) and (299:17) 
+LOOP END
+
+LOOP BEGIN at mod_clm_pftdyn.F90 (318, 37)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (321:11) and (317:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between (321:11) and (318:17) 
+    remark #15346: vector dependence: assumed FLOW dependence between (321:11) and clm3 (315:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between (321:11) and (319:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (321:11) and (319:32) 
+    remark #15346: vector dependence: assumed ANTI dependence between (322:54) and (321:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (322:11) and (317:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between (322:11) and (318:17) 
+    remark #15346: vector dependence: assumed FLOW dependence between (322:11) and clm3 (315:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between (322:11) and (319:9) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_pftdyn_mp_pftdyn_wbal_init_
+
+LOOP BEGIN at mod_clm_pftdyn.F90 (382, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_pftdyn_mp_pftdyn_wbal_
+
+LOOP BEGIN at mod_clm_pftdyn.F90 (429, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_pftdyn.F90 (471, 5)
+<Multiversioned v2>
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (446:11) and (432:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between (446:11) and (435:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between (446:11) and (438:20) 
+    remark #15346: vector dependence: assumed FLOW dependence between (446:11) and wtcol_old (438:20) 
+    remark #15346: vector dependence: assumed FLOW dependence between (463:13) and (432:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between (463:13) and (435:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between (463:13) and (438:20) 
+    remark #15346: vector dependence: assumed FLOW dependence between (463:13) and wtcol_old (438:20) 
+    remark #15346: vector dependence: assumed FLOW dependence between (465:13) and (432:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between (465:13) and (435:16) 
+LOOP END
+
+LOOP BEGIN at mod_clm_pftdyn.F90 (435, 36)
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (446:11) and (432:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between (446:11) and (435:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between (446:11) and (438:20) 
+    remark #15346: vector dependence: assumed FLOW dependence between (446:11) and wtcol_old (438:20) 
+    remark #15346: vector dependence: assumed FLOW dependence between (463:13) and (432:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between (463:13) and (435:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between (463:13) and (438:20) 
+    remark #15346: vector dependence: assumed FLOW dependence between (463:13) and wtcol_old (438:20) 
+    remark #15346: vector dependence: assumed FLOW dependence between (465:13) and (432:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between (465:13) and (435:16) 
+LOOP END
+
+LOOP BEGIN at mod_clm_pftdyn.F90 (474, 7)
+    remark #25423: Invariant If condition at line 474 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_pftdyn.F90 (475, 16)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+    LOOP END
+
+    LOOP BEGIN at mod_clm_pftdyn.F90 (475, 16)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_clm_pftdyn._
+
+COMPILE FUNC: mod_clm_pftdyn_mp_pftdyn_init_
+   -> DELETE: llvm.masked.gather.v2f64.v2p0 /scratch_local/ifx1301141237sCspDk/ifxGcKla4.i90 (170,9)
+   -> DELETE: llvm.masked.scatter.v2f64.v2p0 /scratch_local/ifx1301141237sCspDk/ifxGcKla4.i90 (170,9)
+   -> DELETE: llvm.masked.gather.v2f64.v2p0 /scratch_local/ifx1301141237sCspDk/ifxGcKla4.i90 (171,9)
+   -> DELETE: llvm.masked.scatter.v2f64.v2p0 /scratch_local/ifx1301141237sCspDk/ifxGcKla4.i90 (171,9)
+
+COMPILE FUNC: mod_clm_pftdyn_mp_pftdyn_interp_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1301141237sCspDk/ifxGcKla4.i90 (289,12)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1301141237sCspDk/ifxGcKla4.i90 (321,32)
+   -> llvm.fabs.f64 /scratch_local/ifx1301141237sCspDk/ifxGcKla4.i90 (319,14)
+   -> llvm.fabs.f64 /scratch_local/ifx1301141237sCspDk/ifxGcKla4.i90 (320,14)
+
+COMPILE FUNC: mod_clm_pftdyn_mp_pftdyn_wbal_init_
+
+COMPILE FUNC: mod_clm_pftdyn_mp_pftdyn_wbal_
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1301141237sCspDk/ifxGcKla4.i90 (456,50)
+   -> DELETE: llvm.fabs.f64 /scratch_local/ifx1301141237sCspDk/ifxGcKla4.i90 (458,15)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1301141237sCspDk/ifxGcKla4.i90 (446,54)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1301141237sCspDk/ifxGcKla4.i90 (446,54)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1301141237sCspDk/ifxGcKla4.i90 (456,50)
+   -> llvm.fabs.f64 /scratch_local/ifx1301141237sCspDk/ifxGcKla4.i90 (458,15)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1301141237sCspDk/ifxGcKla4.i90 (446,54)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1301141237sCspDk/ifxGcKla4.i90 (456,50)
+   -> llvm.fabs.f64 /scratch_local/ifx1301141237sCspDk/ifxGcKla4.i90 (458,15)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1301141237sCspDk/ifxGcKla4.i90 (405,32)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1301141237sCspDk/ifxGcKla4.i90 (405,32)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1301141237sCspDk/ifxGcKla4.i90 (433,7)
+
+---- End Inlining Report ------

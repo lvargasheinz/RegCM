@@ -1,0 +1,217 @@
+Global optimization report for : myabort_
+=================================================================
+
+Global optimization report for : MAIN__
+
+LOOP BEGIN at GrADSNcPrepare.F90 (326, 20)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at GrADSNcPrepare.F90 (326, 20)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (326:20) and (326:20) 
+        remark #15346: vector dependence: assumed FLOW dependence between (326:20) and (326:20) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at GrADSNcPrepare.F90 (327, 20)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at GrADSNcPrepare.F90 (327, 20)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (327:20) and (327:20) 
+        remark #15346: vector dependence: assumed FLOW dependence between (327:20) and (327:20) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at GrADSNcPrepare.F90 (335, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at GrADSNcPrepare.F90 (339, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at GrADSNcPrepare.F90 (342, 22)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (342:22) and (342:22) 
+    remark #15346: vector dependence: assumed FLOW dependence between (342:22) and (342:22) 
+LOOP END
+
+LOOP BEGIN at GrADSNcPrepare.F90 (343, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at GrADSNcPrepare.F90 (347, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at GrADSNcPrepare.F90 (350, 22)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (350:22) and (350:22) 
+    remark #15346: vector dependence: assumed FLOW dependence between (350:22) and (350:22) 
+LOOP END
+
+LOOP BEGIN at GrADSNcPrepare.F90 (435, 7)
+    remark #15300: LOOP WAS VECTORIZED
+    remark #15305: vectorization support: vector length 2
+LOOP END
+
+LOOP BEGIN at GrADSNcPrepare.F90 (435, 7)
+<Remainder loop for vectorization>
+LOOP END
+
+LOOP BEGIN at GrADSNcPrepare.F90 (438, 7)
+    remark #15300: LOOP WAS VECTORIZED
+    remark #15305: vectorization support: vector length 2
+LOOP END
+
+LOOP BEGIN at GrADSNcPrepare.F90 (438, 7)
+<Remainder loop for vectorization>
+LOOP END
+
+LOOP BEGIN at GrADSNcPrepare.F90 (442, 9)
+
+    LOOP BEGIN at GrADSNcPrepare.F90 (442, 9)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+
+LOOP BEGIN at GrADSNcPrepare.F90 (447, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at GrADSNcPrepare.F90 (447, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at GrADSNcPrepare.F90 (448, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at GrADSNcPrepare.F90 (448, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at GrADSNcPrepare.F90 (449, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at GrADSNcPrepare.F90 (449, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at GrADSNcPrepare.F90 (495, 17)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at GrADSNcPrepare.F90 (495, 17)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15300: LOOP WAS VECTORIZED
+    remark #15305: vectorization support: vector length 2
+LOOP END
+
+LOOP BEGIN at GrADSNcPrepare.F90 (495, 17)
+<Remainder loop for vectorization>
+LOOP END
+
+LOOP BEGIN at GrADSNcPrepare.F90 (603, 10)
+LOOP END
+
+LOOP BEGIN at GrADSNcPrepare.F90 (690, 21)
+
+    LOOP BEGIN at GrADSNcPrepare.F90 (793, 13)
+        remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+    LOOP END
+
+    LOOP BEGIN at GrADSNcPrepare.F90 (782, 9)
+        remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+    LOOP END
+
+    LOOP BEGIN at GrADSNcPrepare.F90 (776, 9)
+        remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.for.cpystr.i64.i64.i64
+
+COMPILE FUNC: MAIN__
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (25,9)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (25,9)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (25,9)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (25,9)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (115,5)
+   -> llvm.smax.i32 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (137,3)
+   -> llvm.smax.i32 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (137,3)
+   -> llvm.smax.i32 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (140,3)
+   -> llvm.smax.i32 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (140,3)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (150,38)
+   -> llvm.smax.i32 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (274,3)
+   -> llvm.smax.i32 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (274,3)
+   -> llvm.smax.i32 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (274,3)
+   -> llvm.smax.i32 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (274,3)
+   -> llvm.smax.i32 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (277,3)
+   -> llvm.smax.i32 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (277,3)
+   -> llvm.smax.i32 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (277,3)
+   -> llvm.smax.i32 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (277,3)
+   -> llvm.smax.i32 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (280,3)
+   -> llvm.smax.i32 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (280,3)
+   -> llvm.fabs.f64 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (328,7)
+   -> llvm.fabs.f64 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (328,43)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (331,14)
+   -> llvm.fabs.f64 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (354,15)
+   -> llvm.round.f64 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (354,10)
+   -> llvm.round.f64 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (358,12)
+   -> llvm.fabs.f64 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (360,17)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (360,12)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (356,22)
+   -> llvm.fabs.f64 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (356,17)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (356,12)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (386,3)
+   -> llvm.smax.i32 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (401,3)
+   -> llvm.smax.i32 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (401,3)
+   -> DELETE: for_concat /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (411,7)
+   -> llvm.round.f64 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (540,13)
+   -> DELETE: netcdf_mp_nf90_inquire_dimension_ /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (632,23)
+   -> DELETE: netcdf_mp_nf90_inquire_dimension_ /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (648,23)
+   -> DELETE: netcdf_mp_nf90_inquire_dimension_ /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (662,23)
+   -> DELETE: netcdf_mp_nf90_inquire_variable_ /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (693,17)
+   -> DELETE: llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (703,9)
+   -> DELETE: llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (716,9)
+   -> DELETE: llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (743,9)
+   -> DELETE: llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (747,9)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (755,9)
+   -> llvm.memset.p0.i64 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (755,9)
+   -> DELETE: netcdf_mp_nf90_inquire_dimension_ /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (765,19)
+   -> DELETE: netcdf_mp_nf90_inquire_dimension_ /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (786,19)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (747,9)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (747,9)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (716,9)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (716,9)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (743,9)
+   -> llvm.memset.p0.i64 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (743,9)
+   -> llvm.smax.i64 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (146,38)
+   -> llvm.smax.i32 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (472,5)
+   -> llvm.smax.i32 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (472,5)
+   -> llvm.smax.i32 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (507,5)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (507,5)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (703,9)
+   -> llvm.memset.p0.i64 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (703,9)
+   -> llvm.smax.i32 /scratch_local/ifx080086860416q2Ho/ifxUAI4IL.i90 (435,7)
+
+COMPILE FUNC: myabort_
+
+---- End Inlining Report ------

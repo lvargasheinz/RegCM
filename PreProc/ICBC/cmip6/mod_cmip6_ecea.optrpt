@@ -1,0 +1,98 @@
+Global optimization report for : mod_cmip6_ecea._
+=================================================================
+
+Global optimization report for : mod_cmip6_ecea_mp_read_hcoord_ecea_
+=================================================================
+
+Global optimization report for : mod_cmip6_ecea_mp_read_hcoord_sst_ecea_
+=================================================================
+
+Global optimization report for : mod_cmip6_ecea_mp_read_vcoord_ecea_
+=================================================================
+
+Global optimization report for : mod_cmip6_ecea_mp_read_3d_ecea_
+=================================================================
+
+Global optimization report for : mod_cmip6_ecea_mp_read_2d_ecea_
+=================================================================
+
+Global optimization report for : mod_cmip6_ecea_mp_read_fx_ecea_
+=================================================================
+
+Global optimization report for : mod_cmip6_ecea_mp_read_sst_ecea_
+
+LOOP BEGIN at mod_cmip6_ecea.F90 (446, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cmip6_ecea.F90 (446, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cmip6_ecea.F90 (447, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cmip6_ecea.F90 (447, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cmip6_ecea.F90 (449, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cmip6_ecea.F90 (449, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_cmip6_ecea._
+
+COMPILE FUNC: mod_cmip6_ecea_mp_read_hcoord_ecea_
+
+COMPILE FUNC: mod_cmip6_ecea_mp_read_hcoord_sst_ecea_
+
+COMPILE FUNC: mod_cmip6_ecea_mp_read_vcoord_ecea_
+
+COMPILE FUNC: mod_cmip6_ecea_mp_read_3d_ecea_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx09030381735YvUgl/ifxjiNqjS.i90 (119,26)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx09030381735YvUgl/ifxjiNqjS.i90 (144,9)
+   -> mod_cmip6_ecea_mp_read_hcoord_ecea_ /scratch_local/ifx09030381735YvUgl/ifxjiNqjS.i90 (145,14)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx09030381735YvUgl/ifxjiNqjS.i90 (148,9)
+   -> mod_cmip6_ecea_mp_read_vcoord_ecea_ /scratch_local/ifx09030381735YvUgl/ifxjiNqjS.i90 (149,14)
+   -> llvm.round.f64 /scratch_local/ifx09030381735YvUgl/ifxjiNqjS.i90 (194,14)
+   -> mod_cmip6_ecea_mp_read_3d_ecea_ /scratch_local/ifx09030381735YvUgl/ifxjiNqjS.i90 (207,14)
+
+COMPILE FUNC: mod_cmip6_ecea_mp_read_2d_ecea_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx09030381735YvUgl/ifxjiNqjS.i90 (222,26)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx09030381735YvUgl/ifxjiNqjS.i90 (253,9)
+   -> mod_cmip6_ecea_mp_read_hcoord_ecea_ /scratch_local/ifx09030381735YvUgl/ifxjiNqjS.i90 (254,14)
+   -> llvm.round.f64 /scratch_local/ifx09030381735YvUgl/ifxjiNqjS.i90 (297,14)
+   -> mod_cmip6_ecea_mp_read_2d_ecea_ /scratch_local/ifx09030381735YvUgl/ifxjiNqjS.i90 (310,14)
+
+COMPILE FUNC: mod_cmip6_ecea_mp_read_fx_ecea_
+   -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx09030381735YvUgl/ifxjiNqjS.i90 (328,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx09030381735YvUgl/ifxjiNqjS.i90 (335,7)
+   -> mod_cmip6_ecea_mp_read_hcoord_ecea_ /scratch_local/ifx09030381735YvUgl/ifxjiNqjS.i90 (336,12)
+
+COMPILE FUNC: mod_cmip6_ecea_mp_read_sst_ecea_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx09030381735YvUgl/ifxjiNqjS.i90 (355,26)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx09030381735YvUgl/ifxjiNqjS.i90 (386,9)
+   -> mod_cmip6_ecea_mp_read_hcoord_sst_ecea_ /scratch_local/ifx09030381735YvUgl/ifxjiNqjS.i90 (387,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx09030381735YvUgl/ifxjiNqjS.i90 (424,19)
+   -> mod_cmip6_ecea_mp_read_sst_ecea_ /scratch_local/ifx09030381735YvUgl/ifxjiNqjS.i90 (434,14)
+
+---- End Inlining Report ------

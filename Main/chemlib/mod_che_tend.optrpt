@@ -1,0 +1,704 @@
+Global optimization report for : mod_che_tend._
+=================================================================
+
+Global optimization report for : mod_che_tend_mp_tractend2_
+
+LOOP BEGIN at mod_che_tend.F90 (113, 9)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 113 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_tend.F90 (113, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_tend.F90 (114, 11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (130, 7)
+<Predicate Optimized v2>
+    remark #25530: Stmt at line 113 sinked after loop using last value computation
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (132, 12)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (132:12) and (132:12) 
+    remark #15346: vector dependence: assumed FLOW dependence between (132:12) and (132:12) 
+    remark #15346: vector dependence: assumed FLOW dependence between (132:12) and (132:12) 
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (146, 9)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 146 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_tend.F90 (146, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_tend.F90 (147, 11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (160, 7)
+<Predicate Optimized v2>
+    remark #25530: Stmt at line 146 sinked after loop using last value computation
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (179, 25)
+<Predicate Optimized v2>
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_tend.F90 (179, 25)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_tend.F90 (182, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_tend.F90 (182, 13)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (179, 25)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 165 hoisted out of this loop
+    remark #25423: Invariant If condition at line 179 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_tend.F90 (179, 25)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_tend.F90 (180, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_tend.F90 (180, 13)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (199, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_tend.F90 (200, 29)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (239, 9)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (260, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_tend.F90 (260, 7)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_tend.F90 (260, 7)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (266, 17)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_tend.F90 (266, 17)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (266, 17)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_tend.F90 (266, 17)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (300, 9)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (307, 7)
+<Predicate Optimized v3>
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_tend.F90 (307, 7)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_tend.F90 (307, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_tend.F90 (307, 7)
+            <Multiversioned v2>
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (307, 7)
+<Predicate Optimized v2>
+
+    LOOP BEGIN at mod_che_tend.F90 (307, 7)
+
+        LOOP BEGIN at mod_che_tend.F90 (307, 7)
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (307, 7)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 307 hoisted out of this loop
+    remark #25423: Invariant If condition at line 0 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_tend.F90 (307, 7)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_tend.F90 (307, 7)
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+
+            LOOP BEGIN at mod_che_tend.F90 (307, 7)
+            <Multiversioned v1>
+                remark #25408: memset generated
+                remark #25562: The loop has been multiversioned for the small trip count
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (308, 7)
+<Predicate Optimized v6>
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_tend.F90 (308, 7)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_tend.F90 (308, 7)
+        <Multiversioned v2>
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (308, 7)
+<Predicate Optimized v5>
+
+    LOOP BEGIN at mod_che_tend.F90 (308, 7)
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (308, 7)
+<Predicate Optimized v4>
+    remark #25423: Invariant If condition at line 308 hoisted out of this loop
+    remark #25423: Invariant If condition at line 0 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_tend.F90 (308, 7)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+
+        LOOP BEGIN at mod_che_tend.F90 (308, 7)
+        <Multiversioned v1>
+            remark #25408: memset generated
+            remark #25562: The loop has been multiversioned for the small trip count
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (312, 11)
+
+    LOOP BEGIN at mod_che_tend.F90 (312, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_che_tend.F90 (312, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (322, 13)
+
+    LOOP BEGIN at mod_che_tend.F90 (323, 15)
+
+        LOOP BEGIN at mod_che_tend.F90 (323, 15)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at mod_che_tend.F90 (323, 15)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (336, 11)
+
+    LOOP BEGIN at mod_che_tend.F90 (336, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (345, 16)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (345:16) and (345:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between (345:16) and (345:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between (345:16) and (345:16) 
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (347, 11)
+
+    LOOP BEGIN at mod_che_tend.F90 (347, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (366, 9)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (375, 11)
+
+    LOOP BEGIN at mod_che_tend.F90 (375, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (385, 9)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (387, 11)
+
+    LOOP BEGIN at mod_che_tend.F90 (387, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_che_tend.F90 (387, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_che_tend.F90 (387, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (394, 11)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (395, 11)
+
+    LOOP BEGIN at mod_che_tend.F90 (397, 15)
+
+        LOOP BEGIN at mod_che_tend.F90 (397, 15)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at mod_che_tend.F90 (397, 15)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at mod_che_tend.F90 (397, 15)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (406, 9)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (408, 11)
+
+    LOOP BEGIN at mod_che_tend.F90 (408, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_che_tend.F90 (408, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (415, 16)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (415:16) and (415:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between (415:16) and (415:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between (415:16) and (415:16) 
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (417, 9)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (419, 11)
+
+    LOOP BEGIN at mod_che_tend.F90 (419, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_che_tend.F90 (419, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (432, 11)
+
+    LOOP BEGIN at mod_che_tend.F90 (432, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (444, 9)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (455, 11)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_tend.F90 (455, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_tend.F90 (455, 11)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_tend.F90 (455, 11)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (459, 15)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_tend.F90 (459, 15)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (459:15) and (459:15) 
+        remark #15346: vector dependence: assumed FLOW dependence between (459:15) and (459:15) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (459, 47)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_tend.F90 (459, 47)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (459:47) and (459:47) 
+        remark #15346: vector dependence: assumed FLOW dependence between (459:47) and (459:47) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (468, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_tend.F90 (468, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_tend.F90 (468, 9)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_tend.F90 (468, 9)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (468, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_tend.F90 (468, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_tend.F90 (468, 9)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_tend.F90 (468, 9)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (470, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_tend.F90 (470, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_tend.F90 (470, 11)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_tend.F90 (470, 11)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (470, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_tend.F90 (470, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_tend.F90 (470, 11)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_tend.F90 (470, 11)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (491, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_tend.F90 (491, 7)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_tend.F90 (491, 7)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_tend.F90 (493, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_tend.F90 (494, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_tend.F90 (495, 13)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_tend.F90 (498, 13)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_che_tendtractend2_mp_pfesat_
+=================================================================
+
+Global optimization report for : mod_che_tendtractend2_mp_pfesat_water_
+=================================================================
+
+Global optimization report for : mod_che_tendtractend2_mp_pfesat_ice_
+=================================================================
+
+Global optimization report for : mod_che_tendtractend2_mp_pfwsat_
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_che_tend_mp_tractend2_
+   -> llvm.smax.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> llvm.smax.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> llvm.smax.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> llvm.smax.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (99,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (100,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (101,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (102,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (103,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (104,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (105,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (106,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (107,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (108,7)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (211,51)
+   -> llvm.round.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (219,11)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (221,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (220,35)
+   -> llvm.smax.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (347,11)
+   -> llvm.smax.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (419,11)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (165,9)
+   -> llvm.smax.i32 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (199,9)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (251,9)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (63,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (457,36)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (454,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (307,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (308,7)
+
+COMPILE FUNC: mod_che_tend._
+
+COMPILE FUNC: mod_che_tendtractend2_mp_pfesat_
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (44,34)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (44,25)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (44,16)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (43,50)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (43,41)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (43,32)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (43,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (47,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (47,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (47,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (46,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (46,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (46,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (46,23)
+
+COMPILE FUNC: mod_che_tendtractend2_mp_pfesat_water_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (74,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (74,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (74,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (73,48)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (73,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (73,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (73,21)
+
+COMPILE FUNC: mod_che_tendtractend2_mp_pfesat_ice_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (100,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (100,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (100,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (99,48)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (99,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (99,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (99,21)
+
+COMPILE FUNC: mod_che_tendtractend2_mp_pfwsat_
+   -> INLINE: mod_che_tendtractend2_mp_pfesat_ /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (12,12)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (44,34)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (44,25)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (44,16)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (43,50)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (43,41)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (43,32)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (43,23)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (47,34)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (47,25)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (47,16)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (46,50)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (46,41)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (46,32)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (46,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (14,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (14,17)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (12,12)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx0060288715dNMVFv/ifx9ytqKv.i90 (12,12)
+
+---- End Inlining Report ------

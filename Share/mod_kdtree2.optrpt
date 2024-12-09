@@ -1,0 +1,568 @@
+Global optimization report for : mod_kdtree2._
+=================================================================
+
+Global optimization report for : mod_kdtree2_mp_kdtree2_create_
+
+LOOP BEGIN at mod_kdtree2.F90 (334, 9)
+
+    LOOP BEGIN at mod_kdtree2.F90 (334, 9)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_kdtree2.F90 (334, 9)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_kdtree2_mp_build_tree_
+=================================================================
+
+Global optimization report for : mod_kdtree2_mp_build_tree_for_range_
+
+LOOP BEGIN at mod_kdtree2.F90 (415, 14)
+LOOP END
+
+LOOP BEGIN at mod_kdtree2.F90 (427, 11)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (427:11) and (427:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (427:11) and (427:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (427:11) and (427:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (427:11) and (427:11) 
+LOOP END
+
+LOOP BEGIN at mod_kdtree2.F90 (565, 7)
+
+    LOOP BEGIN at mod_kdtree2.F90 (568, 9)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between m (570:19) and m (570:19) 
+        remark #15346: vector dependence: assumed FLOW dependence between (572:13) and (569:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between (572:13) and (571:13) 
+        remark #15346: vector dependence: assumed FLOW dependence between (573:13) and (571:13) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between (573:13) and (572:13) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_kdtree2.F90 (445, 21)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (445:21) and (445:21) 
+LOOP END
+
+LOOP BEGIN at mod_kdtree2.F90 (528, 7)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+
+LOOP BEGIN at mod_kdtree2.F90 (479, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_kdtree2.F90 (479, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_kdtree2.F90 (480, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_kdtree2.F90 (480, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_kdtree2.F90 (467, 9)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+
+LOOP BEGIN at mod_kdtree2.F90 (463, 9)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+
+LOOP BEGIN at mod_kdtree2.F90 (395, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between i i (395:7) and i i 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_kdtree2build_tree_for_range_mp_select_on_coordinate_value_
+
+LOOP BEGIN at mod_kdtree2.F90 (528, 7)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+=================================================================
+
+Global optimization report for : mod_kdtree2build_tree_for_range_mp_select_on_coordinate_
+
+LOOP BEGIN at mod_kdtree2.F90 (565, 7)
+
+    LOOP BEGIN at mod_kdtree2.F90 (568, 9)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between m (570:19) and m (570:19) 
+        remark #15346: vector dependence: assumed FLOW dependence between (572:13) and (569:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between (572:13) and (571:13) 
+        remark #15346: vector dependence: assumed FLOW dependence between (573:13) and (571:13) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between (573:13) and (572:13) 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_kdtree2_mp_spread_in_coordinate_
+
+LOOP BEGIN at mod_kdtree2.F90 (624, 5)
+    remark #25530: Stmt at line 624 sinked after loop using last value computation
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between smin (622:17) and smin (622:17) 
+    remark #15346: vector dependence: assumed FLOW dependence between smin (622:17) and smin (622:17) 
+    remark #15346: vector dependence: assumed FLOW dependence between smax (623:17) and smax (623:17) 
+    remark #15346: vector dependence: assumed FLOW dependence between smax (623:17) and smax (623:17) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_kdtree2_mp_kdtree2_destroy_
+=================================================================
+
+Global optimization report for : mod_kdtree2kdtree2_destroy_mp_destroy_node_
+=================================================================
+
+Global optimization report for : mod_kdtree2_mp_kdtree2_n_nearest_
+=================================================================
+
+Global optimization report for : mod_kdtree2_mp_kdtree2_n_nearest_around_point_
+
+LOOP BEGIN at mod_kdtree2.F90 (728, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_kdtree2.F90 (728, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_kdtree2_mp_kdtree2_r_nearest_
+=================================================================
+
+Global optimization report for : mod_kdtree2_mp_kdtree2_r_nearest_around_point_
+
+LOOP BEGIN at mod_kdtree2.F90 (842, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_kdtree2.F90 (842, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_kdtree2_mp_kdtree2_r_count_
+=================================================================
+
+Global optimization report for : mod_kdtree2_mp_kdtree2_r_count_around_point_
+
+LOOP BEGIN at mod_kdtree2.F90 (941, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_kdtree2.F90 (941, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_kdtree2_mp_validate_query_storage_
+=================================================================
+
+Global optimization report for : mod_kdtree2_mp_square_distance_
+
+LOOP BEGIN at mod_kdtree2.F90 (1000, 11)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (1000:11) and (1000:11) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_kdtree2_mp_search_
+
+LOOP BEGIN at mod_kdtree2.F90 (1064, 20)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+=================================================================
+
+Global optimization report for : mod_kdtree2_mp_dis2_from_bnd_
+=================================================================
+
+Global optimization report for : mod_kdtree2_mp_process_terminal_node_
+
+LOOP BEGIN at mod_kdtree2.F90 (1173, 19)
+
+    LOOP BEGIN at mod_kdtree2.F90 (1173, 19)
+        remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_kdtree2.F90 (1185, 22)
+LOOP END
+
+LOOP BEGIN at mod_kdtree2.F90 (1181, 19)
+
+    LOOP BEGIN at mod_kdtree2.F90 (1181, 19)
+        remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_kdtree2.F90 (1185, 22)
+LOOP END
+=================================================================
+
+Global optimization report for : mod_kdtree2_mp_process_terminal_node_fixedball_
+
+LOOP BEGIN at mod_kdtree2.F90 (1296, 19)
+
+    LOOP BEGIN at mod_kdtree2.F90 (1296, 19)
+        remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_kdtree2.F90 (1296, 19)
+
+    LOOP BEGIN at mod_kdtree2.F90 (1296, 19)
+        remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_kdtree2.F90 (1308, 22)
+LOOP END
+
+LOOP BEGIN at mod_kdtree2.F90 (1302, 9)
+
+    LOOP BEGIN at mod_kdtree2.F90 (1304, 19)
+        remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_kdtree2_mp_kdtree2_n_nearest_brute_force_
+
+LOOP BEGIN at mod_kdtree2.F90 (1000, 11)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_kdtree2.F90 (1000, 11)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (1000:11) and (1000:11) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_kdtree2.F90 (1350, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_kdtree2.F90 (1352, 29)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_kdtree2.F90 (1355, 33)
+        remark #25530: Stmt at line 1356 sinked after loop using last value computation
+        remark #25530: Stmt at line 0 sinked after loop using last value computation
+        remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+    LOOP END
+
+    LOOP BEGIN at mod_kdtree2.F90 (1360, 9)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_kdtree2.F90 (1352, 29)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (1361:9) and (1352:31) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_kdtree2_mp_kdtree2_r_nearest_brute_force_
+
+LOOP BEGIN at mod_kdtree2.F90 (1000, 11)
+    remark #25045: Fused Loops: 1387,1401
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_kdtree2.F90 (1000, 11)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (1000:11) and (1000:11) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_kdtree2.F90 (1401, 5)
+    remark #25046: Loop lost in Fusion
+LOOP END
+=================================================================
+
+Global optimization report for : mod_kdtree2_mp_kdtree2_sort_results_
+=================================================================
+
+Global optimization report for : mod_kdtree2_mp_heapsort_struct_
+
+LOOP BEGIN at mod_kdtree2.F90 (1504, 18)
+
+    LOOP BEGIN at mod_kdtree2.F90 (1519, 16)
+        remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_kdtree2_mp_build_tree_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split95.split
+
+LOOP BEGIN at mod_kdtree2.F90 (350, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_kdtree2_mp_build_tree_.DIR.OMP.TEAMS.2
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.directive.region.entry
+
+DEAD STATIC FUNC: llvm.directive.region.exit
+
+COMPILE FUNC: mod_kdtree2_mp_heapsort_struct_
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1512,11)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1506,9)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1508,9)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1509,9)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1523,11)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1530,7)
+
+COMPILE FUNC: mod_kdtree2_mp_kdtree2_sort_results_
+   -> mod_kdtree2_mp_heapsort_struct_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1413,23)
+
+COMPILE FUNC: mod_kdtree2._
+
+COMPILE FUNC: mod_kdtree2_mp_spread_in_coordinate_
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (607,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (607,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (608,5)
+
+COMPILE FUNC: mod_kdtree2build_tree_for_range_mp_select_on_coordinate_value_
+
+COMPILE FUNC: mod_kdtree2build_tree_for_range_mp_select_on_coordinate_
+
+COMPILE FUNC: mod_kdtree2_mp_build_tree_for_range_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (383,5)
+   -> llvm.smax.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (384,5)
+   -> mod_kdtree2_mp_spread_in_coordinate_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (394,14)
+   -> mod_kdtree2_mp_spread_in_coordinate_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (421,16)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (423,11)
+   -> INLINE: mod_kdtree2build_tree_for_range_mp_select_on_coordinate_value_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (451,13)
+   -> INLINE: mod_kdtree2build_tree_for_range_mp_select_on_coordinate_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (436,14)
+   -> mod_kdtree2_mp_build_tree_for_range_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (459,19)
+   -> mod_kdtree2_mp_build_tree_for_range_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (460,20)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (463,9)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (467,9)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (473,24)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (451,13)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (451,13)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (451,13)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (451,13)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (451,13)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (451,13)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (436,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (436,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (436,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (436,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (436,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (436,14)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (395,7)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (415,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (479,9)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (480,9)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (401,7)
+
+COMPILE FUNC: mod_kdtree2_mp_build_tree_
+   -> llvm.smax.i32 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (349,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (350,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (350,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (350,5)
+   -> mod_kdtree2_mp_build_tree_for_range_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (353,16)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (350,5)
+
+COMPILE FUNC: mod_kdtree2_mp_kdtree2_create_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (290,5)
+   -> llvm.smax.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (291,5)
+   -> llvm.smax.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (291,5)
+   -> llvm.smax.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (297,7)
+   -> llvm.smax.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (299,5)
+   -> INLINE: mod_kdtree2_mp_build_tree_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (317,10)
+      -> llvm.smax.i32 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (349,5)
+      -> mod_kdtree2_mp_build_tree_for_range_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (353,16)
+   -> llvm.smax.i32 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (332,7)
+   -> llvm.smax.i32 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (332,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (334,9)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (317,10)
+   -> llvm.stacksave /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (341,25)
+   -> llvm.stackrestore /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (354,3)
+
+COMPILE FUNC: mod_kdtree2kdtree2_destroy_mp_destroy_node_
+   -> mod_kdtree2kdtree2_destroy_mp_destroy_node_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (662,14)
+   -> mod_kdtree2kdtree2_destroy_mp_destroy_node_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (666,14)
+
+COMPILE FUNC: mod_kdtree2_mp_kdtree2_destroy_
+   -> mod_kdtree2kdtree2_destroy_mp_destroy_node_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (641,10)
+
+COMPILE FUNC: mod_kdtree2_mp_validate_query_storage_
+
+COMPILE FUNC: mod_kdtree2_mp_process_terminal_node_fixedball_
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1257,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1261,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1262,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1262,5)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1295,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1303,22)
+   -> DELETE: llvm.abs.i32 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1309,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1303,22)
+   -> llvm.abs.i32 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1309,14)
+   -> llvm.abs.i32 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1309,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1295,22)
+   -> llvm.abs.i32 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1309,14)
+
+COMPILE FUNC: mod_kdtree2_mp_process_terminal_node_
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1153,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1158,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1159,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1159,5)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1172,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1180,22)
+   -> llvm.abs.i32 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1186,14)
+   -> llvm.abs.i32 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1186,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1180,22)
+   -> llvm.abs.i32 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1186,14)
+   -> llvm.abs.i32 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1186,14)
+
+COMPILE FUNC: mod_kdtree2_mp_dis2_from_bnd_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1086,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1089,14)
+
+COMPILE FUNC: mod_kdtree2_mp_search_
+   -> mod_kdtree2_mp_process_terminal_node_fixedball_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1027,14)
+   -> mod_kdtree2_mp_process_terminal_node_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1029,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1040,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1045,16)
+   -> mod_kdtree2_mp_search_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1049,34)
+   -> INLINE: mod_kdtree2_mp_dis2_from_bnd_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1065,27)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1086,14)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1089,14)
+   -> mod_kdtree2_mp_search_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1075,16)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1062,11)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1033,7)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1065,27)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1065,27)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1065,27)
+
+COMPILE FUNC: mod_kdtree2_mp_kdtree2_n_nearest_
+   -> llvm.smax.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (686,5)
+   -> llvm.smax.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (693,5)
+   -> INLINE: mod_kdtree2_mp_validate_query_storage_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (706,10)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (707,5)
+   -> mod_kdtree2_mp_search_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (709,10)
+   -> INLINE: mod_kdtree2_mp_kdtree2_sort_results_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (712,12)
+      -> mod_kdtree2_mp_heapsort_struct_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1413,23)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (706,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (712,12)
+
+COMPILE FUNC: mod_kdtree2_mp_kdtree2_n_nearest_around_point_
+   -> llvm.smax.i32 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (727,5)
+   -> llvm.smax.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (739,5)
+   -> INLINE: mod_kdtree2_mp_validate_query_storage_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (750,10)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (751,5)
+   -> mod_kdtree2_mp_search_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (753,10)
+   -> INLINE: mod_kdtree2_mp_kdtree2_sort_results_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (756,12)
+      -> mod_kdtree2_mp_heapsort_struct_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1413,23)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (750,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (756,12)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (728,5)
+
+COMPILE FUNC: mod_kdtree2_mp_kdtree2_r_nearest_
+   -> llvm.smax.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (782,5)
+   -> llvm.smax.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (789,5)
+   -> INLINE: mod_kdtree2_mp_validate_query_storage_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (791,10)
+   -> mod_kdtree2_mp_search_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (809,10)
+   -> INLINE: mod_kdtree2_mp_kdtree2_sort_results_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (812,12)
+      -> mod_kdtree2_mp_heapsort_struct_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1413,23)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (791,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (812,12)
+
+COMPILE FUNC: mod_kdtree2_mp_kdtree2_r_nearest_around_point_
+   -> llvm.smax.i32 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (841,5)
+   -> llvm.smax.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (849,5)
+   -> INLINE: mod_kdtree2_mp_validate_query_storage_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (854,10)
+   -> mod_kdtree2_mp_search_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (873,10)
+   -> INLINE: mod_kdtree2_mp_kdtree2_sort_results_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (876,12)
+      -> mod_kdtree2_mp_heapsort_struct_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1413,23)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (854,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (876,12)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (842,5)
+
+COMPILE FUNC: mod_kdtree2_mp_kdtree2_r_count_
+   -> llvm.smax.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (899,5)
+   -> mod_kdtree2_mp_search_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (925,10)
+
+COMPILE FUNC: mod_kdtree2_mp_kdtree2_r_count_around_point_
+   -> llvm.smax.i32 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (940,5)
+   -> mod_kdtree2_mp_search_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (969,10)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (941,5)
+
+COMPILE FUNC: mod_kdtree2_mp_square_distance_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1000,17)
+
+COMPILE FUNC: mod_kdtree2_mp_kdtree2_n_nearest_brute_force_
+   -> llvm.smax.i32 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1342,5)
+   -> INLINE: mod_kdtree2_mp_square_distance_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1344,26)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1000,17)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1359,11)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1344,26)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1344,26)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1344,26)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1340,50)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1340,50)
+
+COMPILE FUNC: mod_kdtree2_mp_kdtree2_r_nearest_brute_force_
+   -> llvm.smax.i32 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1384,5)
+   -> INLINE: mod_kdtree2_mp_square_distance_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1386,26)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1000,17)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1000,17)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1390,5)
+   -> INLINE: mod_kdtree2_mp_kdtree2_sort_results_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1403,10)
+      -> mod_kdtree2_mp_heapsort_struct_ /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1413,23)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1386,26)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1386,26)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1386,26)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1403,10)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1382,50)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90 (1382,50)
+   -> llvm.smax.i64 /scratch_local/ifx1717382405D2qLLU/ifxkaVR1C.i90
+
+COMPILE FUNC: mod_kdtree2_mp_build_tree_.DIR.OMP.TEAMS.2
+
+COMPILE FUNC: mod_kdtree2_mp_build_tree_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split95.split
+
+---- End Inlining Report ------

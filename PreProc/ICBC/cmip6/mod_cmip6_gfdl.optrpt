@@ -1,0 +1,59 @@
+Global optimization report for : mod_cmip6_gfdl._
+=================================================================
+
+Global optimization report for : mod_cmip6_gfdl_mp_read_hcoord_sst_gfdl_
+=================================================================
+
+Global optimization report for : mod_cmip6_gfdl_mp_read_sst_gfdl_
+
+LOOP BEGIN at mod_cmip6_gfdl.F90 (168, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cmip6_gfdl.F90 (168, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cmip6_gfdl.F90 (169, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cmip6_gfdl.F90 (169, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cmip6_gfdl.F90 (171, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cmip6_gfdl.F90 (171, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_cmip6_gfdl._
+
+COMPILE FUNC: mod_cmip6_gfdl_mp_read_hcoord_sst_gfdl_
+
+COMPILE FUNC: mod_cmip6_gfdl_mp_read_sst_gfdl_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1004537999Ij6QZ2/ifxh3p9eT.i90 (68,26)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1004537999Ij6QZ2/ifxh3p9eT.i90 (108,9)
+   -> mod_cmip6_gfdl_mp_read_hcoord_sst_gfdl_ /scratch_local/ifx1004537999Ij6QZ2/ifxh3p9eT.i90 (109,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1004537999Ij6QZ2/ifxh3p9eT.i90 (146,20)
+   -> llvm.round.f64 /scratch_local/ifx1004537999Ij6QZ2/ifxh3p9eT.i90 (146,14)
+   -> mod_cmip6_gfdl_mp_read_sst_gfdl_ /scratch_local/ifx1004537999Ij6QZ2/ifxh3p9eT.i90 (156,14)
+
+---- End Inlining Report ------

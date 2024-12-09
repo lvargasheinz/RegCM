@@ -1,0 +1,61 @@
+Global optimization report for : mod_runparams._
+=================================================================
+
+Global optimization report for : mod_runparams_mp_allocate_mod_runparams_
+=================================================================
+
+Global optimization report for : mod_runparams_mp_iswater_
+=================================================================
+
+Global optimization report for : mod_runparams_mp_isocean_
+=================================================================
+
+Global optimization report for : mod_runparams_mp_islake_
+=================================================================
+
+Global optimization report for : mod_runparams_mp_exponential_nudging_
+
+LOOP BEGIN at mod_runparams.F90 (619, 23)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+
+LOOP BEGIN at mod_runparams.F90 (610, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_runparamsexponential_nudging_mp_findwhere_
+
+LOOP BEGIN at mod_runparams.F90 (619, 23)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.experimental.noalias.scope.decl
+
+COMPILE FUNC: mod_runparams._
+
+COMPILE FUNC: mod_runparams_mp_allocate_mod_runparams_
+
+COMPILE FUNC: mod_runparams_mp_iswater_
+
+COMPILE FUNC: mod_runparams_mp_isocean_
+
+COMPILE FUNC: mod_runparams_mp_islake_
+
+COMPILE FUNC: mod_runparamsexponential_nudging_mp_findwhere_
+
+COMPILE FUNC: mod_runparams_mp_exponential_nudging_
+   -> INLINE: mod_runparamsexponential_nudging_mp_findwhere_ /scratch_local/ifx0112331135x5XGIa/ifxAvg5sa.i90 (608,5)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0112331135x5XGIa/ifxAvg5sa.i90 (608,5)
+
+---- End Inlining Report ------

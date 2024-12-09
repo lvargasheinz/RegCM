@@ -1,0 +1,312 @@
+Global optimization report for : mod_mkurban._
+=================================================================
+
+Global optimization report for : mod_mkurban_mp_mkurban_base_
+
+LOOP BEGIN at mod_mkurban.F90 (120, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_mkurban.F90 (121, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_mkurban.F90 (122, 26)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_mkurban.F90 (136, 12)
+<Predicate Optimized v2>
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_mkurban.F90 (136, 12)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_mkurban.F90 (136, 12)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 136 hoisted out of this loop
+    remark #25423: Invariant If condition at line 0 hoisted out of this loop
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+
+    LOOP BEGIN at mod_mkurban.F90 (136, 12)
+    <Multiversioned v1>
+        remark #25408: memset generated
+        remark #25562: The loop has been multiversioned for the small trip count
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_mkurban.F90 (136, 12)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_mkurban.F90 (136, 12)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_mkurban.F90 (136, 12)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_mkurban.F90 (136, 5)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+
+    LOOP BEGIN at mod_mkurban.F90 (136, 5)
+        remark #15319: Loop was not vectorized: novector directive used
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_mkurban.F90 (136, 5)
+<Predicate Optimized v2>
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_mkurban.F90 (136, 5)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_mkurban.F90 (136, 5)
+<Multiversioned v1>
+<Predicate Optimized v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25423: Invariant If condition at line 136 hoisted out of this loop
+    remark #25423: Invariant If condition at line 0 hoisted out of this loop
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+
+    LOOP BEGIN at mod_mkurban.F90 (136, 5)
+    <Multiversioned v1>
+        remark #25399: memcopy generated
+        remark #25562: The loop has been multiversioned for the small trip count
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_mkurban.F90 (138, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_mkurban.F90 (139, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_mkurban.F90 (140, 26)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_mkurban.F90 (144, 22)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between (144:22) and (144:22) 
+                remark #15346: vector dependence: assumed FLOW dependence between (144:22) and (144:22) 
+                remark #15346: vector dependence: assumed FLOW dependence between (144:22) and (144:22) 
+                remark #15346: vector dependence: assumed FLOW dependence between (144:22) and (144:22) 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_mkurban_mp_mkurban_param_
+
+LOOP BEGIN at mod_mkurban.F90 (168, 5)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+
+LOOP BEGIN at mod_mkurban.F90 (175, 5)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+
+LOOP BEGIN at mod_mkurban.F90 (179, 5)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+
+LOOP BEGIN at mod_mkurban.F90 (185, 5)
+
+    LOOP BEGIN at mod_mkurban.F90 (228, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_mkurban.F90 (228, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_mkurban.F90 (228, 13)
+                remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                LOOP BEGIN at mod_mkurban.F90 (228, 13)
+                    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                    LOOP BEGIN at mod_mkurban.F90 (228, 13)
+                        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+                    LOOP END
+                LOOP END
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_mkurban.F90 (231, 13)
+
+        LOOP BEGIN at mod_mkurban.F90 (232, 15)
+
+            LOOP BEGIN at mod_mkurban.F90 (234, 17)
+
+                LOOP BEGIN at mod_mkurban.F90 (235, 19)
+                <Multiversioned v1>
+                    remark #25228: Loop multiversioned for Data Dependence
+                    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                    LOOP BEGIN at mod_mkurban.F90 (236, 36)
+                        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+                    LOOP END
+                LOOP END
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_mkurban.F90 (209, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_mkurban.F90 (209, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_mkurban.F90 (209, 13)
+                remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                LOOP BEGIN at mod_mkurban.F90 (209, 13)
+                    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+                LOOP END
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_mkurban.F90 (212, 13)
+
+        LOOP BEGIN at mod_mkurban.F90 (214, 15)
+
+            LOOP BEGIN at mod_mkurban.F90 (215, 17)
+            <Multiversioned v1>
+                remark #25228: Loop multiversioned for Data Dependence
+                remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                LOOP BEGIN at mod_mkurban.F90 (216, 34)
+                    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+                LOOP END
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_mkurban.F90 (192, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_mkurban.F90 (192, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_mkurban.F90 (192, 13)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_mkurban.F90 (196, 13)
+
+        LOOP BEGIN at mod_mkurban.F90 (197, 15)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_mkurban.F90 (198, 32)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_mkurban_mp_ip2d_
+
+LOOP BEGIN at mod_mkurban.F90 (255, 18)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+=================================================================
+
+Global optimization report for : mod_mkurban_mp_ip3d_
+
+LOOP BEGIN at mod_mkurban.F90 (265, 5)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+=================================================================
+
+Global optimization report for : mod_mkurban_mp_ip4d_
+
+LOOP BEGIN at mod_mkurban.F90 (276, 5)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_mkurban._
+
+COMPILE FUNC: mod_mkurban_mp_mkurban_base_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (102,14)
+   -> llvm.smax.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (112,5)
+   -> llvm.round.f64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (128,40)
+   -> llvm.smax.i32 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (128,34)
+   -> llvm.umin.i32 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (128,30)
+   -> llvm.smax.i32 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (135,5)
+   -> llvm.smax.i32 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (135,5)
+   -> llvm.smax.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (136,5)
+   -> llvm.smax.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (136,5)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (145,56)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (110,49)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (110,49)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (102,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (102,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (136,12)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (136,5)
+
+COMPILE FUNC: mod_mkurban_mp_ip3d_
+
+COMPILE FUNC: mod_mkurban_mp_ip4d_
+
+COMPILE FUNC: mod_mkurban_mp_ip2d_
+   -> DELETE: for_cpstr /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (255,18)
+
+COMPILE FUNC: mod_mkurban_mp_mkurban_param_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (154,14)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (169,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (173,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (177,7)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (194,11)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (195,13)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (195,13)
+   -> mod_mkurban_mp_ip3d_ /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (205,16)
+   -> llvm.smax.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (206,11)
+   -> llvm.smax.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (206,11)
+   -> llvm.smax.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (206,11)
+   -> llvm.smax.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (206,11)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (211,11)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (212,13)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (213,15)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (213,15)
+   -> mod_mkurban_mp_ip4d_ /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (224,16)
+   -> llvm.smax.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (225,11)
+   -> llvm.smax.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (225,11)
+   -> llvm.smax.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (225,11)
+   -> llvm.smax.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (225,11)
+   -> llvm.smax.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (225,11)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (230,11)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (231,13)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (232,15)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (233,17)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (233,17)
+   -> mod_mkurban_mp_ip2d_ /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (188,16)
+   -> llvm.smax.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (189,11)
+   -> llvm.smax.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (189,11)
+   -> llvm.smax.i64 /scratch_local/ifx0149486013C8Irpe/ifxwwRKO3.i90 (189,11)
+
+---- End Inlining Report ------

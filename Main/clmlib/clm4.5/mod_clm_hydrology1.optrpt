@@ -1,0 +1,168 @@
+Global optimization report for : mod_clm_hydrology1._
+=================================================================
+
+Global optimization report for : mod_clm_hydrology1_mp_hydrology1_readnl_
+=================================================================
+
+Global optimization report for : mod_clm_hydrology1_mp_hydrology1_
+
+LOOP BEGIN at mod_clm_hydrology1.F90 (345, 31)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (409:9) and (336:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (409:9) and (337:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (409:9) and (338:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (409:9) and (343:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (413:9) and (336:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (413:9) and (337:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (413:9) and (338:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (413:9) and (343:7) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between (413:9) and (409:9) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between qflx_candrip (347:9) and qflx_candrip (410:9) 
+LOOP END
+
+LOOP BEGIN at mod_clm_hydrology1.F90 (489, 37)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (0:0) and (489:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (0:0) and (488:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (0:0) and (491:9) 
+LOOP END
+
+LOOP BEGIN at mod_clm_hydrology1.F90 (512, 7)
+
+    LOOP BEGIN at mod_clm_hydrology1.F90 (514, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_hydrology1.F90 (517, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_hydrology1.F90 (685, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_hydrology1.F90 (686, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_hydrology1.F90 (687, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_hydrology1.F90 (691, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_hydrology1.F90 (692, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_hydrology1.F90 (693, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_hydrology1.F90 (697, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_hydrology1.F90 (698, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_hydrology1.F90 (699, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_hydrology1.F90 (700, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_hydrology1.F90 (701, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_hydrology1.F90 (717, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_hydrology1.F90 (717, 59)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_clm_hydrology1_mp_hydrology1_
+   -> llvm.smax.i32 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (74,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (74,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (74,14)
+   -> llvm.smax.i32 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (74,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (74,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (74,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (74,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (74,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (74,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (74,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (74,14)
+   -> llvm.exp.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (377,43)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (377,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (382,52)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (383,52)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (386,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (398,21)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (362,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (369,36)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (357,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (432,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (434,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (528,39)
+   -> llvm.pow.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (528,66)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (534,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (552,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (552,43)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (554,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (554,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (554,65)
+   -> llvm.pow.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (554,62)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (561,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (561,63)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (566,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (567,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (568,21)
+   -> llvm.pow.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (567,72)
+   -> llvm.cos.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (567,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (567,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (567,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (577,57)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (591,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (591,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (590,49)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (625,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (624,51)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (609,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (610,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (611,23)
+   -> llvm.pow.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (610,74)
+   -> llvm.cos.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (610,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (610,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (610,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (644,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1258832284tlLapk/ifxUA6xoG.i90 (521,23)
+
+COMPILE FUNC: mod_clm_hydrology1._
+
+COMPILE FUNC: mod_clm_hydrology1_mp_hydrology1_readnl_
+
+---- End Inlining Report ------

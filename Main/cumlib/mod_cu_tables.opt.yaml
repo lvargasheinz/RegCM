@@ -1,0 +1,164 @@
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+Function:        mod_cu_tables._
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        mod_cu_tables._
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_0
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+Function:        mod_cu_tables._
+Args:
+  - NumInstructions: '1'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            LoopSpillReloadCopies
+DebugLoc:        { File: mod_cu_tables.F90, Line: 81, Column: 5 }
+Function:        mod_cu_tables_mp_init_convect_tables_
+Args:
+  - NumSpills:       '6'
+  - String:          ' spills '
+  - TotalSpillsCost: '1.912500e+02'
+  - String:          ' total spills cost '
+  - NumReloads:      '3'
+  - String:          ' reloads '
+  - TotalReloadsCost: '9.562500e+01'
+  - String:          ' total reloads cost '
+  - NumFoldedReloads: '3'
+  - String:          ' folded reloads '
+  - TotalFoldedReloadsCost: '9.562500e+01'
+  - String:          ' total folded reloads cost '
+  - NumVRCopies:     '14'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '3.982500e+02'
+  - String:          ' total copies cost '
+  - String:          generated in loop
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: mod_cu_tables.F90, Line: 54, Column: 1 }
+Function:        mod_cu_tables_mp_init_convect_tables_
+Args:
+  - NumSpills:       '6'
+  - String:          ' spills '
+  - TotalSpillsCost: '1.912500e+02'
+  - String:          ' total spills cost '
+  - NumReloads:      '3'
+  - String:          ' reloads '
+  - TotalReloadsCost: '9.562500e+01'
+  - String:          ' total reloads cost '
+  - NumFoldedReloads: '3'
+  - String:          ' folded reloads '
+  - TotalFoldedReloadsCost: '9.562500e+01'
+  - String:          ' total folded reloads cost '
+  - NumVRCopies:     '14'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '3.982500e+02'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: mod_cu_tables.F90, Line: 54, Column: 0 }
+Function:        mod_cu_tables_mp_init_convect_tables_
+Args:
+  - NumStackBytes:   '88'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        mod_cu_tables_mp_init_convect_tables_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_1
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '17'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_cu_tables.F90, Line: 0, Column: 0 }
+Function:        mod_cu_tables_mp_init_convect_tables_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb2_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '67'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_cu_tables.F90, Line: 0, Column: 0 }
+Function:        mod_cu_tables_mp_init_convect_tables_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body6
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '11'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_cu_tables.F90, Line: 0, Column: 0 }
+Function:        mod_cu_tables_mp_init_convect_tables_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new23_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '9'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_cu_tables.F90, Line: 0, Column: 0 }
+Function:        mod_cu_tables_mp_init_convect_tables_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog9
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '7'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: mod_cu_tables.F90, Line: 54, Column: 0 }
+Function:        mod_cu_tables_mp_init_convect_tables_
+Args:
+  - NumInstructions: '116'
+  - String:          ' instructions in function'
+...

@@ -1,0 +1,98 @@
+Global optimization report for : mod_che_chemistry._
+=================================================================
+
+Global optimization report for : mod_che_chemistry_mp_chemistry_
+
+LOOP BEGIN at mod_che_chemistry.F90 (61, 7)
+
+    LOOP BEGIN at mod_che_chemistry.F90 (62, 9)
+
+        LOOP BEGIN at mod_che_chemistry.F90 (65, 23)
+
+            LOOP BEGIN at mod_che_chemistry.F90 (77, 24)
+                remark #25045: Fused Loops: 77,78
+                remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between (77:24) and (77:24) 
+                remark #15346: vector dependence: assumed FLOW dependence between (78:24) and (78:24) 
+            LOOP END
+
+            LOOP BEGIN at mod_che_chemistry.F90 (78, 24)
+                remark #25046: Loop lost in Fusion
+            LOOP END
+
+            LOOP BEGIN at mod_che_chemistry.F90 (79, 24)
+                remark #25045: Fused Loops: 79,80
+                remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between (79:24) and (79:24) 
+                remark #15346: vector dependence: assumed FLOW dependence between (80:24) and (80:24) 
+            LOOP END
+
+            LOOP BEGIN at mod_che_chemistry.F90 (80, 24)
+                remark #25046: Loop lost in Fusion
+            LOOP END
+
+            LOOP BEGIN at mod_che_chemistry.F90 (86, 11)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at mod_che_chemistry.F90 (87, 11)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at mod_che_chemistry.F90 (88, 11)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at mod_che_chemistry.F90 (100, 34)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between xrin (101:16) and (100:23) 
+                remark #15346: vector dependence: assumed FLOW dependence between xrin (101:16) and chib3d (101:16) 
+                remark #15346: vector dependence: assumed FLOW dependence between xrin (101:16) and (101:73) 
+            LOOP END
+
+            LOOP BEGIN at mod_che_chemistry.F90 (110, 11)
+            <Multiversioned v1>
+                remark #25228: Loop multiversioned for Data Dependence
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at mod_che_chemistry.F90 (124, 11)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at mod_che_chemistry.F90 (135, 34)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed ANTI dependence between (138:68) and chemten (140:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between chemten (138:17) and (135:23) 
+                remark #15346: vector dependence: assumed FLOW dependence between chemten (138:17) and xrout (136:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between chemten (138:17) and xrin (136:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between chemten (138:17) and (138:68) 
+                remark #15346: vector dependence: assumed FLOW dependence between chemten (140:17) and (135:23) 
+                remark #15346: vector dependence: assumed FLOW dependence between chemten (140:17) and xrout (136:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between chemten (140:17) and xrin (136:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between chemten (140:17) and (138:68) 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_che_chemistry._
+
+COMPILE FUNC: mod_che_chemistry_mp_chemistry_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0145086074xpNsgT/ifx8tSWfr.i90 (70,39)
+   -> llvm.fabs.f64 /scratch_local/ifx0145086074xpNsgT/ifx8tSWfr.i90 (111,18)
+   -> llvm.fabs.f64 /scratch_local/ifx0145086074xpNsgT/ifx8tSWfr.i90 (137,20)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx0145086074xpNsgT/ifx8tSWfr.i90 (79,24)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx0145086074xpNsgT/ifx8tSWfr.i90 (80,24)
+
+---- End Inlining Report ------

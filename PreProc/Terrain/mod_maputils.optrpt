@@ -1,0 +1,63 @@
+Global optimization report for : mod_maputils._
+=================================================================
+
+Global optimization report for : mod_maputils_mp_getcoord_
+
+LOOP BEGIN at mod_maputils.F90 (45, 7)
+
+    LOOP BEGIN at mod_maputils.F90 (45, 7)
+        remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_maputils_mp_corpar_
+
+LOOP BEGIN at mod_maputils.F90 (53, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_maputils.F90 (53, 5)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_maputils.F90 (53, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_maputils.F90 (53, 5)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_maputils_mp_mappar_
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.memcpy.p0.p0.i64
+
+COMPILE FUNC: mod_maputils._
+
+COMPILE FUNC: mod_maputils_mp_getcoord_
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx14404813375wh1CN/ifxECGXx1.i90 (33,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx14404813375wh1CN/ifxECGXx1.i90 (33,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx14404813375wh1CN/ifxECGXx1.i90 (41,5)
+   -> llvm.memset.p0.i64 /scratch_local/ifx14404813375wh1CN/ifxECGXx1.i90 (44,14)
+
+COMPILE FUNC: mod_maputils_mp_corpar_
+   -> llvm.sin.f64 /scratch_local/ifx14404813375wh1CN/ifxECGXx1.i90 (53,26)
+
+COMPILE FUNC: mod_maputils_mp_mappar_
+   -> llvm.memset.p0.i64 /scratch_local/ifx14404813375wh1CN/ifxECGXx1.i90 (61,10)
+
+---- End Inlining Report ------

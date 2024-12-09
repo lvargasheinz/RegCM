@@ -1,0 +1,77 @@
+Global optimization report for : mod_ocn_albedo._
+=================================================================
+
+Global optimization report for : mod_ocn_albedo_mp_ocn_albedo_
+
+LOOP BEGIN at mod_ocn_albedo.F90 (83, 25)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between swdiral (190:7) and czenith (77:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between swdiral (190:7) and mask (83:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between swdiral (190:7) and um10 (85:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between swdiral (190:7) and um10 (104:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between swdiral (190:7) and t2m (145:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between swdiral (190:7) and sncv (153:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between swdiral (190:7) and snag (160:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between lwdiral (191:7) and czenith (77:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between lwdiral (191:7) and mask (83:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between lwdiral (191:7) and um10 (85:11) 
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_ocn_albedo._
+
+COMPILE FUNC: mod_ocn_albedo_mp_ocn_albedo_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (95,39)
+   -> llvm.powi.f64.i32 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (110,35)
+   -> llvm.powi.f64.i32 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (110,55)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (111,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (111,53)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (112,45)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (112,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (111,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (115,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (114,32)
+   -> llvm.powi.f64.i32 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (115,56)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (114,21)
+   -> DELETE: llvm.powi.f64.i32 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (117,36)
+   -> DELETE: llvm.powi.f64.i32 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (117,52)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (118,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (116,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (120,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (122,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (123,54)
+   -> llvm.exp.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (123,48)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (124,35)
+   -> llvm.exp.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (124,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (123,31)
+   -> llvm.powi.f64.i32 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (106,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (106,27)
+   -> llvm.pow.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (107,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (128,22)
+   -> llvm.pow.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (88,36)
+   -> llvm.pow.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (91,36)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (91,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (92,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (92,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (92,62)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (160,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (160,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (161,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (162,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (169,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (171,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (171,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (171,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (173,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (175,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (176,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0707467920EQaO6T/ifxQd80SW.i90 (181,20)
+
+---- End Inlining Report ------

@@ -1,0 +1,2310 @@
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 18 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - Callee:          for_allocate_handle
+  - String:          ' will not be inlined into '
+  - Caller:          rrtmg_lw_cldprop_mp_cldprop_
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 309, Column: 7 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - Callee:          for_deallocate_handle
+  - String:          ' will not be inlined into '
+  - Caller:          rrtmg_lw_cldprop_mp_cldprop_
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 18 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - Callee:          for_allocate_handle
+  - String:          ' will not be inlined into '
+  - Caller:          rrtmg_lw_cldprop_mp_cldprop_
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 309, Column: 7 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - Callee:          for_deallocate_handle
+  - String:          ' will not be inlined into '
+  - Caller:          rrtmg_lw_cldprop_mp_cldprop_
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 18 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - Callee:          for_allocate_handle
+  - String:          ' will not be inlined into '
+  - Caller:          rrtmg_lw_cldprop_mp_cldprop_
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 309, Column: 7 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - Callee:          for_deallocate_handle
+  - String:          ' will not be inlined into '
+  - Caller:          rrtmg_lw_cldprop_mp_cldprop_
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 18 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - Callee:          for_allocate_handle
+  - String:          ' will not be inlined into '
+  - Caller:          rrtmg_lw_cldprop_mp_cldprop_
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 309, Column: 7 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - Callee:          for_deallocate_handle
+  - String:          ' will not be inlined into '
+  - Caller:          rrtmg_lw_cldprop_mp_cldprop_
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 179, Column: 13 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 179, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 179, Column: 13 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 179, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 179, Column: 13 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 179, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 179, Column: 13 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 179, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 179, Column: 13 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 179, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 179, Column: 13 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            zext
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 179, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 179, Column: 13 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 179, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 179, Column: 13 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 179, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            PromoteLoopAccessesToScalar
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          Moving accesses to memory location out of the loop
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 179, Column: 13 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 179, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 179, Column: 13 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 179, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 179, Column: 13 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 179, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 179, Column: 13 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 179, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 179, Column: 13 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 179, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 179, Column: 13 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 179, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 179, Column: 13 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 179, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 262, Column: 25 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            sext
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 262, Column: 25 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 262, Column: 25 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            add
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 262, Column: 25 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 262, Column: 25 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            sext
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 262, Column: 25 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 243, Column: 25 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            sext
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 243, Column: 25 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 243, Column: 25 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            add
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 243, Column: 25 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 243, Column: 25 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            sext
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 243, Column: 25 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 293, Column: 22 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            sext
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 293, Column: 22 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 293, Column: 22 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            add
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 293, Column: 22 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 293, Column: 22 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            sext
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 293, Column: 22 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            zext
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 301, Column: 19 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 301, Column: 19 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            zext
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 302, Column: 39 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 302, Column: 39 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 200, Column: 19 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 200, Column: 19 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 200, Column: 46 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            fmul
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 200, Column: 46 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 194, Column: 19 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 194, Column: 19 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 186, Column: 10 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 186, Column: 10 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 186, Column: 10 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 186, Column: 10 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 186, Column: 10 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 186, Column: 10 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 186, Column: 10 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 186, Column: 10 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 186, Column: 10 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 186, Column: 10 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 186, Column: 10 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 186, Column: 10 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 186, Column: 10 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 186, Column: 10 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 186, Column: 10 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 186, Column: 10 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 186, Column: 10 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 186, Column: 10 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 186, Column: 10 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 186, Column: 10 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 187, Column: 10 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 187, Column: 10 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 187, Column: 10 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 187, Column: 10 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 187, Column: 10 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 187, Column: 10 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 187, Column: 10 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 187, Column: 10 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 187, Column: 10 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 187, Column: 10 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 191, Column: 13 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 212, Column: 16 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 276, Column: 16 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 277, Column: 19 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 300, Column: 16 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 200, Column: 19 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 300, Column: 16 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            PromoteLoopAccessesToScalar
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 300, Column: 16 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          Moving accesses to memory location out of the loop
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 191, Column: 13 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 191, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 205, Column: 16 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 205, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 205, Column: 16 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 205, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 205, Column: 16 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 205, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 205, Column: 16 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 205, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 205, Column: 16 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 205, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 212, Column: 16 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 212, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 216, Column: 19 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 216, Column: 19 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 216, Column: 19 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 216, Column: 19 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 216, Column: 19 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 216, Column: 19 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 216, Column: 19 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 216, Column: 19 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 216, Column: 44 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 216, Column: 44 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 209, Column: 19 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 209, Column: 19 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 276, Column: 16 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 276, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 282, Column: 19 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 282, Column: 19 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 282, Column: 19 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 282, Column: 19 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 282, Column: 19 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 282, Column: 19 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 282, Column: 19 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 282, Column: 19 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 282, Column: 19 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 282, Column: 19 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 277, Column: 19 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 277, Column: 19 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 277, Column: 19 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 277, Column: 19 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 272, Column: 19 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 272, Column: 19 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 200, Column: 19 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 200, Column: 19 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 18 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 18 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 18 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 18 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 18 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  ''
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 277, Column: 19 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 200, Column: 19 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 309, Column: 7 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 18 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 18 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 18 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 18 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 18 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 277, Column: 19 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 200, Column: 19 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 309, Column: 7 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 18 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 18 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 18 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 18 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 216, Column: 19 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 216, Column: 19 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 277, Column: 19 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 200, Column: 19 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 309, Column: 7 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 18 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 18 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 18 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 18 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 216, Column: 19 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 216, Column: 19 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 277, Column: 19 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 200, Column: 19 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 180, Column: 13 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 309, Column: 7 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 18 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 18 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 179, Column: 13 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            mul
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 179, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 262, Column: 25 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            add
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 262, Column: 25 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 243, Column: 25 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            add
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 243, Column: 25 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 293, Column: 22 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            add
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 293, Column: 22 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 302, Column: 66 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            mul
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 302, Column: 66 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 200, Column: 46 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            mul
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 200, Column: 46 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 194, Column: 19 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'hoisting '
+  - Inst:            mul
+    DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 194, Column: 19 }
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+Function:        rrtmg_lw_cldprop._
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        rrtmg_lw_cldprop._
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_0
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+Function:        rrtmg_lw_cldprop._
+Args:
+  - NumInstructions: '1'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            LoopSpillReloadCopies
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 265, Column: 22 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - NumVRCopies:     '1'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '6.095238e+00'
+  - String:          ' total copies cost '
+  - String:          generated in loop
+...
+--- !Missed
+Pass:            regalloc
+Name:            LoopSpillReloadCopies
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 246, Column: 22 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - NumVRCopies:     '1'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '6.095238e+00'
+  - String:          ' total copies cost '
+  - String:          generated in loop
+...
+--- !Missed
+Pass:            regalloc
+Name:            LoopSpillReloadCopies
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 296, Column: 19 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - NumVRCopies:     '1'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '1.014286e+01'
+  - String:          ' total copies cost '
+  - String:          generated in loop
+...
+--- !Missed
+Pass:            regalloc
+Name:            LoopSpillReloadCopies
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 187, Column: 39 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - NumSpills:       '2'
+  - String:          ' spills '
+  - TotalSpillsCost: '5.047619e+00'
+  - String:          ' total spills cost '
+  - NumFoldedSpills: '6'
+  - String:          ' folded spills '
+  - TotalFoldedSpillsCost: '5.928572e+00'
+  - String:          ' total folded spills cost '
+  - NumReloads:      '27'
+  - String:          ' reloads '
+  - TotalReloadsCost: '9.257143e+01'
+  - String:          ' total reloads cost '
+  - NumFoldedReloads: '2'
+  - String:          ' folded reloads '
+  - TotalFoldedReloadsCost: '2.833333e+00'
+  - String:          ' total folded reloads cost '
+  - NumVRCopies:     '42'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '2.304524e+02'
+  - String:          ' total copies cost '
+  - String:          generated in loop
+...
+--- !Missed
+Pass:            regalloc
+Name:            LoopSpillReloadCopies
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 178, Column: 10 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - NumVRCopies:     '2'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '4.061905e+01'
+  - String:          ' total copies cost '
+  - String:          generated in loop
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 1 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - NumSpills:       '27'
+  - String:          ' spills '
+  - TotalSpillsCost: '2.204762e+01'
+  - String:          ' total spills cost '
+  - NumFoldedSpills: '8'
+  - String:          ' folded spills '
+  - TotalFoldedSpillsCost: '7.166667e+00'
+  - String:          ' total folded spills cost '
+  - NumReloads:      '39'
+  - String:          ' reloads '
+  - TotalReloadsCost: '1.001429e+02'
+  - String:          ' total reloads cost '
+  - NumFoldedReloads: '2'
+  - String:          ' folded reloads '
+  - TotalFoldedReloadsCost: '2.833333e+00'
+  - String:          ' total folded reloads cost '
+  - NumVRCopies:     '57'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '2.807857e+02'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - NumStackBytes:   '552'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 26 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      end_dealloc_heap_array6
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '45'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_body20.preheader
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '10'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      then.444
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '7'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      else.444
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop.445
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ifmerge.444
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '10'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body22
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body26
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog29
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body32.preheader
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '55'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb37_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      .split
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body32
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '10'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body32
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '18'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new40_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new40_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new40_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new55_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new57_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      .split876
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      .split876
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new109_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      .split869
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      .split869
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '12'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body137
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '12'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      .split
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new41_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body42
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      .split
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new48_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body49
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      .split
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new59_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new59_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '10'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new60_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb19_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new113_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new113_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new119_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '21'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body127
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '11'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      .split869
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new114_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new63_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body64
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '7'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      .split876
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new71_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '17'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body79
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '12'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new90_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '17'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body98
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '11'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      .split876
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 0, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      dealloc.list.then142
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '21'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: rrtmg_lw_cldprop.F90, Line: 50, Column: 0 }
+Function:        rrtmg_lw_cldprop_mp_cldprop_
+Args:
+  - NumInstructions: '437'
+  - String:          ' instructions in function'
+...

@@ -1,0 +1,3204 @@
+Global optimization report for : rrtmg_sw_init._
+=================================================================
+
+Global optimization report for : rrtmg_sw_init_mp_rrtmg_sw_ini_
+
+LOOP BEGIN at rrtmg_sw_init.F90 (116, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (118, 7)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (134, 23)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (149, 13)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (135, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (138, 16)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between wtsum (140:33) and wtsum (140:33) 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (147, 13)
+        remark #15300: LOOP WAS VECTORIZED
+        remark #15305: vectorization support: vector length 4
+    LOOP END
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (144, 13)
+    <Remainder loop for vectorization>
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1448, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (1455, 10)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between sumf1 (1450:27) and sumf1 (1450:27) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumf2 (1451:27) and sumf2 (1451:27) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumsv1 (1452:29) and sumsv1 (1452:29) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumsv2 (1453:29) and sumsv2 (1453:29) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumsv3 (1454:29) and sumsv3 (1454:29) 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : rrtmg_sw_init_mp_swdatinit_
+
+LOOP BEGIN at rrtmg_sw_init.F90 (194, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (198, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (202, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (208, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (209, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (210, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (194, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (198, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (202, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (208, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (209, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (210, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+=================================================================
+
+Global optimization report for : rrtmg_sw_init_mp_swcmbdat_
+
+LOOP BEGIN at rrtmg_sw_init.F90 (293, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (294, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (295, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (309, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (323, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (386, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (293, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (294, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (295, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (309, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (323, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (386, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+=================================================================
+
+Global optimization report for : rrtmg_sw_init_mp_swaerpr_
+
+LOOP BEGIN at rrtmg_sw_init.F90 (409, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrtaua (409:7) and (409:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (411, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrtaua (411:7) and (411:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (413, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrtaua (413:7) and (413:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (415, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrtaua (415:7) and (415:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (417, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrtaua (417:7) and (417:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (419, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrtaua (419:7) and (419:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (421, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrtaua (421:7) and (421:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (423, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrtaua (423:7) and (423:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (425, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrtaua (425:7) and (425:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (427, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrtaua (427:7) and (427:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (429, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrtaua (429:7) and (429:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (431, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrtaua (431:7) and (431:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (433, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrtaua (433:7) and (433:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (435, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrtaua (435:7) and (435:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (438, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrpiza (438:7) and (438:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (440, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrpiza (440:7) and (440:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (442, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrpiza (442:7) and (442:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (444, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrpiza (444:7) and (444:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (446, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrpiza (446:7) and (446:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (448, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrpiza (448:7) and (448:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (450, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrpiza (450:7) and (450:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (452, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrpiza (452:7) and (452:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (454, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrpiza (454:7) and (454:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (456, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrpiza (456:7) and (456:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (458, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrpiza (458:7) and (458:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (460, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrpiza (460:7) and (460:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (462, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrpiza (462:7) and (462:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (464, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrpiza (464:7) and (464:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (467, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrasya (467:7) and (467:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (469, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrasya (469:7) and (469:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (471, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrasya (471:7) and (471:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (473, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrasya (473:7) and (473:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (475, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrasya (475:7) and (475:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (477, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrasya (477:7) and (477:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (479, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrasya (479:7) and (479:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (481, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrasya (481:7) and (481:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (483, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrasya (483:7) and (483:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (485, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrasya (485:7) and (485:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (487, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrasya (487:7) and (487:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (489, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrasya (489:7) and (489:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (491, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrasya (491:7) and (491:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (493, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between rsrasya (493:7) and (493:7) 
+LOOP END
+=================================================================
+
+Global optimization report for : rrtmg_sw_init_mp_cmbgb16s_
+
+LOOP BEGIN at rrtmg_sw_init.F90 (528, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (529, 10)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (530, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at rrtmg_sw_init.F90 (534, 19)
+                remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                LOOP BEGIN at rrtmg_sw_init.F90 (537, 19)
+                    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                    remark #15346: vector dependence: assumed FLOW dependence between sumk (536:34) and sumk (536:34) 
+                LOOP END
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (545, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (545, 10)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (549, 16)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at rrtmg_sw_init.F90 (552, 16)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between sumk (551:31) and sumk (551:31) 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (560, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (562, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (565, 13)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between sumk (564:28) and sumk (564:28) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (572, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (574, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (577, 13)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between sumk (576:28) and sumk (576:28) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (588, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (594, 10)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between sumf (590:25) and sumf (590:25) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumsv1 (591:29) and sumsv1 (591:29) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumsv2 (592:29) and sumsv2 (592:29) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumsv3 (593:29) and sumsv3 (593:29) 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : rrtmg_sw_init_mp_cmbgb17_
+
+LOOP BEGIN at rrtmg_sw_init.F90 (620, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (621, 10)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (622, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at rrtmg_sw_init.F90 (626, 19)
+                remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                LOOP BEGIN at rrtmg_sw_init.F90 (629, 19)
+                    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                    remark #15346: vector dependence: assumed FLOW dependence between sumk (628:34) and sumk (628:34) 
+                LOOP END
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (637, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (637, 10)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (638, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at rrtmg_sw_init.F90 (642, 19)
+                remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                LOOP BEGIN at rrtmg_sw_init.F90 (645, 19)
+                    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                    remark #15346: vector dependence: assumed FLOW dependence between sumk (644:34) and sumk (644:34) 
+                LOOP END
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (654, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (656, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (659, 13)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between sumk (658:28) and sumk (658:28) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (666, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (668, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (671, 13)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between sumk (670:28) and sumk (670:28) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (678, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (683, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (689, 13)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between sumf (685:28) and sumf (685:28) 
+            remark #15346: vector dependence: assumed FLOW dependence between sumsv1 (686:32) and sumsv1 (686:32) 
+            remark #15346: vector dependence: assumed FLOW dependence between sumsv2 (687:32) and sumsv2 (687:32) 
+            remark #15346: vector dependence: assumed FLOW dependence between sumsv3 (688:32) and sumsv3 (688:32) 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : rrtmg_sw_init_mp_cmbgb18_
+
+LOOP BEGIN at rrtmg_sw_init.F90 (716, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (717, 10)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (718, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at rrtmg_sw_init.F90 (722, 19)
+                remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                LOOP BEGIN at rrtmg_sw_init.F90 (725, 19)
+                    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                    remark #15346: vector dependence: assumed FLOW dependence between sumk (724:34) and sumk (724:34) 
+                LOOP END
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (733, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (733, 10)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (737, 16)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at rrtmg_sw_init.F90 (740, 16)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between sumk (739:31) and sumk (739:31) 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (748, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (750, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (753, 13)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between sumk (752:28) and sumk (752:28) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (760, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (762, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (765, 13)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between sumk (764:28) and sumk (764:28) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (772, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (777, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (783, 13)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between sumf (779:28) and sumf (779:28) 
+            remark #15346: vector dependence: assumed FLOW dependence between sumsv1 (780:32) and sumsv1 (780:32) 
+            remark #15346: vector dependence: assumed FLOW dependence between sumsv2 (781:32) and sumsv2 (781:32) 
+            remark #15346: vector dependence: assumed FLOW dependence between sumsv3 (782:32) and sumsv3 (782:32) 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : rrtmg_sw_init_mp_cmbgb19_
+
+LOOP BEGIN at rrtmg_sw_init.F90 (810, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (811, 10)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (812, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at rrtmg_sw_init.F90 (816, 19)
+                remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                LOOP BEGIN at rrtmg_sw_init.F90 (819, 19)
+                    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                    remark #15346: vector dependence: assumed FLOW dependence between sumk (818:34) and sumk (818:34) 
+                LOOP END
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (827, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (827, 10)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (831, 16)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at rrtmg_sw_init.F90 (834, 16)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between sumk (833:31) and sumk (833:31) 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (842, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (844, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (847, 13)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between sumk (846:28) and sumk (846:28) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (854, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (856, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (859, 13)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between sumk (858:28) and sumk (858:28) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (866, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (871, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (877, 13)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between sumf (873:28) and sumf (873:28) 
+            remark #15346: vector dependence: assumed FLOW dependence between sumsv1 (874:32) and sumsv1 (874:32) 
+            remark #15346: vector dependence: assumed FLOW dependence between sumsv2 (875:32) and sumsv2 (875:32) 
+            remark #15346: vector dependence: assumed FLOW dependence between sumsv3 (876:32) and sumsv3 (876:32) 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : rrtmg_sw_init_mp_cmbgb20_
+
+LOOP BEGIN at rrtmg_sw_init.F90 (904, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (905, 10)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (909, 16)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at rrtmg_sw_init.F90 (912, 16)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between sumk (911:31) and sumk (911:31) 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (918, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (920, 16)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at rrtmg_sw_init.F90 (923, 16)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between sumk (922:31) and sumk (922:31) 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (931, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (933, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (936, 13)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between sumk (935:28) and sumk (935:28) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (943, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (945, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (948, 13)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between sumk (947:28) and sumk (947:28) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (960, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (967, 10)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between sumf1 (962:27) and sumf1 (962:27) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumf2 (963:27) and sumf2 (963:27) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumsv1 (964:29) and sumsv1 (964:29) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumsv2 (965:29) and sumsv2 (965:29) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumsv3 (966:29) and sumsv3 (966:29) 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : rrtmg_sw_init_mp_cmbgb21_
+
+LOOP BEGIN at rrtmg_sw_init.F90 (994, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (995, 10)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (996, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at rrtmg_sw_init.F90 (1000, 19)
+                remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                LOOP BEGIN at rrtmg_sw_init.F90 (1003, 19)
+                    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                    remark #15346: vector dependence: assumed FLOW dependence between sumk (1002:34) and sumk (1002:34) 
+                LOOP END
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1011, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (1011, 10)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (1012, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at rrtmg_sw_init.F90 (1016, 19)
+                remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                LOOP BEGIN at rrtmg_sw_init.F90 (1019, 19)
+                    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                    remark #15346: vector dependence: assumed FLOW dependence between sumk (1018:34) and sumk (1018:34) 
+                LOOP END
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1028, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (1030, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (1033, 13)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between sumk (1032:28) and sumk (1032:28) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1040, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (1042, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (1045, 13)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between sumk (1044:28) and sumk (1044:28) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1052, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (1057, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (1063, 13)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between sumf (1059:28) and sumf (1059:28) 
+            remark #15346: vector dependence: assumed FLOW dependence between sumsv1 (1060:32) and sumsv1 (1060:32) 
+            remark #15346: vector dependence: assumed FLOW dependence between sumsv2 (1061:32) and sumsv2 (1061:32) 
+            remark #15346: vector dependence: assumed FLOW dependence between sumsv3 (1062:32) and sumsv3 (1062:32) 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : rrtmg_sw_init_mp_cmbgb22_
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1090, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (1091, 10)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (1092, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at rrtmg_sw_init.F90 (1096, 19)
+                remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                LOOP BEGIN at rrtmg_sw_init.F90 (1099, 19)
+                    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                    remark #15346: vector dependence: assumed FLOW dependence between sumk (1098:34) and sumk (1098:34) 
+                LOOP END
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1107, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (1107, 10)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (1111, 16)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at rrtmg_sw_init.F90 (1114, 16)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between sumk (1113:31) and sumk (1113:31) 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1122, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (1124, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (1127, 13)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between sumk (1126:28) and sumk (1126:28) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1134, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (1136, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (1139, 13)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between sumk (1138:28) and sumk (1138:28) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1146, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (1151, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (1157, 13)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between sumf (1153:28) and sumf (1153:28) 
+            remark #15346: vector dependence: assumed FLOW dependence between sumsv1 (1154:32) and sumsv1 (1154:32) 
+            remark #15346: vector dependence: assumed FLOW dependence between sumsv2 (1155:32) and sumsv2 (1155:32) 
+            remark #15346: vector dependence: assumed FLOW dependence between sumsv3 (1156:32) and sumsv3 (1156:32) 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : rrtmg_sw_init_mp_cmbgb23_
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1184, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (1185, 10)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (1189, 16)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at rrtmg_sw_init.F90 (1192, 16)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between sumk (1191:31) and sumk (1191:31) 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1200, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (1202, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (1205, 13)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between sumk (1204:28) and sumk (1204:28) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1212, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (1214, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (1217, 13)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between sumk (1216:28) and sumk (1216:28) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1229, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (1236, 10)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between sumf1 (1231:27) and sumf1 (1231:27) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumf2 (1232:27) and sumf2 (1232:27) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumsv1 (1233:29) and sumsv1 (1233:29) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumsv2 (1234:29) and sumsv2 (1234:29) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumsv3 (1235:29) and sumsv3 (1235:29) 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : rrtmg_sw_init_mp_cmbgb24_
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1265, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (1266, 10)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (1267, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at rrtmg_sw_init.F90 (1271, 19)
+                remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                LOOP BEGIN at rrtmg_sw_init.F90 (1274, 19)
+                    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                    remark #15346: vector dependence: assumed FLOW dependence between sumk (1273:34) and sumk (1273:34) 
+                LOOP END
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1282, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (1282, 10)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (1286, 16)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at rrtmg_sw_init.F90 (1289, 16)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between sumk (1288:31) and sumk (1288:31) 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1297, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (1299, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (1302, 13)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between sumk (1301:28) and sumk (1301:28) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1309, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (1311, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (1314, 13)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between sumk (1313:28) and sumk (1313:28) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1324, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (1329, 10)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between sumf1 (1326:27) and sumf1 (1326:27) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumf2 (1327:27) and sumf2 (1327:27) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumf3 (1328:27) and sumf3 (1328:27) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1335, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (1343, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (1350, 13)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between sumf1 (1345:30) and sumf1 (1345:30) 
+            remark #15346: vector dependence: assumed FLOW dependence between sumf2 (1346:30) and sumf2 (1346:30) 
+            remark #15346: vector dependence: assumed FLOW dependence between sumsv1 (1347:32) and sumsv1 (1347:32) 
+            remark #15346: vector dependence: assumed FLOW dependence between sumsv2 (1348:32) and sumsv2 (1348:32) 
+            remark #15346: vector dependence: assumed FLOW dependence between sumsv3 (1349:32) and sumsv3 (1349:32) 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : rrtmg_sw_init_mp_cmbgb25_
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1380, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (1381, 10)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (1385, 16)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at rrtmg_sw_init.F90 (1388, 16)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between sumk (1387:31) and sumk (1387:31) 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1403, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (1412, 10)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between sumf1 (1405:27) and sumf1 (1405:27) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumf2 (1406:27) and sumf2 (1406:27) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumf3 (1407:27) and sumf3 (1407:27) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumf4 (1408:27) and sumf4 (1408:27) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumsv1 (1409:29) and sumsv1 (1409:29) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumsv2 (1410:29) and sumsv2 (1410:29) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumsv3 (1411:29) and sumsv3 (1411:29) 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : rrtmg_sw_init_mp_cmbgb26_
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1448, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (1455, 10)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between sumf1 (1450:27) and sumf1 (1450:27) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumf2 (1451:27) and sumf2 (1451:27) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumsv1 (1452:29) and sumsv1 (1452:29) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumsv2 (1453:29) and sumsv2 (1453:29) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumsv3 (1454:29) and sumsv3 (1454:29) 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : rrtmg_sw_init_mp_cmbgb27_
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1482, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (1483, 10)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (1487, 16)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at rrtmg_sw_init.F90 (1490, 16)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between sumk (1489:31) and sumk (1489:31) 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (1496, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (1498, 16)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at rrtmg_sw_init.F90 (1501, 16)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between sumk (1500:31) and sumk (1500:31) 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1514, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (1521, 10)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between sumf1 (1516:27) and sumf1 (1516:27) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumf2 (1517:27) and sumf2 (1517:27) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumsv1 (1518:29) and sumsv1 (1518:29) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumsv2 (1519:29) and sumsv2 (1519:29) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumsv3 (1520:29) and sumsv3 (1520:29) 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : rrtmg_sw_init_mp_cmbgb28_
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1548, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (1549, 10)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (1550, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at rrtmg_sw_init.F90 (1554, 19)
+                remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                LOOP BEGIN at rrtmg_sw_init.F90 (1557, 19)
+                    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                    remark #15346: vector dependence: assumed FLOW dependence between sumk (1556:34) and sumk (1556:34) 
+                LOOP END
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1565, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (1565, 10)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (1566, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at rrtmg_sw_init.F90 (1570, 19)
+                remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                LOOP BEGIN at rrtmg_sw_init.F90 (1573, 19)
+                    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                    remark #15346: vector dependence: assumed FLOW dependence between sumk (1572:34) and sumk (1572:34) 
+                LOOP END
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1582, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (1587, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (1593, 13)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between sumf (1589:28) and sumf (1589:28) 
+            remark #15346: vector dependence: assumed FLOW dependence between sumsv1 (1590:32) and sumsv1 (1590:32) 
+            remark #15346: vector dependence: assumed FLOW dependence between sumsv2 (1591:32) and sumsv2 (1591:32) 
+            remark #15346: vector dependence: assumed FLOW dependence between sumsv3 (1592:32) and sumsv3 (1592:32) 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : rrtmg_sw_init_mp_cmbgb29_
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1622, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (1623, 10)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (1627, 16)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at rrtmg_sw_init.F90 (1630, 16)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between sumk (1629:31) and sumk (1629:31) 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (1636, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (1638, 16)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at rrtmg_sw_init.F90 (1641, 16)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between sumk (1640:31) and sumk (1640:31) 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1649, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (1651, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (1654, 13)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between sumk (1653:28) and sumk (1653:28) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1661, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (1663, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at rrtmg_sw_init.F90 (1666, 13)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between sumk (1665:28) and sumk (1665:28) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1679, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_init.F90 (1687, 10)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between sumf1 (1681:27) and sumf1 (1681:27) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumf2 (1682:27) and sumf2 (1682:27) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumf3 (1683:27) and sumf3 (1683:27) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumsv1 (1684:29) and sumsv1 (1684:29) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumsv2 (1685:29) and sumsv2 (1685:29) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumsv3 (1686:29) and sumsv3 (1686:29) 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : rrtmg_sw_init_mp_swcldpr_
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1782, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1796, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1810, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1824, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1838, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1852, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1866, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1880, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1894, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1908, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1922, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1936, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1950, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1964, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1978, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1992, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2006, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2020, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2034, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2048, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2062, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2076, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2090, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2104, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2118, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2132, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2146, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2160, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2174, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2188, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2202, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2216, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2230, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2244, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2258, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2272, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2286, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2300, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2314, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2328, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2342, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2356, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2373, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2384, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2395, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2406, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2417, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2428, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2439, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2450, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2461, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2472, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2483, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2494, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2505, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2516, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2529, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2540, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2551, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2562, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2573, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2584, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2595, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2606, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2617, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2628, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2639, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2650, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2661, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2672, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2685, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2696, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2707, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2718, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2729, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2740, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2751, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2762, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2773, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2784, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2795, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2806, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2817, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2828, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2842, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2854, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2866, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2878, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2890, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2902, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2914, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2926, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2938, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2950, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2962, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2974, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2986, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2998, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3012, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3024, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3036, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3048, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3060, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3072, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3084, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3096, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3108, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3120, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3132, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3144, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3156, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3168, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3182, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3194, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3206, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3218, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3230, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3242, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3254, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3266, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3278, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3290, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3302, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3314, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3326, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3338, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3352, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3364, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3376, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3388, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3400, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3412, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3424, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3436, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3448, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3460, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3472, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3484, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3496, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3508, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1766, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between abari (1766:7) and (1766:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1768, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between bbari (1768:7) and (1768:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1770, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between cbari (1770:7) and (1770:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1772, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between dbari (1772:7) and (1772:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1774, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between ebari (1774:7) and (1774:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1776, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between fbari (1776:7) and (1776:7) 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1782, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1796, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1810, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1824, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1838, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1852, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1866, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1880, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1894, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1908, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1922, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1936, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1950, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1964, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1978, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (1992, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2006, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2020, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2034, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2048, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2062, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2076, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2090, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2104, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2118, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2132, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2146, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2160, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2174, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2188, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2202, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2216, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2230, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2244, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2258, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2272, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2286, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2300, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2314, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2328, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2342, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2356, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2373, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2384, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2395, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2406, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2417, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2428, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2439, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2450, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2461, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2472, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2483, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2494, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2505, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2516, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2529, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2540, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2551, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2562, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2573, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2584, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2595, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2606, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2617, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2628, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2639, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2650, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2661, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2672, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2685, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2696, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2707, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2718, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2729, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2740, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2751, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2762, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2773, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2784, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2795, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2806, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2817, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2828, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2842, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2854, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2866, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2878, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2890, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2902, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2914, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2926, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2938, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2950, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2962, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2974, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2986, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (2998, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3012, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3024, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3036, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3048, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3060, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3072, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3084, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3096, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3108, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3120, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3132, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3144, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3156, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3168, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3182, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3194, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3206, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3218, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3230, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3242, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3254, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3266, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3278, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3290, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3302, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3314, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3326, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3338, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3352, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3364, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3376, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3388, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3400, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3412, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3424, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3436, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3448, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3460, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3472, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3484, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3496, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_init.F90 (3508, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.memset.p0.i64
+
+DEAD STATIC FUNC: sw_kgb16_.void
+
+DEAD STATIC FUNC: sw_kgb17_.void
+
+DEAD STATIC FUNC: sw_kgb18_.void
+
+DEAD STATIC FUNC: sw_kgb19_.void
+
+DEAD STATIC FUNC: sw_kgb20_.void
+
+DEAD STATIC FUNC: sw_kgb21_.void
+
+DEAD STATIC FUNC: sw_kgb22_.void
+
+DEAD STATIC FUNC: sw_kgb23_.void
+
+DEAD STATIC FUNC: sw_kgb24_.void
+
+DEAD STATIC FUNC: sw_kgb25_.void
+
+DEAD STATIC FUNC: sw_kgb26_.void
+
+DEAD STATIC FUNC: sw_kgb27_.void
+
+DEAD STATIC FUNC: sw_kgb28_.void
+
+DEAD STATIC FUNC: sw_kgb29_.void
+
+COMPILE FUNC: rrtmg_sw_init_mp_rrtmg_sw_ini_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (86,7)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (86,7)
+   -> rrtmg_sw_init_mp_swdatinit_ /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (89,12)
+   -> rrtmg_sw_init_mp_swcmbdat_ /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (90,12)
+   -> rrtmg_sw_init_mp_swaerpr_ /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (91,12)
+   -> rrtmg_sw_init_mp_swcldpr_ /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (92,12)
+   -> INLINE: sw_kgb16_.void /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (94,12)
+   -> INLINE: sw_kgb17_.void /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (95,12)
+   -> INLINE: sw_kgb18_.void /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (96,12)
+   -> INLINE: sw_kgb19_.void /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (97,12)
+   -> INLINE: sw_kgb20_.void /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (98,12)
+   -> INLINE: sw_kgb21_.void /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (99,12)
+   -> INLINE: sw_kgb22_.void /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (100,12)
+   -> INLINE: sw_kgb23_.void /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (101,12)
+   -> INLINE: sw_kgb24_.void /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (102,12)
+   -> INLINE: sw_kgb25_.void /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (103,12)
+   -> INLINE: sw_kgb26_.void /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (104,12)
+   -> INLINE: sw_kgb27_.void /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (105,12)
+   -> INLINE: sw_kgb28_.void /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (106,12)
+   -> INLINE: sw_kgb29_.void /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (107,12)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (120,35)
+   -> llvm.exp.f64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (122,27)
+   -> rrtmg_sw_init_mp_cmbgb16s_ /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (159,12)
+   -> rrtmg_sw_init_mp_cmbgb17_ /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (160,12)
+   -> rrtmg_sw_init_mp_cmbgb18_ /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (161,12)
+   -> rrtmg_sw_init_mp_cmbgb19_ /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (162,12)
+   -> rrtmg_sw_init_mp_cmbgb20_ /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (163,12)
+   -> rrtmg_sw_init_mp_cmbgb21_ /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (164,12)
+   -> rrtmg_sw_init_mp_cmbgb22_ /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (165,12)
+   -> rrtmg_sw_init_mp_cmbgb23_ /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (166,12)
+   -> rrtmg_sw_init_mp_cmbgb24_ /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (167,12)
+   -> rrtmg_sw_init_mp_cmbgb25_ /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (168,12)
+   -> INLINE: rrtmg_sw_init_mp_cmbgb26_ /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (169,12)
+   -> rrtmg_sw_init_mp_cmbgb27_ /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (170,12)
+   -> rrtmg_sw_init_mp_cmbgb28_ /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (171,12)
+   -> rrtmg_sw_init_mp_cmbgb29_ /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (172,12)
+   -> DELETE: llvm.masked.gather.v4f64.v4p0 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (146,16)
+
+COMPILE FUNC: rrtmg_sw_init_mp_swdatinit_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (265,33)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (194,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (198,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (202,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (208,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (209,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (210,7)
+
+COMPILE FUNC: rrtmg_sw_init_mp_swcmbdat_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (293,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (294,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (295,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (309,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (323,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (386,7)
+
+COMPILE FUNC: rrtmg_sw_init_mp_swaerpr_
+
+COMPILE FUNC: rrtmg_sw_init_mp_swcldpr_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (1782,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (1796,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (1810,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (1824,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (1838,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (1852,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (1866,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (1880,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (1894,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (1908,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (1922,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (1936,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (1950,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (1964,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (1978,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (1992,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2006,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2020,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2034,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2048,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2062,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2076,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2090,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2104,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2118,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2132,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2146,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2160,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2174,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2188,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2202,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2216,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2230,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2244,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2258,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2272,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2286,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2300,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2314,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2328,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2342,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2356,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2373,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2384,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2395,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2406,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2417,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2428,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2439,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2450,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2461,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2472,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2483,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2494,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2505,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2516,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2529,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2540,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2551,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2562,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2573,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2584,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2595,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2606,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2617,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2628,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2639,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2650,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2661,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2672,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2685,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2696,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2707,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2718,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2729,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2740,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2751,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2762,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2773,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2784,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2795,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2806,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2817,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2828,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2842,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2854,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2866,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2878,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2890,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2902,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2914,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2926,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2938,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2950,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2962,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2974,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2986,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (2998,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3012,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3024,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3036,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3048,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3060,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3072,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3084,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3096,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3108,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3120,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3132,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3144,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3156,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3168,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3182,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3194,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3206,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3218,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3230,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3242,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3254,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3266,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3278,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3290,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3302,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3314,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3326,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3338,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3352,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3364,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3376,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3388,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3400,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3412,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3424,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3436,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3448,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3460,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3472,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3484,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3496,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2057914591xcM23g/ifxOCGu4t.i90 (3508,7)
+
+COMPILE FUNC: rrtmg_sw_init_mp_cmbgb16s_
+
+COMPILE FUNC: rrtmg_sw_init_mp_cmbgb17_
+
+COMPILE FUNC: rrtmg_sw_init_mp_cmbgb18_
+
+COMPILE FUNC: rrtmg_sw_init_mp_cmbgb19_
+
+COMPILE FUNC: rrtmg_sw_init_mp_cmbgb20_
+
+COMPILE FUNC: rrtmg_sw_init_mp_cmbgb21_
+
+COMPILE FUNC: rrtmg_sw_init_mp_cmbgb22_
+
+COMPILE FUNC: rrtmg_sw_init_mp_cmbgb23_
+
+COMPILE FUNC: rrtmg_sw_init_mp_cmbgb24_
+
+COMPILE FUNC: rrtmg_sw_init_mp_cmbgb25_
+
+COMPILE FUNC: rrtmg_sw_init_mp_cmbgb26_
+
+COMPILE FUNC: rrtmg_sw_init_mp_cmbgb27_
+
+COMPILE FUNC: rrtmg_sw_init_mp_cmbgb28_
+
+COMPILE FUNC: rrtmg_sw_init_mp_cmbgb29_
+
+COMPILE FUNC: rrtmg_sw_init._
+
+---- End Inlining Report ------

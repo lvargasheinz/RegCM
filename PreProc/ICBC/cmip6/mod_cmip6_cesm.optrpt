@@ -1,0 +1,106 @@
+Global optimization report for : mod_cmip6_cesm._
+=================================================================
+
+Global optimization report for : mod_cmip6_cesm_mp_read_hcoord_cesm_
+=================================================================
+
+Global optimization report for : mod_cmip6_cesm_mp_read_hcoord_sst_cesm_
+=================================================================
+
+Global optimization report for : mod_cmip6_cesm_mp_read_vcoord_cesm_
+=================================================================
+
+Global optimization report for : mod_cmip6_cesm_mp_read_3d_cesm_
+=================================================================
+
+Global optimization report for : mod_cmip6_cesm_mp_read_2d_cesm_
+=================================================================
+
+Global optimization report for : mod_cmip6_cesm_mp_read_fx_cesm_
+=================================================================
+
+Global optimization report for : mod_cmip6_cesm_mp_read_sst_cesm_
+
+LOOP BEGIN at mod_cmip6_cesm.F90 (510, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cmip6_cesm.F90 (510, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cmip6_cesm.F90 (511, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cmip6_cesm.F90 (511, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cmip6_cesm.F90 (513, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cmip6_cesm.F90 (513, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_cmip6_cesm._
+
+COMPILE FUNC: mod_cmip6_cesm_mp_read_hcoord_cesm_
+
+COMPILE FUNC: mod_cmip6_cesm_mp_read_hcoord_sst_cesm_
+
+COMPILE FUNC: mod_cmip6_cesm_mp_read_vcoord_cesm_
+
+COMPILE FUNC: mod_cmip6_cesm_mp_read_3d_cesm_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0805615805ojvr3X/ifxiapyI6.i90 (123,26)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0805615805ojvr3X/ifxiapyI6.i90 (140,13)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx0805615805ojvr3X/ifxiapyI6.i90 (140,13)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0805615805ojvr3X/ifxiapyI6.i90 (142,13)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0805615805ojvr3X/ifxiapyI6.i90 (142,13)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0805615805ojvr3X/ifxiapyI6.i90 (158,15)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx0805615805ojvr3X/ifxiapyI6.i90 (158,15)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0805615805ojvr3X/ifxiapyI6.i90 (160,15)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0805615805ojvr3X/ifxiapyI6.i90 (160,15)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0805615805ojvr3X/ifxiapyI6.i90 (179,9)
+   -> mod_cmip6_cesm_mp_read_hcoord_cesm_ /scratch_local/ifx0805615805ojvr3X/ifxiapyI6.i90 (180,14)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0805615805ojvr3X/ifxiapyI6.i90 (183,9)
+   -> mod_cmip6_cesm_mp_read_vcoord_cesm_ /scratch_local/ifx0805615805ojvr3X/ifxiapyI6.i90 (184,14)
+   -> llvm.round.f64 /scratch_local/ifx0805615805ojvr3X/ifxiapyI6.i90 (229,14)
+   -> mod_cmip6_cesm_mp_read_3d_cesm_ /scratch_local/ifx0805615805ojvr3X/ifxiapyI6.i90 (242,14)
+
+COMPILE FUNC: mod_cmip6_cesm_mp_read_2d_cesm_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0805615805ojvr3X/ifxiapyI6.i90 (257,26)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0805615805ojvr3X/ifxiapyI6.i90 (301,9)
+   -> mod_cmip6_cesm_mp_read_hcoord_cesm_ /scratch_local/ifx0805615805ojvr3X/ifxiapyI6.i90 (302,14)
+   -> llvm.round.f64 /scratch_local/ifx0805615805ojvr3X/ifxiapyI6.i90 (345,14)
+   -> mod_cmip6_cesm_mp_read_2d_cesm_ /scratch_local/ifx0805615805ojvr3X/ifxiapyI6.i90 (358,14)
+
+COMPILE FUNC: mod_cmip6_cesm_mp_read_fx_cesm_
+   -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx0805615805ojvr3X/ifxiapyI6.i90 (376,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0805615805ojvr3X/ifxiapyI6.i90 (383,7)
+   -> mod_cmip6_cesm_mp_read_hcoord_cesm_ /scratch_local/ifx0805615805ojvr3X/ifxiapyI6.i90 (384,12)
+
+COMPILE FUNC: mod_cmip6_cesm_mp_read_sst_cesm_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0805615805ojvr3X/ifxiapyI6.i90 (403,26)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0805615805ojvr3X/ifxiapyI6.i90 (450,9)
+   -> mod_cmip6_cesm_mp_read_hcoord_sst_cesm_ /scratch_local/ifx0805615805ojvr3X/ifxiapyI6.i90 (451,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0805615805ojvr3X/ifxiapyI6.i90 (488,19)
+   -> mod_cmip6_cesm_mp_read_sst_cesm_ /scratch_local/ifx0805615805ojvr3X/ifxiapyI6.i90 (498,14)
+
+---- End Inlining Report ------

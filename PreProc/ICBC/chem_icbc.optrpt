@@ -1,0 +1,62 @@
+Global optimization report for : myabort_
+=================================================================
+
+Global optimization report for : MAIN__
+
+LOOP BEGIN at chem_icbc.F90 (208, 7)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+
+LOOP BEGIN at chem_icbc.F90 (223, 11)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+
+LOOP BEGIN at chem_icbc.F90 (244, 11)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+
+LOOP BEGIN at chem_icbc.F90 (260, 13)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+
+LOOP BEGIN at chem_icbc.F90 (275, 13)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.memset.p0.i64
+
+COMPILE FUNC: MAIN__
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0400021308H2UStg/ifx41e2Fx.i90 (36,9)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0400021308H2UStg/ifx41e2Fx.i90 (36,9)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0400021308H2UStg/ifx41e2Fx.i90 (36,9)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0400021308H2UStg/ifx41e2Fx.i90 (36,9)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx0400021308H2UStg/ifx41e2Fx.i90 (159,5)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx0400021308H2UStg/ifx41e2Fx.i90 (159,5)
+   -> llvm.round.f64 /scratch_local/ifx0400021308H2UStg/ifx41e2Fx.i90 (189,12)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx0400021308H2UStg/ifx41e2Fx.i90 (204,5)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx0400021308H2UStg/ifx41e2Fx.i90 (208,7)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx0400021308H2UStg/ifx41e2Fx.i90 (203,5)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx0400021308H2UStg/ifx41e2Fx.i90 (215,5)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx0400021308H2UStg/ifx41e2Fx.i90 (231,7)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx0400021308H2UStg/ifx41e2Fx.i90 (214,5)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx0400021308H2UStg/ifx41e2Fx.i90 (240,5)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx0400021308H2UStg/ifx41e2Fx.i90 (248,7)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx0400021308H2UStg/ifx41e2Fx.i90 (239,5)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx0400021308H2UStg/ifx41e2Fx.i90 (256,7)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx0400021308H2UStg/ifx41e2Fx.i90 (264,8)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx0400021308H2UStg/ifx41e2Fx.i90 (255,7)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx0400021308H2UStg/ifx41e2Fx.i90 (271,7)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx0400021308H2UStg/ifx41e2Fx.i90 (279,9)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx0400021308H2UStg/ifx41e2Fx.i90 (270,7)
+
+COMPILE FUNC: myabort_
+
+---- End Inlining Report ------

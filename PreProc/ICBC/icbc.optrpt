@@ -1,0 +1,37 @@
+Global optimization report for : myabort_
+=================================================================
+
+Global optimization report for : MAIN__
+
+LOOP BEGIN at icbc.F90 (251, 9)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: myabort_
+
+COMPILE FUNC: MAIN__
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0728298581qLkuRJ/ifxejcZKn.i90 (37,9)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0728298581qLkuRJ/ifxejcZKn.i90 (37,9)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0728298581qLkuRJ/ifxejcZKn.i90 (37,9)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0728298581qLkuRJ/ifxejcZKn.i90 (37,9)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0728298581qLkuRJ/ifxejcZKn.i90 (168,3)
+   -> DELETE: mod_projections_mp_initialize_ /scratch_local/ifx0728298581qLkuRJ/ifxejcZKn.i90 (186,10)
+   -> llvm.round.f64 /scratch_local/ifx0728298581qLkuRJ/ifxejcZKn.i90 (217,12)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx0728298581qLkuRJ/ifxejcZKn.i90 (223,3)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx0728298581qLkuRJ/ifxejcZKn.i90 (224,3)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx0728298581qLkuRJ/ifxejcZKn.i90 (273,5)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0728298581qLkuRJ/ifxejcZKn.i90 (183,5)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0728298581qLkuRJ/ifxejcZKn.i90
+   -> llvm.memset.p0.i64 /scratch_local/ifx0728298581qLkuRJ/ifxejcZKn.i90 (295,3)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0728298581qLkuRJ/ifxejcZKn.i90 (296,3)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0728298581qLkuRJ/ifxejcZKn.i90 (297,3)
+
+---- End Inlining Report ------

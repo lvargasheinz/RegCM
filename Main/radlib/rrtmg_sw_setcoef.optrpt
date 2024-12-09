@@ -1,0 +1,88 @@
+Global optimization report for : rrtmg_sw_setcoef._
+=================================================================
+
+Global optimization report for : rrtmg_sw_setcoef_mp_setcoef_sw_
+
+LOOP BEGIN at rrtmg_sw_setcoef.F90 (170, 22)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+=================================================================
+
+Global optimization report for : rrtmg_sw_setcoef_mp_swatmref_
+
+LOOP BEGIN at rrtmg_sw_setcoef.F90 (316, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_setcoef.F90 (330, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_setcoef.F90 (347, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25399: memcopy generated
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_setcoef.F90 (316, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_setcoef.F90 (330, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_setcoef.F90 (347, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: rrtmg_sw_setcoef._
+
+COMPILE FUNC: rrtmg_sw_setcoef_mp_setcoef_sw_
+   -> llvm.log.f64 /scratch_local/ifx001824910458qesW/ifxCRfujH.i90 (168,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx001824910458qesW/ifxCRfujH.i90 (169,36)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx001824910458qesW/ifxCRfujH.i90 (176,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx001824910458qesW/ifxCRfujH.i90 (186,33)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx001824910458qesW/ifxCRfujH.i90 (192,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx001824910458qesW/ifxCRfujH.i90 (192,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx001824910458qesW/ifxCRfujH.i90 (193,34)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx001824910458qesW/ifxCRfujH.i90 (199,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx001824910458qesW/ifxCRfujH.i90 (199,17)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx001824910458qesW/ifxCRfujH.i90 (260,36)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx001824910458qesW/ifxCRfujH.i90 (261,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx001824910458qesW/ifxCRfujH.i90 (214,36)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx001824910458qesW/ifxCRfujH.i90 (215,20)
+   -> llvm.smax.i32 /scratch_local/ifx001824910458qesW/ifxCRfujH.i90 (216,31)
+   -> llvm.umin.i32 /scratch_local/ifx001824910458qesW/ifxCRfujH.i90 (216,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx001824910458qesW/ifxCRfujH.i90 (223,20)
+   -> llvm.smin.i32 /scratch_local/ifx001824910458qesW/ifxCRfujH.i90 (224,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx001824910458qesW/ifxCRfujH.i90 (250,25)
+   -> llvm.exp.f64 /scratch_local/ifx001824910458qesW/ifxCRfujH.i90 (251,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx001824910458qesW/ifxCRfujH.i90 (251,54)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx001824910458qesW/ifxCRfujH.i90 (279,25)
+   -> llvm.exp.f64 /scratch_local/ifx001824910458qesW/ifxCRfujH.i90 (280,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx001824910458qesW/ifxCRfujH.i90 (280,54)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx001824910458qesW/ifxCRfujH.i90 (297,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx001824910458qesW/ifxCRfujH.i90 (299,29)
+
+COMPILE FUNC: rrtmg_sw_setcoef_mp_swatmref_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx001824910458qesW/ifxCRfujH.i90 (316,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx001824910458qesW/ifxCRfujH.i90 (330,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx001824910458qesW/ifxCRfujH.i90 (347,7)
+
+---- End Inlining Report ------

@@ -1,0 +1,53 @@
+Global optimization report for : mod_hadgem_helper._
+=================================================================
+
+Global optimization report for : mod_hadgem_helper_mp_find_hadgem_sst_
+=================================================================
+
+Global optimization report for : mod_hadgem_helper_mp_assemble_path_
+=================================================================
+
+Global optimization report for : mod_hadgem_helper_mp_find_hadgem_dim_
+=================================================================
+
+Global optimization report for : mod_hadgem_helper_mp_find_hadgem_ufile_
+=================================================================
+
+Global optimization report for : mod_hadgem_helper_mp_find_hadgem_vfile_
+=================================================================
+
+Global optimization report for : mod_hadgem_helper_mp_find_hadgem_file_
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_hadgem_helper._
+
+COMPILE FUNC: mod_hadgem_helper_mp_find_hadgem_sst_
+
+COMPILE FUNC: mod_hadgem_helper_mp_assemble_path_
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0327643224USrqSl/ifxianlL8.i90 (79,7)
+
+COMPILE FUNC: mod_hadgem_helper_mp_find_hadgem_dim_
+   -> mod_hadgem_helper_mp_assemble_path_ /scratch_local/ifx0327643224USrqSl/ifxianlL8.i90 (94,10)
+
+COMPILE FUNC: mod_hadgem_helper_mp_find_hadgem_ufile_
+   -> mod_hadgem_helper_mp_assemble_path_ /scratch_local/ifx0327643224USrqSl/ifxianlL8.i90 (102,10)
+
+COMPILE FUNC: mod_hadgem_helper_mp_find_hadgem_vfile_
+   -> mod_hadgem_helper_mp_assemble_path_ /scratch_local/ifx0327643224USrqSl/ifxianlL8.i90 (110,10)
+
+COMPILE FUNC: mod_hadgem_helper_mp_find_hadgem_file_
+   -> mod_hadgem_helper_mp_assemble_path_ /scratch_local/ifx0327643224USrqSl/ifxianlL8.i90 (132,16)
+   -> mod_hadgem_helper_mp_assemble_path_ /scratch_local/ifx0327643224USrqSl/ifxianlL8.i90 (142,16)
+   -> mod_hadgem_helper_mp_assemble_path_ /scratch_local/ifx0327643224USrqSl/ifxianlL8.i90 (171,18)
+   -> mod_hadgem_helper_mp_assemble_path_ /scratch_local/ifx0327643224USrqSl/ifxianlL8.i90 (181,18)
+   -> mod_hadgem_helper_mp_assemble_path_ /scratch_local/ifx0327643224USrqSl/ifxianlL8.i90 (208,18)
+   -> mod_hadgem_helper_mp_assemble_path_ /scratch_local/ifx0327643224USrqSl/ifxianlL8.i90 (229,18)
+
+---- End Inlining Report ------

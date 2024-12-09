@@ -1,0 +1,191 @@
+Global optimization report for : rrtmg_sw_cldprop._
+=================================================================
+
+Global optimization report for : rrtmg_sw_cldprop_mp_cldprop_sw_
+
+LOOP BEGIN at rrtmg_sw_cldprop.F90 (140, 7)
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_cldprop.F90 (140, 7)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_cldprop.F90 (150, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_cldprop.F90 (149, 10)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (148:41) and (148:41) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_cldprop.F90 (156, 39)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_cldprop.F90 (189, 19)
+        remark #25408: memset generated
+        remark #25408: memset generated
+        remark #25408: memset generated
+        remark #25408: memset generated
+    LOOP END
+
+    LOOP BEGIN at rrtmg_sw_cldprop.F90 (194, 32)
+        remark #25529: Dead stores eliminated in loop
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+
+    LOOP BEGIN at rrtmg_sw_cldprop.F90 (322, 20)
+        remark #25408: memset generated
+        remark #25408: memset generated
+        remark #25408: memset generated
+        remark #25408: memset generated
+    LOOP END
+
+    LOOP BEGIN at rrtmg_sw_cldprop.F90 (194, 32)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+
+    LOOP BEGIN at rrtmg_sw_cldprop.F90 (200, 39)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between icx and icx 
+        remark #15346: vector dependence: assumed OUTPUT dependence between icx and icx 
+        remark #15346: vector dependence: assumed OUTPUT dependence between icx and icx (204:43) 
+        remark #15346: vector dependence: assumed FLOW dependence between icx and icx 
+        remark #15346: vector dependence: assumed OUTPUT dependence between icx and icx 
+        remark #15346: vector dependence: assumed OUTPUT dependence between icx and icx (204:43) 
+        remark #15346: vector dependence: assumed FLOW dependence between icx (204:43) and icx 
+        remark #15346: vector dependence: assumed OUTPUT dependence between icx (204:43) and icx 
+        remark #15346: vector dependence: assumed OUTPUT dependence between icx (204:43) and icx 
+    LOOP END
+
+    LOOP BEGIN at rrtmg_sw_cldprop.F90 (324, 33)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+
+    LOOP BEGIN at rrtmg_sw_cldprop.F90 (406, 17)
+    <Predicate Optimized v2>
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+
+    LOOP BEGIN at rrtmg_sw_cldprop.F90 (406, 17)
+    <Predicate Optimized v1>
+        remark #25423: Invariant If condition at line 386 hoisted out of this loop
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_cldprop.F90 (156, 39)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_sw_cldprop.F90 (176, 16)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.memset.p0.i64
+
+DEAD STATIC FUNC: llvm.stackrestore
+
+DEAD STATIC FUNC: llvm.stacksave
+
+COMPILE FUNC: rrtmg_sw_cldprop_mp_cldprop_sw_
+   -> DELETE: llvm.stacksave /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (53,18)
+   -> llvm.smax.i64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (53,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (53,18)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (134,7)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (134,7)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (175,39)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (175,65)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (247,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (249,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (251,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (281,32)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (283,32)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (285,32)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (287,32)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (275,29)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (241,29)
+   -> DELETE: for_stop_core_quiet /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (326,68)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (334,32)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (336,32)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (341,32)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (364,45)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (365,29)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (368,45)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (369,29)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (384,28)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (391,43)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (392,36)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (393,27)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (394,39)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (395,27)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (394,38)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (392,27)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (400,27)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (401,27)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (402,38)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (403,27)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (399,43)
+   -> DELETE: llvm.stackrestore /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (415,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (53,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (175,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (175,65)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (140,7)
+   -> llvm.umax.i1 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (156,39)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (185,22)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (186,22)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (187,22)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (188,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (241,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (247,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (249,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (251,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (275,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (281,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (283,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (285,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (287,32)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (318,23)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (319,23)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (320,23)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (321,23)
+   -> llvm.umax.i1 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (326,43)
+   -> llvm.umax.i32 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (330,30)
+   -> DELETE: llvm.umax.i32 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (330,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (334,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (336,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (341,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (364,45)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (365,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (368,45)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (369,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (384,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (386,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (386,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (391,43)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (394,38)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (392,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (364,45)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (365,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (368,45)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (369,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (384,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (386,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (386,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0034623860vxGetb/ifx6NLZhU.i90 (399,43)
+
+COMPILE FUNC: rrtmg_sw_cldprop._
+
+---- End Inlining Report ------

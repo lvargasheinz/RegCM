@@ -1,0 +1,109 @@
+Global optimization report for : mod_ox_icbc._
+=================================================================
+
+Global optimization report for : mod_ox_icbc_mp_init_ox_icbc_
+
+LOOP BEGIN at mod_ox_icbc.F90 (173, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed ANTI dependence between (176:40) and (176:40) 
+    remark #15346: vector dependence: assumed ANTI dependence
+    remark #15346: vector dependence: assumed OUTPUT dependence between (176:40) and (176:40) 
+    remark #15346: vector dependence: assumed OUTPUT dependence
+    remark #15346: vector dependence: assumed FLOW dependence between (176:40) and (176:40) 
+    remark #15346: vector dependence: assumed ANTI dependence between (176:40) and (176:40) 
+    remark #15346: vector dependence: assumed ANTI dependence
+    remark #15346: vector dependence: assumed ANTI dependence
+    remark #15346: vector dependence: assumed OUTPUT dependence between (175:12) and (176:40) 
+    remark #15346: vector dependence: assumed OUTPUT dependence
+LOOP END
+=================================================================
+
+Global optimization report for : mod_ox_icbc_mp_get_ox_icbc_
+
+LOOP BEGIN at mod_ox_icbc.F90 (231, 5)
+
+    LOOP BEGIN at mod_ox_icbc.F90 (233, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_ox_icbc.F90 (234, 11)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_ox_icbc.F90 (236, 11)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between xinp (235:13) and oxv2 (235:13) 
+                remark #15346: vector dependence: assumed FLOW dependence between xinp (235:13) and oxv2 (235:44) 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_ox_icbc.F90 (243, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_ox_icbc.F90 (245, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between xps (244:9) and xps2 (244:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between xps (244:9) and xps2 (244:32) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_ox_icbc.F90 (251, 7)
+
+    LOOP BEGIN at mod_ox_icbc.F90 (252, 9)
+
+        LOOP BEGIN at mod_ox_icbc.F90 (255, 11)
+
+            LOOP BEGIN at mod_ox_icbc.F90 (258, 22)
+                remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+            LOOP END
+
+            LOOP BEGIN at mod_ox_icbc.F90 (273, 13)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between oxv4 (274:15) and oxv3 (274:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between oxv4 (274:15) and oxv3 (274:49) 
+            LOOP END
+
+            LOOP BEGIN at mod_ox_icbc.F90 (263, 13)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between oxv4 (264:15) and oxv3 (264:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between oxv4 (264:15) and oxv3 (264:15) 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_ox_icbc_mp_close_ox_icbc_
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.memmove.p0.p0.i64
+
+COMPILE FUNC: mod_ox_icbc._
+
+COMPILE FUNC: mod_ox_icbc_mp_init_ox_icbc_
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx1880184624X6yM7W/ifxjqO6Kn.i90 (75,5)
+
+COMPILE FUNC: mod_ox_icbc_mp_get_ox_icbc_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1880184624X6yM7W/ifxjqO6Kn.i90 (183,14)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1880184624X6yM7W/ifxjqO6Kn.i90 (183,14)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1880184624X6yM7W/ifxjqO6Kn.i90 (183,14)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1880184624X6yM7W/ifxjqO6Kn.i90 (183,14)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx1880184624X6yM7W/ifxjqO6Kn.i90 (216,7)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880184624X6yM7W/ifxjqO6Kn.i90 (253,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880184624X6yM7W/ifxjqO6Kn.i90 (253,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880184624X6yM7W/ifxjqO6Kn.i90 (265,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880184624X6yM7W/ifxjqO6Kn.i90 (266,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880184624X6yM7W/ifxjqO6Kn.i90 (266,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880184624X6yM7W/ifxjqO6Kn.i90 (271,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880184624X6yM7W/ifxjqO6Kn.i90 (271,32)
+
+COMPILE FUNC: mod_ox_icbc_mp_close_ox_icbc_
+
+---- End Inlining Report ------

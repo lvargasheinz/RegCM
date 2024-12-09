@@ -1,0 +1,4050 @@
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          ''''
+  - Callee:          mod_bats_drag_mp_dragdn_
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 136, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          mod_bats_drag_mp_dragc_
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 52, Column: 0 }
+  - String:          ''' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '375'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 148, Column: 7 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 148, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 148, Column: 7 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 148, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 148, Column: 7 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 148, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 148, Column: 7 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 148, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 148, Column: 7 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 148, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 149, Column: 7 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 149, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 149, Column: 7 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 149, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 149, Column: 7 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 149, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 149, Column: 7 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 149, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 149, Column: 7 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 149, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 150, Column: 7 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 150, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 150, Column: 7 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 150, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 150, Column: 7 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 150, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 150, Column: 7 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 150, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 150, Column: 7 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 150, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 150, Column: 29 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 150, Column: 29 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 150, Column: 29 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 150, Column: 29 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 150, Column: 29 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 150, Column: 29 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 150, Column: 29 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 150, Column: 29 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 150, Column: 29 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 150, Column: 29 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 152, Column: 7 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 152, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 152, Column: 7 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 152, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 152, Column: 7 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 152, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 152, Column: 7 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 152, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 152, Column: 7 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 152, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 153, Column: 7 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 153, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 153, Column: 7 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 153, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 153, Column: 7 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 153, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 153, Column: 7 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 153, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 153, Column: 7 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 153, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 154, Column: 7 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 154, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 154, Column: 7 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 154, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 154, Column: 7 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 154, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 154, Column: 7 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 154, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 154, Column: 7 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 154, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 155, Column: 37 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 155, Column: 37 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 155, Column: 37 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 155, Column: 37 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 155, Column: 37 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 155, Column: 37 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 155, Column: 37 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 155, Column: 37 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 155, Column: 37 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 155, Column: 37 }
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          ''''
+  - Callee:          mod_bats_drag_mp_dragdn_
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 136, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          mod_bats_drag_mp_dragc_
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 52, Column: 0 }
+  - String:          ''' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '375'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 17 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 17 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 17 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 17 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 17 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 17 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 17 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 17 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 17 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 17 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 75, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 75, Column: 20 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 75, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 75, Column: 20 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 75, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 75, Column: 20 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 75, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 75, Column: 20 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 75, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 75, Column: 20 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 75, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 75, Column: 20 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 75, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 75, Column: 20 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 75, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 75, Column: 20 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 75, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 75, Column: 20 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 75, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 75, Column: 20 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 76, Column: 15 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 76, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 76, Column: 15 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 76, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 76, Column: 15 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 76, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 76, Column: 15 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 76, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 76, Column: 15 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 76, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 23 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 23 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 23 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 23 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 23 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 23 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 23 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 23 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 23 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 23 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 39 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 39 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 39 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 39 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 39 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 39 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 39 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 39 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 39 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 39 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 89, Column: 18 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 89, Column: 18 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 89, Column: 18 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 89, Column: 18 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 89, Column: 18 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 89, Column: 18 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 89, Column: 18 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 89, Column: 18 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 89, Column: 18 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 89, Column: 18 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 94, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 94, Column: 20 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 94, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 94, Column: 20 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 94, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 94, Column: 20 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 94, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 94, Column: 20 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 94, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 94, Column: 20 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 106, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 106, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 106, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 106, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 106, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 106, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 106, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 106, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 106, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 106, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 107, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 107, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 107, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 107, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 107, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 107, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 107, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 107, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 107, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 107, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 108, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 108, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 108, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 108, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 108, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 108, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 108, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 108, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 108, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 108, Column: 7 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 68, Column: 5 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 68, Column: 5 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 17 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 75, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 75, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 76, Column: 15 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 23 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 39 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 89, Column: 18 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 94, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: mod_bats_drag.F90, Line: 106, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  load
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: mod_bats_drag.F90, Line: 107, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  load
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 108, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 94, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 7 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 89, Column: 7 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 94, Column: 7 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 106, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 0, Column: 0 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: mod_bats_drag.F90, Line: 107, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  phi
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 0, Column: 0 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: mod_bats_drag.F90, Line: 108, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  phi
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 108, Column: 7 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 68, Column: 5 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 68, Column: 5 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 17 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 75, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 75, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 76, Column: 15 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 23 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 39 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 89, Column: 18 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 94, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 108, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 94, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 7 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 89, Column: 7 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 106, Column: 7 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 94, Column: 7 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 106, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 0, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 192, Column: 7 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 192, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 192, Column: 7 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 192, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 192, Column: 7 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 192, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 192, Column: 7 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 192, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 192, Column: 7 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 192, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 194, Column: 7 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 194, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 194, Column: 7 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 194, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 194, Column: 7 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 194, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 194, Column: 7 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 194, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 194, Column: 7 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 194, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 194, Column: 25 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 194, Column: 25 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 194, Column: 25 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 194, Column: 25 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 194, Column: 25 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 194, Column: 25 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 194, Column: 25 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 194, Column: 25 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 194, Column: 25 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 194, Column: 25 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 195, Column: 22 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 195, Column: 22 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 195, Column: 22 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 195, Column: 22 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 195, Column: 22 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 195, Column: 22 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 195, Column: 22 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 195, Column: 22 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 195, Column: 22 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 195, Column: 22 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 195, Column: 31 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 195, Column: 31 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 195, Column: 31 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 195, Column: 31 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 195, Column: 31 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 195, Column: 31 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 195, Column: 31 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 195, Column: 31 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 195, Column: 31 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 195, Column: 31 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 197, Column: 18 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 197, Column: 18 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 197, Column: 18 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 197, Column: 18 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 197, Column: 18 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 197, Column: 18 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 197, Column: 18 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 197, Column: 18 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 197, Column: 18 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 197, Column: 18 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 197, Column: 30 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 197, Column: 30 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 197, Column: 30 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 197, Column: 30 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 197, Column: 30 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 197, Column: 30 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 197, Column: 30 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 197, Column: 30 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 197, Column: 30 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 197, Column: 30 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 198, Column: 25 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 198, Column: 25 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 198, Column: 25 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 198, Column: 25 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 198, Column: 25 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 198, Column: 25 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 198, Column: 25 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 198, Column: 25 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 198, Column: 25 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 198, Column: 25 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 199, Column: 26 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 199, Column: 26 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 199, Column: 26 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 199, Column: 26 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 199, Column: 26 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 199, Column: 26 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 199, Column: 26 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 199, Column: 26 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_drag.F90, Line: 199, Column: 26 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 199, Column: 26 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 195, Column: 22 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 194, Column: 7 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 197, Column: 18 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 196, Column: 7 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 198, Column: 7 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 194, Column: 7 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 197, Column: 7 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 68, Column: 5 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 68, Column: 5 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 17 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 17 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 17 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 75, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 75, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 75, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 75, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 75, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 75, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 76, Column: 15 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 76, Column: 15 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 76, Column: 15 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 23 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 23 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 23 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 39 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 39 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 39 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 89, Column: 18 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 89, Column: 18 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 89, Column: 18 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 94, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 94, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 94, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 108, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 108, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 108, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 94, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 7 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 89, Column: 7 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadPRE
+DebugLoc:        { File: mod_bats_drag.F90, Line: 94, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          load eliminated by PRE
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 106, Column: 7 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 94, Column: 7 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 106, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 0, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 68, Column: 5 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 68, Column: 5 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 17 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 17 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 73, Column: 17 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 75, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 75, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 75, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 75, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 75, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 75, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 76, Column: 15 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 76, Column: 15 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 76, Column: 15 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 23 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 23 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 23 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 39 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 39 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 39 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 89, Column: 18 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 89, Column: 18 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 89, Column: 18 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 94, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 94, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 94, Column: 20 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 108, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 108, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 108, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 94, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 7 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 89, Column: 7 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 106, Column: 7 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 94, Column: 7 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 106, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 0, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 195, Column: 22 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 194, Column: 7 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 197, Column: 18 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 196, Column: 7 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_drag.F90, Line: 198, Column: 7 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 194, Column: 7 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_bats_drag.F90, Line: 197, Column: 7 }
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+Function:        mod_bats_drag._
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        mod_bats_drag._
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_0
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+Function:        mod_bats_drag._
+Args:
+  - NumInstructions: '1'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            LoopSpillReloadCopies
+DebugLoc:        { File: mod_bats_drag.F90, Line: 82, Column: 17 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - NumSpills:       '2'
+  - String:          ' spills '
+  - TotalSpillsCost: '3.187500e+01'
+  - String:          ' total spills cost '
+  - NumReloads:      '4'
+  - String:          ' reloads '
+  - TotalReloadsCost: '3.175000e+01'
+  - String:          ' total reloads cost '
+  - NumFoldedReloads: '14'
+  - String:          ' folded reloads '
+  - TotalFoldedReloadsCost: '2.231250e+02'
+  - String:          ' total folded reloads cost '
+  - NumVRCopies:     '8'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '9.550000e+01'
+  - String:          ' total copies cost '
+  - String:          generated in loop
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: mod_bats_drag.F90, Line: 52, Column: 1 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - NumSpills:       '18'
+  - String:          ' spills '
+  - TotalSpillsCost: '3.987500e+01'
+  - String:          ' total spills cost '
+  - NumReloads:      '7'
+  - String:          ' reloads '
+  - TotalReloadsCost: '3.325000e+01'
+  - String:          ' total reloads cost '
+  - NumFoldedReloads: '15'
+  - String:          ' folded reloads '
+  - TotalFoldedReloadsCost: '2.236250e+02'
+  - String:          ' total folded reloads cost '
+  - NumVRCopies:     '21'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '1.020000e+02'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: mod_bats_drag.F90, Line: 52, Column: 0 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - NumStackBytes:   '184'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_drag.F90, Line: 66, Column: 10 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_1
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '14'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_drag.F90, Line: 113, Column: 3 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do9
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_drag.F90, Line: 88, Column: 23 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body8.preheader
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '116'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_drag.F90, Line: 108, Column: 7 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb7_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '17'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_drag.F90, Line: 0, Column: 0 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body8
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '25'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_drag.F90, Line: 0, Column: 0 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new23_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_drag.F90, Line: 0, Column: 0 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb2_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '13'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_drag.F90, Line: 0, Column: 0 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new35_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_drag.F90, Line: 0, Column: 0 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb2_endif.bb4_endif_crit_edge
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_drag.F90, Line: 0, Column: 0 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb4_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '7'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_drag.F90, Line: 101, Column: 47 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new39_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_drag.F90, Line: 103, Column: 41 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new44_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_drag.F90, Line: 0, Column: 0 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb5_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_drag.F90, Line: 107, Column: 30 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new49_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: mod_bats_drag.F90, Line: 52, Column: 0 }
+Function:        mod_bats_drag_mp_dragc_
+Args:
+  - NumInstructions: '238'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            LoopSpillReloadCopies
+DebugLoc:        { File: mod_bats_drag.F90, Line: 156, Column: 5 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - NumFoldedReloads: '2'
+  - String:          ' folded reloads '
+  - TotalFoldedReloadsCost: '3.187500e+01'
+  - String:          ' total folded reloads cost '
+  - NumVRCopies:     '5'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '7.968750e+01'
+  - String:          ' total copies cost '
+  - String:          generated in loop
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: mod_bats_drag.F90, Line: 136, Column: 1 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - NumSpills:       '4'
+  - String:          ' spills '
+  - TotalSpillsCost: '2.000000e+00'
+  - String:          ' total spills cost '
+  - NumReloads:      '1'
+  - String:          ' reloads '
+  - TotalReloadsCost: '5.000000e-01'
+  - String:          ' total reloads cost '
+  - NumFoldedReloads: '3'
+  - String:          ' folded reloads '
+  - TotalFoldedReloadsCost: '3.237500e+01'
+  - String:          ' total folded reloads cost '
+  - NumVRCopies:     '15'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '8.468750e+01'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: mod_bats_drag.F90, Line: 136, Column: 0 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - NumStackBytes:   '48'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_drag.F90, Line: 146, Column: 5 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_2
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '12'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_drag.F90, Line: 0, Column: 0 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body52.preheader
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '60'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_drag.F90, Line: 0, Column: 0 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body52
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '36'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_drag.F90, Line: 160, Column: 3 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do53
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '7'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: mod_bats_drag.F90, Line: 136, Column: 0 }
+Function:        mod_bats_drag_mp_dragdn_
+Args:
+  - NumInstructions: '120'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            LoopSpillReloadCopies
+DebugLoc:        { File: mod_bats_drag.F90, Line: 200, Column: 5 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - NumFoldedReloads: '6'
+  - String:          ' folded reloads '
+  - TotalFoldedReloadsCost: '9.562500e+01'
+  - String:          ' total folded reloads cost '
+  - NumVRCopies:     '6'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '9.562500e+01'
+  - String:          ' total copies cost '
+  - String:          generated in loop
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: mod_bats_drag.F90, Line: 181, Column: 1 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - NumSpills:       '6'
+  - String:          ' spills '
+  - TotalSpillsCost: '3.000000e+00'
+  - String:          ' total spills cost '
+  - NumFoldedReloads: '6'
+  - String:          ' folded reloads '
+  - TotalFoldedReloadsCost: '9.562500e+01'
+  - String:          ' total folded reloads cost '
+  - NumVRCopies:     '15'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '1.001250e+02'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: mod_bats_drag.F90, Line: 181, Column: 0 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - NumStackBytes:   '48'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_drag.F90, Line: 191, Column: 5 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_3
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '12'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_drag.F90, Line: 0, Column: 0 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body77.preheader
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '67'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_drag.F90, Line: 0, Column: 0 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body77
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '41'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_drag.F90, Line: 204, Column: 3 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do78
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '7'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: mod_bats_drag.F90, Line: 181, Column: 0 }
+Function:        mod_bats_drag_mp_depth_
+Args:
+  - NumInstructions: '133'
+  - String:          ' instructions in function'
+...

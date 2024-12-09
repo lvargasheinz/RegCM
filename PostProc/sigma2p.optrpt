@@ -1,0 +1,1107 @@
+Global optimization report for : myabort_
+=================================================================
+
+Global optimization report for : MAIN__
+
+LOOP BEGIN at sigma2p.F90 (280, 3)
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at sigma2p.F90 (281, 3)
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at sigma2p.F90 (621, 9)
+<Multiversioned v1>
+    remark #25399: memcopy generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at sigma2p.F90 (608, 9)
+<Multiversioned v1>
+    remark #25399: memcopy generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at sigma2p.F90 (135, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at sigma2p.F90 (164, 10)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+
+LOOP BEGIN at sigma2p.F90 (181, 25)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+
+LOOP BEGIN at sigma2p.F90 (280, 3)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at sigma2p.F90 (281, 3)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at sigma2p.F90 (289, 5)
+
+    LOOP BEGIN at sigma2p.F90 (289, 5)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (312, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (329, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (342, 21)
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (387, 12)
+        remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+    LOOP END
+LOOP END
+
+LOOP BEGIN at sigma2p.F90 (515, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at sigma2p.F90 (524, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at sigma2p.F90 (528, 7)
+    remark #15300: LOOP WAS VECTORIZED
+    remark #15305: vectorization support: vector length 4
+LOOP END
+
+LOOP BEGIN at sigma2p.F90 (528, 7)
+<Remainder loop for vectorization>
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+LOOP END
+
+LOOP BEGIN at sigma2p.F90 (551, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at sigma2p.F90 (551, 7)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at sigma2p.F90 (551, 7)
+            remark #15300: LOOP WAS VECTORIZED
+            remark #15305: vectorization support: vector length 2
+        LOOP END
+
+        LOOP BEGIN at sigma2p.F90 (551, 7)
+        <Remainder loop for vectorization>
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at sigma2p.F90 (555, 9)
+
+    LOOP BEGIN at sigma2p.F90 (556, 11)
+
+        LOOP BEGIN at sigma2p.F90 (559, 11)
+            remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at sigma2p.F90 (563, 9)
+
+    LOOP BEGIN at sigma2p.F90 (564, 11)
+
+        LOOP BEGIN at sigma2p.F90 (567, 11)
+            remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at sigma2p.F90 (576, 5)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+
+    LOOP BEGIN at sigma2p.F90 (576, 5)
+        remark #15319: Loop was not vectorized: novector directive used
+    LOOP END
+LOOP END
+
+LOOP BEGIN at sigma2p.F90 (576, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at sigma2p.F90 (576, 5)
+        remark #15300: LOOP WAS VECTORIZED
+        remark #15305: vectorization support: vector length 4
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (576, 5)
+    <Remainder loop for vectorization>
+    LOOP END
+LOOP END
+
+LOOP BEGIN at sigma2p.F90 (591, 10)
+
+    LOOP BEGIN at sigma2p.F90 (620, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (621, 9)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (607, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (608, 9)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at sigma2p.F90 (633, 3)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at sigma2p.F90 (633, 3)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15300: LOOP WAS VECTORIZED
+    remark #15305: vectorization support: vector length 4
+LOOP END
+
+LOOP BEGIN at sigma2p.F90 (633, 3)
+<Remainder loop for vectorization>
+LOOP END
+
+LOOP BEGIN at sigma2p.F90 (656, 26)
+
+    LOOP BEGIN at sigma2p.F90 (657, 7)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at sigma2p.F90 (657, 7)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (657, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at sigma2p.F90 (657, 7)
+            remark #15300: LOOP WAS VECTORIZED
+            remark #15305: vectorization support: vector length 4
+        LOOP END
+
+        LOOP BEGIN at sigma2p.F90 (657, 7)
+        <Remainder loop for vectorization>
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (700, 7)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at sigma2p.F90 (700, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at sigma2p.F90 (700, 7)
+                remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (671, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at sigma2p.F90 (671, 9)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at sigma2p.F90 (671, 9)
+                remark #15300: LOOP WAS VECTORIZED
+                remark #15305: vectorization support: vector length 4
+            LOOP END
+
+            LOOP BEGIN at sigma2p.F90 (671, 9)
+            <Remainder loop for vectorization>
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (702, 5)
+        remark: OpenMP: Parallel loop was outlined
+
+        LOOP BEGIN at sigma2p.F90 (775, 11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at sigma2p.F90 (776, 11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at sigma2p.F90 (790, 13)
+            remark: OpenMP: Parallel loop was outlined
+
+            LOOP BEGIN at sigma2p.F90 (790, 13)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at sigma2p.F90 (791, 13)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at sigma2p.F90 (720, 11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at sigma2p.F90 (721, 11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at sigma2p.F90 (760, 13)
+        <Predicate Optimized v3>
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at sigma2p.F90 (760, 13)
+                remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                LOOP BEGIN at sigma2p.F90 (760, 13)
+                <Multiversioned v2>
+                    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+                LOOP END
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at sigma2p.F90 (760, 13)
+        <Predicate Optimized v2>
+
+            LOOP BEGIN at sigma2p.F90 (760, 13)
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at sigma2p.F90 (760, 13)
+        <Predicate Optimized v1>
+            remark #25423: Invariant If condition at line 760 hoisted out of this loop
+            remark #25423: Invariant If condition at line 0 hoisted out of this loop
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at sigma2p.F90 (760, 13)
+                remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+
+                LOOP BEGIN at sigma2p.F90 (760, 13)
+                <Multiversioned v1>
+                    remark #25399: memcopy generated
+                    remark #25562: The loop has been multiversioned for the small trip count
+                LOOP END
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at sigma2p.F90 (758, 13)
+        <Predicate Optimized v3>
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at sigma2p.F90 (758, 13)
+                remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                LOOP BEGIN at sigma2p.F90 (758, 13)
+                <Multiversioned v2>
+                    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+                LOOP END
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at sigma2p.F90 (758, 13)
+        <Predicate Optimized v2>
+
+            LOOP BEGIN at sigma2p.F90 (758, 13)
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at sigma2p.F90 (758, 13)
+        <Predicate Optimized v1>
+            remark #25423: Invariant If condition at line 758 hoisted out of this loop
+            remark #25423: Invariant If condition at line 0 hoisted out of this loop
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at sigma2p.F90 (758, 13)
+                remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+
+                LOOP BEGIN at sigma2p.F90 (758, 13)
+                <Multiversioned v1>
+                    remark #25399: memcopy generated
+                    remark #25562: The loop has been multiversioned for the small trip count
+                LOOP END
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at sigma2p.F90 (835, 9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at sigma2p.F90 (836, 9)
+        <Multiversioned v1>
+            remark #25399: memcopy generated
+            remark #25562: The loop has been multiversioned for the small trip count
+        LOOP END
+
+        LOOP BEGIN at sigma2p.F90 (836, 9)
+        <Multiversioned v2>
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (862, 7)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at sigma2p.F90 (862, 7)
+            remark #15319: Loop was not vectorized: novector directive used
+
+            LOOP BEGIN at sigma2p.F90 (862, 7)
+                remark #15319: Loop was not vectorized: novector directive used
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (862, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at sigma2p.F90 (862, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at sigma2p.F90 (862, 7)
+                remark #15300: LOOP WAS VECTORIZED
+                remark #15305: vectorization support: vector length 4
+            LOOP END
+
+            LOOP BEGIN at sigma2p.F90 (862, 7)
+            <Remainder loop for vectorization>
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (866, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (867, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (879, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at sigma2p.F90 (878, 11)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at sigma2p.F90 (878, 11)
+                remark #15300: LOOP WAS VECTORIZED
+                remark #15305: vectorization support: vector length 4
+            LOOP END
+
+            LOOP BEGIN at sigma2p.F90 (878, 11)
+            <Remainder loop for vectorization>
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (882, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at sigma2p.F90 (882, 11)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at sigma2p.F90 (882, 11)
+                remark #15300: LOOP WAS VECTORIZED
+                remark #15305: vectorization support: vector length 4
+            LOOP END
+
+            LOOP BEGIN at sigma2p.F90 (882, 11)
+            <Remainder loop for vectorization>
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (891, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (892, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (901, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (902, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : sigma2p_IP_top2btm_
+
+LOOP BEGIN at sigma2p.F90 (966, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at sigma2p.F90 (966, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at sigma2p.F90 (968, 9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at sigma2p.F90 (972, 9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : sigma2p_IP_get_np_
+=================================================================
+
+Global optimization report for : sigma2p_IP_get_plevs_
+=================================================================
+
+Global optimization report for : sigma2p_IP_get_ncfilter_
+=================================================================
+
+Global optimization report for : sigma2p_IP_paicompute_
+
+LOOP BEGIN at sigma2p.F90 (1035, 7)
+    remark #25567: 2 loops have been collapsed
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+
+LOOP BEGIN at sigma2p.F90 (1047, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at sigma2p.F90 (1045, 9)
+        remark #25567: 2 loops have been collapsed
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : MAIN__.DIR.OMP.PARALLEL.LOOP.7.split21601
+
+OMP PARALLEL DO BEGIN at sigma2p.F90 (795, 7)
+    remark: SHARED clause for variable 'sigma2p_$N3D' has been changed to PRIVATE
+OMP PARALLEL DO END
+
+LOOP BEGIN at sigma2p.F90 (797, 15)
+    remark: OpenMP: Outlined parallel loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at sigma2p.F90 (797, 15)
+    <Multiversioned v1>
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #25399: memcopy generated
+        remark #25562: The loop has been multiversioned for the small trip count
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (797, 15)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (797, 15)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (797, 15)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at sigma2p.F90 (797, 15)
+            remark #15319: Loop was not vectorized: novector directive used
+
+            LOOP BEGIN at sigma2p.F90 (797, 15)
+                remark #15319: Loop was not vectorized: novector directive used
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (818, 15)
+    <Multiversioned v1>
+        remark #25399: memcopy generated
+        remark #25562: The loop has been multiversioned for the small trip count
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (797, 15)
+    <Predicate Optimized v3>
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at sigma2p.F90 (797, 15)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at sigma2p.F90 (797, 15)
+            <Multiversioned v2>
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (797, 15)
+    <Predicate Optimized v2>
+
+        LOOP BEGIN at sigma2p.F90 (797, 15)
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (797, 15)
+    <Multiversioned v1>
+    <Predicate Optimized v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #25423: Invariant If condition at line 797 hoisted out of this loop
+        remark #25423: Invariant If condition at line 0 hoisted out of this loop
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at sigma2p.F90 (797, 15)
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+
+            LOOP BEGIN at sigma2p.F90 (797, 15)
+            <Multiversioned v1>
+                remark #25399: memcopy generated
+                remark #25562: The loop has been multiversioned for the small trip count
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (818, 15)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : MAIN__.DIR.OMP.PARALLEL.LOOP.221579.split21608
+
+OMP PARALLEL DO BEGIN at sigma2p.F90 (732, 7)
+    remark: SHARED clause for variable 'sigma2p_$N3D' has been changed to PRIVATE
+OMP PARALLEL DO END
+
+LOOP BEGIN at sigma2p.F90 (734, 13)
+    remark: OpenMP: Outlined parallel loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at sigma2p.F90 (734, 13)
+    <Multiversioned v1>
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #25399: memcopy generated
+        remark #25562: The loop has been multiversioned for the small trip count
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (734, 13)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (734, 13)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (734, 13)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at sigma2p.F90 (734, 13)
+            remark #15319: Loop was not vectorized: novector directive used
+
+            LOOP BEGIN at sigma2p.F90 (734, 13)
+                remark #15319: Loop was not vectorized: novector directive used
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (754, 13)
+    <Multiversioned v1>
+        remark #25399: memcopy generated
+        remark #25562: The loop has been multiversioned for the small trip count
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (734, 13)
+    <Predicate Optimized v3>
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at sigma2p.F90 (734, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at sigma2p.F90 (734, 13)
+            <Multiversioned v2>
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (734, 13)
+    <Predicate Optimized v2>
+
+        LOOP BEGIN at sigma2p.F90 (734, 13)
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (734, 13)
+    <Multiversioned v1>
+    <Predicate Optimized v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #25423: Invariant If condition at line 734 hoisted out of this loop
+        remark #25423: Invariant If condition at line 0 hoisted out of this loop
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at sigma2p.F90 (734, 13)
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+
+            LOOP BEGIN at sigma2p.F90 (734, 13)
+            <Multiversioned v1>
+                remark #25399: memcopy generated
+                remark #25562: The loop has been multiversioned for the small trip count
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at sigma2p.F90 (754, 13)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.directive.region.entry
+
+DEAD STATIC FUNC: llvm.directive.region.exit
+
+DEAD STATIC FUNC: llvm.memcpy.p0.p0.i64
+
+COMPILE FUNC: MAIN__
+   -> sigma2p_IP_get_ncfilter_ /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (121,10)
+   -> sigma2p_IP_get_np_ /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (123,10)
+   -> sigma2p_IP_get_plevs_ /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (125,10)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (134,5)
+   -> llvm.smax.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (140,18)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (173,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (173,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (214,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (214,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (216,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (216,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (218,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (218,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (220,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (220,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (222,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (222,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (224,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (224,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (226,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (226,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (228,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (228,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (230,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (230,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (232,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (232,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (232,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (232,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (234,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (234,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (236,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (236,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (238,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (238,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (238,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (238,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (240,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (240,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (240,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (240,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (240,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (240,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (242,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (242,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (242,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (242,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (242,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (242,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (244,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (246,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (246,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (248,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (248,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (248,3)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (248,3)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (302,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (302,7)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (353,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (405,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (405,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (405,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (407,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (407,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (407,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (407,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (407,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (407,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (409,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (409,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (409,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (409,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (409,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (409,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (411,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (411,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (411,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (411,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (411,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (411,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (414,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (414,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (416,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (416,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (405,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (405,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (405,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (428,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (428,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (430,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (430,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (430,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (430,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (430,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (430,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (432,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (432,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (432,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (432,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (432,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (432,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (428,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (428,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (480,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (480,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (480,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (480,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (480,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (480,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (523,7)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (551,30)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (604,9)
+   -> llvm.smax.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (609,9)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (617,9)
+   -> llvm.smax.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (622,9)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (604,9)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (617,9)
+   -> sigma2p_IP_paicompute_ /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (698,14)
+   -> llvm.pow.f64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (700,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (700,22)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (722,11)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (722,11)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (730,11)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (730,11)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (732,7)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (734,13)
+   -> DELETE: for_allocate_handle /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (734,13)
+   -> DELETE: for_allocate_handle /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (734,13)
+   -> DELETE: for_realloc_lhs /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (734,13)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (734,13)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (734,13)
+   -> DELETE: mod_vertint_mp_intlog_single_ /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (739,22)
+   -> DELETE: mod_vertint_mp_intlin_single_ /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (737,22)
+   -> DELETE: mod_vertint_mp_intlog_single_ /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (745,22)
+   -> DELETE: mod_vertint_mp_intlin_single_ /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (743,22)
+   -> DELETE: mod_vertint_mp_intlog_o_single_ /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (751,22)
+   -> DELETE: mod_vertint_mp_intlin_o_single_ /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (749,22)
+   -> DELETE: for_allocate_handle /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (754,13)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (754,13)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (756,7)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (777,11)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (777,11)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (793,13)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (793,13)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (795,7)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (797,15)
+   -> DELETE: for_allocate_handle /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (797,15)
+   -> DELETE: for_allocate_handle /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (797,15)
+   -> DELETE: for_realloc_lhs /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (797,15)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (797,15)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (797,15)
+   -> DELETE: mod_vertint_mp_intlog_single_ /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (803,24)
+   -> DELETE: mod_vertint_mp_intlin_single_ /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (801,24)
+   -> DELETE: mod_vertint_mp_intlog_single_ /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (809,24)
+   -> DELETE: mod_vertint_mp_intlin_single_ /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (807,24)
+   -> DELETE: mod_vertint_mp_intlog_o_single_ /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (815,24)
+   -> DELETE: mod_vertint_mp_intlin_o_single_ /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (813,24)
+   -> DELETE: for_allocate_handle /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (818,15)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (818,15)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (820,7)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (837,9)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (837,9)
+   -> llvm.smax.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (839,9)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (124,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (252,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (252,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (254,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (254,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (254,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (254,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (254,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (254,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (256,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (256,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (256,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (256,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (256,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (256,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (259,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (261,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (261,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (263,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (263,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (263,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (263,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (263,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (263,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (265,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (265,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (265,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (265,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (265,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (265,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (267,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (267,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (267,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (267,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (267,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (267,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (269,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (269,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (269,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (269,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (269,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (269,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (259,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (252,5)
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (252,5)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (342,21)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (790,13)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (551,30)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (86,52)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (86,52)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (86,45)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (86,45)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (85,45)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (85,45)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (70,57)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (70,57)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (70,48)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (70,48)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (69,50)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (69,50)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (68,48)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (68,48)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (67,48)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (67,48)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (66,48)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (66,48)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (65,48)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (65,48)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (64,48)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (64,48)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (63,67)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (63,67)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (63,55)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (63,55)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (63,43)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (63,43)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (62,45)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (62,45)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (60,45)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (60,45)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (59,45)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (58,45)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (58,45)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (57,67)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (57,67)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (57,59)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (57,59)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (57,52)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (57,52)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (57,47)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (57,47)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (55,66)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (55,66)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (55,59)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (55,59)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (55,54)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (55,54)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (55,49)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (55,49)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (54,69)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (54,69)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (54,62)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (54,62)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (54,54)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (54,54)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (54,49)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (54,49)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (53,65)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (53,65)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (53,58)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (53,58)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (53,49)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (53,49)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (52,58)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (52,58)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (52,53)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (52,53)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (52,45)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (52,45)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (51,57)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (51,57)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (51,48)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (51,48)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (61,45)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (61,45)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (129,39)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (132,39)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (135,5)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (140,13)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (154,39)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (158,39)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (165,36)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (201,38)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (355,37)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (364,38)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (388,36)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (391,64)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (734,13)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (734,13)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (754,13)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (797,15)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (797,15)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (818,15)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (947,36)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (950,37)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (280,3)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (281,3)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (621,9)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (608,9)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (760,13)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (758,13)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (836,9)
+
+COMPILE FUNC: sigma2p_IP_get_ncfilter_
+
+COMPILE FUNC: sigma2p_IP_get_np_
+
+COMPILE FUNC: sigma2p_IP_get_plevs_
+
+COMPILE FUNC: sigma2p_IP_paicompute_
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (1028,28)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (1029,30)
+   -> DELETE: llvm.arithmetic.fence.f32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (1030,16)
+   -> DELETE: llvm.arithmetic.fence.f32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (1030,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (1032,21)
+   -> DELETE: llvm.exp.f32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (1033,23)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (1034,24)
+   -> DELETE: llvm.pow.f64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (1034,30)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (1040,29)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (1041,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (1042,35)
+   -> DELETE: llvm.sqrt.f64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (1043,20)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (1044,41)
+   -> DELETE: llvm.arithmetic.fence.f32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (1044,57)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (1028,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (1029,30)
+   -> llvm.arithmetic.fence.f32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (1030,16)
+   -> llvm.arithmetic.fence.f32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (1030,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (1032,21)
+   -> llvm.exp.f32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (1033,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (1034,24)
+   -> llvm.pow.f64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (1034,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (1040,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (1041,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (1042,35)
+   -> llvm.sqrt.f64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (1043,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (1044,41)
+   -> llvm.arithmetic.fence.f32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (1044,57)
+
+COMPILE FUNC: sigma2p_IP_top2btm_
+   -> llvm.smax.i32 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (956,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (956,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (956,14)
+
+COMPILE FUNC: myabort_
+
+COMPILE FUNC: MAIN__.DIR.OMP.PARALLEL.LOOP.7.split21601
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (797,15)
+   -> DELETE: for_allocate_handle /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (797,15)
+   -> DELETE: for_allocate_handle /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (797,15)
+   -> DELETE: for_realloc_lhs /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (797,15)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (797,15)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (797,15)
+   -> DELETE: mod_vertint_mp_intlog_single_ /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (803,24)
+   -> DELETE: mod_vertint_mp_intlin_single_ /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (801,24)
+   -> DELETE: mod_vertint_mp_intlog_single_ /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (809,24)
+   -> DELETE: mod_vertint_mp_intlin_single_ /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (807,24)
+   -> DELETE: mod_vertint_mp_intlog_o_single_ /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (815,24)
+   -> DELETE: mod_vertint_mp_intlin_o_single_ /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (813,24)
+   -> DELETE: for_allocate_handle /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (818,15)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (818,15)
+   -> llvm.smax.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (797,15)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (797,15)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (797,15)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (818,15)
+
+COMPILE FUNC: MAIN__.DIR.OMP.PARALLEL.LOOP.221579.split21608
+   -> llvm.smax.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (734,13)
+   -> DELETE: for_allocate_handle /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (734,13)
+   -> DELETE: for_allocate_handle /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (734,13)
+   -> DELETE: for_realloc_lhs /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (734,13)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (734,13)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (734,13)
+   -> DELETE: mod_vertint_mp_intlog_single_ /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (739,22)
+   -> DELETE: mod_vertint_mp_intlin_single_ /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (737,22)
+   -> DELETE: mod_vertint_mp_intlog_single_ /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (745,22)
+   -> DELETE: mod_vertint_mp_intlin_single_ /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (743,22)
+   -> DELETE: mod_vertint_mp_intlog_o_single_ /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (751,22)
+   -> DELETE: mod_vertint_mp_intlin_o_single_ /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (749,22)
+   -> DELETE: for_allocate_handle /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (754,13)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (754,13)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (734,13)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (734,13)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx198599267696ddee/ifx9bGIP8.i90 (754,13)
+
+---- End Inlining Report ------

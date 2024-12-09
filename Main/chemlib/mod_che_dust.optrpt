@@ -1,0 +1,1105 @@
+Global optimization report for : mod_che_dust._
+=================================================================
+
+Global optimization report for : mod_che_dust_mp_allocate_mod_che_dust_
+=================================================================
+
+Global optimization report for : mod_che_dust_mp_inidust_
+
+LOOP BEGIN at mod_che_dust.F90 (274, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (275, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (282, 11)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_dust.F90 (282, 11)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_che_dust.F90 (283, 11)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_che_dust.F90 (284, 11)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (286, 9)
+    remark #25567: 2 loops have been collapsed
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (287, 11)
+    remark #25567: 2 loops have been collapsed
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (288, 11)
+    remark #25567: 2 loops have been collapsed
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (296, 26)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (311, 10)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_dust.F90 (311, 10)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (313, 10)
+    remark #25423: Invariant If condition at line 313 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_dust.F90 (313, 10)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_dust.F90 (313, 10)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (322, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_dust.F90 (322, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (323, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_dust.F90 (323, 7)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_dust.F90 (323, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_dust.F90 (323, 7)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (326, 9)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+
+    LOOP BEGIN at mod_che_dust.F90 (326, 9)
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_che_dust.F90 (326, 9)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (326, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_dust.F90 (326, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_dust.F90 (326, 9)
+            remark #25564: Store sinked out of the loop
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between (329:43) and (329:43) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (338, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between dp_array (336:9) and dp_array (336:9) 
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (349, 7)
+    remark #15300: LOOP WAS VECTORIZED
+    remark #15305: vectorization support: vector length 4
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (349, 7)
+<Remainder loop for vectorization>
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (352, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_dust.F90 (352, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_dust.F90 (352, 9)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_dust.F90 (354, 13)
+                remark #25408: memset generated
+            LOOP END
+
+            LOOP BEGIN at mod_che_dust.F90 (352, 9)
+                remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                LOOP BEGIN at mod_che_dust.F90 (352, 9)
+                    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                    remark #15346: vector dependence: assumed FLOW dependence between ss (371:21) and ss (371:21) 
+                LOOP END
+            LOOP END
+
+            LOOP BEGIN at mod_che_dust.F90 (380, 15)
+                remark #25423: Invariant If condition at line 377 hoisted out of this loop
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (394, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_dust.F90 (394, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (395, 9)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (396, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (396, 9)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between chtrsol (396:9) and (396:9) 
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (390, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_dust.F90 (390, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (391, 9)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (392, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (392, 9)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between chtrsol (392:9) and (392:9) 
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (448, 9)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (454, 11)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 454 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_dust.F90 (455, 42)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (461, 9)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (462, 18)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (462:18) and (462:18) 
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (463, 15)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (463:15) and (463:15) 
+    remark #15346: vector dependence: assumed FLOW dependence between (463:15) and (463:15) 
+    remark #15346: vector dependence: assumed FLOW dependence between (463:15) and (463:15) 
+    remark #15346: vector dependence: assumed FLOW dependence between (463:15) and (463:15) 
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (465, 38)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (465:38) and (465:38) 
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (467, 18)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (467:18) and (467:18) 
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (468, 41)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (468:41) and (468:41) 
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (469, 39)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (469:39) and (469:39) 
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (414, 11)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_dust.F90 (415, 41)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (440, 9)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (441, 9)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (442, 9)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_che_dust_mp_ustart01_
+=================================================================
+
+Global optimization report for : mod_che_dustustart01_mp_cvmgt_
+=================================================================
+
+Global optimization report for : mod_che_dust_mp_ustart0_
+=================================================================
+
+Global optimization report for : mod_che_dust_mp_sfflux_
+
+LOOP BEGIN at mod_che_dust.F90 (589, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_dust.F90 (591, 43)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_dust.F90 (602, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_dust.F90 (604, 15)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (612, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (613, 49)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (621, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_dust.F90 (622, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_dust.F90 (624, 43)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between chiten (627:19) and idust 
+            remark #15346: vector dependence: assumed FLOW dependence between chiten (627:19) and cdzq 
+            remark #15346: vector dependence: assumed FLOW dependence between chiten (627:19) and crhob3d 
+            remark #15346: vector dependence: assumed FLOW dependence between chiten (627:19) and cpsb (632:39) 
+            remark #15346: vector dependence: assumed ANTI dependence between cpsb (632:39) and chiten (627:19) 
+            remark #15346: vector dependence: assumed FLOW dependence between chiten (631:19) and idust 
+            remark #15346: vector dependence: assumed FLOW dependence between chiten (631:19) and cdzq 
+            remark #15346: vector dependence: assumed FLOW dependence between chiten (631:19) and crhob3d 
+            remark #15346: vector dependence: assumed FLOW dependence between chiten (631:19) and cpsb (632:39) 
+            remark #15346: vector dependence: assumed ANTI dependence between idust (636:17) and chiten (627:19) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (659, 11)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_dust.F90 (659, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_dust.F90 (661, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_dust.F90 (664, 33)
+            <Predicate Optimized v1>
+                remark #25423: Invariant If condition at line 664 hoisted out of this loop
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between chiten (0:0) and imine 
+                remark #15346: vector dependence: assumed FLOW dependence between chiten (0:0) and cminer 
+                remark #15346: vector dependence: assumed FLOW dependence between chiten (0:0) and sminer 
+                remark #15346: vector dependence: assumed FLOW dependence between chiten (0:0) and cdzq 
+                remark #15346: vector dependence: assumed FLOW dependence between chiten (0:0) and crhob3d 
+                remark #15346: vector dependence: assumed FLOW dependence between chiten (0:0) and cpsb (672:76) 
+                remark #15346: vector dependence: assumed ANTI dependence between imine (675:19) and chiten (0:0) 
+                remark #15346: vector dependence: assumed ANTI dependence between cminer (675:19) and chiten (0:0) 
+                remark #15346: vector dependence: assumed ANTI dependence between sminer (676:58) and chiten (0:0) 
+                remark #15346: vector dependence: assumed ANTI dependence between cemtrac (675:19) and chiten (0:0) 
+            LOOP END
+
+            LOOP BEGIN at mod_che_dust.F90 (664, 33)
+            <Predicate Optimized v2>
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between chiten (0:0) and imine 
+                remark #15346: vector dependence: assumed FLOW dependence between chiten (0:0) and cminer 
+                remark #15346: vector dependence: assumed FLOW dependence between chiten (0:0) and sminer 
+                remark #15346: vector dependence: assumed FLOW dependence between chiten (0:0) and cdzq 
+                remark #15346: vector dependence: assumed FLOW dependence between chiten (0:0) and crhob3d 
+                remark #15346: vector dependence: assumed ANTI dependence between imine (675:19) and chiten (0:0) 
+                remark #15346: vector dependence: assumed ANTI dependence between cminer (675:19) and chiten (0:0) 
+                remark #15346: vector dependence: assumed ANTI dependence between sminer (676:58) and chiten (0:0) 
+                remark #15346: vector dependence: assumed ANTI dependence between cemtrac (675:19) and chiten (0:0) 
+                remark #15346: vector dependence: assumed FLOW dependence between cemtrac (675:19) and imine 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_che_dust_mp_dust_module_
+
+LOOP BEGIN at mod_che_dust.F90 (712, 9)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+
+    LOOP BEGIN at mod_che_dust.F90 (715, 8)
+        remark #15319: Loop was not vectorized: novector directive used
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (712, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_dust.F90 (712, 9)
+        remark #25563: Load hoisted out of the loop
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (723, 22)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+=================================================================
+
+Global optimization report for : mod_che_dust_mp_uthefft_
+
+LOOP BEGIN at mod_che_dust.F90 (0, 0)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_dust.F90 (0, 0)
+    <Predicate Optimized v2>
+        remark #15300: LOOP WAS VECTORIZED
+        remark #15305: vectorization support: vector length 2
+    LOOP END
+
+    LOOP BEGIN at mod_che_dust.F90 (0, 0)
+    <Remainder loop for vectorization>
+    LOOP END
+
+    LOOP BEGIN at mod_che_dust.F90 (0, 0)
+    <Predicate Optimized v1>
+        remark #25422: Invariant Condition at line 0 hoisted out of this loop
+        remark #15300: LOOP WAS VECTORIZED
+        remark #15305: vectorization support: vector length 2
+    LOOP END
+
+    LOOP BEGIN at mod_che_dust.F90 (0, 0)
+    <Remainder loop for vectorization>
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (784, 20)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_dust.F90 (784, 20)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_che_dust_mp_emission_
+
+LOOP BEGIN at mod_che_dust.F90 (821, 7)
+<Multiversioned v1>
+    remark #25567: 2 loops have been collapsed
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (828, 9)
+<Multiversioned v1>
+    remark #25567: 2 loops have been collapsed
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (829, 9)
+<Multiversioned v1>
+    remark #25567: 2 loops have been collapsed
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (830, 9)
+<Multiversioned v1>
+    remark #25567: 2 loops have been collapsed
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (923, 7)
+<Multiversioned v1>
+    remark #25567: 3 loops have been collapsed
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (951, 7)
+<Multiversioned v1>
+    remark #25567: 2 loops have been collapsed
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (821, 7)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (890, 11)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_dust.F90 (891, 29)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_dust.F90 (900, 28)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between fsoil (909:21) and fsoil (909:21) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (828, 9)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (829, 9)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (830, 9)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (833, 11)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_dust.F90 (833, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_dust.F90 (838, 26)
+            remark #25423: Invariant If condition at line 836 hoisted out of this loop
+            remark #25564: Store sinked out of the loop
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed OUTPUT dependence between p1 (854:33) and p1 
+            remark #15346: vector dependence: assumed OUTPUT dependence between p1 (854:33) and p1 
+            remark #15346: vector dependence: assumed OUTPUT dependence between p1 (854:33) and p1 
+            remark #15346: vector dependence: assumed OUTPUT dependence between p2 (855:44) and p2 (859:33) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between p2 (855:44) and p2 
+            remark #15346: vector dependence: assumed OUTPUT dependence between p2 (855:44) and p2 
+            remark #15346: vector dependence: assumed OUTPUT dependence between p3 (856:37) and p3 (860:32) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between p3 (856:37) and p3 
+            remark #15346: vector dependence: assumed OUTPUT dependence between p3 (856:37) and p3 
+            remark #15346: vector dependence: assumed OUTPUT dependence between p1 and p1 (854:33) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (923, 7)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (936, 11)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_dust.F90 (937, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_dust.F90 (939, 13)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (926, 11)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_dust.F90 (926, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_dust.F90 (927, 13)
+            remark #15300: LOOP WAS VECTORIZED
+            remark #15305: vectorization support: vector length 2
+        LOOP END
+
+        LOOP BEGIN at mod_che_dust.F90 (927, 13)
+        <Remainder loop for vectorization>
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (951, 7)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (953, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_dust.F90 (953, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_dust.F90 (965, 11)
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_che_dust_mp_clm_dust_tend_
+
+LOOP BEGIN at mod_che_dust.F90 (985, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_dust.F90 (986, 27)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_dust.F90 (986, 27)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between (986:27) and (986:27) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_dust.F90 (992, 24)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_dust.F90 (1011, 13)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_che_dust.F90 (1014, 13)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_che_dust.F90 (1011, 13)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_dust.F90 (1011, 13)
+            remark #25563: Load hoisted out of the loop
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_che_dust.F90 (1002, 15)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_che_dust.F90 (1006, 15)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_che_dust.F90 (1002, 15)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_dust.F90 (1002, 15)
+            remark #25563: Load hoisted out of the loop
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_che_dust.F90 (995, 15)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_che_dust.F90 (998, 15)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_che_dust.F90 (995, 15)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_dust.F90 (995, 15)
+            remark #25563: Load hoisted out of the loop
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_che_dust.F90 (1018, 11)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_che_dust.F90 (1022, 11)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_che_dust.F90 (1018, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_dust.F90 (1018, 11)
+            remark #25563: Load hoisted out of the loop
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_che_dust.F90 (1026, 13)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_che_dust.F90 (1030, 13)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_che_dust.F90 (1026, 13)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_dust.F90 (1026, 13)
+            remark #25563: Load hoisted out of the loop
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.umax.i1
+
+COMPILE FUNC: mod_che_dust_mp_sfflux_
+   -> llvm.smax.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (553,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (553,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (553,16)
+   -> llvm.smax.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (553,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (553,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (553,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (553,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (553,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (553,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (553,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (553,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (553,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (553,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (553,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (574,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (575,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (576,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (577,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (578,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (579,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (580,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (581,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (582,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (583,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (584,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (585,7)
+   -> mod_che_dust_mp_dust_module_ /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (612,14)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (628,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (632,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (645,23)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (667,27)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (668,27)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (672,27)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (673,27)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (676,44)
+   -> mod_che_dust_mp_dust_module_ /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (612,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (667,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (668,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (676,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (667,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (668,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (676,44)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (553,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (553,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (553,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (553,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (553,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (553,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (553,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (553,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (553,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (553,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (553,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (553,16)
+   -> mod_che_dust_mp_dust_module_ /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (612,14)
+
+COMPILE FUNC: mod_che_dust_mp_dust_module_
+   -> llvm.smax.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (687,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (687,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (687,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (687,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (687,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (687,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (687,16)
+   -> INLINE: mod_che_dust_mp_ustart01_ /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (714,41)
+      -> DELETE: llvm.pow.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (502,19)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (502,17)
+      -> DELETE: llvm.pow.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (503,56)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (503,54)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (503,31)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (503,27)
+      -> DELETE: llvm.sqrt.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (503,15)
+      -> DELETE: llvm.sqrt.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (504,15)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (506,50)
+      -> DELETE: llvm.exp.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (506,42)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (506,33)
+      -> DELETE: llvm.pow.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (507,38)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (507,35)
+      -> DELETE: llvm.sqrt.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (507,26)
+      -> INLINE: mod_che_dustustart01_mp_cvmgt_ /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (506,18)
+      -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (506,18)
+      -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (506,18)
+      -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (506,18)
+      -> llvm.pow.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (502,19)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (502,17)
+      -> llvm.pow.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (503,56)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (503,54)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (503,31)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (503,27)
+      -> llvm.sqrt.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (503,15)
+      -> llvm.sqrt.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (504,15)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (506,50)
+      -> llvm.exp.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (506,42)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (506,33)
+      -> llvm.pow.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (507,38)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (507,35)
+      -> llvm.sqrt.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (507,26)
+      -> llvm.pow.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (502,19)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (502,17)
+      -> llvm.pow.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (503,56)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (503,54)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (503,31)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (503,27)
+      -> llvm.sqrt.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (503,15)
+      -> llvm.sqrt.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (504,15)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (506,50)
+      -> llvm.exp.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (506,42)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (506,33)
+      -> llvm.pow.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (507,38)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (507,35)
+      -> llvm.sqrt.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (507,26)
+   -> llvm.log.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (726,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (727,34)
+   -> llvm.pow.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (727,40)
+   -> llvm.log.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (727,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (727,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (726,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (760,43)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (758,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (758,20)
+   -> llvm.log.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (758,47)
+   -> mod_che_dust_mp_emission_ /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (768,12)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (714,41)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (714,41)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (714,41)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (687,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (687,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (687,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (687,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (687,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (687,16)
+
+COMPILE FUNC: mod_che_dust_mp_ustart01_
+   -> llvm.pow.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (502,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (502,17)
+   -> llvm.pow.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (503,56)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (503,54)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (503,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (503,27)
+   -> llvm.sqrt.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (503,15)
+   -> llvm.sqrt.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (504,15)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (506,50)
+   -> llvm.exp.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (506,42)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (506,33)
+   -> llvm.pow.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (507,38)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (507,35)
+   -> llvm.sqrt.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (507,26)
+   -> INLINE: mod_che_dustustart01_mp_cvmgt_ /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (506,18)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (506,18)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (506,18)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (506,18)
+
+COMPILE FUNC: mod_che_dust_mp_emission_
+   -> llvm.smax.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (790,16)
+   -> llvm.smax.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (790,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (790,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (790,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (790,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (790,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (790,16)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (859,27)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (859,35)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (854,27)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (854,35)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (855,27)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (855,38)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (870,64)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (871,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (871,58)
+   -> llvm.powi.f64.i32 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (871,72)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (871,57)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (872,64)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (873,58)
+   -> llvm.powi.f64.i32 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (873,72)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (873,57)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (874,64)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (875,58)
+   -> llvm.powi.f64.i32 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (875,72)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (875,57)
+   -> DELETE: llvm.powi.f64.i32 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (839,34)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (839,39)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (840,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (851,25)
+   -> DELETE: llvm.powi.f64.i32 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (852,36)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (852,24)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (852,42)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (837,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (896,38)
+   -> llvm.sqrt.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (896,53)
+   -> llvm.fabs.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (896,53)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (901,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (902,39)
+   -> llvm.exp.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (905,32)
+   -> llvm.pow.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (912,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (958,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (837,37)
+   -> llvm.powi.f64.i32 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (839,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (852,42)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (839,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (840,27)
+   -> llvm.powi.f64.i32 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (852,36)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (852,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (854,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (854,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (855,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (855,38)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (859,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (859,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (870,64)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (872,64)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (874,64)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (790,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (790,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (790,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (790,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (790,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (821,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (828,9)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (829,9)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (830,9)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (923,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (951,7)
+
+COMPILE FUNC: mod_che_dust._
+
+COMPILE FUNC: mod_che_dust_mp_allocate_mod_che_dust_
+
+COMPILE FUNC: mod_che_dust_mp_inidust_
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (277,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (278,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (279,7)
+   -> DELETE: llvm.fabs.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (286,9)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (295,9)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (360,40)
+   -> DELETE: llvm.exp.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (367,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (369,40)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (371,40)
+   -> DELETE: llvm.log.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (360,52)
+   -> DELETE: llvm.log.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (361,28)
+   -> DELETE: llvm.log.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (362,28)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (361,28)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (361,27)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (363,36)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (363,29)
+   -> llvm.log10.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (410,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (411,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (411,38)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (412,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (412,38)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (413,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (413,38)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (420,40)
+   -> llvm.exp.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (420,56)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (423,40)
+   -> llvm.exp.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (423,56)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (426,40)
+   -> llvm.exp.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (426,56)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (431,30)
+   -> llvm.exp.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (431,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (434,30)
+   -> llvm.exp.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (434,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (437,30)
+   -> llvm.exp.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (437,46)
+   -> llvm.log.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (452,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (452,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (453,42)
+   -> llvm.powi.f64.i32 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (453,56)
+   -> llvm.exp.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (453,36)
+   -> llvm.fabs.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (462,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (465,32)
+   -> llvm.fabs.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (467,14)
+   -> llvm.fabs.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (286,9)
+   -> llvm.log.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (360,52)
+   -> llvm.log.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (361,28)
+   -> llvm.log.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (362,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (361,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (361,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (363,36)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (363,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (360,40)
+   -> llvm.exp.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (367,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (369,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (371,40)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (240,49)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (240,49)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (354,13)
+
+COMPILE FUNC: mod_che_dustustart01_mp_cvmgt_
+
+COMPILE FUNC: mod_che_dust_mp_ustart0_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (540,43)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (540,20)
+   -> llvm.sqrt.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (541,17)
+
+COMPILE FUNC: mod_che_dust_mp_uthefft_
+   -> INLINE: mod_che_dust_mp_ustart0_ /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (784,41)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (540,43)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (540,20)
+      -> DELETE: llvm.sqrt.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (541,17)
+   -> INLINE: mod_che_dust_mp_ustart01_ /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (785,41)
+      -> DELETE: llvm.pow.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (502,19)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (502,17)
+      -> DELETE: llvm.pow.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (503,56)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (503,54)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (503,31)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (503,27)
+      -> DELETE: llvm.sqrt.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (503,15)
+      -> DELETE: llvm.sqrt.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (504,15)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (506,50)
+      -> DELETE: llvm.exp.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (506,42)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (506,33)
+      -> DELETE: llvm.pow.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (507,38)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (507,35)
+      -> DELETE: llvm.sqrt.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (507,26)
+      -> INLINE: mod_che_dustustart01_mp_cvmgt_ /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (506,18)
+      -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (506,18)
+      -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (506,18)
+      -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (506,18)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (784,41)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (784,41)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (784,41)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (785,41)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (785,41)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (785,41)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (784,41)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (784,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (540,43)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (540,20)
+   -> llvm.sqrt.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (541,17)
+   -> llvm.pow.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (502,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (502,17)
+   -> llvm.pow.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (503,56)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (503,54)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (503,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (503,27)
+   -> llvm.sqrt.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (503,15)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (506,50)
+   -> llvm.exp.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (506,42)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (506,33)
+   -> llvm.pow.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (507,38)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (507,35)
+   -> llvm.sqrt.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (507,26)
+   -> llvm.sqrt.v2f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (504,15)
+   -> llvm.sqrt.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (504,15)
+   -> llvm.sqrt.v2f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (504,15)
+   -> llvm.sqrt.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (504,15)
+
+COMPILE FUNC: mod_che_dust_mp_clm_dust_tend_
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (997,45)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (1004,45)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (1029,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (997,45)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (997,45)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (1004,45)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (1004,45)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (1029,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (1029,35)
+   -> DELETE: llvm.umax.i1 /scratch_local/ifx1200567627lQ0sYR/ifxmIO6xU.i90 (1024,22)
+
+---- End Inlining Report ------

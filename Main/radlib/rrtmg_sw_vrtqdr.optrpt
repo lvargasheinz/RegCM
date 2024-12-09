@@ -1,0 +1,64 @@
+Global optimization report for : rrtmg_sw_vrtqdr._
+=================================================================
+
+Global optimization report for : rrtmg_sw_vrtqdr_mp_vrtqdr_sw_
+
+LOOP BEGIN at rrtmg_sw_vrtqdr.F90 (140, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (135:10) and (136:45) 
+    remark #15346: vector dependence: assumed FLOW dependence between (138:10) and (134:10) 
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_vrtqdr.F90 (159, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between ztdn (154:10) and ztdn (154:32) 
+    remark #15346: vector dependence: assumed FLOW dependence between (157:10) and (153:10) 
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_vrtqdr.F90 (169, 7)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: rrtmg_sw_vrtqdr_mp_vrtqdr_sw_
+   -> llvm.smax.i32 /scratch_local/ifx0954782133lB73Z1/ifxdJtJgW.i90 (47,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0954782133lB73Z1/ifxdJtJgW.i90 (47,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0954782133lB73Z1/ifxdJtJgW.i90 (122,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0954782133lB73Z1/ifxdJtJgW.i90 (124,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0954782133lB73Z1/ifxdJtJgW.i90 (124,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0954782133lB73Z1/ifxdJtJgW.i90 (123,34)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0954782133lB73Z1/ifxdJtJgW.i90 (134,30)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0954782133lB73Z1/ifxdJtJgW.i90 (136,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0954782133lB73Z1/ifxdJtJgW.i90 (136,21)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0954782133lB73Z1/ifxdJtJgW.i90 (135,35)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0954782133lB73Z1/ifxdJtJgW.i90 (153,30)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0954782133lB73Z1/ifxdJtJgW.i90 (155,36)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0954782133lB73Z1/ifxdJtJgW.i90 (155,35)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0954782133lB73Z1/ifxdJtJgW.i90 (155,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0954782133lB73Z1/ifxdJtJgW.i90 (164,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0954782133lB73Z1/ifxdJtJgW.i90 (166,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0954782133lB73Z1/ifxdJtJgW.i90 (165,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0954782133lB73Z1/ifxdJtJgW.i90 (167,36)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0954782133lB73Z1/ifxdJtJgW.i90 (134,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0954782133lB73Z1/ifxdJtJgW.i90 (136,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0954782133lB73Z1/ifxdJtJgW.i90 (136,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0954782133lB73Z1/ifxdJtJgW.i90 (135,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0954782133lB73Z1/ifxdJtJgW.i90 (153,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0954782133lB73Z1/ifxdJtJgW.i90 (155,36)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0954782133lB73Z1/ifxdJtJgW.i90 (155,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0954782133lB73Z1/ifxdJtJgW.i90 (155,22)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0954782133lB73Z1/ifxdJtJgW.i90 (47,18)
+   -> llvm.smax.i32 /scratch_local/ifx0954782133lB73Z1/ifxdJtJgW.i90 (169,7)
+
+COMPILE FUNC: rrtmg_sw_vrtqdr._
+
+---- End Inlining Report ------

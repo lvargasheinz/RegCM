@@ -1,0 +1,113 @@
+Global optimization report for : mod_bats_co2._
+=================================================================
+
+Global optimization report for : mod_bats_co2_mp_co2_
+
+LOOP BEGIN at mod_bats_co2.F90 (73, 20)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between resp (83:9) and sigf (73:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between resp (83:9) and lftrs (74:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between resp (83:9) and lftra (75:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between resp (83:9) and swsi (77:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between resp (83:9) and rlai (77:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between resp (83:9) and tlef 
+    remark #15346: vector dependence: assumed FLOW dependence between resp (83:9) and tgrd 
+    remark #15346: vector dependence: assumed FLOW dependence between resp (83:9) and xlai 
+    remark #15346: vector dependence: assumed FLOW dependence between resp (83:9) and xlsai 
+    remark #15346: vector dependence: assumed FLOW dependence between resp (83:9) and xlsai (78:9) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_bats_co2_mp_carbon_
+
+LOOP BEGIN at mod_bats_co2.F90 (149, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between ccold cco2i (162:22) and ccold cco2i (151:44) 
+    remark #15346: vector dependence: assumed FLOW dependence between ccold cco2i (162:22) and ccold cco2i (163:23) 
+    remark #15346: vector dependence: assumed FLOW dependence between p (160:27) and p (154:38) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_bats_co2carbon_mp_g_
+=================================================================
+
+Global optimization report for : mod_bats_co2carbon_mp_r_
+=================================================================
+
+Global optimization report for : mod_bats_co2carbon_mp_e_
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.experimental.noalias.scope.decl
+
+COMPILE FUNC: mod_bats_co2._
+
+COMPILE FUNC: mod_bats_co2carbon_mp_r_
+   -> llvm.exp.f64 /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (182,13)
+
+COMPILE FUNC: mod_bats_co2carbon_mp_g_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (175,21)
+   -> llvm.exp.f64 /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (175,13)
+   -> llvm.exp.f64 /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (176,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (176,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (176,14)
+
+COMPILE FUNC: mod_bats_co2carbon_mp_e_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (188,30)
+   -> llvm.sqrt.f64 /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (188,18)
+
+COMPILE FUNC: mod_bats_co2_mp_carbon_
+   -> INLINE: mod_bats_co2carbon_mp_r_ /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (119,10)
+      -> llvm.exp.f64 /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (182,13)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (121,15)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (151,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (151,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (157,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (158,25)
+   -> llvm.sqrt.f64 /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (159,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (160,21)
+   -> llvm.fabs.f64 /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (163,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (166,45)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (166,29)
+   -> INLINE: mod_bats_co2carbon_mp_r_ /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (167,47)
+      -> llvm.exp.f64 /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (182,13)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (167,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (166,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (125,31)
+   -> INLINE: mod_bats_co2carbon_mp_r_ /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (126,26)
+      -> llvm.exp.f64 /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (182,13)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (126,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (125,30)
+   -> INLINE: mod_bats_co2carbon_mp_g_ /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (145,12)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (175,21)
+      -> llvm.exp.f64 /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (175,13)
+      -> llvm.exp.f64 /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (176,21)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (176,21)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (176,14)
+   -> INLINE: mod_bats_co2carbon_mp_e_ /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (147,12)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (188,30)
+      -> llvm.sqrt.f64 /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (188,18)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (119,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (167,47)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (126,26)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (145,12)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (145,12)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (145,12)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (147,12)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (147,12)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (147,12)
+
+COMPILE FUNC: mod_bats_co2_mp_co2_
+   -> mod_bats_co2_mp_carbon_ /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (77,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (81,49)
+   -> llvm.exp.f64 /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (81,36)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (82,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx11671088011GNnA1/ifx4anQGM.i90 (83,30)
+
+---- End Inlining Report ------

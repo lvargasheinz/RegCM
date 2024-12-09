@@ -1,0 +1,60 @@
+Global optimization report for : mod_pgw._
+=================================================================
+
+Global optimization report for : mod_pgw_mp_init_pgw_
+
+LOOP BEGIN at mod_pgw.F90 (145, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed ANTI dependence between (148:26) and (148:26) 
+    remark #15346: vector dependence: assumed ANTI dependence
+    remark #15346: vector dependence: assumed OUTPUT dependence between (148:26) and (148:26) 
+    remark #15346: vector dependence: assumed OUTPUT dependence
+    remark #15346: vector dependence: assumed FLOW dependence between (148:26) and (148:26) 
+    remark #15346: vector dependence: assumed ANTI dependence between (148:26) and (148:26) 
+    remark #15346: vector dependence: assumed ANTI dependence
+    remark #15346: vector dependence: assumed ANTI dependence
+    remark #15346: vector dependence: assumed OUTPUT dependence between (147:12) and (148:26) 
+    remark #15346: vector dependence: assumed OUTPUT dependence
+LOOP END
+=================================================================
+
+Global optimization report for : mod_pgw_mp_get_pgw_
+
+LOOP BEGIN at mod_pgw.F90 (210, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_pgw.F90 (210, 5)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_pgw.F90 (210, 5)
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_pgw_mp_conclude_pgw_
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_pgw._
+
+COMPILE FUNC: mod_pgw_mp_init_pgw_
+   -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx2086425096hdMaLS/ifxhbWl3j.i90 (76,5)
+
+COMPILE FUNC: mod_pgw_mp_get_pgw_
+   -> DELETE: mod_kdinterp_mp_interp_3d_ /scratch_local/ifx2086425096hdMaLS/ifxhbWl3j.i90 (204,12)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx2086425096hdMaLS/ifxhbWl3j.i90 (210,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx2086425096hdMaLS/ifxhbWl3j.i90 (201,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx2086425096hdMaLS/ifxhbWl3j.i90 (202,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx2086425096hdMaLS/ifxhbWl3j.i90 (206,7)
+
+COMPILE FUNC: mod_pgw_mp_conclude_pgw_
+
+---- End Inlining Report ------

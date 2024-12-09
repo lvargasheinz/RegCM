@@ -1,0 +1,82 @@
+Global optimization report for : mod_bats_drag._
+=================================================================
+
+Global optimization report for : mod_bats_drag_mp_dragc_
+
+LOOP BEGIN at mod_bats_drag.F90 (82, 17)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between ribd (88:7) and zh (73:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between ribd (88:7) and lveg (73:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between ribd (88:7) and sigf (73:17) 
+    remark #15346: vector dependence: assumed FLOW dependence between ribd (88:7) and sts (75:20) 
+    remark #15346: vector dependence: assumed FLOW dependence between ribd (88:7) and taf (75:20) 
+    remark #15346: vector dependence: assumed FLOW dependence between ribd (88:7) and tgrd (76:15) 
+    remark #15346: vector dependence: assumed FLOW dependence between ribd (88:7) and usw (88:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between ribd (88:7) and vsw (88:23) 
+    remark #15346: vector dependence: assumed FLOW dependence between vspda (89:7) and zh (73:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between vspda (89:7) and lveg (73:7) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_bats_drag_mp_dragdn_
+
+LOOP BEGIN at mod_bats_drag.F90 (156, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+=================================================================
+
+Global optimization report for : mod_bats_drag_mp_depth_
+
+LOOP BEGIN at mod_bats_drag.F90 (200, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between scrat (194:7) and snag (192:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between scrat (194:7) and sncv (194:7) 
+    remark #15346: vector dependence: assumed ANTI dependence between lveg (195:22) and scrat (194:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between wt (196:7) and snag (192:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between wt (196:7) and sncv (194:7) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between wt (196:7) and scrat (194:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between wt (196:7) and lveg (195:22) 
+    remark #15346: vector dependence: assumed ANTI dependence between lncl (197:18) and scrat (194:7) 
+    remark #15346: vector dependence: assumed ANTI dependence between lncl (197:18) and wt (196:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between sigf (197:7) and snag (192:7) 
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_bats_drag._
+
+COMPILE FUNC: mod_bats_drag_mp_dragdn_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1965111789HqwLZj/ifxsjUcCJ.i90 (150,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1965111789HqwLZj/ifxsjUcCJ.i90 (151,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1965111789HqwLZj/ifxsjUcCJ.i90 (152,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1965111789HqwLZj/ifxsjUcCJ.i90 (153,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1965111789HqwLZj/ifxsjUcCJ.i90 (154,14)
+
+COMPILE FUNC: mod_bats_drag_mp_dragc_
+   -> mod_bats_drag_mp_dragdn_ /scratch_local/ifx1965111789HqwLZj/ifxsjUcCJ.i90 (66,10)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1965111789HqwLZj/ifxsjUcCJ.i90 (73,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1965111789HqwLZj/ifxsjUcCJ.i90 (74,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1965111789HqwLZj/ifxsjUcCJ.i90 (75,28)
+   -> llvm.sqrt.f64 /scratch_local/ifx1965111789HqwLZj/ifxsjUcCJ.i90 (84,27)
+   -> llvm.sqrt.f64 /scratch_local/ifx1965111789HqwLZj/ifxsjUcCJ.i90 (89,18)
+   -> llvm.sqrt.f64 /scratch_local/ifx1965111789HqwLZj/ifxsjUcCJ.i90 (101,42)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1965111789HqwLZj/ifxsjUcCJ.i90 (101,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1965111789HqwLZj/ifxsjUcCJ.i90 (103,27)
+
+COMPILE FUNC: mod_bats_drag_mp_depth_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1965111789HqwLZj/ifxsjUcCJ.i90 (192,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1965111789HqwLZj/ifxsjUcCJ.i90 (192,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1965111789HqwLZj/ifxsjUcCJ.i90 (193,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1965111789HqwLZj/ifxsjUcCJ.i90 (196,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1965111789HqwLZj/ifxsjUcCJ.i90 (197,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1965111789HqwLZj/ifxsjUcCJ.i90 (198,27)
+
+---- End Inlining Report ------

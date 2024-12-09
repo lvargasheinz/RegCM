@@ -1,0 +1,54 @@
+Global optimization report for : rrtmg_sw_reftra._
+=================================================================
+
+Global optimization report for : rrtmg_sw_reftra_mp_reftra_sw_
+
+LOOP BEGIN at rrtmg_sw_reftra.F90 (152, 14)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.memset.p0.i64
+
+COMPILE FUNC: rrtmg_sw_reftra_mp_reftra_sw_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0030642277Oubcab/ifxFdfTJa.i90 (149,7)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx0030642277Oubcab/ifxFdfTJa.i90 (149,7)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0030642277Oubcab/ifxFdfTJa.i90 (186,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0030642277Oubcab/ifxFdfTJa.i90 (186,49)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0030642277Oubcab/ifxFdfTJa.i90 (186,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0030642277Oubcab/ifxFdfTJa.i90 (210,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0030642277Oubcab/ifxFdfTJa.i90 (216,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0030642277Oubcab/ifxFdfTJa.i90 (216,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0030642277Oubcab/ifxFdfTJa.i90 (216,58)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0030642277Oubcab/ifxFdfTJa.i90 (284,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0030642277Oubcab/ifxFdfTJa.i90 (294,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0030642277Oubcab/ifxFdfTJa.i90 (315,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0030642277Oubcab/ifxFdfTJa.i90 (317,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0030642277Oubcab/ifxFdfTJa.i90 (324,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0030642277Oubcab/ifxFdfTJa.i90 (324,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0030642277Oubcab/ifxFdfTJa.i90 (325,40)
+   -> llvm.sqrt.f64 /scratch_local/ifx0030642277Oubcab/ifxFdfTJa.i90 (238,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0030642277Oubcab/ifxFdfTJa.i90 (245,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0030642277Oubcab/ifxFdfTJa.i90 (246,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0030642277Oubcab/ifxFdfTJa.i90 (247,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0030642277Oubcab/ifxFdfTJa.i90 (249,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0030642277Oubcab/ifxFdfTJa.i90 (250,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0030642277Oubcab/ifxFdfTJa.i90 (251,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0030642277Oubcab/ifxFdfTJa.i90 (252,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0030642277Oubcab/ifxFdfTJa.i90 (258,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0030642277Oubcab/ifxFdfTJa.i90 (170,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0030642277Oubcab/ifxFdfTJa.i90 (170,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0030642277Oubcab/ifxFdfTJa.i90 (171,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0030642277Oubcab/ifxFdfTJa.i90 (171,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0030642277Oubcab/ifxFdfTJa.i90 (172,26)
+
+COMPILE FUNC: rrtmg_sw_reftra._
+
+---- End Inlining Report ------

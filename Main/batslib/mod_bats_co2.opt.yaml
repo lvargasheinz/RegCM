@@ -1,0 +1,1451 @@
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: mod_bats_co2.F90, Line: 119, Column: 10 }
+Function:        mod_bats_co2_mp_carbon_
+Args:
+  - String:          ''''
+  - Callee:          mod_bats_co2carbon_mp_r_
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 179, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mod_bats_co2_mp_carbon_
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 105, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-15'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          mod_bats_co2_mp_carbon_
+  - String:          ':'
+  - Line:            '14'
+  - String:          ':'
+  - Column:          '10'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: mod_bats_co2.F90, Line: 167, Column: 47 }
+Function:        mod_bats_co2_mp_carbon_
+Args:
+  - String:          ''''
+  - Callee:          mod_bats_co2carbon_mp_r_
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 179, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mod_bats_co2_mp_carbon_
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 105, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-15'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          mod_bats_co2_mp_carbon_
+  - String:          ':'
+  - Line:            '62'
+  - String:          ':'
+  - Column:          '47'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: mod_bats_co2.F90, Line: 126, Column: 26 }
+Function:        mod_bats_co2_mp_carbon_
+Args:
+  - String:          ''''
+  - Callee:          mod_bats_co2carbon_mp_r_
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 179, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mod_bats_co2_mp_carbon_
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 105, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-15'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          mod_bats_co2_mp_carbon_
+  - String:          ':'
+  - Line:            '21'
+  - String:          ':'
+  - Column:          '26'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: mod_bats_co2.F90, Line: 145, Column: 12 }
+Function:        mod_bats_co2_mp_carbon_
+Args:
+  - String:          ''''
+  - Callee:          mod_bats_co2carbon_mp_g_
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 172, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mod_bats_co2_mp_carbon_
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 105, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '25'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          mod_bats_co2_mp_carbon_
+  - String:          ':'
+  - Line:            '40'
+  - String:          ':'
+  - Column:          '12'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: mod_bats_co2.F90, Line: 147, Column: 12 }
+Function:        mod_bats_co2_mp_carbon_
+Args:
+  - String:          ''''
+  - Callee:          mod_bats_co2carbon_mp_e_
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 185, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mod_bats_co2_mp_carbon_
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 105, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-15'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          mod_bats_co2_mp_carbon_
+  - String:          ':'
+  - Line:            '42'
+  - String:          ':'
+  - Column:          '12'
+  - String:          ';'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 16 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          ''''
+  - Callee:          mod_bats_co2_mp_carbon_
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 105, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          mod_bats_co2_mp_co2_
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 65, Column: 0 }
+  - String:          ''' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '430'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 154, Column: 24 }
+Function:        mod_bats_co2_mp_carbon_
+Args:
+  - String:          'hoisting '
+  - Inst:            fmul
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 154, Column: 24 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 157, Column: 19 }
+Function:        mod_bats_co2_mp_carbon_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 157, Column: 19 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 158, Column: 20 }
+Function:        mod_bats_co2_mp_carbon_
+Args:
+  - String:          'hoisting '
+  - Inst:            fmul
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 158, Column: 20 }
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 16 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          ''''
+  - Callee:          mod_bats_co2_mp_carbon_
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 105, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          mod_bats_co2_mp_co2_
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 65, Column: 0 }
+  - String:          ''' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '375'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 73, Column: 7 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 73, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 73, Column: 7 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 73, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 73, Column: 7 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 73, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 73, Column: 7 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 73, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 73, Column: 7 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 73, Column: 7 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 74, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 75, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 78, Column: 23 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 79, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 81, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 81, Column: 35 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 81, Column: 35 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 74, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 74, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 74, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 74, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 74, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 74, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 74, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 74, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 74, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 74, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 75, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 75, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 75, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 75, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 75, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 75, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 75, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 75, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 75, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 75, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 78, Column: 23 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 78, Column: 23 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 78, Column: 23 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 78, Column: 23 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 78, Column: 23 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 78, Column: 23 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 78, Column: 23 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 78, Column: 23 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 78, Column: 23 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 78, Column: 23 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 79, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 79, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 81, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 81, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 81, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 81, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 81, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 81, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 81, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 81, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 81, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 81, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 81, Column: 35 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 81, Column: 35 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 81, Column: 35 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 81, Column: 35 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 81, Column: 35 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 81, Column: 35 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 81, Column: 35 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 81, Column: 35 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 81, Column: 35 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 81, Column: 35 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 81, Column: 35 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 81, Column: 35 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 81, Column: 35 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 81, Column: 35 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 81, Column: 35 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 81, Column: 35 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 81, Column: 35 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 81, Column: 35 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_bats_co2.F90, Line: 81, Column: 35 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_bats_co2.F90, Line: 81, Column: 35 }
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+Function:        mod_bats_co2._
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        mod_bats_co2._
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_0
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+Function:        mod_bats_co2._
+Args:
+  - NumInstructions: '1'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            LoopSpillReloadCopies
+DebugLoc:        { File: mod_bats_co2.F90, Line: 73, Column: 20 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - NumSpills:       '9'
+  - String:          ' spills '
+  - TotalSpillsCost: '7.143750e+01'
+  - String:          ' total spills cost '
+  - NumFoldedSpills: '4'
+  - String:          ' folded spills '
+  - TotalFoldedSpillsCost: '6.375000e+01'
+  - String:          ' total folded spills cost '
+  - NumReloads:      '19'
+  - String:          ' reloads '
+  - TotalReloadsCost: '1.748125e+02'
+  - String:          ' total reloads cost '
+  - NumFoldedReloads: '11'
+  - String:          ' folded reloads '
+  - TotalFoldedReloadsCost: '1.433125e+02'
+  - String:          ' total folded reloads cost '
+  - NumVRCopies:     '4'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '3.175000e+01'
+  - String:          ' total copies cost '
+  - String:          generated in loop
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: mod_bats_co2.F90, Line: 65, Column: 1 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - NumSpills:       '29'
+  - String:          ' spills '
+  - TotalSpillsCost: '8.193750e+01'
+  - String:          ' total spills cost '
+  - NumFoldedSpills: '4'
+  - String:          ' folded spills '
+  - TotalFoldedSpillsCost: '6.375000e+01'
+  - String:          ' total folded spills cost '
+  - NumReloads:      '20'
+  - String:          ' reloads '
+  - TotalReloadsCost: '1.753125e+02'
+  - String:          ' total reloads cost '
+  - NumFoldedReloads: '11'
+  - String:          ' folded reloads '
+  - TotalFoldedReloadsCost: '1.433125e+02'
+  - String:          ' total folded reloads cost '
+  - NumVRCopies:     '16'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '3.775000e+01'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: mod_bats_co2.F90, Line: 65, Column: 0 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - NumStackBytes:   '280'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_co2.F90, Line: 72, Column: 5 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_1
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '14'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_co2.F90, Line: 88, Column: 3 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do4
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_co2.F90, Line: 77, Column: 9 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body3.preheader
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '102'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_co2.F90, Line: 0, Column: 0 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb7_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '19'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body3
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_co2.F90, Line: 0, Column: 0 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new8_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '67'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_co2.F90, Line: 0, Column: 0 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new32_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: mod_bats_co2.F90, Line: 65, Column: 0 }
+Function:        mod_bats_co2_mp_co2_
+Args:
+  - NumInstructions: '218'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            LoopSpillReloadCopies
+DebugLoc:        { File: mod_bats_co2.F90, Line: 149, Column: 7 }
+Function:        mod_bats_co2_mp_carbon_
+Args:
+  - NumVRCopies:     '12'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '1.917500e+02'
+  - String:          ' total copies cost '
+  - String:          generated in loop
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: mod_bats_co2.F90, Line: 105, Column: 1 }
+Function:        mod_bats_co2_mp_carbon_
+Args:
+  - NumSpills:       '9'
+  - String:          ' spills '
+  - TotalSpillsCost: '5.500000e+00'
+  - String:          ' total spills cost '
+  - NumReloads:      '6'
+  - String:          ' reloads '
+  - TotalReloadsCost: '3.000000e+00'
+  - String:          ' total reloads cost '
+  - NumFoldedReloads: '6'
+  - String:          ' folded reloads '
+  - TotalFoldedReloadsCost: '3.000000e+00'
+  - String:          ' total folded reloads cost '
+  - NumVRCopies:     '25'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '2.012500e+02'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: mod_bats_co2.F90, Line: 105, Column: 0 }
+Function:        mod_bats_co2_mp_carbon_
+Args:
+  - NumStackBytes:   '88'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_co2.F90, Line: 105, Column: 34 }
+Function:        mod_bats_co2_mp_carbon_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_2
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '27'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_co2.F90, Line: 0, Column: 0 }
+Function:        mod_bats_co2_mp_carbon_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new46_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '16'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_co2.F90, Line: 0, Column: 0 }
+Function:        mod_bats_co2_mp_carbon_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new59_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '48'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_co2.F90, Line: 0, Column: 0 }
+Function:        mod_bats_co2_mp_carbon_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body79
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '43'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_co2.F90, Line: 0, Column: 0 }
+Function:        mod_bats_co2_mp_carbon_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body79
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_co2.F90, Line: 0, Column: 0 }
+Function:        mod_bats_co2_mp_carbon_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb8
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '18'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_co2.F90, Line: 0, Column: 0 }
+Function:        mod_bats_co2_mp_carbon_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb12_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: mod_bats_co2.F90, Line: 105, Column: 0 }
+Function:        mod_bats_co2_mp_carbon_
+Args:
+  - NumInstructions: '180'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: mod_bats_co2.F90, Line: 172, Column: 1 }
+Function:        mod_bats_co2carbon_mp_g_
+Args:
+  - NumSpills:       '3'
+  - String:          ' spills '
+  - TotalSpillsCost: '3.000000e+00'
+  - String:          ' total spills cost '
+  - NumReloads:      '2'
+  - String:          ' reloads '
+  - TotalReloadsCost: '2.000000e+00'
+  - String:          ' total reloads cost '
+  - NumFoldedReloads: '1'
+  - String:          ' folded reloads '
+  - TotalFoldedReloadsCost: '1.000000e+00'
+  - String:          ' total folded reloads cost '
+  - NumVRCopies:     '3'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '3.000000e+00'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: mod_bats_co2.F90, Line: 172, Column: 0 }
+Function:        mod_bats_co2carbon_mp_g_
+Args:
+  - NumStackBytes:   '24'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_co2.F90, Line: 172, Column: 33 }
+Function:        mod_bats_co2carbon_mp_g_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_3
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '24'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: mod_bats_co2.F90, Line: 172, Column: 0 }
+Function:        mod_bats_co2carbon_mp_g_
+Args:
+  - NumInstructions: '27'
+  - String:          ' instructions in function'
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: mod_bats_co2.F90, Line: 179, Column: 0 }
+Function:        mod_bats_co2carbon_mp_r_
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_co2.F90, Line: 179, Column: 33 }
+Function:        mod_bats_co2carbon_mp_r_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_4
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: mod_bats_co2.F90, Line: 179, Column: 0 }
+Function:        mod_bats_co2carbon_mp_r_
+Args:
+  - NumInstructions: '4'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: mod_bats_co2.F90, Line: 185, Column: 1 }
+Function:        mod_bats_co2carbon_mp_e_
+Args:
+  - NumVRCopies:     '1'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '1.000000e+00'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: mod_bats_co2.F90, Line: 185, Column: 0 }
+Function:        mod_bats_co2carbon_mp_e_
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_bats_co2.F90, Line: 185, Column: 33 }
+Function:        mod_bats_co2carbon_mp_e_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_5
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '9'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: mod_bats_co2.F90, Line: 185, Column: 0 }
+Function:        mod_bats_co2carbon_mp_e_
+Args:
+  - NumInstructions: '10'
+  - String:          ' instructions in function'
+...

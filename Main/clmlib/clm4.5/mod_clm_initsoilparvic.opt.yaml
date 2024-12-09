@@ -1,0 +1,29 @@
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+Function:        mod_clm_initsoilparvic._
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        mod_clm_initsoilparvic._
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_0
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+Function:        mod_clm_initsoilparvic._
+Args:
+  - NumInstructions: '1'
+  - String:          ' instructions in function'
+...

@@ -1,0 +1,86 @@
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: mod_clm_qsat.F90, Line: 100, Column: 5 }
+Function:        mod_clm_qsat_mp_qsat_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  phi
+    DebugLoc:        { File: mod_clm_qsat.F90, Line: 0, Column: 0 }
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+Function:        mod_clm_qsat._
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        mod_clm_qsat._
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_0
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+Function:        mod_clm_qsat._
+Args:
+  - NumInstructions: '1'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: mod_clm_qsat.F90, Line: 21, Column: 1 }
+Function:        mod_clm_qsat_mp_qsat_
+Args:
+  - NumVRCopies:     '1'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '1.000000e+00'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: mod_clm_qsat.F90, Line: 21, Column: 0 }
+Function:        mod_clm_qsat_mp_qsat_
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_clm_qsat.F90, Line: 21, Column: 19 }
+Function:        mod_clm_qsat_mp_qsat_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_1
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '82'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: mod_clm_qsat.F90, Line: 21, Column: 0 }
+Function:        mod_clm_qsat_mp_qsat_
+Args:
+  - NumInstructions: '97'
+  - String:          ' instructions in function'
+...

@@ -1,0 +1,63 @@
+Global optimization report for : mod_domain._
+=================================================================
+
+Global optimization report for : mod_domain_mp_read_domain_type_
+=================================================================
+
+Global optimization report for : mod_domain_mp_read_domain_array_double_
+=================================================================
+
+Global optimization report for : mod_domain_mp_read_domain_array_single_
+=================================================================
+
+Global optimization report for : mod_domain_mp_read_reference_state_
+=================================================================
+
+Global optimization report for : mod_domain_mp_read_reference_surface_temp_
+=================================================================
+
+Global optimization report for : mod_domain_mp_allocate_domain_
+=================================================================
+
+Global optimization report for : mod_domain_mp_check_domain_
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_domain._
+
+COMPILE FUNC: mod_domain_mp_check_domain_
+   -> llvm.fabs.f64 /scratch_local/ifx1476798166V2sBn5/ifxXIDihW.i90 (344,12)
+   -> llvm.fabs.f64 /scratch_local/ifx1476798166V2sBn5/ifxXIDihW.i90 (365,9)
+   -> llvm.fabs.f64 /scratch_local/ifx1476798166V2sBn5/ifxXIDihW.i90 (374,9)
+   -> llvm.fabs.f64 /scratch_local/ifx1476798166V2sBn5/ifxXIDihW.i90 (383,9)
+   -> llvm.fabs.f64 /scratch_local/ifx1476798166V2sBn5/ifxXIDihW.i90 (399,11)
+   -> llvm.fabs.f64 /scratch_local/ifx1476798166V2sBn5/ifxXIDihW.i90 (394,11)
+   -> llvm.fabs.f32 /scratch_local/ifx1476798166V2sBn5/ifxXIDihW.i90 (421,12)
+   -> llvm.fabs.f32 /scratch_local/ifx1476798166V2sBn5/ifxXIDihW.i90 (429,12)
+   -> llvm.fabs.f32 /scratch_local/ifx1476798166V2sBn5/ifxXIDihW.i90 (413,12)
+
+COMPILE FUNC: mod_domain_mp_allocate_domain_
+
+COMPILE FUNC: mod_domain_mp_read_domain_type_
+   -> mod_domain_mp_check_domain_ /scratch_local/ifx1476798166V2sBn5/ifxXIDihW.i90 (76,10)
+   -> mod_domain_mp_allocate_domain_ /scratch_local/ifx1476798166V2sBn5/ifxXIDihW.i90 (77,10)
+
+COMPILE FUNC: mod_domain_mp_read_domain_array_double_
+   -> mod_domain_mp_check_domain_ /scratch_local/ifx1476798166V2sBn5/ifxXIDihW.i90 (132,12)
+   -> mod_domain_mp_check_domain_ /scratch_local/ifx1476798166V2sBn5/ifxXIDihW.i90 (134,12)
+
+COMPILE FUNC: mod_domain_mp_read_domain_array_single_
+   -> mod_domain_mp_check_domain_ /scratch_local/ifx1476798166V2sBn5/ifxXIDihW.i90 (190,12)
+   -> mod_domain_mp_check_domain_ /scratch_local/ifx1476798166V2sBn5/ifxXIDihW.i90 (192,12)
+
+COMPILE FUNC: mod_domain_mp_read_reference_state_
+
+COMPILE FUNC: mod_domain_mp_read_reference_surface_temp_
+
+---- End Inlining Report ------

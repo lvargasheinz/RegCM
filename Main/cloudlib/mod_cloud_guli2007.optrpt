@@ -1,0 +1,68 @@
+Global optimization report for : mod_cloud_guli2007._
+=================================================================
+
+Global optimization report for : mod_cloud_guli2007_mp_gulisa_cldfrac_
+=================================================================
+
+Global optimization report for : mod_cloud_guli2007_mp_gulisa_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split480.split
+
+LOOP BEGIN at mod_cloud_guli2007.F90 (67, 21)
+    remark #25563: Load hoisted out of the loop
+    remark #25563: Load hoisted out of the loop
+    remark #25563: Load hoisted out of the loop
+    remark #25563: Load hoisted out of the loop
+    remark #25563: Load hoisted out of the loop
+    remark #25563: Load hoisted out of the loop
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (57:5) and (64:41) 
+    remark #15346: vector dependence: assumed FLOW dependence between (57:5) and (66:18) 
+    remark #15346: vector dependence: assumed FLOW dependence between (57:5) and (68:13) 
+    remark #15346: vector dependence: assumed FLOW dependence between (57:5) and (70:13) 
+    remark #15346: vector dependence: assumed FLOW dependence between (57:5) and (72:13) 
+    remark #15346: vector dependence: assumed FLOW dependence between (57:5) and (64:41) 
+    remark #15346: vector dependence: assumed FLOW dependence between (57:5) and (66:18) 
+    remark #15346: vector dependence: assumed FLOW dependence between (57:5) and (68:13) 
+    remark #15346: vector dependence: assumed FLOW dependence between (57:5) and (70:13) 
+    remark #15346: vector dependence: assumed FLOW dependence between (57:5) and (72:13) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_cloud_guli2007_mp_gulisa_cldfrac_.DIR.OMP.TEAMS.2.split492
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.directive.region.entry
+
+DEAD STATIC FUNC: llvm.directive.region.exit
+
+COMPILE FUNC: mod_cloud_guli2007._
+
+COMPILE FUNC: mod_cloud_guli2007_mp_gulisa_cldfrac_
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0586392693KrGl2t/ifxm9xIVr.i90 (57,5)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0586392693KrGl2t/ifxm9xIVr.i90 (64,41)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0586392693KrGl2t/ifxm9xIVr.i90 (64,31)
+   -> DELETE: llvm.log.f64 /scratch_local/ifx0586392693KrGl2t/ifxm9xIVr.i90 (65,18)
+   -> DELETE: llvm.exp.f64 /scratch_local/ifx0586392693KrGl2t/ifxm9xIVr.i90 (65,13)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0586392693KrGl2t/ifxm9xIVr.i90 (57,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0586392693KrGl2t/ifxm9xIVr.i90 (57,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0586392693KrGl2t/ifxm9xIVr.i90 (57,5)
+
+COMPILE FUNC: mod_cloud_guli2007_mp_gulisa_cldfrac_.DIR.OMP.TEAMS.2.split492
+
+COMPILE FUNC: mod_cloud_guli2007_mp_gulisa_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split480.split
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0586392693KrGl2t/ifxm9xIVr.i90 (64,41)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0586392693KrGl2t/ifxm9xIVr.i90 (64,31)
+   -> DELETE: llvm.log.f64 /scratch_local/ifx0586392693KrGl2t/ifxm9xIVr.i90 (65,18)
+   -> DELETE: llvm.exp.f64 /scratch_local/ifx0586392693KrGl2t/ifxm9xIVr.i90 (65,13)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0586392693KrGl2t/ifxm9xIVr.i90 (64,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0586392693KrGl2t/ifxm9xIVr.i90 (64,31)
+   -> llvm.log.f64 /scratch_local/ifx0586392693KrGl2t/ifxm9xIVr.i90 (65,18)
+   -> llvm.exp.f64 /scratch_local/ifx0586392693KrGl2t/ifxm9xIVr.i90 (65,13)
+
+---- End Inlining Report ------

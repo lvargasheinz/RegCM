@@ -1,0 +1,320 @@
+Global optimization report for : mersennetwister._
+=================================================================
+
+Global optimization report for : mersennetwister_mp_mixbits_
+=================================================================
+
+Global optimization report for : mersennetwister_mp_twist_
+=================================================================
+
+Global optimization report for : mersennetwister_mp_nextstate_
+
+LOOP BEGIN at mcica_random_numbers.F90 (143, 5)
+    remark #15300: LOOP WAS VECTORIZED
+    remark #15305: vectorization support: vector length 4
+LOOP END
+
+LOOP BEGIN
+<Remainder loop for vectorization>
+    remark #15439: remainder loop was vectorized (unmasked)
+    remark #15305: vectorization support: vector length 2
+LOOP END
+
+LOOP BEGIN at mcica_random_numbers.F90 (143, 5)
+<Remainder loop for vectorization>
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+LOOP END
+
+LOOP BEGIN at mcica_random_numbers.F90 (147, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between twister (145:7) and twister (145:39) 
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+LOOP END
+=================================================================
+
+Global optimization report for : mersennetwister_mp_temper_
+=================================================================
+
+Global optimization report for : mersennetwister_mp_initialize_scalar_
+
+LOOP BEGIN at mcica_random_numbers.F90 (183, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between twister (182:8) and twister (180:56) 
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+LOOP END
+=================================================================
+
+Global optimization report for : mersennetwister_mp_initialize_vector_
+
+LOOP BEGIN at mcica_random_numbers.F90 (183, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between twister (182:8) and twister (180:56) 
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+LOOP END
+
+LOOP BEGIN at mcica_random_numbers.F90 (200, 13)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed ANTI dependence between twister (201:37) and twister (213:10) 
+    remark #15346: vector dependence: assumed FLOW dependence between twister (201:10) and twister (210:47) 
+    remark #15346: vector dependence: assumed FLOW dependence between twister (201:10) and twister (209:42) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between twister (201:10) and twister (213:10) 
+    remark #15346: vector dependence: assumed ANTI dependence between twister (202:42) and twister (213:10) 
+    remark #15346: vector dependence: assumed FLOW dependence between twister (202:10) and twister (202:42) 
+    remark #15346: vector dependence: assumed FLOW dependence between twister (202:10) and twister (210:47) 
+    remark #15346: vector dependence: assumed FLOW dependence between twister (202:10) and twister (209:42) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between twister (202:10) and twister (213:10) 
+    remark #15346: vector dependence: assumed FLOW dependence between nwraps (207:26) and nwraps (198:12) 
+LOOP END
+
+LOOP BEGIN at mcica_random_numbers.F90 (225, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between twister (224:7) and twister (222:44) 
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+LOOP END
+
+LOOP BEGIN at mcica_random_numbers.F90 (234, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between twister (233:7) and twister (231:44) 
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+LOOP END
+=================================================================
+
+Global optimization report for : mersennetwister_mp_getrandomint_
+=================================================================
+
+Global optimization report for : mersennetwister_mp_getrandompositiveint_
+=================================================================
+
+Global optimization report for : mersennetwister_mp_getrandomreal_
+=================================================================
+
+Global optimization report for : mersennetwister_mp_finalize_randomnumbersequence_
+
+LOOP BEGIN at mcica_random_numbers.F90 (301, 7)
+    remark #25408: memset generated
+LOOP END
+=================================================================
+
+Global optimization report for : mcica_random_numbers._
+=================================================================
+
+Global optimization report for : mcica_random_numbers_mp_initializerandomnumberstream_s_
+
+LOOP BEGIN at mcica_random_numbers.F90 (183, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between twister (182:8) and twister (180:56) 
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+LOOP END
+=================================================================
+
+Global optimization report for : mcica_random_numbers_mp_initializerandomnumberstream_v_
+=================================================================
+
+Global optimization report for : mcica_random_numbers_mp_getrandomnumber_scalar_
+=================================================================
+
+Global optimization report for : mcica_random_numbers_mp_getrandomnumber_1d_
+
+LOOP BEGIN at mcica_random_numbers.F90 (253, 31)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+=================================================================
+
+Global optimization report for : mcica_random_numbers_mp_getrandomnumber_2d_
+
+LOOP BEGIN at mcica_random_numbers.F90 (380, 5)
+
+    LOOP BEGIN at mcica_random_numbers.F90 (253, 31)
+
+        LOOP BEGIN at mcica_random_numbers.F90 (143, 5)
+            remark #15300: LOOP WAS VECTORIZED
+            remark #15305: vectorization support: vector length 4
+        LOOP END
+
+        LOOP BEGIN
+        <Remainder loop for vectorization>
+            remark #15439: remainder loop was vectorized (unmasked)
+            remark #15305: vectorization support: vector length 2
+        LOOP END
+
+        LOOP BEGIN at mcica_random_numbers.F90 (143, 5)
+        <Remainder loop for vectorization>
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+        LOOP END
+
+        LOOP BEGIN at mcica_random_numbers.F90 (147, 5)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between twister twister twister (145:7) and twister twister twister (145:39) 
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mersennetwister._
+
+COMPILE FUNC: mersennetwister_mp_mixbits_
+
+COMPILE FUNC: mersennetwister_mp_twist_
+   -> INLINE: mersennetwister_mp_mixbits_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (130,24)
+   -> INLINE: mersennetwister_mp_mixbits_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (131,24)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (130,24)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (130,24)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (131,24)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (131,24)
+
+COMPILE FUNC: mersennetwister_mp_nextstate_
+   -> INLINE: mersennetwister_mp_twist_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (142,31)
+      -> INLINE: mersennetwister_mp_mixbits_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (130,24)
+      -> INLINE: mersennetwister_mp_mixbits_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (131,24)
+      -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (130,24)
+      -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (130,24)
+      -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (131,24)
+      -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (131,24)
+   -> INLINE: mersennetwister_mp_twist_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (146,31)
+      -> INLINE: mersennetwister_mp_mixbits_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (130,24)
+      -> INLINE: mersennetwister_mp_mixbits_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (131,24)
+      -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (130,24)
+      -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (130,24)
+      -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (131,24)
+      -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (131,24)
+   -> INLINE: mersennetwister_mp_twist_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (149,41)
+      -> INLINE: mersennetwister_mp_mixbits_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (130,24)
+      -> INLINE: mersennetwister_mp_mixbits_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (131,24)
+      -> llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (130,24)
+      -> llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (130,24)
+      -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (131,24)
+      -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (131,24)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (142,31)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (142,31)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (146,31)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (146,31)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (149,41)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (149,41)
+   -> DELETE: llvm.masked.gather.v4i32.v4p0 /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (131,18)
+   -> DELETE: llvm.masked.gather.v2i32.v2p0 /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (131,18)
+
+COMPILE FUNC: mersennetwister_mp_temper_
+
+COMPILE FUNC: mersennetwister_mp_initialize_scalar_
+
+COMPILE FUNC: mersennetwister_mp_initialize_vector_
+   -> INLINE: mersennetwister_mp_initialize_scalar_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (194,15)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (194,5)
+   -> llvm.smax.i64 /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (196,5)
+   -> llvm.smax.i32 /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (196,18)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (199,18)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (194,15)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (194,15)
+   -> llvm.umax.i32 /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90
+
+COMPILE FUNC: mersennetwister_mp_getrandomint_
+   -> mersennetwister_mp_nextstate_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (253,45)
+   -> INLINE: mersennetwister_mp_temper_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (255,20)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (255,20)
+
+COMPILE FUNC: mersennetwister_mp_getrandompositiveint_
+   -> INLINE: mersennetwister_mp_getrandomint_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (270,16)
+      -> mersennetwister_mp_nextstate_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (253,45)
+      -> INLINE: mersennetwister_mp_temper_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (255,20)
+      -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (255,20)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (270,16)
+
+COMPILE FUNC: mersennetwister_mp_getrandomreal_
+   -> INLINE: mersennetwister_mp_getrandomint_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (286,16)
+      -> mersennetwister_mp_nextstate_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (253,45)
+      -> INLINE: mersennetwister_mp_temper_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (255,20)
+      -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (255,20)
+   -> llvm.arithmetic.fence.f32 /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (289,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (289,48)
+   -> DELETE: __powr4i8 /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (292,50)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (292,47)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (286,16)
+
+COMPILE FUNC: mersennetwister_mp_finalize_randomnumbersequence_
+   -> llvm.memset.p0.i64 /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (301,7)
+
+COMPILE FUNC: mcica_random_numbers._
+
+COMPILE FUNC: mcica_random_numbers_mp_initializerandomnumberstream_s_
+   -> INLINE: mersennetwister_mp_initialize_scalar_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (352,22)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (352,5)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (352,22)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (352,22)
+
+COMPILE FUNC: mcica_random_numbers_mp_initializerandomnumberstream_v_
+   -> mersennetwister_mp_initialize_vector_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (360,22)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (360,5)
+
+COMPILE FUNC: mcica_random_numbers_mp_getrandomnumber_scalar_
+   -> INLINE: mersennetwister_mp_getrandomreal_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (370,14)
+      -> INLINE: mersennetwister_mp_getrandomint_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (286,16)
+         -> mersennetwister_mp_nextstate_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (253,45)
+         -> INLINE: mersennetwister_mp_temper_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (255,20)
+         -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (255,20)
+      -> DELETE: __powr4i8 /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (289,38)
+      -> llvm.arithmetic.fence.f32 /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (289,24)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (289,48)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (292,47)
+      -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (286,16)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (370,14)
+
+COMPILE FUNC: mcica_random_numbers_mp_getrandomnumber_1d_
+   -> llvm.smax.i64 /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (380,5)
+   -> INLINE: mersennetwister_mp_getrandomreal_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (381,20)
+      -> INLINE: mersennetwister_mp_getrandomint_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (286,16)
+         -> mersennetwister_mp_nextstate_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (253,45)
+         -> INLINE: mersennetwister_mp_temper_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (255,20)
+         -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (255,20)
+      -> DELETE: __powr4i8 /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (289,38)
+      -> llvm.arithmetic.fence.f32 /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (289,24)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (289,48)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (292,47)
+      -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (286,16)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (381,20)
+
+COMPILE FUNC: mcica_random_numbers_mp_getrandomnumber_2d_
+   -> llvm.smax.i64 /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (392,5)
+   -> llvm.smax.i64 /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (393,7)
+   -> INLINE: mcica_random_numbers_mp_getrandomnumber_1d_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (393,12)
+      -> DELETE: llvm.smax.i64 /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (380,5)
+      -> INLINE: mersennetwister_mp_getrandomreal_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (381,20)
+         -> INLINE: mersennetwister_mp_getrandomint_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (286,16)
+            -> INLINE: mersennetwister_mp_nextstate_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (253,45)
+               -> INLINE: mersennetwister_mp_twist_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (142,31)
+                  -> INLINE: mersennetwister_mp_mixbits_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (130,24)
+                  -> INLINE: mersennetwister_mp_mixbits_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (131,24)
+                  -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (130,24)
+                  -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (130,24)
+               -> INLINE: mersennetwister_mp_twist_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (146,31)
+                  -> INLINE: mersennetwister_mp_mixbits_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (130,24)
+                  -> INLINE: mersennetwister_mp_mixbits_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (131,24)
+                  -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (130,24)
+                  -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (130,24)
+               -> INLINE: mersennetwister_mp_twist_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (149,41)
+                  -> INLINE: mersennetwister_mp_mixbits_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (130,24)
+                  -> INLINE: mersennetwister_mp_mixbits_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (131,24)
+                  -> llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (130,24)
+                  -> llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (130,24)
+               -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (142,31)
+               -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (142,31)
+               -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (146,31)
+               -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (146,31)
+               -> llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (149,41)
+               -> llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (149,41)
+            -> INLINE: mersennetwister_mp_temper_ /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (255,20)
+         -> llvm.arithmetic.fence.f32 /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (289,24)
+         -> llvm.arithmetic.fence.f64 /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (292,47)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (393,12)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (253,45)
+   -> DELETE: llvm.masked.gather.v4i32.v4p0 /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (131,18)
+   -> DELETE: llvm.masked.gather.v2i32.v2p0 /scratch_local/ifx2119026036fbewXD/ifx4YCO8N.i90 (131,18)
+
+---- End Inlining Report ------

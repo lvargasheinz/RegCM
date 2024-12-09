@@ -1,0 +1,1161 @@
+Global optimization report for : lapack_dgbsv._
+=================================================================
+
+Global optimization report for : lapack_dgbsv_mp_dgbsv_
+=================================================================
+
+Global optimization report for : lapack_dgbsv_mp_dgbtf2_
+
+LOOP BEGIN at lapack_dgbsv.F90 (477, 16)
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (462, 13)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at lapack_dgbsv.F90 (462, 13)
+    <Multiversioned v1>
+        remark #25408: memset generated
+        remark #25562: The loop has been multiversioned for the small trip count
+    LOOP END
+
+    LOOP BEGIN at lapack_dgbsv.F90 (462, 13)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (476, 18)
+
+    LOOP BEGIN at lapack_dgbsv.F90 (477, 16)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at lapack_dgbsv.F90 (2931, 10)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between idamax (2927:27) and idamax (2927:27) 
+        remark #15346: vector dependence: assumed FLOW dependence between dmax (2927:27) and dmax (2927:27) 
+        remark #15346: vector dependence: assumed FLOW dependence between dmax (2927:27) and dmax (2927:27) 
+        remark #15346: vector dependence: assumed FLOW dependence between dmax (2927:27) and dmax (2927:27) 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : lapack_dgbsv_mp_dgbtrf_
+
+LOOP BEGIN at lapack_dgbsv.F90 (811, 22)
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (756, 16)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at lapack_dgbsv.F90 (756, 16)
+    <Multiversioned v1>
+        remark #25408: memset generated
+        remark #25562: The loop has been multiversioned for the small trip count
+    LOOP END
+
+    LOOP BEGIN at lapack_dgbsv.F90 (756, 16)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (764, 16)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at lapack_dgbsv.F90 (764, 16)
+    <Multiversioned v1>
+        remark #25408: memset generated
+        remark #25562: The loop has been multiversioned for the small trip count
+    LOOP END
+
+    LOOP BEGIN at lapack_dgbsv.F90 (764, 16)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (774, 16)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at lapack_dgbsv.F90 (774, 16)
+    <Multiversioned v1>
+        remark #25408: memset generated
+        remark #25562: The loop has been multiversioned for the small trip count
+    LOOP END
+
+    LOOP BEGIN at lapack_dgbsv.F90 (774, 16)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (806, 16)
+
+    LOOP BEGIN at lapack_dgbsv.F90 (810, 25)
+
+        LOOP BEGIN at lapack_dgbsv.F90 (811, 22)
+        <Multiversioned v2>
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at lapack_dgbsv.F90 (2931, 10)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between idamax (2927:27) and idamax (2927:27) 
+            remark #15346: vector dependence: assumed FLOW dependence between dmax (2927:27) and dmax (2927:27) 
+            remark #15346: vector dependence: assumed FLOW dependence between dmax (2927:27) and dmax (2927:27) 
+            remark #15346: vector dependence: assumed FLOW dependence between dmax (2927:27) and dmax (2927:27) 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at lapack_dgbsv.F90 (889, 19)
+        remark #15300: LOOP WAS VECTORIZED
+        remark #15305: vectorization support: vector length 4
+    LOOP END
+
+    LOOP BEGIN at lapack_dgbsv.F90 (889, 19)
+    <Remainder loop for vectorization>
+    LOOP END
+
+    LOOP BEGIN at lapack_dgbsv.F90 (899, 22)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at lapack_dgbsv.F90 (901, 28)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between ab (903:25) and ab (903:25) 
+            remark #15346: vector dependence: assumed FLOW dependence between ab (904:25) and ab (902:25) 
+            remark #15346: vector dependence: assumed FLOW dependence between ab (904:25) and ab (903:25) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between ab (904:25) and ab (903:25) 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at lapack_dgbsv.F90 (946, 25)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at lapack_dgbsv.F90 (946, 25)
+        <Multiversioned v1>
+            remark #25399: memcopy generated
+            remark #25562: The loop has been multiversioned for the small trip count
+        LOOP END
+
+        LOOP BEGIN at lapack_dgbsv.F90 (946, 25)
+        <Multiversioned v2>
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at lapack_dgbsv.F90 (979, 25)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at lapack_dgbsv.F90 (979, 25)
+        <Multiversioned v1>
+            remark #25399: memcopy generated
+            remark #25562: The loop has been multiversioned for the small trip count
+        LOOP END
+
+        LOOP BEGIN at lapack_dgbsv.F90 (979, 25)
+        <Multiversioned v2>
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at lapack_dgbsv.F90 (988, 19)
+        remark #15300: LOOP WAS VECTORIZED
+        remark #15305: vectorization support: vector length 4
+    LOOP END
+
+    LOOP BEGIN at lapack_dgbsv.F90 (988, 19)
+    <Remainder loop for vectorization>
+    LOOP END
+
+    LOOP BEGIN at lapack_dgbsv.F90 (999, 22)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : lapack_dgbsv_mp_dgbtrs_
+
+LOOP BEGIN at lapack_dgbsv.F90 (1251, 21)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (1258, 13)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (1270, 13)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (1286, 21)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+=================================================================
+
+Global optimization report for : lapack_dgbsv_mp_dlaswp_
+
+LOOP BEGIN at lapack_dgbsv.F90 (1454, 16)
+    remark #25423: Invariant If condition at line 1454 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at lapack_dgbsv.F90 (1454, 16)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at lapack_dgbsv.F90 (1457, 22)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (1472, 19)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at lapack_dgbsv.F90 (1473, 19)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : lapack_dgbsv_mp_ieeeck_
+=================================================================
+
+Global optimization report for : lapack_dgbsv_mp_ilaenv_
+
+LOOP BEGIN at lapack_dgbsv.F90 (1919, 16)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+Global optimization report for : lapack_dgbsv_mp_iparmq_
+=================================================================
+
+Global optimization report for : lapack_dgbsv_mp_lsame_
+=================================================================
+
+Global optimization report for : lapack_dgbsv_mp_xerbla_
+=================================================================
+
+Global optimization report for : lapack_dgbsv_mp_idamax_
+
+LOOP BEGIN at lapack_dgbsv.F90 (2945, 10)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between idamax (2940:28) and idamax (2940:28) 
+    remark #15346: vector dependence: assumed FLOW dependence between dmax (2940:28) and dmax (2940:28) 
+    remark #15346: vector dependence: assumed FLOW dependence between dmax (2940:28) and dmax (2940:28) 
+    remark #15346: vector dependence: assumed FLOW dependence between dmax (2940:28) and dmax (2940:28) 
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (2931, 10)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between idamax (2927:27) and idamax (2927:27) 
+    remark #15346: vector dependence: assumed FLOW dependence between dmax (2927:27) and dmax (2927:27) 
+    remark #15346: vector dependence: assumed FLOW dependence between dmax (2927:27) and dmax (2927:27) 
+    remark #15346: vector dependence: assumed FLOW dependence between dmax (2927:27) and dmax (2927:27) 
+LOOP END
+=================================================================
+
+Global optimization report for : lapack_dgbsv_mp_dswap_
+
+LOOP BEGIN at lapack_dgbsv.F90 (3024, 10)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between dx (3020:13) and dx (3019:13) 
+    remark #15346: vector dependence: assumed FLOW dependence between dy (3021:13) and dy (3020:13) 
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (2994, 13)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (3008, 10)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+=================================================================
+
+Global optimization report for : lapack_dgbsv_mp_dscal_
+
+LOOP BEGIN at lapack_dgbsv.F90 (3090, 10)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between dx (3089:13) and dx (3089:13) 
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (3072, 13)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (3082, 10)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+=================================================================
+
+Global optimization report for : lapack_dgbsv_mp_dger_
+
+LOOP BEGIN at lapack_dgbsv.F90 (3238, 24)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3241, 22)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (3222, 14)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3225, 22)
+        remark #15300: LOOP WAS VECTORIZED
+        remark #15305: vectorization support: vector length 2
+    LOOP END
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3225, 22)
+    <Remainder loop for vectorization>
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : lapack_dgbsv_mp_dcopy_
+
+LOOP BEGIN at lapack_dgbsv.F90 (3323, 10)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (3297, 13)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (3309, 10)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+=================================================================
+
+Global optimization report for : lapack_dgbsv_mp_dgemm_
+
+LOOP BEGIN at lapack_dgbsv.F90 (3576, 22)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3578, 26)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at lapack_dgbsv.F90 (3578, 26)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between temp (3579:39) and temp (3579:39) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (3553, 27)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3554, 26)
+    <Multiversioned v1>
+        remark #25408: memset generated
+        remark #25562: The loop has been multiversioned for the small trip count
+    LOOP END
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3557, 32)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3553, 27)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3562, 22)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at lapack_dgbsv.F90 (3565, 30)
+            remark #15300: LOOP WAS VECTORIZED
+            remark #15305: vectorization support: vector length 2
+        LOOP END
+
+        LOOP BEGIN at lapack_dgbsv.F90 (3562, 22)
+        <Remainder loop for vectorization>
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (3618, 22)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3620, 26)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at lapack_dgbsv.F90 (3620, 26)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between temp (3621:39) and temp (3621:39) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (3595, 27)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3596, 26)
+    <Multiversioned v1>
+        remark #25408: memset generated
+        remark #25562: The loop has been multiversioned for the small trip count
+    LOOP END
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3599, 32)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3595, 27)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3604, 22)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at lapack_dgbsv.F90 (3607, 30)
+            remark #15300: LOOP WAS VECTORIZED
+            remark #15305: vectorization support: vector length 2
+        LOOP END
+
+        LOOP BEGIN at lapack_dgbsv.F90 (3604, 22)
+        <Remainder loop for vectorization>
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (3537, 22)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3537, 22)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (3530, 18)
+<Predicate Optimized v2>
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3531, 22)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (3530, 18)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 0 hoisted out of this loop
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3531, 22)
+    <Multiversioned v1>
+        remark #25408: memset generated
+        remark #25562: The loop has been multiversioned for the small trip count
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : lapack_dgbsv_mp_dtrsm_
+
+LOOP BEGIN at lapack_dgbsv.F90 (3932, 32)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3932, 32)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3937, 26)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at lapack_dgbsv.F90 (3939, 34)
+            remark #15300: LOOP WAS VECTORIZED
+            remark #15305: vectorization support: vector length 2
+        LOOP END
+
+        LOOP BEGIN at lapack_dgbsv.F90 (3938, 37)
+        <Remainder loop for vectorization>
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3944, 27)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (3911, 32)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3911, 32)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3916, 26)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at lapack_dgbsv.F90 (3918, 34)
+            remark #15300: LOOP WAS VECTORIZED
+            remark #15305: vectorization support: vector length 2
+        LOOP END
+
+        LOOP BEGIN at lapack_dgbsv.F90 (3917, 37)
+        <Remainder loop for vectorization>
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3923, 27)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (3980, 27)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3980, 27)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3986, 26)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at lapack_dgbsv.F90 (3989, 34)
+            remark #15300: LOOP WAS VECTORIZED
+            remark #15305: vectorization support: vector length 2
+        LOOP END
+
+        LOOP BEGIN at lapack_dgbsv.F90 (3987, 37)
+        <Remainder loop for vectorization>
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3994, 32)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (3958, 27)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3958, 27)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3964, 26)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at lapack_dgbsv.F90 (3967, 34)
+            remark #15300: LOOP WAS VECTORIZED
+            remark #15305: vectorization support: vector length 2
+        LOOP END
+
+        LOOP BEGIN at lapack_dgbsv.F90 (3965, 37)
+        <Remainder loop for vectorization>
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3972, 32)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (3861, 32)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3861, 32)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3867, 37)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at lapack_dgbsv.F90 (3869, 34)
+            remark #25563: Load hoisted out of the loop
+            remark #15300: LOOP WAS VECTORIZED
+            remark #15305: vectorization support: vector length 2
+        LOOP END
+
+        LOOP BEGIN at lapack_dgbsv.F90 (3869, 34)
+        <Remainder loop for vectorization>
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (3845, 32)
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3846, 30)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3851, 37)
+
+        LOOP BEGIN at lapack_dgbsv.F90 (3853, 34)
+            remark #25563: Load hoisted out of the loop
+            remark #15300: LOOP WAS VECTORIZED
+            remark #15305: vectorization support: vector length 2
+        LOOP END
+
+        LOOP BEGIN at lapack_dgbsv.F90 (3853, 34)
+        <Remainder loop for vectorization>
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (3895, 30)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3895, 30)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at lapack_dgbsv.F90 (3895, 30)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between temp (3896:43) and temp (3896:43) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (3895, 30)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3895, 30)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at lapack_dgbsv.F90 (3895, 30)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between temp (3896:43) and temp (3896:43) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (3884, 30)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3884, 30)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at lapack_dgbsv.F90 (3884, 30)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between temp (3885:43) and temp (3885:43) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (3884, 30)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3884, 30)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at lapack_dgbsv.F90 (3884, 30)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between temp (3885:43) and temp (3885:43) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (3828, 14)
+<Predicate Optimized v2>
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3829, 18)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (3828, 14)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 0 hoisted out of this loop
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+
+    LOOP BEGIN at lapack_dgbsv.F90 (3829, 18)
+    <Multiversioned v1>
+        remark #25408: memset generated
+        remark #25562: The loop has been multiversioned for the small trip count
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : lapack_dgbsv_mp_dtbsv_
+
+LOOP BEGIN at lapack_dgbsv.F90 (4232, 32)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at lapack_dgbsv.F90 (4237, 30)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between x (4238:31) and x (4238:31) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (4218, 31)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at lapack_dgbsv.F90 (4222, 30)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (4261, 32)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at lapack_dgbsv.F90 (4266, 30)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between x (4267:31) and x (4267:31) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (4248, 31)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at lapack_dgbsv.F90 (4252, 30)
+        remark #15300: LOOP WAS VECTORIZED
+        remark #15305: vectorization support: vector length 2
+    LOOP END
+
+    LOOP BEGIN at lapack_dgbsv.F90 (4252, 30)
+    <Remainder loop for vectorization>
+    LOOP END
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (4297, 26)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at lapack_dgbsv.F90 (4297, 26)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between temp (4298:39) and temp (4298:39) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (4285, 26)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at lapack_dgbsv.F90 (4285, 26)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between temp (4286:39) and temp (4286:39) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (4325, 26)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 4329 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at lapack_dgbsv.F90 (4325, 26)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between temp (4326:39) and temp (4326:39) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (4312, 26)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 4315 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at lapack_dgbsv.F90 (4312, 26)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between temp (4313:39) and temp (4313:39) 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : lapack_dgbsv_mp_dgemv_
+
+LOOP BEGIN at lapack_dgbsv.F90 (4518, 22)
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (4534, 22)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between y (4535:23) and y (4535:23) 
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (4529, 22)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (4522, 22)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (4518, 22)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (4559, 28)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at lapack_dgbsv.F90 (4562, 26)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between y (4563:27) and y (4563:27) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (4548, 18)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at lapack_dgbsv.F90 (4551, 26)
+        remark #15300: LOOP WAS VECTORIZED
+        remark #15305: vectorization support: vector length 2
+    LOOP END
+
+    LOOP BEGIN at lapack_dgbsv.F90 (4551, 26)
+    <Remainder loop for vectorization>
+    LOOP END
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (4588, 22)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at lapack_dgbsv.F90 (4588, 22)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between temp (4589:35) and temp (4589:35) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at lapack_dgbsv.F90 (4578, 22)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at lapack_dgbsv.F90 (4578, 22)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between temp (4579:35) and temp (4579:35) 
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: lapack_dgbsv_mp_ilaenv_
+   -> INLINE: lapack_dgbsv_mp_iparmq_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2332,16)
+      -> llvm.log.f32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2593,38)
+      -> llvm.round.f32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2593,32)
+      -> llvm.smax.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2593,18)
+      -> llvm.smax.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2600,15)
+   -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1910,7)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1922,19)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1918,13)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1938,51)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1933,13)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1952,19)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1948,13)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1957,7)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1962,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1963,7)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1964,7)
+   -> INLINE: lapack_dgbsv_mp_ieeeck_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2313,19)
+      -> llvm.arithmetic.fence.f32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1604,24)
+   -> INLINE: lapack_dgbsv_mp_ieeeck_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2324,19)
+      -> llvm.arithmetic.fence.f32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1604,24)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2332,16)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2332,16)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2332,16)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2313,19)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2313,19)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2313,19)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2324,19)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2324,19)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2324,19)
+
+COMPILE FUNC: lapack_dgbsv_mp_iparmq_
+   -> llvm.log.f32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2593,38)
+   -> llvm.round.f32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2593,32)
+   -> llvm.smax.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2593,18)
+   -> llvm.smax.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2600,15)
+
+COMPILE FUNC: lapack_dgbsv_mp_ieeeck_
+   -> llvm.arithmetic.fence.f32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1604,24)
+
+COMPILE FUNC: lapack_dgbsv_mp_dgbtrf_
+   -> INLINE: lapack_dgbsv_mp_xerbla_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (726,15)
+      -> llvm.smax.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2876,29)
+   -> lapack_dgbsv_mp_ilaenv_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (737,12)
+   -> INLINE: lapack_dgbsv_mp_idamax_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (820,21)
+      -> llvm.fabs.f64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2927,17)
+      -> DELETE: llvm.fabs.f64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2940,17)
+      -> llvm.fabs.f64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2925,17)
+      -> DELETE: llvm.fabs.f64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2937,17)
+   -> lapack_dgbsv_mp_dswap_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (830,30)
+   -> lapack_dgbsv_mp_dswap_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (837,30)
+   -> lapack_dgbsv_mp_dswap_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (839,30)
+   -> lapack_dgbsv_mp_dscal_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (846,24)
+   -> lapack_dgbsv_mp_dger_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (855,22)
+   -> lapack_dgbsv_mp_dcopy_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (871,19)
+   -> lapack_dgbsv_mp_dgemm_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (923,27)
+   -> lapack_dgbsv_mp_dgemm_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (933,27)
+   -> lapack_dgbsv_mp_dtrsm_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (915,24)
+   -> lapack_dgbsv_mp_dtrsm_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (953,24)
+   -> lapack_dgbsv_mp_dgemm_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (961,27)
+   -> lapack_dgbsv_mp_dgemm_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (971,27)
+   -> lapack_dgbsv_mp_dlaswp_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (884,21)
+   -> lapack_dgbsv_mp_dswap_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1007,27)
+   -> lapack_dgbsv_mp_dswap_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1013,27)
+   -> lapack_dgbsv_mp_dcopy_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1022,19)
+   -> lapack_dgbsv_mp_dgbtf2_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (748,15)
+   -> llvm.smin.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (742,12)
+   -> llvm.smin.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (773,28)
+   -> llvm.smin.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (784,24)
+   -> DELETE: llvm.smin.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (785,27)
+   -> llvm.smin.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (785,18)
+   -> llvm.smin.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (799,18)
+   -> llvm.smin.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (800,18)
+   -> llvm.smin.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (819,21)
+   -> llvm.smin.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (853,24)
+   -> llvm.smin.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (823,33)
+   -> llvm.smax.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (823,24)
+   -> llvm.smin.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (869,21)
+   -> llvm.smin.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (878,21)
+   -> llvm.smin.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1020,21)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (726,15)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (726,15)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (820,21)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (820,21)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (820,21)
+   -> llvm.smax.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (806,16)
+   -> DELETE: llvm.smin.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (785,40)
+   -> DELETE: llvm.smin.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (785,40)
+   -> DELETE: llvm.smin.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (785,40)
+   -> llvm.smax.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (889,19)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (757,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (765,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (775,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (812,22)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (889,19)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (889,19)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (714,12)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (947,25)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (980,25)
+   -> llvm.smax.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (988,19)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (988,19)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (988,19)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (714,12)
+
+COMPILE FUNC: lapack_dgbsv_mp_xerbla_
+   -> llvm.smax.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2876,29)
+
+COMPILE FUNC: lapack_dgbsv_mp_idamax_
+   -> llvm.fabs.f64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2927,17)
+   -> llvm.fabs.f64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2940,17)
+   -> llvm.fabs.f64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2925,17)
+   -> DELETE: llvm.fabs.f64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2937,17)
+
+COMPILE FUNC: lapack_dgbsv_mp_dswap_
+
+COMPILE FUNC: lapack_dgbsv_mp_dscal_
+
+COMPILE FUNC: lapack_dgbsv_mp_dger_
+   -> llvm.smax.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3201,23)
+   -> INLINE: lapack_dgbsv_mp_xerbla_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3205,16)
+      -> llvm.smax.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2876,29)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3205,16)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3205,16)
+
+COMPILE FUNC: lapack_dgbsv_mp_dcopy_
+
+COMPILE FUNC: lapack_dgbsv_mp_dgemm_
+   -> INLINE: lapack_dgbsv_mp_lsame_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3479,14)
+   -> INLINE: lapack_dgbsv_mp_lsame_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3480,14)
+   -> INLINE: lapack_dgbsv_mp_lsame_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3497,35)
+   -> INLINE: lapack_dgbsv_mp_lsame_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3498,17)
+   -> llvm.smax.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3513,23)
+   -> llvm.smax.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3511,23)
+   -> llvm.smax.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3509,23)
+   -> INLINE: lapack_dgbsv_mp_lsame_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3500,40)
+   -> INLINE: lapack_dgbsv_mp_lsame_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3501,22)
+   -> INLINE: lapack_dgbsv_mp_xerbla_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3517,16)
+      -> llvm.smax.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2876,29)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3479,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3479,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3480,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3480,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3497,35)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3497,35)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3498,17)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3498,17)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3500,40)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3500,40)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3501,22)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3501,22)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3517,16)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3517,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3555,27)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3597,27)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3532,23)
+
+COMPILE FUNC: lapack_dgbsv_mp_dtrsm_
+   -> INLINE: lapack_dgbsv_mp_lsame_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3787,15)
+   -> INLINE: lapack_dgbsv_mp_lsame_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3793,16)
+   -> INLINE: lapack_dgbsv_mp_lsame_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3794,15)
+   -> INLINE: lapack_dgbsv_mp_lsame_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3797,36)
+   -> llvm.smax.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3813,23)
+   -> llvm.smax.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3811,23)
+   -> INLINE: lapack_dgbsv_mp_lsame_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3805,22)
+   -> INLINE: lapack_dgbsv_mp_lsame_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3805,51)
+   -> INLINE: lapack_dgbsv_mp_lsame_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3801,22)
+   -> INLINE: lapack_dgbsv_mp_lsame_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3802,22)
+   -> INLINE: lapack_dgbsv_mp_lsame_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3803,22)
+   -> INLINE: lapack_dgbsv_mp_lsame_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3799,41)
+   -> INLINE: lapack_dgbsv_mp_xerbla_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3817,16)
+      -> llvm.smax.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2876,29)
+   -> lapack_dgbsv_mp_lsame_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3839,15)
+   -> lapack_dgbsv_mp_lsame_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3905,15)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3787,15)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3787,15)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3793,16)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3793,16)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3794,15)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3794,15)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3797,36)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3797,36)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3805,22)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3805,22)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3805,51)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3805,51)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3801,22)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3801,22)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3802,22)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3802,22)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3803,22)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3803,22)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3799,41)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3799,41)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3817,16)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3817,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (3830,19)
+
+COMPILE FUNC: lapack_dgbsv_mp_dlaswp_
+
+COMPILE FUNC: lapack_dgbsv_mp_dgbtf2_
+   -> INLINE: lapack_dgbsv_mp_xerbla_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (448,15)
+      -> llvm.smax.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2876,29)
+   -> llvm.smin.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (461,25)
+   -> llvm.smin.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (472,20)
+   -> llvm.smin.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (485,15)
+   -> INLINE: lapack_dgbsv_mp_idamax_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (486,15)
+      -> llvm.fabs.f64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2927,17)
+      -> DELETE: llvm.fabs.f64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2940,17)
+      -> llvm.fabs.f64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2925,17)
+      -> DELETE: llvm.fabs.f64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2937,17)
+   -> lapack_dgbsv_mp_dswap_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (494,16)
+   -> lapack_dgbsv_mp_dger_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (506,19)
+   -> lapack_dgbsv_mp_dscal_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (501,21)
+   -> llvm.smin.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (489,27)
+   -> llvm.smax.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (489,18)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (448,15)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (448,15)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (486,15)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (486,15)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (486,15)
+   -> llvm.smax.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90
+   -> llvm.memset.p0.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (463,13)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (478,16)
+
+COMPILE FUNC: lapack_dgbsv._
+
+COMPILE FUNC: lapack_dgbsv_mp_lsame_
+
+COMPILE FUNC: lapack_dgbsv_mp_dtbsv_
+   -> INLINE: lapack_dgbsv_mp_lsame_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4171,16)
+   -> INLINE: lapack_dgbsv_mp_lsame_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4171,43)
+   -> INLINE: lapack_dgbsv_mp_lsame_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4176,21)
+   -> INLINE: lapack_dgbsv_mp_lsame_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4176,48)
+   -> INLINE: lapack_dgbsv_mp_lsame_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4173,21)
+   -> INLINE: lapack_dgbsv_mp_lsame_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4173,49)
+   -> INLINE: lapack_dgbsv_mp_lsame_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4174,21)
+   -> INLINE: lapack_dgbsv_mp_xerbla_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4188,16)
+      -> llvm.smax.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2876,29)
+   -> lapack_dgbsv_mp_lsame_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4196,16)
+   -> lapack_dgbsv_mp_lsame_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4210,11)
+   -> llvm.smax.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4222,43)
+   -> llvm.smax.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4237,43)
+   -> DELETE: llvm.smin.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4252,43)
+   -> llvm.smin.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4266,43)
+   -> llvm.smax.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4285,33)
+   -> llvm.smax.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4297,34)
+   -> llvm.smin.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4312,34)
+   -> llvm.smin.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4325,34)
+   -> lapack_dgbsv_mp_lsame_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4214,15)
+   -> lapack_dgbsv_mp_lsame_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4279,15)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4171,16)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4171,16)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4171,43)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4171,43)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4176,21)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4176,21)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4176,48)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4176,48)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4173,21)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4173,21)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4173,49)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4173,49)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4174,21)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4174,21)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4188,16)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4188,16)
+   -> llvm.smin.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4252,43)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4283,23)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4294,23)
+   -> DELETE: llvm.smin.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90
+   -> DELETE: llvm.smin.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4322,23)
+
+COMPILE FUNC: lapack_dgbsv_mp_dgemv_
+   -> INLINE: lapack_dgbsv_mp_lsame_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4465,16)
+   -> INLINE: lapack_dgbsv_mp_lsame_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4465,44)
+   -> INLINE: lapack_dgbsv_mp_lsame_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4466,16)
+   -> llvm.smax.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4472,23)
+   -> INLINE: lapack_dgbsv_mp_xerbla_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4480,16)
+      -> llvm.smax.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2876,29)
+   -> lapack_dgbsv_mp_lsame_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4492,11)
+   -> lapack_dgbsv_mp_lsame_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4542,11)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4465,16)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4465,16)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4465,44)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4465,44)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4466,16)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4466,16)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4480,16)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4480,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (4519,23)
+
+COMPILE FUNC: lapack_dgbsv_mp_dgbtrs_
+   -> INLINE: lapack_dgbsv_mp_lsame_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1206,16)
+   -> INLINE: lapack_dgbsv_mp_lsame_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1207,34)
+   -> INLINE: lapack_dgbsv_mp_lsame_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1208,11)
+   -> llvm.smax.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1220,23)
+   -> INLINE: lapack_dgbsv_mp_xerbla_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1224,15)
+      -> llvm.smax.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2876,29)
+   -> llvm.smin.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1249,21)
+   -> lapack_dgbsv_mp_dswap_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1252,19)
+   -> lapack_dgbsv_mp_dger_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1253,21)
+   -> lapack_dgbsv_mp_dtbsv_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1262,18)
+   -> lapack_dgbsv_mp_dtbsv_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1274,18)
+   -> llvm.smin.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1282,21)
+   -> lapack_dgbsv_mp_dgemv_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1283,21)
+   -> lapack_dgbsv_mp_dswap_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1287,19)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1206,16)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1206,16)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1207,34)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1207,34)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1208,11)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1208,11)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1224,15)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (1224,15)
+
+COMPILE FUNC: lapack_dgbsv_mp_dgbsv_
+   -> llvm.smax.i32 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (229,23)
+   -> INLINE: lapack_dgbsv_mp_xerbla_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (233,15)
+      -> llvm.smax.i64 /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (2876,29)
+   -> lapack_dgbsv_mp_dgbtrf_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (239,12)
+   -> lapack_dgbsv_mp_dgbtrs_ /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (244,15)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (233,15)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1088020659WKxVZK/ifxGKukXh.i90 (233,15)
+
+---- End Inlining Report ------

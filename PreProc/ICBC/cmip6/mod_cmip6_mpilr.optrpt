@@ -1,0 +1,98 @@
+Global optimization report for : mod_cmip6_mpilr._
+=================================================================
+
+Global optimization report for : mod_cmip6_mpilr_mp_read_hcoord_mpilr_
+=================================================================
+
+Global optimization report for : mod_cmip6_mpilr_mp_read_hcoord_sst_mpilr_
+=================================================================
+
+Global optimization report for : mod_cmip6_mpilr_mp_read_vcoord_mpilr_
+=================================================================
+
+Global optimization report for : mod_cmip6_mpilr_mp_read_3d_mpilr_
+=================================================================
+
+Global optimization report for : mod_cmip6_mpilr_mp_read_2d_mpilr_
+=================================================================
+
+Global optimization report for : mod_cmip6_mpilr_mp_read_fx_mpilr_
+=================================================================
+
+Global optimization report for : mod_cmip6_mpilr_mp_read_sst_mpilr_
+
+LOOP BEGIN at mod_cmip6_mpilr.F90 (442, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cmip6_mpilr.F90 (442, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cmip6_mpilr.F90 (443, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cmip6_mpilr.F90 (443, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cmip6_mpilr.F90 (445, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cmip6_mpilr.F90 (445, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_cmip6_mpilr._
+
+COMPILE FUNC: mod_cmip6_mpilr_mp_read_hcoord_mpilr_
+
+COMPILE FUNC: mod_cmip6_mpilr_mp_read_hcoord_sst_mpilr_
+
+COMPILE FUNC: mod_cmip6_mpilr_mp_read_vcoord_mpilr_
+
+COMPILE FUNC: mod_cmip6_mpilr_mp_read_3d_mpilr_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0419314569ysgiWE/ifx3aAJ7W.i90 (118,26)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0419314569ysgiWE/ifx3aAJ7W.i90 (147,9)
+   -> mod_cmip6_mpilr_mp_read_hcoord_mpilr_ /scratch_local/ifx0419314569ysgiWE/ifx3aAJ7W.i90 (148,14)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0419314569ysgiWE/ifx3aAJ7W.i90 (151,9)
+   -> mod_cmip6_mpilr_mp_read_vcoord_mpilr_ /scratch_local/ifx0419314569ysgiWE/ifx3aAJ7W.i90 (152,14)
+   -> llvm.round.f64 /scratch_local/ifx0419314569ysgiWE/ifx3aAJ7W.i90 (197,14)
+   -> mod_cmip6_mpilr_mp_read_3d_mpilr_ /scratch_local/ifx0419314569ysgiWE/ifx3aAJ7W.i90 (210,14)
+
+COMPILE FUNC: mod_cmip6_mpilr_mp_read_2d_mpilr_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0419314569ysgiWE/ifx3aAJ7W.i90 (225,26)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0419314569ysgiWE/ifx3aAJ7W.i90 (254,9)
+   -> mod_cmip6_mpilr_mp_read_hcoord_mpilr_ /scratch_local/ifx0419314569ysgiWE/ifx3aAJ7W.i90 (255,14)
+   -> llvm.round.f64 /scratch_local/ifx0419314569ysgiWE/ifx3aAJ7W.i90 (298,14)
+   -> mod_cmip6_mpilr_mp_read_2d_mpilr_ /scratch_local/ifx0419314569ysgiWE/ifx3aAJ7W.i90 (311,14)
+
+COMPILE FUNC: mod_cmip6_mpilr_mp_read_fx_mpilr_
+   -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx0419314569ysgiWE/ifx3aAJ7W.i90 (329,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0419314569ysgiWE/ifx3aAJ7W.i90 (336,7)
+   -> mod_cmip6_mpilr_mp_read_hcoord_mpilr_ /scratch_local/ifx0419314569ysgiWE/ifx3aAJ7W.i90 (337,12)
+
+COMPILE FUNC: mod_cmip6_mpilr_mp_read_sst_mpilr_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0419314569ysgiWE/ifx3aAJ7W.i90 (356,26)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0419314569ysgiWE/ifx3aAJ7W.i90 (382,9)
+   -> mod_cmip6_mpilr_mp_read_hcoord_sst_mpilr_ /scratch_local/ifx0419314569ysgiWE/ifx3aAJ7W.i90 (383,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0419314569ysgiWE/ifx3aAJ7W.i90 (420,19)
+   -> mod_cmip6_mpilr_mp_read_sst_mpilr_ /scratch_local/ifx0419314569ysgiWE/ifx3aAJ7W.i90 (430,14)
+
+---- End Inlining Report ------

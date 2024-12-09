@@ -1,0 +1,181 @@
+Global optimization report for : mod_che_ccn._
+=================================================================
+
+Global optimization report for : mod_che_ccn_mp_ccn_
+
+LOOP BEGIN at mod_che_ccn.F90 (51, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_ccn.F90 (51, 5)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_ccn.F90 (51, 5)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_ccn.F90 (54, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_ccn.F90 (56, 13)
+    <Predicate Optimized v1>
+        remark #25423: Invariant If condition at line 56 hoisted out of this loop
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_ccn.F90 (55, 11)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_ccn.F90 (59, 13)
+            <Multiversioned v2>
+                remark #15319: Loop was not vectorized: novector directive used
+            LOOP END
+
+            LOOP BEGIN at mod_che_ccn.F90 (55, 11)
+            <Multiversioned v1>
+                remark #25228: Loop multiversioned for Data Dependence
+                remark #25563: Load hoisted out of the loop
+                remark #25563: Load hoisted out of the loop
+                remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_che_ccn.F90 (61, 9)
+    <Predicate Optimized v2>
+
+        LOOP BEGIN at mod_che_ccn.F90 (60, 11)
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_ccn.F90 (66, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_ccn.F90 (68, 13)
+    <Predicate Optimized v1>
+        remark #25423: Invariant If condition at line 68 hoisted out of this loop
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_ccn.F90 (67, 11)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_ccn.F90 (71, 13)
+            <Multiversioned v2>
+                remark #15319: Loop was not vectorized: novector directive used
+            LOOP END
+
+            LOOP BEGIN at mod_che_ccn.F90 (67, 11)
+            <Multiversioned v1>
+                remark #25228: Loop multiversioned for Data Dependence
+                remark #25563: Load hoisted out of the loop
+                remark #25563: Load hoisted out of the loop
+                remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_che_ccn.F90 (73, 9)
+    <Predicate Optimized v2>
+
+        LOOP BEGIN at mod_che_ccn.F90 (72, 11)
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_ccn.F90 (78, 9)
+    remark #25423: Invariant If condition at line 78 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_ccn.F90 (79, 11)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_che_ccn.F90 (82, 11)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_che_ccn.F90 (79, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_ccn.F90 (79, 11)
+            remark #25563: Load hoisted out of the loop
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_ccn.F90 (88, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_ccn.F90 (89, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_ccn.F90 (92, 11)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between cccn (90:13) and isslt (90:13) 
+            remark #15346: vector dependence: assumed FLOW dependence between cccn (90:13) and chib3d (90:13) 
+            remark #15346: vector dependence: assumed FLOW dependence between cccn (90:13) and crhob3d (90:13) 
+            remark #15346: vector dependence: assumed FLOW dependence between cccn (90:13) and coef_ccn (119:38) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_ccn.F90 (97, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_ccn.F90 (98, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_ccn.F90 (105, 9)
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_che_ccn_mp_calc_ccn_
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.experimental.noalias.scope.decl
+
+COMPILE FUNC: mod_che_ccn._
+
+COMPILE FUNC: mod_che_ccn_mp_calc_ccn_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0052412229MQOsRX/ifxZmZDsr.i90 (119,22)
+
+COMPILE FUNC: mod_che_ccn_mp_ccn_
+   -> INLINE: mod_che_ccn_mp_calc_ccn_ /scratch_local/ifx0052412229MQOsRX/ifxZmZDsr.i90 (58,18)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0052412229MQOsRX/ifxZmZDsr.i90 (119,22)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx0052412229MQOsRX/ifxZmZDsr.i90 (119,22)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx0052412229MQOsRX/ifxZmZDsr.i90 (119,22)
+   -> INLINE: mod_che_ccn_mp_calc_ccn_ /scratch_local/ifx0052412229MQOsRX/ifxZmZDsr.i90 (70,18)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0052412229MQOsRX/ifxZmZDsr.i90 (119,22)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx0052412229MQOsRX/ifxZmZDsr.i90 (119,22)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx0052412229MQOsRX/ifxZmZDsr.i90 (119,22)
+   -> INLINE: mod_che_ccn_mp_calc_ccn_ /scratch_local/ifx0052412229MQOsRX/ifxZmZDsr.i90 (81,18)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx0052412229MQOsRX/ifxZmZDsr.i90 (119,22)
+   -> INLINE: mod_che_ccn_mp_calc_ccn_ /scratch_local/ifx0052412229MQOsRX/ifxZmZDsr.i90 (91,18)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx0052412229MQOsRX/ifxZmZDsr.i90 (119,22)
+   -> llvm.exp.f64 /scratch_local/ifx0052412229MQOsRX/ifxZmZDsr.i90 (101,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0052412229MQOsRX/ifxZmZDsr.i90 (101,31)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0052412229MQOsRX/ifxZmZDsr.i90 (58,18)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0052412229MQOsRX/ifxZmZDsr.i90 (58,18)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0052412229MQOsRX/ifxZmZDsr.i90 (70,18)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0052412229MQOsRX/ifxZmZDsr.i90 (70,18)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0052412229MQOsRX/ifxZmZDsr.i90 (81,18)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0052412229MQOsRX/ifxZmZDsr.i90 (81,18)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0052412229MQOsRX/ifxZmZDsr.i90 (91,18)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0052412229MQOsRX/ifxZmZDsr.i90 (91,18)
+
+---- End Inlining Report ------

@@ -1,0 +1,425 @@
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: mod_hash.F90, Line: 65, Column: 15 }
+Function:        mod_hash_mp_hash_
+Args:
+  - Callee:          for_len_trim
+  - String:          ' will not be inlined into '
+  - Caller:          mod_hash_mp_hash_
+    DebugLoc:        { File: mod_hash.F90, Line: 60, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: mod_hash.F90, Line: 65, Column: 15 }
+Function:        mod_hash_mp_hash_
+Args:
+  - Callee:          for_len_trim
+  - String:          ' will not be inlined into '
+  - Caller:          mod_hash_mp_hash_
+    DebugLoc:        { File: mod_hash.F90, Line: 60, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_hash.F90, Line: 48, Column: 9 }
+Function:        mod_hash_mp_bsearch_
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_hash.F90, Line: 48, Column: 9 }
+Function:        mod_hash_mp_bsearch_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_hash.F90, Line: 48, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_hash.F90, Line: 48, Column: 9 }
+Function:        mod_hash_mp_bsearch_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_hash.F90, Line: 48, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_hash.F90, Line: 48, Column: 9 }
+Function:        mod_hash_mp_bsearch_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_hash.F90, Line: 48, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_hash.F90, Line: 48, Column: 9 }
+Function:        mod_hash_mp_bsearch_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_hash.F90, Line: 48, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_hash.F90, Line: 48, Column: 9 }
+Function:        mod_hash_mp_bsearch_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_hash.F90, Line: 48, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_hash.F90, Line: 48, Column: 9 }
+Function:        mod_hash_mp_bsearch_
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_hash.F90, Line: 48, Column: 9 }
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: mod_hash.F90, Line: 65, Column: 15 }
+Function:        mod_hash_mp_hash_
+Args:
+  - Callee:          for_len_trim
+  - String:          ' will not be inlined into '
+  - Caller:          mod_hash_mp_hash_
+    DebugLoc:        { File: mod_hash.F90, Line: 60, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: mod_hash.F90, Line: 65, Column: 15 }
+Function:        mod_hash_mp_hash_
+Args:
+  - Callee:          for_len_trim
+  - String:          ' will not be inlined into '
+  - Caller:          mod_hash_mp_hash_
+    DebugLoc:        { File: mod_hash.F90, Line: 60, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+Function:        mod_hash._
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        mod_hash._
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_0
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+Function:        mod_hash._
+Args:
+  - NumInstructions: '1'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            LoopSpillReloadCopies
+DebugLoc:        { File: mod_hash.F90, Line: 46, Column: 7 }
+Function:        mod_hash_mp_bsearch_
+Args:
+  - NumVRCopies:     '3'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '1.992308e+01'
+  - String:          ' total copies cost '
+  - String:          generated in loop
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: mod_hash.F90, Line: 36, Column: 1 }
+Function:        mod_hash_mp_bsearch_
+Args:
+  - NumVRCopies:     '4'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '2.023077e+01'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: mod_hash.F90, Line: 36, Column: 0 }
+Function:        mod_hash_mp_bsearch_
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_hash.F90, Line: 36, Column: 43 }
+Function:        mod_hash_mp_bsearch_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_1
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_hash.F90, Line: 0, Column: 0 }
+Function:        mod_hash_mp_bsearch_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb3.lr.ph
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_hash.F90, Line: 0, Column: 0 }
+Function:        mod_hash_mp_bsearch_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new9_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_hash.F90, Line: 0, Column: 0 }
+Function:        mod_hash_mp_bsearch_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb3
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '11'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_hash.F90, Line: 0, Column: 0 }
+Function:        mod_hash_mp_bsearch_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new9_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_hash.F90, Line: 0, Column: 0 }
+Function:        mod_hash_mp_bsearch_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new9_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_hash.F90, Line: 0, Column: 0 }
+Function:        mod_hash_mp_bsearch_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb9_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_hash.F90, Line: 0, Column: 0 }
+Function:        mod_hash_mp_bsearch_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb9_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: mod_hash.F90, Line: 36, Column: 0 }
+Function:        mod_hash_mp_bsearch_
+Args:
+  - NumInstructions: '31'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            LoopSpillReloadCopies
+DebugLoc:        { File: mod_hash.F90, Line: 68, Column: 5 }
+Function:        mod_hash_mp_hash_
+Args:
+  - NumVRCopies:     '1'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '2.028572e+01'
+  - String:          ' total copies cost '
+  - String:          generated in loop
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: mod_hash.F90, Line: 60, Column: 1 }
+Function:        mod_hash_mp_hash_
+Args:
+  - NumVRCopies:     '4'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '2.328572e+01'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: mod_hash.F90, Line: 60, Column: 0 }
+Function:        mod_hash_mp_hash_
+Args:
+  - NumStackBytes:   '8'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_hash.F90, Line: 0, Column: 0 }
+Function:        mod_hash_mp_hash_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_2
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_hash.F90, Line: 0, Column: 0 }
+Function:        mod_hash_mp_hash_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body19.preheader
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_hash.F90, Line: 0, Column: 0 }
+Function:        mod_hash_mp_hash_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body19
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '9'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_hash.F90, Line: 0, Column: 0 }
+Function:        mod_hash_mp_hash_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do20.loopexit
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_hash.F90, Line: 0, Column: 0 }
+Function:        mod_hash_mp_hash_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_2
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_hash.F90, Line: 0, Column: 0 }
+Function:        mod_hash_mp_hash_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do20
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: mod_hash.F90, Line: 60, Column: 0 }
+Function:        mod_hash_mp_hash_
+Args:
+  - NumInstructions: '28'
+  - String:          ' instructions in function'
+...

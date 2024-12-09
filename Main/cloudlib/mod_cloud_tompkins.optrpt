@@ -1,0 +1,83 @@
+Global optimization report for : mod_cloud_tompkins._
+=================================================================
+
+Global optimization report for : mod_cloud_tompkins_mp_tompkins_cldfrac_
+=================================================================
+
+Global optimization report for : mod_cloud_tompkins_mp_tompkins_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split594.split
+
+LOOP BEGIN at mod_cloud_tompkins.F90 (61, 26)
+    remark #25563: Load hoisted out of the loop
+    remark #25563: Load hoisted out of the loop
+    remark #25563: Load hoisted out of the loop
+    remark #25563: Load hoisted out of the loop
+    remark #25563: Load hoisted out of the loop
+    remark #25563: Load hoisted out of the loop
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (54:5) and (61:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between (54:5) and (61:28) 
+    remark #15346: vector dependence: assumed FLOW dependence between (54:5) and (62:29) 
+    remark #15346: vector dependence: assumed FLOW dependence between (54:5) and (63:19) 
+    remark #15346: vector dependence: assumed FLOW dependence between (54:5) and (63:28) 
+    remark #15346: vector dependence: assumed FLOW dependence between (54:5) and (69:15) 
+    remark #15346: vector dependence: assumed FLOW dependence between (54:5) and (72:15) 
+    remark #15346: vector dependence: assumed FLOW dependence between (54:5) and (75:13) 
+    remark #15346: vector dependence: assumed FLOW dependence between (54:5) and (61:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between (54:5) and (62:29) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_cloud_tompkins_mp_tompkins_cldfrac_.DIR.OMP.TEAMS.2.split606
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.directive.region.entry
+
+DEAD STATIC FUNC: llvm.directive.region.exit
+
+COMPILE FUNC: mod_cloud_tompkins._
+
+COMPILE FUNC: mod_cloud_tompkins_mp_tompkins_cldfrac_
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx1485306054et2oTC/ifxmsGxIS.i90 (54,5)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1485306054et2oTC/ifxmsGxIS.i90 (69,44)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1485306054et2oTC/ifxmsGxIS.i90 (70,49)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1485306054et2oTC/ifxmsGxIS.i90 (70,23)
+   -> DELETE: llvm.sqrt.f64 /scratch_local/ifx1485306054et2oTC/ifxmsGxIS.i90 (69,38)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1485306054et2oTC/ifxmsGxIS.i90 (64,42)
+   -> DELETE: llvm.pow.f64 /scratch_local/ifx1485306054et2oTC/ifxmsGxIS.i90 (64,54)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1485306054et2oTC/ifxmsGxIS.i90 (66,47)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1485306054et2oTC/ifxmsGxIS.i90 (67,43)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1485306054et2oTC/ifxmsGxIS.i90 (67,22)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx1485306054et2oTC/ifxmsGxIS.i90 (54,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx1485306054et2oTC/ifxmsGxIS.i90 (54,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx1485306054et2oTC/ifxmsGxIS.i90 (54,5)
+
+COMPILE FUNC: mod_cloud_tompkins_mp_tompkins_cldfrac_.DIR.OMP.TEAMS.2.split606
+
+COMPILE FUNC: mod_cloud_tompkins_mp_tompkins_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split594.split
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1485306054et2oTC/ifxmsGxIS.i90 (69,44)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1485306054et2oTC/ifxmsGxIS.i90 (70,49)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1485306054et2oTC/ifxmsGxIS.i90 (70,23)
+   -> DELETE: llvm.sqrt.f64 /scratch_local/ifx1485306054et2oTC/ifxmsGxIS.i90 (69,38)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1485306054et2oTC/ifxmsGxIS.i90 (64,42)
+   -> DELETE: llvm.pow.f64 /scratch_local/ifx1485306054et2oTC/ifxmsGxIS.i90 (64,54)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1485306054et2oTC/ifxmsGxIS.i90 (66,47)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1485306054et2oTC/ifxmsGxIS.i90 (67,43)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1485306054et2oTC/ifxmsGxIS.i90 (67,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1485306054et2oTC/ifxmsGxIS.i90 (66,47)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1485306054et2oTC/ifxmsGxIS.i90 (67,43)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1485306054et2oTC/ifxmsGxIS.i90 (67,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1485306054et2oTC/ifxmsGxIS.i90 (64,42)
+   -> llvm.pow.f64 /scratch_local/ifx1485306054et2oTC/ifxmsGxIS.i90 (64,54)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1485306054et2oTC/ifxmsGxIS.i90 (69,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1485306054et2oTC/ifxmsGxIS.i90 (70,49)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1485306054et2oTC/ifxmsGxIS.i90 (70,23)
+   -> llvm.sqrt.f64 /scratch_local/ifx1485306054et2oTC/ifxmsGxIS.i90 (69,38)
+
+---- End Inlining Report ------

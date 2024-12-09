@@ -1,0 +1,6754 @@
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+Function:        mod_rad_colmod3._
+Args:
+  - NumStackBytes:   '8'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        mod_rad_colmod3._
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_0
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+Function:        mod_rad_colmod3._
+Args:
+  - NumInstructions: '4'
+  - String:          ' instructions in function'
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 51, Column: 0 }
+Function:        mod_rad_colmod3_mp_allocate_mod_rad_colmod3_
+Args:
+  - NumStackBytes:   '104'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        mod_rad_colmod3_mp_allocate_mod_rad_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_1
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '641'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 51, Column: 0 }
+Function:        mod_rad_colmod3_mp_allocate_mod_rad_colmod3_
+Args:
+  - NumInstructions: '641'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 208, Column: 14 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          FastISel missed call
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 436, Column: 26 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          FastISel missed call
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 450, Column: 26 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          FastISel missed call
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 459, Column: 39 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          FastISel missed call
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 459, Column: 24 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          FastISel missed call
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 497, Column: 29 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          FastISel missed call
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 475, Column: 44 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          FastISel missed call
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 521, Column: 68 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          FastISel missed call
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 521, Column: 36 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          FastISel missed call
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 538, Column: 48 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          FastISel missed call
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 615, Column: 18 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          FastISel missed call
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 634, Column: 23 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          FastISel missed call
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 633, Column: 34 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          FastISel missed call
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 632, Column: 35 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          FastISel missed call
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 628, Column: 18 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          FastISel missed call
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 655, Column: 15 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          FastISel missed call
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 653, Column: 15 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          FastISel missed call
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 653, Column: 41 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          FastISel missed call
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 674, Column: 22 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          FastISel missed call
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 672, Column: 35 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          FastISel missed call
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 687, Column: 62 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          FastISel missed call
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 687, Column: 65 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          FastISel missed call
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 686, Column: 42 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          FastISel missed call
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 687, Column: 18 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          FastISel missed call
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 704, Column: 33 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          FastISel missed call
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 701, Column: 48 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          FastISel missed call
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 701, Column: 23 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          FastISel missed call
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 699, Column: 28 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          FastISel missed call
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 696, Column: 30 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          FastISel missed call
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 781, Column: 3 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          FastISel missed call
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 208, Column: 0 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - NumStackBytes:   '2808'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_2
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '66'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 208, Column: 14 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      dealloc_heap_array460
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '44'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb2_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb3_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 208, Column: 14 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb4_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      end_dealloc_heap_array461
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '30'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_test471
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_body472
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '15'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_exit473
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '16'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_test475
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_body476
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '15'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_exit477
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '16'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_test479
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_body480
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '15'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_exit481
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '16'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_test483
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_body484
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '15'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_exit485
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '16'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_test487
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_body488
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '15'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_exit489
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '16'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_test491
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_body492
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '15'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_exit493
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '16'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_test495
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_body496
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '15'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_exit497
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '16'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_test499
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_body500
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '15'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_exit501
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '16'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_test503
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_body504
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '15'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_exit505
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '16'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_test507
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_body508
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '15'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_exit509
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '16'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_test511
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_body512
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '15'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_exit513
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '16'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_test515
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_body516
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '15'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_exit517
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '16'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_test519
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_body520
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '15'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_exit521
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '16'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_test523
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_body524
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '15'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_exit525
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '16'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_test527
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_body528
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '15'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_exit529
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '16'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_test531
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_body532
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '15'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_exit533
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '16'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_test535
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_body536
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '15'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_exit537
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '16'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_test539
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_body540
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '15'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_exit541
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '16'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_test543
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_body544
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '15'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_exit545
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '16'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_test547
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_body548
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '15'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_exit549
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '16'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_test551
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_body552
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '15'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_exit553
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '16'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_test555
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_body556
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '15'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_exit557
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '16'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_test559
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_body560
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '15'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_exit561
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '29'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_test563
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_body564
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '21'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_exit565
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_test567
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_body568
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_exit569
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '29'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_test571
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_body572
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '21'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_exit573
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_test575
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_body576
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_exit577
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '20'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog582
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body580
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog586
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body584
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '40'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog587
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do585
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog583
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do581
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog592
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body590
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog596
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body594
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '63'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog597
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do595
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog593
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do591
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog603
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body601
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog607
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body605
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '178'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog608
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do606
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog604
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do602
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog619
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body617
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog623
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body621
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '40'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog624
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do622
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog620
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do618
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog629
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body627
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '16'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new632_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '12'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb157_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb158_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog630
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do628
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog635
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body633
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '17'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new638_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '11'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new639_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '10'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb159_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog636
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do634
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body640
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog646
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body644
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog650
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body648
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog654
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body652
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '76'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog655
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do653
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog651
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do649
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog647
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do645
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog643
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog660
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body658
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog664
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body662
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog668
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body666
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog672
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body670
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '76'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog673
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do671
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog669
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do667
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog665
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do663
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog661
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do659
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog678
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body676
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog682
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body680
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog686
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body684
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '60'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog687
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do685
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog683
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do681
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog679
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do677
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog692
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body690
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog696
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body694
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '63'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog697
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do695
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog693
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do691
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog703
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body701
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog707
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body705
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog711
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body709
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '288'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog712
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do710
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog708
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do706
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog704
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do702
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog725
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body723
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog729
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body727
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog733
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body731
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '92'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog734
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do732
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog730
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do728
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog726
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do724
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog742
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body740
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog746
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body744
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '62'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog747
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do745
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog743
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do741
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog757
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body755
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog761
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body759
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog765
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body763
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '59'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog766
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do764
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog762
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do760
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog758
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do756
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog771
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body769
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog775
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body773
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '26'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new779_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '74'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new782_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '19'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb160_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new778_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '26'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new783_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '19'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb161_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog776
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do774
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog772
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do770
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog787
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body785
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog791
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body789
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '26'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new796_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '20'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new797_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '39'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb162_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new794_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '20'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new795_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '25'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb163_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog792
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do790
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog788
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do786
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog802
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body800
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog806
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body804
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '114'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog807
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do805
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog803
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do801
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new754_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '7'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new784_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '9'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb164_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog812
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body810
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog816
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body814
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog820
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body818
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '168'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new830_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '32'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new831_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '31'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb165_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog821
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do819
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog817
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do815
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog813
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do811
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog835
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body833
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '37'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog836
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do834
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog840
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body838
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog844
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body842
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '73'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog845
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do843
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog841
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do839
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog851
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body849
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '25'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog852
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do850
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog858
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body856
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '10'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog862
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body860
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '25'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog863
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do861
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog859
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do857
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new855_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '9'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb166_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb167_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog869
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body867
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog873
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body871
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog877
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body875
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog881
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body879
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '75'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog882
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do880
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog878
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do876
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog874
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do872
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog870
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do868
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new866_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '7'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb168_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb169_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog887
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body885
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog891
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body889
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '19'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new898_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '30'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new899_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '29'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb170_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '138'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new894_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '66'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new917_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '38'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb171_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog892
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do890
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog888
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do886
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '19'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_test920
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_body921
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '15'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_exit922
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '19'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_test924
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_body925
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '15'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_exit926
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '19'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_test928
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_body929
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '15'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop_exit930
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog933
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body931
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog937
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body935
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '237'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog938
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do936
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog934
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do932
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '24'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog954
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body952
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '17'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new959_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb190_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog962
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body960
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog966
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body964
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '56'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new977_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb192_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '15'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new979_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new980_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb194_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '32'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new970_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '56'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb195_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb196_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb6
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '7'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog967
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do965
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog963
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do961
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb5
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '7'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog955
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do953
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new951_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '7'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb197_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb198_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog992
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body990
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog996
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body994
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '178'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog997
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do995
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog993
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do991
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '22'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body1023
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog1030
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body1028
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog1034
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body1032
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog1038
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body1036
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '76'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog1039
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do1037
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog1035
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do1033
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog1031
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do1029
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog1026
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog1044
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body1042
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog1048
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body1046
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog1052
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body1050
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog1056
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body1054
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '76'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog1057
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do1055
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog1053
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do1051
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog1049
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do1047
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog1045
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do1043
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog1062
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body1060
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog1066
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body1064
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog1070
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body1068
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '60'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog1071
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do1069
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog1067
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do1065
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog1063
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do1061
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new1027_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb199_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb200_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '16'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body1076
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog1083
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body1081
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog1087
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body1085
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.prolog1091
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body1089
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '102'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog1092
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do1090
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog1088
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do1086
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog1084
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do1082
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.epilog1079
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new1080_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb201_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb202_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '172'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      dealloc.list.then1101
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '46'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new1105_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb203_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb204_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 220, Column: 46 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      dealloc.list.end1102
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '10'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: mod_rad_colmod3.F90, Line: 208, Column: 0 }
+Function:        mod_rad_colmod3_mp_colmod3_
+Args:
+  - NumInstructions: '5809'
+  - String:          ' instructions in function'
+...

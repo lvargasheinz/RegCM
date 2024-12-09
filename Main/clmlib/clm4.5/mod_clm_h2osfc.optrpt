@@ -1,0 +1,44 @@
+Global optimization report for : mod_clm_h2osfc._
+=================================================================
+
+Global optimization report for : mod_clm_h2osfc_mp_frach2osfc_
+
+LOOP BEGIN at mod_clm_h2osfc.F90 (80, 32)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_h2osfc.F90 (90, 11)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between d (99:19) and d (91:19) 
+        remark #15346: vector dependence: assumed FLOW dependence between d (99:19) and d (91:19) 
+        remark #15346: vector dependence: assumed FLOW dependence between d (99:19) and d 
+        remark #15346: vector dependence: assumed FLOW dependence between d (99:19) and d 
+        remark #15346: vector dependence: assumed FLOW dependence between d (99:19) and d (99:19) 
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_clm_h2osfc._
+
+COMPILE FUNC: mod_clm_h2osfc_mp_frach2osfc_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0475202681w0696P/ifxeqLuRh.i90 (91,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0475202681w0696P/ifxeqLuRh.i90 (92,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0475202681w0696P/ifxeqLuRh.i90 (92,31)
+   -> llvm.exp.f64 /scratch_local/ifx0475202681w0696P/ifxeqLuRh.i90 (93,45)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0475202681w0696P/ifxeqLuRh.i90 (96,46)
+   -> DELETE: erf /scratch_local/ifx0475202681w0696P/ifxeqLuRh.i90 (96,39)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0475202681w0696P/ifxeqLuRh.i90 (96,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0475202681w0696P/ifxeqLuRh.i90 (98,44)
+   -> DELETE: erf /scratch_local/ifx0475202681w0696P/ifxeqLuRh.i90 (98,37)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0475202681w0696P/ifxeqLuRh.i90 (98,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0475202681w0696P/ifxeqLuRh.i90 (102,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0475202681w0696P/ifxeqLuRh.i90 (113,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0475202681w0696P/ifxeqLuRh.i90 (98,44)
+
+---- End Inlining Report ------

@@ -1,0 +1,268 @@
+Global optimization report for : mod_spline._
+=================================================================
+
+Global optimization report for : mod_spline_mp_spline1_
+
+LOOP BEGIN at mod_spline.F90 (104, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (100:9) and (99:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (101:9) and (102:51) 
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 6
+LOOP END
+
+LOOP BEGIN at mod_spline.F90 (122, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (121:9) and (121:9) 
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+LOOP END
+=================================================================
+
+Global optimization report for : mod_spline_mp_spline2_
+
+LOOP BEGIN at mod_spline.F90 (180, 14)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between p (177:7) and p (177:29) 
+    remark #15346: vector dependence: assumed FLOW dependence between q (178:7) and q (176:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between dxl dxr (173:22) and dxl dxr (175:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between dxl dxr (173:22) and dxl dxr (176:25) 
+    remark #15346: vector dependence: assumed FLOW dependence between dxl dxr (173:22) and dxl dxr (177:47) 
+    remark #15346: vector dependence: assumed FLOW dependence between dydxl dydxr (174:34) and dydxl dydxr (177:36) 
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 4
+LOOP END
+
+LOOP BEGIN at mod_spline.F90 (184, 14)
+    remark #25530: Stmt at line 182 sinked after loop using last value computation
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between y2 (182:7) and y2 (182:2) 
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+LOOP END
+
+LOOP BEGIN at mod_spline.F90 (188, 21)
+
+    LOOP BEGIN at mod_spline.F90 (188, 21)
+        remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_spline.F90 (187, 10)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_spline_mp_splini_
+
+LOOP BEGIN at mod_spline.F90 (231, 7)
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+LOOP END
+=================================================================
+
+Global optimization report for : mod_spline_mp_splint_
+
+LOOP BEGIN at mod_spline.F90 (278, 7)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+=================================================================
+
+Global optimization report for : mod_spline_mp_splie2_
+
+LOOP BEGIN at mod_spline.F90 (329, 9)
+
+    LOOP BEGIN at mod_spline.F90 (329, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_spline.F90 (333, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_spline.F90 (334, 7)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+=================================================================
+
+Global optimization report for : mod_spline_mp_splin2_
+
+LOOP BEGIN at mod_spline.F90 (364, 9)
+
+    LOOP BEGIN at mod_spline.F90 (367, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_spline_mp_spline1d_
+
+LOOP BEGIN at mod_spline.F90 (424, 9)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between p (422:11) and p (422:29) 
+    remark #15346: vector dependence: assumed FLOW dependence between q (423:11) and q (421:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between dxl dxr (418:27) and dxl dxr (420:21) 
+    remark #15346: vector dependence: assumed FLOW dependence between dxl dxr (418:27) and dxl dxr (421:27) 
+    remark #15346: vector dependence: assumed FLOW dependence between dxl dxr (418:27) and dxl dxr (422:47) 
+    remark #15346: vector dependence: assumed FLOW dependence between dydxl dydxr (419:38) and dydxl dydxr (422:36) 
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 4
+LOOP END
+
+LOOP BEGIN at mod_spline.F90 (428, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between y2 (427:9) and y2 (427:9) 
+LOOP END
+
+LOOP BEGIN at mod_spline.F90 (433, 17)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_spline.F90 (442, 25)
+        remark #25530: Stmt at line 0 sinked after loop using last value computation
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_spline_mp_spline1d_
+   -> llvm.smax.i32 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (392,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (392,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (392,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (409,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (410,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (411,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (412,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (412,21)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (419,20)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (421,24)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (422,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (422,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (457,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (459,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (459,49)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (419,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (421,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (422,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (422,25)
+   -> llvm.memset.p0.i64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (392,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (392,16)
+
+COMPILE FUNC: mod_spline._
+
+COMPILE FUNC: mod_spline_mp_spline1_
+   -> llvm.smax.i64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (84,7)
+   -> llvm.smax.i64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (85,7)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (92,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (92,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (92,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (92,39)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (98,16)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (98,30)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (100,18)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (101,25)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (101,39)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (102,23)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (102,37)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (101,24)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (103,23)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (101,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (114,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (114,15)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (114,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (114,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (116,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (116,31)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (79,49)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (79,49)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (98,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (98,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (100,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (101,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (101,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (102,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (101,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (101,17)
+
+COMPILE FUNC: mod_spline_mp_spline2_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (164,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (165,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (166,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (167,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (167,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (174,16)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (176,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (177,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (177,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (201,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (203,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (203,54)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (174,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (176,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (177,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (177,22)
+   -> llvm.smax.i32 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (180,14)
+   -> llvm.smin.i64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90
+   -> llvm.smax.i32 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (188,21)
+   -> llvm.smax.i32 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (187,10)
+   -> DELETE: llvm.smin.i64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (182,2)
+
+COMPILE FUNC: mod_spline_mp_splini_
+   -> llvm.smax.i64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (227,7)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (235,14)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (236,14)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (239,21)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (240,24)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (240,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (241,21)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (240,21)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (239,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (235,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (236,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (239,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (240,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (240,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (241,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (240,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (239,20)
+
+COMPILE FUNC: mod_spline_mp_splint_
+   -> llvm.smax.i64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (274,7)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (297,12)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (298,12)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (299,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (300,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (299,36)
+
+COMPILE FUNC: mod_spline_mp_splie2_
+   -> llvm.smax.i64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (322,7)
+   -> llvm.smax.i64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (323,7)
+   -> llvm.smax.i32 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (325,7)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (325,7)
+   -> DELETE: mod_spline_mp_spline1_ /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (330,14)
+   -> mod_spline_mp_spline1_ /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (330,14)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (320,56)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (320,56)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (320,49)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (320,49)
+   -> mod_spline_mp_spline1_ /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (330,14)
+
+COMPILE FUNC: mod_spline_mp_splin2_
+   -> llvm.smax.i64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (359,7)
+   -> llvm.smax.i64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (360,7)
+   -> llvm.smax.i64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (361,7)
+   -> mod_spline_mp_splint_ /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (368,14)
+   -> mod_spline_mp_spline1_ /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (370,12)
+   -> mod_spline_mp_splint_ /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (371,12)
+   -> DELETE: for_dealloc_allocatable_handle /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (372,5)
+   -> llvm.memset.p0.i64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (357,64)
+   -> llvm.memset.p0.i64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (357,64)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (357,56)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (357,56)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (357,49)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx14701272586dpdlb/ifx7djXbv.i90 (357,49)
+
+---- End Inlining Report ------

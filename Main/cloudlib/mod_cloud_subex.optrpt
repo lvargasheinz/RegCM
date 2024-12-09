@@ -1,0 +1,101 @@
+Global optimization report for : mod_cloud_subex._
+=================================================================
+
+Global optimization report for : mod_cloud_subex_mp_subex_cldfrac_
+=================================================================
+
+Global optimization report for : mod_cloud_subex_mp_subex_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split1175.split
+
+LOOP BEGIN at mod_cloud_subex.F90 (67, 26)
+    remark #25563: Load hoisted out of the loop
+    remark #25563: Load hoisted out of the loop
+    remark #25563: Load hoisted out of the loop
+    remark #25563: Load hoisted out of the loop
+    remark #25563: Load hoisted out of the loop
+    remark #25563: Load hoisted out of the loop
+    remark #25563: Load hoisted out of the loop
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (60:5) and (67:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between (60:5) and (67:28) 
+    remark #15346: vector dependence: assumed FLOW dependence between (60:5) and (71:29) 
+    remark #15346: vector dependence: assumed FLOW dependence between (60:5) and (72:18) 
+    remark #15346: vector dependence: assumed FLOW dependence between (60:5) and (73:24) 
+    remark #15346: vector dependence: assumed FLOW dependence between (60:5) and (79:15) 
+    remark #15346: vector dependence: assumed FLOW dependence between (60:5) and (85:15) 
+    remark #15346: vector dependence: assumed FLOW dependence between (60:5) and (90:15) 
+    remark #15346: vector dependence: assumed FLOW dependence between (60:5) and (83:15) 
+    remark #15346: vector dependence: assumed FLOW dependence between (60:5) and (93:13) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_cloud_subex_mp_subex_cldfrac_.DIR.OMP.TEAMS.2.split1189
+=================================================================
+
+Global optimization report for : mod_cloud_subex_mp_subex_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.13.split1193.split
+
+LOOP BEGIN at mod_cloud_subex.F90 (108, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (108:7) and (111:44) 
+    remark #15346: vector dependence: assumed FLOW dependence between (108:7) and (111:14) 
+    remark #15346: vector dependence: assumed FLOW dependence between (108:7) and (112:24) 
+    remark #15346: vector dependence: assumed FLOW dependence between (108:7) and (112:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (108:7) and (111:44) 
+    remark #15346: vector dependence: assumed FLOW dependence between (108:7) and (111:14) 
+    remark #15346: vector dependence: assumed FLOW dependence between (108:7) and (112:24) 
+    remark #15346: vector dependence: assumed FLOW dependence between (108:7) and (112:11) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_cloud_subex_mp_subex_cldfrac_.DIR.OMP.TEAMS.16.split1205
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.directive.region.entry
+
+DEAD STATIC FUNC: llvm.directive.region.exit
+
+COMPILE FUNC: mod_cloud_subex._
+
+COMPILE FUNC: mod_cloud_subex_mp_subex_cldfrac_
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx1617855252dX70AV/ifxqpgJcv.i90 (60,5)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1617855252dX70AV/ifxqpgJcv.i90 (80,18)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1617855252dX70AV/ifxqpgJcv.i90 (80,51)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1617855252dX70AV/ifxqpgJcv.i90 (80,35)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1617855252dX70AV/ifxqpgJcv.i90 (90,40)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1617855252dX70AV/ifxqpgJcv.i90 (90,54)
+   -> DELETE: llvm.sqrt.f64 /scratch_local/ifx1617855252dX70AV/ifxqpgJcv.i90 (90,34)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx1617855252dX70AV/ifxqpgJcv.i90 (60,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx1617855252dX70AV/ifxqpgJcv.i90 (60,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx1617855252dX70AV/ifxqpgJcv.i90 (60,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx1617855252dX70AV/ifxqpgJcv.i90 (108,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx1617855252dX70AV/ifxqpgJcv.i90 (108,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx1617855252dX70AV/ifxqpgJcv.i90 (108,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx1617855252dX70AV/ifxqpgJcv.i90 (108,7)
+
+COMPILE FUNC: mod_cloud_subex_mp_subex_cldfrac_.DIR.OMP.TEAMS.16.split1205
+
+COMPILE FUNC: mod_cloud_subex_mp_subex_cldfrac_.DIR.OMP.TEAMS.2.split1189
+
+COMPILE FUNC: mod_cloud_subex_mp_subex_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.13.split1193.split
+
+COMPILE FUNC: mod_cloud_subex_mp_subex_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split1175.split
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1617855252dX70AV/ifxqpgJcv.i90 (80,18)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1617855252dX70AV/ifxqpgJcv.i90 (80,51)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1617855252dX70AV/ifxqpgJcv.i90 (80,35)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1617855252dX70AV/ifxqpgJcv.i90 (90,40)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1617855252dX70AV/ifxqpgJcv.i90 (90,54)
+   -> DELETE: llvm.sqrt.f64 /scratch_local/ifx1617855252dX70AV/ifxqpgJcv.i90 (90,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1617855252dX70AV/ifxqpgJcv.i90 (80,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1617855252dX70AV/ifxqpgJcv.i90 (80,51)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1617855252dX70AV/ifxqpgJcv.i90 (80,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1617855252dX70AV/ifxqpgJcv.i90 (90,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1617855252dX70AV/ifxqpgJcv.i90 (90,54)
+   -> llvm.sqrt.f64 /scratch_local/ifx1617855252dX70AV/ifxqpgJcv.i90 (90,34)
+
+---- End Inlining Report ------

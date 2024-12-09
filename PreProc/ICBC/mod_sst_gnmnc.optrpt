@@ -1,0 +1,113 @@
+Global optimization report for : mod_sst_gnmnc._
+=================================================================
+
+Global optimization report for : mod_sst_gnmnc_mp_sst_gnmnc_
+
+LOOP BEGIN at mod_sst_gnmnc.F90 (159, 7)
+
+    LOOP BEGIN at mod_sst_gnmnc.F90 (160, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_sst_gnmnc.F90 (161, 27)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sst_gnmnc_mp_gnmnc_sst_
+
+LOOP BEGIN at mod_sst_gnmnc.F90 (208, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_sst_gnmnc.F90 (214, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sst_gnmnc_mp_open_input_
+=================================================================
+
+Global optimization report for : mod_sst_gnmnc_mp_read_month_
+
+LOOP BEGIN at mod_sst_gnmnc.F90 (391, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_sst_gnmnc.F90 (391, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.for.cpystr.i64.i64.i64
+
+COMPILE FUNC: mod_sst_gnmnc_mp_sst_gnmnc_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (87,14)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (87,14)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (87,14)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (87,14)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (135,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (135,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (132,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (132,7)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (129,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (129,7)
+   -> DELETE: llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (126,7)
+   -> DELETE: llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (123,7)
+   -> DELETE: llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (120,7)
+   -> DELETE: llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (117,7)
+   -> DELETE: llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (114,7)
+   -> DELETE: llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (111,7)
+   -> DELETE: llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (107,7)
+   -> DELETE: llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (103,7)
+   -> DELETE: llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (99,7)
+   -> mod_sst_gnmnc_mp_open_input_ /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (140,10)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (155,5)
+   -> mod_sst_gnmnc_mp_gnmnc_sst_ /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (157,12)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (126,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (126,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (123,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (123,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (120,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (120,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (117,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (117,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (114,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (114,7)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (111,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (111,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (107,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (107,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (103,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (103,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (99,7)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (99,7)
+
+COMPILE FUNC: mod_sst_gnmnc_mp_open_input_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (322,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (322,7)
+
+COMPILE FUNC: mod_sst_gnmnc_mp_gnmnc_sst_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (178,14)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (178,14)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (178,14)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (178,14)
+   -> mod_sst_gnmnc_mp_read_month_ /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (196,10)
+   -> mod_sst_gnmnc_mp_read_month_ /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (200,10)
+
+COMPILE FUNC: mod_sst_gnmnc._
+
+COMPILE FUNC: mod_sst_gnmnc_mp_read_month_
+   -> mod_sst_gnmnc_mp_open_input_ /scratch_local/ifx2065232366BkLFbw/ifxHyRIg8.i90 (381,14)
+
+---- End Inlining Report ------

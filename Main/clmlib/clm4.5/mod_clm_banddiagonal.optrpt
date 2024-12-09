@@ -1,0 +1,95 @@
+Global optimization report for : mod_clm_banddiagonal._
+=================================================================
+
+Global optimization report for : mod_clm_banddiagonal_mp_banddiagonal_
+
+LOOP BEGIN at mod_clm_banddiagonal.F90 (169, 7)
+
+    LOOP BEGIN at mod_clm_banddiagonal.F90 (169, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_banddiagonal.F90 (170, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_banddiagonal.F90 (171, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_banddiagonal.F90 (172, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_banddiagonal.F90 (173, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_banddiagonal.F90 (176, 7)
+    <Predicate Optimized v2>
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_banddiagonal.F90 (176, 7)
+        <Multiversioned v2>
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_clm_banddiagonal.F90 (176, 7)
+    <Predicate Optimized v1>
+        remark #25423: Invariant If condition at line 176 hoisted out of this loop
+        remark #25423: Invariant If condition at line 0 hoisted out of this loop
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+
+        LOOP BEGIN at mod_clm_banddiagonal.F90 (176, 7)
+        <Multiversioned v1>
+            remark #25399: memcopy generated
+            remark #25562: The loop has been multiversioned for the small trip count
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_clm_banddiagonal.F90 (182, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_banddiagonal.F90 (186, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_banddiagonal.F90 (196, 11)
+
+        LOOP BEGIN at mod_clm_banddiagonal.F90 (196, 11)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between (196:11) and (196:11) 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_clm_banddiagonal._
+
+COMPILE FUNC: mod_clm_banddiagonal_mp_banddiagonal_
+   -> llvm.smax.i32 /scratch_local/ifx0667042655I0xaY2/ifxYpJbcA.i90 (166,7)
+   -> llvm.smax.i32 /scratch_local/ifx0667042655I0xaY2/ifxYpJbcA.i90 (166,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0667042655I0xaY2/ifxYpJbcA.i90 (167,7)
+   -> llvm.smax.i32 /scratch_local/ifx0667042655I0xaY2/ifxYpJbcA.i90 (175,7)
+   -> llvm.smax.i32 /scratch_local/ifx0667042655I0xaY2/ifxYpJbcA.i90 (175,7)
+   -> llvm.smax.i32 /scratch_local/ifx0667042655I0xaY2/ifxYpJbcA.i90 (178,7)
+   -> llvm.smax.i32 /scratch_local/ifx0667042655I0xaY2/ifxYpJbcA.i90 (179,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0667042655I0xaY2/ifxYpJbcA.i90 (50,30)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0667042655I0xaY2/ifxYpJbcA.i90 (50,30)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0667042655I0xaY2/ifxYpJbcA.i90 (49,38)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0667042655I0xaY2/ifxYpJbcA.i90 (49,38)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx0667042655I0xaY2/ifxYpJbcA.i90 (49,30)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx0667042655I0xaY2/ifxYpJbcA.i90 (49,30)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0667042655I0xaY2/ifxYpJbcA.i90 (48,34)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0667042655I0xaY2/ifxYpJbcA.i90 (48,34)
+
+---- End Inlining Report ------

@@ -1,0 +1,187 @@
+Global optimization report for : mod_cloud_thomp._
+=================================================================
+
+Global optimization report for : mod_cloud_thomp_mp_thomp_cldfrac_
+=================================================================
+
+Global optimization report for : mod_cloud_thompthomp_cldfrac_mp_rslf_
+=================================================================
+
+Global optimization report for : mod_cloud_thompthomp_cldfrac_mp_rsif_
+=================================================================
+
+Global optimization report for : mod_cloud_thomp_mp_thomp_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split1502.split
+
+LOOP BEGIN at mod_cloud_thomp.F90 (79, 39)
+    remark #25563: Load hoisted out of the loop
+    remark #25563: Load hoisted out of the loop
+    remark #25563: Load hoisted out of the loop
+    remark #25563: Load hoisted out of the loop
+    remark #25563: Load hoisted out of the loop
+    remark #25563: Load hoisted out of the loop
+    remark #25563: Load hoisted out of the loop
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (69:5) and (76:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (69:5) and (78:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between (69:5) and (79:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between (69:5) and (80:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between (69:5) and (81:13) 
+    remark #15346: vector dependence: assumed FLOW dependence between (69:5) and (82:28) 
+    remark #15346: vector dependence: assumed FLOW dependence between (69:5) and (82:13) 
+    remark #15346: vector dependence: assumed FLOW dependence between (69:5) and (84:18) 
+    remark #15346: vector dependence: assumed FLOW dependence between (69:5) and (140:8) 
+    remark #15346: vector dependence: assumed FLOW dependence between (69:5) and (91:15) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_cloud_thomp_mp_thomp_cldfrac_.DIR.OMP.TEAMS.2.split1523
+
+OMP TEAMS BEGIN at mod_cloud_thomp.F90 (69, 5)
+    remark: SHARED clause for variable 'var$26.fpriv' has been changed to PRIVATE
+
+    OMP DISTRIBUTE PARALLEL DO BEGIN at mod_cloud_thomp.F90 (69, 5)
+        remark: FIRSTPRIVATE clause for variable 'heap_array_descr.1.addr_a0$122_fetch.18.array.elements.fpriv' has been changed to PRIVATE
+        remark: SHARED clause for variable 'var$26.fpriv' has been changed to PRIVATE
+    OMP DISTRIBUTE PARALLEL DO END
+OMP TEAMS END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.directive.region.entry
+
+DEAD STATIC FUNC: llvm.directive.region.exit
+
+DEAD STATIC FUNC: llvm.experimental.noalias.scope.decl
+
+COMPILE FUNC: mod_cloud_thomp_mp_thomp_cldfrac_
+   -> llvm.smax.i64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (46,14)
+   -> llvm.smax.i64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (46,14)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (46,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (46,14)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (46,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (65,38)
+   -> llvm.sqrt.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (65,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (66,38)
+   -> llvm.sqrt.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (66,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (94,18)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (94,30)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (94,45)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (69,5)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (109,33)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (109,48)
+   -> DELETE: llvm.sqrt.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (109,27)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (104,33)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (104,46)
+   -> DELETE: llvm.sqrt.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (104,27)
+   -> INLINE: mod_cloud_thompthomp_cldfrac_mp_rslf_ /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (86,20)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (139,56)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (139,50)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (139,44)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (139,38)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (139,32)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (139,26)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (139,20)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (141,26)
+   -> INLINE: mod_cloud_thompthomp_cldfrac_mp_rsif_ /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (87,20)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (162,56)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (162,50)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (162,44)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (162,38)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (162,32)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (162,26)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (162,20)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (164,26)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (69,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (69,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (69,5)
+   -> llvm.smax.i32 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (46,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (46,14)
+
+COMPILE FUNC: mod_cloud_thompthomp_cldfrac_mp_rslf_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (139,56)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (139,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (139,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (139,38)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (139,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (139,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (139,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (141,26)
+
+COMPILE FUNC: mod_cloud_thompthomp_cldfrac_mp_rsif_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (162,56)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (162,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (162,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (162,38)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (162,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (162,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (162,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (164,26)
+
+COMPILE FUNC: mod_cloud_thomp._
+
+COMPILE FUNC: mod_cloud_thomp_mp_thomp_cldfrac_.DIR.OMP.TEAMS.2.split1523
+
+COMPILE FUNC: mod_cloud_thomp_mp_thomp_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split1502.split
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (86,20)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (86,20)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (87,20)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (87,20)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (94,18)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (94,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (94,45)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (109,33)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (109,48)
+   -> DELETE: llvm.sqrt.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (109,27)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (104,33)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (104,46)
+   -> DELETE: llvm.sqrt.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (104,27)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (139,56)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (139,50)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (139,44)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (139,38)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (139,32)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (139,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (139,20)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (141,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (162,56)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (162,50)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (162,44)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (162,38)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (162,32)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (162,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (162,20)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (164,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (139,56)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (139,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (139,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (139,38)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (139,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (139,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (139,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (141,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (162,56)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (162,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (162,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (162,38)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (162,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (162,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (162,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (164,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (94,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (94,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (109,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (109,48)
+   -> llvm.sqrt.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (109,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (104,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (104,46)
+   -> llvm.sqrt.f64 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (104,27)
+   -> llvm.umax.i1 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (79,39)
+   -> llvm.umax.i1 /scratch_local/ifx1154910127PfXXQB/ifxGJPOuN.i90 (79,39)
+
+---- End Inlining Report ------

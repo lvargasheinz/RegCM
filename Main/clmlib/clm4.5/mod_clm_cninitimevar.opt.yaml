@@ -1,0 +1,61 @@
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+Function:        mod_clm_cninitimevar._
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        mod_clm_cninitimevar._
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_0
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+Function:        mod_clm_cninitimevar._
+Args:
+  - NumInstructions: '1'
+  - String:          ' instructions in function'
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: mod_clm_cninitimevar.F90, Line: 18, Column: 0 }
+Function:        mod_clm_cninitimevar_mp_cninitimevar_
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_clm_cninitimevar.F90, Line: 1168, Column: 3 }
+Function:        mod_clm_cninitimevar_mp_cninitimevar_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_1
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: mod_clm_cninitimevar.F90, Line: 18, Column: 0 }
+Function:        mod_clm_cninitimevar_mp_cninitimevar_
+Args:
+  - NumInstructions: '1'
+  - String:          ' instructions in function'
+...

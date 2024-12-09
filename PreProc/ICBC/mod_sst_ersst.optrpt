@@ -1,0 +1,51 @@
+Global optimization report for : mod_sst_ersst._
+=================================================================
+
+Global optimization report for : mod_sst_ersst_mp_sst_ersst_
+
+LOOP BEGIN at mod_sst_ersst.F90 (135, 5)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sst_ersst_mp_sst_readersst_
+
+LOOP BEGIN at mod_sst_ersst.F90 (178, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_sst_ersst.F90 (178, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_sst_ersst.F90 (208, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_sst_ersst.F90 (209, 38)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_sst_ersst._
+
+COMPILE FUNC: mod_sst_ersst_mp_sst_readersst_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0613756387P6vZiq/ifxI3xNnr.i90 (211,19)
+
+COMPILE FUNC: mod_sst_ersst_mp_sst_ersst_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0613756387P6vZiq/ifxI3xNnr.i90 (58,14)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0613756387P6vZiq/ifxI3xNnr.i90 (58,14)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0613756387P6vZiq/ifxI3xNnr.i90 (58,14)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx0613756387P6vZiq/ifxI3xNnr.i90 (128,5)
+   -> mod_sst_ersst_mp_sst_readersst_ /scratch_local/ifx0613756387P6vZiq/ifxI3xNnr.i90 (130,12)
+
+---- End Inlining Report ------

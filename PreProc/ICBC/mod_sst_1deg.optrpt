@@ -1,0 +1,175 @@
+Global optimization report for : mod_sst_1deg._
+=================================================================
+
+Global optimization report for : mod_sst_1deg_mp_sst_1deg_
+
+LOOP BEGIN at mod_sst_1deg.F90 (96, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_sst_1deg.F90 (99, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_sst_1deg.F90 (166, 21)
+
+    LOOP BEGIN at mod_sst_1deg.F90 (169, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_sst_1deg.F90 (169, 11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_sst_1deg.F90 (186, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_sst_1deg.F90 (192, 11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_sst_1deg.F90 (209, 20)
+
+    LOOP BEGIN at mod_sst_1deg.F90 (234, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_sst_1deg.F90 (240, 11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sst_1deg_mp_sst_mn_
+
+LOOP BEGIN at mod_sst_1deg.F90 (350, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_sst_1deg.F90 (351, 24)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sst_1deg_mp_ice_mn_
+
+LOOP BEGIN at mod_sst_1deg.F90 (410, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_sst_1deg.F90 (411, 24)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sst_1deg_mp_sst_wk_
+
+LOOP BEGIN at mod_sst_1deg.F90 (526, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_sst_1deg.F90 (527, 24)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_sst_1deg.F90 (537, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_sst_1deg.F90 (538, 27)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sst_1deg_mp_ice_wk_
+
+LOOP BEGIN at mod_sst_1deg.F90 (613, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+
+    LOOP BEGIN at mod_sst_1deg.F90 (613, 7)
+        remark #15319: Loop was not vectorized: novector directive used
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_sst_1deg.F90 (613, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_sst_1deg.F90 (619, 7)
+        remark #15300: LOOP WAS VECTORIZED
+        remark #15305: vectorization support: vector length 4
+    LOOP END
+
+    LOOP BEGIN at mod_sst_1deg.F90 (613, 7)
+    <Remainder loop for vectorization>
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_sst_1deg.F90 (624, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_sst_1deg.F90 (625, 27)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_sst_1deg_mp_ice_wk_
+   -> llvm.smax.i64 /scratch_local/ifx1010677715ih2bLe/ifxnV8Mbv.i90 (548,14)
+   -> llvm.smax.i32 /scratch_local/ifx1010677715ih2bLe/ifxnV8Mbv.i90 (548,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1010677715ih2bLe/ifxnV8Mbv.i90 (548,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1010677715ih2bLe/ifxnV8Mbv.i90 (548,14)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1010677715ih2bLe/ifxnV8Mbv.i90 (596,7)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1010677715ih2bLe/ifxnV8Mbv.i90 (628,26)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1010677715ih2bLe/ifxnV8Mbv.i90 (548,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1010677715ih2bLe/ifxnV8Mbv.i90 (548,14)
+   -> DELETE: llvm.masked.scatter.v4f64.v4p0 /scratch_local/ifx1010677715ih2bLe/ifxnV8Mbv.i90
+
+COMPILE FUNC: mod_sst_1deg_mp_sst_1deg_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1010677715ih2bLe/ifxnV8Mbv.i90 (73,14)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1010677715ih2bLe/ifxnV8Mbv.i90 (73,14)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1010677715ih2bLe/ifxnV8Mbv.i90 (73,14)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1010677715ih2bLe/ifxnV8Mbv.i90 (73,14)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1010677715ih2bLe/ifxnV8Mbv.i90 (73,14)
+   -> DELETE: mod_sst_grid_mp_open_sstfile_ /scratch_local/ifx1010677715ih2bLe/ifxnV8Mbv.i90 (150,12)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx1010677715ih2bLe/ifxnV8Mbv.i90 (158,5)
+   -> mod_sst_1deg_mp_ice_mn_ /scratch_local/ifx1010677715ih2bLe/ifxnV8Mbv.i90 (176,18)
+   -> mod_sst_1deg_mp_sst_mn_ /scratch_local/ifx1010677715ih2bLe/ifxnV8Mbv.i90 (173,16)
+   -> DELETE: for_concat /scratch_local/ifx1010677715ih2bLe/ifxnV8Mbv.i90 (211,11)
+   -> DELETE: mod_date_mp_iwkdiff_ /scratch_local/ifx1010677715ih2bLe/ifxnV8Mbv.i90 (212,17)
+   -> mod_sst_1deg_mp_sst_wk_ /scratch_local/ifx1010677715ih2bLe/ifxnV8Mbv.i90 (219,14)
+   -> DELETE: for_concat /scratch_local/ifx1010677715ih2bLe/ifxnV8Mbv.i90 (225,13)
+   -> mod_sst_1deg_mp_ice_wk_ /scratch_local/ifx1010677715ih2bLe/ifxnV8Mbv.i90 (229,16)
+
+COMPILE FUNC: mod_sst_1deg_mp_ice_mn_
+
+COMPILE FUNC: mod_sst_1deg_mp_sst_mn_
+
+COMPILE FUNC: mod_sst_1deg_mp_sst_wk_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1010677715ih2bLe/ifxnV8Mbv.i90 (509,7)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1010677715ih2bLe/ifxnV8Mbv.i90 (541,26)
+
+COMPILE FUNC: mod_sst_1deg._
+
+---- End Inlining Report ------

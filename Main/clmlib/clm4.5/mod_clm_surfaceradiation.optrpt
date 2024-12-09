@@ -1,0 +1,212 @@
+Global optimization report for : mod_clm_surfaceradiation._
+=================================================================
+
+Global optimization report for : mod_clm_surfaceradiation_mp_surfaceradiation_
+
+LOOP BEGIN at mod_clm_surfaceradiation.F90 (418, 11)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_surfaceradiation.F90 (428, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_surfaceradiation.F90 (433, 9)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+    LOOP END
+
+    LOOP BEGIN at mod_clm_surfaceradiation.F90 (433, 9)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_surfaceradiation.F90 (450, 11)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_surfaceradiation.F90 (454, 9)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+    LOOP END
+
+    LOOP BEGIN at mod_clm_surfaceradiation.F90 (454, 9)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #25563: Load hoisted out of the loop
+        remark #25564: Store sinked out of the loop
+        remark #25563: Load hoisted out of the loop
+        remark #25564: Store sinked out of the loop
+        remark #25583: Number of Array Refs Scalar Replaced In Loop: 4
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence
+        remark #15346: vector dependence: assumed FLOW dependence
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_surfaceradiation.F90 (560, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_surfaceradiation.F90 (473, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_surfaceradiation.F90 (496, 13)
+        <Multiversioned v2>
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+
+        LOOP BEGIN at mod_clm_surfaceradiation.F90 (496, 13)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #25563: Load hoisted out of the loop
+            remark #25563: Load hoisted out of the loop
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_surfaceradiation.F90 (568, 11)
+
+    LOOP BEGIN at mod_clm_surfaceradiation.F90 (591, 11)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (583:13) and (583:13) 
+        remark #15346: vector dependence: assumed FLOW dependence between (583:13) and (583:43) 
+        remark #15346: vector dependence: assumed FLOW dependence between (583:13) and (583:53) 
+        remark #15346: vector dependence: assumed FLOW dependence between (583:13) and (584:53) 
+        remark #15346: vector dependence: assumed ANTI dependence between (588:13) and (583:13) 
+        remark #15346: vector dependence: assumed FLOW dependence between sabg_snl_sum (588:19) and sabg_snl_sum (588:19) 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_surfaceradiation.F90 (609, 15)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_surfaceradiation.F90 (606, 15)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_surfaceradiation.F90 (613, 15)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_surfaceradiation.F90 (627, 17)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_surfaceradiation.F90 (624, 17)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_surfaceradiation.F90 (631, 17)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_surfaceradiation.F90 (575, 11)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_surfaceradiation.F90 (640, 17)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (640:17) and (640:17) 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_surfaceradiation.F90 (644, 17)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (644:17) and (644:17) 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_surfaceradiation.F90 (647, 17)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (647:17) and (647:17) 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_surfaceradiation.F90 (649, 36)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (649:36) and (649:36) 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_surfaceradiation.F90 (651, 37)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (651:37) and (651:37) 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_surfaceradiation.F90 (653, 37)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (653:37) and (653:37) 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_surfaceradiation.F90 (655, 37)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (655:37) and (655:37) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_surfaceradiation.F90 (703, 11)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (710:9) and (703:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (710:9) and (704:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (710:9) and (708:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (710:9) and (708:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (710:9) and (708:25) 
+    remark #15346: vector dependence: assumed FLOW dependence between (710:9) and (708:25) 
+    remark #15346: vector dependence: assumed FLOW dependence between (710:9) and (709:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (710:9) and (709:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (710:9) and (709:25) 
+    remark #15346: vector dependence: assumed FLOW dependence between (710:9) and (709:25) 
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.memmove.p0.p0.i64
+
+DEAD STATIC FUNC: llvm.stackrestore
+
+DEAD STATIC FUNC: llvm.stacksave
+
+COMPILE FUNC: mod_clm_surfaceradiation_mp_surfaceradiation_
+   -> DELETE: llvm.stacksave /scratch_local/ifx10989942702rrAl7/ifx2BFedg.i90 (37,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx10989942702rrAl7/ifx2BFedg.i90 (37,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx10989942702rrAl7/ifx2BFedg.i90 (37,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx10989942702rrAl7/ifx2BFedg.i90 (37,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx10989942702rrAl7/ifx2BFedg.i90 (37,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx10989942702rrAl7/ifx2BFedg.i90 (37,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx10989942702rrAl7/ifx2BFedg.i90 (37,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx10989942702rrAl7/ifx2BFedg.i90 (37,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx10989942702rrAl7/ifx2BFedg.i90 (37,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx10989942702rrAl7/ifx2BFedg.i90 (37,14)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx10989942702rrAl7/ifx2BFedg.i90 (456,44)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx10989942702rrAl7/ifx2BFedg.i90 (512,32)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx10989942702rrAl7/ifx2BFedg.i90 (513,30)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx10989942702rrAl7/ifx2BFedg.i90 (515,32)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx10989942702rrAl7/ifx2BFedg.i90 (516,30)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx10989942702rrAl7/ifx2BFedg.i90 (518,32)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx10989942702rrAl7/ifx2BFedg.i90 (519,30)
+   -> llvm.fabs.f64 /scratch_local/ifx10989942702rrAl7/ifx2BFedg.i90 (604,15)
+   -> llvm.fabs.f64 /scratch_local/ifx10989942702rrAl7/ifx2BFedg.i90 (640,13)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx10989942702rrAl7/ifx2BFedg.i90 (648,53)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx10989942702rrAl7/ifx2BFedg.i90 (650,53)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx10989942702rrAl7/ifx2BFedg.i90 (652,53)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx10989942702rrAl7/ifx2BFedg.i90 (654,53)
+   -> DELETE: llvm.memmove.p0.p0.i64 /scratch_local/ifx10989942702rrAl7/ifx2BFedg.i90 (641,69)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx10989942702rrAl7/ifx2BFedg.i90 (721,36)
+   -> llvm.round.f64 /scratch_local/ifx10989942702rrAl7/ifx2BFedg.i90 (721,30)
+   -> DELETE: llvm.stackrestore /scratch_local/ifx10989942702rrAl7/ifx2BFedg.i90 (765,3)
+   -> llvm.smax.i64 /scratch_local/ifx10989942702rrAl7/ifx2BFedg.i90 (37,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx10989942702rrAl7/ifx2BFedg.i90 (456,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx10989942702rrAl7/ifx2BFedg.i90 (456,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx10989942702rrAl7/ifx2BFedg.i90 (512,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx10989942702rrAl7/ifx2BFedg.i90 (513,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx10989942702rrAl7/ifx2BFedg.i90 (515,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx10989942702rrAl7/ifx2BFedg.i90 (516,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx10989942702rrAl7/ifx2BFedg.i90 (518,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx10989942702rrAl7/ifx2BFedg.i90 (519,30)
+
+COMPILE FUNC: mod_clm_surfaceradiation._
+
+---- End Inlining Report ------

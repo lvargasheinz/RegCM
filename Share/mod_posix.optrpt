@@ -1,0 +1,190 @@
+Global optimization report for : mod_posix._
+=================================================================
+
+Global optimization report for : mod_posix_mp_dirlist_
+
+LOOP BEGIN at mod_posix.F90 (100, 12)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+
+LOOP BEGIN at mod_posix.F90 (110, 5)
+
+    LOOP BEGIN at mod_posix.F90 (116, 27)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence
+        remark #15346: vector dependence: assumed FLOW dependence between (120:9) and (120:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between d (120:32) and d (116:16) 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_posix_mp_replacestr_
+
+LOOP BEGIN at mod_posix.F90 (147, 24)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+=================================================================
+
+Global optimization report for : mod_posix_mp_lower_
+
+LOOP BEGIN at mod_posix.F90 (174, 15)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+=================================================================
+
+Global optimization report for : mod_posix_mp_upper_
+
+LOOP BEGIN at mod_posix.F90 (199, 15)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+=================================================================
+
+Global optimization report for : mod_posix_mp_splitstr_
+
+LOOP BEGIN at mod_posix.F90 (174, 15)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+
+LOOP BEGIN at mod_posix.F90 (174, 15)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+
+LOOP BEGIN at mod_posix.F90 (256, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_posix.F90 (257, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_posix.F90 (270, 59)
+
+    LOOP BEGIN at mod_posix.F90 (274, 27)
+        remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_posix.F90 (309, 21)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed ANTI dependence between (310:28) and (310:28) 
+    remark #15346: vector dependence: assumed ANTI dependence
+    remark #15346: vector dependence: assumed OUTPUT dependence between (310:28) and (310:28) 
+    remark #15346: vector dependence: assumed OUTPUT dependence
+    remark #15346: vector dependence: assumed FLOW dependence between (310:28) and (310:28) 
+    remark #15346: vector dependence: assumed ANTI dependence between (310:28) and (310:28) 
+    remark #15346: vector dependence: assumed ANTI dependence
+    remark #15346: vector dependence: assumed ANTI dependence between (310:23) and (310:23) 
+    remark #15346: vector dependence: assumed ANTI dependence
+    remark #15346: vector dependence: assumed OUTPUT dependence between (310:23) and (310:23) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_posix_mp_basename_
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_posix_mp_dirlist_
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (92,5)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (99,7)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (111,7)
+   -> DELETE: for_cpstr /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (116,27)
+   -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (117,11)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (120,9)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (117,11)
+
+COMPILE FUNC: mod_posix_mp_lower_
+   -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (163,5)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (175,11)
+   -> llvm.smax.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (163,5)
+   -> llvm.smax.i32 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (166,16)
+   -> llvm.smin.i32 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (170,14)
+
+COMPILE FUNC: mod_posix_mp_splitstr_
+   -> DELETE: for_dealloc_allocatable_handle /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (233,9)
+   -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (233,9)
+   -> DELETE: for_dealloc_allocatable_handle /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (235,9)
+   -> DELETE: for_dealloc_allocatable_handle /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (238,7)
+   -> DELETE: for_dealloc_allocatable_handle /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (243,7)
+   -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (243,7)
+   -> DELETE: for_dealloc_allocatable_handle /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (245,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (245,7)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (243,7)
+   -> INLINE: mod_posix_mp_lower_ /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (243,14)
+      -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (163,5)
+      -> DELETE: llvm.smax.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (163,5)
+      -> DELETE: llvm.smax.i32 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (166,16)
+      -> DELETE: llvm.smin.i32 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (170,14)
+   -> DELETE: for_dealloc_allocatable_handle /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (248,7)
+   -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (248,7)
+   -> DELETE: for_dealloc_allocatable_handle /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (250,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (250,7)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (248,7)
+   -> INLINE: mod_posix_mp_lower_ /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (248,14)
+      -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (163,5)
+      -> DELETE: llvm.smax.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (163,5)
+      -> DELETE: llvm.smax.i32 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (166,16)
+      -> DELETE: llvm.smin.i32 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (170,14)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (292,19)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (299,19)
+   -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (313,13)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (310,23)
+   -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (317,9)
+   -> llvm.smax.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (243,14)
+   -> llvm.smax.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (248,14)
+   -> llvm.smax.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (254,5)
+   -> llvm.smax.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (270,22)
+   -> llvm.smax.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (273,30)
+   -> llvm.smin.i32 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (275,28)
+   -> llvm.smax.i32 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (284,18)
+   -> llvm.smax.i32 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (298,5)
+   -> llvm.smax.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (317,21)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (243,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (243,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (243,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (243,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (248,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (248,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (248,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (248,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (219,40)
+   -> llvm.memset.p0.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (218,39)
+   -> llvm.memset.p0.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (217,39)
+   -> llvm.memset.p0.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (216,45)
+   -> llvm.memset.p0.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (216,45)
+   -> llvm.memset.p0.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (215,45)
+   -> llvm.memset.p0.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (215,45)
+
+COMPILE FUNC: mod_posix_mp_upper_
+   -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (188,5)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (200,11)
+   -> llvm.smax.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (188,5)
+   -> llvm.smax.i32 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (191,16)
+   -> llvm.smin.i32 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (195,14)
+
+COMPILE FUNC: mod_posix_mp_replacestr_
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (134,7)
+   -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (137,7)
+   -> llvm.smax.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (142,12)
+   -> llvm.smax.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (144,22)
+   -> mod_posix_mp_replacestr_ /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (144,11)
+   -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (148,9)
+   -> llvm.memset.p0.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (144,11)
+
+COMPILE FUNC: mod_posix_mp_basename_
+   -> mod_posix_mp_splitstr_ /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (336,10)
+   -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (338,7)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (340,7)
+   -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (345,9)
+   -> mod_posix_mp_splitstr_ /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (343,12)
+   -> llvm.memset.p0.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (328,34)
+   -> llvm.memset.p0.i64 /scratch_local/ifx13348401273b9cBr/ifxfJXdRq.i90 (328,34)
+
+COMPILE FUNC: mod_posix._
+
+---- End Inlining Report ------

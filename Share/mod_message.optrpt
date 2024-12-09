@@ -1,0 +1,184 @@
+Global optimization report for : mod_message._
+=================================================================
+
+Global optimization report for : mod_message_mp_setup_mesg_
+=================================================================
+
+Global optimization report for : mod_message_mp_say_
+=================================================================
+
+Global optimization report for : mod_message_mp_note_
+=================================================================
+
+Global optimization report for : mod_message_mp_cry_
+=================================================================
+
+Global optimization report for : mod_message_mp_fatal_
+=================================================================
+
+Global optimization report for : mod_message_mp_checkalloc_
+=================================================================
+
+Global optimization report for : mod_message_mp_die0_
+=================================================================
+
+Global optimization report for : mod_message_mp_die1_
+=================================================================
+
+Global optimization report for : mod_message_mp_die2_
+=================================================================
+
+Global optimization report for : mod_message_mp_die4_
+=================================================================
+
+Global optimization report for : mod_message_mp_viz_init_
+=================================================================
+
+Global optimization report for : mod_message_mp_viz_done_
+=================================================================
+
+Global optimization report for : mod_message_mp_viz_clear_
+=================================================================
+
+Global optimization report for : mod_message_mp_add_code_
+=================================================================
+
+Global optimization report for : mod_message_mp_viz_pos_
+=================================================================
+
+Global optimization report for : mod_message_mp_viz_plot_
+
+LOOP BEGIN at mod_message.F90 (242, 9)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 242 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_message.F90 (242, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_message.F90 (246, 11)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_message.F90 (247, 13)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between tmp (248:25) and tmp (248:25) 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_message.F90 (255, 7)
+<Predicate Optimized v2>
+    remark #25530: Stmt at line 255 sinked after loop using last value computation
+LOOP END
+
+LOOP BEGIN at mod_message.F90 (262, 7)
+
+    LOOP BEGIN at mod_message.F90 (266, 9)
+
+        LOOP BEGIN at mod_message.F90 (267, 11)
+            remark #25423: Invariant If condition at line 267 hoisted out of this loop
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_message.F90 (267, 11)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between tmp (268:23) and tmp (268:23) 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.experimental.noalias.scope.decl
+
+DEAD STATIC FUNC: llvm.memcpy.p0.p0.i64
+
+COMPILE FUNC: mod_message_mp_add_code_
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (191,5)
+
+COMPILE FUNC: mod_message_mp_viz_pos_
+   -> INLINE: mod_message_mp_add_code_ /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (205,10)
+   -> INLINE: mod_message_mp_add_code_ /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (206,16)
+   -> INLINE: mod_message_mp_add_code_ /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (207,10)
+   -> INLINE: mod_message_mp_add_code_ /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (208,10)
+   -> INLINE: mod_message_mp_add_code_ /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (213,16)
+   -> INLINE: mod_message_mp_add_code_ /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (214,10)
+   -> INLINE: mod_message_mp_add_code_ /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (215,10)
+   -> llvm.smax.i32 /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (203,11)
+   -> llvm.smax.i32 /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (211,11)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (216,5)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (205,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (205,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (205,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (206,16)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (206,16)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (206,16)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (207,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (207,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (207,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (208,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (208,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (208,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (213,16)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (213,16)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (213,16)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (214,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (214,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (214,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (215,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (215,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (215,10)
+   -> llvm.smin.i32 /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (204,11)
+   -> llvm.smin.i32 /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (212,11)
+
+COMPILE FUNC: mod_message._
+
+COMPILE FUNC: mod_message_mp_setup_mesg_
+
+COMPILE FUNC: mod_message_mp_say_
+
+COMPILE FUNC: mod_message_mp_note_
+
+COMPILE FUNC: mod_message_mp_cry_
+
+COMPILE FUNC: mod_message_mp_die2_
+
+COMPILE FUNC: mod_message_mp_fatal_
+   -> mod_message_mp_die2_ /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (102,10)
+
+COMPILE FUNC: mod_message_mp_checkalloc_
+
+COMPILE FUNC: mod_message_mp_die0_
+
+COMPILE FUNC: mod_message_mp_die1_
+
+COMPILE FUNC: mod_message_mp_die4_
+
+COMPILE FUNC: mod_message_mp_viz_init_
+
+COMPILE FUNC: mod_message_mp_viz_done_
+   -> mod_message_mp_viz_pos_ /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (172,10)
+
+COMPILE FUNC: mod_message_mp_viz_clear_
+
+COMPILE FUNC: mod_message_mp_viz_plot_
+   -> llvm.smax.i64 /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (225,5)
+   -> llvm.smax.i64 /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (226,5)
+   -> llvm.smin.i32 /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (228,13)
+   -> llvm.smin.i32 /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (229,13)
+   -> DELETE: llvm.fabs.f64 /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (252,17)
+   -> llvm.fabs.f64 /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (238,14)
+   -> mod_message_mp_viz_pos_ /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (261,12)
+   -> llvm.fabs.f64 /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (273,24)
+   -> llvm.smin.i32 /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (274,19)
+   -> llvm.smax.i32 /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (274,13)
+   -> llvm.fabs.f64 /scratch_local/ifx1758153081Hmyy2G/ifxXyBLpS.i90 (252,17)
+
+---- End Inlining Report ------

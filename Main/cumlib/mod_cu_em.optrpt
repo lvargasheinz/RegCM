@@ -1,0 +1,1073 @@
+Global optimization report for : mod_cu_em._
+=================================================================
+
+Global optimization report for : mod_cu_em_mp_allocate_mod_cu_em_
+
+LOOP BEGIN at mod_cu_em.F90 (116, 14)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_cu_em.F90 (116, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_cu_em_mp_cupemandrv_
+
+LOOP BEGIN at mod_cu_em.F90 (138, 14)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+
+LOOP BEGIN at mod_cu_em.F90 (149, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cu_em.F90 (150, 28)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (151:21) and (151:21) 
+        remark #15346: vector dependence: assumed FLOW dependence between imap (152:11) and cuscheme (150:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between jmap (153:11) and cuscheme (150:9) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between jmap (153:11) and imap (152:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between ldmsk (154:11) and cuscheme (150:9) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between ldmsk (154:11) and imap (152:11) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between ldmsk (154:11) and jmap (153:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between ldmsk (154:11) and (154:28) 
+        remark #15346: vector dependence: assumed ANTI dependence between (154:28) and imap (152:11) 
+        remark #15346: vector dependence: assumed ANTI dependence between (154:28) and jmap (153:11) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cu_em.F90 (167, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at /leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc (42, 13)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between tcup (171:9) and imap (168:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between tcup (171:9) and jmap (169:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between tcup (171:9) and (171:25) 
+        remark #15346: vector dependence: assumed ANTI dependence between (173:25) and tcup (171:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between qcup (173:9) and imap (168:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between qcup (173:9) and jmap (169:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between qcup (173:9) and (171:25) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between qcup (173:9) and tcup (171:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between qcup (173:9) and (173:25) 
+        remark #15346: vector dependence: assumed ANTI dependence between (38:5) and tcup (171:9) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cu_em.F90 (189, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cu_em.F90 (194, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between phcup (193:9) and imap (190:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between phcup (193:9) and jmap (191:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between phcup (193:9) and (193:26) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cu_em.F90 (205, 5)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at mod_cu_em.F90 (205, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25563: Load hoisted out of the loop
+    remark #25563: Load hoisted out of the loop
+    remark #25563: Load hoisted out of the loop
+    remark #25563: Load hoisted out of the loop
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_cu_em.F90 (212, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between cbmf (211:7) and imap (209:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between cbmf (211:7) and jmap (210:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between cbmf (211:7) and cbmf2d (211:7) 
+LOOP END
+
+LOOP BEGIN at mod_cu_em.F90 (221, 5)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at mod_cu_em.F90 (221, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_cu_em.F90 (227, 9)
+
+    LOOP BEGIN at mod_cu_em.F90 (229, 11)
+
+        LOOP BEGIN at mod_cu_em.F90 (229, 11)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at mod_cu_em.F90 (229, 11)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at mod_cu_em.F90 (230, 11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cu_em.F90 (243, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between cbmf2d (242:7) and imap (240:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between cbmf2d (242:7) and jmap (241:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between cbmf2d (242:7) and cbmf (242:7) 
+LOOP END
+
+LOOP BEGIN at mod_cu_em.F90 (253, 26)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cu_em.F90 (267, 9)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between cu_tten (259:11) and ft (259:11) 
+        remark #15346: vector dependence: assumed ANTI dependence between qcup (261:11) and cu_tten (259:11) 
+        remark #15346: vector dependence: assumed ANTI dependence between fq (261:11) and cu_tten (259:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between cu_qten (261:11) and ft (259:11) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between cu_qten (261:11) and cu_tten (259:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between cu_qten (261:11) and qcup (261:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between cu_qten (261:11) and fq (261:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between cu_uten (265:11) and ft (259:11) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between cu_uten (265:11) and cu_tten (259:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between cu_uten (265:11) and qcup (261:11) 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (276, 9)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cu_em.F90 (289, 17)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_cu_em.F90 (291, 28)
+
+    LOOP BEGIN at mod_cu_em.F90 (296, 13)
+
+        LOOP BEGIN at mod_cu_em.F90 (296, 13)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at mod_cu_em.F90 (296, 13)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (306, 11)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between cu_convpr (305:13) and ppcp (305:13) 
+        remark #15346: vector dependence: assumed FLOW dependence between cu_convpr (305:13) and ppcp (305:13) 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (307, 13)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (307, 13)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_cu_em_mp_cupeman_
+
+LOOP BEGIN at /leonardo/home/userexternal/lvargasd/RegCM/Share/wlh.inc (11, 13)
+
+    LOOP BEGIN at /leonardo/home/userexternal/lvargasd/RegCM/Share/wlh.inc (11, 13)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+        remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+    LOOP END
+
+    LOOP BEGIN at /leonardo/home/userexternal/lvargasd/RegCM/Share/wlh.inc (11, 13)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between gz (515:9) and gz (515:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between ahmin (525:47) and ahmin (525:39) 
+        remark #15346: vector dependence: assumed FLOW dependence between ahmin (525:47) and ahmin (525:47) 
+        remark #15346: vector dependence: assumed FLOW dependence between ihmin (525:47) and ihmin (525:47) 
+        remark #25583: Number of Array Refs Scalar Replaced In Loop: 5
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (538, 20)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (538:20) and (538:20) 
+        remark #15346: vector dependence: assumed FLOW dependence between ahmax (538:20) and ahmax (538:20) 
+        remark #15346: vector dependence: assumed FLOW dependence between ahmax (538:20) and ahmax (538:20) 
+        remark #15346: vector dependence: assumed FLOW dependence between ahmax (538:20) and ahmax (538:20) 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (570, 21)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (570:21) and (570:21) 
+        remark #15346: vector dependence: assumed FLOW dependence between (570:21) and (570:21) 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (587, 7)
+        remark #15300: LOOP WAS VECTORIZED
+        remark #15305: vectorization support: vector length 2
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (587, 7)
+    <Remainder loop for vectorization>
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (599, 28)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (612, 7)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (612, 7)
+    <Multiversioned v1>
+        remark #25408: memset generated
+        remark #25562: The loop has been multiversioned for the small trip count
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (625, 7)
+        remark #25563: Load hoisted out of the loop
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (632, 7)
+        remark #15300: LOOP WAS VECTORIZED
+        remark #15305: vectorization support: vector length 2
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (632, 7)
+    <Remainder loop for vectorization>
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (659, 7)
+    <Multiversioned v2>
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_cu_em.F90 (653, 16)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_cu_em.F90 (653, 16)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (659, 7)
+    <Multiversioned v1>
+        remark #25399: memcopy generated
+        remark #25408: memset generated
+        remark #25408: memset generated
+        remark #25408: memset generated
+        remark #25408: memset generated
+        remark #25408: memset generated
+        remark #25562: The loop has been multiversioned for the small trip count
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_cu_em.F90 (653, 16)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_cu_em.F90 (653, 16)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (666, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (672, 14)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_cu_em.F90 (675, 11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (687, 7)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (709, 7)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (726, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between dtpbl (725:23) and dtpbl (725:23) 
+        remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (753, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between dbosum (751:25) and dbosum (751:25) 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (756, 7)
+        remark #15300: LOOP WAS VECTORIZED
+        remark #15305: vectorization support: vector length 2
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (756, 7)
+    <Remainder loop for vectorization>
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (764, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_cu_em.F90 (777, 31)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_cu_em.F90 (792, 15)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at mod_cu_em.F90 (814, 13)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (826, 22)
+
+        LOOP BEGIN at mod_cu_em.F90 (838, 36)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between smin (840:24) and smin (843:34) 
+            remark #15346: vector dependence: assumed FLOW dependence between asij (858:27) and asij (858:27) 
+        LOOP END
+
+        LOOP BEGIN at mod_cu_em.F90 (866, 11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at mod_cu_em.F90 (870, 11)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between bsum (869:25) and bsum (869:25) 
+        LOOP END
+
+        LOOP BEGIN at mod_cu_em.F90 (880, 15)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (905, 18)
+
+        LOOP BEGIN at mod_cu_em.F90 (910, 13)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between wdtrain (909:33) and wdtrain (909:33) 
+        LOOP END
+
+        LOOP BEGIN at mod_cu_em.F90 (991, 17)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at mod_cu_em.F90 (981, 17)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (1007, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (1007, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (1008, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (1008, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (1009, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (1009, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (1019, 9)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between am (1018:19) and am (1018:19) 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (1021, 49)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (1034, 9)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (1040, 14)
+    <Predicate Optimized v1>
+        remark #25423: Invariant If condition at line 1040 hoisted out of this loop
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_cu_em.F90 (1044, 11)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (1058, 16)
+
+        LOOP BEGIN at mod_cu_em.F90 (1061, 11)
+            remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+        LOOP END
+
+        LOOP BEGIN at mod_cu_em.F90 (1066, 11)
+
+            LOOP BEGIN at mod_cu_em.F90 (1066, 11)
+                remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at mod_cu_em.F90 (1068, 53)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at mod_cu_em.F90 (1072, 11)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_cu_em.F90 (1072, 11)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between ad (1071:21) and ad (1071:21) 
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at mod_cu_em.F90 (1091, 11)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+        LOOP END
+
+        LOOP BEGIN at mod_cu_em.F90 (1093, 9)
+        <Predicate Optimized v1>
+            remark #25423: Invariant If condition at line 1099 hoisted out of this loop
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_cu_em.F90 (1103, 13)
+            <Multiversioned v1>
+                remark #25228: Loop multiversioned for Data Dependence
+                remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at mod_cu_em.F90 (1110, 16)
+        <Predicate Optimized v1>
+            remark #25423: Invariant If condition at line 1110 hoisted out of this loop
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_cu_em.F90 (1114, 13)
+            <Multiversioned v1>
+                remark #25228: Loop multiversioned for Data Dependence
+                remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at mod_cu_em.F90 (1127, 11)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (1158, 9)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed ANTI dependence between (1156:51) and (1155:11) 
+        remark #15346: vector dependence: assumed ANTI dependence between (1156:51) and (1155:11) 
+        remark #15346: vector dependence: assumed ANTI dependence between (1156:60) and (1155:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1156:11) and (1156:51) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1156:11) and (1156:51) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1156:11) and (1156:60) 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (1171, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between ents (1168:21) and ents (1168:21) 
+        remark #15346: vector dependence: assumed FLOW dependence between uav (1169:19) and uav (1169:19) 
+        remark #15346: vector dependence: assumed FLOW dependence between vav (1170:19) and vav (1170:19) 
+        remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (1179, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (1183, 11)
+        remark #25423: Invariant If condition at line 1183 hoisted out of this loop
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_cu_em.F90 (1183, 11)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between traav (1184:27) and traav (1184:27) 
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+        LOOP END
+
+        LOOP BEGIN at mod_cu_em.F90 (1183, 11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (1203, 9)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+        remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+    LOOP END
+
+    LOOP BEGIN at mod_cu_em.F90 (1208, 9)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+        remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_cu_emcupeman_mp_wlh_
+=================================================================
+
+Global optimization report for : mod_cu_emcupeman_mp_tlift_
+
+LOOP BEGIN at mod_cu_em.F90 (1245, 11)
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_cu_em.F90 (1245, 11)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_cu_em.F90 (1249, 11)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+
+LOOP BEGIN at /leonardo/home/userexternal/lvargasd/RegCM/Share/wlh.inc (11, 13)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cu_em.F90 (1264, 11)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between tg t t t (1267:21) and tg t t t (1266:22) 
+        remark #15346: vector dependence: assumed FLOW dependence between tg t t t (1267:21) and tg t t t (1267:21) 
+        remark #15346: vector dependence: assumed FLOW dependence between qg (15:13) and qg (1265:37) 
+        remark #15346: vector dependence: assumed FLOW dependence between qg (15:13) and qg (1266:58) 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_cu_em_mp_pfesat_
+=================================================================
+
+Global optimization report for : mod_cu_em_mp_pfesat_water_
+=================================================================
+
+Global optimization report for : mod_cu_em_mp_pfesat_ice_
+=================================================================
+
+Global optimization report for : mod_cu_em_mp_pfqsat_
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_cu_em_mp_cupeman_
+   -> llvm.smax.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> llvm.smax.i32 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (505,21)
+   -> INLINE: mod_cu_emcupeman_mp_wlh_ /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (507,15)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (509,23)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (513,23)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (514,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (515,28)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (515,42)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (515,52)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (516,23)
+   -> INLINE: mod_cu_emcupeman_mp_wlh_ /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (518,17)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (519,23)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (519,18)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (519,50)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (521,25)
+   -> llvm.smin.i32 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (530,15)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (558,22)
+   -> llvm.pow.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (559,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (559,23)
+   -> llvm.smin.i32 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (570,36)
+   -> mod_cu_emcupeman_mp_tlift_ /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (584,12)
+   -> llvm.fabs.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (592,12)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (592,54)
+   -> mod_cu_emcupeman_mp_tlift_ /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (603,12)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (618,32)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (621,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (633,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (688,15)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (688,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (693,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (693,37)
+   -> llvm.smax.i32 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (697,13)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (708,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (708,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (719,47)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (720,47)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (721,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (721,48)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (722,47)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (725,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (725,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (727,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (735,18)
+   -> llvm.fabs.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (740,12)
+   -> llvm.fabs.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (740,41)
+   -> DELETE: llvm.smin.i32 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (749,13)
+   -> DELETE: llvm.fabs.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (750,15)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (750,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (765,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (766,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (766,51)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (767,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (767,45)
+   -> llvm.fabs.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (769,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (772,38)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (774,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (778,34)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (779,36)
+   -> llvm.fabs.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (780,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (782,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (783,30)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (791,54)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (796,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (786,44)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (787,44)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (788,44)
+   -> llvm.fabs.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (856,22)
+   -> llvm.fabs.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (857,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (858,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (858,42)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (828,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (829,41)
+   -> llvm.fabs.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (830,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (907,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (927,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (928,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (929,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (934,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (935,17)
+   -> llvm.sqrt.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (936,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (936,27)
+   -> llvm.smax.i32 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (959,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (960,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (960,48)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (945,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (945,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (952,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (953,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (953,42)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (958,28)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (984,65)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (984,47)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (985,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (984,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (985,48)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (974,45)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (975,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (975,60)
+   -> llvm.fabs.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1007,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1007,55)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1008,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1014,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1021,13)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1022,58)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1022,43)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1024,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1025,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1026,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1027,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1028,47)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1028,65)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1028,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1029,47)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1029,65)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1029,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1033,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1033,54)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1033,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1037,52)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1038,52)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1039,52)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1043,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1054,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1068,15)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1075,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1074,48)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1076,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1075,42)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1074,42)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1078,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1078,45)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1078,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1080,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1082,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1082,43)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1082,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1084,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1084,43)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1084,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1086,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1086,43)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1086,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1090,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1090,52)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1090,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1094,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1096,54)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1097,54)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1098,54)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1102,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1107,54)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1108,54)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1109,54)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1113,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1118,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1118,52)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1118,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1120,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1120,52)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1120,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1122,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1122,52)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1122,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1126,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1126,57)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1126,15)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1135,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1137,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1137,45)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1137,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1142,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1142,45)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1142,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1147,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1147,45)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1147,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1151,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1151,45)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1151,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1157,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1157,52)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1168,24)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1168,55)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1172,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1177,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1177,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1178,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1178,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1184,42)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1186,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1201,63)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1201,46)
+   -> DELETE: llvm.log.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1201,35)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1206,63)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1206,46)
+   -> DELETE: llvm.log.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1206,35)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (507,15)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (518,17)
+   -> llvm.smax.i32 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (646,9)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (646,9)
+   -> llvm.smax.i32 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (672,14)
+   -> llvm.smax.i32 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (726,7)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (905,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (513,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (514,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (515,42)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (515,52)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (516,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (519,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (519,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (513,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (514,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (515,42)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (515,52)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (516,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (519,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (519,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (618,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (621,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (725,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (725,41)
+   -> llvm.smin.i32 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (749,13)
+   -> llvm.fabs.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (750,15)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (750,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1168,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1168,55)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1184,42)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1186,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1201,63)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1201,46)
+   -> llvm.log.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1201,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1206,63)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1206,46)
+   -> llvm.log.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1206,35)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (449,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (610,9)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (638,9)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (639,9)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (640,9)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (641,9)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (643,9)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (644,9)
+
+COMPILE FUNC: mod_cu_emcupeman_mp_wlh_
+
+COMPILE FUNC: mod_cu_emcupeman_mp_tlift_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1235,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1235,16)
+   -> INLINE: mod_cu_emcupeman_mp_wlh_ /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1236,15)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1237,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1247,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1248,30)
+   -> INLINE: mod_cu_emcupeman_mp_wlh_ /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1263,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1265,42)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1265,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1266,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1267,26)
+   -> INLINE: mod_cu_em_mp_pfqsat_ /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1278,18)
+      -> INLINE: mod_cu_em_mp_pfesat_ /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (12,12)
+         -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (44,34)
+         -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (44,25)
+         -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (44,16)
+         -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (43,50)
+         -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (43,41)
+         -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (43,32)
+         -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (43,23)
+         -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (47,34)
+         -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (47,25)
+         -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (47,16)
+         -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (46,50)
+         -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (46,41)
+         -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (46,32)
+         -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (46,23)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (14,23)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (14,17)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (15,17)
+      -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (12,12)
+      -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (12,12)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1280,21)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1283,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1284,28)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1236,15)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1263,17)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1278,18)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1278,18)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1278,18)
+   -> llvm.smax.i32 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1249,11)
+   -> llvm.smax.i32 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (11,13)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (1244,13)
+
+COMPILE FUNC: mod_cu_em_mp_cupemandrv_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (141,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (142,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (143,47)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (144,49)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (173,43)
+   -> INLINE: mod_cu_em_mp_pfqsat_ /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (174,22)
+      -> INLINE: mod_cu_em_mp_pfesat_ /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (12,12)
+         -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (44,34)
+         -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (44,25)
+         -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (44,16)
+         -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (43,50)
+         -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (43,41)
+         -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (43,32)
+         -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (43,23)
+         -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (47,34)
+         -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (47,25)
+         -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (47,16)
+         -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (46,50)
+         -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (46,41)
+         -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (46,32)
+         -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (46,23)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (14,23)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (14,17)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (15,17)
+      -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (12,12)
+      -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (12,12)
+   -> mod_cu_em_mp_cupeman_ /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (235,10)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (261,42)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (307,53)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (174,22)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (174,22)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (174,22)
+
+COMPILE FUNC: mod_cu_em_mp_pfqsat_
+   -> INLINE: mod_cu_em_mp_pfesat_ /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (12,12)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (44,34)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (44,25)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (44,16)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (43,50)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (43,41)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (43,32)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (43,23)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (47,34)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (47,25)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (47,16)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (46,50)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (46,41)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (46,32)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (46,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (14,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (14,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (15,17)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (12,12)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (12,12)
+
+COMPILE FUNC: mod_cu_em._
+
+COMPILE FUNC: mod_cu_em_mp_allocate_mod_cu_em_
+   -> llvm.smax.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (114,7)
+   -> llvm.smax.i32 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (116,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (74,50)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (74,50)
+
+COMPILE FUNC: mod_cu_em_mp_pfesat_
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (44,34)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (44,25)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (44,16)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (43,50)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (43,41)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (43,32)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (43,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (47,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (47,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (47,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (46,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (46,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (46,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (46,23)
+
+COMPILE FUNC: mod_cu_em_mp_pfesat_water_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (74,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (74,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (74,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (73,48)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (73,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (73,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (73,21)
+
+COMPILE FUNC: mod_cu_em_mp_pfesat_ice_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (100,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (100,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (100,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (99,48)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (99,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (99,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1018119245wJlws9/ifxeOcAGo.i90 (99,21)
+
+---- End Inlining Report ------

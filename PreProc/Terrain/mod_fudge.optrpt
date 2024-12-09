@@ -1,0 +1,231 @@
+Global optimization report for : mod_fudge._
+=================================================================
+
+Global optimization report for : mod_fudge_mp_lndfudge_
+
+LOOP BEGIN at mod_fudge.F90 (58, 9)
+
+    LOOP BEGIN at mod_fudge.F90 (58, 9)
+        remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_fudge.F90 (63, 24)
+
+    LOOP BEGIN at mod_fudge.F90 (63, 24)
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_fudge.F90 (120, 40)
+
+    LOOP BEGIN at mod_fudge.F90 (120, 40)
+        remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_fudge.F90 (173, 9)
+
+    LOOP BEGIN at mod_fudge.F90 (173, 9)
+        remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_fudge_mp_texfudge_
+
+LOOP BEGIN at mod_fudge.F90 (208, 9)
+
+    LOOP BEGIN at mod_fudge.F90 (208, 9)
+        remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_fudge.F90 (214, 23)
+
+    LOOP BEGIN at mod_fudge.F90 (214, 23)
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_fudge.F90 (271, 9)
+
+    LOOP BEGIN at mod_fudge.F90 (272, 34)
+        remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_fudge.F90 (315, 9)
+
+    LOOP BEGIN at mod_fudge.F90 (315, 9)
+        remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_fudge_mp_lakfudge_
+
+LOOP BEGIN at mod_fudge.F90 (348, 9)
+
+    LOOP BEGIN at mod_fudge.F90 (348, 9)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_fudge.F90 (352, 9)
+
+    LOOP BEGIN at mod_fudge.F90 (353, 31)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_fudge.F90 (364, 26)
+    remark #25567: 2 loops have been collapsed
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_fudge.F90 (377, 9)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 377 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_fudge.F90 (377, 9)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.memcpy.p0.p0.i64
+
+DEAD STATIC FUNC: llvm.memmove.p0.p0.i64
+
+DEAD STATIC FUNC: llvm.stackrestore
+
+DEAD STATIC FUNC: llvm.stacksave
+
+COMPILE FUNC: mod_fudge_mp_lndfudge_
+   -> DELETE: llvm.stacksave /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (35,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (35,14)
+   -> DELETE: llvm.memmove.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (50,61)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (110,13)
+   -> llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (109,21)
+   -> llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (120,16)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (120,45)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (163,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (165,47)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (161,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (162,21)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (159,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (160,21)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (157,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (158,21)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (155,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (156,21)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (153,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (154,21)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (151,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (152,21)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (149,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (150,21)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (147,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (148,21)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (145,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (146,21)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (143,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (144,21)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (141,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (142,21)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (139,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (140,21)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (137,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (138,21)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (135,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (136,21)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (133,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (134,21)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (131,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (132,21)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (129,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (130,21)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (127,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (128,21)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (125,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (126,21)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (123,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (124,21)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (121,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (122,21)
+   -> DELETE: llvm.stackrestore /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (182,3)
+   -> llvm.smax.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (35,14)
+   -> llvm.smax.i32 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (35,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (35,14)
+
+COMPILE FUNC: mod_fudge_mp_texfudge_
+   -> DELETE: llvm.stacksave /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (184,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (184,14)
+   -> DELETE: llvm.memmove.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (200,61)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (251,13)
+   -> llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (250,21)
+   -> llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (256,16)
+   -> llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (256,30)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (257,18)
+   -> llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (272,16)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (305,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (307,47)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (303,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (304,21)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (301,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (302,21)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (299,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (300,21)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (297,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (298,21)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (295,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (296,21)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (293,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (294,21)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (291,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (292,21)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (289,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (290,21)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (287,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (288,21)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (285,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (286,21)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (283,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (284,21)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (281,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (282,21)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (279,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (280,21)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (277,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (278,21)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (275,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (276,21)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (273,13)
+   -> DELETE: llvm.round.f64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (274,21)
+   -> DELETE: llvm.stackrestore /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (324,3)
+   -> llvm.smax.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (184,14)
+   -> llvm.smax.i32 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (184,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (184,14)
+
+COMPILE FUNC: mod_fudge_mp_lakfudge_
+   -> DELETE: llvm.stacksave /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (326,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (326,14)
+   -> DELETE: llvm.memmove.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (340,58)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (366,15)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (368,15)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (371,13)
+   -> DELETE: llvm.stackrestore /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (386,3)
+   -> llvm.smax.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (326,14)
+   -> llvm.smax.i32 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (326,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx124823969800D7rw/ifxs0rJxM.i90 (326,14)
+
+COMPILE FUNC: mod_fudge._
+
+---- End Inlining Report ------

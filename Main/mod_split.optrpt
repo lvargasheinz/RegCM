@@ -1,0 +1,1298 @@
+Global optimization report for : mod_split._
+=================================================================
+
+Global optimization report for : mod_split_mp_allocate_mod_split_
+=================================================================
+
+Global optimization report for : mod_split_mp_spinit_
+
+LOOP BEGIN at mod_split.F90 (96, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_split.F90 (116, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_split.F90 (119, 9)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (117:23) and (117:23) 
+        remark #15346: vector dependence: assumed FLOW dependence between (118:23) and (118:23) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_split.F90 (126, 9)
+
+    LOOP BEGIN at mod_split.F90 (127, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_split.F90 (129, 11)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between (128:29) and (128:29) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_split.F90 (160, 7)
+<Predicate Optimized v2>
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_split.F90 (157, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_split.F90 (160, 7)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at lines 160, 144, 144, and 144 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_split.F90 (160, 7)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+    LOOP END
+
+    LOOP BEGIN at mod_split.F90 (160, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #25564: Store sinked out of the loop
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (145:23) and (145:23) 
+    LOOP END
+
+    LOOP BEGIN at mod_split.F90 (160, 7)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+    LOOP END
+
+    LOOP BEGIN at mod_split.F90 (160, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_split.F90 (160, 7)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_split.F90 (160, 7)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_split.F90 (160, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_split.F90 (160, 7)
+            remark #25563: Load hoisted out of the loop
+            remark #25563: Load hoisted out of the loop
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_split.F90 (157, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_split.F90 (160, 7)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_split.F90 (161, 9)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_split.F90 (160, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_split.F90 (161, 9)
+            remark #25563: Load hoisted out of the loop
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_split.F90 (172, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_split.F90 (175, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_split.F90 (229, 7)
+
+    LOOP BEGIN at mod_split.F90 (245, 7)
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_
+
+LOOP BEGIN at mod_split.F90 (302, 5)
+LOOP END
+
+LOOP BEGIN at mod_split.F90 (327, 5)
+LOOP END
+
+LOOP BEGIN at mod_split.F90 (350, 7)
+
+    LOOP BEGIN at mod_split.F90 (366, 7)
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_split.F90 (390, 7)
+
+    LOOP BEGIN at mod_split.F90 (406, 7)
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_split.F90 (432, 5)
+LOOP END
+
+LOOP BEGIN at mod_split.F90 (434, 7)
+
+    LOOP BEGIN at mod_split.F90 (440, 7)
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_split.F90 (446, 7)
+
+    LOOP BEGIN at mod_split.F90 (467, 7)
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_spstep_
+
+LOOP BEGIN at mod_split.F90 (509, 7)
+
+    LOOP BEGIN at mod_split.F90 (509, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_split.F90 (509, 7)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_split.F90 (509, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_split.F90 (509, 7)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_split.F90 (562, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_split.F90 (567, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_split.F90 (572, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_split.F90 (577, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_split.F90 (591, 9)
+
+        LOOP BEGIN at mod_split.F90 (591, 9)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_split.F90 (591, 9)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at mod_split.F90 (591, 9)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_split.F90 (591, 9)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at mod_split.F90 (644, 11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at mod_split.F90 (649, 11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at mod_split.F90 (654, 11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at mod_split.F90 (659, 11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_spinit_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split2437.split
+
+LOOP BEGIN at mod_split.F90 (104, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (104:5) and (105:33) 
+    remark #15346: vector dependence: assumed FLOW dependence between (104:5) and (105:7) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_spinit_.DIR.OMP.TEAMS.2.split2446
+=================================================================
+
+Global optimization report for : mod_split_mp_spinit_.DIR.OMP.DISTRIBUTE.PARLOOP.20.split2450.split
+
+LOOP BEGIN at mod_split.F90 (197, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (197:5) and (198:25) 
+    remark #15346: vector dependence: assumed FLOW dependence between (197:5) and (198:40) 
+    remark #15346: vector dependence: assumed FLOW dependence between (197:5) and (198:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (197:5) and (199:25) 
+    remark #15346: vector dependence: assumed FLOW dependence between (197:5) and (199:40) 
+    remark #15346: vector dependence: assumed FLOW dependence between (197:5) and (199:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (197:5) and (198:25) 
+    remark #15346: vector dependence: assumed FLOW dependence between (197:5) and (198:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (197:5) and (199:25) 
+    remark #15346: vector dependence: assumed FLOW dependence between (197:5) and (199:7) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_spinit_.DIR.OMP.TEAMS.11.split2462
+=================================================================
+
+Global optimization report for : mod_split_mp_spinit_.DIR.OMP.DISTRIBUTE.PARLOOP.26.split2466.split
+
+LOOP BEGIN at mod_split.F90 (205, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (205:5) and (206:37) 
+    remark #15346: vector dependence: assumed FLOW dependence between (205:5) and (206:51) 
+    remark #15346: vector dependence: assumed FLOW dependence between (205:5) and (207:19) 
+    remark #15346: vector dependence: assumed FLOW dependence between (205:5) and (207:20) 
+    remark #15346: vector dependence: assumed FLOW dependence between (205:5) and (207:32) 
+    remark #15346: vector dependence: assumed FLOW dependence between (205:5) and (207:47) 
+    remark #15346: vector dependence: assumed FLOW dependence between (205:5) and (208:20) 
+    remark #15346: vector dependence: assumed FLOW dependence between (205:5) and (207:72) 
+    remark #15346: vector dependence: assumed FLOW dependence between (205:5) and (208:32) 
+    remark #15346: vector dependence: assumed FLOW dependence between (205:5) and (208:47) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_spinit_.DIR.OMP.TEAMS.17.split2482
+=================================================================
+
+Global optimization report for : mod_split_mp_spinit_.DIR.OMP.DISTRIBUTE.PARLOOP.35.split2486.split
+
+LOOP BEGIN at mod_split.F90 (217, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (217:7) and (222:27) 
+    remark #15346: vector dependence: assumed FLOW dependence between (217:7) and (223:11) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_spinit_.DIR.OMP.TEAMS.29.split2499
+=================================================================
+
+Global optimization report for : mod_split_mp_spinit_.DIR.OMP.DISTRIBUTE.PARLOOP.44.split2503.split
+
+LOOP BEGIN at mod_split.F90 (233, 9)
+    remark #25563: Load hoisted out of the loop
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (233:9) and (238:29) 
+    remark #15346: vector dependence: assumed FLOW dependence between (233:9) and (239:28) 
+    remark #15346: vector dependence: assumed FLOW dependence between (233:9) and (240:42) 
+    remark #15346: vector dependence: assumed FLOW dependence between (233:9) and (239:13) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_spinit_.DIR.OMP.TEAMS.38.split2517
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.11.split6874.split
+
+LOOP BEGIN at mod_split.F90 (265, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (265:5) and (266:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (265:5) and (267:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (265:5) and (266:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (265:5) and (267:7) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.TEAMS.2.split6888
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.20.split6892.split
+
+LOOP BEGIN at mod_split.F90 (277, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (277:5) and (278:23) 
+    remark #15346: vector dependence: assumed FLOW dependence between (277:5) and (278:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (277:5) and (279:23) 
+    remark #15346: vector dependence: assumed FLOW dependence between (277:5) and (279:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (277:5) and (278:23) 
+    remark #15346: vector dependence: assumed FLOW dependence between (277:5) and (278:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (277:5) and (279:23) 
+    remark #15346: vector dependence: assumed FLOW dependence between (277:5) and (279:7) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.TEAMS.8.split6904
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.26.split6908.split
+
+LOOP BEGIN at mod_split.F90 (284, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (284:5) and (285:25) 
+    remark #15346: vector dependence: assumed FLOW dependence between (284:5) and (285:40) 
+    remark #15346: vector dependence: assumed FLOW dependence between (284:5) and (285:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (284:5) and (286:25) 
+    remark #15346: vector dependence: assumed FLOW dependence between (284:5) and (286:40) 
+    remark #15346: vector dependence: assumed FLOW dependence between (284:5) and (286:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (284:5) and (285:25) 
+    remark #15346: vector dependence: assumed FLOW dependence between (284:5) and (285:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (284:5) and (286:25) 
+    remark #15346: vector dependence: assumed FLOW dependence between (284:5) and (286:7) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.TEAMS.17.split6920
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.38.split6924.split
+
+LOOP BEGIN at mod_split.F90 (293, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (293:7) and (294:9) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.TEAMS.29.split6934
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.44.split6938.split
+
+LOOP BEGIN at mod_split.F90 (297, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (297:7) and (298:41) 
+    remark #15346: vector dependence: assumed FLOW dependence between (297:7) and (298:62) 
+    remark #15346: vector dependence: assumed FLOW dependence between (297:7) and (299:17) 
+    remark #15346: vector dependence: assumed FLOW dependence between (297:7) and (299:18) 
+    remark #15346: vector dependence: assumed FLOW dependence between (297:7) and (299:30) 
+    remark #15346: vector dependence: assumed FLOW dependence between (297:7) and (299:45) 
+    remark #15346: vector dependence: assumed FLOW dependence between (297:7) and (300:18) 
+    remark #15346: vector dependence: assumed FLOW dependence between (297:7) and (299:70) 
+    remark #15346: vector dependence: assumed FLOW dependence between (297:7) and (300:30) 
+    remark #15346: vector dependence: assumed FLOW dependence between (297:7) and (300:45) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.TEAMS.35.split6952
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.56.split6956.split
+
+LOOP BEGIN at mod_split.F90 (304, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (304:5) and (305:23) 
+    remark #15346: vector dependence: assumed FLOW dependence between (304:5) and (305:23) 
+    remark #15346: vector dependence: assumed FLOW dependence between (304:5) and (305:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (304:5) and (305:23) 
+    remark #15346: vector dependence: assumed FLOW dependence between (304:5) and (305:23) 
+    remark #15346: vector dependence: assumed FLOW dependence between (304:5) and (305:7) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.TEAMS.47.split6968
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.62.split6972.split
+
+LOOP BEGIN at mod_split.F90 (310, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (310:5) and (311:25) 
+    remark #15346: vector dependence: assumed FLOW dependence between (310:5) and (311:40) 
+    remark #15346: vector dependence: assumed FLOW dependence between (310:5) and (311:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (310:5) and (312:25) 
+    remark #15346: vector dependence: assumed FLOW dependence between (310:5) and (312:40) 
+    remark #15346: vector dependence: assumed FLOW dependence between (310:5) and (312:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (310:5) and (311:25) 
+    remark #15346: vector dependence: assumed FLOW dependence between (310:5) and (311:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (310:5) and (312:25) 
+    remark #15346: vector dependence: assumed FLOW dependence between (310:5) and (312:7) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.TEAMS.53.split6984
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.74.split6988.split
+
+LOOP BEGIN at mod_split.F90 (319, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (319:7) and (320:9) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.TEAMS.65.split6998
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.80.split7002.split
+
+LOOP BEGIN at mod_split.F90 (322, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (322:7) and (323:41) 
+    remark #15346: vector dependence: assumed FLOW dependence between (322:7) and (323:62) 
+    remark #15346: vector dependence: assumed FLOW dependence between (322:7) and (324:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between (322:7) and (324:17) 
+    remark #15346: vector dependence: assumed FLOW dependence between (322:7) and (324:29) 
+    remark #15346: vector dependence: assumed FLOW dependence between (322:7) and (324:44) 
+    remark #15346: vector dependence: assumed FLOW dependence between (322:7) and (325:17) 
+    remark #15346: vector dependence: assumed FLOW dependence between (322:7) and (324:69) 
+    remark #15346: vector dependence: assumed FLOW dependence between (322:7) and (325:29) 
+    remark #15346: vector dependence: assumed FLOW dependence between (322:7) and (325:44) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.TEAMS.71.split7016
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.89.split7020.split
+
+LOOP BEGIN at mod_split.F90 (329, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (329:5) and (330:23) 
+    remark #15346: vector dependence: assumed FLOW dependence between (329:5) and (330:23) 
+    remark #15346: vector dependence: assumed FLOW dependence between (329:5) and (330:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (329:5) and (330:23) 
+    remark #15346: vector dependence: assumed FLOW dependence between (329:5) and (330:23) 
+    remark #15346: vector dependence: assumed FLOW dependence between (329:5) and (330:7) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.TEAMS.83.split7032
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.98.split7036.split
+
+LOOP BEGIN at mod_split.F90 (339, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (339:7) and (344:27) 
+    remark #15346: vector dependence: assumed FLOW dependence between (339:7) and (345:11) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.TEAMS.92.split7049
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.107.split7053.split
+
+LOOP BEGIN at mod_split.F90 (354, 9)
+    remark #25563: Load hoisted out of the loop
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (354:9) and (359:29) 
+    remark #15346: vector dependence: assumed FLOW dependence between (354:9) and (360:29) 
+    remark #15346: vector dependence: assumed FLOW dependence between (354:9) and (361:35) 
+    remark #15346: vector dependence: assumed FLOW dependence between (354:9) and (360:13) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.TEAMS.101.split7067
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.116.split7071.split
+
+LOOP BEGIN at mod_split.F90 (369, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (369:5) and (370:23) 
+    remark #15346: vector dependence: assumed FLOW dependence between (369:5) and (370:23) 
+    remark #15346: vector dependence: assumed FLOW dependence between (369:5) and (370:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (369:5) and (370:23) 
+    remark #15346: vector dependence: assumed FLOW dependence between (369:5) and (370:23) 
+    remark #15346: vector dependence: assumed FLOW dependence between (369:5) and (370:7) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.TEAMS.110.split7083
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.125.split7087.split
+
+LOOP BEGIN at mod_split.F90 (379, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (379:7) and (384:27) 
+    remark #15346: vector dependence: assumed FLOW dependence between (379:7) and (385:11) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.TEAMS.119.split7100
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.134.split7104.split
+
+LOOP BEGIN at mod_split.F90 (394, 9)
+    remark #25563: Load hoisted out of the loop
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (394:9) and (399:29) 
+    remark #15346: vector dependence: assumed FLOW dependence between (394:9) and (400:29) 
+    remark #15346: vector dependence: assumed FLOW dependence between (394:9) and (401:36) 
+    remark #15346: vector dependence: assumed FLOW dependence between (394:9) and (400:13) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.TEAMS.128.split7118
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.146.split7122.split
+
+LOOP BEGIN at mod_split.F90 (409, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (409:5) and (410:23) 
+    remark #15346: vector dependence: assumed FLOW dependence between (409:5) and (410:23) 
+    remark #15346: vector dependence: assumed FLOW dependence between (409:5) and (410:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (409:5) and (410:23) 
+    remark #15346: vector dependence: assumed FLOW dependence between (409:5) and (410:23) 
+    remark #15346: vector dependence: assumed FLOW dependence between (409:5) and (410:7) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.TEAMS.137.split7134
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.152.split7138.split
+
+LOOP BEGIN at mod_split.F90 (415, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (415:5) and (416:22) 
+    remark #15346: vector dependence: assumed FLOW dependence between (415:5) and (416:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (415:5) and (417:22) 
+    remark #15346: vector dependence: assumed FLOW dependence between (415:5) and (417:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (415:5) and (416:22) 
+    remark #15346: vector dependence: assumed FLOW dependence between (415:5) and (416:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (415:5) and (417:22) 
+    remark #15346: vector dependence: assumed FLOW dependence between (415:5) and (417:7) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.TEAMS.143.split7150
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.161.split7154.split
+
+LOOP BEGIN at mod_split.F90 (428, 7)
+    remark #25563: Load hoisted out of the loop
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (428:7) and (429:45) 
+    remark #15346: vector dependence: assumed FLOW dependence between (428:7) and (429:28) 
+    remark #15346: vector dependence: assumed FLOW dependence between (428:7) and (429:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (428:7) and (430:39) 
+    remark #15346: vector dependence: assumed FLOW dependence between (428:7) and (430:28) 
+    remark #15346: vector dependence: assumed FLOW dependence between (428:7) and (430:9) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.TEAMS.155.split7165
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.170.split7169.split
+
+LOOP BEGIN at mod_split.F90 (436, 9)
+    remark #25563: Load hoisted out of the loop
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (436:9) and (437:51) 
+    remark #15346: vector dependence: assumed FLOW dependence between (436:9) and (437:32) 
+    remark #15346: vector dependence: assumed FLOW dependence between (436:9) and (437:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (436:9) and (438:43) 
+    remark #15346: vector dependence: assumed FLOW dependence between (436:9) and (438:32) 
+    remark #15346: vector dependence: assumed FLOW dependence between (436:9) and (438:11) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.TEAMS.164.split7181
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.179.split7185.split
+
+LOOP BEGIN at mod_split.F90 (449, 9)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (449:9) and (454:46) 
+    remark #15346: vector dependence: assumed FLOW dependence between (449:9) and (454:23) 
+    remark #15346: vector dependence: assumed FLOW dependence between (449:9) and (455:22) 
+    remark #15346: vector dependence: assumed FLOW dependence between (449:9) and (455:22) 
+    remark #15346: vector dependence: assumed FLOW dependence between (449:9) and (455:34) 
+    remark #15346: vector dependence: assumed FLOW dependence between (449:9) and (455:50) 
+    remark #15346: vector dependence: assumed FLOW dependence between (449:9) and (459:34) 
+    remark #15346: vector dependence: assumed FLOW dependence between (449:9) and (459:13) 
+    remark #15346: vector dependence: assumed FLOW dependence between (449:9) and (460:34) 
+    remark #15346: vector dependence: assumed FLOW dependence between (449:9) and (460:13) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_splitf_.DIR.OMP.TEAMS.173.split7198
+=================================================================
+
+Global optimization report for : mod_split_mp_spstep_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split5816.split
+
+LOOP BEGIN at mod_split.F90 (486, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (486:5) and (487:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (486:5) and (488:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (486:5) and (487:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (486:5) and (488:7) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_spstep_.DIR.OMP.TEAMS.2.split5828
+=================================================================
+
+Global optimization report for : mod_split_mp_spstep_.DIR.OMP.DISTRIBUTE.PARLOOP.17.split5832.split
+
+LOOP BEGIN at mod_split.F90 (500, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (500:7) and (501:25) 
+    remark #15346: vector dependence: assumed FLOW dependence between (500:7) and (501:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (500:7) and (502:25) 
+    remark #15346: vector dependence: assumed FLOW dependence between (500:7) and (502:9) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_spstep_.DIR.OMP.TEAMS.11.split5843
+=================================================================
+
+Global optimization report for : mod_split_mp_spstep_.DIR.OMP.DISTRIBUTE.PARLOOP.29.split5847.split
+
+LOOP BEGIN at mod_split.F90 (512, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (512:7) and (517:27) 
+    remark #15346: vector dependence: assumed FLOW dependence between (512:7) and (518:26) 
+    remark #15346: vector dependence: assumed FLOW dependence between (512:7) and (518:26) 
+    remark #15346: vector dependence: assumed FLOW dependence between (512:7) and (518:38) 
+    remark #15346: vector dependence: assumed FLOW dependence between (512:7) and (518:52) 
+    remark #15346: vector dependence: assumed FLOW dependence between (512:7) and (518:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (512:7) and (520:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (512:7) and (520:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (512:7) and (520:38) 
+    remark #15346: vector dependence: assumed FLOW dependence between (512:7) and (520:52) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_spstep_.DIR.OMP.TEAMS.20.split5857
+=================================================================
+
+Global optimization report for : mod_split_mp_spstep_.DIR.OMP.DISTRIBUTE.PARLOOP.38.split5861.split
+
+LOOP BEGIN at mod_split.F90 (527, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (527:7) and (528:24) 
+    remark #15346: vector dependence: assumed FLOW dependence between (527:7) and (528:41) 
+    remark #15346: vector dependence: assumed FLOW dependence between (527:7) and (528:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (527:7) and (528:24) 
+    remark #15346: vector dependence: assumed FLOW dependence between (527:7) and (528:9) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_spstep_.DIR.OMP.TEAMS.26.split5872
+=================================================================
+
+Global optimization report for : mod_split_mp_spstep_.DIR.OMP.DISTRIBUTE.PARLOOP.47.split5876.split
+
+LOOP BEGIN at mod_split.F90 (535, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (535:7) and (536:19) 
+    remark #15346: vector dependence: assumed FLOW dependence between (535:7) and (536:37) 
+    remark #15346: vector dependence: assumed FLOW dependence between (535:7) and (536:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (535:7) and (537:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (535:7) and (537:37) 
+    remark #15346: vector dependence: assumed FLOW dependence between (535:7) and (537:9) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_spstep_.DIR.OMP.TEAMS.35.split5885
+=================================================================
+
+Global optimization report for : mod_split_mp_spstep_.DIR.OMP.DISTRIBUTE.PARLOOP.56.split5889.split
+
+LOOP BEGIN at mod_split.F90 (543, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (543:7) and (544:30) 
+    remark #15346: vector dependence: assumed FLOW dependence between (543:7) and (545:18) 
+    remark #15346: vector dependence: assumed FLOW dependence between (543:7) and (545:19) 
+    remark #15346: vector dependence: assumed FLOW dependence between (543:7) and (545:28) 
+    remark #15346: vector dependence: assumed FLOW dependence between (543:7) and (545:40) 
+    remark #15346: vector dependence: assumed FLOW dependence between (543:7) and (546:19) 
+    remark #15346: vector dependence: assumed FLOW dependence between (543:7) and (546:18) 
+    remark #15346: vector dependence: assumed FLOW dependence between (543:7) and (546:28) 
+    remark #15346: vector dependence: assumed FLOW dependence between (543:7) and (546:40) 
+    remark #15346: vector dependence: assumed FLOW dependence between (543:7) and (544:9) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_spstep_.DIR.OMP.TEAMS.44.split5899
+=================================================================
+
+Global optimization report for : mod_split_mp_spstep_.DIR.OMP.DISTRIBUTE.PARLOOP.62.split5903.split
+
+LOOP BEGIN at mod_split.F90 (549, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (549:7) and (550:54) 
+    remark #15346: vector dependence: assumed FLOW dependence between (549:7) and (550:27) 
+    remark #15346: vector dependence: assumed FLOW dependence between (549:7) and (550:43) 
+    remark #15346: vector dependence: assumed FLOW dependence between (549:7) and (550:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (549:7) and (552:53) 
+    remark #15346: vector dependence: assumed FLOW dependence between (549:7) and (553:47) 
+    remark #15346: vector dependence: assumed FLOW dependence between (549:7) and (552:27) 
+    remark #15346: vector dependence: assumed FLOW dependence between (549:7) and (552:43) 
+    remark #15346: vector dependence: assumed FLOW dependence between (549:7) and (552:9) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_spstep_.DIR.OMP.TEAMS.53.split5916
+=================================================================
+
+Global optimization report for : mod_split_mp_spstep_.DIR.OMP.DISTRIBUTE.PARLOOP.71.split5920.split
+
+LOOP BEGIN at mod_split.F90 (580, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (580:7) and (581:25) 
+    remark #15346: vector dependence: assumed FLOW dependence between (580:7) and (581:41) 
+    remark #15346: vector dependence: assumed FLOW dependence between (580:7) and (581:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (580:7) and (582:25) 
+    remark #15346: vector dependence: assumed FLOW dependence between (580:7) and (582:41) 
+    remark #15346: vector dependence: assumed FLOW dependence between (580:7) and (582:9) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_spstep_.DIR.OMP.TEAMS.65.split5931
+=================================================================
+
+Global optimization report for : mod_split_mp_spstep_.DIR.OMP.DISTRIBUTE.PARLOOP.83.split5935.split
+
+LOOP BEGIN at mod_split.F90 (594, 9)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (594:9) and (599:29) 
+    remark #15346: vector dependence: assumed FLOW dependence between (594:9) and (600:28) 
+    remark #15346: vector dependence: assumed FLOW dependence between (594:9) and (600:28) 
+    remark #15346: vector dependence: assumed FLOW dependence between (594:9) and (600:38) 
+    remark #15346: vector dependence: assumed FLOW dependence between (594:9) and (600:51) 
+    remark #15346: vector dependence: assumed FLOW dependence between (594:9) and (600:13) 
+    remark #15346: vector dependence: assumed FLOW dependence between (594:9) and (602:13) 
+    remark #15346: vector dependence: assumed FLOW dependence between (594:9) and (602:13) 
+    remark #15346: vector dependence: assumed FLOW dependence between (594:9) and (602:38) 
+    remark #15346: vector dependence: assumed FLOW dependence between (594:9) and (602:51) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_spstep_.DIR.OMP.TEAMS.74.split5945
+=================================================================
+
+Global optimization report for : mod_split_mp_spstep_.DIR.OMP.DISTRIBUTE.PARLOOP.92.split5949.split
+
+LOOP BEGIN at mod_split.F90 (609, 9)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (609:9) and (610:26) 
+    remark #15346: vector dependence: assumed FLOW dependence between (609:9) and (610:43) 
+    remark #15346: vector dependence: assumed FLOW dependence between (609:9) and (610:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (609:9) and (610:26) 
+    remark #15346: vector dependence: assumed FLOW dependence between (609:9) and (610:11) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_spstep_.DIR.OMP.TEAMS.80.split5960
+=================================================================
+
+Global optimization report for : mod_split_mp_spstep_.DIR.OMP.DISTRIBUTE.PARLOOP.101.split5964.split
+
+LOOP BEGIN at mod_split.F90 (617, 9)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (617:9) and (618:21) 
+    remark #15346: vector dependence: assumed FLOW dependence between (617:9) and (618:39) 
+    remark #15346: vector dependence: assumed FLOW dependence between (617:9) and (618:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (617:9) and (619:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (617:9) and (619:39) 
+    remark #15346: vector dependence: assumed FLOW dependence between (617:9) and (619:11) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_spstep_.DIR.OMP.TEAMS.89.split5973
+=================================================================
+
+Global optimization report for : mod_split_mp_spstep_.DIR.OMP.DISTRIBUTE.PARLOOP.110.split5977.split
+
+LOOP BEGIN at mod_split.F90 (625, 9)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (625:9) and (626:32) 
+    remark #15346: vector dependence: assumed FLOW dependence between (625:9) and (627:20) 
+    remark #15346: vector dependence: assumed FLOW dependence between (625:9) and (627:21) 
+    remark #15346: vector dependence: assumed FLOW dependence between (625:9) and (627:30) 
+    remark #15346: vector dependence: assumed FLOW dependence between (625:9) and (627:42) 
+    remark #15346: vector dependence: assumed FLOW dependence between (625:9) and (628:21) 
+    remark #15346: vector dependence: assumed FLOW dependence between (625:9) and (627:61) 
+    remark #15346: vector dependence: assumed FLOW dependence between (625:9) and (628:30) 
+    remark #15346: vector dependence: assumed FLOW dependence between (625:9) and (628:42) 
+    remark #15346: vector dependence: assumed FLOW dependence between (625:9) and (626:11) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_spstep_.DIR.OMP.TEAMS.98.split5987
+=================================================================
+
+Global optimization report for : mod_split_mp_spstep_.DIR.OMP.DISTRIBUTE.PARLOOP.116.split5991.split
+
+LOOP BEGIN at mod_split.F90 (631, 9)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (631:9) and (632:53) 
+    remark #15346: vector dependence: assumed FLOW dependence between (631:9) and (632:29) 
+    remark #15346: vector dependence: assumed FLOW dependence between (631:9) and (632:45) 
+    remark #15346: vector dependence: assumed FLOW dependence between (631:9) and (632:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (631:9) and (634:52) 
+    remark #15346: vector dependence: assumed FLOW dependence between (631:9) and (635:49) 
+    remark #15346: vector dependence: assumed FLOW dependence between (631:9) and (634:29) 
+    remark #15346: vector dependence: assumed FLOW dependence between (631:9) and (634:45) 
+    remark #15346: vector dependence: assumed FLOW dependence between (631:9) and (634:11) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_spstep_.DIR.OMP.TEAMS.107.split6005
+=================================================================
+
+Global optimization report for : mod_split_mp_spstep_.DIR.OMP.DISTRIBUTE.PARLOOP.125.split6009.split
+
+LOOP BEGIN at mod_split.F90 (662, 9)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (662:9) and (663:27) 
+    remark #15346: vector dependence: assumed FLOW dependence between (662:9) and (663:43) 
+    remark #15346: vector dependence: assumed FLOW dependence between (662:9) and (663:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (662:9) and (664:27) 
+    remark #15346: vector dependence: assumed FLOW dependence between (662:9) and (664:43) 
+    remark #15346: vector dependence: assumed FLOW dependence between (662:9) and (664:11) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_split_mp_spstep_.DIR.OMP.TEAMS.119.split6020
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.directive.region.entry
+
+DEAD STATIC FUNC: llvm.directive.region.exit
+
+COMPILE FUNC: mod_split._
+
+COMPILE FUNC: mod_split_mp_allocate_mod_split_
+
+COMPILE FUNC: mod_split_mp_spinit_
+   -> llvm.round.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (95,17)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (104,5)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (105,27)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (104,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (104,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (104,5)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (170,26)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (197,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (197,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (197,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (205,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (197,5)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (207,19)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (205,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (205,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (205,5)
+   -> llvm.log.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (214,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (215,43)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (217,7)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (222,23)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (217,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (217,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (217,7)
+   -> llvm.log.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (230,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (231,39)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (233,9)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (238,25)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (233,9)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (233,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (233,9)
+
+COMPILE FUNC: mod_split_mp_spstep_
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (486,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (486,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (486,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (486,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (500,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (500,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (500,7)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (509,7)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (509,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (500,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (512,7)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (518,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (520,26)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (512,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (512,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (527,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (512,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (527,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (527,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (535,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (527,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (535,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (535,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (543,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (535,7)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (545,18)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (543,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (543,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (549,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (543,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (549,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (549,7)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (558,14)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (549,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (580,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (580,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (580,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (580,7)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (591,9)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (591,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (594,9)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (600,28)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (602,28)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (594,9)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (594,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (609,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (594,9)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (609,9)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (609,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (617,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (609,9)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (617,9)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (617,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (625,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (617,9)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (627,20)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (625,9)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (625,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (631,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (625,9)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (631,9)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (631,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (631,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (662,9)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (662,9)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (662,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (662,9)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (509,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (591,9)
+   -> llvm.smax.i64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (509,7)
+   -> llvm.smax.i64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (509,7)
+   -> llvm.smax.i64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (591,9)
+   -> llvm.smax.i64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (591,9)
+
+COMPILE FUNC: mod_split_mp_splitf_
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (265,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (265,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (265,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (277,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (265,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (277,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (277,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (284,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (277,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (284,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (284,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (284,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (293,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (293,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (293,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (297,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (293,7)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (299,17)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (297,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (297,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (297,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (304,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (304,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (304,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (310,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (304,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (310,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (310,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (310,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (319,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (319,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (319,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (322,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (319,7)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (324,16)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (322,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (322,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (322,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (329,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (329,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (329,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (329,5)
+   -> llvm.log.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (336,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (337,43)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (339,7)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (344,23)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (339,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (339,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (339,7)
+   -> llvm.log.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (351,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (352,39)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (354,9)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (359,25)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (354,9)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (354,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (354,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (369,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (369,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (369,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (369,5)
+   -> llvm.log.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (376,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (377,43)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (379,7)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (384,23)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (379,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (379,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (379,7)
+   -> llvm.log.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (391,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (392,39)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (394,9)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (399,25)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (394,9)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (394,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (394,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (409,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (409,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (409,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (415,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (409,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (415,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (415,5)
+   -> mod_split_mp_spstep_ /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (422,10)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (415,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (428,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (428,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (428,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (428,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (436,9)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (436,9)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (436,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (436,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (449,9)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (454,36)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (455,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (457,22)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (449,9)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (449,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (449,9)
+
+COMPILE FUNC: mod_split_mp_spinit_.DIR.OMP.TEAMS.38.split2517
+
+COMPILE FUNC: mod_split_mp_spinit_.DIR.OMP.TEAMS.29.split2499
+
+COMPILE FUNC: mod_split_mp_spinit_.DIR.OMP.TEAMS.17.split2482
+
+COMPILE FUNC: mod_split_mp_spinit_.DIR.OMP.TEAMS.11.split2462
+
+COMPILE FUNC: mod_split_mp_spinit_.DIR.OMP.TEAMS.2.split2446
+
+COMPILE FUNC: mod_split_mp_spstep_.DIR.OMP.TEAMS.119.split6020
+
+COMPILE FUNC: mod_split_mp_spstep_.DIR.OMP.TEAMS.107.split6005
+
+COMPILE FUNC: mod_split_mp_spstep_.DIR.OMP.TEAMS.98.split5987
+
+COMPILE FUNC: mod_split_mp_spstep_.DIR.OMP.TEAMS.89.split5973
+
+COMPILE FUNC: mod_split_mp_spstep_.DIR.OMP.TEAMS.80.split5960
+
+COMPILE FUNC: mod_split_mp_spstep_.DIR.OMP.TEAMS.74.split5945
+
+COMPILE FUNC: mod_split_mp_spstep_.DIR.OMP.TEAMS.65.split5931
+
+COMPILE FUNC: mod_split_mp_spstep_.DIR.OMP.TEAMS.53.split5916
+
+COMPILE FUNC: mod_split_mp_spstep_.DIR.OMP.TEAMS.44.split5899
+
+COMPILE FUNC: mod_split_mp_spstep_.DIR.OMP.TEAMS.35.split5885
+
+COMPILE FUNC: mod_split_mp_spstep_.DIR.OMP.TEAMS.26.split5872
+
+COMPILE FUNC: mod_split_mp_spstep_.DIR.OMP.TEAMS.20.split5857
+
+COMPILE FUNC: mod_split_mp_spstep_.DIR.OMP.TEAMS.11.split5843
+
+COMPILE FUNC: mod_split_mp_spstep_.DIR.OMP.TEAMS.2.split5828
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.TEAMS.173.split7198
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.TEAMS.164.split7181
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.TEAMS.155.split7165
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.TEAMS.143.split7150
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.TEAMS.137.split7134
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.TEAMS.128.split7118
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.TEAMS.119.split7100
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.TEAMS.110.split7083
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.TEAMS.101.split7067
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.TEAMS.92.split7049
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.TEAMS.83.split7032
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.TEAMS.71.split7016
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.TEAMS.65.split6998
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.TEAMS.53.split6984
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.TEAMS.47.split6968
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.TEAMS.35.split6952
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.TEAMS.29.split6934
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.TEAMS.17.split6920
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.TEAMS.8.split6904
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.TEAMS.2.split6888
+
+COMPILE FUNC: mod_split_mp_spinit_.DIR.OMP.DISTRIBUTE.PARLOOP.44.split2503.split
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (238,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (238,25)
+
+COMPILE FUNC: mod_split_mp_spinit_.DIR.OMP.DISTRIBUTE.PARLOOP.35.split2486.split
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (222,23)
+
+COMPILE FUNC: mod_split_mp_spinit_.DIR.OMP.DISTRIBUTE.PARLOOP.26.split2466.split
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (207,19)
+
+COMPILE FUNC: mod_split_mp_spinit_.DIR.OMP.DISTRIBUTE.PARLOOP.20.split2450.split
+
+COMPILE FUNC: mod_split_mp_spinit_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split2437.split
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (105,27)
+
+COMPILE FUNC: mod_split_mp_spstep_.DIR.OMP.DISTRIBUTE.PARLOOP.125.split6009.split
+
+COMPILE FUNC: mod_split_mp_spstep_.DIR.OMP.DISTRIBUTE.PARLOOP.116.split5991.split
+
+COMPILE FUNC: mod_split_mp_spstep_.DIR.OMP.DISTRIBUTE.PARLOOP.110.split5977.split
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (627,20)
+
+COMPILE FUNC: mod_split_mp_spstep_.DIR.OMP.DISTRIBUTE.PARLOOP.101.split5964.split
+
+COMPILE FUNC: mod_split_mp_spstep_.DIR.OMP.DISTRIBUTE.PARLOOP.92.split5949.split
+
+COMPILE FUNC: mod_split_mp_spstep_.DIR.OMP.DISTRIBUTE.PARLOOP.83.split5935.split
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (600,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (602,28)
+
+COMPILE FUNC: mod_split_mp_spstep_.DIR.OMP.DISTRIBUTE.PARLOOP.71.split5920.split
+
+COMPILE FUNC: mod_split_mp_spstep_.DIR.OMP.DISTRIBUTE.PARLOOP.62.split5903.split
+
+COMPILE FUNC: mod_split_mp_spstep_.DIR.OMP.DISTRIBUTE.PARLOOP.56.split5889.split
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (545,18)
+
+COMPILE FUNC: mod_split_mp_spstep_.DIR.OMP.DISTRIBUTE.PARLOOP.47.split5876.split
+
+COMPILE FUNC: mod_split_mp_spstep_.DIR.OMP.DISTRIBUTE.PARLOOP.38.split5861.split
+
+COMPILE FUNC: mod_split_mp_spstep_.DIR.OMP.DISTRIBUTE.PARLOOP.29.split5847.split
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (518,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (520,26)
+
+COMPILE FUNC: mod_split_mp_spstep_.DIR.OMP.DISTRIBUTE.PARLOOP.17.split5832.split
+
+COMPILE FUNC: mod_split_mp_spstep_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split5816.split
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.179.split7185.split
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (454,36)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (455,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (457,22)
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.170.split7169.split
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.161.split7154.split
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.152.split7138.split
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.146.split7122.split
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.134.split7104.split
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (399,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (399,25)
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.125.split7087.split
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (384,23)
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.116.split7071.split
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.107.split7053.split
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (359,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (359,25)
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.98.split7036.split
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (344,23)
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.89.split7020.split
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.80.split7002.split
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (324,16)
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.74.split6988.split
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.62.split6972.split
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.56.split6956.split
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.44.split6938.split
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0219179219KaPkpO/ifxp3aBzU.i90 (299,17)
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.38.split6924.split
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.26.split6908.split
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.20.split6892.split
+
+COMPILE FUNC: mod_split_mp_splitf_.DIR.OMP.DISTRIBUTE.PARLOOP.11.split6874.split
+
+---- End Inlining Report ------

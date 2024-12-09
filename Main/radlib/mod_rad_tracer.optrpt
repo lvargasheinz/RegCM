@@ -1,0 +1,109 @@
+Global optimization report for : mod_rad_tracer._
+=================================================================
+
+Global optimization report for : mod_rad_tracer_mp_trcmix_
+
+LOOP BEGIN at mod_rad_tracer.F90 (121, 5)
+LOOP END
+=================================================================
+
+Global optimization report for : mod_rad_tracer_mp_trcmix_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split817.split
+
+LOOP BEGIN at mod_rad_tracer.F90 (95, 19)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+=================================================================
+
+Global optimization report for : mod_rad_tracer_mp_trcmix_.DIR.OMP.TEAMS.2
+
+OMP TEAMS BEGIN at mod_rad_tracer.F90 (89, 7)
+    remark: SHARED clause for variable 'var$85.fpriv' has been changed to PRIVATE
+    remark: SHARED clause for variable 'var$79.fpriv' has been changed to PRIVATE
+    remark: SHARED clause for variable 'var$75.fpriv' has been changed to PRIVATE
+    remark: SHARED clause for variable 'var$69.fpriv' has been changed to PRIVATE
+    remark: SHARED clause for variable 'var$65.fpriv' has been changed to PRIVATE
+    remark: SHARED clause for variable 'var$59.fpriv' has been changed to PRIVATE
+    remark: SHARED clause for variable 'var$55.fpriv' has been changed to PRIVATE
+    remark: SHARED clause for variable 'var$49.fpriv' has been changed to PRIVATE
+    remark: SHARED clause for variable 'var$45.fpriv' has been changed to PRIVATE
+    remark: SHARED clause for variable 'var$41.fpriv' has been changed to PRIVATE
+    remark: SHARED clause for variable 'var$35.fpriv' has been changed to PRIVATE
+
+    OMP DISTRIBUTE PARALLEL DO BEGIN at mod_rad_tracer.F90 (89, 7)
+        remark: FIRSTPRIVATE clause for variable 'CFC12.array.elements.fpriv' has been changed to PRIVATE
+        remark: FIRSTPRIVATE clause for variable 'CFC120.array.elements.fpriv' has been changed to PRIVATE
+        remark: FIRSTPRIVATE clause for variable 'CFC11.array.elements.fpriv' has been changed to PRIVATE
+        remark: FIRSTPRIVATE clause for variable 'CFC110.array.elements.fpriv' has been changed to PRIVATE
+        remark: FIRSTPRIVATE clause for variable 'N2O.array.elements.fpriv' has been changed to PRIVATE
+        remark: FIRSTPRIVATE clause for variable 'N2O0.array.elements.fpriv' has been changed to PRIVATE
+        remark: FIRSTPRIVATE clause for variable 'CH4.array.elements.fpriv' has been changed to PRIVATE
+        remark: FIRSTPRIVATE clause for variable 'CH40.array.elements.fpriv' has been changed to PRIVATE
+        remark: FIRSTPRIVATE clause for variable 'PTROP.array.elements.fpriv' has been changed to PRIVATE
+        remark: FIRSTPRIVATE clause for variable 'PMID.array.elements.fpriv' has been changed to PRIVATE
+        remark: FIRSTPRIVATE clause for variable 'DLAT.array.elements.fpriv' has been changed to PRIVATE
+        remark: SHARED clause for variable 'var$85.fpriv' has been changed to PRIVATE
+        remark: SHARED clause for variable 'var$79.fpriv' has been changed to PRIVATE
+        remark: SHARED clause for variable 'var$75.fpriv' has been changed to PRIVATE
+        remark: SHARED clause for variable 'var$69.fpriv' has been changed to PRIVATE
+        remark: SHARED clause for variable 'var$65.fpriv' has been changed to PRIVATE
+        remark: SHARED clause for variable 'var$59.fpriv' has been changed to PRIVATE
+        remark: SHARED clause for variable 'var$55.fpriv' has been changed to PRIVATE
+        remark: SHARED clause for variable 'var$49.fpriv' has been changed to PRIVATE
+        remark: SHARED clause for variable 'var$45.fpriv' has been changed to PRIVATE
+        remark: SHARED clause for variable 'var$41.fpriv' has been changed to PRIVATE
+        remark: SHARED clause for variable 'var$35.fpriv' has been changed to PRIVATE
+    OMP DISTRIBUTE PARALLEL DO END
+OMP TEAMS END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.directive.region.entry
+
+DEAD STATIC FUNC: llvm.directive.region.exit
+
+COMPILE FUNC: mod_rad_tracer._
+
+COMPILE FUNC: mod_rad_tracer_mp_trcmix_
+   -> llvm.smax.i32 /scratch_local/ifx0930797856Ly22pj/ifxwN7uoP.i90 (58,19)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0930797856Ly22pj/ifxwN7uoP.i90 (89,7)
+   -> DELETE: llvm.fabs.f64 /scratch_local/ifx0930797856Ly22pj/ifxwN7uoP.i90 (94,16)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0930797856Ly22pj/ifxwN7uoP.i90 (101,45)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0930797856Ly22pj/ifxwN7uoP.i90 (102,46)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0930797856Ly22pj/ifxwN7uoP.i90 (103,45)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0930797856Ly22pj/ifxwN7uoP.i90 (104,45)
+   -> DELETE: llvm.pow.f64 /scratch_local/ifx0930797856Ly22pj/ifxwN7uoP.i90 (115,37)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0930797856Ly22pj/ifxwN7uoP.i90 (115,31)
+   -> DELETE: llvm.pow.f64 /scratch_local/ifx0930797856Ly22pj/ifxwN7uoP.i90 (116,37)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0930797856Ly22pj/ifxwN7uoP.i90 (116,31)
+   -> DELETE: llvm.pow.f64 /scratch_local/ifx0930797856Ly22pj/ifxwN7uoP.i90 (117,41)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0930797856Ly22pj/ifxwN7uoP.i90 (117,35)
+   -> DELETE: llvm.pow.f64 /scratch_local/ifx0930797856Ly22pj/ifxwN7uoP.i90 (118,41)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0930797856Ly22pj/ifxwN7uoP.i90 (118,35)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0930797856Ly22pj/ifxwN7uoP.i90 (89,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0930797856Ly22pj/ifxwN7uoP.i90 (89,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0930797856Ly22pj/ifxwN7uoP.i90 (89,7)
+
+COMPILE FUNC: mod_rad_tracer_mp_trcmix_.DIR.OMP.TEAMS.2
+
+COMPILE FUNC: mod_rad_tracer_mp_trcmix_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split817.split
+   -> llvm.fabs.f64 /scratch_local/ifx0930797856Ly22pj/ifxwN7uoP.i90 (94,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0930797856Ly22pj/ifxwN7uoP.i90 (101,45)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0930797856Ly22pj/ifxwN7uoP.i90 (102,46)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0930797856Ly22pj/ifxwN7uoP.i90 (103,45)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0930797856Ly22pj/ifxwN7uoP.i90 (104,45)
+   -> llvm.pow.f64 /scratch_local/ifx0930797856Ly22pj/ifxwN7uoP.i90 (115,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0930797856Ly22pj/ifxwN7uoP.i90 (115,31)
+   -> llvm.pow.f64 /scratch_local/ifx0930797856Ly22pj/ifxwN7uoP.i90 (116,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0930797856Ly22pj/ifxwN7uoP.i90 (116,31)
+   -> llvm.pow.f64 /scratch_local/ifx0930797856Ly22pj/ifxwN7uoP.i90 (117,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0930797856Ly22pj/ifxwN7uoP.i90 (117,35)
+   -> llvm.pow.f64 /scratch_local/ifx0930797856Ly22pj/ifxwN7uoP.i90 (118,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0930797856Ly22pj/ifxwN7uoP.i90 (118,35)
+
+---- End Inlining Report ------

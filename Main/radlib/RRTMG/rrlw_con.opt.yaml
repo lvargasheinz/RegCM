@@ -1,0 +1,29 @@
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+Function:        rrlw_con._
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        rrlw_con._
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_0
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+Function:        rrlw_con._
+Args:
+  - NumInstructions: '1'
+  - String:          ' instructions in function'
+...

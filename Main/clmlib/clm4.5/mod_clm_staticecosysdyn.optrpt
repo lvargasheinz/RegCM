@@ -1,0 +1,157 @@
+Global optimization report for : mod_clm_staticecosysdyn._
+=================================================================
+
+Global optimization report for : mod_clm_staticecosysdyn_mp_ecosystemdynini_
+
+LOOP BEGIN at mod_clm_staticecosysdyn.F90 (76, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_staticecosysdyn.F90 (76, 5)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_staticecosysdyn.F90 (77, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_staticecosysdyn.F90 (77, 5)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_staticecosysdyn.F90 (78, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_staticecosysdyn.F90 (78, 5)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_staticecosysdyn.F90 (79, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_staticecosysdyn.F90 (79, 5)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_staticecosysdyn_mp_ecosystemdyn_
+
+LOOP BEGIN at mod_clm_staticecosysdyn.F90 (175, 29)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (163:9) and clm3 (145:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (164:9) and clm3 (145:9) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between (164:9) and (163:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (165:9) and clm3 (145:9) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between (165:9) and (163:9) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between (165:9) and (164:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (166:9) and clm3 (145:9) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between (166:9) and (163:9) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between (166:9) and (164:9) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between (166:9) and (165:9) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_staticecosysdyn_mp_interpmonthlyveg_
+
+LOOP BEGIN at mod_clm_staticecosysdyn.F90 (259, 10)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_staticecosysdyn.F90 (259, 36)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_staticecosysdyn_mp_readannualvegetation_
+
+LOOP BEGIN at mod_clm_staticecosysdyn.F90 (316, 5)
+
+    LOOP BEGIN at mod_clm_staticecosysdyn.F90 (325, 18)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (332:11) and (324:28) 
+        remark #15346: vector dependence: assumed FLOW dependence between (332:11) and (323:26) 
+        remark #15346: vector dependence: assumed FLOW dependence between (332:11) and (328:15) 
+        remark #15346: vector dependence: assumed FLOW dependence between (332:11) and (328:15) 
+        remark #15346: vector dependence: assumed ANTI dependence between (323:26) and (332:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between (328:15) and (324:28) 
+        remark #15346: vector dependence: assumed FLOW dependence between (328:15) and (323:26) 
+        remark #15346: vector dependence: assumed FLOW dependence between (328:15) and (328:15) 
+        remark #15346: vector dependence: assumed ANTI dependence between (328:15) and (332:11) 
+        remark #15346: vector dependence: assumed ANTI dependence between (328:15) and (328:15) 
+
+        LOOP BEGIN at mod_clm_staticecosysdyn.F90 (330, 11)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #25259: Loop optimized away using condition at line 327
+        LOOP END
+
+        LOOP BEGIN at mod_clm_staticecosysdyn.F90 (330, 11)
+        <Multiversioned v2>
+            remark #25259: Loop optimized away using condition at line 327
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_staticecosysdyn_mp_readmonthlyvegetation_
+
+LOOP BEGIN at mod_clm_staticecosysdyn.F90 (386, 5)
+
+    LOOP BEGIN at mod_clm_staticecosysdyn.F90 (398, 18)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between mlai2t (408:11) and mlai (401:15) 
+        remark #15346: vector dependence: assumed FLOW dependence between mlai2t (408:11) and mlai (401:15) 
+        remark #15346: vector dependence: assumed FLOW dependence between mlai2t (408:11) and mlai (401:15) 
+        remark #15346: vector dependence: assumed FLOW dependence between mlai2t (408:11) and (401:15) 
+        remark #15346: vector dependence: assumed FLOW dependence between mlai2t (408:11) and (401:15) 
+        remark #15346: vector dependence: assumed FLOW dependence between mlai2t (408:11) and mlai2t (401:15) 
+        remark #15346: vector dependence: assumed FLOW dependence between mlai2t (408:11) and mlai2t (401:15) 
+        remark #15346: vector dependence: assumed FLOW dependence between mlai2t (408:11) and (401:15) 
+        remark #15346: vector dependence: assumed FLOW dependence between mlai2t (408:11) and (401:15) 
+        remark #15346: vector dependence: assumed FLOW dependence between mlai2t (408:11) and msai (402:15) 
+
+        LOOP BEGIN at mod_clm_staticecosysdyn.F90 (406, 11)
+            remark #25259: Loop optimized away using condition at line 400
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_staticecosysdyn.F90 (425, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_clm_staticecosysdyn._
+
+COMPILE FUNC: mod_clm_staticecosysdyn_mp_ecosystemdynini_
+
+COMPILE FUNC: mod_clm_staticecosysdyn_mp_ecosystemdyn_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx2012275319jTM96g/ifxGYZT46.i90 (186,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx2012275319jTM96g/ifxGYZT46.i90 (188,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx2012275319jTM96g/ifxGYZT46.i90 (197,15)
+
+COMPILE FUNC: mod_clm_staticecosysdyn_mp_readmonthlyvegetation_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2012275319jTM96g/ifxGYZT46.i90 (342,14)
+   -> llvm.smin.i64 /scratch_local/ifx2012275319jTM96g/ifxGYZT46.i90 (398,18)
+
+COMPILE FUNC: mod_clm_staticecosysdyn_mp_interpmonthlyveg_
+   -> mod_clm_staticecosysdyn_mp_readmonthlyvegetation_ /scratch_local/ifx2012275319jTM96g/ifxGYZT46.i90 (247,12)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx2012275319jTM96g/ifxGYZT46.i90 (250,11)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx2012275319jTM96g/ifxGYZT46.i90 (251,11)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx2012275319jTM96g/ifxGYZT46.i90 (252,11)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx2012275319jTM96g/ifxGYZT46.i90 (254,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx2012275319jTM96g/ifxGYZT46.i90 (256,19)
+
+COMPILE FUNC: mod_clm_staticecosysdyn_mp_readannualvegetation_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2012275319jTM96g/ifxGYZT46.i90 (269,14)
+
+---- End Inlining Report ------

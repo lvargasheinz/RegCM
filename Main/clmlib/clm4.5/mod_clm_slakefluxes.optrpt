@@ -1,0 +1,206 @@
+Global optimization report for : mod_clm_slakefluxes._
+=================================================================
+
+Global optimization report for : mod_clm_slakefluxes_mp_slakefluxes_
+
+LOOP BEGIN at mod_clm_slakefluxes.F90 (488, 5)
+<Multiversioned v1>
+    remark #25399: memcopy generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_clm_slakefluxes.F90 (368, 24)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed OUTPUT dependence between fetch (369:9) and fetch (372:11) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between fetch (369:9) and fetch (374:11) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between fetch (372:11) and fetch (369:9) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between fetch (372:11) and fetch (374:11) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between fetch (374:11) and fetch (369:9) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between fetch (374:11) and fetch (372:11) 
+    remark #15346: vector dependence: assumed ANTI dependence between (381:9) and fetch (369:9) 
+    remark #15346: vector dependence: assumed ANTI dependence between (381:9) and fetch (372:11) 
+    remark #15346: vector dependence: assumed ANTI dependence between (381:9) and fetch (374:11) 
+    remark #15346: vector dependence: assumed ANTI dependence between (381:9) and z0mg (393:9) 
+LOOP END
+
+LOOP BEGIN at mod_clm_slakefluxes.F90 (484, 5)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+
+LOOP BEGIN at mod_clm_slakefluxes.F90 (488, 5)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_slakefluxes.F90 (492, 17)
+
+    LOOP BEGIN at mod_clm_slakefluxes.F90 (508, 55)
+        remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+    LOOP END
+
+    LOOP BEGIN at mod_clm_slakefluxes.F90 (669, 26)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between fncopy (670:29) and fncopy (670:29) 
+        remark #15346: vector dependence: assumed FLOW dependence between fpcopy (671:13) and fpcopy (668:11) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_slakefluxes.F90 (697, 50)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (699:9) and (679:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (699:9) and (680:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (699:9) and (697:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (699:9) and (697:20) 
+    remark #15346: vector dependence: assumed FLOW dependence between (699:9) and (697:24) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between (699:9) and (708:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (699:9) and (709:9) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between (699:9) and (709:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (699:9) and (710:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (699:9) and (710:49) 
+LOOP END
+
+LOOP BEGIN at mod_clm_slakefluxes.F90 (807, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (798:7) and (797:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (798:7) and (798:7) 
+    remark #15346: vector dependence: assumed ANTI dependence between (799:7) and (798:7) 
+    remark #15346: vector dependence: assumed ANTI dependence between (799:7) and (798:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (799:7) and (797:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (799:7) and (798:7) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between (799:7) and (798:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (799:7) and (799:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (799:7) and (799:7) 
+    remark #15346: vector dependence: assumed ANTI dependence between (800:7) and (798:7) 
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_clm_slakefluxes_mp_slakefluxes_
+   -> llvm.smax.i32 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> llvm.smax.i32 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> llvm.smax.i32 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (26,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (395,43)
+   -> llvm.pow.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (395,74)
+   -> llvm.exp.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (395,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (400,43)
+   -> llvm.pow.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (400,74)
+   -> llvm.exp.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (400,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (383,23)
+   -> llvm.pow.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (383,42)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (385,18)
+   -> llvm.sqrt.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (385,55)
+   -> llvm.fabs.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (385,55)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (387,45)
+   -> llvm.exp.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (387,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (389,45)
+   -> llvm.exp.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (389,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (425,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (441,28)
+   -> llvm.sqrt.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (471,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (477,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (523,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (524,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (524,70)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (530,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (531,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (532,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (553,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (573,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (575,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (574,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (591,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (592,43)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (599,23)
+   -> llvm.pow.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (599,57)
+   -> llvm.sqrt.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (600,19)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (620,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (621,22)
+   -> DELETE: llvm.pow.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (620,59)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (622,22)
+   -> llvm.sqrt.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (622,52)
+   -> llvm.fabs.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (622,52)
+   -> DELETE: llvm.exp.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (620,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (627,33)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (628,22)
+   -> llvm.pow.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (627,65)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (629,22)
+   -> DELETE: llvm.sqrt.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (629,52)
+   -> DELETE: llvm.fabs.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (629,52)
+   -> llvm.exp.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (627,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (632,25)
+   -> llvm.pow.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (632,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (640,20)
+   -> llvm.sqrt.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (640,54)
+   -> llvm.fabs.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (640,54)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (642,47)
+   -> llvm.exp.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (642,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (644,47)
+   -> llvm.exp.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (644,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (651,45)
+   -> llvm.pow.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (651,73)
+   -> llvm.exp.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (651,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (656,45)
+   -> llvm.pow.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (656,73)
+   -> llvm.exp.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (656,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (709,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (711,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (710,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (700,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (702,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (701,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (729,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (756,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (759,49)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (770,32)
+   -> llvm.log.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (779,38)
+   -> llvm.sin.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (782,32)
+   -> llvm.fabs.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (782,28)
+   -> llvm.sqrt.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (782,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (782,53)
+   -> llvm.pow.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (782,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0420132368j8wPpE/ifxqGndyu.i90 (782,47)
+
+COMPILE FUNC: mod_clm_slakefluxes._
+
+---- End Inlining Report ------

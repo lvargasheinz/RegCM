@@ -1,0 +1,30 @@
+Global optimization report for : mod_mkglacier._
+=================================================================
+
+Global optimization report for : mod_mkglacier_mp_mkglacier_
+
+LOOP BEGIN at mod_mkglacier.F90 (55, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_mkglacier.F90 (56, 24)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_mkglacier._
+
+COMPILE FUNC: mod_mkglacier_mp_mkglacier_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1013178542gnIaHn/ifxkbf4jN.i90 (39,14)
+   -> llvm.round.f64 /scratch_local/ifx1013178542gnIaHn/ifxkbf4jN.i90 (65,36)
+   -> llvm.smax.i32 /scratch_local/ifx1013178542gnIaHn/ifxkbf4jN.i90 (65,30)
+   -> llvm.umin.i32 /scratch_local/ifx1013178542gnIaHn/ifxkbf4jN.i90 (65,26)
+
+---- End Inlining Report ------

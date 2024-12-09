@@ -1,0 +1,160 @@
+Global optimization report for : mod_sigma._
+=================================================================
+
+Global optimization report for : mod_sigma_mp_init_sigma_
+
+LOOP BEGIN at mod_sigma.F90 (254, 9)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (252:11) and (252:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between sigma_delta (253:11) and sigma_delta (253:11) 
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+LOOP END
+
+LOOP BEGIN at mod_sigma.F90 (255, 16)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (255:16) and (255:16) 
+LOOP END
+
+LOOP BEGIN at mod_sigma.F90 (258, 9)
+
+    LOOP BEGIN at mod_sigma.F90 (269, 11)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (267:13) and (267:13) 
+        remark #15346: vector dependence: assumed FLOW dependence between (268:13) and (268:13) 
+        remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+    LOOP END
+
+    LOOP BEGIN at mod_sigma.F90 (270, 18)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (270:18) and (270:18) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_sigma.F90 (281, 49)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (281:49) and (281:49) 
+LOOP END
+
+LOOP BEGIN at mod_sigma.F90 (294, 9)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at mod_sigma.F90 (294, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between sigma_coordinate (293:11) and sigma_coordinate (293:11) 
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+LOOP END
+
+LOOP BEGIN at mod_sigma.F90 (302, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at mod_sigma.F90 (302, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sigma_mp_init_hydrostatic_
+=================================================================
+
+Global optimization report for : mod_sigma_mp_pstar_
+=================================================================
+
+Global optimization report for : mod_sigma_mp_hydrostatic_pressure_full_sigma_
+=================================================================
+
+Global optimization report for : mod_sigma_mp_hydrostatic_pressure_half_sigma_
+=================================================================
+
+Global optimization report for : mod_sigma_mp_hydrostatic_deltap_full_sigma_
+=================================================================
+
+Global optimization report for : mod_sigma_mp_init_non_hydrostatic_
+=================================================================
+
+Global optimization report for : mod_sigma_mp_non_hydrostatic_pressure_full_sigma_
+=================================================================
+
+Global optimization report for : mod_sigma_mp_non_hydrostatic_pressure_half_sigma_
+=================================================================
+
+Global optimization report for : mod_sigma_mp_non_hydrostatic_deltap_full_sigma_
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_sigma._
+
+COMPILE FUNC: mod_sigma_mp_init_sigma_
+   -> llvm.smax.i32 /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (217,9)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (217,9)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (220,15)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (225,15)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (247,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (247,34)
+   -> llvm.pow.f64 /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (247,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (247,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (248,27)
+   -> llvm.pow.f64 /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (248,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (248,19)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (262,36)
+   -> DELETE: llvm.pow.f64 /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (262,33)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (262,20)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (263,29)
+   -> llvm.pow.f64 /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (263,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (263,21)
+   -> DELETE: llvm.fabs.f64 /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (274,21)
+   -> llvm.fabs.f64 /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (274,33)
+   -> llvm.fabs.f64 /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (278,16)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (300,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (300,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (300,37)
+   -> llvm.memset.p0.i64 /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (77,49)
+   -> llvm.memset.p0.i64 /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (77,49)
+
+COMPILE FUNC: mod_sigma_mp_init_hydrostatic_
+
+COMPILE FUNC: mod_sigma_mp_pstar_
+
+COMPILE FUNC: mod_sigma_mp_hydrostatic_pressure_full_sigma_
+   -> INLINE: mod_sigma_mp_pstar_ /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (327,13)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (327,13)
+
+COMPILE FUNC: mod_sigma_mp_hydrostatic_pressure_half_sigma_
+   -> INLINE: mod_sigma_mp_pstar_ /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (337,13)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (337,13)
+
+COMPILE FUNC: mod_sigma_mp_hydrostatic_deltap_full_sigma_
+   -> INLINE: mod_sigma_mp_pstar_ /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (347,13)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (347,13)
+
+COMPILE FUNC: mod_sigma_mp_init_non_hydrostatic_
+
+COMPILE FUNC: mod_sigma_mp_non_hydrostatic_pressure_full_sigma_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (371,31)
+   -> INLINE: mod_sigma_mp_pstar_ /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (373,15)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (374,31)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (373,15)
+
+COMPILE FUNC: mod_sigma_mp_non_hydrostatic_pressure_half_sigma_
+   -> INLINE: mod_sigma_mp_pstar_ /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (385,13)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (385,13)
+
+COMPILE FUNC: mod_sigma_mp_non_hydrostatic_deltap_full_sigma_
+   -> INLINE: mod_sigma_mp_pstar_ /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (395,13)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx07225703989ZBwhL/ifxvj7kXq.i90 (395,13)
+
+---- End Inlining Report ------

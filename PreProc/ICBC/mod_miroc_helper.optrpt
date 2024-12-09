@@ -1,0 +1,44 @@
+Global optimization report for : mod_miroc_helper._
+=================================================================
+
+Global optimization report for : mod_miroc_helper_mp_find_miroc_sst_
+=================================================================
+
+Global optimization report for : mod_miroc_helper_mp_assemble_path_
+=================================================================
+
+Global optimization report for : mod_miroc_helper_mp_find_miroc_dim_
+=================================================================
+
+Global optimization report for : mod_miroc_helper_mp_find_miroc_topo_
+=================================================================
+
+Global optimization report for : mod_miroc_helper_mp_find_miroc_file_
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_miroc_helper._
+
+COMPILE FUNC: mod_miroc_helper_mp_find_miroc_sst_
+
+COMPILE FUNC: mod_miroc_helper_mp_assemble_path_
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0610581479JLLvo1/ifxICjKxZ.i90 (70,7)
+
+COMPILE FUNC: mod_miroc_helper_mp_find_miroc_dim_
+   -> mod_miroc_helper_mp_assemble_path_ /scratch_local/ifx0610581479JLLvo1/ifxICjKxZ.i90 (85,10)
+
+COMPILE FUNC: mod_miroc_helper_mp_find_miroc_topo_
+
+COMPILE FUNC: mod_miroc_helper_mp_find_miroc_file_
+   -> mod_miroc_helper_mp_assemble_path_ /scratch_local/ifx0610581479JLLvo1/ifxICjKxZ.i90 (110,16)
+   -> mod_miroc_helper_mp_assemble_path_ /scratch_local/ifx0610581479JLLvo1/ifxICjKxZ.i90 (108,16)
+   -> mod_miroc_helper_mp_assemble_path_ /scratch_local/ifx0610581479JLLvo1/ifxICjKxZ.i90 (118,16)
+   -> mod_miroc_helper_mp_assemble_path_ /scratch_local/ifx0610581479JLLvo1/ifxICjKxZ.i90 (116,16)
+
+---- End Inlining Report ------

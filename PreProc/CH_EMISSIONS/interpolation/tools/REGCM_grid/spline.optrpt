@@ -1,0 +1,1611 @@
+Global optimization report for : spline._
+=================================================================
+
+Global optimization report for : spline_mp_r8vec_order_type_
+
+LOOP BEGIN at spline.F90 (58, 3)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+
+LOOP BEGIN at spline.F90 (96, 12)
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_r8vec_bracket_
+
+LOOP BEGIN at spline.F90 (192, 15)
+    remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_r8vec_bracket3_
+
+LOOP BEGIN at spline.F90 (350, 16)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+
+LOOP BEGIN at spline.F90 (310, 16)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_bp01_
+
+LOOP BEGIN at spline.F90 (476, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at spline.F90 (474, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between bern (473:9) and bern (473:9) 
+        remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_bpab_
+
+LOOP BEGIN at spline.F90 (581, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at spline.F90 (579, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between bern (578:9) and bern (578:45) 
+        remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_r8vec_distinct_
+
+LOOP BEGIN at spline.F90 (630, 5)
+
+    LOOP BEGIN at spline.F90 (630, 5)
+        remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_r8vec_unique_count_
+
+LOOP BEGIN at spline.F90 (693, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at spline.F90 (695, 32)
+        remark #25530: Stmt at line 691 sinked after loop using last value computation
+        remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_r8vec_uniform_01_
+
+LOOP BEGIN at spline.F90 (777, 3)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (771:15) and (767:14) 
+    remark #15346: vector dependence: assumed FLOW dependence between (771:15) and (771:15) 
+    remark #15346: vector dependence: assumed FLOW dependence between (771:15) and (771:15) 
+    remark #15346: vector dependence: assumed FLOW dependence between (771:15) and (771:15) 
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_r8_swap_
+=================================================================
+
+Global optimization report for : spline_mp_r83_np_fs_
+
+LOOP BEGIN at spline.F90 (887, 3)
+<Multiversioned v1>
+    remark #25399: memcopy generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at spline.F90 (879, 17)
+    remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+LOOP END
+
+LOOP BEGIN at spline.F90 (887, 3)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at spline.F90 (893, 3)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between a (891:5) and a (890:5) 
+    remark #15346: vector dependence: assumed FLOW dependence between x (892:5) and x (892:5) 
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+LOOP END
+
+LOOP BEGIN at spline.F90 (898, 3)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between x (897:5) and x (897:5) 
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_basis_matrix_overhauser_nul_
+=================================================================
+
+Global optimization report for : spline_mp_basis_matrix_overhauser_nonuni_
+=================================================================
+
+Global optimization report for : spline_mp_basis_matrix_overhauser_nur_
+=================================================================
+
+Global optimization report for : spline_mp_basis_matrix_overhauser_uni_
+=================================================================
+
+Global optimization report for : spline_mp_basis_matrix_overhauser_uni_l_
+=================================================================
+
+Global optimization report for : spline_mp_basis_matrix_overhauser_uni_r_
+=================================================================
+
+Global optimization report for : spline_mp_basis_matrix_tmp_
+
+LOOP BEGIN at spline.F90 (1313, 3)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between tvec (1312:5) and tvec (1312:5) 
+LOOP END
+
+LOOP BEGIN at spline.F90 (1317, 19)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at spline.F90 (1317, 19)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (1317:19) and (1317:19) 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_basis_function_b_val_
+
+LOOP BEGIN at spline.F90 (192, 15)
+    remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_basis_function_beta_val_
+
+LOOP BEGIN at spline.F90 (192, 15)
+    remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_basis_matrix_b_uni_
+
+LOOP BEGIN at spline.F90 (1592, 3)
+    remark #25567: 2 loops have been collapsed
+    remark #15300: LOOP WAS VECTORIZED
+    remark #15305: vectorization support: vector length 4
+    remark #25436: Loop completely unrolled by 4
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_basis_matrix_beta_uni_
+
+LOOP BEGIN at spline.F90 (1678, 3)
+    remark #25567: 2 loops have been collapsed
+    remark #15300: LOOP WAS VECTORIZED
+    remark #15305: vectorization support: vector length 2
+    remark #25436: Loop completely unrolled by 8
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_basis_matrix_bezier_
+=================================================================
+
+Global optimization report for : spline_mp_basis_matrix_hermite_
+=================================================================
+
+Global optimization report for : spline_mp_bc_val_
+
+LOOP BEGIN at spline.F90 (476, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at spline.F90 (474, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between bern bval (473:9) and bern bval (473:9) 
+        remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+    LOOP END
+LOOP END
+
+LOOP BEGIN at spline.F90 (1886, 10)
+    remark #25045: Fused Loops: 1886,1887
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (1886:10) and (1886:10) 
+    remark #15346: vector dependence: assumed FLOW dependence between (1887:10) and (1887:10) 
+LOOP END
+
+LOOP BEGIN at spline.F90 (1887, 10)
+    remark #25046: Loop lost in Fusion
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_bez_val_
+
+LOOP BEGIN at spline.F90 (476, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at spline.F90 (474, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between bern bval (473:9) and bern bval (473:9) 
+        remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+    LOOP END
+LOOP END
+
+LOOP BEGIN at spline.F90 (1980, 13)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (1980:13) and (1980:13) 
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_bpab_approx_
+
+LOOP BEGIN at spline.F90 (2069, 10)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (2069:10) and (2069:10) 
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_chfev_
+
+LOOP BEGIN at spline.F90 (2216, 12)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (2217:25) and (2217:25) 
+    remark #15346: vector dependence: assumed FLOW dependence between (2221:25) and (2221:25) 
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_data_to_dif_
+
+LOOP BEGIN at spline.F90 (2293, 3)
+<Multiversioned v1>
+    remark #25399: memcopy generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at spline.F90 (630, 5)
+
+    LOOP BEGIN at spline.F90 (630, 5)
+        remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+    LOOP END
+LOOP END
+
+LOOP BEGIN at spline.F90 (2293, 3)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at spline.F90 (2303, 3)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at spline.F90 (2302, 5)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between diftab (2300:7) and diftab (2300:7) 
+        remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_dif_val_
+
+LOOP BEGIN at spline.F90 (2362, 3)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (2361:27) and (2361:53) 
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_least_set_old_
+
+LOOP BEGIN at spline.F90 (2508, 20)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+
+LOOP BEGIN at spline.F90 (2524, 11)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (2524:11) and (2524:11) 
+LOOP END
+
+LOOP BEGIN at spline.F90 (2528, 3)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at spline.F90 (2538, 10)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (2538:10) and (2538:10) 
+LOOP END
+
+LOOP BEGIN at spline.F90 (2546, 3)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between s (2544:11) and s (2544:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between sum2 (2545:17) and sum2 (2545:17) 
+LOOP END
+
+LOOP BEGIN at spline.F90 (2553, 3)
+    remark #15300: LOOP WAS VECTORIZED
+    remark #15305: vectorization support: vector length 2
+LOOP END
+
+LOOP BEGIN at spline.F90 (2553, 3)
+<Remainder loop for vectorization>
+LOOP END
+
+LOOP BEGIN at spline.F90 (2561, 3)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at spline.F90 (2556, 11)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (2556:11) and (2556:11) 
+LOOP END
+
+LOOP BEGIN at spline.F90 (2571, 5)
+
+    LOOP BEGIN at spline.F90 (2573, 5)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between sum2 (2572:19) and sum2 (2572:19) 
+    LOOP END
+
+    LOOP BEGIN at spline.F90 (2584, 5)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between ztab (2580:7) and ztab (2580:24) 
+        remark #15346: vector dependence: assumed FLOW dependence between s (2582:13) and s (2582:13) 
+        remark #15346: vector dependence: assumed FLOW dependence between sum2 (2583:19) and sum2 (2583:19) 
+    LOOP END
+
+    LOOP BEGIN at spline.F90 (2597, 5)
+        remark #15300: LOOP WAS VECTORIZED
+        remark #15305: vectorization support: vector length 2
+    LOOP END
+
+    LOOP BEGIN at spline.F90 (2597, 5)
+    <Remainder loop for vectorization>
+    LOOP END
+LOOP END
+
+LOOP BEGIN at spline.F90 (2610, 9)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (2610:9) and (2610:9) 
+LOOP END
+
+LOOP BEGIN at spline.F90 (2531, 11)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (2531:11) and (2531:11) 
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_least_val_old_
+
+LOOP BEGIN at spline.F90 (2689, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between skp2 and skp2 (2686:50) 
+    remark #15346: vector dependence: assumed FLOW dependence between skp2 skp1 (2686:41) and skp2 skp1 (2686:34) 
+    remark #15346: vector dependence: assumed FLOW dependence between skp2 skp1 (2686:41) and skp2 skp1 
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_least_set_
+
+LOOP BEGIN at spline.F90 (2804, 3)
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at spline.F90 (2811, 3)
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at spline.F90 (693, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at spline.F90 (695, 32)
+        remark #25530: Stmt at line 691 sinked after loop using last value computation
+        remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+    LOOP END
+LOOP END
+
+LOOP BEGIN at spline.F90 (2792, 15)
+    remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+LOOP END
+
+LOOP BEGIN at spline.F90 (2804, 3)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at spline.F90 (2805, 3)
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at spline.F90 (2805, 3)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at spline.F90 (2806, 3)
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at spline.F90 (2806, 3)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at spline.F90 (2807, 3)
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at spline.F90 (2807, 3)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at spline.F90 (2811, 3)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at spline.F90 (2812, 3)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at spline.F90 (2830, 19)
+
+    LOOP BEGIN at spline.F90 (2830, 19)
+        remark #25045: Fused Loops: 2830,2831,2832
+        remark #25583: Number of Array Refs Scalar Replaced In Loop: 4
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (2830:19) and (2830:19) 
+        remark #15346: vector dependence: assumed FLOW dependence between (2831:19) and (2831:19) 
+        remark #15346: vector dependence: assumed FLOW dependence between (2832:19) and (2832:19) 
+    LOOP END
+
+    LOOP BEGIN at spline.F90 (2831, 19)
+        remark #25046: Loop lost in Fusion
+    LOOP END
+
+    LOOP BEGIN at spline.F90 (2832, 19)
+        remark #25046: Loop lost in Fusion
+    LOOP END
+
+    LOOP BEGIN at spline.F90 (2853, 5)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_least_val_
+
+LOOP BEGIN at spline.F90 (2949, 12)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between prev2 prev and prev2 prev (2952:48) 
+    remark #15346: vector dependence: assumed FLOW dependence between prev (0:0) and prev 
+    remark #15346: vector dependence: assumed FLOW dependence between prev (0:0) and prev 
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_least_val2_
+
+LOOP BEGIN at spline.F90 (3050, 12)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between pxpm2 pxpm1 and pxpm2 pxpm1 (3055:50) 
+    remark #15346: vector dependence: assumed FLOW dependence between pxpm1 (0:0) and pxpm1 
+    remark #15346: vector dependence: assumed FLOW dependence between pxpm1 (0:0) and pxpm1 
+    remark #15346: vector dependence: assumed FLOW dependence between pxm2 pxm1 and pxm2 pxm1 (3054:48) 
+    remark #15346: vector dependence: assumed FLOW dependence between pxm1 (0:0) and pxm1 
+    remark #15346: vector dependence: assumed FLOW dependence between pxm1 (0:0) and pxm1 
+    remark #15346: vector dependence: assumed FLOW dependence between pxm1 (0:0) and pxm1 
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_parabola_val2_
+
+LOOP BEGIN at spline.F90 (3188, 3)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_pchst_
+=================================================================
+
+Global optimization report for : spline_mp_r8_uniform_01_
+=================================================================
+
+Global optimization report for : spline_mp_r83_mxv_
+
+LOOP BEGIN at spline.F90 (3371, 3)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at spline.F90 (3372, 3)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at spline.F90 (3373, 3)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_r83_uniform_
+
+LOOP BEGIN at spline.F90 (3426, 3)
+LOOP END
+
+LOOP BEGIN at spline.F90 (777, 3)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (771:15) and (767:14) 
+    remark #15346: vector dependence: assumed FLOW dependence between (771:15) and (771:15) 
+    remark #15346: vector dependence: assumed FLOW dependence between (771:15) and (771:15) 
+    remark #15346: vector dependence: assumed FLOW dependence between (771:15) and (771:15) 
+LOOP END
+
+LOOP BEGIN at spline.F90 (3426, 38)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at spline.F90 (3428, 3)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at spline.F90 (777, 3)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (771:15) and (767:14) 
+    remark #15346: vector dependence: assumed FLOW dependence between (771:15) and (771:15) 
+    remark #15346: vector dependence: assumed FLOW dependence between (771:15) and (771:15) 
+    remark #15346: vector dependence: assumed FLOW dependence between (771:15) and (771:15) 
+LOOP END
+
+LOOP BEGIN at spline.F90 (3428, 38)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at spline.F90 (3430, 3)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at spline.F90 (777, 3)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (771:15) and (767:14) 
+    remark #15346: vector dependence: assumed FLOW dependence between (771:15) and (771:15) 
+    remark #15346: vector dependence: assumed FLOW dependence between (771:15) and (771:15) 
+    remark #15346: vector dependence: assumed FLOW dependence between (771:15) and (771:15) 
+LOOP END
+
+LOOP BEGIN at spline.F90 (3430, 38)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_r8vec_even_
+
+LOOP BEGIN at spline.F90 (3487, 5)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_r8vec_indicator_
+
+LOOP BEGIN at spline.F90 (3531, 3)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_r8vec_print_
+
+LOOP BEGIN at spline.F90 (3583, 3)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_r8vec_sort_bubble_a_
+
+LOOP BEGIN at spline.F90 (3630, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at spline.F90 (3630, 5)
+        remark #25563: Load hoisted out of the loop
+        remark #25564: Store sinked out of the loop
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_spline_b_val_
+
+LOOP BEGIN at spline.F90 (192, 15)
+    remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_spline_beta_val_
+
+LOOP BEGIN at spline.F90 (192, 15)
+    remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_spline_bezier_val_
+
+LOOP BEGIN at spline.F90 (4000, 3)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at spline.F90 (476, 5)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at spline.F90 (474, 7)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between bern bernstein_val (473:9) and bern bernstein_val (473:9) 
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at spline.F90 (3995, 5)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at spline.F90 (3995, 5)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between (3996:30) and (3996:30) 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_spline_constant_val_
+
+LOOP BEGIN at spline.F90 (4066, 15)
+    remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_spline_cubic_set_
+
+LOOP BEGIN at spline.F90 (4222, 17)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+
+LOOP BEGIN at spline.F90 (4262, 3)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 4
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_spline_cubic_val_
+
+LOOP BEGIN at spline.F90 (192, 15)
+    remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_spline_cubic_val2_
+=================================================================
+
+Global optimization report for : spline_mp_spline_hermite_set_
+
+LOOP BEGIN at spline.F90 (4606, 3)
+    remark #25045: Fused Loops: 4606,4607
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at spline.F90 (4607, 3)
+    remark #25046: Loop lost in Fusion
+LOOP END
+
+LOOP BEGIN at spline.F90 (4615, 3)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 3
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_spline_hermite_val_
+
+LOOP BEGIN at spline.F90 (192, 15)
+    remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_spline_linear_int_
+
+LOOP BEGIN at spline.F90 (192, 15)
+    remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+LOOP END
+
+LOOP BEGIN at spline.F90 (192, 15)
+    remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+LOOP END
+
+LOOP BEGIN at spline.F90 (4852, 3)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (4850:23) and (4850:23) 
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_spline_linear_intset_
+
+LOOP BEGIN at spline.F90 (4928, 3)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+LOOP END
+
+LOOP BEGIN at spline.F90 (4932, 3)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+LOOP END
+
+LOOP BEGIN at spline.F90 (4940, 3)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 3
+LOOP END
+
+LOOP BEGIN at spline.F90 (4952, 3)
+    remark #25045: Fused Loops: 4952,4958
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+LOOP END
+
+LOOP BEGIN at spline.F90 (4958, 3)
+    remark #25046: Loop lost in Fusion
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_spline_linear_val_
+
+LOOP BEGIN at spline.F90 (192, 15)
+    remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_spline_overhauser_nonuni_val_
+
+LOOP BEGIN at spline.F90 (192, 15)
+    remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_spline_overhauser_uni_val_
+
+LOOP BEGIN at spline.F90 (192, 15)
+    remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_spline_overhauser_val_
+
+LOOP BEGIN at spline.F90 (5406, 5)
+<Multiversioned v1>
+    remark #25399: memcopy generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at spline.F90 (5395, 5)
+<Multiversioned v1>
+    remark #25399: memcopy generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at spline.F90 (58, 3)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+
+LOOP BEGIN at spline.F90 (100, 16)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between order (112:22) and order (100:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between order (128:22) and order (100:16) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between order (128:22) and order (112:22) 
+    remark #15346: vector dependence: assumed FLOW dependence between i (96:12) and i (109:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between i (96:12) and i (125:7) 
+LOOP END
+
+LOOP BEGIN at spline.F90 (192, 15)
+    remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+LOOP END
+
+LOOP BEGIN at spline.F90 (5399, 5)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+
+LOOP BEGIN at spline.F90 (5406, 5)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at spline.F90 (5395, 5)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_spline_pchip_set_
+
+LOOP BEGIN at spline.F90 (5514, 15)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+
+LOOP BEGIN at spline.F90 (5570, 12)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_spline_pchip_val_
+
+LOOP BEGIN at spline.F90 (5753, 15)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+
+LOOP BEGIN at spline.F90 (5783, 13)
+
+    LOOP BEGIN at spline.F90 (5792, 18)
+        remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+    LOOP END
+
+    LOOP BEGIN at spline.F90 (5855, 24)
+        remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+    LOOP END
+
+    LOOP BEGIN at spline.F90 (5875, 11)
+        remark #25530: Stmt at line 5879 sinked after loop using last value computation
+        remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_spline_quadratic_val_
+
+LOOP BEGIN at spline.F90 (192, 15)
+    remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+LOOP END
+=================================================================
+
+Global optimization report for : spline_mp_timestamp_
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.for.cpystr.i64.i64.i64
+
+DEAD STATIC FUNC: llvm.memcpy.p0.p0.i64
+
+COMPILE FUNC: spline_mp_bc_val_
+   -> llvm.smax.i32 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1814,12)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1814,12)
+   -> INLINE: spline_mp_bp01_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1884,8)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (473,37)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (475,19)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1884,8)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1884,8)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1884,8)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (473,37)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1814,12)
+
+COMPILE FUNC: spline_mp_bp01_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (473,37)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (475,19)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (473,37)
+
+COMPILE FUNC: spline_mp_bez_val_
+   -> llvm.smax.i32 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1892,28)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1892,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1976,11)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1976,23)
+   -> INLINE: spline_mp_bp01_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1978,8)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (473,37)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (475,19)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1978,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1978,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1978,8)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1892,28)
+
+COMPILE FUNC: spline_mp_bpab_approx_
+   -> llvm.smax.i32 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1985,12)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1985,12)
+   -> spline_mp_bpab_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2065,8)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1985,12)
+
+COMPILE FUNC: spline_mp_bpab_
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (576,19)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (576,43)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (578,23)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (578,45)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (578,21)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (578,71)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (580,19)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (580,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (572,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (572,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (573,17)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (573,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (578,21)
+
+COMPILE FUNC: spline_mp_least_set_old_
+   -> llvm.smax.i32 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2367,12)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2367,12)
+   -> llvm.sqrt.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2532,11)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2545,36)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2556,19)
+   -> DELETE: llvm.sqrt.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2557,11)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2580,24)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2583,38)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2610,17)
+   -> DELETE: llvm.sqrt.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2611,9)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2545,36)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2580,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2583,38)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2367,12)
+   -> llvm.smax.i32 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2571,5)
+
+COMPILE FUNC: spline_mp_least_set_
+   -> llvm.smax.i32 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2698,12)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2698,12)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2698,12)
+   -> llvm.smax.i32 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2698,12)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2698,12)
+   -> INLINE: spline_mp_r8vec_unique_count_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2777,8)
+      -> DELETE: llvm.fabs.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (695,12)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2851,17)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2777,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2777,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2777,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2777,8)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2698,12)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2698,12)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2698,12)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2804,3)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2805,3)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2806,3)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2807,3)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2811,3)
+
+COMPILE FUNC: spline_mp_r8vec_unique_count_
+   -> llvm.fabs.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (695,12)
+
+COMPILE FUNC: spline_mp_spline_cubic_set_
+   -> llvm.smax.i32 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4077,12)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4077,12)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4239,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4239,34)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4240,16)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4241,16)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4257,16)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4257,36)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4258,16)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4258,36)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4259,18)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4260,16)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4261,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4271,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4271,45)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4272,18)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4273,16)
+   -> spline_mp_r83_np_fs_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4298,10)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4257,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4257,36)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4258,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4258,36)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4260,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4077,12)
+
+COMPILE FUNC: spline_mp_r83_np_fs_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (897,14)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (887,3)
+
+COMPILE FUNC: spline_mp_spline_linear_intset_
+   -> llvm.smax.i32 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4870,12)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4870,12)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4928,29)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4933,21)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4933,9)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4934,9)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4941,21)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4941,9)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4943,9)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4944,21)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4944,9)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4945,9)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4952,28)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4952,16)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4953,27)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4958,46)
+   -> spline_mp_r83_np_fs_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4963,8)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4928,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4933,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4933,9)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4934,9)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4941,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4941,9)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4943,9)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4944,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4944,9)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4945,9)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4952,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4952,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4953,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4958,46)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4870,12)
+
+COMPILE FUNC: spline_mp_spline_overhauser_val_
+   -> llvm.smax.i32 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5267,12)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5267,12)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5267,12)
+   -> INLINE: spline_mp_r8vec_order_type_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5351,8)
+   -> INLINE: spline_mp_r8vec_bracket_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5377,8)
+   -> spline_mp_parabola_val2_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5382,10)
+   -> spline_mp_parabola_val2_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5388,10)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5400,11)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5401,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5400,9)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5402,11)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5351,8)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5351,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5351,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5377,8)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5377,8)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5377,8)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5377,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5377,8)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5267,12)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5267,12)
+   -> llvm.smax.i32 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (58,3)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90
+
+COMPILE FUNC: spline_mp_r8vec_order_type_
+   -> llvm.smax.i32 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (58,3)
+
+COMPILE FUNC: spline_mp_r8vec_bracket_
+
+COMPILE FUNC: spline_mp_parabola_val2_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3182,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3182,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3183,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3183,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3183,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3184,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3186,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3186,47)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3186,38)
+
+COMPILE FUNC: spline_mp_timestamp_
+   -> DELETE: llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (6080,7)
+   -> DELETE: llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (6082,7)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (6090,9)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (6092,9)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (6092,9)
+   -> DELETE: llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (6087,7)
+   -> DELETE: llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (6077,5)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (6087,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (6087,7)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (6082,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (6082,7)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (6080,7)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (6080,7)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (6077,5)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (6077,5)
+
+COMPILE FUNC: spline._
+
+COMPILE FUNC: spline_mp_r8vec_bracket3_
+
+COMPILE FUNC: spline_mp_r8vec_distinct_
+
+COMPILE FUNC: spline_mp_r8vec_uniform_01_
+
+COMPILE FUNC: spline_mp_r8_swap_
+
+COMPILE FUNC: spline_mp_basis_matrix_overhauser_nul_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (940,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (940,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (941,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (943,21)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (944,41)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (944,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (945,29)
+
+COMPILE FUNC: spline_mp_basis_matrix_overhauser_nonuni_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (992,21)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (993,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (994,39)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (995,35)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (997,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (998,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (998,19)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (999,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1000,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (999,19)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1000,50)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1001,35)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1003,21)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1004,21)
+
+COMPILE FUNC: spline_mp_basis_matrix_overhauser_nur_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1054,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1054,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1055,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1057,21)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1058,40)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1058,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1059,28)
+
+COMPILE FUNC: spline_mp_basis_matrix_overhauser_uni_
+
+COMPILE FUNC: spline_mp_basis_matrix_overhauser_uni_l_
+
+COMPILE FUNC: spline_mp_basis_matrix_overhauser_uni_r_
+
+COMPILE FUNC: spline_mp_basis_matrix_tmp_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1304,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1298,23)
+
+COMPILE FUNC: spline_mp_basis_function_b_val_
+   -> INLINE: spline_mp_r8vec_bracket_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1391,8)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1395,9)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1395,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1412,14)
+   -> llvm.powi.f64.i32 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1412,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1407,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1407,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1407,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1402,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1402,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1402,14)
+   -> llvm.powi.f64.i32 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1400,13)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1391,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1391,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1391,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1391,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1391,8)
+
+COMPILE FUNC: spline_mp_basis_function_beta_val_
+   -> INLINE: spline_mp_r8vec_bracket_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1500,8)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1504,9)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1504,34)
+   -> llvm.powi.f64.i32 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1544,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1544,35)
+   -> llvm.powi.f64.i32 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1544,48)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1534,31)
+   -> llvm.powi.f64.i32 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1536,67)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1536,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1538,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1540,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1540,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1515,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1516,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1517,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1528,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1528,14)
+   -> llvm.powi.f64.i32 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1510,23)
+   -> llvm.powi.f64.i32 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1549,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1548,19)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1500,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1500,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1500,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1500,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1500,8)
+
+COMPILE FUNC: spline_mp_basis_matrix_b_uni_
+
+COMPILE FUNC: spline_mp_basis_matrix_beta_uni_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1653,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1654,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1659,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1664,39)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1664,61)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1669,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1673,15)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1673,13)
+
+COMPILE FUNC: spline_mp_basis_matrix_bezier_
+
+COMPILE FUNC: spline_mp_basis_matrix_hermite_
+
+COMPILE FUNC: spline_mp_chfev_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2201,13)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2202,12)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2203,12)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2204,11)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2205,10)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2212,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2212,24)
+
+COMPILE FUNC: spline_mp_data_to_dif_
+   -> INLINE: spline_mp_r8vec_distinct_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2284,14)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2300,21)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2300,51)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2284,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2284,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2300,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2300,51)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2293,3)
+   -> DELETE: llvm.smin.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90
+
+COMPILE FUNC: spline_mp_dif_val_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2361,31)
+
+COMPILE FUNC: spline_mp_least_val_old_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2686,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2678,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2683,26)
+
+COMPILE FUNC: spline_mp_least_val_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2950,21)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (2952,21)
+
+COMPILE FUNC: spline_mp_least_val2_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3051,21)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3052,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3054,21)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3055,22)
+
+COMPILE FUNC: spline_mp_pchst_
+
+COMPILE FUNC: spline_mp_r8_uniform_01_
+
+COMPILE FUNC: spline_mp_r83_mxv_
+
+COMPILE FUNC: spline_mp_r83_uniform_
+   -> llvm.smax.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3426,3)
+   -> INLINE: spline_mp_r8vec_uniform_01_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3426,8)
+   -> llvm.smax.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3428,3)
+   -> INLINE: spline_mp_r8vec_uniform_01_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3428,8)
+   -> llvm.smax.i64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3430,3)
+   -> INLINE: spline_mp_r8vec_uniform_01_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3430,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3426,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3426,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3426,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3428,8)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3428,8)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3428,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3430,8)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3430,8)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3430,8)
+
+COMPILE FUNC: spline_mp_r8vec_even_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3484,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3479,24)
+
+COMPILE FUNC: spline_mp_r8vec_indicator_
+
+COMPILE FUNC: spline_mp_r8vec_print_
+
+COMPILE FUNC: spline_mp_r8vec_sort_bubble_a_
+   -> INLINE: spline_mp_r8_swap_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3632,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3632,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3632,14)
+
+COMPILE FUNC: spline_mp_spline_b_val_
+   -> INLINE: spline_mp_r8vec_bracket_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3701,8)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3706,9)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3706,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3712,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3712,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3712,12)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3720,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3726,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3726,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3726,12)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3736,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3736,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3736,12)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3751,21)
+   -> llvm.powi.f64.i32 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3746,11)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3701,8)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3701,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3701,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3701,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3701,8)
+
+COMPILE FUNC: spline_mp_spline_beta_val_
+   -> INLINE: spline_mp_r8vec_bracket_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3830,8)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3835,9)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3835,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3837,15)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3837,13)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3847,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3847,22)
+   -> llvm.powi.f64.i32 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3847,47)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3852,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3858,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3860,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3860,51)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3862,15)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3862,9)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3867,15)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3867,9)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3872,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3872,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3872,12)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3885,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3887,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3887,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3887,12)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3899,21)
+   -> llvm.powi.f64.i32 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3894,21)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3830,8)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3830,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3830,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3830,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3830,8)
+
+COMPILE FUNC: spline_mp_spline_bezier_val_
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3986,16)
+   -> DELETE: llvm.smin.i32 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3987,16)
+   -> INLINE: spline_mp_bp01_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3993,10)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (473,37)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (475,19)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (475,19)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3993,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3993,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3993,10)
+   -> llvm.smax.i32 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3986,16)
+   -> llvm.smin.i32 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3987,16)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3986,16)
+   -> DELETE: llvm.smin.i32 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (3987,16)
+
+COMPILE FUNC: spline_mp_spline_constant_val_
+
+COMPILE FUNC: spline_mp_spline_cubic_val_
+   -> INLINE: spline_mp_r8vec_bracket_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4387,8)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4395,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4396,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4398,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4398,48)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4398,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4397,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4395,17)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4400,13)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4401,12)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4403,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4403,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4402,17)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4405,31)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4387,8)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4387,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4387,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4387,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4387,8)
+
+COMPILE FUNC: spline_mp_spline_cubic_val2_
+   -> spline_mp_r8vec_bracket3_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4503,8)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4512,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4513,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4515,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4515,48)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4515,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4514,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4512,27)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4517,13)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4518,11)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4520,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4520,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4519,16)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4522,31)
+
+COMPILE FUNC: spline_mp_spline_hermite_set_
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4611,17)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4613,16)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4614,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4611,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4613,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4614,26)
+
+COMPILE FUNC: spline_mp_spline_hermite_val_
+   -> INLINE: spline_mp_r8vec_bracket_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4713,8)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4719,48)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4719,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4721,30)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4713,8)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4713,8)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4713,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4713,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4713,8)
+
+COMPILE FUNC: spline_mp_spline_linear_int_
+   -> INLINE: spline_mp_r8vec_bracket_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4799,8)
+   -> INLINE: spline_mp_r8vec_bracket_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4804,8)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4810,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4812,12)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4813,12)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4815,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4817,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4832,12)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4834,10)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4835,10)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4837,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4839,32)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4843,14)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4845,12)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4846,12)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4848,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4854,12)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4856,10)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4857,10)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4859,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4861,32)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4799,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4799,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4799,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4799,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4799,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4804,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4804,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4804,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4804,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4804,8)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4843,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4845,12)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4846,12)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4848,30)
+   -> llvm.smax.i32 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (4852,3)
+
+COMPILE FUNC: spline_mp_spline_linear_val_
+   -> INLINE: spline_mp_r8vec_bracket_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5033,8)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5037,13)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5037,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5039,27)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5033,8)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5033,8)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5033,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5033,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5033,8)
+
+COMPILE FUNC: spline_mp_spline_overhauser_nonuni_val_
+   -> INLINE: spline_mp_r8vec_bracket_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5116,8)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5154,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5155,20)
+   -> llvm.sqrt.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5154,11)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5157,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5158,20)
+   -> llvm.sqrt.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5157,11)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5160,21)
+   -> INLINE: spline_mp_basis_matrix_overhauser_nur_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5162,10)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1054,40)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1054,31)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1055,31)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1057,21)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1058,40)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1058,31)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1059,28)
+   -> spline_mp_basis_matrix_tmp_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5164,10)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5136,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5137,20)
+   -> llvm.sqrt.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5136,11)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5139,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5140,20)
+   -> llvm.sqrt.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5139,11)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5142,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5143,20)
+   -> llvm.sqrt.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5142,11)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5145,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5146,21)
+   -> INLINE: spline_mp_basis_matrix_overhauser_nonuni_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5148,10)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (992,21)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (993,28)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (994,39)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (995,35)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (997,31)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (998,33)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (998,19)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (999,31)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1000,16)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (999,19)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1000,50)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1001,35)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1003,21)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (1004,21)
+   -> spline_mp_basis_matrix_tmp_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5150,10)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5122,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5123,20)
+   -> llvm.sqrt.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5122,11)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5125,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5126,20)
+   -> llvm.sqrt.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5125,11)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5128,21)
+   -> INLINE: spline_mp_basis_matrix_overhauser_nul_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5130,10)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (940,41)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (940,31)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (941,31)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (943,21)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (944,41)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (944,31)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (945,29)
+   -> spline_mp_basis_matrix_tmp_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5132,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5116,8)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5116,8)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5116,8)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5116,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5116,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5162,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5162,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5148,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5148,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5148,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5130,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5130,10)
+
+COMPILE FUNC: spline_mp_spline_overhauser_uni_val_
+   -> INLINE: spline_mp_r8vec_bracket_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5240,8)
+   -> INLINE: spline_mp_basis_matrix_overhauser_uni_r_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5258,10)
+   -> spline_mp_basis_matrix_tmp_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5260,10)
+   -> INLINE: spline_mp_basis_matrix_overhauser_uni_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5252,10)
+   -> spline_mp_basis_matrix_tmp_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5254,10)
+   -> INLINE: spline_mp_basis_matrix_overhauser_uni_l_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5246,10)
+   -> spline_mp_basis_matrix_tmp_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5248,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5240,8)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5240,8)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5240,8)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5240,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5240,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5258,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5252,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5246,10)
+
+COMPILE FUNC: spline_mp_spline_pchip_set_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5526,12)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5540,12)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5546,10)
+   -> INLINE: spline_mp_pchst_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5550,8)
+   -> llvm.fabs.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5560,11)
+   -> llvm.fabs.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5560,26)
+   -> INLINE: spline_mp_pchst_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5556,13)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5575,16)
+   -> INLINE: spline_mp_pchst_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5582,12)
+   -> INLINE: spline_mp_pchst_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5594,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5605,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5606,14)
+   -> llvm.fabs.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5607,20)
+   -> llvm.fabs.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5607,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5611,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5621,10)
+   -> INLINE: spline_mp_pchst_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5624,8)
+   -> llvm.fabs.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5632,10)
+   -> llvm.fabs.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5632,25)
+   -> INLINE: spline_mp_pchst_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5626,13)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5550,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5550,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5556,13)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5556,13)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5582,12)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5582,12)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5594,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5594,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5624,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5624,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5626,13)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5626,13)
+
+COMPILE FUNC: spline_mp_spline_pchip_val_
+   -> spline_mp_chfev_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5813,12)
+
+COMPILE FUNC: spline_mp_spline_quadratic_val_
+   -> INLINE: spline_mp_r8vec_bracket_ /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5985,8)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (6013,12)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (6013,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (6015,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (6015,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (6015,12)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (6016,42)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (6018,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (6018,42)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (6018,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (6019,27)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5985,8)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5985,8)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5985,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5985,8)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1880214517XShWxh/ifxERmhMP.i90 (5985,8)
+
+---- End Inlining Report ------

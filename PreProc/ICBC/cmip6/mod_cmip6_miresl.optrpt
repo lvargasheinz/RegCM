@@ -1,0 +1,104 @@
+Global optimization report for : mod_cmip6_miresl._
+=================================================================
+
+Global optimization report for : mod_cmip6_miresl_mp_read_hcoord_miresl_
+=================================================================
+
+Global optimization report for : mod_cmip6_miresl_mp_read_hcoord_sst_miresl_
+=================================================================
+
+Global optimization report for : mod_cmip6_miresl_mp_read_vcoord_miresl_
+=================================================================
+
+Global optimization report for : mod_cmip6_miresl_mp_read_3d_miresl_
+=================================================================
+
+Global optimization report for : mod_cmip6_miresl_mp_read_2d_miresl_
+=================================================================
+
+Global optimization report for : mod_cmip6_miresl_mp_read_fx_miresl_
+=================================================================
+
+Global optimization report for : mod_cmip6_miresl_mp_read_sst_miresl_
+
+LOOP BEGIN at mod_cmip6_miresl.F90 (483, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cmip6_miresl.F90 (483, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cmip6_miresl.F90 (484, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cmip6_miresl.F90 (484, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cmip6_miresl.F90 (486, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cmip6_miresl.F90 (486, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_cmip6_miresl._
+
+COMPILE FUNC: mod_cmip6_miresl_mp_read_hcoord_miresl_
+
+COMPILE FUNC: mod_cmip6_miresl_mp_read_hcoord_sst_miresl_
+
+COMPILE FUNC: mod_cmip6_miresl_mp_read_vcoord_miresl_
+
+COMPILE FUNC: mod_cmip6_miresl_mp_read_3d_miresl_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1396932291cB1oIJ/ifxR7bR2P.i90 (134,26)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1396932291cB1oIJ/ifxR7bR2P.i90 (156,11)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1396932291cB1oIJ/ifxR7bR2P.i90 (156,11)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1396932291cB1oIJ/ifxR7bR2P.i90 (158,11)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx1396932291cB1oIJ/ifxR7bR2P.i90 (158,11)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1396932291cB1oIJ/ifxR7bR2P.i90 (171,9)
+   -> mod_cmip6_miresl_mp_read_hcoord_miresl_ /scratch_local/ifx1396932291cB1oIJ/ifxR7bR2P.i90 (172,14)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1396932291cB1oIJ/ifxR7bR2P.i90 (175,9)
+   -> mod_cmip6_miresl_mp_read_vcoord_miresl_ /scratch_local/ifx1396932291cB1oIJ/ifxR7bR2P.i90 (176,14)
+   -> llvm.round.f64 /scratch_local/ifx1396932291cB1oIJ/ifxR7bR2P.i90 (221,14)
+   -> mod_cmip6_miresl_mp_read_3d_miresl_ /scratch_local/ifx1396932291cB1oIJ/ifxR7bR2P.i90 (234,14)
+
+COMPILE FUNC: mod_cmip6_miresl_mp_read_2d_miresl_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1396932291cB1oIJ/ifxR7bR2P.i90 (249,26)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1396932291cB1oIJ/ifxR7bR2P.i90 (271,11)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1396932291cB1oIJ/ifxR7bR2P.i90 (271,11)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1396932291cB1oIJ/ifxR7bR2P.i90 (273,11)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx1396932291cB1oIJ/ifxR7bR2P.i90 (273,11)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1396932291cB1oIJ/ifxR7bR2P.i90 (286,9)
+   -> mod_cmip6_miresl_mp_read_hcoord_miresl_ /scratch_local/ifx1396932291cB1oIJ/ifxR7bR2P.i90 (287,14)
+   -> llvm.round.f64 /scratch_local/ifx1396932291cB1oIJ/ifxR7bR2P.i90 (330,14)
+   -> mod_cmip6_miresl_mp_read_2d_miresl_ /scratch_local/ifx1396932291cB1oIJ/ifxR7bR2P.i90 (343,14)
+
+COMPILE FUNC: mod_cmip6_miresl_mp_read_fx_miresl_
+   -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx1396932291cB1oIJ/ifxR7bR2P.i90 (361,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1396932291cB1oIJ/ifxR7bR2P.i90 (368,7)
+   -> mod_cmip6_miresl_mp_read_hcoord_miresl_ /scratch_local/ifx1396932291cB1oIJ/ifxR7bR2P.i90 (369,12)
+
+COMPILE FUNC: mod_cmip6_miresl_mp_read_sst_miresl_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1396932291cB1oIJ/ifxR7bR2P.i90 (424,9)
+   -> mod_cmip6_miresl_mp_read_hcoord_sst_miresl_ /scratch_local/ifx1396932291cB1oIJ/ifxR7bR2P.i90 (425,14)
+   -> mod_cmip6_miresl_mp_read_sst_miresl_ /scratch_local/ifx1396932291cB1oIJ/ifxR7bR2P.i90 (471,14)
+
+---- End Inlining Report ------

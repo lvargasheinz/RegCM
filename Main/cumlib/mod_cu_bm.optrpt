@@ -1,0 +1,794 @@
+Global optimization report for : mod_cu_bm._
+=================================================================
+
+Global optimization report for : mod_cu_bm_mp_allocate_mod_cu_bm_
+=================================================================
+
+Global optimization report for : mod_cu_bm_mp_bmpara_
+
+LOOP BEGIN at mod_cu_bm.F90 (222, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cu_bm.F90 (228, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cu_bm.F90 (232, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cu_bm.F90 (234, 9)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cu_bm.F90 (246, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cu_bm.F90 (248, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cu_bm.F90 (251, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cu_bm.F90 (252, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_cu_bm.F90 (257, 9)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between t (253:11) and (253:26) 
+            remark #15346: vector dependence: assumed FLOW dependence between q (254:11) and (253:26) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between q (254:11) and t (253:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between q (254:11) and (254:26) 
+            remark #15346: vector dependence: assumed ANTI dependence between (254:26) and t (253:11) 
+            remark #15346: vector dependence: assumed ANTI dependence between (255:35) and t (253:11) 
+            remark #15346: vector dependence: assumed ANTI dependence between (255:35) and q (254:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between ape (255:11) and (253:26) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between ape (255:11) and t (253:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between ape (255:11) and (254:26) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cu_bm.F90 (261, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cu_bm.F90 (262, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_cu_bm.F90 (263, 33)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between ml (263:57) and t (263:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between (263:57) and (263:33) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cu_bm.F90 (268, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cu_bm.F90 (277, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed OUTPUT dependence between thesp (270:9) and cu_kbot (269:9) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between thbt (271:9) and cu_kbot (269:9) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between thbt (271:9) and thesp (270:9) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between psp (272:9) and cu_kbot (269:9) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between psp (272:9) and thesp (270:9) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between psp (272:9) and thbt (271:9) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between tref (273:9) and cu_kbot (269:9) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between tref (273:9) and thesp (270:9) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between tref (273:9) and thbt (271:9) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between tref (273:9) and psp (272:9) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cu_bm.F90 (283, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cu_bm.F90 (284, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_cu_bm.F90 (285, 31)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between tthbt (286:13) and (285:38) 
+            remark #15346: vector dependence: assumed FLOW dependence between tthbt (286:13) and (285:20) 
+            remark #15346: vector dependence: assumed FLOW dependence between tthbt (286:13) and t (286:13) 
+            remark #15346: vector dependence: assumed FLOW dependence between tthbt (286:13) and ape (286:13) 
+            remark #15346: vector dependence: assumed ANTI dependence between q (287:22) and tthbt (286:13) 
+            remark #15346: vector dependence: assumed ANTI dependence between (287:22) and tthbt (286:13) 
+            remark #15346: vector dependence: assumed ANTI dependence between t (289:13) and tthbt (286:13) 
+            remark #15346: vector dependence: assumed FLOW dependence between tthes (292:13) and (285:38) 
+            remark #15346: vector dependence: assumed FLOW dependence between tthes (292:13) and (285:20) 
+            remark #15346: vector dependence: assumed FLOW dependence between tthes (292:13) and t (286:13) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cu_bm.F90 (308, 9)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 308 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cu_bm.F90 (307, 7)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_cu_bm.F90 (310, 42)
+        <Multiversioned v2>
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+
+        LOOP BEGIN at mod_cu_bm.F90 (310, 42)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cu_bm.F90 (314, 5)
+<Predicate Optimized v2>
+
+    LOOP BEGIN at mod_cu_bm.F90 (313, 7)
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cu_bm.F90 (320, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cu_bm.F90 (320, 7)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_cu_bm.F90 (322, 40)
+        <Multiversioned v2>
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+
+        LOOP BEGIN at mod_cu_bm.F90 (322, 40)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #25563: Load hoisted out of the loop
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cu_bm.F90 (334, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+
+    LOOP BEGIN at mod_cu_bm.F90 (336, 7)
+        remark #15319: Loop was not vectorized: novector directive used
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cu_bm.F90 (334, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cu_bm.F90 (336, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cu_bm.F90 (342, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cu_bm.F90 (342, 9)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_cu_bm.F90 (346, 9)
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_cu_bm.F90 (350, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_cu_bm.F90 (351, 18)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between ifbuoy (352:42) and cu_kbot (351:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between ifbuoy (352:42) and thesp (352:13) 
+            remark #15346: vector dependence: assumed FLOW dependence between ifbuoy (352:42) and ths (352:13) 
+            remark #15346: vector dependence: assumed ANTI dependence between ths (353:13) and ifbuoy (352:42) 
+            remark #15346: vector dependence: assumed ANTI dependence between thesp (353:13) and ifbuoy (352:42) 
+            remark #15346: vector dependence: assumed FLOW dependence between cu_ktop (354:37) and cu_kbot (351:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between cu_ktop (354:37) and thesp (352:13) 
+            remark #15346: vector dependence: assumed FLOW dependence between cu_ktop (354:37) and ths (352:13) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between cu_ktop (354:37) and ifbuoy (352:42) 
+            remark #15346: vector dependence: assumed FLOW dependence between cu_ktop (354:37) and ths (353:13) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cu_bm.F90 (363, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+
+    LOOP BEGIN at mod_cu_bm.F90 (371, 7)
+        remark #15319: Loop was not vectorized: novector directive used
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cu_bm.F90 (363, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cu_bm.F90 (371, 7)
+        remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cu_bm.F90 (377, 7)
+    remark #25423: Invariant If condition at line 377 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cu_bm.F90 (378, 9)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_cu_bm.F90 (381, 9)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_cu_bm.F90 (378, 9)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_cu_bm.F90 (381, 9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cu_bm.F90 (389, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cu_bm.F90 (390, 27)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between cu_ktop (391:11) and cu_kbot (390:9) 
+        remark #15346: vector dependence: assumed ANTI dependence between cu_kbot (393:9) and cu_ktop (391:11) 
+        remark #15346: vector dependence: assumed ANTI dependence between z0 (393:9) and cu_ktop (391:11) 
+        remark #15346: vector dependence: assumed ANTI dependence between z0 (393:9) and cu_ktop (391:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between cldhgt (393:9) and cu_ktop (390:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between cldhgt (393:9) and cu_kbot (390:9) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between cldhgt (393:9) and cu_ktop (391:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between cldhgt (393:9) and cu_kbot (393:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between cldhgt (393:9) and z0 (393:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between cldhgt (393:9) and z0 (393:9) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cu_bm.F90 (430, 7)
+
+    LOOP BEGIN at mod_cu_bm.F90 (906, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_cu_bm.F90 (906, 9)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between tguess and tguess (914:27) 
+            remark #15346: vector dependence: assumed FLOW dependence between tguess t1 (917:21) and tguess t1 (907:51) 
+            remark #15346: vector dependence: assumed FLOW dependence between tguess t1 (917:21) and tguess t1 (909:32) 
+            remark #15346: vector dependence: assumed FLOW dependence between tguess t1 (917:21) and tguess t1 (909:18) 
+            remark #15346: vector dependence: assumed FLOW dependence between tguess t1 (917:21) and tguess t1 
+            remark #15346: vector dependence: assumed FLOW dependence between tguess t1 (917:21) and tguess t1 (914:27) 
+            remark #15346: vector dependence: assumed FLOW dependence between tguess t1 (917:21) and tguess t1 (917:21) 
+            remark #15346: vector dependence: assumed FLOW dependence between tguess t1 (917:21) and tguess t1 
+            remark #15346: vector dependence: assumed FLOW dependence between fo (909:37) and fo (914:39) 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_cu_bm.F90 (471, 7)
+        remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+    LOOP END
+
+    LOOP BEGIN at mod_cu_bm.F90 (476, 9)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+
+    LOOP BEGIN at mod_cu_bm.F90 (487, 22)
+    <Predicate Optimized v2>
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between psk (501:11) and (499:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between psk (501:11) and q (507:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between apesk (502:11) and (499:9) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between apesk (502:11) and psk (501:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between apesk (502:11) and q (507:11) 
+        remark #15346: vector dependence: assumed ANTI dependence between trefk (503:11) and psk (501:11) 
+        remark #15346: vector dependence: assumed ANTI dependence between trefk (503:11) and apesk (502:11) 
+        remark #15346: vector dependence: assumed ANTI dependence between apek (503:11) and psk (501:11) 
+        remark #15346: vector dependence: assumed ANTI dependence between apek (503:11) and apesk (502:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between thsk (503:11) and (499:9) 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_bm.F90 (487, 22)
+    <Predicate Optimized v1>
+        remark #25423: Invariant If condition at line 487 hoisted out of this loop
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between psk (501:11) and pk 
+        remark #15346: vector dependence: assumed FLOW dependence between psk (501:11) and (499:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between psk (501:11) and q (507:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between apesk (502:11) and pk 
+        remark #15346: vector dependence: assumed FLOW dependence between apesk (502:11) and (499:9) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between apesk (502:11) and psk (501:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between apesk (502:11) and q (507:11) 
+        remark #15346: vector dependence: assumed ANTI dependence between trefk (503:11) and psk (501:11) 
+        remark #15346: vector dependence: assumed ANTI dependence between trefk (503:11) and apesk (502:11) 
+        remark #15346: vector dependence: assumed ANTI dependence between apek (503:11) and psk (501:11) 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_bm.F90 (516, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_cu_bm.F90 (516, 9)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between sumde (518:52) and sumde (518:52) 
+            remark #15346: vector dependence: assumed FLOW dependence between sumdp (519:25) and sumdp (519:25) 
+        LOOP END
+
+        LOOP BEGIN at mod_cu_bm.F90 (527, 9)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between lqm (528:22) and lqm (528:22) 
+        LOOP END
+
+        LOOP BEGIN at mod_cu_bm.F90 (533, 19)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at mod_cu_bm.F90 (542, 9)
+        <Multiversioned v2>
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+
+        LOOP BEGIN at mod_cu_bm.F90 (542, 9)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_cu_bm.F90 (553, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+
+    LOOP BEGIN at mod_cu_bm.F90 (566, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between dentpy (561:55) and dentpy (561:55) 
+        remark #15346: vector dependence: assumed FLOW dependence between avrgt (562:31) and avrgt (562:31) 
+        remark #15346: vector dependence: assumed FLOW dependence between preck (563:30) and preck (563:30) 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_bm.F90 (610, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_bm.F90 (615, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_bm.F90 (573, 26)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cu_bm.F90 (629, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cu_bm.F90 (630, 33)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between khshal (633:29) and khshal (633:29) 
+        remark #15346: vector dependence: assumed FLOW dependence between ishal (634:13) and cldhgt (630:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between ishal (634:13) and cu_kbot (630:26) 
+        remark #15346: vector dependence: assumed FLOW dependence between ishal (634:13) and cu_ktop (630:26) 
+        remark #15346: vector dependence: assumed FLOW dependence between jshal (635:13) and cldhgt (630:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between jshal (635:13) and cu_kbot (630:26) 
+        remark #15346: vector dependence: assumed FLOW dependence between jshal (635:13) and cu_ktop (630:26) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between jshal (635:13) and ishal (634:13) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cu_bm.F90 (649, 7)
+
+    LOOP BEGIN at mod_cu_bm.F90 (661, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between tk (650:9) and t (650:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between trefk (651:9) and t (650:9) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between trefk (651:9) and tk (650:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between trefk (651:9) and t (651:9) 
+        remark #15346: vector dependence: assumed ANTI dependence between t (651:9) and tk (650:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between qk (652:9) and t (650:9) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between qk (652:9) and tk (650:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between qk (652:9) and t (651:9) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between qk (652:9) and trefk (651:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between qk (652:9) and q (652:9) 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_bm.F90 (669, 9)
+    <Predicate Optimized v1>
+        remark #25423: Invariant If condition at line 669 hoisted out of this loop
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_cu_bm.F90 (671, 22)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between kdp (674:15) and pk (670:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between kdp (674:15) and pdp (670:11) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between kdp (674:15) and kdp (676:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between kdp (676:15) and pk (670:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between kdp (676:15) and pdp (670:11) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between kdp (676:15) and kdp (674:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between pflag (670:19) and pflag (671:22) 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_cu_bm.F90 (695, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between ltpk (694:24) and ltpk (694:24) 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_bm.F90 (704, 9)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between lshu (703:22) and lshu (703:22) 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_bm.F90 (712, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+
+    LOOP BEGIN at mod_cu_bm.F90 (717, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between ltsh (716:22) and ltsh (716:22) 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_bm.F90 (745, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between trefk (743:9) and pk (743:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between trefk (743:9) and pk (743:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between trefk (743:9) and trefk (743:42) 
+        remark #15346: vector dependence: assumed FLOW dependence between trefk (743:9) and apek (743:42) 
+        remark #15346: vector dependence: assumed FLOW dependence between trefk (743:9) and apek (743:23) 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_bm.F90 (754, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between sumdt (752:41) and sumdt (752:41) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumdp (753:23) and sumdp (753:23) 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_bm.F90 (762, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_bm.F90 (782, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between psum (775:28) and psum (775:28) 
+        remark #15346: vector dependence: assumed FLOW dependence between qsum (776:29) and qsum (776:29) 
+        remark #15346: vector dependence: assumed FLOW dependence between otsum (778:30) and otsum (778:30) 
+        remark #15346: vector dependence: assumed FLOW dependence between potsum (779:36) and potsum (779:36) 
+        remark #15346: vector dependence: assumed FLOW dependence between qotsum (780:37) and qotsum (780:37) 
+        remark #15346: vector dependence: assumed FLOW dependence between dst (781:45) and dst (781:45) 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_bm.F90 (831, 19)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between thvref (835:9) and fpk (828:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between thvref (835:9) and qk (830:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between thvref (835:9) and qsatk (831:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between thvref (835:9) and trefk (835:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between thvref (835:9) and apek (835:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between qrefk (836:9) and fpk (828:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between qrefk (836:9) and qk (830:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between qrefk (836:9) and qsatk (831:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between qrefk (836:9) and trefk (835:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between qrefk (836:9) and apek (835:9) 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_bm.F90 (843, 21)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+        remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+    LOOP END
+
+    LOOP BEGIN at mod_cu_bm.F90 (864, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cu_bm.F90 (872, 7)
+    remark #25423: Invariant If condition at line 872 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cu_bm.F90 (873, 9)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_cu_bm.F90 (876, 9)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_cu_bm.F90 (873, 9)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_cu_bm.F90 (876, 9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_cu_bmbmpara_mp_tpfc_
+
+LOOP BEGIN at mod_cu_bm.F90 (906, 9)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between tguess t1 (917:21) and tguess t1 
+    remark #15346: vector dependence: assumed FLOW dependence between tguess t1 (917:21) and tguess t1 (907:51) 
+    remark #15346: vector dependence: assumed FLOW dependence between tguess t1 (917:21) and tguess t1 (909:32) 
+    remark #15346: vector dependence: assumed FLOW dependence between tguess t1 (917:21) and tguess t1 (909:18) 
+    remark #15346: vector dependence: assumed FLOW dependence between tguess t1 (917:21) and tguess t1 (914:27) 
+    remark #15346: vector dependence: assumed FLOW dependence between tguess t1 (917:21) and tguess t1 (917:21) 
+    remark #15346: vector dependence: assumed FLOW dependence between tguess and tguess (914:27) 
+    remark #15346: vector dependence: assumed FLOW dependence between fo (909:37) and fo (914:39) 
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_cu_bm._
+
+COMPILE FUNC: mod_cu_bm_mp_allocate_mod_cu_bm_
+
+COMPILE FUNC: mod_cu_bmbmpara_mp_tpfc_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (900,37)
+   -> llvm.exp.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (900,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (901,28)
+   -> llvm.exp.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (902,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (907,39)
+   -> llvm.exp.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (907,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (908,30)
+   -> llvm.exp.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (909,19)
+   -> llvm.fabs.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (910,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (914,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (914,37)
+
+COMPILE FUNC: mod_cu_bm_mp_bmpara_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (217,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (233,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (255,31)
+   -> llvm.pow.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (255,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (295,31)
+   -> llvm.pow.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (295,47)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (287,43)
+   -> llvm.log.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (288,45)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (288,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (290,52)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (291,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (290,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (291,59)
+   -> llvm.exp.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (292,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (343,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (343,47)
+   -> llvm.exp.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (343,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (344,32)
+   -> llvm.exp.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (345,42)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (365,23)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (365,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (366,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (366,50)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (367,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (368,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (368,50)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (369,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (370,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (370,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (396,50)
+   -> INLINE: mod_cu_bmbmpara_mp_tpfc_ /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (437,23)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (900,37)
+      -> llvm.exp.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (900,26)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (901,28)
+      -> llvm.exp.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (902,20)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (907,39)
+      -> llvm.exp.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (907,28)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (908,30)
+      -> llvm.exp.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (909,19)
+      -> llvm.fabs.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (910,16)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (914,25)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (914,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (441,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (462,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (466,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (466,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (475,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (475,23)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (489,21)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (489,39)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (489,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (489,58)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (491,21)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (491,39)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (491,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (491,58)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (502,29)
+   -> DELETE: llvm.pow.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (502,40)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (504,44)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (505,23)
+   -> DELETE: llvm.exp.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (504,33)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (517,21)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (518,21)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (517,20)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (521,24)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (544,35)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (547,46)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (548,23)
+   -> DELETE: llvm.exp.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (547,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (552,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (558,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (559,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (560,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (561,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (570,47)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (568,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (590,36)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (589,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (593,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (597,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (602,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (602,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (657,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (660,19)
+   -> llvm.fabs.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (668,17)
+   -> llvm.fabs.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (670,19)
+   -> llvm.smax.i32 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (680,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (710,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (710,42)
+   -> llvm.exp.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (710,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (711,36)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (729,43)
+   -> llvm.log.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (730,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (730,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (732,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (733,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (732,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (733,48)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (734,19)
+   -> llvm.pow.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (734,30)
+   -> llvm.fabs.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (736,12)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (740,15)
+   -> llvm.smin.i32 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (742,15)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (743,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (743,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (752,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (777,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (781,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (811,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (828,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (830,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (835,39)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (842,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (862,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (863,25)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (437,23)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (437,23)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (437,23)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (437,23)
+   -> llvm.smax.i32 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (476,9)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (365,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (365,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (366,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (366,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (367,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (368,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (368,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (369,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (370,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (370,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (365,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (365,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (366,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (366,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (367,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (368,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (368,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (369,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (370,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (370,50)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (489,21)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (489,39)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (489,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (491,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (491,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (491,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (502,29)
+   -> llvm.pow.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (502,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (504,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (505,23)
+   -> llvm.exp.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (504,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (502,29)
+   -> llvm.pow.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (502,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (504,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (505,23)
+   -> llvm.exp.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (504,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (517,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (518,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (517,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (521,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (544,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (547,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (548,23)
+   -> llvm.exp.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (547,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (544,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (547,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (548,23)
+   -> llvm.exp.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (547,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (842,19)
+   -> llvm.umax.i1 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (322,40)
+   -> llvm.smax.i32 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (542,9)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (544,11)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (543,11)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (543,11)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (543,11)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (544,11)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (543,11)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (543,26)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (543,11)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (544,11)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (543,26)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (547,11)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (543,11)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (547,11)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (544,11)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (542,9)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (543,11)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (543,11)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (543,26)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (544,11)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (545,11)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (547,11)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (547,11)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (542,9)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (543,11)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (543,11)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (543,26)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (544,11)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (545,11)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (546,11)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (547,11)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (547,35)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90 (547,11)
+   -> llvm.smax.i64 /scratch_local/ifx0287332940Ie0S3k/ifxCrxgwl.i90
+
+---- End Inlining Report ------

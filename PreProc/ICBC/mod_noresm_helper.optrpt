@@ -1,0 +1,42 @@
+Global optimization report for : mod_noresm_helper._
+=================================================================
+
+Global optimization report for : mod_noresm_helper_mp_find_noresm_sst_
+=================================================================
+
+Global optimization report for : mod_noresm_helper_mp_assemble_path_
+=================================================================
+
+Global optimization report for : mod_noresm_helper_mp_find_noresm_dim_
+=================================================================
+
+Global optimization report for : mod_noresm_helper_mp_find_noresm_topo_
+=================================================================
+
+Global optimization report for : mod_noresm_helper_mp_find_noresm_file_
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_noresm_helper._
+
+COMPILE FUNC: mod_noresm_helper_mp_find_noresm_sst_
+
+COMPILE FUNC: mod_noresm_helper_mp_assemble_path_
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1098457126v62iKB/ifx86kNEN.i90 (77,7)
+
+COMPILE FUNC: mod_noresm_helper_mp_find_noresm_dim_
+   -> mod_noresm_helper_mp_assemble_path_ /scratch_local/ifx1098457126v62iKB/ifx86kNEN.i90 (92,10)
+
+COMPILE FUNC: mod_noresm_helper_mp_find_noresm_topo_
+
+COMPILE FUNC: mod_noresm_helper_mp_find_noresm_file_
+   -> mod_noresm_helper_mp_assemble_path_ /scratch_local/ifx1098457126v62iKB/ifx86kNEN.i90 (144,12)
+   -> mod_noresm_helper_mp_assemble_path_ /scratch_local/ifx1098457126v62iKB/ifx86kNEN.i90 (142,12)
+
+---- End Inlining Report ------

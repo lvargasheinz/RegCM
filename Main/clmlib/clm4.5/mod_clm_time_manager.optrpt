@@ -1,0 +1,72 @@
+Global optimization report for : mod_clm_time_manager._
+=================================================================
+
+Global optimization report for : mod_clm_time_manager_mp_get_start_date_
+=================================================================
+
+Global optimization report for : mod_clm_time_manager_mp_get_driver_start_ymd_
+=================================================================
+
+Global optimization report for : mod_clm_time_manager_mp_get_curr_calday_
+=================================================================
+
+Global optimization report for : mod_clm_time_manager_mp_get_curr_yearpoint_
+=================================================================
+
+Global optimization report for : mod_clm_time_manager_mp_get_calday_
+=================================================================
+
+Global optimization report for : mod_clm_time_manager_mp_is_end_curr_day_
+=================================================================
+
+Global optimization report for : mod_clm_time_manager_mp_is_end_curr_month_
+=================================================================
+
+Global optimization report for : mod_clm_time_manager_mp_is_end_curr_year_
+=================================================================
+
+Global optimization report for : mod_clm_time_manager_mp_is_middle_curr_year_
+=================================================================
+
+Global optimization report for : mod_clm_time_manager_mp_is_restart_
+=================================================================
+
+Global optimization report for : mod_clm_time_manager_mp_getdatetime_
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_clm_time_manager._
+
+COMPILE FUNC: mod_clm_time_manager_mp_get_start_date_
+
+COMPILE FUNC: mod_clm_time_manager_mp_get_driver_start_ymd_
+
+COMPILE FUNC: mod_clm_time_manager_mp_get_curr_calday_
+
+COMPILE FUNC: mod_clm_time_manager_mp_get_curr_yearpoint_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0333050483y6v8oE/ifxhPoIfn.i90 (83,22)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0333050483y6v8oE/ifxhPoIfn.i90 (83,22)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx0333050483y6v8oE/ifxhPoIfn.i90 (93,5)
+
+COMPILE FUNC: mod_clm_time_manager_mp_get_calday_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0333050483y6v8oE/ifxhPoIfn.i90 (101,22)
+
+COMPILE FUNC: mod_clm_time_manager_mp_is_end_curr_day_
+
+COMPILE FUNC: mod_clm_time_manager_mp_is_end_curr_month_
+
+COMPILE FUNC: mod_clm_time_manager_mp_is_end_curr_year_
+
+COMPILE FUNC: mod_clm_time_manager_mp_is_middle_curr_year_
+
+COMPILE FUNC: mod_clm_time_manager_mp_is_restart_
+
+COMPILE FUNC: mod_clm_time_manager_mp_getdatetime_
+
+---- End Inlining Report ------

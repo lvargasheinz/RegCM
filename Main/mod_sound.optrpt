@@ -1,0 +1,1254 @@
+Global optimization report for : mod_sound._
+=================================================================
+
+Global optimization report for : mod_sound_mp_allocate_mod_sound_
+=================================================================
+
+Global optimization report for : mod_sound_mp_init_sound_
+
+LOOP BEGIN at mod_sound.F90 (139, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_sound.F90 (144, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_sound.F90 (153, 18)
+    remark #25423: Invariant If condition at line 153 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_sound.F90 (153, 18)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (153:18) and (153:18) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_sound.F90 (158, 16)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_sound.F90 (158, 16)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_sound.F90 (158, 16)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between (158:16) and (158:16) 
+            remark #15346: vector dependence: assumed FLOW dependence between (158:16) and (158:16) 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_
+
+LOOP BEGIN at mod_sound.F90 (555, 13)
+    remark #25567: 2 loops have been collapsed
+    remark #25408: memset generated
+LOOP END
+
+LOOP BEGIN at mod_sound.F90 (261, 15)
+
+    LOOP BEGIN at mod_sound.F90 (273, 7)
+    LOOP END
+
+    LOOP BEGIN at mod_sound.F90 (438, 7)
+    LOOP END
+
+    LOOP BEGIN at mod_sound.F90 (504, 7)
+    LOOP END
+
+    LOOP BEGIN at mod_sound.F90 (543, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_sound.F90 (547, 13)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between atot (544:27) and atot (544:27) 
+            remark #15346: vector dependence: assumed FLOW dependence between rhontot (546:33) and rhontot (546:33) 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_sound.F90 (558, 15)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_sound.F90 (558, 15)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_sound.F90 (563, 17)
+                remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                LOOP BEGIN at mod_sound.F90 (565, 19)
+                    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+                LOOP END
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_sound.F90 (618, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_sound.F90 (618, 11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_sound.F90 (621, 11)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_sound.F90 (624, 11)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_sound.F90 (629, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_sound.F90 (629, 11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_sound.F90 (632, 11)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_sound.F90 (635, 11)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_sound.F90 (640, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_sound.F90 (640, 11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_sound.F90 (645, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_sound.F90 (645, 11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_sound.F90 (659, 9)
+    <Predicate Optimized v2>
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_sound.F90 (660, 11)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_sound.F90 (669, 11)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between sigdot (661:13) and (661:35) 
+                remark #15346: vector dependence: assumed FLOW dependence between sigdot (661:13) and (662:35) 
+                remark #15346: vector dependence: assumed FLOW dependence between sigdot (661:13) and atm0 (662:49) 
+                remark #15346: vector dependence: assumed FLOW dependence between sigdot (661:13) and twt (661:29) 
+                remark #15346: vector dependence: assumed FLOW dependence between sigdot (661:13) and ucrs (661:29) 
+                remark #15346: vector dependence: assumed FLOW dependence between sigdot (661:13) and twt (663:53) 
+                remark #15346: vector dependence: assumed FLOW dependence between sigdot (661:13) and ucrs (663:53) 
+                remark #15346: vector dependence: assumed FLOW dependence between sigdot (661:13) and dpsdxm (661:29) 
+                remark #15346: vector dependence: assumed FLOW dependence between sigdot (661:13) and vcrs (663:41) 
+                remark #15346: vector dependence: assumed FLOW dependence between sigdot (661:13) and vcrs (665:53) 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_sound.F90 (679, 16)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_sound.F90 (690, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_sound.F90 (691, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_sound.F90 (693, 24)
+                remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_sound.F90 (751, 37)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_sound.F90 (751, 37)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_sound.F90 (751, 37)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_sound.F90 (756, 37)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_sound.F90 (756, 37)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_sound.F90 (756, 37)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_sound.F90 (757, 37)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_sound.F90 (757, 37)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_sound.F90 (757, 37)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_soundsound_mp_cpmf_
+=================================================================
+
+Global optimization report for : mod_soundsound_mp_inrange_
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.11.split17411.split
+
+LOOP BEGIN at mod_sound.F90 (230, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (230:5) and (231:29) 
+    remark #15346: vector dependence: assumed FLOW dependence between (230:5) and (231:7) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.TEAMS.2.split17420
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.20.split17424.split
+
+LOOP BEGIN at mod_sound.F90 (233, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (233:5) and (234:28) 
+    remark #15346: vector dependence: assumed FLOW dependence between (233:5) and (234:41) 
+    remark #15346: vector dependence: assumed FLOW dependence between (233:5) and (234:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (233:5) and (235:28) 
+    remark #15346: vector dependence: assumed FLOW dependence between (233:5) and (235:41) 
+    remark #15346: vector dependence: assumed FLOW dependence between (233:5) and (235:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (233:5) and (234:28) 
+    remark #15346: vector dependence: assumed FLOW dependence between (233:5) and (234:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (233:5) and (235:28) 
+    remark #15346: vector dependence: assumed FLOW dependence between (233:5) and (235:7) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.TEAMS.8.split17436
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.29.split17440.split
+
+LOOP BEGIN at mod_sound.F90 (237, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (237:5) and (238:37) 
+    remark #15346: vector dependence: assumed FLOW dependence between (237:5) and (238:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (237:5) and (239:37) 
+    remark #15346: vector dependence: assumed FLOW dependence between (237:5) and (239:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (237:5) and (238:37) 
+    remark #15346: vector dependence: assumed FLOW dependence between (237:5) and (238:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (237:5) and (239:37) 
+    remark #15346: vector dependence: assumed FLOW dependence between (237:5) and (239:7) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.TEAMS.17.split17453
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.38.split17457.split
+
+LOOP BEGIN at mod_sound.F90 (241, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (241:5) and (242:33) 
+    remark #15346: vector dependence: assumed FLOW dependence between (241:5) and (242:49) 
+    remark #15346: vector dependence: assumed FLOW dependence between (241:5) and (242:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (241:5) and (242:33) 
+    remark #15346: vector dependence: assumed FLOW dependence between (241:5) and (242:7) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.TEAMS.26.split17469
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.47.split17473.split
+
+LOOP BEGIN at mod_sound.F90 (244, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (244:5) and (245:29) 
+    remark #15346: vector dependence: assumed FLOW dependence between (244:5) and (245:41) 
+    remark #15346: vector dependence: assumed FLOW dependence between (244:5) and (245:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (244:5) and (245:29) 
+    remark #15346: vector dependence: assumed FLOW dependence between (244:5) and (245:7) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.TEAMS.35.split17485
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.56.split17489.split
+
+LOOP BEGIN at mod_sound.F90 (247, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (247:5) and (248:38) 
+    remark #15346: vector dependence: assumed FLOW dependence between (247:5) and (248:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (247:5) and (248:38) 
+    remark #15346: vector dependence: assumed FLOW dependence between (247:5) and (248:7) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.TEAMS.44.split17502
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.65.split17506.split
+
+LOOP BEGIN at mod_sound.F90 (250, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (250:5) and (251:28) 
+    remark #15346: vector dependence: assumed FLOW dependence between (250:5) and (251:39) 
+    remark #15346: vector dependence: assumed FLOW dependence between (250:5) and (251:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (250:5) and (251:28) 
+    remark #15346: vector dependence: assumed FLOW dependence between (250:5) and (251:7) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.TEAMS.53.split17518
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.71.split17522.split
+
+LOOP BEGIN at mod_sound.F90 (253, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (253:5) and (254:37) 
+    remark #15346: vector dependence: assumed FLOW dependence between (253:5) and (254:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (253:5) and (254:37) 
+    remark #15346: vector dependence: assumed FLOW dependence between (253:5) and (254:7) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.TEAMS.62.split17535
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.88.split17539.split
+
+LOOP BEGIN at mod_sound.F90 (269, 9)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (269:9) and (270:33) 
+    remark #15346: vector dependence: assumed FLOW dependence between (269:9) and (270:50) 
+    remark #15346: vector dependence: assumed FLOW dependence between (269:9) and (271:33) 
+    remark #15346: vector dependence: assumed FLOW dependence between (269:9) and (271:50) 
+    remark #15346: vector dependence: assumed FLOW dependence between (269:9) and (270:11) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.TEAMS.82.split17551
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.100.split17555.split
+
+LOOP BEGIN at mod_sound.F90 (280, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (280:7) and (288:38) 
+    remark #15346: vector dependence: assumed FLOW dependence between (280:7) and (288:58) 
+    remark #15346: vector dependence: assumed FLOW dependence between (280:7) and (289:38) 
+    remark #15346: vector dependence: assumed FLOW dependence between (280:7) and (289:58) 
+    remark #15346: vector dependence: assumed FLOW dependence between (280:7) and (290:38) 
+    remark #15346: vector dependence: assumed FLOW dependence between (280:7) and (290:56) 
+    remark #15346: vector dependence: assumed FLOW dependence between (280:7) and (291:38) 
+    remark #15346: vector dependence: assumed FLOW dependence between (280:7) and (291:56) 
+    remark #15346: vector dependence: assumed FLOW dependence between (280:7) and (293:51) 
+    remark #15346: vector dependence: assumed FLOW dependence between (280:7) and (300:33) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.TEAMS.91.split17569
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.106.split17573.split
+
+LOOP BEGIN at mod_sound.F90 (312, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (312:7) and (313:30) 
+    remark #15346: vector dependence: assumed FLOW dependence between (312:7) and (313:46) 
+    remark #15346: vector dependence: assumed FLOW dependence between (312:7) and (313:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (312:7) and (314:30) 
+    remark #15346: vector dependence: assumed FLOW dependence between (312:7) and (314:46) 
+    remark #15346: vector dependence: assumed FLOW dependence between (312:7) and (314:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (312:7) and (313:30) 
+    remark #15346: vector dependence: assumed FLOW dependence between (312:7) and (313:46) 
+    remark #15346: vector dependence: assumed FLOW dependence between (312:7) and (313:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (312:7) and (314:30) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.TEAMS.97.split17585
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.126.split17589.split
+
+LOOP BEGIN at mod_sound.F90 (333, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (333:7) and (334:26) 
+    remark #15346: vector dependence: assumed FLOW dependence between (333:7) and (334:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (333:7) and (334:26) 
+    remark #15346: vector dependence: assumed FLOW dependence between (333:7) and (334:9) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.TEAMS.117.split17601
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.135.split17605.split
+
+LOOP BEGIN at mod_sound.F90 (339, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (339:7) and (341:27) 
+    remark #15346: vector dependence: assumed FLOW dependence between (339:7) and (341:48) 
+    remark #15346: vector dependence: assumed FLOW dependence between (339:7) and (342:27) 
+    remark #15346: vector dependence: assumed FLOW dependence between (339:7) and (342:48) 
+    remark #15346: vector dependence: assumed FLOW dependence between (339:7) and (343:29) 
+    remark #15346: vector dependence: assumed FLOW dependence between (339:7) and (343:47) 
+    remark #15346: vector dependence: assumed FLOW dependence between (339:7) and (344:27) 
+    remark #15346: vector dependence: assumed FLOW dependence between (339:7) and (344:48) 
+    remark #15346: vector dependence: assumed FLOW dependence between (339:7) and (345:27) 
+    remark #15346: vector dependence: assumed FLOW dependence between (339:7) and (345:48) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.TEAMS.123.split17617
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.141.split17621.split
+
+LOOP BEGIN at mod_sound.F90 (351, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (351:7) and (352:36) 
+    remark #15346: vector dependence: assumed FLOW dependence between (351:7) and (352:63) 
+    remark #15346: vector dependence: assumed FLOW dependence between (351:7) and (352:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (351:7) and (353:36) 
+    remark #15346: vector dependence: assumed FLOW dependence between (351:7) and (353:53) 
+    remark #15346: vector dependence: assumed FLOW dependence between (351:7) and (354:42) 
+    remark #15346: vector dependence: assumed FLOW dependence between (351:7) and (353:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (351:7) and (355:36) 
+    remark #15346: vector dependence: assumed FLOW dependence between (351:7) and (355:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (351:7) and (357:28) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.TEAMS.132.split17632
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.150.split17636.split
+
+LOOP BEGIN at mod_sound.F90 (393, 9)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (393:9) and (398:40) 
+    remark #15346: vector dependence: assumed FLOW dependence between (393:9) and (398:55) 
+    remark #15346: vector dependence: assumed FLOW dependence between (393:9) and (399:40) 
+    remark #15346: vector dependence: assumed FLOW dependence between (393:9) and (399:57) 
+    remark #15346: vector dependence: assumed FLOW dependence between (393:9) and (399:68) 
+    remark #15346: vector dependence: assumed FLOW dependence between (393:9) and (398:13) 
+    remark #15346: vector dependence: assumed FLOW dependence between (393:9) and (400:39) 
+    remark #15346: vector dependence: assumed FLOW dependence between (393:9) and (401:39) 
+    remark #15346: vector dependence: assumed FLOW dependence between (393:9) and (402:39) 
+    remark #15346: vector dependence: assumed FLOW dependence between (393:9) and (403:39) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.TEAMS.144.split17651
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.162.split17655.split
+
+LOOP BEGIN at mod_sound.F90 (445, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (445:7) and (446:24) 
+    remark #15346: vector dependence: assumed FLOW dependence between (445:7) and (446:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (445:7) and (447:24) 
+    remark #15346: vector dependence: assumed FLOW dependence between (445:7) and (447:9) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.TEAMS.153.split17665
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.171.split17669.split
+
+LOOP BEGIN at mod_sound.F90 (449, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (449:7) and (454:59) 
+    remark #15346: vector dependence: assumed FLOW dependence between (449:7) and (455:53) 
+    remark #15346: vector dependence: assumed FLOW dependence between (449:7) and (455:32) 
+    remark #15346: vector dependence: assumed FLOW dependence between (449:7) and (456:53) 
+    remark #15346: vector dependence: assumed FLOW dependence between (449:7) and (456:32) 
+    remark #15346: vector dependence: assumed FLOW dependence between (449:7) and (457:53) 
+    remark #15346: vector dependence: assumed FLOW dependence between (449:7) and (457:32) 
+    remark #15346: vector dependence: assumed FLOW dependence between (449:7) and (458:53) 
+    remark #15346: vector dependence: assumed FLOW dependence between (449:7) and (458:32) 
+    remark #15346: vector dependence: assumed FLOW dependence between (449:7) and (459:32) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.TEAMS.159.split17683
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.177.split17687.split
+
+LOOP BEGIN at mod_sound.F90 (476, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (476:7) and (477:26) 
+    remark #15346: vector dependence: assumed FLOW dependence between (476:7) and (477:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (476:7) and (483:31) 
+    remark #15346: vector dependence: assumed FLOW dependence between (476:7) and (483:43) 
+    remark #15346: vector dependence: assumed FLOW dependence between (476:7) and (484:39) 
+    remark #15346: vector dependence: assumed FLOW dependence between (476:7) and (484:39) 
+    remark #15346: vector dependence: assumed FLOW dependence between (476:7) and (484:25) 
+    remark #15346: vector dependence: assumed FLOW dependence between (476:7) and (485:25) 
+    remark #15346: vector dependence: assumed FLOW dependence between (476:7) and (483:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (476:7) and (477:26) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.TEAMS.168.split17700
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.186.split17704.split
+
+LOOP BEGIN at mod_sound.F90 (492, 9)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (492:9) and (497:21) 
+    remark #15346: vector dependence: assumed FLOW dependence between (492:9) and (497:31) 
+    remark #15346: vector dependence: assumed FLOW dependence between (492:9) and (497:42) 
+    remark #15346: vector dependence: assumed FLOW dependence between (492:9) and (498:27) 
+    remark #15346: vector dependence: assumed FLOW dependence between (492:9) and (498:13) 
+    remark #15346: vector dependence: assumed FLOW dependence between (492:9) and (499:40) 
+    remark #15346: vector dependence: assumed FLOW dependence between (492:9) and (499:40) 
+    remark #15346: vector dependence: assumed FLOW dependence between (492:9) and (499:27) 
+    remark #15346: vector dependence: assumed FLOW dependence between (492:9) and (499:13) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.TEAMS.180.split17714
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.195.split17718.split
+
+LOOP BEGIN at mod_sound.F90 (508, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (508:7) and (509:9) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.TEAMS.189.split17727
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.224.split17731.split
+
+LOOP BEGIN at mod_sound.F90 (604, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (604:7) and (605:25) 
+    remark #15346: vector dependence: assumed FLOW dependence between (604:7) and (605:9) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.TEAMS.215.split17740
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.230.split17744.split
+
+LOOP BEGIN at mod_sound.F90 (610, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (610:7) and (611:27) 
+    remark #15346: vector dependence: assumed FLOW dependence between (610:7) and (611:41) 
+    remark #15346: vector dependence: assumed FLOW dependence between (610:7) and (611:52) 
+    remark #15346: vector dependence: assumed FLOW dependence between (610:7) and (611:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (610:7) and (611:27) 
+    remark #15346: vector dependence: assumed FLOW dependence between (610:7) and (611:41) 
+    remark #15346: vector dependence: assumed FLOW dependence between (610:7) and (611:52) 
+    remark #15346: vector dependence: assumed FLOW dependence between (610:7) and (611:9) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.TEAMS.221.split17756
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.239.split17760.split
+
+LOOP BEGIN at mod_sound.F90 (651, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (651:7) and (652:28) 
+    remark #15346: vector dependence: assumed FLOW dependence between (651:7) and (652:44) 
+    remark #15346: vector dependence: assumed FLOW dependence between (651:7) and (653:28) 
+    remark #15346: vector dependence: assumed FLOW dependence between (651:7) and (653:46) 
+    remark #15346: vector dependence: assumed FLOW dependence between (651:7) and (652:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (651:7) and (654:28) 
+    remark #15346: vector dependence: assumed FLOW dependence between (651:7) and (654:44) 
+    remark #15346: vector dependence: assumed FLOW dependence between (651:7) and (655:28) 
+    remark #15346: vector dependence: assumed FLOW dependence between (651:7) and (655:46) 
+    remark #15346: vector dependence: assumed FLOW dependence between (651:7) and (654:9) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.TEAMS.233.split17772
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.248.split17776.split
+
+LOOP BEGIN at mod_sound.F90 (708, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (708:7) and (715:21) 
+    remark #15346: vector dependence: assumed FLOW dependence between (708:7) and (716:36) 
+    remark #15346: vector dependence: assumed FLOW dependence between (708:7) and (716:53) 
+    remark #15346: vector dependence: assumed FLOW dependence between (708:7) and (717:42) 
+    remark #15346: vector dependence: assumed FLOW dependence between (708:7) and (717:50) 
+    remark #15346: vector dependence: assumed FLOW dependence between (708:7) and (720:44) 
+    remark #15346: vector dependence: assumed FLOW dependence between (708:7) and (720:62) 
+    remark #15346: vector dependence: assumed FLOW dependence between (708:7) and (719:35) 
+    remark #15346: vector dependence: assumed FLOW dependence between (708:7) and (719:13) 
+    remark #15346: vector dependence: assumed FLOW dependence between (708:7) and (722:55) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.TEAMS.242.split17791
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.260.split17795.split
+
+LOOP BEGIN at mod_sound.F90 (741, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (741:5) and (742:27) 
+    remark #15346: vector dependence: assumed FLOW dependence between (741:5) and (742:46) 
+    remark #15346: vector dependence: assumed FLOW dependence between (741:5) and (742:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (741:5) and (743:27) 
+    remark #15346: vector dependence: assumed FLOW dependence between (741:5) and (743:46) 
+    remark #15346: vector dependence: assumed FLOW dependence between (741:5) and (743:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (741:5) and (742:46) 
+    remark #15346: vector dependence: assumed FLOW dependence between (741:5) and (742:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (741:5) and (743:46) 
+    remark #15346: vector dependence: assumed FLOW dependence between (741:5) and (743:7) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.TEAMS.251.split17807
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.266.split17811.split
+
+LOOP BEGIN at mod_sound.F90 (747, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (747:5) and (748:28) 
+    remark #15346: vector dependence: assumed FLOW dependence between (747:5) and (748:44) 
+    remark #15346: vector dependence: assumed FLOW dependence between (747:5) and (748:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (747:5) and (748:44) 
+    remark #15346: vector dependence: assumed FLOW dependence between (747:5) and (748:7) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.TEAMS.257.split17823
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.275.split17827.split
+
+LOOP BEGIN at mod_sound.F90 (752, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (752:5) and (753:27) 
+    remark #15346: vector dependence: assumed FLOW dependence between (752:5) and (753:43) 
+    remark #15346: vector dependence: assumed FLOW dependence between (752:5) and (753:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (752:5) and (753:43) 
+    remark #15346: vector dependence: assumed FLOW dependence between (752:5) and (753:7) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.TEAMS.269.split17839
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.201.split17843.split
+
+LOOP BEGIN at mod_sound.F90 (516, 9)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (516:9) and (521:22) 
+    remark #15346: vector dependence: assumed FLOW dependence between (516:9) and (521:35) 
+    remark #15346: vector dependence: assumed FLOW dependence between (516:9) and (522:44) 
+    remark #15346: vector dependence: assumed FLOW dependence between (516:9) and (522:32) 
+    remark #15346: vector dependence: assumed FLOW dependence between (516:9) and (522:13) 
+    remark #15346: vector dependence: assumed FLOW dependence between (516:9) and (523:35) 
+    remark #15346: vector dependence: assumed FLOW dependence between (516:9) and (523:33) 
+    remark #15346: vector dependence: assumed FLOW dependence between (516:9) and (523:33) 
+    remark #15346: vector dependence: assumed FLOW dependence between (516:9) and (523:13) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.TEAMS.212.split17853
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.209.split17857.split
+
+LOOP BEGIN at mod_sound.F90 (769, 12)
+<Predicate Optimized v2>
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_sound.F90 (769, 12)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_sound.F90 (769, 12)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between (593:41) and (593:41) 
+            remark #15346: vector dependence: assumed FLOW dependence between wpval (593:17) and estore_g (593:43) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_sound.F90 (769, 12)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 769 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_sound.F90 (769, 12)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_sound.F90 (769, 12)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between (593:41) and (593:41) 
+            remark #15346: vector dependence: assumed FLOW dependence between wpval (593:17) and estore_g (593:43) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_sound.F90 (769, 12)
+<Predicate Optimized v2>
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_sound.F90 (769, 12)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_sound.F90 (769, 12)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between (593:41) and (593:41) 
+            remark #15346: vector dependence: assumed FLOW dependence between wpval (593:17) and estore_g (593:43) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_sound.F90 (769, 12)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 769 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_sound.F90 (769, 12)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_sound.F90 (769, 12)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between (593:41) and (593:41) 
+            remark #15346: vector dependence: assumed FLOW dependence between wpval (593:17) and estore_g (593:43) 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.TEAMS.204.split17872
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.111.split17876.split
+
+LOOP BEGIN at mod_sound.F90 (319, 9)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (319:9) and (320:49) 
+    remark #15346: vector dependence: assumed FLOW dependence between (319:9) and (320:33) 
+    remark #15346: vector dependence: assumed FLOW dependence between (319:9) and (320:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (319:9) and (320:49) 
+    remark #15346: vector dependence: assumed FLOW dependence between (319:9) and (320:33) 
+    remark #15346: vector dependence: assumed FLOW dependence between (319:9) and (320:11) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.TEAMS.114.split17889
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.76.split17893.split
+
+LOOP BEGIN at mod_sound.F90 (262, 9)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (262:9) and (263:49) 
+    remark #15346: vector dependence: assumed FLOW dependence between (262:9) and (263:33) 
+    remark #15346: vector dependence: assumed FLOW dependence between (262:9) and (263:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (262:9) and (263:49) 
+    remark #15346: vector dependence: assumed FLOW dependence between (262:9) and (263:33) 
+    remark #15346: vector dependence: assumed FLOW dependence between (262:9) and (263:11) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sound_mp_sound_.DIR.OMP.TEAMS.79.split17906
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.directive.region.entry
+
+DEAD STATIC FUNC: llvm.directive.region.exit
+
+DEAD STATIC FUNC: llvm.experimental.noalias.scope.decl
+
+COMPILE FUNC: mod_sound._
+
+COMPILE FUNC: mod_sound_mp_allocate_mod_sound_
+
+COMPILE FUNC: mod_sound_mp_init_sound_
+   -> llvm.sqrt.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (160,10)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (162,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (166,11)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (167,11)
+
+COMPILE FUNC: mod_soundsound_mp_inrange_
+
+COMPILE FUNC: mod_soundsound_mp_cpmf_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (10,19)
+
+COMPILE FUNC: mod_sound_mp_sound_
+   -> llvm.smax.i32 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (210,13)
+   -> llvm.umax.i32 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (211,10)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (230,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (230,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (230,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (233,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (230,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (233,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (233,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (237,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (233,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (237,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (237,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (241,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (237,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (241,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (241,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (244,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (241,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (244,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (244,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (247,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (244,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (247,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (247,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (250,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (247,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (250,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (250,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (253,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (250,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (253,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (253,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (253,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (262,9)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (262,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (262,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (262,9)
+   -> llvm.smin.i32 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (267,15)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (269,9)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (270,28)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (271,28)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (269,9)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (269,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (269,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (280,7)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (288,33)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (290,33)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (293,35)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (300,28)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (304,28)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (280,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (280,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (312,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (280,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (312,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (312,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (312,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (319,9)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (319,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (319,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (319,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (333,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (333,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (333,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (339,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (333,7)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (341,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (343,23)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (344,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (346,23)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (341,21)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (347,23)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (339,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (339,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (351,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (339,7)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (352,54)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (354,37)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (357,23)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (358,23)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (362,23)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (364,23)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (365,23)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (369,23)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (377,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (385,49)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (377,24)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (386,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (387,22)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (351,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (351,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (351,7)
+   -> llvm.smin.i32 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (390,15)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (393,9)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (398,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (399,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (400,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (402,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (407,59)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (409,41)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (411,40)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (417,38)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (419,23)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (420,23)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (418,46)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (421,39)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (422,40)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (423,27)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (427,27)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (428,40)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (429,27)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (433,27)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (393,9)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (393,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (393,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (445,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (445,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (445,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (449,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (445,7)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (455,27)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (464,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (455,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (467,21)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (468,21)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (469,21)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (468,20)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (470,21)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (467,20)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (471,20)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (473,20)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (466,56)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (449,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (449,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (476,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (449,7)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (484,39)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (485,39)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (484,25)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (476,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (476,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (476,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (492,9)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (499,27)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (492,9)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (492,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (492,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (508,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (508,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (508,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (508,7)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (521,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (523,47)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (516,9)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (516,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (516,9)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (545,39)
+   -> llvm.sqrt.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (546,51)
+   -> llvm.sin.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (560,32)
+   -> llvm.cos.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (560,57)
+   -> llvm.sin.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (561,32)
+   -> llvm.cos.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (561,57)
+   -> llvm.sqrt.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (562,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (568,35)
+   -> llvm.cos.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (569,34)
+   -> llvm.cos.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (570,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (571,44)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (584,9)
+   -> INLINE: mod_soundsound_mp_inrange_ /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (590,21)
+   -> INLINE: mod_soundsound_mp_inrange_ /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (592,23)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (584,9)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (584,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (584,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (516,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (604,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (604,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (604,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (610,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (604,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (610,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (610,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (610,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (651,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (651,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (651,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (651,7)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (663,45)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (665,45)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (663,29)
+   -> llvm.fabs.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (667,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (667,48)
+   -> llvm.fabs.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (692,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (692,48)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (708,7)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (717,37)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (720,39)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (721,39)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (720,29)
+   -> INLINE: mod_soundsound_mp_cpmf_ /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (726,19)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (10,19)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (727,36)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (727,61)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (708,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (708,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (708,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (741,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (741,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (741,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (747,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (741,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (747,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (747,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (747,5)
+   -> llvm.fabs.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (751,13)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (752,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (752,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (752,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (752,5)
+   -> llvm.fabs.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (756,13)
+   -> llvm.fabs.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (757,13)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (726,19)
+   -> DELETE: llvm.umax.i32 /scratch_local/ifx12932335250378ie/ifxC588kK.i90
+   -> llvm.memset.p0.i64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (211,10)
+   -> llvm.memset.p0.i64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (534,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (537,40)
+   -> llvm.memset.p0.i64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (555,13)
+   -> llvm.memset.p0.i64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (672,12)
+   -> llvm.memset.p0.i64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (673,12)
+   -> llvm.memset.p0.i64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (677,35)
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.TEAMS.269.split17839
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.TEAMS.257.split17823
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.TEAMS.251.split17807
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.TEAMS.242.split17791
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.TEAMS.233.split17772
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.TEAMS.221.split17756
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.TEAMS.215.split17740
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.TEAMS.212.split17853
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.TEAMS.204.split17872
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.TEAMS.189.split17727
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.TEAMS.180.split17714
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.TEAMS.168.split17700
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.TEAMS.159.split17683
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.TEAMS.153.split17665
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.TEAMS.144.split17651
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.TEAMS.132.split17632
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.TEAMS.123.split17617
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.TEAMS.117.split17601
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.TEAMS.114.split17889
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.TEAMS.97.split17585
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.TEAMS.91.split17569
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.TEAMS.82.split17551
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.TEAMS.79.split17906
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.TEAMS.62.split17535
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.TEAMS.53.split17518
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.TEAMS.44.split17502
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.TEAMS.35.split17485
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.TEAMS.26.split17469
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.TEAMS.17.split17453
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.TEAMS.8.split17436
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.TEAMS.2.split17420
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.275.split17827.split
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.266.split17811.split
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.260.split17795.split
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.248.split17776.split
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (717,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (720,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (721,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (720,29)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (726,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (10,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (727,36)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (727,61)
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.239.split17760.split
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.230.split17744.split
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.224.split17731.split
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.201.split17843.split
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (521,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (523,47)
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.209.split17857.split
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (590,21)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (590,21)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (590,21)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (590,21)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (592,23)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (592,23)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (592,23)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (592,23)
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.195.split17718.split
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.186.split17704.split
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (499,27)
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.177.split17687.split
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (484,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (485,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (484,25)
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.171.split17669.split
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (455,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (464,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (455,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (467,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (468,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (469,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (468,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (470,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (467,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (471,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (473,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (466,56)
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.162.split17655.split
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.150.split17636.split
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (398,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (399,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (400,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (402,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (407,59)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (409,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (411,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (417,38)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (419,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (420,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (418,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (421,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (422,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (423,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (427,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (428,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (429,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (433,27)
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.141.split17621.split
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (352,54)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (354,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (357,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (358,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (362,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (364,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (365,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (369,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (377,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (385,49)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (377,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (386,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (387,22)
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.135.split17605.split
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (341,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (343,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (344,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (346,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (341,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (347,23)
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.126.split17589.split
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.111.split17876.split
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.106.split17573.split
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.100.split17555.split
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (288,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (290,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (293,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (300,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (304,28)
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.88.split17539.split
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (270,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx12932335250378ie/ifxC588kK.i90 (271,28)
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.76.split17893.split
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.71.split17522.split
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.65.split17506.split
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.56.split17489.split
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.47.split17473.split
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.38.split17457.split
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.29.split17440.split
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.20.split17424.split
+
+COMPILE FUNC: mod_sound_mp_sound_.DIR.OMP.DISTRIBUTE.PARLOOP.11.split17411.split
+
+---- End Inlining Report ------

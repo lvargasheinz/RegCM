@@ -1,0 +1,295 @@
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+Function:        mod_isaatm._
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        mod_isaatm._
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_0
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+Function:        mod_isaatm._
+Args:
+  - NumInstructions: '1'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: mod_isaatm.F90, Line: 31, Column: 1 }
+Function:        mod_isaatm_mp_isaatm_
+Args:
+  - NumSpills:       '14'
+  - String:          ' spills '
+  - TotalSpillsCost: '2.078740e+00'
+  - String:          ' total spills cost '
+  - NumReloads:      '6'
+  - String:          ' reloads '
+  - TotalReloadsCost: '1.102362e+00'
+  - String:          ' total reloads cost '
+  - NumFoldedReloads: '8'
+  - String:          ' folded reloads '
+  - TotalFoldedReloadsCost: '9.763780e-01'
+  - String:          ' total folded reloads cost '
+  - NumVRCopies:     '8'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '3.913386e+00'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: mod_isaatm.F90, Line: 31, Column: 0 }
+Function:        mod_isaatm_mp_isaatm_
+Args:
+  - NumStackBytes:   '56'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_isaatm.F90, Line: 31, Column: 21 }
+Function:        mod_isaatm_mp_isaatm_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_1
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '11'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_isaatm.F90, Line: 0, Column: 0 }
+Function:        mod_isaatm_mp_isaatm_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_1
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_isaatm.F90, Line: 0, Column: 0 }
+Function:        mod_isaatm_mp_isaatm_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new4_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '12'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_isaatm.F90, Line: 0, Column: 0 }
+Function:        mod_isaatm_mp_isaatm_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb6_endif.sink.split
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_isaatm.F90, Line: 0, Column: 0 }
+Function:        mod_isaatm_mp_isaatm_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb6_endif.sink.split
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_isaatm.F90, Line: 0, Column: 0 }
+Function:        mod_isaatm_mp_isaatm_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new17_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_isaatm.F90, Line: 0, Column: 0 }
+Function:        mod_isaatm_mp_isaatm_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new17_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_isaatm.F90, Line: 0, Column: 0 }
+Function:        mod_isaatm_mp_isaatm_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new19_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '20'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_isaatm.F90, Line: 0, Column: 0 }
+Function:        mod_isaatm_mp_isaatm_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb6_endif.sink.split
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_isaatm.F90, Line: 0, Column: 0 }
+Function:        mod_isaatm_mp_isaatm_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb6_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_isaatm.F90, Line: 55, Column: 22 }
+Function:        mod_isaatm_mp_isaatm_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new39_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_isaatm.F90, Line: 0, Column: 0 }
+Function:        mod_isaatm_mp_isaatm_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new39_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_isaatm.F90, Line: 0, Column: 0 }
+Function:        mod_isaatm_mp_isaatm_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new41_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '33'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_isaatm.F90, Line: 0, Column: 0 }
+Function:        mod_isaatm_mp_isaatm_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new77_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_isaatm.F90, Line: 0, Column: 0 }
+Function:        mod_isaatm_mp_isaatm_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new77_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_isaatm.F90, Line: 0, Column: 0 }
+Function:        mod_isaatm_mp_isaatm_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new79_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '48'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: mod_isaatm.F90, Line: 31, Column: 0 }
+Function:        mod_isaatm_mp_isaatm_
+Args:
+  - NumInstructions: '188'
+  - String:          ' instructions in function'
+...

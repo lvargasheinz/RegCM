@@ -1,0 +1,33 @@
+Global optimization report for : mod_clm_varctl._
+=================================================================
+
+Global optimization report for : mod_clm_varctl_mp_set_clmvarctl_
+=================================================================
+
+Global optimization report for : mod_clm_varctl_mp_clmvarctl_init_
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_clm_varctl_mp_clmvarctl_init_
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx2115109422FXoE4I/ifxim5cvJ.i90 (233,35)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx2115109422FXoE4I/ifxim5cvJ.i90 (233,35)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx2115109422FXoE4I/ifxim5cvJ.i90 (234,36)
+   -> llvm.memset.p0.i64 /scratch_local/ifx2115109422FXoE4I/ifxim5cvJ.i90 (234,36)
+   -> llvm.memset.p0.i64 /scratch_local/ifx2115109422FXoE4I/ifxim5cvJ.i90 (233,35)
+
+COMPILE FUNC: mod_clm_varctl._
+
+COMPILE FUNC: mod_clm_varctl_mp_set_clmvarctl_
+   -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx2115109422FXoE4I/ifxim5cvJ.i90 (168,38)
+   -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx2115109422FXoE4I/ifxim5cvJ.i90 (169,38)
+   -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx2115109422FXoE4I/ifxim5cvJ.i90 (171,38)
+   -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx2115109422FXoE4I/ifxim5cvJ.i90 (172,38)
+   -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx2115109422FXoE4I/ifxim5cvJ.i90 (173,38)
+
+---- End Inlining Report ------

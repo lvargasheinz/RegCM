@@ -1,0 +1,44 @@
+Global optimization report for : mod_csiro_helper._
+=================================================================
+
+Global optimization report for : mod_csiro_helper_mp_find_csiro_sst_
+=================================================================
+
+Global optimization report for : mod_csiro_helper_mp_assemble_path_
+=================================================================
+
+Global optimization report for : mod_csiro_helper_mp_find_csiro_dim_
+=================================================================
+
+Global optimization report for : mod_csiro_helper_mp_find_csiro_topo_
+=================================================================
+
+Global optimization report for : mod_csiro_helper_mp_find_csiro_file_
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_csiro_helper._
+
+COMPILE FUNC: mod_csiro_helper_mp_find_csiro_sst_
+
+COMPILE FUNC: mod_csiro_helper_mp_assemble_path_
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0512772364Qf0Hxp/ifx8hGwUo.i90 (66,7)
+
+COMPILE FUNC: mod_csiro_helper_mp_find_csiro_dim_
+   -> mod_csiro_helper_mp_assemble_path_ /scratch_local/ifx0512772364Qf0Hxp/ifx8hGwUo.i90 (81,10)
+
+COMPILE FUNC: mod_csiro_helper_mp_find_csiro_topo_
+
+COMPILE FUNC: mod_csiro_helper_mp_find_csiro_file_
+   -> mod_csiro_helper_mp_assemble_path_ /scratch_local/ifx0512772364Qf0Hxp/ifx8hGwUo.i90 (132,16)
+   -> mod_csiro_helper_mp_assemble_path_ /scratch_local/ifx0512772364Qf0Hxp/ifx8hGwUo.i90 (130,16)
+   -> mod_csiro_helper_mp_assemble_path_ /scratch_local/ifx0512772364Qf0Hxp/ifx8hGwUo.i90 (146,16)
+   -> mod_csiro_helper_mp_assemble_path_ /scratch_local/ifx0512772364Qf0Hxp/ifx8hGwUo.i90 (144,16)
+
+---- End Inlining Report ------

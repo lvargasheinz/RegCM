@@ -1,0 +1,22 @@
+Global optimization report for : mod_ocn_internal._
+=================================================================
+
+Global optimization report for : mod_ocn_internal_mp_allocate_mod_ocn_internal_
+
+LOOP BEGIN at mod_ocn_internal.F90 (162, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_ocn_internal._
+
+COMPILE FUNC: mod_ocn_internal_mp_allocate_mod_ocn_internal_
+
+---- End Inlining Report ------

@@ -1,0 +1,332 @@
+Global optimization report for : rrtmg_sw_spcvmc._
+=================================================================
+
+Global optimization report for : rrtmg_sw_spcvmc_mp_spcvmc_sw_
+
+LOOP BEGIN at rrtmg_sw_spcvmc.F90 (313, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at rrtmg_sw_spcvmc.F90 (332, 23)
+
+    LOOP BEGIN at rrtmg_sw_spcvmc.F90 (347, 24)
+
+        LOOP BEGIN at rrtmg_sw_spcvmc.F90 (512, 28)
+        <Multiversioned v2>
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+        LOOP END
+
+        LOOP BEGIN at rrtmg_sw_spcvmc.F90 (512, 28)
+        <Predicate Optimized v6>
+        <Multiversioned v1>
+            remark #25408: memset generated
+            remark #25562: The loop has been multiversioned for the small trip count
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+        LOOP END
+
+        LOOP BEGIN at rrtmg_sw_spcvmc.F90 (512, 28)
+        <Multiversioned v2>
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+        LOOP END
+
+        LOOP BEGIN at rrtmg_sw_spcvmc.F90 (512, 28)
+        <Predicate Optimized v5>
+        <Multiversioned v1>
+            remark #25423: Invariant If condition at line 512 hoisted out of this loop
+            remark #25408: memset generated
+            remark #25562: The loop has been multiversioned for the small trip count
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+        LOOP END
+
+        LOOP BEGIN at rrtmg_sw_spcvmc.F90 (501, 23)
+        <Multiversioned v2>
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+        LOOP END
+
+        LOOP BEGIN at rrtmg_sw_spcvmc.F90 (501, 23)
+        <Predicate Optimized v2>
+        <Multiversioned v1>
+            remark #25423: Invariant If condition at line 501 hoisted out of this loop
+            remark #25408: memset generated
+            remark #25562: The loop has been multiversioned for the small trip count
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+        LOOP END
+
+        LOOP BEGIN at rrtmg_sw_spcvmc.F90 (512, 28)
+        <Multiversioned v2>
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+        LOOP END
+
+        LOOP BEGIN at rrtmg_sw_spcvmc.F90 (512, 28)
+        <Predicate Optimized v4>
+        <Multiversioned v1>
+            remark #25408: memset generated
+            remark #25562: The loop has been multiversioned for the small trip count
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+        LOOP END
+
+        LOOP BEGIN at rrtmg_sw_spcvmc.F90 (512, 28)
+        <Multiversioned v2>
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+        LOOP END
+
+        LOOP BEGIN at rrtmg_sw_spcvmc.F90 (512, 28)
+        <Predicate Optimized v3>
+        <Multiversioned v1>
+            remark #25423: Invariant If condition at line 512 hoisted out of this loop
+            remark #25408: memset generated
+            remark #25562: The loop has been multiversioned for the small trip count
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+        LOOP END
+
+        LOOP BEGIN at rrtmg_sw_spcvmc.F90 (501, 23)
+        <Multiversioned v2>
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+        LOOP END
+
+        LOOP BEGIN at rrtmg_sw_spcvmc.F90 (501, 23)
+        <Predicate Optimized v1>
+        <Multiversioned v1>
+            remark #25423: Invariant If condition at line 448 hoisted out of this loop
+            remark #25423: Invariant If condition at line 501 hoisted out of this loop
+            remark #25408: memset generated
+            remark #25562: The loop has been multiversioned for the small trip count
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+        LOOP END
+
+        LOOP BEGIN at rrtmg_sw_spcvmc.F90 (565, 22)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between ztdbtc (574:13) and ztdbtc (574:13) 
+            remark #15346: vector dependence: assumed FLOW dependence between ztdbt (591:13) and ztdbt (591:13) 
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+        LOOP END
+
+        LOOP BEGIN at rrtmg_sw_spcvmc.F90 (638, 28)
+        <Predicate Optimized v7>
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at rrtmg_sw_spcvmc.F90 (638, 28)
+        <Predicate Optimized v2>
+            remark #25423: Invariant If condition at line 638 hoisted out of this loop
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at rrtmg_sw_spcvmc.F90 (653, 33)
+        <Predicate Optimized v6>
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at rrtmg_sw_spcvmc.F90 (653, 33)
+        <Predicate Optimized v4>
+            remark #25423: Invariant If condition at line 653 hoisted out of this loop
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at rrtmg_sw_spcvmc.F90 (642, 24)
+        <Predicate Optimized v5>
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at rrtmg_sw_spcvmc.F90 (642, 24)
+        <Predicate Optimized v1>
+            remark #25424: Invariant Switch condition at lines 656, 645, and 629 hoisted out of this loop
+            remark #25423: Invariant If condition at line 638 hoisted out of this loop
+            remark #25423: Invariant If condition at line 642 hoisted out of this loop
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at rrtmg_sw_spcvmc.F90 (638, 28)
+        <Predicate Optimized v8>
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at rrtmg_sw_spcvmc.F90 (638, 28)
+        <Predicate Optimized v3>
+            remark #25423: Invariant If condition at line 638 hoisted out of this loop
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: rrtmg_sw_spcvmc_mp_spcvmc_sw_
+   -> llvm.smax.i64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> llvm.smax.i64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (53,16)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (441,49)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (461,33)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (479,33)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (495,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (496,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (497,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (497,44)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (518,28)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (527,28)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (528,28)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (529,28)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (529,46)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (505,28)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (568,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (585,31)
+   -> llvm.smax.i32 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (313,7)
+   -> llvm.smax.i32 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (629,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (441,49)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (461,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (479,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (495,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (496,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (497,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (497,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (505,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (441,49)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (461,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (479,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (495,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (496,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (497,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (497,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (505,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (441,49)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (461,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (479,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (495,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (496,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (497,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (497,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (518,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (527,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (528,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (529,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (529,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (441,49)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (461,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (479,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (495,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (496,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (497,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (497,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (518,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (527,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (528,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (529,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (529,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (441,49)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (461,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (479,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (495,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (496,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (497,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (497,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (441,49)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (461,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (479,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (495,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (496,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (497,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (497,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (441,49)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (495,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (496,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (497,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (497,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (505,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (441,49)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (495,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (496,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (497,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (497,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (505,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (441,49)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (495,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (496,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (497,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (497,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (518,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (527,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (528,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (529,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (529,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (441,49)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (495,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (496,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (497,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (497,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (518,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (527,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (528,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (529,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (529,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (441,49)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (495,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (496,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (497,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (497,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (441,49)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (495,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (496,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (497,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (497,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (568,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0378698556yTcAIR/ifxUnYgeg.i90 (585,31)
+
+COMPILE FUNC: rrtmg_sw_spcvmc._
+
+---- End Inlining Report ------

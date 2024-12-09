@@ -1,0 +1,1606 @@
+Global optimization report for : mod_advection._
+=================================================================
+
+Global optimization report for : mod_advection_mp_init_advection_
+
+LOOP BEGIN at mod_advection.F90 (100, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_advection.F90 (100, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_advection.F90 (105, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at mod_advection.F90 (105, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+LOOP END
+=================================================================
+
+Global optimization report for : mod_advection_mp_start_advect_
+=================================================================
+
+Global optimization report for : mod_advection_mp_hadvuv_
+
+LOOP BEGIN at mod_advection.F90 (236, 11)
+    remark #25423: Invariant If condition at line 236 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_advection.F90 (237, 13)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_advection.F90 (262, 13)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_advection.F90 (237, 13)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_advection.F90 (237, 13)
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 4
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 18
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_advection.F90 (205, 11)
+    remark #25423: Invariant If condition at line 205 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_advection.F90 (206, 13)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_advection.F90 (231, 13)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_advection.F90 (206, 13)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_advection.F90 (206, 13)
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 4
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 16
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_advection.F90 (171, 13)
+    remark #25423: Invariant If condition at line 171 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_advection.F90 (172, 15)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_advection.F90 (193, 15)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_advection.F90 (172, 15)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_advection.F90 (172, 15)
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 18
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_advection.F90 (144, 13)
+    remark #25423: Invariant If condition at line 144 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_advection.F90 (145, 15)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_advection.F90 (166, 15)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_advection.F90 (145, 15)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_advection.F90 (145, 15)
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 16
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_advection_mp_vadvuv_
+
+LOOP BEGIN at mod_advection.F90 (287, 9)
+    remark #25423: Invariant If condition at line 287 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_advection.F90 (288, 11)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_advection.F90 (297, 11)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_advection.F90 (288, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_advection.F90 (288, 11)
+            remark #25563: Load hoisted out of the loop
+            remark #25563: Load hoisted out of the loop
+            remark #25563: Load hoisted out of the loop
+            remark #25563: Load hoisted out of the loop
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_advection_mp_hadvt_
+
+LOOP BEGIN at mod_advection.F90 (338, 11)
+    remark #25423: Invariant If condition at line 338 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_advection.F90 (339, 13)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_advection.F90 (349, 13)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_advection.F90 (339, 13)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_advection.F90 (339, 13)
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_advection.F90 (324, 11)
+    remark #25423: Invariant If condition at line 324 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_advection.F90 (325, 13)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_advection.F90 (333, 13)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_advection.F90 (325, 13)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_advection.F90 (325, 13)
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_advection.F90 (362, 13)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 362 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_advection.F90 (361, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_advection.F90 (364, 48)
+        <Multiversioned v2>
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+
+        LOOP BEGIN at mod_advection.F90 (361, 11)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_advection.F90 (385, 9)
+<Predicate Optimized v2>
+
+    LOOP BEGIN at mod_advection.F90 (384, 11)
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_advection_mp_hadv3d_
+
+LOOP BEGIN at mod_advection.F90 (487, 11)
+    remark #25423: Invariant If condition at line 487 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_advection.F90 (488, 13)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_advection.F90 (505, 13)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_advection.F90 (488, 13)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_advection.F90 (488, 13)
+            remark #25563: Load hoisted out of the loop
+            remark #25563: Load hoisted out of the loop
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_advection.F90 (467, 11)
+    remark #25423: Invariant If condition at line 467 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_advection.F90 (468, 13)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_advection.F90 (478, 13)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_advection.F90 (468, 13)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_advection.F90 (468, 13)
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_advection.F90 (433, 13)
+    remark #25423: Invariant If condition at line 433 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_advection.F90 (434, 15)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_advection.F90 (449, 15)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_advection.F90 (434, 15)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_advection.F90 (434, 15)
+            remark #25563: Load hoisted out of the loop
+            remark #25563: Load hoisted out of the loop
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_advection.F90 (415, 13)
+    remark #25423: Invariant If condition at line 415 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_advection.F90 (416, 15)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_advection.F90 (424, 15)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_advection.F90 (416, 15)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_advection.F90 (416, 15)
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_advection_mp_hadvqv_
+
+LOOP BEGIN at mod_advection.F90 (548, 11)
+    remark #25423: Invariant If condition at line 548 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_advection.F90 (549, 13)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_advection.F90 (559, 13)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_advection.F90 (549, 13)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_advection.F90 (549, 13)
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_advection.F90 (534, 11)
+    remark #25423: Invariant If condition at line 534 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_advection.F90 (535, 13)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_advection.F90 (543, 13)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_advection.F90 (535, 13)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_advection.F90 (535, 13)
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_advection.F90 (572, 13)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 572 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_advection.F90 (571, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_advection.F90 (574, 48)
+        <Multiversioned v2>
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+
+        LOOP BEGIN at mod_advection.F90 (571, 11)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_advection.F90 (595, 9)
+<Predicate Optimized v2>
+
+    LOOP BEGIN at mod_advection.F90 (594, 11)
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_advection_mp_hadvqx_
+
+LOOP BEGIN at mod_advection.F90 (624, 14)
+
+    LOOP BEGIN at mod_advection.F90 (653, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_advection.F90 (641, 15)
+        <Multiversioned v2>
+            remark #15319: Loop was not vectorized: novector directive used
+
+            LOOP BEGIN at mod_advection.F90 (651, 15)
+                remark #15319: Loop was not vectorized: novector directive used
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at mod_advection.F90 (641, 15)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_advection.F90 (641, 15)
+                remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+                remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_advection.F90 (637, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_advection.F90 (627, 15)
+        <Multiversioned v2>
+            remark #15319: Loop was not vectorized: novector directive used
+
+            LOOP BEGIN at mod_advection.F90 (635, 15)
+                remark #15319: Loop was not vectorized: novector directive used
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at mod_advection.F90 (627, 15)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_advection.F90 (627, 15)
+                remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+                remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_advection_mp_hadvtr_
+
+LOOP BEGIN at mod_advection.F90 (682, 14)
+
+    LOOP BEGIN at mod_advection.F90 (711, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_advection.F90 (699, 15)
+        <Multiversioned v2>
+            remark #15319: Loop was not vectorized: novector directive used
+
+            LOOP BEGIN at mod_advection.F90 (709, 15)
+                remark #15319: Loop was not vectorized: novector directive used
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at mod_advection.F90 (699, 15)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_advection.F90 (699, 15)
+                remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+                remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_advection.F90 (695, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_advection.F90 (685, 15)
+        <Multiversioned v2>
+            remark #15319: Loop was not vectorized: novector directive used
+
+            LOOP BEGIN at mod_advection.F90 (693, 15)
+                remark #15319: Loop was not vectorized: novector directive used
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at mod_advection.F90 (685, 15)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_advection.F90 (685, 15)
+                remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+                remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_advection_mp_vadv3d_
+
+LOOP BEGIN at mod_advection.F90 (786, 13)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_advection.F90 (789, 13)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_advection.F90 (792, 13)
+    remark #25423: Invariant If condition at line 792 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_advection.F90 (793, 15)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_advection.F90 (801, 15)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_advection.F90 (793, 15)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_advection.F90 (793, 15)
+            remark #25563: Load hoisted out of the loop
+            remark #25563: Load hoisted out of the loop
+            remark #25563: Load hoisted out of the loop
+            remark #25563: Load hoisted out of the loop
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_advection.F90 (757, 13)
+    remark #25423: Invariant If condition at line 757 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_advection.F90 (758, 15)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_advection.F90 (763, 15)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_advection.F90 (758, 15)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_advection.F90 (758, 15)
+            remark #25563: Load hoisted out of the loop
+            remark #25563: Load hoisted out of the loop
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_advection.F90 (747, 13)
+    remark #25423: Invariant If condition at line 747 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_advection.F90 (748, 15)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_advection.F90 (752, 15)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_advection.F90 (748, 15)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_advection.F90 (748, 15)
+            remark #25563: Load hoisted out of the loop
+            remark #25563: Load hoisted out of the loop
+            remark #25563: Load hoisted out of the loop
+            remark #25563: Load hoisted out of the loop
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_advection_mp_vadvqv_
+=================================================================
+
+Global optimization report for : mod_advection_mp_vadv4d_
+
+LOOP BEGIN at mod_advection.F90 (865, 18)
+
+    LOOP BEGIN at mod_advection.F90 (926, 13)
+
+        LOOP BEGIN at mod_advection.F90 (927, 29)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between (930:15) and (927:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between (930:15) and (927:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between (930:15) and (927:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between (930:15) and (927:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between (930:15) and (927:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between fg (949:17) and (927:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between fg (949:17) and kpb (930:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between fg (949:17) and (933:17) 
+            remark #15346: vector dependence: assumed FLOW dependence between fg (949:17) and (933:17) 
+            remark #15346: vector dependence: assumed FLOW dependence between fg (949:17) and (933:48) 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_advection.F90 (902, 15)
+    <Predicate Optimized v1>
+        remark #25423: Invariant If condition at line 902 hoisted out of this loop
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_advection.F90 (902, 15)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_advection.F90 (903, 33)
+            <Multiversioned v2>
+                remark #15319: Loop was not vectorized: novector directive used
+            LOOP END
+
+            LOOP BEGIN at mod_advection.F90 (903, 33)
+            <Multiversioned v1>
+                remark #25228: Loop multiversioned for Data Dependence
+                remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_advection.F90 (920, 11)
+    <Predicate Optimized v2>
+
+        LOOP BEGIN at mod_advection.F90 (919, 13)
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_advection.F90 (880, 15)
+    <Predicate Optimized v1>
+        remark #25423: Invariant If condition at line 880 hoisted out of this loop
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_advection.F90 (880, 15)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_advection.F90 (881, 33)
+            <Multiversioned v2>
+                remark #15319: Loop was not vectorized: novector directive used
+            LOOP END
+
+            LOOP BEGIN at mod_advection.F90 (881, 33)
+            <Multiversioned v1>
+                remark #25228: Loop multiversioned for Data Dependence
+                remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_advection.F90 (898, 11)
+    <Predicate Optimized v2>
+
+        LOOP BEGIN at mod_advection.F90 (897, 13)
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_advection.F90 (868, 15)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_advection.F90 (868, 15)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_advection.F90 (869, 33)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between fg (0:0) and svv (869:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between fg (0:0) and (0:0) 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_advection_mp_start_advect_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split452.split
+
+LOOP BEGIN at mod_advection.F90 (114, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (114:7) and (115:24) 
+    remark #15346: vector dependence: assumed FLOW dependence between (114:7) and (115:24) 
+    remark #15346: vector dependence: assumed FLOW dependence between (114:7) and (115:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (114:7) and (116:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (114:7) and (116:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (114:7) and (116:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (114:7) and (117:24) 
+    remark #15346: vector dependence: assumed FLOW dependence between (114:7) and (117:24) 
+    remark #15346: vector dependence: assumed FLOW dependence between (114:7) and (117:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (114:7) and (118:9) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_advection_mp_start_advect_.DIR.OMP.TEAMS.2.split464
+=================================================================
+
+Global optimization report for : mod_advection_mp_hadvt_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split2992.split
+
+LOOP BEGIN at mod_advection.F90 (387, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (387:7) and (388:23) 
+    remark #15346: vector dependence: assumed FLOW dependence between (387:7) and (388:37) 
+    remark #15346: vector dependence: assumed FLOW dependence between (387:7) and (388:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (387:7) and (388:23) 
+    remark #15346: vector dependence: assumed FLOW dependence between (387:7) and (388:37) 
+    remark #15346: vector dependence: assumed FLOW dependence between (387:7) and (388:9) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_advection_mp_hadvt_.DIR.OMP.TEAMS.2.split3004
+=================================================================
+
+Global optimization report for : mod_advection_mp_hadvqv_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split3680.split
+
+LOOP BEGIN at mod_advection.F90 (597, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (597:7) and (598:26) 
+    remark #15346: vector dependence: assumed FLOW dependence between (597:7) and (598:43) 
+    remark #15346: vector dependence: assumed FLOW dependence between (597:7) and (598:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (597:7) and (598:26) 
+    remark #15346: vector dependence: assumed FLOW dependence between (597:7) and (598:43) 
+    remark #15346: vector dependence: assumed FLOW dependence between (597:7) and (598:9) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_advection_mp_hadvqv_.DIR.OMP.TEAMS.2.split3693
+=================================================================
+
+Global optimization report for : mod_advection_mp_hadvqx_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split1877.split
+
+LOOP BEGIN at mod_advection.F90 (655, 9)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (655:9) and (656:27) 
+    remark #15346: vector dependence: assumed FLOW dependence between (655:9) and (656:43) 
+    remark #15346: vector dependence: assumed FLOW dependence between (655:9) and (656:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (655:9) and (656:27) 
+    remark #15346: vector dependence: assumed FLOW dependence between (655:9) and (656:43) 
+    remark #15346: vector dependence: assumed FLOW dependence between (655:9) and (656:11) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_advection_mp_hadvqx_.DIR.OMP.TEAMS.2.split1890
+=================================================================
+
+Global optimization report for : mod_advection_mp_hadvtr_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split1877.split
+
+LOOP BEGIN at mod_advection.F90 (713, 9)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (713:9) and (714:27) 
+    remark #15346: vector dependence: assumed FLOW dependence between (713:9) and (714:43) 
+    remark #15346: vector dependence: assumed FLOW dependence between (713:9) and (714:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (713:9) and (714:27) 
+    remark #15346: vector dependence: assumed FLOW dependence between (713:9) and (714:43) 
+    remark #15346: vector dependence: assumed FLOW dependence between (713:9) and (714:11) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_advection_mp_hadvtr_.DIR.OMP.TEAMS.2.split1890
+=================================================================
+
+Global optimization report for : mod_advection_mp_vadv3d_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split2980.split
+
+LOOP BEGIN at mod_advection.F90 (772, 11)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (772:11) and (773:13) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_advection_mp_vadv3d_.DIR.OMP.TEAMS.25.split2996
+
+OMP TEAMS BEGIN at mod_advection.F90 (772, 11)
+    remark: SHARED clause for variable 'var$282.fpriv' has been changed to PRIVATE
+
+    OMP DISTRIBUTE PARALLEL DO BEGIN at mod_advection.F90 (772, 11)
+        remark: FIRSTPRIVATE clause for variable 'heap_array_descr.2.addr_a0$122_fetch.9780.array.elements.fpriv' has been changed to PRIVATE
+        remark: SHARED clause for variable 'var$282.fpriv' has been changed to PRIVATE
+    OMP DISTRIBUTE PARALLEL DO END
+OMP TEAMS END
+=================================================================
+
+Global optimization report for : mod_advection_mp_vadv3d_.DIR.OMP.DISTRIBUTE.PARLOOP.17.split3000.split
+
+LOOP BEGIN at mod_advection.F90 (775, 11)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (775:11) and (777:22) 
+    remark #15346: vector dependence: assumed FLOW dependence between (775:11) and (777:31) 
+    remark #15346: vector dependence: assumed FLOW dependence between (775:11) and (777:43) 
+    remark #15346: vector dependence: assumed FLOW dependence between (775:11) and (777:54) 
+    remark #15346: vector dependence: assumed FLOW dependence between (775:11) and (777:41) 
+    remark #15346: vector dependence: assumed FLOW dependence between (775:11) and (777:41) 
+    remark #15346: vector dependence: assumed FLOW dependence between (775:11) and (778:30) 
+    remark #15346: vector dependence: assumed FLOW dependence between (775:11) and (776:30) 
+    remark #15346: vector dependence: assumed FLOW dependence between (775:11) and (776:13) 
+    remark #15346: vector dependence: assumed FLOW dependence between (775:11) and (777:22) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_advection_mp_vadv3d_.DIR.OMP.TEAMS.5.split3017
+
+OMP TEAMS BEGIN at mod_advection.F90 (775, 11)
+    remark: SHARED clause for variable 'var$282.fpriv2507' has been changed to PRIVATE
+
+    OMP DISTRIBUTE PARALLEL DO BEGIN at mod_advection.F90 (775, 11)
+        remark: FIRSTPRIVATE clause for variable 'heap_array_descr.2.addr_a0$122_fetch.9780.array.elements.fpriv2515' has been changed to PRIVATE
+        remark: SHARED clause for variable 'var$282.fpriv2507' has been changed to PRIVATE
+    OMP DISTRIBUTE PARALLEL DO END
+OMP TEAMS END
+=================================================================
+
+Global optimization report for : mod_advection_mp_vadv3d_.DIR.OMP.DISTRIBUTE.PARLOOP.22.split3021.split
+
+LOOP BEGIN at mod_advection.F90 (780, 11)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (780:11) and (781:45) 
+    remark #15346: vector dependence: assumed FLOW dependence between (780:11) and (781:60) 
+    remark #15346: vector dependence: assumed FLOW dependence between (780:11) and (781:29) 
+    remark #15346: vector dependence: assumed FLOW dependence between (780:11) and (781:13) 
+    remark #15346: vector dependence: assumed FLOW dependence between (780:11) and (782:13) 
+    remark #15346: vector dependence: assumed FLOW dependence between (780:11) and (782:13) 
+    remark #15346: vector dependence: assumed FLOW dependence between (780:11) and (782:13) 
+    remark #15346: vector dependence: assumed FLOW dependence between (780:11) and (781:45) 
+    remark #15346: vector dependence: assumed FLOW dependence between (780:11) and (781:60) 
+    remark #15346: vector dependence: assumed FLOW dependence between (780:11) and (781:29) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_advection_mp_vadv3d_.DIR.OMP.TEAMS.14.split3038
+
+OMP TEAMS BEGIN at mod_advection.F90 (780, 11)
+    remark: SHARED clause for variable 'var$282.fpriv2689' has been changed to PRIVATE
+
+    OMP DISTRIBUTE PARALLEL DO BEGIN at mod_advection.F90 (780, 11)
+        remark: FIRSTPRIVATE clause for variable 'heap_array_descr.2.addr_a0$122_fetch.9780.array.elements.fpriv2697' has been changed to PRIVATE
+        remark: SHARED clause for variable 'var$282.fpriv2689' has been changed to PRIVATE
+    OMP DISTRIBUTE PARALLEL DO END
+OMP TEAMS END
+=================================================================
+
+Global optimization report for : mod_advection_mp_vadvqv_.DIR.OMP.DISTRIBUTE.PARLOOP.11.split1361.split
+
+LOOP BEGIN at mod_advection.F90 (822, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (822:7) and (823:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (822:7) and (823:9) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_advection_mp_vadvqv_.DIR.OMP.TEAMS.2.split1373
+=================================================================
+
+Global optimization report for : mod_advection_mp_vadvqv_.DIR.OMP.DISTRIBUTE.PARLOOP.20.split1377.split
+
+LOOP BEGIN at mod_advection.F90 (825, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (825:7) and (826:14) 
+    remark #15346: vector dependence: assumed FLOW dependence between (825:7) and (826:37) 
+    remark #15346: vector dependence: assumed FLOW dependence between (825:7) and (826:27) 
+    remark #15346: vector dependence: assumed FLOW dependence between (825:7) and (828:61) 
+    remark #15346: vector dependence: assumed FLOW dependence between (825:7) and (828:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (825:7) and (826:14) 
+    remark #15346: vector dependence: assumed FLOW dependence between (825:7) and (826:27) 
+    remark #15346: vector dependence: assumed FLOW dependence between (825:7) and (828:61) 
+    remark #15346: vector dependence: assumed FLOW dependence between (825:7) and (828:11) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_advection_mp_vadvqv_.DIR.OMP.TEAMS.8.split1390
+=================================================================
+
+Global optimization report for : mod_advection_mp_vadvqv_.DIR.OMP.DISTRIBUTE.PARLOOP.26.split1394.split
+
+LOOP BEGIN at mod_advection.F90 (831, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (831:7) and (832:43) 
+    remark #15346: vector dependence: assumed FLOW dependence between (831:7) and (832:54) 
+    remark #15346: vector dependence: assumed FLOW dependence between (831:7) and (832:64) 
+    remark #15346: vector dependence: assumed FLOW dependence between (831:7) and (832:27) 
+    remark #15346: vector dependence: assumed FLOW dependence between (831:7) and (832:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (831:7) and (833:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (831:7) and (833:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (831:7) and (833:53) 
+    remark #15346: vector dependence: assumed FLOW dependence between (831:7) and (833:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (831:7) and (833:9) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_advection_mp_vadvqv_.DIR.OMP.TEAMS.17.split1407
+=================================================================
+
+Global optimization report for : mod_advection_mp_vadv4d_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split4931.split
+
+LOOP BEGIN at mod_advection.F90 (862, 9)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (862:9) and (863:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (862:9) and (863:11) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_advection_mp_vadv4d_.DIR.OMP.TEAMS.2.split4943
+=================================================================
+
+Global optimization report for : mod_advection_mp_vadv4d_.DIR.OMP.DISTRIBUTE.PARLOOP.14.split4947.split
+
+LOOP BEGIN at mod_advection.F90 (922, 11)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (922:11) and (923:25) 
+    remark #15346: vector dependence: assumed FLOW dependence between (922:11) and (923:34) 
+    remark #15346: vector dependence: assumed FLOW dependence between (922:11) and (923:33) 
+    remark #15346: vector dependence: assumed FLOW dependence between (922:11) and (923:33) 
+    remark #15346: vector dependence: assumed FLOW dependence between (922:11) and (923:13) 
+    remark #15346: vector dependence: assumed FLOW dependence between (922:11) and (923:25) 
+    remark #15346: vector dependence: assumed FLOW dependence between (922:11) and (923:34) 
+    remark #15346: vector dependence: assumed FLOW dependence between (922:11) and (923:33) 
+    remark #15346: vector dependence: assumed FLOW dependence between (922:11) and (923:33) 
+    remark #15346: vector dependence: assumed FLOW dependence between (922:11) and (923:13) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_advection_mp_vadv4d_.DIR.OMP.TEAMS.25.split4960
+=================================================================
+
+Global optimization report for : mod_advection_mp_vadv4d_.DIR.OMP.DISTRIBUTE.PARLOOP.22.split4964.split
+
+LOOP BEGIN at mod_advection.F90 (960, 11)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (960:11) and (961:25) 
+    remark #15346: vector dependence: assumed FLOW dependence between (960:11) and (961:37) 
+    remark #15346: vector dependence: assumed FLOW dependence between (960:11) and (961:13) 
+    remark #15346: vector dependence: assumed FLOW dependence between (960:11) and (961:25) 
+    remark #15346: vector dependence: assumed FLOW dependence between (960:11) and (961:37) 
+    remark #15346: vector dependence: assumed FLOW dependence between (960:11) and (961:13) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_advection_mp_vadv4d_.DIR.OMP.TEAMS.17.split4976
+=================================================================
+
+Global optimization report for : mod_advection_mp_vadv4d_.DIR.OMP.DISTRIBUTE.PARLOOP.34.split4980.split
+
+LOOP BEGIN at mod_advection.F90 (964, 9)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (964:9) and (965:45) 
+    remark #15346: vector dependence: assumed FLOW dependence between (964:9) and (965:55) 
+    remark #15346: vector dependence: assumed FLOW dependence between (964:9) and (965:29) 
+    remark #15346: vector dependence: assumed FLOW dependence between (964:9) and (965:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (964:9) and (966:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (964:9) and (966:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (964:9) and (966:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (964:9) and (966:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (964:9) and (965:45) 
+    remark #15346: vector dependence: assumed FLOW dependence between (964:9) and (965:55) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_advection_mp_vadv4d_.DIR.OMP.TEAMS.28.split4993
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.directive.region.entry
+
+DEAD STATIC FUNC: llvm.directive.region.exit
+
+COMPILE FUNC: mod_advection_mp_vadv3d_
+   -> llvm.smax.i64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (730,16)
+   -> llvm.smax.i64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (730,16)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (730,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (730,16)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (730,16)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (749,36)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (759,32)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (760,29)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (772,11)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (772,11)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (772,11)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (777,43)
+   -> DELETE: llvm.pow.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (777,67)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (778,43)
+   -> DELETE: llvm.pow.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (778,67)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (777,22)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (775,11)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (775,11)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (775,11)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (775,11)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (780,11)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (780,11)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (780,11)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (780,11)
+   -> llvm.log.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (787,33)
+   -> llvm.exp.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (787,23)
+   -> DELETE: llvm.log.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (794,35)
+   -> DELETE: llvm.exp.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (794,25)
+   -> DELETE: llvm.log.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (795,35)
+   -> DELETE: llvm.exp.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (795,25)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (797,45)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (772,11)
+   -> llvm.log.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (794,35)
+   -> llvm.exp.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (794,25)
+   -> llvm.log.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (795,35)
+   -> llvm.exp.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (795,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (797,45)
+   -> llvm.log.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (794,35)
+   -> llvm.exp.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (794,25)
+   -> llvm.log.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (795,35)
+   -> llvm.exp.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (795,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (797,45)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (759,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (760,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (759,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (760,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (749,36)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (749,36)
+   -> llvm.smax.i32 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (730,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (730,16)
+
+COMPILE FUNC: mod_advection._
+
+COMPILE FUNC: mod_advection_mp_init_advection_
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (104,27)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (100,7)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (104,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (104,27)
+
+COMPILE FUNC: mod_advection_mp_start_advect_
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (114,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (114,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (114,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (114,7)
+
+COMPILE FUNC: mod_advection_mp_hadvuv_
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (157,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (158,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (159,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (160,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (157,30)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (162,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (163,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (164,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (165,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (162,30)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (173,36)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (182,28)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (182,50)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (182,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (188,30)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (191,30)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (213,25)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (214,25)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (215,25)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (216,25)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (217,25)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (217,46)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (218,25)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (218,46)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (219,25)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (219,46)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (220,25)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (220,46)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (224,29)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (225,29)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (222,28)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (227,29)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (228,29)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (229,29)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (230,29)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (227,28)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (238,34)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (247,27)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (247,49)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (247,25)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (248,25)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (249,25)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (250,25)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (251,25)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (252,25)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (252,46)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (253,25)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (253,46)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (254,25)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (254,46)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (255,25)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (255,46)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (257,28)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (260,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (238,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (247,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (247,49)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (247,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (248,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (249,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (250,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (251,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (252,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (252,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (253,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (253,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (254,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (254,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (255,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (255,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (257,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (260,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (238,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (247,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (247,49)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (247,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (248,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (249,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (250,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (251,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (252,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (252,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (253,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (253,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (254,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (254,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (255,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (255,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (257,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (260,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (213,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (214,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (215,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (216,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (217,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (217,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (218,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (218,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (219,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (219,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (220,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (220,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (224,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (225,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (222,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (227,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (228,29)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (229,29)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (230,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (227,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (213,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (214,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (215,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (216,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (217,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (217,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (218,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (218,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (219,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (219,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (220,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (220,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (224,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (225,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (222,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (227,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (228,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (229,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (230,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (227,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (173,36)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (182,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (182,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (182,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (188,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (191,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (173,36)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (182,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (182,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (182,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (188,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (191,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (157,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (158,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (159,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (160,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (157,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (162,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (163,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (164,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (165,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (162,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (157,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (158,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (159,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (160,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (157,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (162,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (163,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (164,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (165,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (162,30)
+
+COMPILE FUNC: mod_advection_mp_vadvuv_
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (289,29)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (291,24)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (292,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (289,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (291,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (292,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (289,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (291,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (292,24)
+
+COMPILE FUNC: mod_advection_mp_hadvt_
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (331,23)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (340,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (341,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (342,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (342,46)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (344,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (344,46)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (347,23)
+   -> DELETE: llvm.fabs.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (363,20)
+   -> DELETE: llvm.fabs.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (373,20)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (387,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (387,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (387,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (387,7)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (340,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (341,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (342,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (342,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (344,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (344,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (347,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (340,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (341,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (342,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (342,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (344,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (344,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (347,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (331,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (331,23)
+   -> llvm.fabs.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (363,20)
+   -> llvm.fabs.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (373,20)
+   -> llvm.fabs.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (363,20)
+   -> llvm.fabs.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (373,20)
+
+COMPILE FUNC: mod_advection_mp_hadv3d_
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (422,32)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (435,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (437,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (439,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (441,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (448,32)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (469,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (470,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (471,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (471,46)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (473,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (473,46)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (476,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (489,24)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (491,24)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (493,24)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (495,24)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (497,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (498,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (499,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (499,46)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (501,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (501,46)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (504,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (489,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (491,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (493,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (495,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (497,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (498,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (499,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (499,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (501,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (501,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (504,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (489,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (491,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (493,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (495,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (497,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (498,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (499,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (499,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (501,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (501,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (504,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (469,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (470,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (471,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (471,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (473,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (473,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (476,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (469,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (470,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (471,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (471,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (473,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (473,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (476,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (435,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (437,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (439,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (441,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (448,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (435,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (437,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (439,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (441,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (448,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (422,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (422,32)
+
+COMPILE FUNC: mod_advection_mp_hadvqv_
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (541,23)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (550,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (551,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (552,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (552,49)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (554,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (554,49)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (557,26)
+   -> DELETE: llvm.fabs.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (573,20)
+   -> DELETE: llvm.fabs.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (583,20)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (597,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (597,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (597,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (597,7)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (550,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (551,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (552,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (552,49)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (554,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (554,49)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (557,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (550,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (551,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (552,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (552,49)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (554,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (554,49)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (557,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (541,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (541,23)
+   -> llvm.fabs.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (573,20)
+   -> llvm.fabs.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (583,20)
+   -> llvm.fabs.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (573,20)
+   -> llvm.fabs.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (583,20)
+
+COMPILE FUNC: mod_advection_mp_hadvqx_
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (633,23)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (642,33)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (643,33)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (644,24)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (644,50)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (646,24)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (646,50)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (649,29)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (655,9)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (655,9)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (655,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (655,9)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (642,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (643,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (644,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (644,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (646,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (646,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (649,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (642,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (643,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (644,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (644,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (646,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (646,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (649,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (633,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (633,23)
+
+COMPILE FUNC: mod_advection_mp_hadvtr_
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (691,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (700,33)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (701,33)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (702,24)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (702,50)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (704,24)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (704,50)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (707,22)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (713,9)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (713,9)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (713,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (713,9)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (700,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (701,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (702,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (702,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (704,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (704,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (707,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (700,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (701,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (702,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (702,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (704,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (704,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (707,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (691,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (691,26)
+
+COMPILE FUNC: mod_advection_mp_vadvqv_
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (822,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (822,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (822,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (825,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (822,7)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (828,35)
+   -> DELETE: llvm.pow.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (828,59)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (825,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (825,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (831,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (825,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (831,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (831,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (831,7)
+
+COMPILE FUNC: mod_advection_mp_vadv4d_
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (862,9)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (862,9)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (862,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (862,9)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (884,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (891,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (906,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (913,26)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (922,11)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (922,11)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (922,11)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (941,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (942,54)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (936,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (937,54)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (949,53)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (951,32)
+   -> llvm.fabs.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (950,21)
+   -> llvm.fabs.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (952,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (955,53)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (933,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (934,23)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (960,11)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (960,11)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (960,11)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (960,11)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (922,11)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (964,9)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (964,9)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (964,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (964,9)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (906,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (913,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (906,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (913,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (884,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (891,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (884,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (891,26)
+
+COMPILE FUNC: mod_advection_mp_start_advect_.DIR.OMP.TEAMS.2.split464
+
+COMPILE FUNC: mod_advection_mp_hadvt_.DIR.OMP.TEAMS.2.split3004
+
+COMPILE FUNC: mod_advection_mp_hadvqv_.DIR.OMP.TEAMS.2.split3693
+
+COMPILE FUNC: mod_advection_mp_hadvqx_.DIR.OMP.TEAMS.2.split1890
+
+COMPILE FUNC: mod_advection_mp_hadvtr_.DIR.OMP.TEAMS.2.split1890
+
+COMPILE FUNC: mod_advection_mp_vadv3d_.DIR.OMP.TEAMS.25.split2996
+
+COMPILE FUNC: mod_advection_mp_vadv3d_.DIR.OMP.TEAMS.14.split3038
+
+COMPILE FUNC: mod_advection_mp_vadv3d_.DIR.OMP.TEAMS.5.split3017
+
+COMPILE FUNC: mod_advection_mp_vadvqv_.DIR.OMP.TEAMS.17.split1407
+
+COMPILE FUNC: mod_advection_mp_vadvqv_.DIR.OMP.TEAMS.8.split1390
+
+COMPILE FUNC: mod_advection_mp_vadvqv_.DIR.OMP.TEAMS.2.split1373
+
+COMPILE FUNC: mod_advection_mp_vadv4d_.DIR.OMP.TEAMS.28.split4993
+
+COMPILE FUNC: mod_advection_mp_vadv4d_.DIR.OMP.TEAMS.25.split4960
+
+COMPILE FUNC: mod_advection_mp_vadv4d_.DIR.OMP.TEAMS.17.split4976
+
+COMPILE FUNC: mod_advection_mp_vadv4d_.DIR.OMP.TEAMS.2.split4943
+
+COMPILE FUNC: mod_advection_mp_start_advect_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split452.split
+
+COMPILE FUNC: mod_advection_mp_hadvt_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split2992.split
+
+COMPILE FUNC: mod_advection_mp_hadvqv_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split3680.split
+
+COMPILE FUNC: mod_advection_mp_hadvqx_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split1877.split
+
+COMPILE FUNC: mod_advection_mp_hadvtr_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split1877.split
+
+COMPILE FUNC: mod_advection_mp_vadv3d_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split2980.split
+
+COMPILE FUNC: mod_advection_mp_vadv3d_.DIR.OMP.DISTRIBUTE.PARLOOP.22.split3021.split
+
+COMPILE FUNC: mod_advection_mp_vadv3d_.DIR.OMP.DISTRIBUTE.PARLOOP.17.split3000.split
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (777,43)
+   -> llvm.pow.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (777,67)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (778,43)
+   -> llvm.pow.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (778,67)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (777,22)
+
+COMPILE FUNC: mod_advection_mp_vadvqv_.DIR.OMP.DISTRIBUTE.PARLOOP.26.split1394.split
+
+COMPILE FUNC: mod_advection_mp_vadvqv_.DIR.OMP.DISTRIBUTE.PARLOOP.20.split1377.split
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (828,35)
+   -> llvm.pow.f64 /scratch_local/ifx0830515507Y3dAFz/ifxc3073E.i90 (828,59)
+
+COMPILE FUNC: mod_advection_mp_vadvqv_.DIR.OMP.DISTRIBUTE.PARLOOP.11.split1361.split
+
+COMPILE FUNC: mod_advection_mp_vadv4d_.DIR.OMP.DISTRIBUTE.PARLOOP.34.split4980.split
+
+COMPILE FUNC: mod_advection_mp_vadv4d_.DIR.OMP.DISTRIBUTE.PARLOOP.14.split4947.split
+
+COMPILE FUNC: mod_advection_mp_vadv4d_.DIR.OMP.DISTRIBUTE.PARLOOP.22.split4964.split
+
+COMPILE FUNC: mod_advection_mp_vadv4d_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split4931.split
+
+---- End Inlining Report ------

@@ -1,0 +1,210 @@
+Global optimization report for : mod_cbmz_jval1._
+=================================================================
+
+Global optimization report for : mod_cbmz_jval1_mp_jvalpro_
+
+LOOP BEGIN at mod_cbmz_jval1.F90 (133, 7)
+    remark #25408: memset generated
+LOOP END
+
+LOOP BEGIN at mod_cbmz_jval1.F90 (284, 11)
+LOOP END
+
+LOOP BEGIN at mod_cbmz_jval1.F90 (145, 21)
+
+    LOOP BEGIN at mod_cbmz_jval1.F90 (156, 50)
+        remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+        remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+    LOOP END
+
+    LOOP BEGIN at mod_cbmz_jval1.F90 (174, 48)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+        remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cbmz_jval1.F90 (242, 27)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+
+LOOP BEGIN
+
+    LOOP BEGIN at mod_cbmz_jval1.F90 (271, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_cbmz_jval1.F90 (277, 11)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_cbmz_jval1.F90 (323, 11)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+
+    LOOP BEGIN at mod_cbmz_jval1.F90 (358, 13)
+        remark #25529: Dead stores eliminated in loop
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+
+    LOOP BEGIN at mod_cbmz_jval1.F90 (378, 13)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+
+    LOOP BEGIN at mod_cbmz_jval1.F90 (421, 13)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+
+    LOOP BEGIN at mod_cbmz_jval1.F90 (497, 52)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+
+    LOOP BEGIN at mod_cbmz_jval1.F90 (569, 13)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_cbmz_jval1.F90 (454, 32)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cbmz_jval1.F90 (594, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cbmz_jval1.F90 (599, 11)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cbmz_jval1.F90 (620, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_cbmz_jval1_mp_readhv_
+
+LOOP BEGIN at mod_cbmz_jval1.F90 (745, 7)
+    remark #25408: memset generated
+    remark #25408: memset generated
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cbmz_jval1.F90 (744, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cbmz_jval1.F90 (749, 7)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+
+LOOP BEGIN at mod_cbmz_jval1.F90 (764, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_cbmz_jval1.F90 (789, 20)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cbmz_jval1.F90 (789, 20)
+    <Predicate Optimized v2>
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_cbmz_jval1.F90 (789, 20)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_cbmz_jval1.F90 (789, 20)
+    <Predicate Optimized v1>
+        remark #25423: Invariant If condition at line 789 hoisted out of this loop
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_cbmz_jval1.F90 (789, 20)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cbmz_jval1.F90 (800, 7)
+
+    LOOP BEGIN at mod_cbmz_jval1.F90 (813, 13)
+
+        LOOP BEGIN at mod_cbmz_jval1.F90 (813, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_cbmz_jval1.F90 (814, 15)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at mod_cbmz_jval1.F90 (840, 29)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_cbmz_jval1.F90 (855, 19)
+                remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_cbmz_jval1._
+
+COMPILE FUNC: mod_cbmz_jval1_mp_jvalpro_
+   -> DELETE: llvm.fabs.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (156,20)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (178,23)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (178,46)
+   -> llvm.fabs.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (154,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (237,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (237,63)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (243,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (245,32)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (316,52)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (317,57)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (315,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (319,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (319,32)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (344,62)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (343,32)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (345,20)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (345,32)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (349,51)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (375,50)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (376,55)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (374,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (418,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (450,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (452,52)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (499,36)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (500,45)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (499,20)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (560,48)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (559,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (613,30)
+   -> llvm.cos.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (613,11)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (237,20)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (237,63)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (319,20)
+   -> llvm.fabs.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (156,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (178,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (178,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (343,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (345,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (349,51)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (133,7)
+   -> llvm.smax.i32 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90
+   -> llvm.umax.i1 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (174,48)
+
+COMPILE FUNC: mod_cbmz_jval1_mp_readhv_
+   -> llvm.smax.i32 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (759,9)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (830,36)
+   -> llvm.fabs.f64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (830,30)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (740,9)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0097694444iHIYch/ifxkWXkhI.i90 (741,9)
+
+---- End Inlining Report ------

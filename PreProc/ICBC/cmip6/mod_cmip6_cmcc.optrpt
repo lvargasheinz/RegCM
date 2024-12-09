@@ -1,0 +1,102 @@
+Global optimization report for : mod_cmip6_cmcc._
+=================================================================
+
+Global optimization report for : mod_cmip6_cmcc_mp_read_hcoord_cmcc_
+=================================================================
+
+Global optimization report for : mod_cmip6_cmcc_mp_read_hcoord_sst_cmcc_
+=================================================================
+
+Global optimization report for : mod_cmip6_cmcc_mp_read_vcoord_cmcc_
+=================================================================
+
+Global optimization report for : mod_cmip6_cmcc_mp_read_3d_cmcc_
+=================================================================
+
+Global optimization report for : mod_cmip6_cmcc_mp_read_2d_cmcc_
+=================================================================
+
+Global optimization report for : mod_cmip6_cmcc_mp_read_fx_cmcc_
+=================================================================
+
+Global optimization report for : mod_cmip6_cmcc_mp_read_sst_cmcc_
+
+LOOP BEGIN at mod_cmip6_cmcc.F90 (476, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cmip6_cmcc.F90 (476, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cmip6_cmcc.F90 (477, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cmip6_cmcc.F90 (477, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cmip6_cmcc.F90 (479, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cmip6_cmcc.F90 (479, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_cmip6_cmcc._
+
+COMPILE FUNC: mod_cmip6_cmcc_mp_read_hcoord_cmcc_
+
+COMPILE FUNC: mod_cmip6_cmcc_mp_read_hcoord_sst_cmcc_
+
+COMPILE FUNC: mod_cmip6_cmcc_mp_read_vcoord_cmcc_
+
+COMPILE FUNC: mod_cmip6_cmcc_mp_read_3d_cmcc_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1884453347TgDDJw/ifxknaisa.i90 (122,26)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1884453347TgDDJw/ifxknaisa.i90 (142,11)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1884453347TgDDJw/ifxknaisa.i90 (142,11)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1884453347TgDDJw/ifxknaisa.i90 (144,11)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx1884453347TgDDJw/ifxknaisa.i90 (144,11)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1884453347TgDDJw/ifxknaisa.i90 (157,9)
+   -> mod_cmip6_cmcc_mp_read_hcoord_cmcc_ /scratch_local/ifx1884453347TgDDJw/ifxknaisa.i90 (158,14)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1884453347TgDDJw/ifxknaisa.i90 (161,9)
+   -> mod_cmip6_cmcc_mp_read_vcoord_cmcc_ /scratch_local/ifx1884453347TgDDJw/ifxknaisa.i90 (162,14)
+   -> llvm.round.f64 /scratch_local/ifx1884453347TgDDJw/ifxknaisa.i90 (207,14)
+   -> mod_cmip6_cmcc_mp_read_3d_cmcc_ /scratch_local/ifx1884453347TgDDJw/ifxknaisa.i90 (220,14)
+
+COMPILE FUNC: mod_cmip6_cmcc_mp_read_2d_cmcc_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1884453347TgDDJw/ifxknaisa.i90 (235,26)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1884453347TgDDJw/ifxknaisa.i90 (271,9)
+   -> mod_cmip6_cmcc_mp_read_hcoord_cmcc_ /scratch_local/ifx1884453347TgDDJw/ifxknaisa.i90 (272,14)
+   -> llvm.round.f64 /scratch_local/ifx1884453347TgDDJw/ifxknaisa.i90 (315,14)
+   -> mod_cmip6_cmcc_mp_read_2d_cmcc_ /scratch_local/ifx1884453347TgDDJw/ifxknaisa.i90 (328,14)
+
+COMPILE FUNC: mod_cmip6_cmcc_mp_read_fx_cmcc_
+   -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx1884453347TgDDJw/ifxknaisa.i90 (346,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1884453347TgDDJw/ifxknaisa.i90 (353,7)
+   -> mod_cmip6_cmcc_mp_read_hcoord_cmcc_ /scratch_local/ifx1884453347TgDDJw/ifxknaisa.i90 (354,12)
+
+COMPILE FUNC: mod_cmip6_cmcc_mp_read_sst_cmcc_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1884453347TgDDJw/ifxknaisa.i90 (373,26)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1884453347TgDDJw/ifxknaisa.i90 (416,9)
+   -> mod_cmip6_cmcc_mp_read_hcoord_sst_cmcc_ /scratch_local/ifx1884453347TgDDJw/ifxknaisa.i90 (417,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1884453347TgDDJw/ifxknaisa.i90 (454,19)
+   -> mod_cmip6_cmcc_mp_read_sst_cmcc_ /scratch_local/ifx1884453347TgDDJw/ifxknaisa.i90 (464,14)
+
+---- End Inlining Report ------

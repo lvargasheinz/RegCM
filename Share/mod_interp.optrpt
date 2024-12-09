@@ -1,0 +1,901 @@
+Global optimization report for : mod_interp._
+=================================================================
+
+Global optimization report for : mod_interp_mp_interp1d_r4_
+
+LOOP BEGIN at mod_interp.F90 (132, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (134, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (135, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (143, 20)
+
+    LOOP BEGIN at mod_interp.F90 (143, 20)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between zi (146:11) and zi (143:9) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between zi (146:11) and zi (145:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between zg (149:11) and zg (147:11) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between zg (149:11) and zg (148:11) 
+    LOOP END
+
+    LOOP BEGIN at mod_interp.F90 (154, 20)
+        remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+        remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (163, 18)
+
+    LOOP BEGIN at mod_interp.F90 (176, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between ir (175:20) and ir (175:20) 
+        remark #15346: vector dependence: assumed FLOW dependence between ir (175:20) and ir (175:20) 
+        remark #15346: vector dependence: assumed FLOW dependence between ir (175:20) and ir (175:20) 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_interp_mp_interp1d_r8_
+
+LOOP BEGIN at mod_interp.F90 (252, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (254, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (255, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (262, 20)
+
+    LOOP BEGIN at mod_interp.F90 (262, 20)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between zi (265:11) and zi (262:9) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between zi (265:11) and zi (264:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between zg (268:11) and zg (266:11) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between zg (268:11) and zg (267:11) 
+    LOOP END
+
+    LOOP BEGIN at mod_interp.F90 (273, 20)
+        remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+        remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (281, 18)
+
+    LOOP BEGIN at mod_interp.F90 (292, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between ir (291:20) and ir (291:20) 
+        remark #15346: vector dependence: assumed FLOW dependence between ir (291:20) and ir (291:20) 
+        remark #15346: vector dependence: assumed FLOW dependence between ir (291:20) and ir (291:20) 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_interp_mp_bilinx_2d_
+=================================================================
+
+Global optimization report for : mod_interp_mp_bilinx_3d_
+
+LOOP BEGIN at mod_interp.F90 (401, 5)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+=================================================================
+
+Global optimization report for : mod_interp_mp_compwgt_
+
+LOOP BEGIN at mod_interp.F90 (420, 12)
+    remark #25567: 2 loops have been collapsed
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (422, 7)
+
+    LOOP BEGIN at mod_interp.F90 (427, 9)
+
+        LOOP BEGIN at mod_interp.F90 (428, 11)
+
+            LOOP BEGIN at mod_interp.F90 (430, 23)
+                remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_interp_mp_dwgt_
+
+LOOP BEGIN at mod_interp.F90 (607, 5)
+<Multiversioned v1>
+    remark #25567: 2 loops have been collapsed
+    remark #25399: memcopy generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (545, 7)
+
+    LOOP BEGIN at mod_interp.F90 (561, 26)
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (589, 5)
+    remark #25567: 2 loops have been collapsed
+    remark #25045: Fused Loops: 589,590
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (590, 5)
+    remark #25567: 2 loops have been collapsed
+    remark #25046: Loop lost in Fusion
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (592, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_interp.F90 (592, 7)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+        remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (600, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_interp.F90 (601, 54)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (607, 5)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_interp_mp_distwgtcr_
+
+LOOP BEGIN at mod_interp.F90 (631, 16)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (631:16) and (631:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between (631:16) and (631:16) 
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (632, 16)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (632:16) and (632:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between (632:16) and (632:16) 
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (633, 16)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_interp.F90 (633, 16)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (633:16) and (633:16) 
+        remark #15346: vector dependence: assumed FLOW dependence between (633:16) and (633:16) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (634, 16)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_interp.F90 (634, 16)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (634:16) and (634:16) 
+        remark #15346: vector dependence: assumed FLOW dependence between (634:16) and (634:16) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (635, 16)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (635:16) and (635:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between (635:16) and (635:16) 
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (636, 16)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (636:16) and (636:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between (636:16) and (636:16) 
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (637, 16)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_interp.F90 (637, 16)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (637:16) and (637:16) 
+        remark #15346: vector dependence: assumed FLOW dependence between (637:16) and (637:16) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (638, 16)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_interp.F90 (638, 16)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (638:16) and (638:16) 
+        remark #15346: vector dependence: assumed FLOW dependence between (638:16) and (638:16) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (639, 12)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_interp.F90 (639, 12)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (639:12) and (639:12) 
+        remark #15346: vector dependence: assumed FLOW dependence between (639:12) and (639:12) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (639, 27)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_interp.F90 (639, 27)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (639:27) and (639:27) 
+        remark #15346: vector dependence: assumed FLOW dependence between (639:27) and (639:27) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (640, 12)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_interp.F90 (640, 12)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (640:12) and (640:12) 
+        remark #15346: vector dependence: assumed FLOW dependence between (640:12) and (640:12) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (640, 27)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_interp.F90 (640, 27)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (640:27) and (640:27) 
+        remark #15346: vector dependence: assumed FLOW dependence between (640:27) and (640:27) 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_interp_mp_distwgtdt_
+
+LOOP BEGIN at mod_interp.F90 (695, 16)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (695:16) and (695:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between (695:16) and (695:16) 
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (696, 16)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (696:16) and (696:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between (696:16) and (696:16) 
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (697, 16)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_interp.F90 (697, 16)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (697:16) and (697:16) 
+        remark #15346: vector dependence: assumed FLOW dependence between (697:16) and (697:16) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (698, 16)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_interp.F90 (698, 16)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (698:16) and (698:16) 
+        remark #15346: vector dependence: assumed FLOW dependence between (698:16) and (698:16) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (699, 16)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (699:16) and (699:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between (699:16) and (699:16) 
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (700, 16)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (700:16) and (700:16) 
+    remark #15346: vector dependence: assumed FLOW dependence between (700:16) and (700:16) 
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (701, 16)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_interp.F90 (701, 16)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (701:16) and (701:16) 
+        remark #15346: vector dependence: assumed FLOW dependence between (701:16) and (701:16) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (702, 16)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_interp.F90 (702, 16)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (702:16) and (702:16) 
+        remark #15346: vector dependence: assumed FLOW dependence between (702:16) and (702:16) 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_interp_mp_cressmcr3d_
+
+LOOP BEGIN at mod_interp.F90 (748, 7)
+    remark #25423: Invariant If condition at line 748 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_interp.F90 (748, 7)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_interp_mp_cressmcr2d_
+=================================================================
+
+Global optimization report for : mod_interp_mp_cressmdt_
+
+LOOP BEGIN at mod_interp.F90 (781, 7)
+    remark #25423: Invariant If condition at line 781 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_interp.F90 (781, 7)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_interp_mp_kernsmooth2_
+
+LOOP BEGIN at mod_interp.F90 (817, 7)
+<Multiversioned v1>
+    remark #25567: 2 loops have been collapsed
+    remark #25399: memcopy generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (801, 7)
+
+    LOOP BEGIN at mod_interp.F90 (806, 7)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+        remark #25583: Number of Array Refs Scalar Replaced In Loop: 8
+    LOOP END
+
+    LOOP BEGIN at mod_interp.F90 (812, 7)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+        remark #25583: Number of Array Refs Scalar Replaced In Loop: 8
+    LOOP END
+
+    LOOP BEGIN at mod_interp.F90 (817, 7)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_interp_mp_kernsmooth3_
+
+LOOP BEGIN at mod_interp.F90 (850, 9)
+<Multiversioned v1>
+    remark #25567: 2 loops have been collapsed
+    remark #25399: memcopy generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (834, 9)
+
+    LOOP BEGIN at mod_interp.F90 (834, 9)
+
+        LOOP BEGIN at mod_interp.F90 (839, 9)
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 8
+        LOOP END
+
+        LOOP BEGIN at mod_interp.F90 (845, 9)
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 8
+        LOOP END
+
+        LOOP BEGIN at mod_interp.F90 (850, 9)
+        <Multiversioned v2>
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_interp_mp_whereislon_
+
+LOOP BEGIN at mod_interp.F90 (864, 5)
+<Multiversioned v1>
+    remark #25399: memcopy generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (864, 5)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (874, 9)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (869, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_interp_mp_whereislat_
+
+LOOP BEGIN at mod_interp.F90 (891, 5)
+<Multiversioned v1>
+    remark #25399: memcopy generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_interp.F90 (891, 5)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_interp_mp_rightof_
+=================================================================
+
+Global optimization report for : mod_interp_mp_topof_
+=================================================================
+
+Global optimization report for : mod_interp_mp_bilinx_2d_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split595.split
+
+LOOP BEGIN at mod_interp.F90 (864, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_interp.F90 (864, 5)
+    <Multiversioned v1>
+        remark #25399: memcopy generated
+        remark #25562: The loop has been multiversioned for the small trip count
+    LOOP END
+
+    LOOP BEGIN at mod_interp.F90 (864, 5)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_interp.F90 (874, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_interp.F90 (891, 5)
+    <Multiversioned v1>
+        remark #25399: memcopy generated
+        remark #25562: The loop has been multiversioned for the small trip count
+    LOOP END
+
+    LOOP BEGIN at mod_interp.F90 (869, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_interp.F90 (891, 5)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_interp_mp_bilinx_2d_.DIR.OMP.TEAMS.2.split614
+
+OMP TEAMS BEGIN at mod_interp.F90 (358, 5)
+    remark: SHARED clause for variable 'var$77.fpriv' has been changed to PRIVATE
+    remark: SHARED clause for variable 'var$72.fpriv' has been changed to PRIVATE
+    remark: SHARED clause for variable 'var$65.fpriv' has been changed to PRIVATE
+    remark: SHARED clause for variable 'var$58.fpriv' has been changed to PRIVATE
+
+    OMP DISTRIBUTE PARALLEL DO BEGIN at mod_interp.F90 (358, 5)
+        remark: FIRSTPRIVATE clause for variable 'B3.array.elements.fpriv' has been changed to PRIVATE
+        remark: FIRSTPRIVATE clause for variable 'B2.array.elements.fpriv' has been changed to PRIVATE
+        remark: FIRSTPRIVATE clause for variable 'HLAT.array.elements.fpriv' has been changed to PRIVATE
+        remark: FIRSTPRIVATE clause for variable 'ALAT.array.elements.fpriv' has been changed to PRIVATE
+        remark: FIRSTPRIVATE clause for variable 'HLON.array.elements.fpriv' has been changed to PRIVATE
+        remark: FIRSTPRIVATE clause for variable 'ALON.array.elements.fpriv' has been changed to PRIVATE
+        remark: SHARED clause for variable 'var$77.fpriv' has been changed to PRIVATE
+        remark: SHARED clause for variable 'var$72.fpriv' has been changed to PRIVATE
+        remark: SHARED clause for variable 'var$65.fpriv' has been changed to PRIVATE
+        remark: SHARED clause for variable 'var$58.fpriv' has been changed to PRIVATE
+    OMP DISTRIBUTE PARALLEL DO END
+OMP TEAMS END
+=================================================================
+
+Global optimization report for : mod_interp_mp_kernsmooth2_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split832.split
+
+LOOP BEGIN at mod_interp.F90 (796, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (796:7) and (797:22) 
+    remark #15346: vector dependence: assumed FLOW dependence between (796:7) and (797:22) 
+    remark #15346: vector dependence: assumed FLOW dependence between (796:7) and (797:33) 
+    remark #15346: vector dependence: assumed FLOW dependence between (796:7) and (797:44) 
+    remark #15346: vector dependence: assumed FLOW dependence between (796:7) and (797:57) 
+    remark #15346: vector dependence: assumed FLOW dependence between (796:7) and (798:22) 
+    remark #15346: vector dependence: assumed FLOW dependence between (796:7) and (798:41) 
+    remark #15346: vector dependence: assumed FLOW dependence between (796:7) and (798:52) 
+    remark #15346: vector dependence: assumed FLOW dependence between (796:7) and (799:24) 
+    remark #15346: vector dependence: assumed FLOW dependence between (796:7) and (797:9) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_interp_mp_kernsmooth2_.DIR.OMP.TEAMS.2.split843
+
+OMP TEAMS BEGIN at mod_interp.F90 (796, 7)
+    remark: SHARED clause for variable 'var$391.fpriv' has been changed to PRIVATE
+    remark: SHARED clause for variable 'var$386.fpriv' has been changed to PRIVATE
+
+    OMP DISTRIBUTE PARALLEL DO BEGIN at mod_interp.F90 (796, 7)
+        remark: FIRSTPRIVATE clause for variable 'heap_array_descr.7.addr_a0$110_fetch.2237.array.elements.fpriv' has been changed to PRIVATE
+        remark: FIRSTPRIVATE clause for variable 'F.array.elements.fpriv' has been changed to PRIVATE
+        remark: SHARED clause for variable 'var$391.fpriv' has been changed to PRIVATE
+        remark: SHARED clause for variable 'var$386.fpriv' has been changed to PRIVATE
+    OMP DISTRIBUTE PARALLEL DO END
+OMP TEAMS END
+=================================================================
+
+Global optimization report for : mod_interp_mp_kernsmooth3_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split1015.split
+
+LOOP BEGIN at mod_interp.F90 (829, 9)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (829:9) and (830:24) 
+    remark #15346: vector dependence: assumed FLOW dependence between (829:9) and (830:24) 
+    remark #15346: vector dependence: assumed FLOW dependence between (829:9) and (830:37) 
+    remark #15346: vector dependence: assumed FLOW dependence between (829:9) and (830:50) 
+    remark #15346: vector dependence: assumed FLOW dependence between (829:9) and (830:65) 
+    remark #15346: vector dependence: assumed FLOW dependence between (829:9) and (831:26) 
+    remark #15346: vector dependence: assumed FLOW dependence between (829:9) and (831:47) 
+    remark #15346: vector dependence: assumed FLOW dependence between (829:9) and (831:60) 
+    remark #15346: vector dependence: assumed FLOW dependence between (829:9) and (832:28) 
+    remark #15346: vector dependence: assumed FLOW dependence between (829:9) and (830:11) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_interp_mp_kernsmooth3_.DIR.OMP.TEAMS.2.split1029
+
+OMP TEAMS BEGIN at mod_interp.F90 (829, 9)
+    remark: SHARED clause for variable 'var$417.fpriv' has been changed to PRIVATE
+    remark: SHARED clause for variable 'var$412.fpriv' has been changed to PRIVATE
+
+    OMP DISTRIBUTE PARALLEL DO BEGIN at mod_interp.F90 (829, 9)
+        remark: FIRSTPRIVATE clause for variable 'heap_array_descr.8.addr_a0$110_fetch.2529.array.elements.fpriv' has been changed to PRIVATE
+        remark: FIRSTPRIVATE clause for variable 'F.array.elements.fpriv' has been changed to PRIVATE
+        remark: SHARED clause for variable 'var$417.fpriv' has been changed to PRIVATE
+        remark: SHARED clause for variable 'var$412.fpriv' has been changed to PRIVATE
+    OMP DISTRIBUTE PARALLEL DO END
+OMP TEAMS END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.directive.region.entry
+
+DEAD STATIC FUNC: llvm.directive.region.exit
+
+COMPILE FUNC: mod_interp_mp_interp1d_r4_
+   -> llvm.smax.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (89,14)
+   -> llvm.smax.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (89,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (89,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (89,14)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (115,5)
+   -> llvm.smax.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (116,5)
+   -> llvm.smax.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (123,5)
+   -> llvm.smax.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (123,18)
+   -> llvm.arithmetic.fence.f32 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (139,13)
+   -> llvm.arithmetic.fence.f32 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (144,30)
+   -> llvm.arithmetic.fence.f32 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (147,29)
+   -> llvm.arithmetic.fence.f32 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (167,31)
+   -> llvm.arithmetic.fence.f32 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (167,51)
+   -> llvm.arithmetic.fence.f32 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (168,17)
+   -> llvm.arithmetic.fence.f32 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (164,29)
+   -> llvm.arithmetic.fence.f32 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (164,43)
+   -> llvm.arithmetic.fence.f32 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (164,59)
+   -> llvm.arithmetic.fence.f32 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (206,44)
+   -> llvm.arithmetic.fence.f32 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (207,21)
+   -> llvm.arithmetic.fence.f32 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (207,20)
+   -> llvm.arithmetic.fence.f32 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (206,17)
+   -> llvm.arithmetic.fence.f32 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (208,27)
+   -> llvm.arithmetic.fence.f32 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (208,57)
+   -> llvm.arithmetic.fence.f32 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (208,56)
+   -> llvm.arithmetic.fence.f32 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (207,47)
+   -> llvm.arithmetic.fence.f32 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (209,43)
+   -> llvm.arithmetic.fence.f32 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (210,33)
+   -> llvm.arithmetic.fence.f32 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (212,15)
+   -> llvm.arithmetic.fence.f32 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (214,27)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (89,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (89,14)
+
+COMPILE FUNC: mod_interp_mp_interp1d_r8_
+   -> llvm.smax.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (218,14)
+   -> llvm.smax.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (218,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (218,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (218,14)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (235,5)
+   -> llvm.smax.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (236,5)
+   -> llvm.smax.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (243,5)
+   -> llvm.smax.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (243,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (258,13)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (263,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (266,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (285,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (285,51)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (286,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (282,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (282,43)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (282,59)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (321,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (322,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (322,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (321,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (323,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (323,57)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (323,56)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (322,47)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (324,43)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (325,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (326,15)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (327,27)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (218,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (218,14)
+
+COMPILE FUNC: mod_interp_mp_dwgt_
+   -> llvm.smax.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (529,14)
+   -> llvm.smax.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (529,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (529,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (529,14)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (595,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (603,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (595,33)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (529,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (529,14)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (607,5)
+
+COMPILE FUNC: mod_interp_mp_distwgtdt_
+   -> mod_interp_mp_compwgt_ /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (726,12)
+   -> mod_interp_mp_dwgt_ /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (732,10)
+
+COMPILE FUNC: mod_interp_mp_compwgt_
+   -> DELETE: llvm.fabs.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (420,17)
+   -> INLINE: mod_interp_mp_topof_ /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (437,14)
+   -> INLINE: mod_interp_mp_rightof_ /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (438,16)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (909,23)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (915,27)
+   -> INLINE: mod_interp_mp_rightof_ /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (460,16)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (909,23)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (915,27)
+   -> llvm.smax.i32 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (491,20)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (492,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (520,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (521,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (522,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (523,28)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (437,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (437,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (437,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (438,16)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (438,16)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (438,16)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (460,16)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (460,16)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (460,16)
+   -> llvm.smin.i32 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (489,20)
+   -> llvm.fabs.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (420,17)
+
+COMPILE FUNC: mod_interp_mp_distwgtcr_
+   -> mod_interp_mp_compwgt_ /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (662,12)
+   -> mod_interp_mp_dwgt_ /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (668,10)
+
+COMPILE FUNC: mod_interp_mp_kernsmooth2_
+   -> llvm.smax.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (789,14)
+   -> llvm.smax.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (789,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (789,14)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (789,14)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (789,14)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (796,7)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (797,22)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (796,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (796,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (796,7)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (802,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (804,23)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (808,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (810,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (802,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (804,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (808,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (810,23)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (789,14)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (817,7)
+
+COMPILE FUNC: mod_interp_mp_kernsmooth3_
+   -> llvm.smax.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (821,14)
+   -> llvm.smax.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (821,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (821,14)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (821,14)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (821,14)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (821,14)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (829,9)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (830,24)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (829,9)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (829,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (829,9)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (835,24)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (837,25)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (841,24)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (843,25)
+   -> llvm.smax.i32 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (821,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (835,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (837,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (841,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (843,25)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (821,14)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (850,9)
+
+COMPILE FUNC: mod_interp_mp_whereislon_
+   -> llvm.smax.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (855,30)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (855,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (879,15)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (878,13)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (855,30)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (864,5)
+
+COMPILE FUNC: mod_interp_mp_bilinx_2d_
+   -> llvm.smax.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (331,14)
+   -> llvm.smax.i32 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (331,14)
+   -> llvm.smax.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (363,9)
+   -> llvm.smax.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (370,9)
+   -> llvm.fabs.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (355,12)
+   -> llvm.fabs.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (356,12)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (358,5)
+   -> INLINE: mod_interp_mp_whereislon_ /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (363,14)
+      -> DELETE: llvm.smax.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (855,30)
+      -> DELETE: for_allocate_handle /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (855,30)
+      -> DELETE: for_deallocate_handle /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (880,3)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (879,15)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (878,13)
+   -> INLINE: mod_interp_mp_whereislat_ /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (370,14)
+      -> DELETE: llvm.smax.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (882,30)
+      -> DELETE: for_allocate_handle /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (882,30)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (893,13)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (895,17)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (897,17)
+      -> DELETE: llvm.fabs.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (897,34)
+      -> DELETE: llvm.smax.i32 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (899,13)
+      -> DELETE: for_deallocate_handle /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (901,3)
+   -> DELETE: llvm.fabs.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (378,16)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (381,23)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (382,23)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (381,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (382,55)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (358,5)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (358,5)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (358,5)
+
+COMPILE FUNC: mod_interp_mp_whereislat_
+   -> llvm.smax.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (882,30)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (882,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (893,13)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (895,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (897,17)
+   -> llvm.fabs.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (897,34)
+   -> llvm.smax.i32 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (899,13)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (882,30)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (891,5)
+
+COMPILE FUNC: mod_interp._
+
+COMPILE FUNC: mod_interp_mp_bilinx_3d_
+   -> mod_interp_mp_bilinx_2d_ /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (400,12)
+
+COMPILE FUNC: mod_interp_mp_topof_
+
+COMPILE FUNC: mod_interp_mp_rightof_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (909,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (915,27)
+
+COMPILE FUNC: mod_interp_mp_cressmcr3d_
+   -> DELETE: mod_interp_mp_distwgtcr_ /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (750,15)
+   -> mod_interp_mp_distwgtcr_ /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (750,15)
+
+COMPILE FUNC: mod_interp_mp_cressmcr2d_
+   -> mod_interp_mp_distwgtcr_ /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (766,10)
+
+COMPILE FUNC: mod_interp_mp_cressmdt_
+   -> DELETE: mod_interp_mp_distwgtdt_ /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (783,15)
+   -> mod_interp_mp_distwgtdt_ /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (783,15)
+
+COMPILE FUNC: mod_interp_mp_bilinx_2d_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split595.split
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (363,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (363,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (363,14)
+   -> DELETE: llvm.stacksave /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (855,65)
+   -> DELETE: llvm.stackrestore /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (880,3)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (370,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (370,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (370,14)
+   -> DELETE: llvm.stacksave /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (882,65)
+   -> DELETE: llvm.stackrestore /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (901,3)
+   -> llvm.smax.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (855,30)
+   -> DELETE: for_allocate_handle /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (855,30)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (880,3)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (879,15)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (878,13)
+   -> llvm.smax.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (882,30)
+   -> DELETE: for_allocate_handle /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (882,30)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (893,13)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (895,17)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (897,17)
+   -> DELETE: llvm.fabs.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (897,34)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (899,13)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (901,3)
+   -> DELETE: llvm.fabs.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (378,16)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (381,23)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (382,23)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (381,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (382,55)
+   -> llvm.stacksave /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (855,65)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (879,15)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (878,13)
+   -> llvm.stackrestore /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (880,3)
+   -> llvm.stacksave /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (882,65)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (893,13)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (895,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (897,17)
+   -> llvm.fabs.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (897,34)
+   -> llvm.stackrestore /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (901,3)
+   -> llvm.fabs.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (378,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (381,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (382,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (381,22)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (855,30)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (864,5)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (882,30)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (891,5)
+   -> llvm.smax.i32 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (899,13)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (899,13)
+   -> llvm.umax.i1 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (373,32)
+   -> llvm.umax.i1 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (373,32)
+   -> llvm.umax.i1 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (373,32)
+
+COMPILE FUNC: mod_interp_mp_bilinx_2d_.DIR.OMP.TEAMS.2.split614
+
+COMPILE FUNC: mod_interp_mp_kernsmooth2_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split832.split
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (797,22)
+
+COMPILE FUNC: mod_interp_mp_kernsmooth2_.DIR.OMP.TEAMS.2.split843
+
+COMPILE FUNC: mod_interp_mp_kernsmooth3_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split1015.split
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0883598642GULwvB/ifxCndovI.i90 (830,24)
+
+COMPILE FUNC: mod_interp_mp_kernsmooth3_.DIR.OMP.TEAMS.2.split1029
+
+---- End Inlining Report ------

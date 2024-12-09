@@ -1,0 +1,95 @@
+Global optimization report for : mod_che_pollen._
+=================================================================
+
+Global optimization report for : mod_che_pollen_mp_pollen_emission_
+
+LOOP BEGIN at mod_che_pollen.F90 (70, 7)
+<Predicate Optimized v2>
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_pollen.F90 (70, 7)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_pollen.F90 (70, 7)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 70 hoisted out of this loop
+    remark #25423: Invariant If condition at line 0 hoisted out of this loop
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+
+    LOOP BEGIN at mod_che_pollen.F90 (70, 7)
+    <Multiversioned v1>
+        remark #25408: memset generated
+        remark #25562: The loop has been multiversioned for the small trip count
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_pollen.F90 (73, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_pollen.F90 (77, 24)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_pollen.F90 (121, 13)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_pollen.F90 (126, 13)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_pollen.F90 (112, 13)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_pollen.F90 (117, 13)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_pollen.F90 (131, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_pollen.F90 (136, 11)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_che_pollen_mp_pollen_emission_
+   -> llvm.smax.i64 /scratch_local/ifx2004992826MioWAy/ifxvPfX5b.i90 (58,16)
+   -> llvm.smax.i32 /scratch_local/ifx2004992826MioWAy/ifxvPfX5b.i90 (58,16)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx2004992826MioWAy/ifxvPfX5b.i90 (58,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx2004992826MioWAy/ifxvPfX5b.i90 (80,20)
+   -> llvm.powi.f64.i32 /scratch_local/ifx2004992826MioWAy/ifxvPfX5b.i90 (80,43)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx2004992826MioWAy/ifxvPfX5b.i90 (87,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx2004992826MioWAy/ifxvPfX5b.i90 (87,53)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx2004992826MioWAy/ifxvPfX5b.i90 (90,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx2004992826MioWAy/ifxvPfX5b.i90 (96,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx2004992826MioWAy/ifxvPfX5b.i90 (102,29)
+   -> llvm.exp.f64 /scratch_local/ifx2004992826MioWAy/ifxvPfX5b.i90 (102,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx2004992826MioWAy/ifxvPfX5b.i90 (101,38)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx2004992826MioWAy/ifxvPfX5b.i90 (114,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx2004992826MioWAy/ifxvPfX5b.i90 (123,39)
+   -> llvm.memset.p0.i64 /scratch_local/ifx2004992826MioWAy/ifxvPfX5b.i90 (58,16)
+   -> llvm.memset.p0.i64 /scratch_local/ifx2004992826MioWAy/ifxvPfX5b.i90 (70,7)
+
+COMPILE FUNC: mod_che_pollen._
+
+---- End Inlining Report ------

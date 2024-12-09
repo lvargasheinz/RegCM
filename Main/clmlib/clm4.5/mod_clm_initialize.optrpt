@@ -1,0 +1,34 @@
+Global optimization report for : mod_clm_initialize._
+=================================================================
+
+Global optimization report for : mod_clm_initialize_mp_initialize1_
+
+LOOP BEGIN at mod_clm_initialize.F90 (112, 15)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_initialize_mp_initialize2_
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_clm_initialize._
+
+COMPILE FUNC: mod_clm_initialize_mp_initialize1_
+   -> llvm.smax.i32 /scratch_local/ifx0081585047TADAXq/ifxqj5pPv.i90 (147,5)
+   -> llvm.smax.i32 /scratch_local/ifx0081585047TADAXq/ifxqj5pPv.i90 (147,5)
+   -> llvm.smax.i32 /scratch_local/ifx0081585047TADAXq/ifxqj5pPv.i90 (147,5)
+   -> llvm.smax.i32 /scratch_local/ifx0081585047TADAXq/ifxqj5pPv.i90 (147,5)
+
+COMPILE FUNC: mod_clm_initialize_mp_initialize2_
+   -> DELETE: mod_clm_staticecosysdyn_mp_interpmonthlyveg_ /scratch_local/ifx0081585047TADAXq/ifxqj5pPv.i90 (436,12)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0081585047TADAXq/ifxqj5pPv.i90 (414,56)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0081585047TADAXq/ifxqj5pPv.i90 (416,60)
+
+---- End Inlining Report ------

@@ -1,0 +1,140 @@
+Global optimization report for : mod_clm_drydepvelocity._
+=================================================================
+
+Global optimization report for : mod_clm_drydepvelocity_mp_depvel_compute_
+
+LOOP BEGIN at mod_clm_drydepvelocity.F90 (240, 19)
+
+    LOOP BEGIN at mod_clm_drydepvelocity.F90 (306, 18)
+        remark #25045: Fused Loops: 306,307
+        remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (306:18) and (306:18) 
+        remark #15346: vector dependence: assumed FLOW dependence between (306:18) and (306:18) 
+        remark #15346: vector dependence: assumed FLOW dependence between (307:18) and (307:18) 
+        remark #15346: vector dependence: assumed FLOW dependence between (307:18) and (307:18) 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_drydepvelocity.F90 (307, 18)
+        remark #25046: Loop lost in Fusion
+    LOOP END
+
+    LOOP BEGIN at mod_clm_drydepvelocity.F90 (400, 31)
+    LOOP END
+
+    LOOP BEGIN at mod_clm_drydepvelocity.F90 (517, 35)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed ANTI dependence between heff (522:42) and rlux (0:0) 
+        remark #15346: vector dependence: assumed ANTI dependence between foxd (522:70) and rlux (0:0) 
+        remark #15346: vector dependence: assumed ANTI dependence between foxd (522:70) and rlux (0:0) 
+        remark #15346: vector dependence: assumed ANTI dependence between foxd (522:70) and rlux (0:0) 
+        remark #15346: vector dependence: assumed FLOW dependence between rlux (0:0) and mapping (517:15) 
+        remark #15346: vector dependence: assumed FLOW dependence between rlux (0:0) and (517:15) 
+        remark #15346: vector dependence: assumed FLOW dependence between rlux (0:0) and index_o3 (518:15) 
+        remark #15346: vector dependence: assumed FLOW dependence between rlux (0:0) and index_o3a (518:26) 
+        remark #15346: vector dependence: assumed FLOW dependence between rlux (0:0) and index_so2 (518:39) 
+        remark #15346: vector dependence: assumed FLOW dependence between rlux (0:0) and heff (522:42) 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_drydepvelocity.F90 (546, 31)
+        remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.memmove.p0.p0.i64
+
+DEAD STATIC FUNC: llvm.stackrestore
+
+DEAD STATIC FUNC: llvm.stacksave
+
+COMPILE FUNC: mod_clm_drydepvelocity_mp_depvel_compute_
+   -> DELETE: llvm.stacksave /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (82,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (82,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (82,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (82,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (82,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (82,14)
+   -> DELETE: llvm.memmove.p0.p0.i64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (281,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (332,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (332,28)
+   -> DELETE: llvm.memmove.p0.p0.i64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (349,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (354,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (354,55)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (354,39)
+   -> llvm.exp.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (354,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (355,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (356,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (381,36)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (381,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (381,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (381,77)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (381,73)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (381,63)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (386,43)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (386,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (386,65)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (407,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (407,52)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (407,27)
+   -> llvm.exp.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (411,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (413,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (412,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (414,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (412,39)
+   -> llvm.log.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (441,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (444,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (446,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (460,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (470,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (468,52)
+   -> llvm.exp.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (468,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (468,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (474,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (474,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (475,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (474,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (477,45)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (490,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (490,52)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (490,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (490,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (500,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (500,52)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (500,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (500,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (522,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (522,42)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (523,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (523,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (522,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (531,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (531,55)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (531,47)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (531,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (550,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (550,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (551,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (551,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (552,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (552,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (550,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (562,45)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (562,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (564,45)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (564,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (571,45)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (571,37)
+   -> DELETE: llvm.stackrestore /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (576,3)
+   -> llvm.smax.i32 /scratch_local/ifx1071194462FFwYXS/ifx9NVhNk.i90 (82,14)
+
+COMPILE FUNC: mod_clm_drydepvelocity._
+
+---- End Inlining Report ------

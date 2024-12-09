@@ -1,0 +1,4188 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 48, Column: 10 }
+Function:        mod_pbl_thetal_mp_zerofunc_
+Args:
+  - String:          ''''
+  - Callee:          mod_pbl_thetal_mp_pfesat_
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 7, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mod_pbl_thetal_mp_zerofunc_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 42, Column: 0 }
+  - String:          ''''
+  - String:          ': always inline attribute'
+  - String:          ' at callsite '
+  - String:          mod_pbl_thetal_mp_zerofunc_
+  - String:          ':'
+  - Line:            '6'
+  - String:          ':'
+  - Column:          '10'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 56, Column: 35 }
+Function:        mod_pbl_thetal_mp_zerofunc_
+Args:
+  - String:          ''''
+  - Callee:          mod_pbl_thetal_mp_wlh_
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/wlh.inc', 
+                       Line: 5, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mod_pbl_thetal_mp_zerofunc_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 42, Column: 0 }
+  - String:          ''''
+  - String:          ': always inline attribute'
+  - String:          ' at callsite '
+  - String:          mod_pbl_thetal_mp_zerofunc_
+  - String:          ':'
+  - Line:            '14'
+  - String:          ':'
+  - Column:          '35'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 60, Column: 40 }
+Function:        mod_pbl_thetal_mp_zerofunc_
+Args:
+  - String:          ''''
+  - Callee:          mod_pbl_thetal_mp_wlh_
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/wlh.inc', 
+                       Line: 5, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mod_pbl_thetal_mp_zerofunc_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 42, Column: 0 }
+  - String:          ''''
+  - String:          ': always inline attribute'
+  - String:          ' at callsite '
+  - String:          mod_pbl_thetal_mp_zerofunc_
+  - String:          ':'
+  - Line:            '18'
+  - String:          ':'
+  - Column:          '40'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 412, Column: 10 }
+Function:        mod_pbl_thetal_mp_getqvqc_
+Args:
+  - String:          ''''
+  - Callee:          mod_pbl_thetal_mp_pfesat_
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 7, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mod_pbl_thetal_mp_getqvqc_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 408, Column: 0 }
+  - String:          ''''
+  - String:          ': always inline attribute'
+  - String:          ' at callsite '
+  - String:          mod_pbl_thetal_mp_getqvqc_
+  - String:          ':'
+  - Line:            '4'
+  - String:          ':'
+  - Column:          '10'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfwsat.inc', 
+                   Line: 12, Column: 12 }
+Function:        mod_pbl_thetal_mp_pfwsat_
+Args:
+  - String:          ''''
+  - Callee:          mod_pbl_thetal_mp_pfesat_
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 7, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mod_pbl_thetal_mp_pfwsat_
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfwsat.inc', 
+                       Line: 2, Column: 0 }
+  - String:          ''''
+  - String:          ': always inline attribute'
+  - String:          ' at callsite '
+  - String:          mod_pbl_thetal_mp_pfwsat_
+  - String:          ':'
+  - Line:            '10'
+  - String:          ':'
+  - Column:          '12'
+  - String:          ';'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 289, Column: 15 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - Callee:          for_write_seq_lis
+  - String:          ' will not be inlined into '
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 289, Column: 15 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - Callee:          for_write_seq_lis_xmit
+  - String:          ' will not be inlined into '
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 291, Column: 20 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - Callee:          mod_message_mp_fatal_
+  - String:          ' will not be inlined into '
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 94, Column: 14 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          ''''
+  - Callee:          mod_pbl_thetal_mp_wlh_
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/wlh.inc', 
+                       Line: 5, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ''''
+  - String:          ': always inline attribute'
+  - String:          ' at callsite '
+  - String:          mod_pbl_thetal_mp_solve_for_t_
+  - String:          ':'
+  - Line:            '26'
+  - String:          ':'
+  - Column:          '14'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 251, Column: 16 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          ''''
+  - Callee:          mod_pbl_thetal_mp_pfwsat_
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfwsat.inc', 
+                       Line: 2, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ''''
+  - String:          ': always inline attribute'
+  - String:          ' at callsite '
+  - String:          mod_pbl_thetal_mp_solve_for_t_
+  - String:          ':'
+  - Line:            '183'
+  - String:          ':'
+  - Column:          '16'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 266, Column: 20 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          ''''
+  - Callee:          mod_pbl_thetal_mp_wlh_
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/wlh.inc', 
+                       Line: 5, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ''''
+  - String:          ': always inline attribute'
+  - String:          ' at callsite '
+  - String:          mod_pbl_thetal_mp_solve_for_t_
+  - String:          ':'
+  - Line:            '198'
+  - String:          ':'
+  - Column:          '20'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 270, Column: 18 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          ''''
+  - Callee:          mod_pbl_thetal_mp_pfwsat_
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfwsat.inc', 
+                       Line: 2, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ''''
+  - String:          ': always inline attribute'
+  - String:          ' at callsite '
+  - String:          mod_pbl_thetal_mp_solve_for_t_
+  - String:          ':'
+  - Line:            '202'
+  - String:          ':'
+  - Column:          '18'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 282, Column: 18 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          ''''
+  - Callee:          mod_pbl_thetal_mp_pfwsat_
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfwsat.inc', 
+                       Line: 2, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ''''
+  - String:          ': always inline attribute'
+  - String:          ' at callsite '
+  - String:          mod_pbl_thetal_mp_solve_for_t_
+  - String:          ':'
+  - Line:            '214'
+  - String:          ':'
+  - Column:          '18'
+  - String:          ';'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 289, Column: 15 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - Callee:          for_write_seq_lis
+  - String:          ' will not be inlined into '
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 289, Column: 15 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - Callee:          for_write_seq_lis_xmit
+  - String:          ' will not be inlined into '
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 291, Column: 20 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - Callee:          mod_message_mp_fatal_
+  - String:          ' will not be inlined into '
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 117, Column: 14 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          ''''
+  - Callee:          mod_pbl_thetal_mp_getqvqc_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 408, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '230'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          mod_pbl_thetal_mp_solve_for_t_
+  - String:          ':'
+  - Line:            '49'
+  - String:          ':'
+  - Column:          '14'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 123, Column: 20 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          ''''
+  - Callee:          mod_pbl_thetal_mp_swap_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 399, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-40'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          mod_pbl_thetal_mp_solve_for_t_
+  - String:          ':'
+  - Line:            '55'
+  - String:          ':'
+  - Column:          '20'
+  - String:          ';'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 128, Column: 12 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          ''''
+  - Callee:          mod_pbl_thetal_mp_zerofunc_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 42, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ''' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '505'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 129, Column: 12 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          ''''
+  - Callee:          mod_pbl_thetal_mp_zerofunc_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 42, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ''' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '505'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 130, Column: 12 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          ''''
+  - Callee:          mod_pbl_thetal_mp_zerofunc_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 42, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ''' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '510'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 144, Column: 14 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          ''''
+  - Callee:          mod_pbl_thetal_mp_getqvqc_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 408, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '230'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          mod_pbl_thetal_mp_solve_for_t_
+  - String:          ':'
+  - Line:            '76'
+  - String:          ':'
+  - Column:          '14'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 153, Column: 14 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          ''''
+  - Callee:          mod_pbl_thetal_mp_getqvqc_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 408, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '230'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          mod_pbl_thetal_mp_solve_for_t_
+  - String:          ':'
+  - Line:            '85'
+  - String:          ':'
+  - Column:          '14'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 159, Column: 14 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          ''''
+  - Callee:          mod_pbl_thetal_mp_swap_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 399, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-40'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          mod_pbl_thetal_mp_solve_for_t_
+  - String:          ':'
+  - Line:            '91'
+  - String:          ':'
+  - Column:          '14'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 160, Column: 14 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          ''''
+  - Callee:          mod_pbl_thetal_mp_swap_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 399, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-40'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          mod_pbl_thetal_mp_solve_for_t_
+  - String:          ':'
+  - Line:            '92'
+  - String:          ':'
+  - Column:          '14'
+  - String:          ';'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 198, Column: 14 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          ''''
+  - Callee:          mod_pbl_thetal_mp_zerofunc_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 42, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ''' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '505'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 216, Column: 16 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          ''''
+  - Callee:          mod_pbl_thetal_mp_getqvqc_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 408, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '230'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          mod_pbl_thetal_mp_solve_for_t_
+  - String:          ':'
+  - Line:            '148'
+  - String:          ':'
+  - Column:          '16'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 220, Column: 34 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          ''''
+  - Callee:          mod_pbl_thetal_mp_swap_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 399, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-40'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          mod_pbl_thetal_mp_solve_for_t_
+  - String:          ':'
+  - Line:            '152'
+  - String:          ':'
+  - Column:          '34'
+  - String:          ';'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 221, Column: 14 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          ''''
+  - Callee:          mod_pbl_thetal_mp_zerofunc_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 42, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ''' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '505'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 222, Column: 14 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          ''''
+  - Callee:          mod_pbl_thetal_mp_zerofunc_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 42, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ''' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '505'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 223, Column: 14 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          ''''
+  - Callee:          mod_pbl_thetal_mp_zerofunc_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 42, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ''' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '505'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 229, Column: 14 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          ''''
+  - Callee:          mod_pbl_thetal_mp_getqvqc_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 408, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '230'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          mod_pbl_thetal_mp_solve_for_t_
+  - String:          ':'
+  - Line:            '161'
+  - String:          ':'
+  - Column:          '14'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 232, Column: 14 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          ''''
+  - Callee:          mod_pbl_thetal_mp_getqvqc_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 408, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '230'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          mod_pbl_thetal_mp_solve_for_t_
+  - String:          ':'
+  - Line:            '164'
+  - String:          ':'
+  - Column:          '14'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 346, Column: 14 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          ''''
+  - Callee:          mod_pbl_thetal_mp_getqvqc_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 408, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '210'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          mod_pbl_thetal_mp_solve_for_t_
+  - String:          ':'
+  - Line:            '278'
+  - String:          ':'
+  - Column:          '14'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 314, Column: 12 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          ''''
+  - Callee:          mod_pbl_thetal_mp_getqvqc_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 408, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '210'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          mod_pbl_thetal_mp_solve_for_t_
+  - String:          ':'
+  - Line:            '246'
+  - String:          ':'
+  - Column:          '12'
+  - String:          ';'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 289, Column: 15 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - Callee:          for_write_seq_lis
+  - String:          ' will not be inlined into '
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 289, Column: 15 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - Callee:          for_write_seq_lis_xmit
+  - String:          ' will not be inlined into '
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 291, Column: 20 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - Callee:          mod_message_mp_fatal_
+  - String:          ' will not be inlined into '
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 289, Column: 15 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - Callee:          for_write_seq_lis
+  - String:          ' will not be inlined into '
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 289, Column: 15 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - Callee:          for_write_seq_lis_xmit
+  - String:          ' will not be inlined into '
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 291, Column: 20 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - Callee:          mod_message_mp_fatal_
+  - String:          ' will not be inlined into '
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 128, Column: 12 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          ''''
+  - Callee:          mod_pbl_thetal_mp_zerofunc_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 42, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ''' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '485'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 129, Column: 12 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          ''''
+  - Callee:          mod_pbl_thetal_mp_zerofunc_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 42, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ''' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '485'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 130, Column: 12 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          ''''
+  - Callee:          mod_pbl_thetal_mp_zerofunc_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 42, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ''' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '490'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 198, Column: 14 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          ''''
+  - Callee:          mod_pbl_thetal_mp_zerofunc_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 42, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ''' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '485'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 221, Column: 14 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          ''''
+  - Callee:          mod_pbl_thetal_mp_zerofunc_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 42, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ''' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '485'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 222, Column: 14 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          ''''
+  - Callee:          mod_pbl_thetal_mp_zerofunc_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 42, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ''' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '485'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 223, Column: 14 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          ''''
+  - Callee:          mod_pbl_thetal_mp_zerofunc_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 42, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          mod_pbl_thetal_mp_solve_for_t_
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+  - String:          ''' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '485'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 49, Column: 32 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fmul
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 49, Column: 32 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 259, Column: 47 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 259, Column: 47 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 289, Column: 15 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 289, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 289, Column: 15 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 289, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 289, Column: 15 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 289, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 289, Column: 15 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 289, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 289, Column: 15 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 289, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 289, Column: 15 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 289, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 289, Column: 15 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 289, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 289, Column: 15 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 289, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 289, Column: 15 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 289, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 289, Column: 15 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 289, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 289, Column: 15 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 289, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 289, Column: 15 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 289, Column: 15 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 176, Column: 15 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 183, Column: 9 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 183, Column: 23 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 185, Column: 9 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 210, Column: 11 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 403, Column: 5 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 404, Column: 5 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 404, Column: 5 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            PromoteLoopAccessesToScalar
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 405, Column: 5 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          Moving accesses to memory location out of the loop
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 403, Column: 5 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            PromoteLoopAccessesToScalar
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 404, Column: 5 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          Moving accesses to memory location out of the loop
+...
+--- !Passed
+Pass:            licm
+Name:            PromoteLoopAccessesToScalar
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 200, Column: 9 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          Moving accesses to memory location out of the loop
+...
+--- !Passed
+Pass:            licm
+Name:            PromoteLoopAccessesToScalar
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          Moving accesses to memory location out of the loop
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 327, Column: 20 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fsub
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 327, Column: 20 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 327, Column: 14 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 327, Column: 14 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 327, Column: 29 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fcmp
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 327, Column: 29 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fmul
+...
+--- !Passed
+Pass:            licm
+Name:            PromoteLoopAccessesToScalar
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 326, Column: 9 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          Moving accesses to memory location out of the loop
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 331, Column: 21 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fdiv
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 331, Column: 21 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 331, Column: 35 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 331, Column: 35 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 333, Column: 46 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fmul
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 333, Column: 46 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 333, Column: 37 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fadd
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 333, Column: 37 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 333, Column: 21 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 333, Column: 21 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 259, Column: 47 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 91, Column: 5 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 291, Column: 20 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 125, Column: 7 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  phi
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 125, Column: 7 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 126, Column: 7 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  phi
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 126, Column: 7 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 404, Column: 5 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  phi
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 164, Column: 7 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  phi
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 164, Column: 7 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  phi
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  phi
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 164, Column: 7 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  phi
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 164, Column: 7 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 215, Column: 11 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  phi
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 228, Column: 9 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  phi
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 231, Column: 9 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  phi
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 143, Column: 9 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  phi
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 259, Column: 47 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 91, Column: 5 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 291, Column: 20 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 259, Column: 47 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadPRE
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfwsat.inc', 
+                   Line: 14, Column: 5 }
+Function:        mod_pbl_thetal_mp_pfwsat_
+Args:
+  - String:          load eliminated by PRE
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 259, Column: 47 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 91, Column: 5 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 291, Column: 20 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 259, Column: 47 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 91, Column: 5 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 291, Column: 20 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 259, Column: 47 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 344, Column: 23 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fadd
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 344, Column: 23 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 38, Column: 17 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fadd
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 38, Column: 17 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 39, Column: 18 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fcmp
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 39, Column: 18 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 39, Column: 18 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            select
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 39, Column: 18 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 40, Column: 18 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fcmp
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 40, Column: 18 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 40, Column: 18 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            select
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 40, Column: 18 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 42, Column: 13 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fcmp
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 42, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 42, Column: 13 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            select
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 42, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 42, Column: 13 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            select
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 42, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 42, Column: 13 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            select
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 42, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 42, Column: 13 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            select
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 42, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 42, Column: 13 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            select
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 42, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 42, Column: 13 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            select
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 42, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 42, Column: 13 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            select
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 42, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 42, Column: 13 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            select
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 42, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 42, Column: 13 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            select
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 42, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fmul
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 0, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fadd
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 0, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 0, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fmul
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 0, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fadd
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 0, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 0, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fmul
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 0, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fadd
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 0, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 0, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fmul
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 0, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fadd
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 0, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 0, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fmul
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 0, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fadd
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 0, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 0, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fmul
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 0, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fadd
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 0, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 0, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fmul
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 0, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fadd
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 0, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 0, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fmul
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 0, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fadd
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 0, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 49, Column: 15 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fcmp
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 49, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 49, Column: 15 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            select
+    DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                       Line: 49, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 413, Column: 22 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fdiv
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 413, Column: 22 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 413, Column: 25 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fadd
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 413, Column: 25 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 413, Column: 19 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 413, Column: 19 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 413, Column: 17 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fdiv
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 413, Column: 17 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 413, Column: 10 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fcmp
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 413, Column: 10 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 413, Column: 10 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            select
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 413, Column: 10 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 414, Column: 15 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fsub
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 414, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 414, Column: 15 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fcmp
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 414, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 414, Column: 15 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            select
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 414, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 348, Column: 40 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fmul
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 348, Column: 40 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 348, Column: 31 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fsub
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 348, Column: 31 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 348, Column: 25 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 348, Column: 25 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 348, Column: 48 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fdiv
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 348, Column: 48 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 348, Column: 22 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fsub
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 348, Column: 22 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 349, Column: 13 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 349, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 349, Column: 22 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'hoisting '
+  - Inst:            fcmp
+    DebugLoc:        { File: mod_pbl_thetal.F90, Line: 349, Column: 22 }
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+Function:        mod_pbl_thetal._
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        mod_pbl_thetal._
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_0
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+Function:        mod_pbl_thetal._
+Args:
+  - NumInstructions: '1'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 42, Column: 1 }
+Function:        mod_pbl_thetal_mp_zerofunc_
+Args:
+  - NumVRCopies:     '2'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '1.500000e+00'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 42, Column: 0 }
+Function:        mod_pbl_thetal_mp_zerofunc_
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 42, Column: 36 }
+Function:        mod_pbl_thetal_mp_zerofunc_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_1
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '55'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_zerofunc_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new544_then.i
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '13'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_zerofunc_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      initcall23_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_zerofunc_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new544_then.i59
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '10'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_zerofunc_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new545_else.i
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_zerofunc_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      mod_pbl_thetal_mp_wlh_.exit
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '17'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_zerofunc_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new545_else.i65
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_zerofunc_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      mod_pbl_thetal_mp_wlh_.exit68
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '13'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 42, Column: 0 }
+Function:        mod_pbl_thetal_mp_zerofunc_
+Args:
+  - NumInstructions: '136'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            LoopSpillReloadCopies
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 173, Column: 23 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - NumSpills:       '12'
+  - String:          ' spills '
+  - TotalSpillsCost: '9.192053e+00'
+  - String:          ' total spills cost '
+  - NumReloads:      '16'
+  - String:          ' reloads '
+  - TotalReloadsCost: '1.041060e+01'
+  - String:          ' total reloads cost '
+  - NumFoldedReloads: '1'
+  - String:          ' folded reloads '
+  - TotalFoldedReloadsCost: '8.211920e-01'
+  - String:          ' total folded reloads cost '
+  - NumVRCopies:     '38'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '2.523179e+01'
+  - String:          ' total copies cost '
+  - String:          generated in loop
+...
+--- !Missed
+Pass:            regalloc
+Name:            LoopSpillReloadCopies
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/wlh.inc', 
+                   Line: 11, Column: 13 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - NumSpills:       '1'
+  - String:          ' spills '
+  - TotalSpillsCost: '1.736043e+02'
+  - String:          ' total spills cost '
+  - NumReloads:      '1'
+  - String:          ' reloads '
+  - TotalReloadsCost: '1.736043e+02'
+  - String:          ' total reloads cost '
+  - NumFoldedReloads: '1'
+  - String:          ' folded reloads '
+  - TotalFoldedReloadsCost: '1.736043e+02'
+  - String:          ' total folded reloads cost '
+  - NumVRCopies:     '12'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '1.736040e+03'
+  - String:          ' total copies cost '
+  - String:          generated in loop
+...
+--- !Missed
+Pass:            regalloc
+Name:            LoopSpillReloadCopies
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 248, Column: 7 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - NumSpills:       '6'
+  - String:          ' spills '
+  - TotalSpillsCost: '1.997252e+02'
+  - String:          ' total spills cost '
+  - NumReloads:      '12'
+  - String:          ' reloads '
+  - TotalReloadsCost: '2.275083e+02'
+  - String:          ' total reloads cost '
+  - NumFoldedReloads: '2'
+  - String:          ' folded reloads '
+  - TotalFoldedReloadsCost: '1.786954e+02'
+  - String:          ' total folded reloads cost '
+  - NumVRCopies:     '23'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '1.791978e+03'
+  - String:          ' total copies cost '
+  - String:          generated in loop
+...
+--- !Missed
+Pass:            regalloc
+Name:            LoopSpillReloadCopies
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 336, Column: 26 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - NumReloads:      '2'
+  - String:          ' reloads '
+  - TotalReloadsCost: '3.256623e+00'
+  - String:          ' total reloads cost '
+  - NumFoldedReloads: '1'
+  - String:          ' folded reloads '
+  - TotalFoldedReloadsCost: '1.615894e+00'
+  - String:          ' total folded reloads cost '
+  - NumVRCopies:     '11'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '1.825993e+01'
+  - String:          ' total copies cost '
+  - String:          generated in loop
+...
+--- !Missed
+Pass:            regalloc
+Name:            LoopSpillReloadCopies
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 349, Column: 22 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - NumFoldedReloads: '1'
+  - String:          ' folded reloads '
+  - TotalFoldedReloadsCost: '1.642384e+00'
+  - String:          ' total folded reloads cost '
+  - NumVRCopies:     '1'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '1.642384e+00'
+  - String:          ' total copies cost '
+  - String:          generated in loop
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 1 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - NumSpills:       '37'
+  - String:          ' spills '
+  - TotalSpillsCost: '2.159454e+02'
+  - String:          ' total spills cost '
+  - NumFoldedSpills: '1'
+  - String:          ' folded spills '
+  - TotalFoldedSpillsCost: '3.327815e-01'
+  - String:          ' total folded spills cost '
+  - NumReloads:      '50'
+  - String:          ' reloads '
+  - TotalReloadsCost: '2.447699e+02'
+  - String:          ' total reloads cost '
+  - NumFoldedReloads: '10'
+  - String:          ' folded reloads '
+  - TotalFoldedReloadsCost: '1.834801e+02'
+  - String:          ' total folded reloads cost '
+  - NumVRCopies:     '133'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '1.849440e+03'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - NumStackBytes:   '360'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 34 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_2
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '35'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new544_then.i
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '10'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new545_else.i
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      mod_pbl_thetal_mp_wlh_.exit
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '15'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      mod_pbl_thetal_mp_wlh_.exit
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new283_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '25'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb33
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '69'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new545_else.i565
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      mod_pbl_thetal_mp_wlh_.exit568
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '44'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body297
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '19'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new544_then.i559
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '10'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do298
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '15'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      call.pre.list328_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '39'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new338_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new340_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '37'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new54_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '15'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb9_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '53'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb9_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new109_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '55'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new450_else.i838
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new351_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '60'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body368.preheader
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '12'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      hir.L.430.preheader
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '13'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      hir.L.430
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '16'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ifmerge.468
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '56'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ifmerge.468
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new63_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '53'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new449_then.i
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new351_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      else.441
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      hir.L.677.preheader
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '51'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      hir.L.677
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      hir.L.677
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb7.loopexit.loopexit1516
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb17_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new117_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '51'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new449_then.i912
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new450_else.i
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      end_label35
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb7.loopexit.loopexit
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb7.loopexit.loopexit
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb7.loopexit
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb7
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      end_label35
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '9'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 417, Column: 7 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new450_else.i913
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      mod_pbl_thetal_mp_getqvqc_.exit915
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb20_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      call.pre.list131_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '7'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body147.preheader
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '12'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      call.pre.list243_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb31_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '26'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body147
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body147
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new153_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '27'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new172_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb23_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '49'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb23_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb23_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '13'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new217_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '12'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb25_endif.bb27_endif_crit_edge
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new218_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '11'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new222_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb27_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb27_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb28_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb28_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb20_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb22_endif
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do148
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new275_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '56'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new449_then.i837
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new268_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '55'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new449_then.i1068
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new230_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '56'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new449_then.i991
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new450_else.i1144
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new450_else.i1069
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      end_label35
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new450_else.i992
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      mod_pbl_thetal_mp_getqvqc_.exit994
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 68, Column: 0 }
+Function:        mod_pbl_thetal_mp_solve_for_t_
+Args:
+  - NumInstructions: '1389'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 364, Column: 1 }
+Function:        mod_pbl_thetal_mp_esatw_
+Args:
+  - NumSpills:       '1'
+  - String:          ' spills '
+  - TotalSpillsCost: '1.000000e+00'
+  - String:          ' total spills cost '
+  - NumFoldedReloads: '1'
+  - String:          ' folded reloads '
+  - TotalFoldedReloadsCost: '1.000000e+00'
+  - String:          ' total folded reloads cost '
+  - NumVRCopies:     '1'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '1.000000e+00'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 364, Column: 0 }
+Function:        mod_pbl_thetal_mp_esatw_
+Args:
+  - NumStackBytes:   '8'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 364, Column: 18 }
+Function:        mod_pbl_thetal_mp_esatw_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_3
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '20'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 364, Column: 0 }
+Function:        mod_pbl_thetal_mp_esatw_
+Args:
+  - NumInstructions: '22'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 383, Column: 1 }
+Function:        mod_pbl_thetal_mp_esati_
+Args:
+  - NumSpills:       '1'
+  - String:          ' spills '
+  - TotalSpillsCost: '1.000000e+00'
+  - String:          ' total spills cost '
+  - NumFoldedReloads: '1'
+  - String:          ' folded reloads '
+  - TotalFoldedReloadsCost: '1.000000e+00'
+  - String:          ' total folded reloads cost '
+  - NumVRCopies:     '1'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '1.000000e+00'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 383, Column: 0 }
+Function:        mod_pbl_thetal_mp_esati_
+Args:
+  - NumStackBytes:   '8'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 383, Column: 18 }
+Function:        mod_pbl_thetal_mp_esati_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_4
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '20'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 383, Column: 0 }
+Function:        mod_pbl_thetal_mp_esati_
+Args:
+  - NumInstructions: '22'
+  - String:          ' instructions in function'
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 399, Column: 0 }
+Function:        mod_pbl_thetal_mp_swap_
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 399, Column: 19 }
+Function:        mod_pbl_thetal_mp_swap_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_5
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 399, Column: 0 }
+Function:        mod_pbl_thetal_mp_swap_
+Args:
+  - NumInstructions: '5'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 408, Column: 1 }
+Function:        mod_pbl_thetal_mp_getqvqc_
+Args:
+  - NumVRCopies:     '2'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '1.500000e+00'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 408, Column: 0 }
+Function:        mod_pbl_thetal_mp_getqvqc_
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 408, Column: 22 }
+Function:        mod_pbl_thetal_mp_getqvqc_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_6
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '58'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_getqvqc_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new449_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_getqvqc_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new450_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: mod_pbl_thetal.F90, Line: 408, Column: 0 }
+Function:        mod_pbl_thetal_mp_getqvqc_
+Args:
+  - NumInstructions: '72'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 7, Column: 1 }
+Function:        mod_pbl_thetal_mp_pfesat_
+Args:
+  - NumVRCopies:     '1'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '1.000000e+00'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 7, Column: 0 }
+Function:        mod_pbl_thetal_mp_pfesat_
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 7, Column: 44 }
+Function:        mod_pbl_thetal_mp_pfesat_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_7
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '44'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 7, Column: 0 }
+Function:        mod_pbl_thetal_mp_pfesat_
+Args:
+  - NumInstructions: '51'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 53, Column: 1 }
+Function:        mod_pbl_thetal_mp_pfesat_water_
+Args:
+  - NumVRCopies:     '1'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '1.000000e+00'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 53, Column: 0 }
+Function:        mod_pbl_thetal_mp_pfesat_water_
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 53, Column: 50 }
+Function:        mod_pbl_thetal_mp_pfesat_water_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_8
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '28'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 53, Column: 0 }
+Function:        mod_pbl_thetal_mp_pfesat_water_
+Args:
+  - NumInstructions: '35'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 79, Column: 1 }
+Function:        mod_pbl_thetal_mp_pfesat_ice_
+Args:
+  - NumVRCopies:     '1'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '1.000000e+00'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 79, Column: 0 }
+Function:        mod_pbl_thetal_mp_pfesat_ice_
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 79, Column: 48 }
+Function:        mod_pbl_thetal_mp_pfesat_ice_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_9
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '28'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfesat.inc', 
+                   Line: 79, Column: 0 }
+Function:        mod_pbl_thetal_mp_pfesat_ice_
+Args:
+  - NumInstructions: '35'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfwsat.inc', 
+                   Line: 2, Column: 1 }
+Function:        mod_pbl_thetal_mp_pfwsat_
+Args:
+  - NumVRCopies:     '1'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '3.809524e-01'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfwsat.inc', 
+                   Line: 2, Column: 0 }
+Function:        mod_pbl_thetal_mp_pfwsat_
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfwsat.inc', 
+                   Line: 2, Column: 44 }
+Function:        mod_pbl_thetal_mp_pfwsat_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_10
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfwsat.inc', 
+                   Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_pfwsat_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new529_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfwsat.inc', 
+                   Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_pfwsat_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      call.pre.list530_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '48'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/pfwsat.inc', 
+                   Line: 2, Column: 0 }
+Function:        mod_pbl_thetal_mp_pfwsat_
+Args:
+  - NumInstructions: '67'
+  - String:          ' instructions in function'
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/wlh.inc', 
+                   Line: 5, Column: 0 }
+Function:        mod_pbl_thetal_mp_wlh_
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/wlh.inc', 
+                   Line: 5, Column: 41 }
+Function:        mod_pbl_thetal_mp_wlh_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_11
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/wlh.inc', 
+                   Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_wlh_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new544_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '10'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/wlh.inc', 
+                   Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_wlh_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new545_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/wlh.inc', 
+                   Line: 0, Column: 0 }
+Function:        mod_pbl_thetal_mp_wlh_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb64_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: '/leonardo/home/userexternal/lvargasd/RegCM/Share/wlh.inc', 
+                   Line: 5, Column: 0 }
+Function:        mod_pbl_thetal_mp_wlh_
+Args:
+  - NumInstructions: '24'
+  - String:          ' instructions in function'
+...

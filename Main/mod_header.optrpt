@@ -1,0 +1,45 @@
+Global optimization report for : mod_header._
+=================================================================
+
+Global optimization report for : mod_header_mp_whoami_
+=================================================================
+
+Global optimization report for : mod_header_mp_header_
+=================================================================
+
+Global optimization report for : mod_header_mp_checktime_
+=================================================================
+
+Global optimization report for : mod_header_mp_finaltime_
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: getcwd_.t1161p.t3v
+
+DEAD STATIC FUNC: getlog_.t1155p.t3v
+
+DEAD STATIC FUNC: hostnm_.t1150p.t3v
+
+COMPILE FUNC: mod_header._
+
+COMPILE FUNC: mod_header_mp_whoami_
+
+COMPILE FUNC: mod_header_mp_header_
+   -> INLINE: hostnm_.t1150p.t3v /scratch_local/ifx0814697129X4bOYh/ifxxmutaX.i90 (73,15)
+   -> INLINE: getlog_.t1155p.t3v /scratch_local/ifx0814697129X4bOYh/ifxxmutaX.i90 (74,12)
+   -> INLINE: getcwd_.t1161p.t3v /scratch_local/ifx0814697129X4bOYh/ifxxmutaX.i90 (76,14)
+
+COMPILE FUNC: mod_header_mp_checktime_
+   -> llvm.arithmetic.fence.f32 /scratch_local/ifx0814697129X4bOYh/ifxxmutaX.i90 (103,21)
+   -> llvm.arithmetic.fence.f32 /scratch_local/ifx0814697129X4bOYh/ifxxmutaX.i90 (99,21)
+
+COMPILE FUNC: mod_header_mp_finaltime_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0814697129X4bOYh/ifxxmutaX.i90 (122,18)
+
+---- End Inlining Report ------

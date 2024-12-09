@@ -1,0 +1,1142 @@
+Global optimization report for : mod_rad_outrad._
+=================================================================
+
+Global optimization report for : mod_rad_outrad_mp_allocate_mod_rad_outrad_
+=================================================================
+
+Global optimization report for : mod_rad_outrad_mp_radout_
+
+LOOP BEGIN at mod_rad_outrad.F90 (117, 9)
+    remark #25423: Invariant If condition at line 117 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (117, 9)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_rad_outrad.F90 (121, 11)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_rad_outrad.F90 (117, 9)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_rad_outrad.F90 (121, 11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (108, 9)
+    remark #25423: Invariant If condition at line 108 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (108, 9)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_rad_outrad.F90 (112, 11)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_rad_outrad.F90 (108, 9)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_rad_outrad.F90 (112, 11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (130, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (137, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (132:9) and (132:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (133:9) and (132:9) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between (133:9) and (132:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (133:9) and (133:9) 
+        remark #15346: vector dependence: assumed ANTI dependence between (133:9) and (132:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (134:9) and (132:9) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between (134:9) and (132:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (134:9) and (133:9) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between (134:9) and (133:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (134:9) and (134:9) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (148, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (156, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (150:9) and (150:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (151:9) and (150:9) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between (151:9) and (150:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (151:9) and (151:9) 
+        remark #15346: vector dependence: assumed ANTI dependence between (151:9) and (150:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (152:9) and (150:9) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between (152:9) and (150:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (152:9) and (151:9) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between (152:9) and (151:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (152:9) and (152:9) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (172, 9)
+
+    LOOP BEGIN at mod_rad_outrad.F90 (180, 11)
+
+        LOOP BEGIN at mod_rad_outrad.F90 (181, 36)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between km2 (184:55) and km2 (184:55) 
+            remark #15346: vector dependence: assumed FLOW dependence between kl1 (184:55) and kl1 (184:55) 
+        LOOP END
+
+        LOOP BEGIN at mod_rad_outrad.F90 (194, 11)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between hif (191:22) and hif (191:22) 
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+        LOOP END
+
+        LOOP BEGIN at mod_rad_outrad.F90 (198, 11)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between mif (196:22) and mif (196:22) 
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+        LOOP END
+
+        LOOP BEGIN at mod_rad_outrad.F90 (202, 11)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between lof (200:22) and lof (200:22) 
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (570, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (573, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (570, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (573, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (570, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (573, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (570, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (573, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (570, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (573, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (570, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (573, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (570, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (573, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (570, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (573, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (254, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (254, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_rad_outrad.F90 (254, 11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (254, 11)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (254, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_rad_outrad.F90 (254, 11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (289, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (292, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (289, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (292, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (289, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (292, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (289, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (292, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (289, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (292, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (289, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (292, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (289, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (292, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (289, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (292, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (289, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (292, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (289, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (292, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (289, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (292, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (289, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (292, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_rad_outrad_mp_copy2d_
+
+LOOP BEGIN at mod_rad_outrad.F90 (289, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (292, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_rad_outrad_mp_copy2d_integrate_from3_
+
+LOOP BEGIN at mod_rad_outrad.F90 (304, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (304, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (316, 11)
+    remark #25423: Invariant If condition at line 316 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (316, 11)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_rad_outrad.F90 (320, 13)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_rad_outrad.F90 (316, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_rad_outrad.F90 (320, 13)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (307, 11)
+    remark #25423: Invariant If condition at line 307 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (307, 11)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_rad_outrad.F90 (311, 13)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_rad_outrad.F90 (307, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_rad_outrad.F90 (311, 13)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_rad_outrad_mp_copy3d_
+=================================================================
+
+Global optimization report for : mod_rad_outrad_mp_copy3d1_
+
+LOOP BEGIN at mod_rad_outrad.F90 (352, 11)
+    remark #25423: Invariant If condition at line 352 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (352, 11)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_rad_outrad.F90 (356, 13)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_rad_outrad.F90 (352, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_rad_outrad.F90 (356, 13)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (343, 11)
+    remark #25423: Invariant If condition at line 343 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (343, 11)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_rad_outrad.F90 (347, 13)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_rad_outrad.F90 (343, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_rad_outrad.F90 (347, 13)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_rad_outrad_mp_copy4d_
+
+LOOP BEGIN at mod_rad_outrad.F90 (384, 11)
+    remark #25423: Invariant If condition at line 384 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (384, 11)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_rad_outrad.F90 (388, 13)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_rad_outrad.F90 (384, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_rad_outrad.F90 (388, 13)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (373, 11)
+    remark #25423: Invariant If condition at line 373 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (373, 11)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_rad_outrad.F90 (377, 13)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_rad_outrad.F90 (373, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_rad_outrad.F90 (377, 13)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_rad_outrad_mp_copy4d1_
+
+LOOP BEGIN at mod_rad_outrad.F90 (417, 13)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 417 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (416, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_rad_outrad.F90 (416, 11)
+        <Multiversioned v2>
+            remark #15319: Loop was not vectorized: novector directive used
+
+            LOOP BEGIN at mod_rad_outrad.F90 (421, 15)
+                remark #15319: Loop was not vectorized: novector directive used
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at mod_rad_outrad.F90 (416, 11)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_rad_outrad.F90 (421, 15)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (424, 9)
+<Predicate Optimized v2>
+
+    LOOP BEGIN at mod_rad_outrad.F90 (423, 11)
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (406, 13)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 406 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (405, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_rad_outrad.F90 (405, 11)
+        <Multiversioned v2>
+            remark #15319: Loop was not vectorized: novector directive used
+
+            LOOP BEGIN at mod_rad_outrad.F90 (410, 15)
+                remark #15319: Loop was not vectorized: novector directive used
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at mod_rad_outrad.F90 (405, 11)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_rad_outrad.F90 (410, 15)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (413, 9)
+<Predicate Optimized v2>
+
+    LOOP BEGIN at mod_rad_outrad.F90 (412, 11)
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_rad_outrad_mp_copy4d2_
+
+LOOP BEGIN at mod_rad_outrad.F90 (446, 11)
+    remark #25423: Invariant If condition at line 446 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (446, 11)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_rad_outrad.F90 (450, 13)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_rad_outrad.F90 (446, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_rad_outrad.F90 (450, 13)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (437, 11)
+    remark #25423: Invariant If condition at line 437 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (437, 11)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_rad_outrad.F90 (441, 13)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_rad_outrad.F90 (437, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_rad_outrad.F90 (441, 13)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_rad_outrad_mp_copy4d_mult_
+
+LOOP BEGIN at mod_rad_outrad.F90 (476, 11)
+    remark #25423: Invariant If condition at line 476 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (476, 11)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_rad_outrad.F90 (480, 13)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_rad_outrad.F90 (476, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_rad_outrad.F90 (480, 13)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (467, 11)
+    remark #25423: Invariant If condition at line 467 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (467, 11)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_rad_outrad.F90 (471, 13)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_rad_outrad.F90 (467, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_rad_outrad.F90 (471, 13)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_rad_outrad_mp_copy4d_div_
+
+LOOP BEGIN at mod_rad_outrad.F90 (509, 11)
+    remark #25423: Invariant If condition at line 509 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (509, 11)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_rad_outrad.F90 (513, 13)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_rad_outrad.F90 (509, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_rad_outrad.F90 (513, 13)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (498, 11)
+    remark #25423: Invariant If condition at line 498 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (498, 11)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_rad_outrad.F90 (502, 13)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_rad_outrad.F90 (498, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_rad_outrad.F90 (502, 13)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_rad_outrad_mp_copy4d_div2_
+
+LOOP BEGIN at mod_rad_outrad.F90 (547, 11)
+    remark #25423: Invariant If condition at line 547 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (547, 11)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_rad_outrad.F90 (550, 34)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_rad_outrad.F90 (547, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_rad_outrad.F90 (550, 34)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (532, 11)
+    remark #25423: Invariant If condition at line 532 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (532, 11)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_rad_outrad.F90 (535, 34)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_rad_outrad.F90 (532, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_rad_outrad.F90 (535, 34)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_rad_outrad_mp_copy2d_add_
+
+LOOP BEGIN at mod_rad_outrad.F90 (570, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (573, 9)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_rad_outrad_mp_copy3d_add_
+
+LOOP BEGIN at mod_rad_outrad.F90 (595, 11)
+    remark #25423: Invariant If condition at line 595 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (595, 11)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_rad_outrad.F90 (599, 13)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_rad_outrad.F90 (595, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_rad_outrad.F90 (599, 13)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (586, 11)
+    remark #25423: Invariant If condition at line 586 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (586, 11)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_rad_outrad.F90 (590, 13)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_rad_outrad.F90 (586, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_rad_outrad.F90 (590, 13)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_rad_outrad_mp_copy4d_add_
+
+LOOP BEGIN at mod_rad_outrad.F90 (624, 11)
+    remark #25423: Invariant If condition at line 624 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (624, 11)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_rad_outrad.F90 (628, 13)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_rad_outrad.F90 (624, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_rad_outrad.F90 (628, 13)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_rad_outrad.F90 (615, 11)
+    remark #25423: Invariant If condition at line 615 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_rad_outrad.F90 (615, 11)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_rad_outrad.F90 (619, 13)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_rad_outrad.F90 (615, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_rad_outrad.F90 (619, 13)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.smax.i32
+
+COMPILE FUNC: mod_rad_outrad._
+
+COMPILE FUNC: mod_rad_outrad_mp_allocate_mod_rad_outrad_
+
+COMPILE FUNC: mod_rad_outrad_mp_copy4d_div_
+   -> llvm.smax.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (512,15)
+   -> llvm.smin.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (512,15)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (512,15)
+   -> DELETE: llvm.smin.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (512,15)
+   -> llvm.smax.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (501,15)
+   -> llvm.smin.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (501,15)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (501,15)
+   -> DELETE: llvm.smin.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (501,15)
+
+COMPILE FUNC: mod_rad_outrad_mp_copy2d_integrate_from3_
+   -> llvm.smin.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (319,15)
+   -> llvm.smax.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (319,15)
+   -> llvm.smin.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (310,15)
+   -> llvm.smax.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (310,15)
+
+COMPILE FUNC: mod_rad_outrad_mp_copy4d_
+   -> llvm.smax.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (387,15)
+   -> llvm.smin.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (387,15)
+   -> llvm.smax.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (376,15)
+   -> llvm.smin.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (376,15)
+
+COMPILE FUNC: mod_rad_outrad_mp_copy4d_div2_
+   -> DELETE: llvm.fabs.f64 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (535,20)
+   -> DELETE: llvm.fabs.f64 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (550,20)
+   -> llvm.fabs.f64 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (550,20)
+   -> llvm.fabs.f64 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (550,20)
+   -> llvm.fabs.f64 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (535,20)
+   -> llvm.fabs.f64 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (535,20)
+   -> llvm.smax.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (550,15)
+   -> llvm.smin.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (550,15)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (551,17)
+   -> DELETE: llvm.smin.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (551,17)
+   -> llvm.smax.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (535,15)
+   -> llvm.smin.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (535,15)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (536,17)
+   -> DELETE: llvm.smin.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (536,17)
+
+COMPILE FUNC: mod_rad_outrad_mp_copy4d2_
+   -> llvm.smax.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (449,15)
+   -> llvm.smin.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (449,15)
+   -> llvm.smax.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (440,15)
+   -> llvm.smin.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (440,15)
+
+COMPILE FUNC: mod_rad_outrad_mp_copy2d_add_
+
+COMPILE FUNC: mod_rad_outrad_mp_copy3d1_
+   -> llvm.smax.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (355,15)
+   -> llvm.smin.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (355,15)
+   -> llvm.smax.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (346,15)
+   -> llvm.smin.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (346,15)
+
+COMPILE FUNC: mod_rad_outrad_mp_copy3d_
+   -> mod_rad_outrad_mp_copy3d1_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (331,10)
+
+COMPILE FUNC: mod_rad_outrad_mp_copy4d1_
+   -> llvm.smax.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (420,17)
+   -> llvm.smin.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (420,17)
+   -> llvm.smax.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (409,17)
+   -> llvm.smin.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (409,17)
+
+COMPILE FUNC: mod_rad_outrad_mp_copy2d_
+
+COMPILE FUNC: mod_rad_outrad_mp_radout_
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (192,30)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (191,29)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (191,24)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (197,30)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (196,29)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (196,24)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (201,30)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (200,29)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (200,24)
+   -> mod_rad_outrad_mp_copy4d_div_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (216,14)
+   -> mod_rad_outrad_mp_copy2d_integrate_from3_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (221,14)
+   -> mod_rad_outrad_mp_copy4d_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (222,14)
+   -> mod_rad_outrad_mp_copy4d_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (223,14)
+   -> mod_rad_outrad_mp_copy4d_div_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (226,14)
+   -> mod_rad_outrad_mp_copy2d_integrate_from3_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (227,14)
+   -> mod_rad_outrad_mp_copy4d_div2_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (228,14)
+   -> mod_rad_outrad_mp_copy4d_div2_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (229,14)
+   -> mod_rad_outrad_mp_copy4d2_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (232,12)
+   -> INLINE: mod_rad_outrad_mp_copy2d_add_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (237,11)
+   -> INLINE: mod_rad_outrad_mp_copy2d_add_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (239,11)
+   -> INLINE: mod_rad_outrad_mp_copy2d_add_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (240,14)
+   -> INLINE: mod_rad_outrad_mp_copy2d_add_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (241,14)
+   -> INLINE: mod_rad_outrad_mp_copy2d_add_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (243,11)
+   -> INLINE: mod_rad_outrad_mp_copy2d_add_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (245,11)
+   -> INLINE: mod_rad_outrad_mp_copy2d_add_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (234,14)
+   -> INLINE: mod_rad_outrad_mp_copy2d_add_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (235,14)
+   -> INLINE: mod_rad_outrad_mp_copy3d_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (256,14)
+      -> mod_rad_outrad_mp_copy3d1_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (331,10)
+   -> INLINE: mod_rad_outrad_mp_copy3d_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (257,14)
+      -> mod_rad_outrad_mp_copy3d1_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (331,10)
+   -> INLINE: mod_rad_outrad_mp_copy3d_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (259,16)
+      -> mod_rad_outrad_mp_copy3d1_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (331,10)
+   -> mod_rad_outrad_mp_copy4d1_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (262,16)
+   -> mod_rad_outrad_mp_copy4d1_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (263,16)
+   -> INLINE: mod_rad_outrad_mp_copy2d_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (265,14)
+   -> INLINE: mod_rad_outrad_mp_copy2d_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (266,14)
+   -> INLINE: mod_rad_outrad_mp_copy2d_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (267,14)
+   -> INLINE: mod_rad_outrad_mp_copy2d_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (268,14)
+   -> INLINE: mod_rad_outrad_mp_copy2d_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (269,14)
+   -> INLINE: mod_rad_outrad_mp_copy2d_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (270,14)
+   -> INLINE: mod_rad_outrad_mp_copy2d_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (271,14)
+   -> INLINE: mod_rad_outrad_mp_copy2d_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (272,14)
+   -> INLINE: mod_rad_outrad_mp_copy2d_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (273,14)
+   -> INLINE: mod_rad_outrad_mp_copy2d_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (274,14)
+   -> INLINE: mod_rad_outrad_mp_copy2d_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (275,14)
+   -> INLINE: mod_rad_outrad_mp_copy2d_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (276,14)
+   -> INLINE: mod_rad_outrad_mp_copy3d_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (251,14)
+      -> mod_rad_outrad_mp_copy3d1_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (331,10)
+   -> INLINE: mod_rad_outrad_mp_copy3d_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (252,14)
+      -> mod_rad_outrad_mp_copy3d1_ /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (331,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (237,11)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (237,11)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (239,11)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (239,11)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (240,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (240,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (241,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (241,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (243,11)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (243,11)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (245,11)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (245,11)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (234,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (234,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (235,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (235,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (256,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (256,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (257,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (257,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (259,16)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (259,16)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (265,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (265,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (266,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (266,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (267,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (267,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (268,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (268,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (269,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (269,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (270,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (270,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (271,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (271,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (272,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (272,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (273,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (273,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (274,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (274,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (275,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (275,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (276,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (276,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (251,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (251,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (252,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (252,14)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (194,11)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (192,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (191,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (191,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (197,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (196,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (196,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (201,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (200,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (200,24)
+   -> llvm.memset.p0.i64 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (210,10)
+   -> llvm.smax.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (120,13)
+   -> llvm.smin.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (120,13)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (120,13)
+   -> DELETE: llvm.smin.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (120,13)
+   -> llvm.smax.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (111,13)
+   -> llvm.smin.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (111,13)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (111,13)
+   -> DELETE: llvm.smin.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (111,13)
+
+COMPILE FUNC: mod_rad_outrad_mp_copy4d_mult_
+   -> llvm.smax.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (479,15)
+   -> llvm.smin.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (479,15)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (479,15)
+   -> DELETE: llvm.smin.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (479,15)
+   -> llvm.smax.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (470,15)
+   -> llvm.smin.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (470,15)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (470,15)
+   -> DELETE: llvm.smin.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (470,15)
+
+COMPILE FUNC: mod_rad_outrad_mp_copy3d_add_
+   -> llvm.smin.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (598,15)
+   -> llvm.smax.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (598,15)
+   -> llvm.smin.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (589,15)
+   -> llvm.smax.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (589,15)
+
+COMPILE FUNC: mod_rad_outrad_mp_copy4d_add_
+   -> llvm.smin.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (627,15)
+   -> llvm.smax.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (627,15)
+   -> llvm.smin.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (618,15)
+   -> llvm.smax.i32 /scratch_local/ifx2073453884Bq7ild/ifx3bkySy.i90 (618,15)
+
+---- End Inlining Report ------

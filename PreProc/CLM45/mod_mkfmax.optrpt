@@ -1,0 +1,27 @@
+Global optimization report for : mod_mkfmax._
+=================================================================
+
+Global optimization report for : mod_mkfmax_mp_mkfmax_
+
+LOOP BEGIN at mod_mkfmax.F90 (56, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_mkfmax.F90 (57, 24)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_mkfmax._
+
+COMPILE FUNC: mod_mkfmax_mp_mkfmax_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0329395362APRFsK/ifxoVXCHo.i90 (37,14)
+
+---- End Inlining Report ------

@@ -1,0 +1,407 @@
+Global optimization report for : rrtmg_lw_rtrnmr._
+=================================================================
+
+Global optimization report for : rrtmg_lw_rtrnmr_mp_rtrnmr_
+
+LOOP BEGIN at rrtmg_lw_rtrnmr.F90 (296, 7)
+
+    LOOP BEGIN at rrtmg_lw_rtrnmr.F90 (296, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (296:7) and (289:48) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_lw_rtrnmr.F90 (333, 19)
+<Multiversioned v2>
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_lw_rtrnmr.F90 (341, 30)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at rrtmg_lw_rtrnmr.F90 (341, 30)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_lw_rtrnmr.F90 (333, 19)
+<Predicate Optimized v2>
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25408: memset generated
+    remark #25408: memset generated
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_lw_rtrnmr.F90 (341, 30)
+    <Predicate Optimized v5>
+        remark #25423: Invariant If condition at line 341 hoisted out of this loop
+        remark #25530: Stmt at line 0 sinked after loop using last value computation
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at rrtmg_lw_rtrnmr.F90 (341, 30)
+    <Predicate Optimized v6>
+        remark #25530: Stmt at line 0 sinked after loop using last value computation
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_lw_rtrnmr.F90 (333, 19)
+<Multiversioned v2>
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_lw_rtrnmr.F90 (341, 30)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at rrtmg_lw_rtrnmr.F90 (341, 30)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_lw_rtrnmr.F90 (333, 19)
+<Predicate Optimized v1>
+<Multiversioned v1>
+    remark #25423: Invariant If condition at line 333 hoisted out of this loop
+    remark #25408: memset generated
+    remark #25408: memset generated
+    remark #25408: memset generated
+    remark #25408: memset generated
+    remark #25408: memset generated
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at rrtmg_lw_rtrnmr.F90 (341, 30)
+    <Predicate Optimized v3>
+        remark #25423: Invariant If condition at line 341 hoisted out of this loop
+        remark #25530: Stmt at line 0 sinked after loop using last value computation
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at rrtmg_lw_rtrnmr.F90 (341, 30)
+    <Predicate Optimized v4>
+        remark #25530: Stmt at line 0 sinked after loop using last value computation
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_lw_rtrnmr.F90 (357, 26)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed OUTPUT dependence between faccld2 (362:16) and faccld2 (406:19) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between faccld2 (362:16) and faccld2 (376:19) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between facclr2 (364:16) and facclr2 (405:19) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between facclr2 (364:16) and facclr2 (375:19) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between facclr2 (400:16) and facclr2 (375:19) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between faccld2 (403:19) and faccld2 (376:19) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between faccld2 (414:22) and faccld2 (406:19) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between faccld2 (414:22) and faccld2 (376:19) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between faccld2 (411:22) and faccld2 (406:19) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between faccld2 (411:22) and faccld2 (376:19) 
+LOOP END
+
+LOOP BEGIN at rrtmg_lw_rtrnmr.F90 (437, 26)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed OUTPUT dependence between faccld1d (440:16) and faccld1d (481:19) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between faccld1d (440:16) and faccld1d (491:22) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between faccld1d (440:16) and faccld1d (488:22) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between faccld1d (440:16) and faccld1d (447:16) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between faccld2d (441:16) and faccld2d (482:19) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between faccld2d (441:16) and faccld2d (484:19) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between faccld2d (441:16) and faccld2d (492:22) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between faccld2d (441:16) and faccld2d (489:22) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between faccld2d (441:16) and faccld2d (448:16) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between faccld2d (441:16) and faccld2d (455:19) 
+LOOP END
+
+LOOP BEGIN at rrtmg_lw_rtrnmr.F90 (519, 23)
+
+    LOOP BEGIN at rrtmg_lw_rtrnmr.F90 (530, 2)
+
+        LOOP BEGIN at rrtmg_lw_rtrnmr.F90 (548, 32)
+        LOOP END
+
+        LOOP BEGIN at rrtmg_lw_rtrnmr.F90 (736, 25)
+        <Multiversioned v2>
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between d_radlu_dt (712:81) and d_radlu_dt (712:43) 
+            remark #15346: vector dependence: assumed FLOW dependence between d_radlu_dt (712:81) and d_radlu_dt (713:37) 
+            remark #15346: vector dependence: assumed FLOW dependence between d_radlu_dt (712:81) and d_radlu_dt (721:43) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between d_radlu_dt (712:81) and d_radlu_dt (721:43) 
+            remark #15346: vector dependence: assumed ANTI dependence between d_radlu_dt (714:51) and d_radlu_dt (721:43) 
+            remark #15346: vector dependence: assumed FLOW dependence between d_radlu_dt (721:43) and d_radlu_dt (712:43) 
+            remark #15346: vector dependence: assumed FLOW dependence between d_radlu_dt (721:43) and d_radlu_dt (713:37) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between d_radlu_dt (721:43) and d_radlu_dt (712:81) 
+            remark #15346: vector dependence: assumed FLOW dependence between d_radlu_dt (721:43) and d_radlu_dt (721:43) 
+            remark #15346: vector dependence: assumed ANTI dependence between d_radlu_dt (722:51) and d_radlu_dt (712:81) 
+        LOOP END
+
+        LOOP BEGIN at rrtmg_lw_rtrnmr.F90 (736, 25)
+        <Predicate Optimized v4>
+        <Multiversioned v1>
+            remark #25399: memcopy generated
+            remark #25562: The loop has been multiversioned for the small trip count
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between d_radlu_dt (712:81) and d_radlu_dt (712:43) 
+            remark #15346: vector dependence: assumed FLOW dependence between d_radlu_dt (712:81) and d_radlu_dt (713:37) 
+            remark #15346: vector dependence: assumed FLOW dependence between d_radlu_dt (712:81) and d_radlu_dt (721:43) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between d_radlu_dt (712:81) and d_radlu_dt (721:43) 
+            remark #15346: vector dependence: assumed ANTI dependence between d_radlu_dt (714:51) and d_radlu_dt (721:43) 
+            remark #15346: vector dependence: assumed FLOW dependence between d_radlu_dt (721:43) and d_radlu_dt (712:43) 
+            remark #15346: vector dependence: assumed FLOW dependence between d_radlu_dt (721:43) and d_radlu_dt (713:37) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between d_radlu_dt (721:43) and d_radlu_dt (712:81) 
+            remark #15346: vector dependence: assumed FLOW dependence between d_radlu_dt (721:43) and d_radlu_dt (721:43) 
+            remark #15346: vector dependence: assumed ANTI dependence between d_radlu_dt (722:51) and d_radlu_dt (712:81) 
+        LOOP END
+
+        LOOP BEGIN at rrtmg_lw_rtrnmr.F90 (736, 25)
+        <Predicate Optimized v2>
+            remark #25423: Invariant If condition at line 736 hoisted out of this loop
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between d_radlu_dt (712:81) and d_radlu_dt (712:43) 
+            remark #15346: vector dependence: assumed FLOW dependence between d_radlu_dt (712:81) and d_radlu_dt (713:37) 
+            remark #15346: vector dependence: assumed FLOW dependence between d_radlu_dt (712:81) and d_radlu_dt (721:43) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between d_radlu_dt (712:81) and d_radlu_dt (721:43) 
+            remark #15346: vector dependence: assumed ANTI dependence between d_radlu_dt (714:51) and d_radlu_dt (721:43) 
+            remark #15346: vector dependence: assumed FLOW dependence between d_radlu_dt (721:43) and d_radlu_dt (712:43) 
+            remark #15346: vector dependence: assumed FLOW dependence between d_radlu_dt (721:43) and d_radlu_dt (713:37) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between d_radlu_dt (721:43) and d_radlu_dt (712:81) 
+            remark #15346: vector dependence: assumed FLOW dependence between d_radlu_dt (721:43) and d_radlu_dt (721:43) 
+            remark #15346: vector dependence: assumed ANTI dependence between d_radlu_dt (722:51) and d_radlu_dt (712:81) 
+        LOOP END
+
+        LOOP BEGIN at rrtmg_lw_rtrnmr.F90 (736, 25)
+        <Predicate Optimized v3>
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between d_radlu_dt (712:81) and d_radlu_dt (712:43) 
+            remark #15346: vector dependence: assumed FLOW dependence between d_radlu_dt (712:81) and d_radlu_dt (713:37) 
+            remark #15346: vector dependence: assumed FLOW dependence between d_radlu_dt (712:81) and d_radlu_dt (721:43) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between d_radlu_dt (712:81) and d_radlu_dt (721:43) 
+            remark #15346: vector dependence: assumed ANTI dependence between d_radlu_dt (714:51) and d_radlu_dt (721:43) 
+            remark #15346: vector dependence: assumed FLOW dependence between d_radlu_dt (721:43) and d_radlu_dt (712:43) 
+            remark #15346: vector dependence: assumed FLOW dependence between d_radlu_dt (721:43) and d_radlu_dt (713:37) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between d_radlu_dt (721:43) and d_radlu_dt (712:81) 
+            remark #15346: vector dependence: assumed FLOW dependence between d_radlu_dt (721:43) and d_radlu_dt (721:43) 
+            remark #15346: vector dependence: assumed ANTI dependence between d_radlu_dt (722:51) and d_radlu_dt (712:81) 
+        LOOP END
+
+        LOOP BEGIN at rrtmg_lw_rtrnmr.F90 (736, 25)
+        <Predicate Optimized v1>
+            remark #25423: Invariant If condition at line 729 hoisted out of this loop
+            remark #25423: Invariant If condition at line 736 hoisted out of this loop
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between d_radlu_dt (712:81) and d_radlu_dt (712:43) 
+            remark #15346: vector dependence: assumed FLOW dependence between d_radlu_dt (712:81) and d_radlu_dt (713:37) 
+            remark #15346: vector dependence: assumed FLOW dependence between d_radlu_dt (712:81) and d_radlu_dt (721:43) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between d_radlu_dt (712:81) and d_radlu_dt (721:43) 
+            remark #15346: vector dependence: assumed ANTI dependence between d_radlu_dt (714:51) and d_radlu_dt (721:43) 
+            remark #15346: vector dependence: assumed FLOW dependence between d_radlu_dt (721:43) and d_radlu_dt (712:43) 
+            remark #15346: vector dependence: assumed FLOW dependence between d_radlu_dt (721:43) and d_radlu_dt (713:37) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between d_radlu_dt (721:43) and d_radlu_dt (712:81) 
+            remark #15346: vector dependence: assumed FLOW dependence between d_radlu_dt (721:43) and d_radlu_dt (721:43) 
+            remark #15346: vector dependence: assumed ANTI dependence between d_radlu_dt (722:51) and d_radlu_dt (712:81) 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at rrtmg_lw_rtrnmr.F90 (767, 10)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at rrtmg_lw_rtrnmr.F90 (767, 10)
+    <Multiversioned v1>
+        remark #25408: memset generated
+        remark #25408: memset generated
+        remark #25408: memset generated
+        remark #25408: memset generated
+        remark #25562: The loop has been multiversioned for the small trip count
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at rrtmg_lw_rtrnmr.F90 (779, 13)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at rrtmg_lw_rtrnmr.F90 (779, 13)
+    <Multiversioned v1>
+        remark #25408: memset generated
+        remark #25408: memset generated
+        remark #25562: The loop has been multiversioned for the small trip count
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at rrtmg_lw_rtrnmr.F90 (807, 7)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 3
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.memset.p0.i64
+
+DEAD STATIC FUNC: llvm.stackrestore
+
+DEAD STATIC FUNC: llvm.stacksave
+
+COMPILE FUNC: rrtmg_lw_rtrnmr_mp_rtrnmr_
+   -> DELETE: llvm.stacksave /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (51,18)
+   -> llvm.smax.i32 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (51,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (51,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (51,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (51,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (51,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (51,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (51,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (51,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (51,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (51,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (51,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (51,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (51,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (51,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (51,18)
+   -> llvm.smax.i64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (51,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (51,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (51,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (51,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (51,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (51,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (51,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (51,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (51,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (51,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (51,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (51,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (51,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (51,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (51,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (51,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (51,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (51,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (51,18)
+   -> llvm.exp.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (292,48)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (298,7)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (298,7)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (374,23)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (374,53)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (383,40)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (384,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (381,40)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (381,62)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (411,40)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (413,40)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (413,70)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (403,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (453,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (453,53)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (462,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (463,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (460,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (460,63)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (489,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (491,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (491,71)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (482,38)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (566,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (569,38)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (572,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (576,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (577,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (579,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (584,55)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (587,38)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (590,41)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (594,46)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (595,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (554,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (558,42)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (561,47)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (562,47)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (608,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (608,62)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (613,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (613,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (628,36)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (629,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (631,39)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (636,36)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (637,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (639,36)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (646,43)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (697,37)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (697,60)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (702,37)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (702,21)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (712,61)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (713,40)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (721,46)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (718,33)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (730,40)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (738,53)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (805,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (805,46)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (806,27)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (806,49)
+   -> DELETE: llvm.stackrestore /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (813,7)
+   -> llvm.umax.i32 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (296,7)
+   -> llvm.smax.i32 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (530,2)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (403,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (413,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (413,70)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (411,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (374,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (374,53)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (381,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (381,62)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (383,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (384,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (697,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (697,60)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (702,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (712,61)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (718,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (721,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (730,40)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (738,53)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (697,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (697,60)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (702,21)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (712,61)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (718,33)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (721,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (730,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (697,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (697,60)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (702,21)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (712,61)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (718,33)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (721,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (697,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (697,60)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (702,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (712,61)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (718,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (721,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (697,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (697,60)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (702,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (712,61)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (718,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (721,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (805,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (805,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0780546215sohnG3/ifxYNtYqg.i90 (806,27)
+
+COMPILE FUNC: rrtmg_lw_rtrnmr._
+
+---- End Inlining Report ------

@@ -1,0 +1,133 @@
+Global optimization report for : mod_ae_icbc._
+=================================================================
+
+Global optimization report for : mod_ae_icbc_mp_init_ae_icbc_
+
+LOOP BEGIN at mod_ae_icbc.F90 (196, 20)
+
+    LOOP BEGIN at mod_ae_icbc.F90 (201, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_ae_icbc.F90 (201, 9)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_ae_icbc.F90 (201, 9)
+                remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                LOOP BEGIN at mod_ae_icbc.F90 (201, 9)
+                    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+                LOOP END
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_ae_icbc_mp_get_ae_icbc_
+
+LOOP BEGIN at mod_ae_icbc.F90 (240, 22)
+
+    LOOP BEGIN at mod_ae_icbc.F90 (245, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_ae_icbc.F90 (245, 11)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_ae_icbc.F90 (245, 11)
+                remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                LOOP BEGIN at mod_ae_icbc.F90 (245, 11)
+                    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+                LOOP END
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_ae_icbc.F90 (276, 7)
+
+    LOOP BEGIN at mod_ae_icbc.F90 (277, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_ae_icbc.F90 (278, 11)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_ae_icbc.F90 (280, 11)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between xinp (279:13) and aev2 (279:13) 
+                remark #15346: vector dependence: assumed FLOW dependence between xinp (279:13) and aev2 (279:44) 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_ae_icbc.F90 (287, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_ae_icbc.F90 (289, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between xps (288:9) and xps2 (288:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between xps (288:9) and xps2 (288:32) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_ae_icbc.F90 (305, 7)
+
+    LOOP BEGIN at mod_ae_icbc.F90 (306, 9)
+
+        LOOP BEGIN at mod_ae_icbc.F90 (309, 11)
+
+            LOOP BEGIN at mod_ae_icbc.F90 (312, 22)
+                remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+            LOOP END
+
+            LOOP BEGIN at mod_ae_icbc.F90 (329, 13)
+            <Multiversioned v1>
+                remark #25228: Loop multiversioned for Data Dependence
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+
+            LOOP BEGIN at mod_ae_icbc.F90 (321, 13)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between aev4 (318:15) and aev3 (318:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between aev4 (318:15) and aev3 (318:15) 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_ae_icbc_mp_close_ae_icbc_
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.memmove.p0.p0.i64
+
+COMPILE FUNC: mod_ae_icbc._
+
+COMPILE FUNC: mod_ae_icbc_mp_init_ae_icbc_
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx0328028537kcsDPZ/ifx6Yk7Dq.i90 (78,5)
+
+COMPILE FUNC: mod_ae_icbc_mp_get_ae_icbc_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0328028537kcsDPZ/ifx6Yk7Dq.i90 (206,14)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0328028537kcsDPZ/ifx6Yk7Dq.i90 (206,14)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0328028537kcsDPZ/ifx6Yk7Dq.i90 (206,14)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0328028537kcsDPZ/ifx6Yk7Dq.i90 (206,14)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx0328028537kcsDPZ/ifx6Yk7Dq.i90 (262,7)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0328028537kcsDPZ/ifx6Yk7Dq.i90 (307,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0328028537kcsDPZ/ifx6Yk7Dq.i90 (307,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0328028537kcsDPZ/ifx6Yk7Dq.i90 (319,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0328028537kcsDPZ/ifx6Yk7Dq.i90 (320,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0328028537kcsDPZ/ifx6Yk7Dq.i90 (320,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0328028537kcsDPZ/ifx6Yk7Dq.i90 (325,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0328028537kcsDPZ/ifx6Yk7Dq.i90 (325,32)
+
+COMPILE FUNC: mod_ae_icbc_mp_close_ae_icbc_
+
+---- End Inlining Report ------

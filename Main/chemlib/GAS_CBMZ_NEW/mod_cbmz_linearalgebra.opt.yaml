@@ -1,0 +1,389 @@
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+Function:        mod_cbmz_linearalgebra._
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        mod_cbmz_linearalgebra._
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_0
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+Function:        mod_cbmz_linearalgebra._
+Args:
+  - NumInstructions: '1'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            LoopSpillReloadCopies
+DebugLoc:        { File: mod_cbmz_linearalgebra.F90, Line: 61, Column: 9 }
+Function:        mod_cbmz_linearalgebra_mp_kppdecomp_
+Args:
+  - NumVRCopies:     '1'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '4.232534e+03'
+  - String:          ' total copies cost '
+  - String:          generated in loop
+...
+--- !Missed
+Pass:            regalloc
+Name:            LoopSpillReloadCopies
+DebugLoc:        { File: mod_cbmz_linearalgebra.F90, Line: 59, Column: 9 }
+Function:        mod_cbmz_linearalgebra_mp_kppdecomp_
+Args:
+  - NumVRCopies:     '1'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '4.232534e+03'
+  - String:          ' total copies cost '
+  - String:          generated in loop
+...
+--- !Missed
+Pass:            regalloc
+Name:            LoopSpillReloadCopies
+DebugLoc:        { File: mod_cbmz_linearalgebra.F90, Line: 45, Column: 5 }
+Function:        mod_cbmz_linearalgebra_mp_kppdecomp_
+Args:
+  - NumVRCopies:     '4'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '4.257333e+03'
+  - String:          ' total copies cost '
+  - String:          generated in loop
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: mod_cbmz_linearalgebra.F90, Line: 35, Column: 1 }
+Function:        mod_cbmz_linearalgebra_mp_kppdecomp_
+Args:
+  - NumVRCopies:     '4'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '4.257333e+03'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: mod_cbmz_linearalgebra.F90, Line: 35, Column: 0 }
+Function:        mod_cbmz_linearalgebra_mp_kppdecomp_
+Args:
+  - NumStackBytes:   '392'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_cbmz_linearalgebra.F90, Line: 35, Column: 25 }
+Function:        mod_cbmz_linearalgebra_mp_kppdecomp_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_1
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '15'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_cbmz_linearalgebra.F90, Line: 0, Column: 0 }
+Function:        mod_cbmz_linearalgebra_mp_kppdecomp_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do30
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_cbmz_linearalgebra.F90, Line: 0, Column: 0 }
+Function:        mod_cbmz_linearalgebra_mp_kppdecomp_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body4
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_cbmz_linearalgebra.F90, Line: 0, Column: 0 }
+Function:        mod_cbmz_linearalgebra_mp_kppdecomp_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb2_else
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_cbmz_linearalgebra.F90, Line: 0, Column: 0 }
+Function:        mod_cbmz_linearalgebra_mp_kppdecomp_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body12.preheader
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_cbmz_linearalgebra.F90, Line: 0, Column: 0 }
+Function:        mod_cbmz_linearalgebra_mp_kppdecomp_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body12
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_cbmz_linearalgebra.F90, Line: 0, Column: 0 }
+Function:        mod_cbmz_linearalgebra_mp_kppdecomp_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do13
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_cbmz_linearalgebra.F90, Line: 0, Column: 0 }
+Function:        mod_cbmz_linearalgebra_mp_kppdecomp_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body17.preheader
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '7'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_cbmz_linearalgebra.F90, Line: 0, Column: 0 }
+Function:        mod_cbmz_linearalgebra_mp_kppdecomp_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do25
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_cbmz_linearalgebra.F90, Line: 0, Column: 0 }
+Function:        mod_cbmz_linearalgebra_mp_kppdecomp_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body17
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '9'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_cbmz_linearalgebra.F90, Line: 0, Column: 0 }
+Function:        mod_cbmz_linearalgebra_mp_kppdecomp_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body24.preheader
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_cbmz_linearalgebra.F90, Line: 0, Column: 0 }
+Function:        mod_cbmz_linearalgebra_mp_kppdecomp_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body24
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '11'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_cbmz_linearalgebra.F90, Line: 0, Column: 0 }
+Function:        mod_cbmz_linearalgebra_mp_kppdecomp_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.end_do18
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_cbmz_linearalgebra.F90, Line: 0, Column: 0 }
+Function:        mod_cbmz_linearalgebra_mp_kppdecomp_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body29.preheader
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_cbmz_linearalgebra.F90, Line: 0, Column: 0 }
+Function:        mod_cbmz_linearalgebra_mp_kppdecomp_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body29
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '7'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_cbmz_linearalgebra.F90, Line: 0, Column: 0 }
+Function:        mod_cbmz_linearalgebra_mp_kppdecomp_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new11_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_cbmz_linearalgebra.F90, Line: 0, Column: 0 }
+Function:        mod_cbmz_linearalgebra_mp_kppdecomp_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      end_label1
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: mod_cbmz_linearalgebra.F90, Line: 35, Column: 0 }
+Function:        mod_cbmz_linearalgebra_mp_kppdecomp_
+Args:
+  - NumInstructions: '95'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: mod_cbmz_linearalgebra.F90, Line: 78, Column: 1 }
+Function:        mod_cbmz_linearalgebra_mp_kppsolve_
+Args:
+  - NumSpills:       '62'
+  - String:          ' spills '
+  - TotalSpillsCost: '6.200000e+01'
+  - String:          ' total spills cost '
+  - NumReloads:      '102'
+  - String:          ' reloads '
+  - TotalReloadsCost: '1.020000e+02'
+  - String:          ' total reloads cost '
+  - NumFoldedReloads: '70'
+  - String:          ' folded reloads '
+  - TotalFoldedReloadsCost: '7.000000e+01'
+  - String:          ' total folded reloads cost '
+  - NumVRCopies:     '42'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '4.200000e+01'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: mod_cbmz_linearalgebra.F90, Line: 78, Column: 0 }
+Function:        mod_cbmz_linearalgebra_mp_kppsolve_
+Args:
+  - NumStackBytes:   '232'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_cbmz_linearalgebra.F90, Line: 78, Column: 25 }
+Function:        mod_cbmz_linearalgebra_mp_kppsolve_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_2
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2035'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: mod_cbmz_linearalgebra.F90, Line: 78, Column: 0 }
+Function:        mod_cbmz_linearalgebra_mp_kppsolve_
+Args:
+  - NumInstructions: '2149'
+  - String:          ' instructions in function'
+...

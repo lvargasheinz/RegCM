@@ -1,0 +1,101 @@
+Global optimization report for : mod_clm_initsurfalb._
+=================================================================
+
+Global optimization report for : mod_clm_initsurfalb_mp_initsurfalb_
+
+LOOP BEGIN at mod_clm_initsurfalb.F90 (188, 12)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (189:9) and (187:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (189:9) and (188:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (190:9) and (187:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (190:9) and (188:7) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between (190:9) and (189:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (191:9) and (187:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (191:9) and (188:7) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between (191:9) and (189:9) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between (191:9) and (190:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (192:9) and (187:7) 
+LOOP END
+
+LOOP BEGIN at mod_clm_initsurfalb.F90 (219, 24)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed ANTI dependence between (221:9) and (224:9) 
+    remark #15346: vector dependence: assumed ANTI dependence between (221:9) and (234:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (222:9) and (218:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (222:9) and (219:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (222:9) and (221:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (222:9) and (226:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (222:9) and (228:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (224:9) and (218:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (224:9) and (219:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (224:9) and (221:9) 
+LOOP END
+
+LOOP BEGIN at mod_clm_initsurfalb.F90 (290, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_initsurfalb.F90 (295, 12)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (296:9) and (294:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (296:9) and (295:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (296:9) and (296:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (297:9) and (294:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (297:9) and (295:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (297:9) and (296:9) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between (297:9) and (296:9) 
+LOOP END
+
+LOOP BEGIN at mod_clm_initsurfalb.F90 (301, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_initsurfalb.F90 (307, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_initsurfalb.F90 (307, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_initsurfalb.F90 (316, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_initsurfalb.F90 (316, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_initsurfalb.F90 (316, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_clm_initsurfalb._
+
+COMPILE FUNC: mod_clm_initsurfalb_mp_initsurfalb_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0976054543lkcteg/ifxMcEf0x.i90 (229,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0976054543lkcteg/ifxMcEf0x.i90 (233,47)
+
+---- End Inlining Report ------

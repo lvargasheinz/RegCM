@@ -1,0 +1,49 @@
+Global optimization report for : mod_clm_control._
+=================================================================
+
+Global optimization report for : mod_clm_control_mp_control_init_
+
+LOOP BEGIN at mod_clm_control.F90 (223, 5)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+
+LOOP BEGIN at mod_clm_control.F90 (262, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_control_mp_control_spmd_
+=================================================================
+
+Global optimization report for : mod_clm_control_mp_control_print_
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: getlog_.t1380p.t3v
+
+DEAD STATIC FUNC: hostnm_.t1375p.t3v
+
+COMPILE FUNC: mod_clm_control._
+
+COMPILE FUNC: mod_clm_control_mp_control_spmd_
+
+COMPILE FUNC: mod_clm_control_mp_control_init_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0669751149RTDhcV/ifxWCv0H8.i90 (223,5)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0669751149RTDhcV/ifxWCv0H8.i90 (224,5)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0669751149RTDhcV/ifxWCv0H8.i90 (225,5)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0669751149RTDhcV/ifxWCv0H8.i90 (264,59)
+   -> llvm.round.f64 /scratch_local/ifx0669751149RTDhcV/ifxWCv0H8.i90 (264,28)
+   -> INLINE: hostnm_.t1375p.t3v /scratch_local/ifx0669751149RTDhcV/ifxWCv0H8.i90 (274,13)
+   -> INLINE: getlog_.t1380p.t3v /scratch_local/ifx0669751149RTDhcV/ifxWCv0H8.i90 (275,10)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0669751149RTDhcV/ifxWCv0H8.i90 (278,12)
+   -> mod_clm_control_mp_control_spmd_ /scratch_local/ifx0669751149RTDhcV/ifxWCv0H8.i90 (306,10)
+
+COMPILE FUNC: mod_clm_control_mp_control_print_
+
+---- End Inlining Report ------

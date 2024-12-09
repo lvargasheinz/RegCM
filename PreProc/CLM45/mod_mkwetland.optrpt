@@ -1,0 +1,41 @@
+Global optimization report for : mod_mkwetland._
+=================================================================
+
+Global optimization report for : mod_mkwetland_mp_mkwetland_
+
+LOOP BEGIN at mod_mkwetland.F90 (61, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_mkwetland.F90 (62, 24)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_mkwetland.F90 (78, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_mkwetland.F90 (79, 24)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_mkwetland._
+
+COMPILE FUNC: mod_mkwetland_mp_mkwetland_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0333429579z43Die/ifxuTv77D.i90 (44,14)
+   -> llvm.round.f64 /scratch_local/ifx0333429579z43Die/ifxuTv77D.i90 (71,40)
+   -> llvm.smax.i32 /scratch_local/ifx0333429579z43Die/ifxuTv77D.i90 (71,34)
+   -> llvm.umin.i32 /scratch_local/ifx0333429579z43Die/ifxuTv77D.i90 (71,30)
+   -> llvm.round.f64 /scratch_local/ifx0333429579z43Die/ifxuTv77D.i90 (88,37)
+   -> llvm.smax.i32 /scratch_local/ifx0333429579z43Die/ifxuTv77D.i90 (88,31)
+   -> llvm.umin.i32 /scratch_local/ifx0333429579z43Die/ifxuTv77D.i90 (88,27)
+
+---- End Inlining Report ------

@@ -1,0 +1,282 @@
+Global optimization report for : mod_clm_hydrology2._
+=================================================================
+
+Global optimization report for : mod_clm_hydrology2_mp_hydrology2_
+
+LOOP BEGIN at mod_clm_hydrology2.F90 (408, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_hydrology2.F90 (411, 25)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (412:11) and (411:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (413:11) and (411:9) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between (413:11) and (412:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between (414:11) and (411:9) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between (414:11) and (412:11) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between (414:11) and (413:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between (415:11) and (411:9) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between (415:11) and (412:11) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between (415:11) and (413:11) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between (415:11) and (414:11) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_hydrology2.F90 (434, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed OUTPUT dependence between (433:7) and (432:7) 
+LOOP END
+
+LOOP BEGIN at mod_clm_hydrology2.F90 (436, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_hydrology2.F90 (439, 15)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (440:11) and (439:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (440:11) and (440:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between (440:11) and (440:11) 
+        remark #15346: vector dependence: assumed ANTI dependence between (441:11) and (440:11) 
+        remark #15346: vector dependence: assumed ANTI dependence between (441:11) and (440:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between (441:11) and (439:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (441:11) and (440:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between (441:11) and (440:11) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between (441:11) and (440:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between (441:11) and (441:11) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_hydrology2.F90 (449, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_hydrology2.F90 (458, 22)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (459:9) and (457:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (459:9) and (458:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (460:9) and (457:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (460:9) and (458:7) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between (460:9) and (459:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (461:9) and (457:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (461:9) and (458:7) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between (461:9) and (459:9) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between (461:9) and (460:9) 
+LOOP END
+
+LOOP BEGIN at mod_clm_hydrology2.F90 (465, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_hydrology2.F90 (468, 24)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed ANTI dependence between (474:25) and (472:13) 
+        remark #15346: vector dependence: assumed ANTI dependence between (475:24) and (472:13) 
+        remark #15346: vector dependence: assumed ANTI dependence between (476:15) and (472:13) 
+        remark #15346: vector dependence: assumed ANTI dependence between (476:15) and (472:13) 
+        remark #15346: vector dependence: assumed FLOW dependence between (476:15) and (467:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (476:15) and (468:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (476:15) and (470:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between (476:15) and (474:25) 
+        remark #15346: vector dependence: assumed FLOW dependence between (476:15) and (475:24) 
+        remark #15346: vector dependence: assumed FLOW dependence between (476:15) and (476:15) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_hydrology2.F90 (503, 18)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (0:0) and (500:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (0:0) and (503:7) 
+    remark #15346: vector dependence: assumed FLOW dependence
+    remark #15346: vector dependence: assumed FLOW dependence
+    remark #15346: vector dependence: assumed FLOW dependence
+    remark #15346: vector dependence: assumed FLOW dependence between (0:0) and (504:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (0:0) and (504:9) 
+    remark #15346: vector dependence: assumed ANTI dependence between (512:7) and (0:0) 
+    remark #15346: vector dependence: assumed ANTI dependence between (513:9) and (0:0) 
+    remark #15346: vector dependence: assumed ANTI dependence between (513:9) and (515:9) 
+LOOP END
+
+LOOP BEGIN at mod_clm_hydrology2.F90 (533, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_hydrology2.F90 (537, 39)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (540:11) and (535:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (540:11) and (540:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between (540:11) and (540:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between (540:11) and (540:31) 
+        remark #15346: vector dependence: assumed ANTI dependence between (541:11) and (540:11) 
+        remark #15346: vector dependence: assumed ANTI dependence between (541:11) and (540:11) 
+        remark #15346: vector dependence: assumed ANTI dependence between (541:44) and (540:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between (541:11) and (535:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (541:11) and (540:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between (541:11) and (540:11) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_hydrology2.F90 (554, 33)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (570:9) and (552:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (570:9) and (554:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (570:9) and (569:27) 
+    remark #15346: vector dependence: assumed FLOW dependence between (571:9) and (552:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (571:9) and (554:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (571:9) and (569:27) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between (571:9) and (570:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (572:9) and (552:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (572:9) and (554:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (572:9) and (569:27) 
+LOOP END
+
+LOOP BEGIN at mod_clm_hydrology2.F90 (626, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_hydrology2.F90 (634, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (632:9) and (629:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (632:9) and (629:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (632:9) and (632:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (632:9) and (632:9) 
+        remark #15346: vector dependence: assumed ANTI dependence between (633:9) and (632:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (633:9) and (629:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (633:9) and (629:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (633:9) and (632:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (633:9) and (632:9) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between (633:9) and (632:9) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_hydrology2.F90 (715, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_hydrology2.F90 (715, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (728:13) and (718:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (728:13) and (718:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (728:13) and (724:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (728:13) and (725:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between (728:13) and (726:13) 
+        remark #15346: vector dependence: assumed ANTI dependence between (729:13) and (728:13) 
+        remark #15346: vector dependence: assumed FLOW dependence between (729:13) and (718:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (729:13) and (718:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (729:13) and (724:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (729:13) and (725:11) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_hydrology2.F90 (799, 7)
+
+    LOOP BEGIN at mod_clm_hydrology2.F90 (799, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_hydrology2.F90 (803, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_hydrology2.F90 (804, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_hydrology2.F90 (805, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_hydrology2.F90 (806, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_hydrology2.F90 (807, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_hydrology2.F90 (811, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_hydrology2.F90 (812, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_hydrology2.F90 (813, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_hydrology2.F90 (814, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_hydrology2.F90 (815, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_hydrology2.F90 (819, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_hydrology2.F90 (820, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_hydrology2.F90 (821, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_hydrology2.F90 (822, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_hydrology2.F90 (823, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_hydrology2.F90 (824, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_hydrology2.F90 (825, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_hydrology2.F90 (826, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_hydrology2.F90 (827, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_clm_hydrology2_mp_hydrology2_
+   -> llvm.smax.i32 /scratch_local/ifx0521830340y1ovxR/ifxzmDSfJ.i90 (33,14)
+   -> llvm.smax.i32 /scratch_local/ifx0521830340y1ovxR/ifxzmDSfJ.i90 (33,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0521830340y1ovxR/ifxzmDSfJ.i90 (33,14)
+   -> llvm.smax.i32 /scratch_local/ifx0521830340y1ovxR/ifxzmDSfJ.i90 (33,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0521830340y1ovxR/ifxzmDSfJ.i90 (33,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0521830340y1ovxR/ifxzmDSfJ.i90 (33,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0521830340y1ovxR/ifxzmDSfJ.i90 (33,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0521830340y1ovxR/ifxzmDSfJ.i90 (33,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0521830340y1ovxR/ifxzmDSfJ.i90 (475,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0521830340y1ovxR/ifxzmDSfJ.i90 (487,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0521830340y1ovxR/ifxzmDSfJ.i90 (490,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0521830340y1ovxR/ifxzmDSfJ.i90 (484,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0521830340y1ovxR/ifxzmDSfJ.i90 (505,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0521830340y1ovxR/ifxzmDSfJ.i90 (508,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0521830340y1ovxR/ifxzmDSfJ.i90 (541,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0521830340y1ovxR/ifxzmDSfJ.i90 (542,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0521830340y1ovxR/ifxzmDSfJ.i90 (564,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0521830340y1ovxR/ifxzmDSfJ.i90 (632,44)
+   -> llvm.pow.f64 /scratch_local/ifx0521830340y1ovxR/ifxzmDSfJ.i90 (632,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0521830340y1ovxR/ifxzmDSfJ.i90 (726,53)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0521830340y1ovxR/ifxzmDSfJ.i90 (726,43)
+
+COMPILE FUNC: mod_clm_hydrology2._
+
+---- End Inlining Report ------

@@ -1,0 +1,25 @@
+Global optimization report for : mod_clm_pft2col._
+=================================================================
+
+Global optimization report for : mod_clm_pft2col_mp_pft2col_
+
+LOOP BEGIN at mod_clm_pft2col.F90 (45, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_clm_pft2col_mp_pft2col_
+   -> llvm.smax.i32 /scratch_local/ifx03258784775Rni7S/ifxxz5rCC.i90 (25,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx03258784775Rni7S/ifxxz5rCC.i90 (25,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx03258784775Rni7S/ifxxz5rCC.i90 (25,14)
+
+COMPILE FUNC: mod_clm_pft2col._
+
+---- End Inlining Report ------

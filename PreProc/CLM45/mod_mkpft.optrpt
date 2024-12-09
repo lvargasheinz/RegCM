@@ -1,0 +1,83 @@
+Global optimization report for : mod_mkpft._
+=================================================================
+
+Global optimization report for : mod_mkpft_mp_mkpft_
+
+LOOP BEGIN at mod_mkpft.F90 (63, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_mkpft.F90 (63, 7)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_mkpft.F90 (63, 7)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_mkpft.F90 (67, 7)
+
+    LOOP BEGIN at mod_mkpft.F90 (68, 9)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_mkpft.F90 (69, 26)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_mkpft.F90 (82, 24)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_mkpft.F90 (82, 24)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_mkpft.F90 (83, 16)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between (83:16) and (83:16) 
+            remark #15346: vector dependence: assumed FLOW dependence between (83:16) and (83:16) 
+            remark #15346: vector dependence: assumed FLOW dependence between (83:16) and (83:16) 
+            remark #15346: vector dependence: assumed FLOW dependence between (83:16) and (83:16) 
+        LOOP END
+
+        LOOP BEGIN at mod_mkpft.F90 (85, 20)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between (87:15) and (86:13) 
+            remark #15346: vector dependence: assumed FLOW dependence between (87:15) and (87:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between (88:15) and (87:15) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between (88:15) and (87:15) 
+        LOOP END
+
+        LOOP BEGIN at mod_mkpft.F90 (93, 11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_mkpft._
+
+COMPILE FUNC: mod_mkpft_mp_mkpft_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1697055257cBoUwA/ifxEC1i8K.i90 (42,14)
+   -> llvm.smax.i64 /scratch_local/ifx1697055257cBoUwA/ifxEC1i8K.i90 (53,5)
+   -> llvm.smax.i64 /scratch_local/ifx1697055257cBoUwA/ifxEC1i8K.i90 (66,7)
+   -> llvm.smax.i64 /scratch_local/ifx1697055257cBoUwA/ifxEC1i8K.i90 (66,7)
+   -> llvm.round.f64 /scratch_local/ifx1697055257cBoUwA/ifxEC1i8K.i90 (72,36)
+   -> llvm.smax.i32 /scratch_local/ifx1697055257cBoUwA/ifxEC1i8K.i90 (72,30)
+   -> llvm.umin.i32 /scratch_local/ifx1697055257cBoUwA/ifxEC1i8K.i90 (72,26)
+   -> llvm.round.f64 /scratch_local/ifx1697055257cBoUwA/ifxEC1i8K.i90 (92,36)
+   -> llvm.smax.i32 /scratch_local/ifx1697055257cBoUwA/ifxEC1i8K.i90 (92,30)
+   -> llvm.umin.i32 /scratch_local/ifx1697055257cBoUwA/ifxEC1i8K.i90 (92,26)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1697055257cBoUwA/ifxEC1i8K.i90 (42,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1697055257cBoUwA/ifxEC1i8K.i90 (42,14)
+
+---- End Inlining Report ------

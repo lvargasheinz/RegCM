@@ -1,0 +1,4315 @@
+--- !Passed
+Pass:            openmp
+Name:            Region
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_
+Args:
+  - Construct:       target
+  - String:          ' construct transformed'
+...
+--- !Passed
+Pass:            openmp
+Name:            Region
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - Construct:       distribute parallel loop
+  - String:          ' construct transformed'
+...
+--- !Passed
+Pass:            openmp
+Name:            Region
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.TEAMS.2.split591
+Args:
+  - Construct:       teams
+  - String:          ' construct transformed'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - Callee:          __kmpc_for_static_fini
+  - String:          ' will not be inlined into '
+  - Caller:          mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - Callee:          __kmpc_dist_for_static_init_8
+  - String:          ' will not be inlined into '
+  - Caller:          mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - Callee:          __kmpc_for_static_fini
+  - String:          ' will not be inlined into '
+  - Caller:          mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - Callee:          __kmpc_dist_for_static_init_8
+  - String:          ' will not be inlined into '
+  - Caller:          mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 11 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 11 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 11 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 11 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            sext
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            sext
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 13 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 19 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 19 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 19 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 11 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 11 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 11 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 11 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            sext
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 19 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 19 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 11 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 11 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 11 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 11 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 19 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 19 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 11 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 11 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 11 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 11 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 19 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 19 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 75, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 19 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 72, Column: 33 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 67, Column: 15 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.TEAMS.2.split591
+Args:
+  - Callee:          __kmpc_fork_call
+  - String:          ' will not be inlined into '
+  - Caller:          mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.TEAMS.2.split591
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.TEAMS.2.split591
+Args:
+  - Callee:          __kmpc_fork_call
+  - String:          ' will not be inlined into '
+  - Caller:          mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.TEAMS.2.split591
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_
+Args:
+  - Callee:          __kmpc_fork_teams
+  - String:          ' will not be inlined into '
+  - Caller:          mod_cloud_xuran_mp_xuran_cldfrac_
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 39, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_
+Args:
+  - Callee:          __kmpc_fork_teams
+  - String:          ' will not be inlined into '
+  - Caller:          mod_cloud_xuran_mp_xuran_cldfrac_
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 39, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 51 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            xor
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 51 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            and
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            add
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            and
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            add
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            mul
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            shl
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            ashr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            shl
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'hoisting '
+  - Inst:            ashr
+    DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 5 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 13 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 65, Column: 45 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 19 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 71, Column: 32 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+Function:        mod_cloud_xuran._
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        mod_cloud_xuran._
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_0
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+Function:        mod_cloud_xuran._
+Args:
+  - NumInstructions: '1'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 39, Column: 1 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_
+Args:
+  - NumSpills:       '4'
+  - String:          ' spills '
+  - TotalSpillsCost: '4.000000e+00'
+  - String:          ' total spills cost '
+  - NumReloads:      '1'
+  - String:          ' reloads '
+  - TotalReloadsCost: '1.000000e+00'
+  - String:          ' total reloads cost '
+  - NumFoldedReloads: '3'
+  - String:          ' folded reloads '
+  - TotalFoldedReloadsCost: '3.000000e+00'
+  - String:          ' total folded reloads cost '
+  - NumVRCopies:     '5'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '5.000000e+00'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 39, Column: 0 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_
+Args:
+  - NumStackBytes:   '88'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 39, Column: 28 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      DIR.OMP.END.TEAMS.6575
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '75'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 39, Column: 0 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_
+Args:
+  - NumInstructions: '75'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            LoopSpillReloadCopies
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 63, Column: 16 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - NumSpills:       '4'
+  - String:          ' spills '
+  - TotalSpillsCost: '5.000000e+01'
+  - String:          ' total spills cost '
+  - NumReloads:      '9'
+  - String:          ' reloads '
+  - TotalReloadsCost: '1.500000e+02'
+  - String:          ' total reloads cost '
+  - NumFoldedReloads: '21'
+  - String:          ' folded reloads '
+  - TotalFoldedReloadsCost: '9.750000e+02'
+  - String:          ' total folded reloads cost '
+  - NumVRCopies:     '25'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '7.625000e+02'
+  - String:          ' total copies cost '
+  - String:          generated in loop
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 1 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - NumSpills:       '31'
+  - String:          ' spills '
+  - TotalSpillsCost: '6.287500e+01'
+  - String:          ' total spills cost '
+  - NumReloads:      '10'
+  - String:          ' reloads '
+  - TotalReloadsCost: '1.509375e+02'
+  - String:          ' total reloads cost '
+  - NumFoldedReloads: '21'
+  - String:          ' folded reloads '
+  - TotalFoldedReloadsCost: '9.750000e+02'
+  - String:          ' total folded reloads cost '
+  - NumVRCopies:     '28'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '7.655000e+02'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 0 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - NumStackBytes:   '360'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new4.split
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '12'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 0, Column: 0 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      omp.collapsed.loop.body.lr.ph
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '26'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 0, Column: 0 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop.region.exit
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 0, Column: 0 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      DIR.OMP.END.TEAMS.6.exitStub
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      omp.collapsed.loop.body.preheader
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '63'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 0, Column: 0 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ifmerge.28
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '13'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 0, Column: 0 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop.123
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 0, Column: 0 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 0, Column: 0 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 0, Column: 0 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 0, Column: 0 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 0, Column: 0 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 0, Column: 0 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '31'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 0, Column: 0 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      then.28
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '19'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 0, Column: 0 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      else.48
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '43'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 0 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split579.split
+Args:
+  - NumInstructions: '248'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 1 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.TEAMS.2.split591
+Args:
+  - NumVRCopies:     '4'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '4.000000e+00'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 0 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.TEAMS.2.split591
+Args:
+  - NumStackBytes:   '56'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.TEAMS.2.split591
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      DIR.OMP.END.TEAMS.6575.exitStub
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '52'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: mod_cloud_xuran.F90, Line: 56, Column: 0 }
+Function:        mod_cloud_xuran_mp_xuran_cldfrac_.DIR.OMP.TEAMS.2.split591
+Args:
+  - NumInstructions: '52'
+  - String:          ' instructions in function'
+...

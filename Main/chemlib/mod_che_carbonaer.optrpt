@@ -1,0 +1,294 @@
+Global optimization report for : mod_che_carbonaer._
+=================================================================
+
+Global optimization report for : mod_che_carbonaer_mp_carb_init_
+=================================================================
+
+Global optimization report for : mod_che_carbonaer_mp_carb_prepare_
+
+LOOP BEGIN at mod_che_carbonaer.F90 (129, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_carbonaer.F90 (129, 7)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_carbonaer.F90 (129, 7)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_carbonaer.F90 (130, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_carbonaer.F90 (130, 7)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_carbonaer.F90 (130, 7)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_carbonaer.F90 (138, 11)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+
+LOOP BEGIN at mod_che_carbonaer.F90 (147, 9)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+=================================================================
+
+Global optimization report for : mod_che_carbonaer_mp_aging_carb_
+
+LOOP BEGIN at mod_che_carbonaer.F90 (168, 9)
+<Multiversioned v1>
+    remark #25399: memcopy generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_che_carbonaer.F90 (179, 9)
+<Multiversioned v1>
+    remark #25399: memcopy generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_che_carbonaer.F90 (168, 9)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_che_carbonaer.F90 (179, 9)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_che_carbonaer_mp_addto_ncon_surf_
+
+LOOP BEGIN at mod_che_carbonaer.F90 (217, 13)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_carbonaer.F90 (222, 22)
+    <Predicate Optimized v1>
+        remark #25423: Invariant If condition at line 222 hoisted out of this loop
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_carbonaer.F90 (218, 15)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between ncon (221:17) and pp (220:17) 
+            remark #15346: vector dependence: assumed FLOW dependence between ncon (221:17) and cpsb (221:17) 
+            remark #15346: vector dependence: assumed FLOW dependence between ncon (221:17) and crhob3d (221:46) 
+            remark #15346: vector dependence: assumed ANTI dependence between cpsb (223:19) and ncon (221:17) 
+            remark #15346: vector dependence: assumed ANTI dependence between crhob3d (223:44) and ncon (221:17) 
+            remark #15346: vector dependence: assumed FLOW dependence between save_ncon (223:19) and pp (220:17) 
+            remark #15346: vector dependence: assumed FLOW dependence between save_ncon (223:19) and cpsb (221:17) 
+            remark #15346: vector dependence: assumed FLOW dependence between save_ncon (223:19) and crhob3d (221:46) 
+            remark #15346: vector dependence: assumed FLOW dependence between save_ncon (223:19) and ncon (221:17) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between save_ncon (223:19) and ncon (221:17) 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_che_carbonaer.F90 (222, 22)
+    <Predicate Optimized v2>
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_carbonaer.F90 (218, 15)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between ncon (221:17) and pp (220:17) 
+            remark #15346: vector dependence: assumed FLOW dependence between ncon (221:17) and cpsb (221:17) 
+            remark #15346: vector dependence: assumed FLOW dependence between ncon (221:17) and crhob3d (221:46) 
+            remark #15346: vector dependence: assumed ANTI dependence between surf (226:17) and ncon (221:17) 
+            remark #15346: vector dependence: assumed FLOW dependence between surf (226:17) and pp (220:17) 
+            remark #15346: vector dependence: assumed FLOW dependence between surf (226:17) and cpsb (221:17) 
+            remark #15346: vector dependence: assumed FLOW dependence between surf (226:17) and crhob3d (221:46) 
+            remark #15346: vector dependence: assumed FLOW dependence between surf (226:17) and ncon (221:17) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between surf (226:17) and ncon (221:17) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_carbonaer.F90 (202, 13)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_carbonaer.F90 (207, 22)
+    <Predicate Optimized v1>
+        remark #25423: Invariant If condition at line 207 hoisted out of this loop
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_carbonaer.F90 (203, 15)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between ncon (206:17) and pp (205:17) 
+            remark #15346: vector dependence: assumed FLOW dependence between ncon (206:17) and crhob3d (206:17) 
+            remark #15346: vector dependence: assumed ANTI dependence between crhob3d (208:19) and ncon (206:17) 
+            remark #15346: vector dependence: assumed FLOW dependence between save_ncon (208:19) and pp (205:17) 
+            remark #15346: vector dependence: assumed FLOW dependence between save_ncon (208:19) and crhob3d (206:17) 
+            remark #15346: vector dependence: assumed FLOW dependence between save_ncon (208:19) and ncon (206:17) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between save_ncon (208:19) and ncon (206:17) 
+            remark #15346: vector dependence: assumed FLOW dependence between save_ncon (208:19) and crhob3d (208:19) 
+            remark #15346: vector dependence: assumed ANTI dependence between surf (211:17) and ncon (206:17) 
+            remark #15346: vector dependence: assumed ANTI dependence between surf (211:17) and save_ncon (208:19) 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_che_carbonaer.F90 (207, 22)
+    <Predicate Optimized v2>
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_carbonaer.F90 (203, 15)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between ncon (206:17) and pp (205:17) 
+            remark #15346: vector dependence: assumed FLOW dependence between ncon (206:17) and crhob3d (206:17) 
+            remark #15346: vector dependence: assumed ANTI dependence between surf (211:17) and ncon (206:17) 
+            remark #15346: vector dependence: assumed FLOW dependence between surf (211:17) and pp (205:17) 
+            remark #15346: vector dependence: assumed FLOW dependence between surf (211:17) and crhob3d (206:17) 
+            remark #15346: vector dependence: assumed FLOW dependence between surf (211:17) and ncon (206:17) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between surf (211:17) and ncon (206:17) 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_che_carbonaer_mp_doagingdyn_
+
+LOOP BEGIN at mod_che_carbonaer.F90 (277, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_carbonaer.F90 (256, 22)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_carbonaer.F90 (256, 22)
+        <Predicate Optimized v1>
+            remark #25423: Invariant If condition at line 256 hoisted out of this loop
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_carbonaer.F90 (245, 15)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between save_chagct (257:19) and surf (247:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between save_chagct (257:19) and so4chagct (248:19) 
+                remark #15346: vector dependence: assumed FLOW dependence between save_chagct (257:19) and ncon (254:32) 
+                remark #15346: vector dependence: assumed ANTI dependence between pp (259:17) and save_chagct (257:19) 
+                remark #15346: vector dependence: assumed ANTI dependence between chiten (262:17) and save_chagct (257:19) 
+                remark #15346: vector dependence: assumed FLOW dependence between chiten (262:17) and surf (247:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between chiten (262:17) and so4chagct (248:19) 
+                remark #15346: vector dependence: assumed FLOW dependence between chiten (262:17) and ncon (254:32) 
+                remark #15346: vector dependence: assumed OUTPUT dependence between chiten (262:17) and save_chagct (257:19) 
+                remark #15346: vector dependence: assumed FLOW dependence between chiten (262:17) and pp (259:17) 
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at mod_che_carbonaer.F90 (256, 22)
+        <Predicate Optimized v2>
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_carbonaer.F90 (245, 15)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between chiten (262:17) and surf (247:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between chiten (262:17) and so4chagct (248:19) 
+                remark #15346: vector dependence: assumed FLOW dependence between chiten (262:17) and ncon (254:32) 
+                remark #15346: vector dependence: assumed FLOW dependence between chiten (262:17) and pp (259:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between chiten (263:17) and surf (247:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between chiten (263:17) and so4chagct (248:19) 
+                remark #15346: vector dependence: assumed FLOW dependence between chiten (263:17) and ncon (254:32) 
+                remark #15346: vector dependence: assumed FLOW dependence between chiten (263:17) and pp (259:17) 
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at mod_che_carbonaer.F90 (266, 26)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_carbonaer.F90 (268, 17)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_che_carbonaer_mp_doaging_
+
+LOOP BEGIN at mod_che_carbonaer.F90 (292, 13)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_carbonaer.F90 (292, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_carbonaer.F90 (293, 15)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_carbonaer.F90 (298, 15)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between chiten (296:17) and pp (294:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between chiten (297:17) and pp (294:17) 
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at mod_che_carbonaer.F90 (302, 17)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_carbonaer.F90 (307, 17)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_che_carbonaer_mp_doagingdyn_
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1441243742bw4da4/ifx3mEKRU.i90 (233,18)
+   -> llvm.smax.i32 /scratch_local/ifx1441243742bw4da4/ifx3mEKRU.i90 (233,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1441243742bw4da4/ifx3mEKRU.i90 (233,18)
+   -> llvm.smax.i64 /scratch_local/ifx1441243742bw4da4/ifx3mEKRU.i90 (261,34)
+   -> DELETE: llvm.exp.f64 /scratch_local/ifx1441243742bw4da4/ifx3mEKRU.i90 (261,46)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1441243742bw4da4/ifx3mEKRU.i90 (261,40)
+   -> llvm.exp.f64 /scratch_local/ifx1441243742bw4da4/ifx3mEKRU.i90 (261,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1441243742bw4da4/ifx3mEKRU.i90 (261,40)
+   -> llvm.exp.f64 /scratch_local/ifx1441243742bw4da4/ifx3mEKRU.i90 (261,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1441243742bw4da4/ifx3mEKRU.i90 (261,40)
+   -> llvm.smax.i32 /scratch_local/ifx1441243742bw4da4/ifx3mEKRU.i90 (233,18)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1441243742bw4da4/ifx3mEKRU.i90 (233,18)
+
+COMPILE FUNC: mod_che_carbonaer_mp_aging_carb_
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx1441243742bw4da4/ifx3mEKRU.i90 (170,11)
+   -> mod_che_carbonaer_mp_doagingdyn_ /scratch_local/ifx1441243742bw4da4/ifx3mEKRU.i90 (170,16)
+   -> llvm.smax.i32 /scratch_local/ifx1441243742bw4da4/ifx3mEKRU.i90 (172,11)
+   -> mod_che_carbonaer_mp_doaging_ /scratch_local/ifx1441243742bw4da4/ifx3mEKRU.i90 (172,16)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx1441243742bw4da4/ifx3mEKRU.i90 (181,11)
+   -> mod_che_carbonaer_mp_doagingdyn_ /scratch_local/ifx1441243742bw4da4/ifx3mEKRU.i90 (181,16)
+   -> llvm.smax.i32 /scratch_local/ifx1441243742bw4da4/ifx3mEKRU.i90 (183,11)
+   -> mod_che_carbonaer_mp_doaging_ /scratch_local/ifx1441243742bw4da4/ifx3mEKRU.i90 (183,16)
+   -> mod_che_carbonaer_mp_doaging_ /scratch_local/ifx1441243742bw4da4/ifx3mEKRU.i90 (187,14)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1441243742bw4da4/ifx3mEKRU.i90 (167,11)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1441243742bw4da4/ifx3mEKRU.i90 (178,11)
+
+COMPILE FUNC: mod_che_carbonaer_mp_doaging_
+   -> llvm.smax.i64 /scratch_local/ifx1441243742bw4da4/ifx3mEKRU.i90 (280,18)
+   -> llvm.smax.i32 /scratch_local/ifx1441243742bw4da4/ifx3mEKRU.i90 (280,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1441243742bw4da4/ifx3mEKRU.i90 (280,18)
+   -> llvm.smax.i64 /scratch_local/ifx1441243742bw4da4/ifx3mEKRU.i90 (295,34)
+   -> llvm.exp.f64 /scratch_local/ifx1441243742bw4da4/ifx3mEKRU.i90 (295,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1441243742bw4da4/ifx3mEKRU.i90 (295,40)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1441243742bw4da4/ifx3mEKRU.i90 (280,18)
+
+COMPILE FUNC: mod_che_carbonaer._
+
+COMPILE FUNC: mod_che_carbonaer_mp_carb_init_
+   -> DELETE: mod_memutil_mp_assignp4d_d_ /scratch_local/ifx1441243742bw4da4/ifx3mEKRU.i90 (120,14)
+
+COMPILE FUNC: mod_che_carbonaer_mp_addto_ncon_surf_
+
+COMPILE FUNC: mod_che_carbonaer_mp_carb_prepare_
+   -> mod_che_carbonaer_mp_addto_ncon_surf_ /scratch_local/ifx1441243742bw4da4/ifx3mEKRU.i90 (132,14)
+   -> mod_che_carbonaer_mp_addto_ncon_surf_ /scratch_local/ifx1441243742bw4da4/ifx3mEKRU.i90 (137,16)
+   -> mod_che_carbonaer_mp_addto_ncon_surf_ /scratch_local/ifx1441243742bw4da4/ifx3mEKRU.i90 (141,14)
+   -> mod_che_carbonaer_mp_addto_ncon_surf_ /scratch_local/ifx1441243742bw4da4/ifx3mEKRU.i90 (146,16)
+   -> mod_che_carbonaer_mp_addto_ncon_surf_ /scratch_local/ifx1441243742bw4da4/ifx3mEKRU.i90 (151,14)
+
+---- End Inlining Report ------

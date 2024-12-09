@@ -1,0 +1,284 @@
+Global optimization report for : mod_ocn_common._
+=================================================================
+
+Global optimization report for : mod_ocn_common_mp_vecocn_
+=================================================================
+
+Global optimization report for : mod_ocn_common_mp_initocn_
+
+LOOP BEGIN at mod_ocn_common.F90 (90, 9)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_ocn_common.F90 (92, 25)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_ocn_common.F90 (115, 9)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_ocn_common.F90 (118, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_ocn_common.F90 (127, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_ocn_common.F90 (127, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_ocn_common.F90 (128, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_ocn_common.F90 (128, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_ocn_common.F90 (129, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_ocn_common.F90 (129, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_ocn_common.F90 (130, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_ocn_common.F90 (156, 27)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_ocn_common.F90 (177, 11)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_ocn_common.F90 (183, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_ocn_common.F90 (183, 7)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_ocn_common.F90 (183, 7)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_ocn_common.F90 (377, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_ocn_common.F90 (377, 5)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between ocean_emissivity (379:43) and ocean_emissivity (379:43) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_ocn_common.F90 (186, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_ocn_common.F90 (188, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_ocn_common.F90 (189, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_ocn_common_mp_ocn_interf_
+
+LOOP BEGIN at mod_ocn_common.F90 (302, 9)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_ocn_common.F90 (319, 20)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_ocn_common.F90 (319, 20)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_ocn_common.F90 (318, 32)
+            remark #25045: Fused Loops: 319,320
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence
+            remark #15346: vector dependence: assumed FLOW dependence between (319:20) and (319:20) 
+            remark #15346: vector dependence: assumed FLOW dependence
+            remark #15346: vector dependence: assumed FLOW dependence between (320:20) and (320:20) 
+        LOOP END
+
+        LOOP BEGIN at mod_ocn_common.F90 (320, 20)
+            remark #25046: Loop lost in Fusion
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_ocn_common.F90 (319, 20)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_ocn_common.F90 (377, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_ocn_common.F90 (377, 5)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between ocean_emissivity (379:43) and ocean_emissivity (379:43) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_ocn_common.F90 (330, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_ocn_common.F90 (332, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_ocn_common.F90 (333, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_ocn_common.F90 (206, 27)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_ocn_common.F90 (227, 11)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_ocn_common.F90 (236, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_ocn_common.F90 (237, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_ocn_common.F90 (255, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+
+LOOP BEGIN at mod_ocn_common.F90 (255, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_ocn_common_mp_albedoocn_
+
+LOOP BEGIN at mod_ocn_common.F90 (350, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_ocn_common.F90 (351, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_ocn_common.F90 (352, 33)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between (353:13) and (352:19) 
+            remark #15346: vector dependence: assumed FLOW dependence between (353:13) and (353:40) 
+            remark #15346: vector dependence: assumed FLOW dependence between (353:13) and (353:60) 
+            remark #15346: vector dependence: assumed ANTI dependence between (354:40) and (353:13) 
+            remark #15346: vector dependence: assumed ANTI dependence between (354:60) and (353:13) 
+            remark #15346: vector dependence: assumed FLOW dependence between (354:13) and (352:19) 
+            remark #15346: vector dependence: assumed FLOW dependence between (354:13) and (353:40) 
+            remark #15346: vector dependence: assumed FLOW dependence between (354:13) and (353:60) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between (354:13) and (353:13) 
+            remark #15346: vector dependence: assumed FLOW dependence between (354:13) and (354:40) 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_ocn_common_mp_ocean_emissivity_
+
+LOOP BEGIN at mod_ocn_common.F90 (377, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between ocean_emissivity (379:43) and ocean_emissivity (379:43) 
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.experimental.noalias.scope.decl
+
+COMPILE FUNC: mod_ocn_common._
+
+COMPILE FUNC: mod_ocn_common_mp_ocean_emissivity_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0945405899XdObpT/ifxyzS4zK.i90 (380,43)
+   -> llvm.pow.f64 /scratch_local/ifx0945405899XdObpT/ifxyzS4zK.i90 (380,40)
+   -> llvm.cos.f64 /scratch_local/ifx0945405899XdObpT/ifxyzS4zK.i90 (380,31)
+   -> llvm.pow.f64 /scratch_local/ifx0945405899XdObpT/ifxyzS4zK.i90 (380,65)
+
+COMPILE FUNC: mod_ocn_common_mp_ocn_interf_
+   -> llvm.fabs.f64 /scratch_local/ifx0945405899XdObpT/ifxyzS4zK.i90 (236,35)
+   -> llvm.fabs.f64 /scratch_local/ifx0945405899XdObpT/ifxyzS4zK.i90 (237,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0945405899XdObpT/ifxyzS4zK.i90 (255,15)
+   -> INLINE: mod_ocn_common_mp_ocean_emissivity_ /scratch_local/ifx0945405899XdObpT/ifxyzS4zK.i90 (330,15)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx0945405899XdObpT/ifxyzS4zK.i90 (380,43)
+      -> llvm.pow.f64 /scratch_local/ifx0945405899XdObpT/ifxyzS4zK.i90 (380,40)
+      -> llvm.cos.f64 /scratch_local/ifx0945405899XdObpT/ifxyzS4zK.i90 (380,31)
+      -> llvm.pow.f64 /scratch_local/ifx0945405899XdObpT/ifxyzS4zK.i90 (380,65)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0945405899XdObpT/ifxyzS4zK.i90 (330,15)
+
+COMPILE FUNC: mod_ocn_common_mp_vecocn_
+   -> mod_ocn_common_mp_ocn_interf_ /scratch_local/ifx0945405899XdObpT/ifxyzS4zK.i90 (54,10)
+   -> DELETE: mod_ocn_common_mp_ocn_interf_ /scratch_local/ifx0945405899XdObpT/ifxyzS4zK.i90 (57,14)
+   -> mod_ocn_common_mp_ocn_interf_ /scratch_local/ifx0945405899XdObpT/ifxyzS4zK.i90 (71,10)
+
+COMPILE FUNC: mod_ocn_common_mp_initocn_
+   -> INLINE: mod_ocn_common_mp_ocean_emissivity_ /scratch_local/ifx0945405899XdObpT/ifxyzS4zK.i90 (186,13)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx0945405899XdObpT/ifxyzS4zK.i90 (380,43)
+      -> llvm.pow.f64 /scratch_local/ifx0945405899XdObpT/ifxyzS4zK.i90 (380,40)
+      -> llvm.cos.f64 /scratch_local/ifx0945405899XdObpT/ifxyzS4zK.i90 (380,31)
+      -> llvm.pow.f64 /scratch_local/ifx0945405899XdObpT/ifxyzS4zK.i90 (380,65)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0945405899XdObpT/ifxyzS4zK.i90 (186,13)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0945405899XdObpT/ifxyzS4zK.i90 (125,10)
+
+COMPILE FUNC: mod_ocn_common_mp_albedoocn_
+
+---- End Inlining Report ------

@@ -1,0 +1,75 @@
+Global optimization report for : mod_clm_restfile._
+=================================================================
+
+Global optimization report for : mod_clm_restfile_mp_restfile_write_
+=================================================================
+
+Global optimization report for : mod_clm_restfile_mp_restfile_read_
+=================================================================
+
+Global optimization report for : mod_clm_restfile_mp_restfile_getfile_
+=================================================================
+
+Global optimization report for : mod_clm_restfile_mp_restfile_open_
+=================================================================
+
+Global optimization report for : mod_clm_restfile_mp_restfile_filename_
+=================================================================
+
+Global optimization report for : mod_clm_restfile_mp_restfile_dimset_
+=================================================================
+
+Global optimization report for : mod_clm_restfile_mp_restfile_dimcheck_
+=================================================================
+
+Global optimization report for : mod_clm_restfile_mp_restfile_enddef_
+=================================================================
+
+Global optimization report for : mod_clm_restfile_mp_restfile_close_
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.experimental.noalias.scope.decl
+
+COMPILE FUNC: mod_clm_restfile._
+
+COMPILE FUNC: mod_clm_restfile_mp_restfile_open_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx12646098090VUl9q/ifx5kQSTW.i90 (198,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx12646098090VUl9q/ifx5kQSTW.i90 (209,12)
+
+COMPILE FUNC: mod_clm_restfile_mp_restfile_dimset_
+
+COMPILE FUNC: mod_clm_restfile_mp_restfile_enddef_
+
+COMPILE FUNC: mod_clm_restfile_mp_restfile_close_
+
+COMPILE FUNC: mod_clm_restfile_mp_restfile_write_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx12646098090VUl9q/ifx5kQSTW.i90 (58,14)
+   -> mod_clm_restfile_mp_restfile_open_ /scratch_local/ifx12646098090VUl9q/ifx5kQSTW.i90 (77,10)
+   -> mod_clm_restfile_mp_restfile_dimset_ /scratch_local/ifx12646098090VUl9q/ifx5kQSTW.i90 (83,10)
+   -> INLINE: mod_clm_restfile_mp_restfile_enddef_ /scratch_local/ifx12646098090VUl9q/ifx5kQSTW.i90 (103,10)
+   -> INLINE: mod_clm_restfile_mp_restfile_close_ /scratch_local/ifx12646098090VUl9q/ifx5kQSTW.i90 (130,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx12646098090VUl9q/ifx5kQSTW.i90 (103,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx12646098090VUl9q/ifx5kQSTW.i90 (130,10)
+
+COMPILE FUNC: mod_clm_restfile_mp_restfile_dimcheck_
+
+COMPILE FUNC: mod_clm_restfile_mp_restfile_read_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx12646098090VUl9q/ifx5kQSTW.i90 (141,14)
+   -> mod_clm_restfile_mp_restfile_open_ /scratch_local/ifx12646098090VUl9q/ifx5kQSTW.i90 (149,10)
+   -> mod_clm_restfile_mp_restfile_dimcheck_ /scratch_local/ifx12646098090VUl9q/ifx5kQSTW.i90 (153,10)
+   -> INLINE: mod_clm_restfile_mp_restfile_close_ /scratch_local/ifx12646098090VUl9q/ifx5kQSTW.i90 (174,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx12646098090VUl9q/ifx5kQSTW.i90 (174,10)
+
+COMPILE FUNC: mod_clm_restfile_mp_restfile_getfile_
+   -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx12646098090VUl9q/ifx5kQSTW.i90 (194,7)
+
+COMPILE FUNC: mod_clm_restfile_mp_restfile_filename_
+
+---- End Inlining Report ------

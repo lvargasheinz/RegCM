@@ -1,0 +1,981 @@
+Global optimization report for : mod_clm_soilhydrology._
+=================================================================
+
+Global optimization report for : mod_clm_soilhydrology_mp_soilhydrology_readnl_
+=================================================================
+
+Global optimization report for : mod_clm_soilhydrology_mp_surfacerunoff_
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (238, 23)
+<Predicate Optimized v2>
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (231, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (245:9) and (237:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (245:9) and (237:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (245:9) and (237:9) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (238, 23)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 238 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (231, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (245:9) and (237:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (245:9) and (237:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (245:9) and (237:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (245:9) and (239:11) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (288, 21)
+<Predicate Optimized v2>
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (272:7) and (272:41) 
+    remark #15346: vector dependence: assumed FLOW dependence between (272:7) and (272:7) 
+    remark #15346: vector dependence: assumed ANTI dependence between (276:7) and (272:7) 
+    remark #15346: vector dependence: assumed ANTI dependence between (276:7) and (272:7) 
+    remark #15346: vector dependence: assumed ANTI dependence between (280:9) and (272:7) 
+    remark #15346: vector dependence: assumed ANTI dependence between (280:9) and (284:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (280:9) and (272:41) 
+    remark #15346: vector dependence: assumed FLOW dependence between (280:9) and (272:7) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between (280:9) and (272:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (280:9) and (276:7) 
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (288, 21)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 288 hoisted out of this loop
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (272:7) and (272:41) 
+    remark #15346: vector dependence: assumed FLOW dependence between (272:7) and (272:7) 
+    remark #15346: vector dependence: assumed ANTI dependence between (276:7) and (272:7) 
+    remark #15346: vector dependence: assumed ANTI dependence between (276:7) and (272:7) 
+    remark #15346: vector dependence: assumed ANTI dependence between (280:9) and (272:7) 
+    remark #15346: vector dependence: assumed ANTI dependence between (280:9) and (284:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (280:9) and (272:41) 
+    remark #15346: vector dependence: assumed FLOW dependence between (280:9) and (272:7) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between (280:9) and (272:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (280:9) and (276:7) 
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (304, 20)
+<Predicate Optimized v2>
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence
+    remark #15346: vector dependence: assumed FLOW dependence between (0:0) and (0:0) 
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (304, 20)
+<Predicate Optimized v1>
+    remark #25422: Invariant Condition at line 304 hoisted out of this loop
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence
+    remark #15346: vector dependence: assumed FLOW dependence between (0:0) and (0:0) 
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (318, 34)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (337:9) and (318:7) 
+    remark #15346: vector dependence: assumed ANTI dependence
+    remark #15346: vector dependence: assumed ANTI dependence between (321:9) and (337:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (322:11) and (318:7) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between (322:11) and (337:9) 
+    remark #15346: vector dependence: assumed FLOW dependence
+    remark #15346: vector dependence: assumed FLOW dependence between (322:11) and (321:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (322:11) and (324:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (322:11) and (325:35) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between (322:11) and (0:0) 
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (348, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (347:7) and (347:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (347:7) and (347:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (347:7) and (347:43) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_soilhydrology_mp_infiltration_
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (519, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (526, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (523:9) and (522:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (523:9) and (522:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (523:9) and (522:9) 
+        remark #15346: vector dependence: assumed ANTI dependence between (524:9) and (523:9) 
+        remark #15346: vector dependence: assumed ANTI dependence between (524:9) and (523:9) 
+        remark #15346: vector dependence: assumed ANTI dependence between (525:9) and (523:9) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (532, 43)
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (589, 17)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (589:17) and (589:17) 
+        remark #15346: vector dependence: assumed FLOW dependence between (589:17) and (589:17) 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (607, 15)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (608, 41)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (681, 21)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (682:9) and (681:7) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_soilhydrology_mp_soilwater_
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (926, 5)
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (901, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (910, 7)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (917, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (926, 5)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (929, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (932, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (936, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (937, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_soilhydrology.F90 (939, 18)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between (942:15) and (939:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between (942:15) and (940:13) 
+            remark #15346: vector dependence: assumed FLOW dependence between (942:15) and (941:13) 
+            remark #15346: vector dependence: assumed FLOW dependence between (942:15) and (942:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between (942:15) and (942:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between (942:15) and (943:38) 
+            remark #15346: vector dependence: assumed FLOW dependence between (942:15) and (942:15) 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (950, 16)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between temp (953:13) and temp (953:13) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (960, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (962, 22)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (963:11) and (963:11) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (976, 8)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (977, 21)
+        remark #25530: Stmt at line 0 sinked after loop using last value computation
+        remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+    LOOP END
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (989, 23)
+        remark #25530: Stmt at line 0 sinked after loop using last value computation
+        remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (1008, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (1010, 15)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (1047, 19)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (1102, 23)
+<Predicate Optimized v2>
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (1065, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence
+        remark #15346: vector dependence: assumed FLOW dependence
+        remark #15346: vector dependence: assumed FLOW dependence between (1108:9) and (1077:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1108:9) and (1077:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1108:9) and (1099:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1108:9) and (1100:9) 
+        remark #15346: vector dependence: assumed FLOW dependence
+        remark #15346: vector dependence: assumed FLOW dependence
+        remark #15346: vector dependence: assumed FLOW dependence between (1109:9) and (1077:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1109:9) and (1077:9) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (1102, 23)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at lines 1102, 1092, 1079, and 1069 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (1065, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence
+        remark #15346: vector dependence: assumed FLOW dependence
+        remark #15346: vector dependence: assumed FLOW dependence between (1108:9) and (1070:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1108:9) and (1070:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1108:9) and (1077:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1108:9) and (1077:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1108:9) and (1080:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1108:9) and (1080:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1108:9) and (1093:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1108:9) and (1099:9) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (1117, 19)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between zmm (1116:7) and zmm (1116:43) 
+    remark #15346: vector dependence: assumed ANTI dependence between zmm (1120:38) and zmm (1116:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between dzmm (0:0) and dzmm (1118:9) 
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (1142, 5)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (1147, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (1165, 7)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (1173, 14)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed OUTPUT dependence between qin (1177:9) and qin (1213:9) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between qin (1177:9) and qin (1229:9) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between dqidw0 (1178:9) and dqidw0 (1214:9) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between dqidw0 (1178:9) and dqidw0 (1230:9) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between dqidw1 (1179:9) and dqidw1 (1215:9) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between dqidw1 (1179:9) and dqidw1 (1231:9) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between qout (1180:9) and qout (1219:9) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between qout (1180:9) and qout (1232:9) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between dqodw1 (1181:9) and dqodw1 (1220:9) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between dqodw1 (1181:9) and dqodw1 (1233:9) 
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (1243, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (1245, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (1245, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (1248, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (1248, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (1251, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (1251, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (1254, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (1254, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (1262, 7)
+    remark #25045: Fused Loops: 1265,1311
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (1262, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (1273, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (1311, 5)
+    remark #25046: Loop lost in Fusion
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (1275, 7)
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_soilhydrology_mp_drainage_
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (1505, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (1508, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (1520, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed OUTPUT dependence between (1517:7) and (1515:7) 
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (1530, 21)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (1530, 21)
+        remark #25530: Stmt at line 0 sinked after loop using last value computation
+        remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (1535, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (1550, 19)
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (1581, 30)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between qcharge_tot (1579:39) and qcharge_tot (1577:29) 
+        remark #15346: vector dependence: assumed FLOW dependence between qcharge_tot (1579:39) and qcharge_tot (1577:29) 
+        remark #15346: vector dependence: assumed FLOW dependence between qcharge_tot (1579:39) and qcharge_tot (1579:39) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1585:15) and (1575:40) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1585:15) and (1575:22) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1585:15) and (1574:13) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1585:15) and (1577:13) 
+        remark #15346: vector dependence: assumed FLOW dependence
+        remark #15346: vector dependence: assumed FLOW dependence between (1577:13) and (1575:40) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1577:13) and (1577:60) 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (1566, 22)
+        remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+    LOOP END
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (1595, 23)
+        remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (1622, 7)
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (1623, 37)
+        remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+        remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+    LOOP END
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (1697, 39)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (1729, 11)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between q_perch (1727:31) and q_perch (1727:31) 
+        remark #15346: vector dependence: assumed FLOW dependence between wtsub (1728:27) and wtsub (1728:27) 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (1746, 31)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between rsub_top_tot (1743:41) and rsub_top_tot (1741:28) 
+        remark #15346: vector dependence: assumed FLOW dependence between rsub_top_tot (1743:41) and rsub_top_tot (1741:28) 
+        remark #15346: vector dependence: assumed FLOW dependence between rsub_top_tot (1743:41) and rsub_top_tot (1743:41) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1751:15) and (1741:13) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between (1751:15) and (1744:13) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1751:15) and (1751:15) 
+        remark #15346: vector dependence: assumed ANTI dependence between (1751:15) and (1744:13) 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (1771, 9)
+        remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+    LOOP END
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (1862, 33)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (1858:15) and (1852:15) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1858:15) and (1853:34) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1858:15) and (1853:18) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1858:15) and (1852:15) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1858:15) and (1856:15) 
+        remark #15346: vector dependence: assumed FLOW dependence between rsub_top_tot (1860:43) and rsub_top_tot (1856:32) 
+        remark #15346: vector dependence: assumed FLOW dependence between rsub_top_tot (1860:43) and rsub_top_tot (1856:32) 
+        remark #15346: vector dependence: assumed FLOW dependence between rsub_top_tot (1860:43) and rsub_top_tot (1860:43) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1866:17) and (1852:15) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1866:17) and (1853:34) 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (1879, 25)
+        remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+    LOOP END
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (1649, 9)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between q_perch (1647:29) and q_perch (1647:29) 
+        remark #15346: vector dependence: assumed FLOW dependence between wtsub (1648:25) and wtsub (1648:25) 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (1664, 29)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between rsub_top_tot (1660:39) and rsub_top_tot (1658:26) 
+        remark #15346: vector dependence: assumed FLOW dependence between rsub_top_tot (1660:39) and rsub_top_tot (1658:26) 
+        remark #15346: vector dependence: assumed FLOW dependence between rsub_top_tot (1660:39) and rsub_top_tot (1660:39) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1668:13) and (1658:11) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between (1668:13) and (1662:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1668:13) and (1668:13) 
+        remark #15346: vector dependence: assumed ANTI dependence between (1668:13) and (1662:11) 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (1680, 23)
+        remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (1897, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (1902, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (1900:9) and (1899:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1900:9) and (1899:9) 
+        remark #15346: vector dependence: assumed ANTI dependence between (1901:9) and (1900:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1901:9) and (1899:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1901:9) and (1899:9) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between (1901:9) and (1900:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1901:9) and (1901:9) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (1912, 32)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (1910:7) and (1907:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (1910:7) and (1907:20) 
+    remark #15346: vector dependence: assumed FLOW dependence between (1910:7) and (1908:39) 
+    remark #15346: vector dependence: assumed ANTI dependence between (1912:7) and (1910:7) 
+    remark #15346: vector dependence: assumed ANTI dependence between (1912:7) and (1910:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (1913:9) and (1907:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (1913:9) and (1907:20) 
+    remark #15346: vector dependence: assumed FLOW dependence between (1913:9) and (1908:39) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between (1913:9) and (1910:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (1913:9) and (1912:7) 
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (1938, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (1940, 30)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed OUTPUT dependence between xs (1941:11) and xs (1947:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1944:13) and (1940:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1944:13) and (1944:13) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1944:13) and (1944:13) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between xs (1947:11) and xs (1941:11) 
+        remark #15346: vector dependence: assumed ANTI dependence between (1949:9) and (1944:13) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1949:9) and (1940:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1949:9) and (1944:13) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1949:9) and (1944:13) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between (1949:9) and (1944:13) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (1623, 37)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_soilhydrology.F90 (1960, 9)
+        remark #25563: Load hoisted out of the loop
+        remark #25564: Store sinked out of the loop
+        remark #25564: Store sinked out of the loop
+        remark #25530: Stmt at line 1962 sinked after loop using last value computation
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence
+        remark #15346: vector dependence: assumed FLOW dependence
+        remark #15346: vector dependence: assumed FLOW dependence
+        remark #15346: vector dependence: assumed FLOW dependence between (1971:27) and (1962:60) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1971:27) and (1963:37) 
+        remark #15346: vector dependence: assumed FLOW dependence between (1971:27) and (1971:27) 
+        remark #15346: vector dependence: assumed FLOW dependence
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (2002, 21)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (1990:7) and (1990:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (1994:7) and (1990:7) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between (1994:7) and (1990:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (1994:7) and (1994:7) 
+    remark #15346: vector dependence: assumed ANTI dependence between (1994:7) and (1990:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (1998:7) and (1990:7) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between (1998:7) and (1990:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (1998:7) and (1994:7) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between (1998:7) and (1994:7) 
+    remark #15346: vector dependence: assumed ANTI dependence between (2002:7) and (1990:7) 
+LOOP END
+
+LOOP BEGIN at mod_clm_soilhydrology.F90 (2023, 21)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (2024:9) and (2023:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (2025:9) and (2023:7) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between (2025:9) and (2024:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (2027:9) and (2023:7) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between (2027:9) and (2024:9) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between (2027:9) and (2025:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (2027:9) and (2027:9) 
+    remark #15346: vector dependence: assumed ANTI dependence between (2027:9) and (2024:9) 
+    remark #15346: vector dependence: assumed ANTI dependence between (2027:9) and (2025:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (2028:9) and (2023:7) 
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_clm_soilhydrology_mp_surfacerunoff_
+   -> llvm.smax.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (86,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (86,14)
+   -> llvm.smax.i32 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (86,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (86,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (86,14)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (237,58)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (239,55)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (245,50)
+   -> DELETE: llvm.exp.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (245,36)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (246,33)
+   -> DELETE: llvm.exp.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (272,29)
+   -> DELETE: llvm.exp.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (284,33)
+   -> DELETE: llvm.exp.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (280,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (293,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (331,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (237,58)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (239,55)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (245,50)
+   -> llvm.exp.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (245,36)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (237,58)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (245,50)
+   -> llvm.exp.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (245,36)
+   -> llvm.exp.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (272,29)
+   -> llvm.exp.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (280,31)
+   -> DELETE: llvm.exp.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (284,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (293,20)
+   -> llvm.exp.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (272,29)
+   -> llvm.exp.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (280,31)
+   -> DELETE: llvm.exp.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (284,33)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (86,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (86,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (86,14)
+
+COMPILE FUNC: mod_clm_soilhydrology_mp_infiltration_
+   -> llvm.smax.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (353,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (353,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (353,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (353,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (353,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (353,14)
+   -> llvm.smax.i32 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (353,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (353,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (353,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (522,58)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (524,64)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (547,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (548,18)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (550,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (554,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (588,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (589,43)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (589,35)
+   -> llvm.pow.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (589,32)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (592,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (609,36)
+   -> llvm.pow.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (609,68)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (612,30)
+   -> llvm.pow.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (612,48)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (620,34)
+   -> llvm.sin.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (620,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (622,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (624,58)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (671,19)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (353,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (353,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (353,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (353,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (353,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (353,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (353,14)
+
+COMPILE FUNC: mod_clm_soilhydrology_mp_soilwater_
+   -> llvm.smax.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> llvm.smax.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> llvm.smax.i32 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (895,5)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (896,5)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (897,5)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (898,5)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (907,58)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (909,57)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (990,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (991,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (995,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (995,48)
+   -> llvm.pow.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (995,45)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (998,30)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1019,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1019,21)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1020,35)
+   -> DELETE: llvm.pow.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1020,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1022,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1022,43)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1024,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1023,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1024,54)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1028,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1028,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1029,38)
+   -> llvm.pow.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1029,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1030,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1030,21)
+   -> llvm.pow.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1031,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1033,47)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1033,71)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1038,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1038,59)
+   -> llvm.pow.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1038,56)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1049,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1049,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1050,36)
+   -> llvm.pow.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1050,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1052,45)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1052,66)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1056,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1056,61)
+   -> llvm.pow.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1056,58)
+   -> DELETE: llvm.smin.i32 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1070,11)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1070,25)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1071,25)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1071,16)
+   -> DELETE: llvm.smin.i32 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1073,11)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1073,25)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1074,25)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1074,16)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1077,30)
+   -> DELETE: llvm.pow.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1077,27)
+   -> DELETE: llvm.smin.i32 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1080,11)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1080,44)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1080,25)
+   -> DELETE: llvm.smin.i32 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1083,11)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1083,52)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1083,43)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1083,35)
+   -> DELETE: llvm.pow.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1083,32)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1087,34)
+   -> DELETE: llvm.smin.i32 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1087,59)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1088,34)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1088,25)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1099,42)
+   -> DELETE: llvm.pow.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1099,39)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1103,45)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1116,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1120,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1132,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1133,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1134,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1136,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1137,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1140,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1149,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1150,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1151,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1153,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1154,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1155,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1156,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1157,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1159,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1160,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1196,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1198,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1198,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1203,38)
+   -> llvm.pow.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1203,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1207,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1210,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1211,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1212,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1214,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1215,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1216,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1217,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1218,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1220,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1221,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1230,27)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1231,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1174,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1175,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1176,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1178,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1179,26)
+   -> llvm.fabs.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1244,13)
+   -> llvm.fabs.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1247,13)
+   -> llvm.fabs.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1250,13)
+   -> llvm.fabs.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1253,13)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1296,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1296,46)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1296,45)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1301,29)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1301,42)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1301,41)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1288,22)
+   -> DELETE: llvm.pow.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1288,19)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1291,9)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1245,7)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1248,7)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1251,7)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1254,7)
+   -> llvm.smin.i32 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1070,11)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1071,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1071,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1070,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1077,30)
+   -> llvm.pow.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1077,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1080,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1080,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1087,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1088,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1099,42)
+   -> llvm.pow.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1099,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1103,45)
+   -> llvm.smin.i32 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1070,11)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1071,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1071,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1073,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1077,30)
+   -> llvm.pow.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1077,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1083,52)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1083,43)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1083,35)
+   -> llvm.pow.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1083,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1087,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1088,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1099,42)
+   -> llvm.pow.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1099,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1288,22)
+   -> llvm.pow.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1288,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1296,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1296,46)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1296,45)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1301,42)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1301,41)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (748,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (926,5)
+   -> llvm.smax.i32 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1291,9)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1291,9)
+
+COMPILE FUNC: mod_clm_soilhydrology_mp_drainage_
+   -> llvm.smax.i64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1316,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1316,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1316,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1316,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1316,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1316,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1316,14)
+   -> llvm.smax.i32 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1316,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1316,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1316,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1316,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1546,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1546,61)
+   -> llvm.pow.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1546,58)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1545,36)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1561,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1561,61)
+   -> llvm.pow.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1561,58)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1560,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1563,51)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1563,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1575,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1575,63)
+   -> llvm.pow.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1575,60)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1574,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1577,52)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1577,47)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1552,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1609,54)
+   -> llvm.sin.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1609,33)
+   -> llvm.smin.i32 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1645,11)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1645,47)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1645,38)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1645,30)
+   -> llvm.pow.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1645,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1653,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1658,45)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1695,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1696,41)
+   -> llvm.smin.i32 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1725,13)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1725,49)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1725,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1725,32)
+   -> llvm.pow.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1725,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1733,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1741,47)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1710,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1711,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1710,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1713,42)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1714,42)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1713,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1717,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1717,46)
+   -> llvm.smax.i32 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1768,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1778,64)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1778,55)
+   -> llvm.exp.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1778,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1779,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1780,20)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1789,38)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1789,30)
+   -> llvm.pow.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1789,27)
+   -> llvm.sin.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1790,37)
+   -> llvm.exp.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1810,45)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1814,12)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1814,57)
+   -> llvm.pow.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1814,54)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1813,38)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1853,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1853,57)
+   -> llvm.pow.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1853,54)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1852,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1856,56)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1856,51)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1820,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1822,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1908,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (1926,33)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (2013,20)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (2005,18)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (2007,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (2042,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (2037,48)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (2005,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (2007,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1022407555UAX29y/ifxMuVg0f.i90 (2013,20)
+
+COMPILE FUNC: mod_clm_soilhydrology._
+
+COMPILE FUNC: mod_clm_soilhydrology_mp_soilhydrology_readnl_
+
+---- End Inlining Report ------

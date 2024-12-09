@@ -1,0 +1,246 @@
+Global optimization report for : mod_grid._
+=================================================================
+
+Global optimization report for : mod_grid_mp_init_domain_
+=================================================================
+
+Global optimization report for : mod_grid_mp_g2s_i_
+
+LOOP BEGIN at mod_grid.F90 (88, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_grid.F90 (89, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_grid.F90 (91, 11)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_grid.F90 (91, 11)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_grid_mp_g2s_r4_
+
+LOOP BEGIN at mod_grid.F90 (106, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_grid.F90 (107, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_grid.F90 (109, 11)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_grid.F90 (109, 11)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_grid_mp_g2s_r8_
+
+LOOP BEGIN at mod_grid.F90 (124, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_grid.F90 (125, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_grid.F90 (127, 11)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_grid.F90 (127, 11)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_grid_mp_setup_pack_
+
+LOOP BEGIN at mod_grid.F90 (144, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_grid.F90 (144, 5)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_grid.F90 (144, 5)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_grid.F90 (146, 7)
+    remark #25423: Invariant If condition at line 146 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_grid.F90 (146, 7)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_grid.F90 (147, 9)
+            remark #15319: Loop was not vectorized: novector directive used
+
+            LOOP BEGIN at mod_grid.F90 (147, 9)
+                remark #15319: Loop was not vectorized: novector directive used
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_grid.F90 (146, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_grid.F90 (147, 9)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_grid.F90 (147, 9)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_grid_mp_pack_integer_
+
+LOOP BEGIN at mod_grid.F90 (88, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_grid.F90 (89, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_grid.F90 (91, 11)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_grid.F90 (91, 11)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_grid.F90 (166, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_grid.F90 (167, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_grid.F90 (168, 16)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between ip (170:21) and ip (169:13) 
+            remark #15346: vector dependence: assumed FLOW dependence between ip (170:21) and ip (170:21) 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_grid_mp_pack_real4_
+
+LOOP BEGIN at mod_grid.F90 (106, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_grid.F90 (107, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_grid.F90 (109, 11)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_grid.F90 (109, 11)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_grid.F90 (185, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_grid.F90 (186, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_grid.F90 (187, 16)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between ip (189:21) and ip (188:13) 
+            remark #15346: vector dependence: assumed FLOW dependence between ip (189:21) and ip (189:21) 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_grid_mp_pack_real8_
+
+LOOP BEGIN at mod_grid.F90 (124, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_grid.F90 (125, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_grid.F90 (127, 11)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_grid.F90 (127, 11)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_grid.F90 (204, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_grid.F90 (205, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_grid.F90 (206, 16)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between ip (208:21) and ip (207:13) 
+            remark #15346: vector dependence: assumed FLOW dependence between ip (208:21) and ip (208:21) 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.experimental.noalias.scope.decl
+
+COMPILE FUNC: mod_grid._
+
+COMPILE FUNC: mod_grid_mp_init_domain_
+
+COMPILE FUNC: mod_grid_mp_g2s_i_
+
+COMPILE FUNC: mod_grid_mp_g2s_r4_
+
+COMPILE FUNC: mod_grid_mp_g2s_r8_
+
+COMPILE FUNC: mod_grid_mp_setup_pack_
+
+COMPILE FUNC: mod_grid_mp_pack_integer_
+   -> INLINE: mod_grid_mp_g2s_i_ /scratch_local/ifx0133849806S3BYZF/ifxMXYZwI.i90 (163,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0133849806S3BYZF/ifxMXYZwI.i90 (163,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0133849806S3BYZF/ifxMXYZwI.i90 (163,10)
+
+COMPILE FUNC: mod_grid_mp_pack_real4_
+   -> INLINE: mod_grid_mp_g2s_r4_ /scratch_local/ifx0133849806S3BYZF/ifxMXYZwI.i90 (182,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0133849806S3BYZF/ifxMXYZwI.i90 (182,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0133849806S3BYZF/ifxMXYZwI.i90 (182,10)
+
+COMPILE FUNC: mod_grid_mp_pack_real8_
+   -> INLINE: mod_grid_mp_g2s_r8_ /scratch_local/ifx0133849806S3BYZF/ifxMXYZwI.i90 (201,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0133849806S3BYZF/ifxMXYZwI.i90 (201,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0133849806S3BYZF/ifxMXYZwI.i90 (201,10)
+
+---- End Inlining Report ------

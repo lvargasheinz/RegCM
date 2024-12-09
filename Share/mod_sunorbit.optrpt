@@ -1,0 +1,113 @@
+Global optimization report for : mod_sunorbit._
+=================================================================
+
+Global optimization report for : mod_sunorbit_mp_orb_cosz_r8_
+=================================================================
+
+Global optimization report for : mod_sunorbit_mp_orb_cosz_r4_
+=================================================================
+
+Global optimization report for : mod_sunorbit_mp_orb_params_
+
+LOOP BEGIN at mod_sunorbit.F90 (382, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between obsum (383:23) and obsum (383:23) 
+LOOP END
+
+LOOP BEGIN at mod_sunorbit.F90 (397, 7)
+    remark #25045: Fused Loops: 397,402
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 3
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between cossum (396:24) and cossum (396:24) 
+    remark #15346: vector dependence: assumed FLOW dependence between sinsum (401:24) and sinsum (401:24) 
+LOOP END
+
+LOOP BEGIN at mod_sunorbit.F90 (402, 7)
+    remark #25046: Loop lost in Fusion
+LOOP END
+
+LOOP BEGIN at mod_sunorbit.F90 (440, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between mvsum (441:23) and mvsum (441:23) 
+LOOP END
+
+LOOP BEGIN at mod_sunorbit.F90 (448, 7)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+
+LOOP BEGIN at mod_sunorbit.F90 (451, 7)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+=================================================================
+
+Global optimization report for : mod_sunorbit_mp_orb_decl_
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_sunorbit._
+
+COMPILE FUNC: mod_sunorbit_mp_orb_cosz_r8_
+   -> llvm.sin.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (62,19)
+   -> llvm.sin.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (62,28)
+   -> llvm.cos.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (63,19)
+   -> llvm.cos.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (63,28)
+   -> llvm.cos.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (63,40)
+
+COMPILE FUNC: mod_sunorbit_mp_orb_cosz_r4_
+   -> llvm.sin.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (77,24)
+   -> llvm.sin.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (77,34)
+   -> llvm.cos.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (78,20)
+   -> llvm.cos.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (78,30)
+   -> llvm.cos.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (78,42)
+
+COMPILE FUNC: mod_sunorbit_mp_orb_params_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (383,47)
+   -> llvm.cos.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (383,42)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (396,39)
+   -> DELETE: llvm.cos.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (396,34)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (401,39)
+   -> DELETE: llvm.sin.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (401,34)
+   -> llvm.sqrt.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (407,16)
+   -> llvm.fabs.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (412,11)
+   -> DELETE: atan /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (426,19)
+   -> DELETE: atan /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (421,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (441,47)
+   -> llvm.sin.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (441,42)
+   -> llvm.fabs.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (339,12)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (471,15)
+   -> llvm.sqrt.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (475,12)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (482,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (483,14)
+   -> llvm.sin.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (483,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (484,33)
+   -> llvm.sin.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (484,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (485,33)
+   -> llvm.sin.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (485,55)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (482,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (396,39)
+   -> llvm.cos.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (396,34)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (401,39)
+   -> llvm.sin.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (401,34)
+
+COMPILE FUNC: mod_sunorbit_mp_orb_decl_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (527,23)
+   -> llvm.sin.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (533,13)
+   -> llvm.sin.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (534,58)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (535,21)
+   -> llvm.sin.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (535,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (535,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (534,49)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (534,29)
+   -> llvm.cos.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (543,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (543,15)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (543,52)
+   -> llvm.sin.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (547,19)
+   -> llvm.sin.f64 /scratch_local/ifx1103004036eUBs63/ifx4y7AGu.i90 (547,31)
+
+---- End Inlining Report ------

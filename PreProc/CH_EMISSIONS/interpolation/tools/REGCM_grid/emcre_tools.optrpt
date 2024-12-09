@@ -1,0 +1,184 @@
+Global optimization report for : emcre_tools._
+=================================================================
+
+Global optimization report for : emcre_tools_mp_spline_interpolation_base_
+
+LOOP BEGIN at emcre_tools.F90 (41, 6)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at emcre_tools.F90 (41, 6)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at emcre_tools.F90 (42, 6)
+<Predicate Optimized v2>
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at emcre_tools.F90 (42, 6)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at emcre_tools.F90 (42, 6)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 42 hoisted out of this loop
+    remark #25423: Invariant If condition at line 0 hoisted out of this loop
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+
+    LOOP BEGIN at emcre_tools.F90 (42, 6)
+    <Multiversioned v1>
+        remark #25408: memset generated
+        remark #25562: The loop has been multiversioned for the small trip count
+    LOOP END
+LOOP END
+
+LOOP BEGIN at emcre_tools.F90 (46, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at emcre_tools.F90 (46, 9)
+        remark #25045: Fused Loops: 46,48
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at emcre_tools.F90 (46, 9)
+            remark #25045: Fused Loops: 46,48
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+        LOOP END
+
+        LOOP BEGIN at emcre_tools.F90 (48, 9)
+            remark #25046: Loop lost in Fusion
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at emcre_tools.F90 (48, 9)
+        remark #25046: Loop lost in Fusion
+
+        LOOP BEGIN at emcre_tools.F90 (48, 9)
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at emcre_tools.F90 (47, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at emcre_tools.F90 (47, 9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at emcre_tools.F90 (52, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at emcre_tools.F90 (52, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at emcre_tools.F90 (55, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at emcre_tools.F90 (55, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at emcre_tools.F90 (55, 9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : emcre_tools_mp_spline_cubic_val_
+
+LOOP BEGIN at emcre_tools.F90 (84, 6)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+
+LOOP BEGIN at emcre_tools.F90 (99, 6)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at emcre_tools.F90 (99, 6)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : emcre_tools_mp_strcrack_
+
+LOOP BEGIN at emcre_tools.F90 (134, 17)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+
+LOOP BEGIN at emcre_tools.F90 (154, 17)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+=================================================================
+
+Global optimization report for : emcre_tools_mp_is_numeric_
+
+LOOP BEGIN at emcre_tools.F90 (195, 20)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: emcre_tools_mp_spline_interpolation_base_
+   -> llvm.smax.i64 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (23,14)
+   -> llvm.smax.i64 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (23,14)
+   -> llvm.smax.i64 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (23,14)
+   -> llvm.smax.i64 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (23,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (23,14)
+   -> llvm.smax.i32 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (23,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (23,14)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (45,14)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (45,28)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (47,20)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (48,27)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (48,49)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (48,63)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (49,17)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (48,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (49,32)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (48,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (45,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (45,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (48,49)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (48,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (48,63)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (48,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (48,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (47,20)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (23,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (23,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (42,6)
+
+COMPILE FUNC: emcre_tools._
+
+COMPILE FUNC: emcre_tools_mp_spline_cubic_val_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (97,9)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (98,9)
+   -> llvm.powi.f64.i32 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (100,11)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (100,10)
+   -> llvm.powi.f64.i32 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (100,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (100,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (100,9)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (100,55)
+
+COMPILE FUNC: emcre_tools_mp_strcrack_
+   -> llvm.smax.i64 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (134,28)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (147,5)
+   -> llvm.smax.i64 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (135,23)
+   -> llvm.smax.i64 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (155,23)
+   -> llvm.smax.i64 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (164,16)
+   -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx0432056742jzQFGJ/ifxaxBC6y.i90 (164,8)
+
+COMPILE FUNC: emcre_tools_mp_is_numeric_
+
+---- End Inlining Report ------

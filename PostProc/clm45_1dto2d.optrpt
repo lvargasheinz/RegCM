@@ -1,0 +1,662 @@
+Global optimization report for : myabort_
+=================================================================
+
+Global optimization report for : mod_remap._
+=================================================================
+
+Global optimization report for : mod_remap_mp_remap_int4_
+
+LOOP BEGIN at clm45_1dto2d.F90 (53, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at clm45_1dto2d.F90 (53, 5)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at clm45_1dto2d.F90 (71, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at clm45_1dto2d.F90 (72, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at clm45_1dto2d.F90 (74, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at clm45_1dto2d.F90 (74, 13)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between ib (78:25) and ib (77:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between ib (78:25) and ib (78:25) 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at clm45_1dto2d.F90 (59, 9)
+    remark #25423: Invariant If condition at line 59 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at clm45_1dto2d.F90 (59, 9)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between ib (62:21) and ib (61:13) 
+        remark #15346: vector dependence: assumed FLOW dependence between ib (62:21) and ib (62:21) 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_remap_mp_remap_pft_int4_
+
+LOOP BEGIN at clm45_1dto2d.F90 (94, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at clm45_1dto2d.F90 (94, 5)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at clm45_1dto2d.F90 (125, 9)
+
+    LOOP BEGIN at clm45_1dto2d.F90 (126, 11)
+
+        LOOP BEGIN at clm45_1dto2d.F90 (128, 13)
+
+            LOOP BEGIN at clm45_1dto2d.F90 (128, 13)
+
+                LOOP BEGIN at clm45_1dto2d.F90 (131, 17)
+                    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+                LOOP END
+
+                LOOP BEGIN at clm45_1dto2d.F90 (135, 32)
+                    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+                LOOP END
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at clm45_1dto2d.F90 (101, 9)
+
+    LOOP BEGIN at clm45_1dto2d.F90 (102, 26)
+
+        LOOP BEGIN at clm45_1dto2d.F90 (103, 13)
+            remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+        LOOP END
+
+        LOOP BEGIN at clm45_1dto2d.F90 (107, 28)
+            remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_remap_mp_remap_real4_
+
+LOOP BEGIN at clm45_1dto2d.F90 (159, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at clm45_1dto2d.F90 (159, 5)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at clm45_1dto2d.F90 (177, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at clm45_1dto2d.F90 (178, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at clm45_1dto2d.F90 (180, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at clm45_1dto2d.F90 (180, 13)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between ib (184:25) and ib (183:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between ib (184:25) and ib (184:25) 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at clm45_1dto2d.F90 (165, 9)
+    remark #25423: Invariant If condition at line 165 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at clm45_1dto2d.F90 (165, 9)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between ib (168:21) and ib (167:13) 
+        remark #15346: vector dependence: assumed FLOW dependence between ib (168:21) and ib (168:21) 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_remap_mp_remap_pft_real4_
+
+LOOP BEGIN at clm45_1dto2d.F90 (201, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at clm45_1dto2d.F90 (201, 5)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at clm45_1dto2d.F90 (232, 9)
+
+    LOOP BEGIN at clm45_1dto2d.F90 (233, 11)
+
+        LOOP BEGIN at clm45_1dto2d.F90 (235, 13)
+
+            LOOP BEGIN at clm45_1dto2d.F90 (235, 13)
+
+                LOOP BEGIN at clm45_1dto2d.F90 (238, 17)
+                    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+                LOOP END
+
+                LOOP BEGIN at clm45_1dto2d.F90 (242, 32)
+                    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+                LOOP END
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at clm45_1dto2d.F90 (208, 9)
+
+    LOOP BEGIN at clm45_1dto2d.F90 (209, 26)
+
+        LOOP BEGIN at clm45_1dto2d.F90 (210, 13)
+            remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+        LOOP END
+
+        LOOP BEGIN at clm45_1dto2d.F90 (214, 28)
+            remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_remap_mp_remap_real8_
+
+LOOP BEGIN at clm45_1dto2d.F90 (266, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at clm45_1dto2d.F90 (266, 5)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at clm45_1dto2d.F90 (284, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at clm45_1dto2d.F90 (285, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at clm45_1dto2d.F90 (287, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at clm45_1dto2d.F90 (287, 13)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between ib (291:25) and ib (290:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between ib (291:25) and ib (291:25) 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at clm45_1dto2d.F90 (272, 9)
+    remark #25423: Invariant If condition at line 272 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at clm45_1dto2d.F90 (272, 9)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between ib (275:21) and ib (274:13) 
+        remark #15346: vector dependence: assumed FLOW dependence between ib (275:21) and ib (275:21) 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_remap_mp_remap_pft_real8_
+
+LOOP BEGIN at clm45_1dto2d.F90 (308, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at clm45_1dto2d.F90 (308, 5)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at clm45_1dto2d.F90 (339, 9)
+
+    LOOP BEGIN at clm45_1dto2d.F90 (340, 11)
+
+        LOOP BEGIN at clm45_1dto2d.F90 (342, 13)
+
+            LOOP BEGIN at clm45_1dto2d.F90 (342, 13)
+
+                LOOP BEGIN at clm45_1dto2d.F90 (345, 17)
+                    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+                LOOP END
+
+                LOOP BEGIN at clm45_1dto2d.F90 (349, 32)
+                    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+                LOOP END
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at clm45_1dto2d.F90 (315, 9)
+
+    LOOP BEGIN at clm45_1dto2d.F90 (316, 26)
+
+        LOOP BEGIN at clm45_1dto2d.F90 (317, 13)
+            remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+        LOOP END
+
+        LOOP BEGIN at clm45_1dto2d.F90 (321, 28)
+            remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : MAIN__
+
+LOOP BEGIN at clm45_1dto2d.F90 (467, 3)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+
+LOOP BEGIN at clm45_1dto2d.F90 (495, 16)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+
+LOOP BEGIN at clm45_1dto2d.F90 (530, 3)
+<Predicate Optimized v2>
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at clm45_1dto2d.F90 (530, 3)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at clm45_1dto2d.F90 (530, 3)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 530 hoisted out of this loop
+    remark #25423: Invariant If condition at line 0 hoisted out of this loop
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+
+    LOOP BEGIN at clm45_1dto2d.F90 (530, 3)
+    <Multiversioned v1>
+        remark #25408: memset generated
+        remark #25562: The loop has been multiversioned for the small trip count
+    LOOP END
+LOOP END
+
+LOOP BEGIN at clm45_1dto2d.F90 (538, 5)
+
+    LOOP BEGIN at clm45_1dto2d.F90 (538, 5)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at clm45_1dto2d.F90 (543, 23)
+        remark #25564: Store sinked out of the loop
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed OUTPUT dependence between id (564:5) and id (564:5) 
+        remark #15346: vector dependence: assumed FLOW dependence
+        remark #15346: vector dependence: assumed FLOW dependence
+    LOOP END
+
+    LOOP BEGIN at clm45_1dto2d.F90 (558, 11)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at clm45_1dto2d.F90 (548, 11)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at clm45_1dto2d.F90 (577, 5)
+        remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+    LOOP END
+LOOP END
+
+LOOP BEGIN at clm45_1dto2d.F90 (625, 13)
+
+    LOOP BEGIN at clm45_1dto2d.F90 (724, 17)
+
+        LOOP BEGIN at clm45_1dto2d.F90 (726, 19)
+            remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at clm45_1dto2d.F90 (712, 15)
+        remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+    LOOP END
+
+    LOOP BEGIN at clm45_1dto2d.F90 (689, 17)
+
+        LOOP BEGIN at clm45_1dto2d.F90 (691, 19)
+            remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at clm45_1dto2d.F90 (677, 15)
+        remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+    LOOP END
+
+    LOOP BEGIN at clm45_1dto2d.F90 (654, 17)
+
+        LOOP BEGIN at clm45_1dto2d.F90 (656, 19)
+            remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at clm45_1dto2d.F90 (642, 15)
+        remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+    LOOP END
+
+    LOOP BEGIN at clm45_1dto2d.F90 (861, 17)
+
+        LOOP BEGIN at clm45_1dto2d.F90 (862, 19)
+
+            LOOP BEGIN at clm45_1dto2d.F90 (865, 21)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed ANTI dependence between (865:21) and (865:21) 
+                remark #15346: vector dependence: assumed ANTI dependence
+                remark #15346: vector dependence: assumed OUTPUT dependence between (865:21) and (865:21) 
+                remark #15346: vector dependence: assumed OUTPUT dependence
+                remark #15346: vector dependence: assumed FLOW dependence between (865:21) and (865:21) 
+                remark #15346: vector dependence: assumed ANTI dependence between (865:21) and (865:21) 
+                remark #15346: vector dependence: assumed ANTI dependence
+                remark #15346: vector dependence: assumed FLOW dependence between (865:21) and nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg 
+                remark #15346: vector dependence: assumed FLOW dependence between (865:21) and itypveg 
+                remark #15346: vector dependence: assumed FLOW dependence between (865:21) and ipftgcell 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at clm45_1dto2d.F90 (847, 17)
+
+        LOOP BEGIN at clm45_1dto2d.F90 (850, 19)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed ANTI dependence between (850:19) and (850:19) 
+            remark #15346: vector dependence: assumed ANTI dependence
+            remark #15346: vector dependence: assumed OUTPUT dependence between (850:19) and (850:19) 
+            remark #15346: vector dependence: assumed OUTPUT dependence
+            remark #15346: vector dependence: assumed FLOW dependence between (850:19) and (850:19) 
+            remark #15346: vector dependence: assumed ANTI dependence between (850:19) and (850:19) 
+            remark #15346: vector dependence: assumed ANTI dependence
+            remark #15346: vector dependence: assumed FLOW dependence between (850:19) and nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg 
+            remark #15346: vector dependence: assumed FLOW dependence between (850:19) and itypveg 
+            remark #15346: vector dependence: assumed FLOW dependence between (850:19) and ipftgcell 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at clm45_1dto2d.F90 (837, 17)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed ANTI dependence between (837:17) and (837:17) 
+        remark #15346: vector dependence: assumed ANTI dependence
+        remark #15346: vector dependence: assumed OUTPUT dependence between (837:17) and (837:17) 
+        remark #15346: vector dependence: assumed OUTPUT dependence
+        remark #15346: vector dependence: assumed FLOW dependence between (837:17) and (837:17) 
+        remark #15346: vector dependence: assumed ANTI dependence between (837:17) and (837:17) 
+        remark #15346: vector dependence: assumed ANTI dependence
+        remark #15346: vector dependence: assumed FLOW dependence between (837:17) and nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg 
+        remark #15346: vector dependence: assumed FLOW dependence between (837:17) and int_var_1d 
+        remark #15346: vector dependence: assumed FLOW dependence between (837:17) and itypveg 
+    LOOP END
+
+    LOOP BEGIN at clm45_1dto2d.F90 (816, 17)
+
+        LOOP BEGIN at clm45_1dto2d.F90 (817, 19)
+
+            LOOP BEGIN at clm45_1dto2d.F90 (820, 21)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed ANTI dependence between (820:21) and (820:21) 
+                remark #15346: vector dependence: assumed ANTI dependence
+                remark #15346: vector dependence: assumed OUTPUT dependence between (820:21) and (820:21) 
+                remark #15346: vector dependence: assumed OUTPUT dependence
+                remark #15346: vector dependence: assumed FLOW dependence between (820:21) and (820:21) 
+                remark #15346: vector dependence: assumed ANTI dependence between (820:21) and (820:21) 
+                remark #15346: vector dependence: assumed ANTI dependence
+                remark #15346: vector dependence: assumed FLOW dependence between (820:21) and nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg 
+                remark #15346: vector dependence: assumed FLOW dependence between (820:21) and itypveg 
+                remark #15346: vector dependence: assumed FLOW dependence between (820:21) and ipftgcell 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at clm45_1dto2d.F90 (802, 17)
+
+        LOOP BEGIN at clm45_1dto2d.F90 (805, 19)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed ANTI dependence between (805:19) and (805:19) 
+            remark #15346: vector dependence: assumed ANTI dependence
+            remark #15346: vector dependence: assumed OUTPUT dependence between (805:19) and (805:19) 
+            remark #15346: vector dependence: assumed OUTPUT dependence
+            remark #15346: vector dependence: assumed FLOW dependence between (805:19) and (805:19) 
+            remark #15346: vector dependence: assumed ANTI dependence between (805:19) and (805:19) 
+            remark #15346: vector dependence: assumed ANTI dependence
+            remark #15346: vector dependence: assumed FLOW dependence between (805:19) and nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg 
+            remark #15346: vector dependence: assumed FLOW dependence between (805:19) and itypveg 
+            remark #15346: vector dependence: assumed FLOW dependence between (805:19) and ipftgcell 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at clm45_1dto2d.F90 (792, 17)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed ANTI dependence between (792:17) and (792:17) 
+        remark #15346: vector dependence: assumed ANTI dependence
+        remark #15346: vector dependence: assumed OUTPUT dependence between (792:17) and (792:17) 
+        remark #15346: vector dependence: assumed OUTPUT dependence
+        remark #15346: vector dependence: assumed FLOW dependence between (792:17) and (792:17) 
+        remark #15346: vector dependence: assumed ANTI dependence between (792:17) and (792:17) 
+        remark #15346: vector dependence: assumed ANTI dependence
+        remark #15346: vector dependence: assumed FLOW dependence between (792:17) and nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg 
+        remark #15346: vector dependence: assumed FLOW dependence between (792:17) and double_var_1d 
+        remark #15346: vector dependence: assumed FLOW dependence between (792:17) and itypveg 
+    LOOP END
+
+    LOOP BEGIN at clm45_1dto2d.F90 (771, 17)
+
+        LOOP BEGIN at clm45_1dto2d.F90 (772, 19)
+
+            LOOP BEGIN at clm45_1dto2d.F90 (775, 21)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed ANTI dependence between (775:21) and (775:21) 
+                remark #15346: vector dependence: assumed ANTI dependence
+                remark #15346: vector dependence: assumed OUTPUT dependence between (775:21) and (775:21) 
+                remark #15346: vector dependence: assumed OUTPUT dependence
+                remark #15346: vector dependence: assumed FLOW dependence between (775:21) and (775:21) 
+                remark #15346: vector dependence: assumed ANTI dependence between (775:21) and (775:21) 
+                remark #15346: vector dependence: assumed ANTI dependence
+                remark #15346: vector dependence: assumed FLOW dependence between (775:21) and nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg 
+                remark #15346: vector dependence: assumed FLOW dependence between (775:21) and itypveg 
+                remark #15346: vector dependence: assumed FLOW dependence between (775:21) and ipftgcell 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at clm45_1dto2d.F90 (757, 17)
+
+        LOOP BEGIN at clm45_1dto2d.F90 (760, 19)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed ANTI dependence between (760:19) and (760:19) 
+            remark #15346: vector dependence: assumed ANTI dependence
+            remark #15346: vector dependence: assumed OUTPUT dependence between (760:19) and (760:19) 
+            remark #15346: vector dependence: assumed OUTPUT dependence
+            remark #15346: vector dependence: assumed FLOW dependence between (760:19) and (760:19) 
+            remark #15346: vector dependence: assumed ANTI dependence between (760:19) and (760:19) 
+            remark #15346: vector dependence: assumed ANTI dependence
+            remark #15346: vector dependence: assumed FLOW dependence between (760:19) and nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg 
+            remark #15346: vector dependence: assumed FLOW dependence between (760:19) and itypveg 
+            remark #15346: vector dependence: assumed FLOW dependence between (760:19) and ipftgcell 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at clm45_1dto2d.F90 (747, 17)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed ANTI dependence between (747:17) and (747:17) 
+        remark #15346: vector dependence: assumed ANTI dependence
+        remark #15346: vector dependence: assumed OUTPUT dependence between (747:17) and (747:17) 
+        remark #15346: vector dependence: assumed OUTPUT dependence
+        remark #15346: vector dependence: assumed FLOW dependence between (747:17) and (747:17) 
+        remark #15346: vector dependence: assumed ANTI dependence between (747:17) and (747:17) 
+        remark #15346: vector dependence: assumed ANTI dependence
+        remark #15346: vector dependence: assumed FLOW dependence between (747:17) and nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg nsg 
+        remark #15346: vector dependence: assumed FLOW dependence between (747:17) and single_var_1d 
+        remark #15346: vector dependence: assumed FLOW dependence between (747:17) and itypveg 
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: abort_.void
+
+COMPILE FUNC: myabort_
+   -> INLINE: abort_.void /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (22,8)
+
+COMPILE FUNC: mod_remap._
+
+COMPILE FUNC: mod_remap_mp_remap_int4_
+   -> llvm.smax.i64 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (55,7)
+   -> llvm.smax.i64 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (56,7)
+   -> llvm.smax.i64 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (67,7)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (68,7)
+
+COMPILE FUNC: mod_remap_mp_remap_pft_int4_
+   -> llvm.smax.i64 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (96,7)
+   -> llvm.smax.i64 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (97,7)
+   -> llvm.smax.i64 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (120,7)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (121,7)
+
+COMPILE FUNC: mod_remap_mp_remap_real4_
+   -> llvm.smax.i64 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (161,7)
+   -> llvm.smax.i64 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (162,7)
+   -> llvm.smax.i64 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (173,7)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (174,7)
+
+COMPILE FUNC: mod_remap_mp_remap_pft_real4_
+   -> llvm.smax.i64 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (203,7)
+   -> llvm.smax.i64 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (204,7)
+   -> llvm.smax.i64 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (227,7)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (228,7)
+
+COMPILE FUNC: mod_remap_mp_remap_real8_
+   -> llvm.smax.i64 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (268,7)
+   -> llvm.smax.i64 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (269,7)
+   -> llvm.smax.i64 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (280,7)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (281,7)
+
+COMPILE FUNC: mod_remap_mp_remap_pft_real8_
+   -> llvm.smax.i64 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (310,7)
+   -> llvm.smax.i64 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (311,7)
+   -> llvm.smax.i64 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (334,7)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (335,7)
+
+COMPILE FUNC: MAIN__
+   -> llvm.smax.i64 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (432,15)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (451,3)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (452,3)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (453,3)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (454,3)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (455,3)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (456,3)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (457,3)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (458,3)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (459,3)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (460,3)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (460,3)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (478,3)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (478,3)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (479,3)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (479,3)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (480,3)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (480,3)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (481,3)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (481,3)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (566,5)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (616,3)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (639,15)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (639,15)
+   -> mod_remap_mp_remap_real4_ /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (643,22)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (650,15)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (650,15)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (650,15)
+   -> mod_remap_mp_remap_real4_ /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (655,24)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (631,15)
+   -> mod_remap_mp_remap_real4_ /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (634,20)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (674,15)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (674,15)
+   -> mod_remap_mp_remap_real8_ /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (678,22)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (685,15)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (685,15)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (685,15)
+   -> mod_remap_mp_remap_real8_ /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (690,24)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (666,15)
+   -> mod_remap_mp_remap_real8_ /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (669,20)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (709,15)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (709,15)
+   -> mod_remap_mp_remap_int4_ /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (713,22)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (720,15)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (720,15)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (720,15)
+   -> mod_remap_mp_remap_int4_ /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (725,24)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (701,15)
+   -> mod_remap_mp_remap_int4_ /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (704,20)
+   -> mod_remap_mp_remap_pft_real4_ /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (745,22)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (753,15)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (753,15)
+   -> mod_remap_mp_remap_pft_real4_ /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (758,24)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (767,15)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (767,15)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (767,15)
+   -> mod_remap_mp_remap_pft_real4_ /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (773,26)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (741,15)
+   -> mod_remap_mp_remap_pft_real8_ /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (790,22)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (798,15)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (798,15)
+   -> mod_remap_mp_remap_pft_real8_ /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (803,24)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (812,15)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (812,15)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (812,15)
+   -> mod_remap_mp_remap_pft_real8_ /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (818,26)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (786,15)
+   -> mod_remap_mp_remap_pft_int4_ /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (835,22)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (843,15)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (843,15)
+   -> mod_remap_mp_remap_pft_int4_ /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (848,24)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (857,15)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (857,15)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (857,15)
+   -> mod_remap_mp_remap_pft_int4_ /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (863,26)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (831,15)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (888,15)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (888,15)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (895,15)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (895,15)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (895,15)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (881,15)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (912,15)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (912,15)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (919,15)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (919,15)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (919,15)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (905,15)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (936,15)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (936,15)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (943,15)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (943,15)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (943,15)
+   -> llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (929,15)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (543,23)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (747,17)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (792,17)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx1092655526RSoLAk/ifxumclXB.i90 (837,17)
+
+---- End Inlining Report ------

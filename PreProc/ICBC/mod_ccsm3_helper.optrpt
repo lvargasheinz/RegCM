@@ -1,0 +1,49 @@
+Global optimization report for : mod_ccsm3_helper._
+=================================================================
+
+Global optimization report for : mod_ccsm3_helper_mp_find_ccsm3_topo_
+=================================================================
+
+Global optimization report for : mod_ccsm3_helper_mp_find_ccsm3_file_
+
+LOOP BEGIN at mod_ccsm3_helper.F90 (70, 12)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+
+LOOP BEGIN at mod_ccsm3_helper.F90 (75, 5)
+
+    LOOP BEGIN at mod_ccsm3_helper.F90 (77, 7)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_ccsm3_helper_mp_getbackoneday_
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.experimental.noalias.scope.decl
+
+COMPILE FUNC: mod_ccsm3_helper._
+
+COMPILE FUNC: mod_ccsm3_helper_mp_find_ccsm3_topo_
+
+COMPILE FUNC: mod_ccsm3_helper_mp_getbackoneday_
+
+COMPILE FUNC: mod_ccsm3_helper_mp_find_ccsm3_file_
+   -> INLINE: mod_ccsm3_helper_mp_getbackoneday_ /scratch_local/ifx06102199068GJinS/ifxhSMpiC.i90 (72,10)
+   -> INLINE: mod_ccsm3_helper_mp_getbackoneday_ /scratch_local/ifx06102199068GJinS/ifxhSMpiC.i90 (86,12)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx06102199068GJinS/ifxhSMpiC.i90 (72,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx06102199068GJinS/ifxhSMpiC.i90 (72,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx06102199068GJinS/ifxhSMpiC.i90 (72,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx06102199068GJinS/ifxhSMpiC.i90 (86,12)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx06102199068GJinS/ifxhSMpiC.i90 (86,12)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx06102199068GJinS/ifxhSMpiC.i90 (86,12)
+
+---- End Inlining Report ------

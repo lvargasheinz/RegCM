@@ -1,0 +1,99 @@
+Global optimization report for : mod_grid._
+=================================================================
+
+Global optimization report for : mod_grid_mp_init_hgrid_
+=================================================================
+
+Global optimization report for : mod_grid_mp_init_grid_
+=================================================================
+
+Global optimization report for : mod_grid_mp_read_domain_hinfo_
+=================================================================
+
+Global optimization report for : mod_grid_mp_read_domain_info_
+
+LOOP BEGIN at mod_grid.F90 (143, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (143:7) and zitah 
+    remark #15346: vector dependence: assumed FLOW dependence between (143:7) and mo_ztop 
+LOOP END
+
+LOOP BEGIN at mod_grid.F90 (143, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_grid.F90 (145, 9)
+
+    LOOP BEGIN at mod_grid.F90 (146, 11)
+
+        LOOP BEGIN at mod_grid.F90 (148, 11)
+            remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_grid.F90 (137, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at mod_grid.F90 (137, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+LOOP END
+
+LOOP BEGIN at mod_grid.F90 (158, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at mod_grid.F90 (158, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_grid_mp_read_domain_info_
+   -> llvm.smax.i32 /scratch_local/ifx0601599647LPjOI9/ifx5vjmjW.i90 (120,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0601599647LPjOI9/ifx5vjmjW.i90 (120,14)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0601599647LPjOI9/ifx5vjmjW.i90 (135,29)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0601599647LPjOI9/ifx5vjmjW.i90 (136,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0601599647LPjOI9/ifx5vjmjW.i90 (150,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0601599647LPjOI9/ifx5vjmjW.i90 (156,29)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0601599647LPjOI9/ifx5vjmjW.i90 (157,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0601599647LPjOI9/ifx5vjmjW.i90 (135,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0601599647LPjOI9/ifx5vjmjW.i90 (136,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0601599647LPjOI9/ifx5vjmjW.i90 (135,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0601599647LPjOI9/ifx5vjmjW.i90 (136,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0601599647LPjOI9/ifx5vjmjW.i90 (156,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0601599647LPjOI9/ifx5vjmjW.i90 (157,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0601599647LPjOI9/ifx5vjmjW.i90 (156,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0601599647LPjOI9/ifx5vjmjW.i90 (157,22)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0601599647LPjOI9/ifx5vjmjW.i90 (120,14)
+
+COMPILE FUNC: mod_grid_mp_init_grid_
+   -> mod_grid_mp_read_domain_info_ /scratch_local/ifx0601599647LPjOI9/ifx5vjmjW.i90 (106,10)
+
+COMPILE FUNC: mod_grid._
+
+COMPILE FUNC: mod_grid_mp_read_domain_hinfo_
+
+COMPILE FUNC: mod_grid_mp_init_hgrid_
+   -> mod_grid_mp_read_domain_hinfo_ /scratch_local/ifx0601599647LPjOI9/ifx5vjmjW.i90 (68,10)
+
+---- End Inlining Report ------

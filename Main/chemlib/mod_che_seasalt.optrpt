@@ -1,0 +1,149 @@
+Global optimization report for : mod_che_seasalt._
+=================================================================
+
+Global optimization report for : mod_che_seasalt_mp_sea_salt_
+
+LOOP BEGIN at mod_che_seasalt.F90 (124, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_seasalt.F90 (125, 27)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between chiten (142:11) and isslt 
+        remark #15346: vector dependence: assumed FLOW dependence between chiten (142:11) and cdzq 
+        remark #15346: vector dependence: assumed FLOW dependence between chiten (142:11) and crhob3d 
+        remark #15346: vector dependence: assumed FLOW dependence between chiten (142:11) and cpsb (149:33) 
+        remark #15346: vector dependence: assumed FLOW dependence between chiten (142:11) and isslt (150:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between chiten (142:11) and cdzq (150:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between chiten (142:11) and crhob3d (150:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between chiten (142:11) and cpsb (151:33) 
+        remark #15346: vector dependence: assumed ANTI dependence between isslt (144:11) and chiten (142:11) 
+        remark #15346: vector dependence: assumed ANTI dependence between isslt (144:11) and chiten (148:11) 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_che_seasalt_mp_seasalt_emit_
+
+LOOP BEGIN at mod_che_seasalt.F90 (336, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between dumsum_na (334:31) and dumsum_na (334:31) 
+    remark #15346: vector dependence: assumed FLOW dependence between dumsum_ma (335:31) and dumsum_ma (335:31) 
+    remark #15346: vector dependence: assumed FLOW dependence between rwetaa rwetbb (307:25) and rwetaa rwetbb (314:28) 
+    remark #15346: vector dependence: assumed FLOW dependence between rwetaa rwetbb (307:25) and rwetaa rwetbb (315:24) 
+    remark #15346: vector dependence: assumed FLOW dependence between rdryaa rdrybb (302:18) and rdryaa rdrybb (313:28) 
+LOOP END
+
+LOOP BEGIN at mod_che_seasalt.F90 (416, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between dumsum_na (414:31) and dumsum_na (414:31) 
+    remark #15346: vector dependence: assumed FLOW dependence between dumsum_ma (415:31) and dumsum_ma (415:31) 
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_che_seasalt._
+
+COMPILE FUNC: mod_che_seasalt_mp_seasalt_emit_
+   -> llvm.exp.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (302,18)
+   -> llvm.powi.f64.i32 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (305,28)
+   -> llvm.pow.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (305,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (305,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (305,35)
+   -> llvm.pow.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (306,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (306,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (306,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (306,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (305,21)
+   -> llvm.pow.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (306,58)
+   -> llvm.sqrt.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (313,16)
+   -> llvm.sqrt.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (314,16)
+   -> llvm.powi.f64.i32 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (321,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (321,30)
+   -> llvm.log10.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (328,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (328,18)
+   -> llvm.exp.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (329,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (330,40)
+   -> llvm.pow.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (330,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (330,33)
+   -> llvm.pow.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (331,45)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (331,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (331,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (332,31)
+   -> llvm.pow.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (332,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (332,20)
+   -> llvm.log.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (273,19)
+   -> llvm.log.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (274,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (274,18)
+   -> llvm.exp.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (280,16)
+   -> llvm.powi.f64.i32 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (282,26)
+   -> llvm.pow.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (282,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (282,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (282,33)
+   -> llvm.pow.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (283,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (283,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (283,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (283,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (282,19)
+   -> llvm.pow.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (283,57)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (398,28)
+   -> llvm.exp.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (399,16)
+   -> llvm.powi.f64.i32 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (405,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (405,30)
+   -> llvm.log.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (411,15)
+   -> llvm.exp.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (412,21)
+   -> llvm.powi.f64.i32 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (363,26)
+   -> llvm.pow.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (363,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (363,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (363,33)
+   -> llvm.pow.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (364,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (364,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (364,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (364,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (363,19)
+   -> llvm.pow.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (364,57)
+   -> llvm.powi.f64.i32 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (368,26)
+   -> llvm.pow.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (368,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (368,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (368,33)
+   -> llvm.pow.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (369,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (369,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (369,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (369,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (368,19)
+   -> llvm.pow.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (369,57)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (371,22)
+   -> llvm.log10.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (372,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (372,16)
+   -> llvm.exp.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (373,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (374,38)
+   -> llvm.pow.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (374,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (374,31)
+   -> llvm.pow.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (375,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (375,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (375,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (376,30)
+   -> llvm.pow.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (376,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (376,19)
+   -> llvm.log.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (378,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (379,37)
+   -> llvm.log.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (389,19)
+   -> llvm.log.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (390,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (390,18)
+
+COMPILE FUNC: mod_che_seasalt_mp_sea_salt_
+   -> mod_che_seasalt_mp_seasalt_emit_ /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (100,10)
+   -> mod_che_seasalt_mp_seasalt_emit_ /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (103,10)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (118,52)
+   -> llvm.pow.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (132,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (143,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (145,35)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (149,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0929524755JWiDJP/ifxQH75Kx.i90 (151,35)
+
+---- End Inlining Report ------

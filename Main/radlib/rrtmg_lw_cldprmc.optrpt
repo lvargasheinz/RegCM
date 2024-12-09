@@ -1,0 +1,43 @@
+Global optimization report for : rrtmg_lw_cldprmc._
+=================================================================
+
+Global optimization report for : rrtmg_lw_cldprmc_mp_cldprmc_
+
+LOOP BEGIN at rrtmg_lw_cldprmc.F90 (179, 9)
+
+    LOOP BEGIN at rrtmg_lw_cldprmc.F90 (179, 9)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed OUTPUT dependence between ncbands (224:22) and ncbands (213:19) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between ncbands (241:22) and ncbands (213:19) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between ncbands (241:22) and ncbands (224:22) 
+        remark #15346: vector dependence: assumed ANTI dependence between (276:48) and abscoliq (255:19) 
+        remark #15346: vector dependence: assumed ANTI dependence between (276:48) and abscoliq (258:20) 
+        remark #15346: vector dependence: assumed ANTI dependence between (276:48) and abscoliq (271:19) 
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.memset.p0.i64
+
+COMPILE FUNC: rrtmg_lw_cldprmc_mp_cldprmc_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0368175352soQyzO/ifxPVM0Gr.i90 (165,7)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx0368175352soQyzO/ifxPVM0Gr.i90 (165,7)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0368175352soQyzO/ifxPVM0Gr.i90 (242,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0368175352soQyzO/ifxPVM0Gr.i90 (249,49)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0368175352soQyzO/ifxPVM0Gr.i90 (249,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0368175352soQyzO/ifxPVM0Gr.i90 (225,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0368175352soQyzO/ifxPVM0Gr.i90 (232,49)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0368175352soQyzO/ifxPVM0Gr.i90 (232,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0368175352soQyzO/ifxPVM0Gr.i90 (273,48)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0368175352soQyzO/ifxPVM0Gr.i90 (273,26)
+
+COMPILE FUNC: rrtmg_lw_cldprmc._
+
+---- End Inlining Report ------

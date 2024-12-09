@@ -1,0 +1,1115 @@
+Global optimization report for : mod_cu_shallow._
+=================================================================
+
+Global optimization report for : mod_cu_shallow_mp_shallcu_
+
+LOOP BEGIN at mod_cu_shallow.F90 (56, 7)
+
+    LOOP BEGIN at mod_cu_shallow.F90 (61, 9)
+
+        LOOP BEGIN at mod_cu_shallow.F90 (65, 25)
+        <Predicate Optimized v2>
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between tns (0:0) and (63:22) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between tns (0:0) and t (63:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between tns (0:0) and (64:22) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between tns (0:0) and q (64:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between tns (0:0) and (69:50) 
+            remark #15346: vector dependence: assumed FLOW dependence between tns (0:0) and (69:33) 
+            remark #15346: vector dependence: assumed FLOW dependence between tns (0:0) and (70:33) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between qns (0:0) and tns (0:0) 
+            remark #15346: vector dependence: assumed ANTI dependence between (72:22) and tns (0:0) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between p (72:11) and tns (0:0) 
+        LOOP END
+
+        LOOP BEGIN at mod_cu_shallow.F90 (65, 25)
+        <Predicate Optimized v1>
+            remark #25423: Invariant If condition at line 65 hoisted out of this loop
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between tns (0:0) and (63:22) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between tns (0:0) and t (63:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between tns (0:0) and (64:22) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between tns (0:0) and q (64:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between tns (0:0) and (66:33) 
+            remark #15346: vector dependence: assumed FLOW dependence between tns (0:0) and (67:33) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between qns (0:0) and tns (0:0) 
+            remark #15346: vector dependence: assumed ANTI dependence between (72:22) and tns (0:0) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between p (72:11) and tns (0:0) 
+            remark #15346: vector dependence: assumed OUTPUT dependence between outts (73:11) and tns (0:0) 
+        LOOP END
+
+        LOOP BEGIN at mod_cu_shallow.F90 (93, 9)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_cu_shallow_mp_shallow_
+
+LOOP BEGIN at mod_cu_shallow.F90 (197, 11)
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25408: memset generated
+    remark #25399: memcopy generated
+    remark #25399: memcopy generated
+    remark #25399: memcopy generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_cu_shallow.F90 (318, 9)
+<Multiversioned v1>
+    remark #25399: memcopy generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_cu_shallow.F90 (779, 7)
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_cu_shallow.F90 (334, 9)
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_cu_shallow.F90 (342, 11)
+<Multiversioned v1>
+    remark #25399: memcopy generated
+    remark #25399: memcopy generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_cu_shallow.F90 (379, 11)
+<Multiversioned v1>
+    remark #25399: memcopy generated
+    remark #25399: memcopy generated
+    remark #25399: memcopy generated
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_cu_shallow.F90 (439, 11)
+<Multiversioned v1>
+    remark #25399: memcopy generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_cu_shallow.F90 (779, 7)
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_cu_shallow.F90 (451, 11)
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_cu_shallow.F90 (526, 7)
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25408: memset generated
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_cu_shallow.F90 (500, 8)
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_cu_shallow.F90 (181, 7)
+
+    LOOP BEGIN at mod_cu_shallow.F90 (223, 11)
+    <Multiversioned v2>
+        remark #15300: LOOP WAS VECTORIZED
+        remark #15305: vectorization support: vector length 2
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (240, 11)
+    <Multiversioned v1>
+        remark #25408: memset generated
+        remark #25408: memset generated
+        remark #25408: memset generated
+        remark #25408: memset generated
+        remark #25408: memset generated
+        remark #25408: memset generated
+        remark #25408: memset generated
+        remark #25408: memset generated
+        remark #25408: memset generated
+        remark #25408: memset generated
+        remark #25408: memset generated
+        remark #25408: memset generated
+        remark #25408: memset generated
+        remark #25408: memset generated
+        remark #25562: The loop has been multiversioned for the small trip count
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (223, 11)
+    <Remainder loop for vectorization>
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (223, 11)
+    <Multiversioned v1>
+        remark #25399: memcopy generated
+        remark #25399: memcopy generated
+        remark #25399: memcopy generated
+        remark #25408: memset generated
+        remark #25408: memset generated
+        remark #25408: memset generated
+        remark #25408: memset generated
+        remark #25562: The loop has been multiversioned for the small trip count
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (240, 11)
+    <Multiversioned v2>
+        remark #15300: LOOP WAS VECTORIZED
+        remark #15305: vectorization support: vector length 2
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (240, 11)
+    <Remainder loop for vectorization>
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (197, 11)
+    <Multiversioned v2>
+        remark #15300: LOOP WAS VECTORIZED
+        remark #15305: vectorization support: vector length 2
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (205, 11)
+    <Multiversioned v1>
+        remark #25408: memset generated
+        remark #25408: memset generated
+        remark #25408: memset generated
+        remark #25408: memset generated
+        remark #25408: memset generated
+        remark #25408: memset generated
+        remark #25562: The loop has been multiversioned for the small trip count
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (197, 11)
+    <Remainder loop for vectorization>
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (205, 11)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (251, 22)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (716, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between z z z z z z z (715:9) and z z z z z z z (715:9) 
+        remark #25583: Number of Array Refs Scalar Replaced In Loop: 3
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (726, 7)
+        remark #15300: LOOP WAS VECTORIZED
+        remark #15305: vectorization support: vector length 2
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (726, 7)
+    <Remainder loop for vectorization>
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (726, 7)
+        remark #15300: LOOP WAS VECTORIZED
+        remark #15305: vectorization support: vector length 2
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (726, 7)
+    <Remainder loop for vectorization>
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (264, 22)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (743, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between kmin ke (739:23) and kmin ke (739:23) 
+        remark #15346: vector dependence: assumed FLOW dependence between x (739:23) and x (739:23) 
+        remark #15346: vector dependence: assumed FLOW dependence between x (739:23) and x (739:23) 
+        remark #15346: vector dependence: assumed FLOW dependence between x (739:23) and x (739:23) 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (756, 23)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (756:23) and (756:23) 
+        remark #15346: vector dependence: assumed FLOW dependence between x (756:23) and x (756:23) 
+        remark #15346: vector dependence: assumed FLOW dependence between x (756:23) and x (756:23) 
+        remark #15346: vector dependence: assumed FLOW dependence between x (756:23) and x (756:23) 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (280, 9)
+
+        LOOP BEGIN at mod_cu_shallow.F90 (287, 22)
+            remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (318, 9)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (779, 7)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (785, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (792, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between zu zu zu (791:9) and zu zu zu (791:9) 
+        remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (334, 9)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (342, 11)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (578, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between ax (577:16) and ax (577:16) 
+        remark #25583: Number of Array Refs Scalar Replaced In Loop: 4
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (379, 11)
+    <Multiversioned v2>
+        remark #15300: LOOP WAS VECTORIZED
+        remark #15305: vectorization support: vector length 2
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (379, 11)
+    <Remainder loop for vectorization>
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (407, 25)
+    <Multiversioned v2>
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (407, 25)
+    <Multiversioned v1>
+        remark #25045: Fused Loops: 402,415
+        remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+        remark #25408: memset generated
+        remark #25408: memset generated
+        remark #25562: The loop has been multiversioned for the small trip count
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (415, 11)
+        remark #25046: Loop lost in Fusion
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (716, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between z z z z xz (715:9) and z z z z xz (715:9) 
+        remark #25583: Number of Array Refs Scalar Replaced In Loop: 3
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (726, 7)
+        remark #15300: LOOP WAS VECTORIZED
+        remark #15305: vectorization support: vector length 2
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (726, 7)
+    <Remainder loop for vectorization>
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (425, 25)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (439, 11)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (779, 7)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (785, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (792, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between zu zu xzu (791:9) and zu zu xzu (791:9) 
+        remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (451, 11)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_cu_shallow.F90 (578, 7)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between ax (577:16) and ax (577:16) 
+        remark #25583: Number of Array Refs Scalar Replaced In Loop: 4
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cu_shallow.F90 (526, 7)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_cu_shallow.F90 (537, 35)
+    remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+LOOP END
+
+LOOP BEGIN at mod_cu_shallow.F90 (550, 7)
+    remark #15300: LOOP WAS VECTORIZED
+    remark #15305: vectorization support: vector length 2
+LOOP END
+
+LOOP BEGIN at mod_cu_shallow.F90 (550, 7)
+<Remainder loop for vectorization>
+LOOP END
+
+LOOP BEGIN at mod_cu_shallow.F90 (500, 8)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_cu_shallowshallow_mp_araouts_
+
+LOOP BEGIN at mod_cu_shallow.F90 (526, 7)
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25408: memset generated
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_cu_shallow.F90 (526, 7)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_cu_shallow.F90 (537, 35)
+    remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+LOOP END
+
+LOOP BEGIN at mod_cu_shallow.F90 (550, 7)
+    remark #15300: LOOP WAS VECTORIZED
+    remark #15305: vectorization support: vector length 2
+LOOP END
+
+LOOP BEGIN at mod_cu_shallow.F90 (550, 7)
+<Remainder loop for vectorization>
+LOOP END
+=================================================================
+
+Global optimization report for : mod_cu_shallowshallow_mp_cloudws_
+
+LOOP BEGIN at mod_cu_shallow.F90 (578, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (577:16) and (577:16) 
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 4
+LOOP END
+=================================================================
+
+Global optimization report for : mod_cu_shallowshallow_mp_entrs_
+
+LOOP BEGIN at mod_cu_shallow.F90 (596, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_cu_shallow.F90 (599, 7)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+LOOP END
+
+LOOP BEGIN at mod_cu_shallow.F90 (610, 27)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 3
+LOOP END
+=================================================================
+
+Global optimization report for : mod_cu_shallowshallow_mp_kerhels_
+
+LOOP BEGIN at mod_cu_shallow.F90 (637, 7)
+<Multiversioned v1>
+    remark #25399: memcopy generated
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_cu_shallow.F90 (637, 7)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_cu_shallow.F90 (674, 9)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 6
+LOOP END
+
+LOOP BEGIN at mod_cu_shallow.F90 (690, 22)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_cu_shallowshallow_mp_heipre_
+
+LOOP BEGIN at mod_cu_shallow.F90 (716, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between z (715:9) and z (715:9) 
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 3
+LOOP END
+=================================================================
+
+Global optimization report for : mod_cu_shallowshallow_mp_moiene_
+
+LOOP BEGIN at mod_cu_shallow.F90 (726, 7)
+    remark #15300: LOOP WAS VECTORIZED
+    remark #15305: vectorization support: vector length 2
+LOOP END
+
+LOOP BEGIN at mod_cu_shallow.F90 (726, 7)
+<Remainder loop for vectorization>
+LOOP END
+=================================================================
+
+Global optimization report for : mod_cu_shallowshallow_mp_minim_
+
+LOOP BEGIN at mod_cu_shallow.F90 (739, 23)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between x (739:9) and x (739:23) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_cu_shallowshallow_mp_maxim_
+
+LOOP BEGIN at mod_cu_shallow.F90 (756, 23)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between x (756:9) and x (756:23) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_cu_shallowshallow_mp_zunc_
+
+LOOP BEGIN at mod_cu_shallow.F90 (779, 7)
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_cu_shallow.F90 (779, 7)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_cu_shallow.F90 (785, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_cu_shallow.F90 (792, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between zu (791:9) and zu (791:9) 
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+LOOP END
+=================================================================
+
+Global optimization report for : mod_cu_shallowshallow_mp_precip_
+
+LOOP BEGIN at mod_cu_shallow.F90 (830, 7)
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_cu_shallow.F90 (842, 7)
+<Multiversioned v1>
+    remark #25399: memcopy generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_cu_shallow.F90 (830, 7)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_cu_shallow.F90 (836, 7)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+LOOP END
+
+LOOP BEGIN at mod_cu_shallow.F90 (839, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_cu_shallow.F90 (842, 7)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_cu_shallow.F90 (852, 16)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between qc (890:9) and qc (863:9) 
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_cu_shallow_mp_shallcu_
+   -> llvm.smax.i32 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (42,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (42,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (42,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (42,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (42,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (42,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (42,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (42,14)
+   -> mod_cu_shallow_mp_shallow_ /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (83,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (42,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (42,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (42,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (42,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (42,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (42,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (42,14)
+
+COMPILE FUNC: mod_cu_shallow_mp_shallow_
+   -> llvm.smax.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.exp.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (248,15)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (249,41)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (249,29)
+   -> INLINE: mod_cu_shallowshallow_mp_heipre_ /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (257,14)
+      -> llvm.log.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (711,20)
+      -> llvm.log.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (711,30)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (711,20)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (714,27)
+      -> DELETE: llvm.log.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (715,26)
+      -> DELETE: llvm.log.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (715,36)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (715,26)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (714,27)
+      -> llvm.log.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (715,26)
+      -> llvm.log.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (715,36)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (715,26)
+   -> INLINE: mod_cu_shallowshallow_mp_moiene_ /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (261,14)
+   -> INLINE: mod_cu_shallowshallow_mp_moiene_ /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (262,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (265,42)
+   -> INLINE: mod_cu_shallowshallow_mp_minim_ /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (275,14)
+   -> INLINE: mod_cu_shallowshallow_mp_maxim_ /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (276,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (281,25)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (282,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (286,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (291,34)
+   -> mod_cu_shallowshallow_mp_entrs_ /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (311,14)
+   -> INLINE: mod_cu_shallowshallow_mp_zunc_ /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (326,14)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (790,24)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (791,28)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (797,22)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (798,30)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (790,24)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (791,28)
+   -> mod_cu_shallowshallow_mp_precip_ /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (330,14)
+   -> INLINE: mod_cu_shallowshallow_mp_cloudws_ /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (345,14)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (568,19)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (568,42)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (568,36)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (568,30)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (569,42)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (569,36)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (569,30)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (572,22)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (573,22)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (574,22)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (576,25)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (576,18)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (576,49)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (576,44)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (576,55)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (576,43)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (568,42)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (568,36)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (568,30)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (569,42)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (569,36)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (569,30)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (572,22)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (573,22)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (574,22)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (576,25)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (576,18)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (576,49)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (576,44)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (576,55)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (576,43)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (356,18)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (380,11)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (381,11)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (382,11)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (383,11)
+   -> mod_cu_shallowshallow_mp_kerhels_ /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (387,16)
+   -> mod_cu_shallowshallow_mp_kerhels_ /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (389,16)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (397,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (397,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (399,25)
+   -> DELETE: llvm.exp.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (410,17)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (411,42)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (411,30)
+   -> INLINE: mod_cu_shallowshallow_mp_heipre_ /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (419,16)
+      -> llvm.log.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (711,20)
+      -> DELETE: llvm.log.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (711,30)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (711,20)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (714,27)
+      -> DELETE: llvm.log.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (715,26)
+      -> DELETE: llvm.log.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (715,36)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (715,26)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (714,27)
+      -> llvm.log.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (715,26)
+      -> llvm.log.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (715,36)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (715,26)
+   -> INLINE: mod_cu_shallowshallow_mp_moiene_ /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (423,16)
+   -> mod_cu_shallowshallow_mp_entrs_ /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (432,16)
+   -> INLINE: mod_cu_shallowshallow_mp_zunc_ /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (443,16)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (790,24)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (791,28)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (797,22)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (798,30)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (790,24)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (791,28)
+   -> mod_cu_shallowshallow_mp_precip_ /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (447,16)
+   -> INLINE: mod_cu_shallowshallow_mp_cloudws_ /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (456,18)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (568,19)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (568,42)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (568,36)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (568,30)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (569,42)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (569,36)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (569,30)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (572,22)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (573,22)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (574,22)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (576,25)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (576,18)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (576,49)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (576,44)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (576,55)
+      -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (576,43)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (568,42)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (568,36)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (568,30)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (569,42)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (569,36)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (569,30)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (572,22)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (573,22)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (574,22)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (576,25)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (576,18)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (576,49)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (576,44)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (576,55)
+      -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (576,43)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (472,19)
+   -> llvm.fabs.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (484,15)
+   -> INLINE: mod_cu_shallowshallow_mp_araouts_ /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (495,11)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (257,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (257,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (257,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (257,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (257,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (261,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (261,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (261,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (261,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (262,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (262,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (262,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (262,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (275,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (275,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (275,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (276,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (276,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (276,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (326,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (326,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (326,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (326,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (326,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (326,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (345,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (345,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (345,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (345,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (345,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (345,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (345,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (345,14)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (345,14)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (419,16)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (419,16)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (419,16)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (419,16)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (419,16)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (423,16)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (423,16)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (423,16)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (423,16)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (443,16)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (443,16)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (443,16)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (443,16)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (443,16)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (443,16)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (456,18)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (456,18)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (456,18)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (456,18)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (456,18)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (456,18)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (456,18)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (456,18)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (456,18)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (495,11)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (495,11)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (495,11)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (495,11)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (495,11)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (495,11)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (495,11)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (495,11)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (495,11)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (495,11)
+   -> llvm.smax.i32 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (280,9)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (286,28)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (282,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (282,25)
+   -> llvm.smax.i32 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (792,7)
+   -> llvm.smax.i32 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (792,7)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (282,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (397,33)
+   -> llvm.exp.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (410,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (411,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (397,33)
+   -> llvm.exp.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (410,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (411,30)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (98,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (215,13)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (216,13)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (217,13)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (218,13)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (219,13)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (220,13)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (221,13)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (226,13)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (227,13)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (228,13)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (229,13)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (230,13)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (231,13)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (232,13)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (233,13)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (192,13)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (193,13)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (194,13)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (195,13)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (196,13)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (317,11)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (778,9)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (333,11)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (340,13)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (341,13)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (375,13)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (376,13)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (377,13)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (378,13)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (395,13)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (396,13)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (438,13)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (778,9)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (450,13)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (523,9)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (524,9)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (525,9)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (498,10)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (499,10)
+
+COMPILE FUNC: mod_cu_shallowshallow_mp_heipre_
+   -> llvm.log.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (711,20)
+   -> llvm.log.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (711,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (711,20)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (714,27)
+   -> DELETE: llvm.log.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (715,26)
+   -> DELETE: llvm.log.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (715,36)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (715,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (714,27)
+   -> llvm.log.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (715,26)
+   -> llvm.log.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (715,36)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (715,26)
+
+COMPILE FUNC: mod_cu_shallowshallow_mp_moiene_
+
+COMPILE FUNC: mod_cu_shallowshallow_mp_minim_
+
+COMPILE FUNC: mod_cu_shallowshallow_mp_maxim_
+
+COMPILE FUNC: mod_cu_shallowshallow_mp_entrs_
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (598,25)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (605,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (606,27)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (606,18)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (607,18)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (608,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (598,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (605,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (606,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (606,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (607,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (608,31)
+   -> llvm.umax.i1 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (610,27)
+
+COMPILE FUNC: mod_cu_shallowshallow_mp_zunc_
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (790,24)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (791,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (797,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (798,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (790,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (791,28)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (778,9)
+
+COMPILE FUNC: mod_cu_shallowshallow_mp_precip_
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (835,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (854,24)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (856,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (859,19)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (859,42)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (859,36)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (859,30)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (863,27)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (863,18)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (863,61)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (867,24)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (867,45)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (867,37)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (871,19)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (871,32)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (875,24)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (884,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (880,21)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (880,36)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (881,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (835,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (854,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (856,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (859,42)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (859,36)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (859,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (863,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (863,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (863,61)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (867,45)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (867,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (871,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (871,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (875,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (880,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (881,20)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (828,9)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (829,9)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (841,9)
+
+COMPILE FUNC: mod_cu_shallowshallow_mp_cloudws_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (568,19)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (568,42)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (568,36)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (568,30)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (569,42)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (569,36)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (569,30)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (572,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (573,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (574,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (576,25)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (576,18)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (576,49)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (576,44)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (576,55)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (576,43)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (568,42)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (568,36)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (568,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (569,42)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (569,36)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (569,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (572,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (573,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (574,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (576,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (576,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (576,49)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (576,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (576,55)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (576,43)
+
+COMPILE FUNC: mod_cu_shallowshallow_mp_kerhels_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (642,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (643,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (645,24)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (648,24)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (649,23)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (651,24)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (659,25)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (661,25)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (666,24)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (670,28)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (670,20)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (672,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (673,24)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (673,30)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (673,40)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (673,46)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (673,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (682,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (683,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (684,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (659,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (661,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (666,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (670,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (670,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (672,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (673,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (673,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (673,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (673,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (673,23)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (635,9)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (636,9)
+
+COMPILE FUNC: mod_cu_shallowshallow_mp_araouts_
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (523,9)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (524,9)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1892944479fUXBN3/ifxA8L5uf.i90 (525,9)
+
+COMPILE FUNC: mod_cu_shallow._
+
+---- End Inlining Report ------

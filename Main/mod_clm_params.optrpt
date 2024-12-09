@@ -1,0 +1,321 @@
+Global optimization report for : mod_clm_params._
+=================================================================
+
+Global optimization report for : mod_clm_params_mp_param_
+
+LOOP BEGIN at mod_clm_params.F90 (126, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_params.F90 (251, 9)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+
+LOOP BEGIN at mod_clm_params.F90 (255, 9)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+
+LOOP BEGIN at mod_clm_params.F90 (262, 7)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+
+LOOP BEGIN at mod_clm_params.F90 (268, 7)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+
+LOOP BEGIN at mod_clm_params.F90 (429, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_params.F90 (437, 9)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between mdsub (430:11) and mddom (430:35) 
+        remark #15346: vector dependence: assumed FLOW dependence between (431:11) and mddom (430:35) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between (431:11) and mdsub (430:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between (431:11) and (431:39) 
+        remark #15346: vector dependence: assumed ANTI dependence between (431:39) and mdsub (430:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between (432:11) and mddom (430:35) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between (432:11) and mdsub (430:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between (432:11) and (431:39) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between (432:11) and (431:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between (432:11) and (432:39) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_params.F90 (426, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_params.F90 (426, 7)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_params.F90 (426, 7)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_params.F90 (444, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_params.F90 (446, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_params.F90 (452, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at mod_clm_params.F90 (452, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 2
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+LOOP END
+
+LOOP BEGIN at mod_clm_params.F90 (460, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+
+    LOOP BEGIN at mod_clm_params.F90 (466, 7)
+        remark #15319: Loop was not vectorized: novector directive used
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_params.F90 (460, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_params.F90 (466, 7)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_params.F90 (472, 7)
+    remark #25423: Invariant If condition at line 472 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_params.F90 (473, 9)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_clm_params.F90 (473, 9)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_clm_params.F90 (473, 9)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_params.F90 (473, 9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_params.F90 (529, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_params.F90 (532, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_params.F90 (535, 9)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_paramsparam_mp_init_surface_model_
+=================================================================
+
+Global optimization report for : mod_clm_paramsparam_mp_gcd_rec_
+=================================================================
+
+Global optimization report for : mod_clm_paramsparam_mp_check_against_outparams_
+
+LOOP BEGIN at mod_clm_params.F90 (575, 50)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+
+LOOP BEGIN at mod_clm_params.F90 (583, 50)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_paramsparam_mp_compute_moloch_static_
+
+LOOP BEGIN at mod_clm_params.F90 (599, 9)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (599:9) and zita 
+    remark #15346: vector dependence: assumed FLOW dependence between (599:9) and mo_ztop 
+LOOP END
+
+LOOP BEGIN at mod_clm_params.F90 (599, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_params.F90 (600, 9)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (600:9) and zitah 
+    remark #15346: vector dependence: assumed FLOW dependence between (600:9) and mo_ztop 
+LOOP END
+
+LOOP BEGIN at mod_clm_params.F90 (600, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_params.F90 (601, 9)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between fak (601:9) and zita 
+    remark #15346: vector dependence: assumed FLOW dependence between fak (601:9) and mo_ztop 
+    remark #15346: vector dependence: assumed FLOW dependence between fak (601:9) and mo_h 
+LOOP END
+
+LOOP BEGIN at mod_clm_params.F90 (602, 9)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between fbk (602:9) and zita 
+    remark #15346: vector dependence: assumed FLOW dependence between fbk (602:9) and mo_ztop 
+    remark #15346: vector dependence: assumed FLOW dependence between fbk (602:9) and mo_a0 
+LOOP END
+
+LOOP BEGIN at mod_clm_params.F90 (603, 9)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (603:9) and zitah 
+    remark #15346: vector dependence: assumed FLOW dependence between (603:9) and mo_ztop 
+    remark #15346: vector dependence: assumed FLOW dependence between (603:9) and mo_h 
+LOOP END
+
+LOOP BEGIN at mod_clm_params.F90 (603, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_params.F90 (604, 9)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (604:9) and zitah 
+    remark #15346: vector dependence: assumed FLOW dependence between (604:9) and mo_ztop 
+    remark #15346: vector dependence: assumed FLOW dependence between (604:9) and mo_a0 
+LOOP END
+
+LOOP BEGIN at mod_clm_params.F90 (604, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_params.F90 (607, 9)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at mod_clm_params.F90 (607, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+LOOP END
+
+LOOP BEGIN at mod_clm_params.F90 (609, 11)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_params.F90 (612, 11)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between zeta (610:13) and bk (610:13) 
+        remark #15346: vector dependence: assumed FLOW dependence between zeta (610:13) and mddom (610:59) 
+        remark #15346: vector dependence: assumed FLOW dependence between zeta (610:13) and ak (610:13) 
+        remark #15346: vector dependence: assumed FLOW dependence between fmzf (611:13) and bk (610:13) 
+        remark #15346: vector dependence: assumed FLOW dependence between fmzf (611:13) and mddom (610:59) 
+        remark #15346: vector dependence: assumed FLOW dependence between fmzf (611:13) and ak (610:13) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between fmzf (611:13) and zeta (610:13) 
+        remark #15346: vector dependence: assumed FLOW dependence between fmzf (611:13) and zita 
+        remark #15346: vector dependence: assumed FLOW dependence between fmzf (611:13) and mddom 
+        remark #15346: vector dependence: assumed FLOW dependence between fmzf (611:13) and mo_ztop 
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: fmod
+
+DEAD STATIC FUNC: llvm.for.cpystr.i64.i64.i64
+
+DEAD STATIC FUNC: llvm.smax.i32
+
+COMPILE FUNC: mod_clm_params_mp_param_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (55,14)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (103,5)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (103,5)
+   -> DELETE: llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (105,5)
+   -> DELETE: llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (110,5)
+   -> llvm.round.f64 /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (174,15)
+   -> mod_clm_paramsparam_mp_check_against_outparams_ /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (225,12)
+   -> DELETE: fmod /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (251,20)
+   -> DELETE: fmod /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (255,20)
+   -> DELETE: fmod /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (262,18)
+   -> DELETE: fmod /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (268,18)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (342,5)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (365,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (367,7)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (369,7)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (450,22)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (451,22)
+   -> mod_clm_paramsparam_mp_compute_moloch_static_ /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (454,12)
+   -> llvm.round.f64 /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (530,27)
+   -> llvm.round.f64 /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (531,27)
+   -> llvm.round.f64 /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (533,31)
+   -> llvm.round.f64 /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (534,31)
+   -> INLINE: mod_clm_paramsparam_mp_init_surface_model_ /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (540,10)
+   -> DELETE: llvm.memmove.p0.p0.i64 /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (105,5)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (105,5)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (110,5)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (110,5)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (452,7)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (450,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (451,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (450,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (451,22)
+
+COMPILE FUNC: mod_clm_paramsparam_mp_check_against_outparams_
+   -> mod_clm_paramsparam_mp_gcd_rec_ /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (575,18)
+   -> mod_clm_paramsparam_mp_gcd_rec_ /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (583,18)
+   -> mod_clm_paramsparam_mp_gcd_rec_ /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (575,18)
+   -> mod_clm_paramsparam_mp_gcd_rec_ /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (583,18)
+
+COMPILE FUNC: mod_clm_paramsparam_mp_compute_moloch_static_
+   -> llvm.smax.i64 /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (592,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (592,18)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (592,18)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (606,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (610,35)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (607,9)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (606,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (606,24)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (592,18)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (592,18)
+
+COMPILE FUNC: mod_clm_paramsparam_mp_init_surface_model_
+
+COMPILE FUNC: mod_clm_params._
+
+COMPILE FUNC: mod_clm_paramsparam_mp_gcd_rec_
+   -> mod_clm_paramsparam_mp_gcd_rec_ /scratch_local/ifx0688302891Eq4SGu/ifxTmVnLm.i90 (563,17)
+
+---- End Inlining Report ------

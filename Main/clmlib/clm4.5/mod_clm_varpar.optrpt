@@ -1,0 +1,26 @@
+Global optimization report for : mod_clm_varpar._
+=================================================================
+
+Global optimization report for : mod_clm_varpar_mp_clm_varpar_init_
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.smax.i32
+
+DEAD STATIC FUNC: llvm.umax.i32
+
+COMPILE FUNC: mod_clm_varpar._
+
+COMPILE FUNC: mod_clm_varpar_mp_clm_varpar_init_
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx13889747203aiXrd/ifxpym73n.i90 (177,25)
+   -> DELETE: llvm.umax.i32 /scratch_local/ifx13889747203aiXrd/ifxpym73n.i90 (177,25)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx13889747203aiXrd/ifxpym73n.i90 (178,25)
+   -> DELETE: llvm.umax.i32 /scratch_local/ifx13889747203aiXrd/ifxpym73n.i90 (178,25)
+
+---- End Inlining Report ------

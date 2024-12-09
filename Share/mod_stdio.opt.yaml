@@ -1,0 +1,814 @@
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: mod_stdio.F90, Line: 56, Column: 17 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - Callee:          for_inquire
+  - String:          ' will not be inlined into '
+  - Caller:          mod_stdio_mp_file_getunit_
+    DebugLoc:        { File: mod_stdio.F90, Line: 42, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: mod_stdio.F90, Line: 68, Column: 19 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - Callee:          for_inquire
+  - String:          ' will not be inlined into '
+  - Caller:          mod_stdio_mp_file_getunit_
+    DebugLoc:        { File: mod_stdio.F90, Line: 42, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: mod_stdio.F90, Line: 56, Column: 17 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - Callee:          for_inquire
+  - String:          ' will not be inlined into '
+  - Caller:          mod_stdio_mp_file_getunit_
+    DebugLoc:        { File: mod_stdio.F90, Line: 42, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: mod_stdio.F90, Line: 68, Column: 19 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - Callee:          for_inquire
+  - String:          ' will not be inlined into '
+  - Caller:          mod_stdio_mp_file_getunit_
+    DebugLoc:        { File: mod_stdio.F90, Line: 42, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: mod_stdio.F90, Line: 91, Column: 15 }
+Function:        mod_stdio_mp_file_freeunit_
+Args:
+  - Callee:          for_close
+  - String:          ' will not be inlined into '
+  - Caller:          mod_stdio_mp_file_freeunit_
+    DebugLoc:        { File: mod_stdio.F90, Line: 87, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: mod_stdio.F90, Line: 91, Column: 15 }
+Function:        mod_stdio_mp_file_freeunit_
+Args:
+  - Callee:          for_close
+  - String:          ' will not be inlined into '
+  - Caller:          mod_stdio_mp_file_freeunit_
+    DebugLoc:        { File: mod_stdio.F90, Line: 87, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: mod_stdio.F90, Line: 56, Column: 17 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - Callee:          for_inquire
+  - String:          ' will not be inlined into '
+  - Caller:          mod_stdio_mp_file_getunit_
+    DebugLoc:        { File: mod_stdio.F90, Line: 42, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: mod_stdio.F90, Line: 68, Column: 19 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - Callee:          for_inquire
+  - String:          ' will not be inlined into '
+  - Caller:          mod_stdio_mp_file_getunit_
+    DebugLoc:        { File: mod_stdio.F90, Line: 42, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: mod_stdio.F90, Line: 56, Column: 17 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - Callee:          for_inquire
+  - String:          ' will not be inlined into '
+  - Caller:          mod_stdio_mp_file_getunit_
+    DebugLoc:        { File: mod_stdio.F90, Line: 42, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: mod_stdio.F90, Line: 68, Column: 19 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - Callee:          for_inquire
+  - String:          ' will not be inlined into '
+  - Caller:          mod_stdio_mp_file_getunit_
+    DebugLoc:        { File: mod_stdio.F90, Line: 42, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_stdio.F90, Line: 68, Column: 19 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_stdio.F90, Line: 68, Column: 19 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_stdio.F90, Line: 68, Column: 19 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_stdio.F90, Line: 68, Column: 19 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_stdio.F90, Line: 68, Column: 19 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_stdio.F90, Line: 68, Column: 19 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_stdio.F90, Line: 68, Column: 19 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_stdio.F90, Line: 68, Column: 19 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_stdio.F90, Line: 68, Column: 19 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_stdio.F90, Line: 68, Column: 19 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_stdio.F90, Line: 68, Column: 19 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_stdio.F90, Line: 68, Column: 19 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_stdio.F90, Line: 68, Column: 19 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_stdio.F90, Line: 68, Column: 19 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_stdio.F90, Line: 68, Column: 19 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_stdio.F90, Line: 68, Column: 19 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: mod_stdio.F90, Line: 68, Column: 19 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: mod_stdio.F90, Line: 68, Column: 19 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: mod_stdio.F90, Line: 69, Column: 11 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: mod_stdio.F90, Line: 69, Column: 11 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_stdio.F90, Line: 57, Column: 9 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: mod_stdio.F90, Line: 56, Column: 17 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_stdio.F90, Line: 56, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_stdio.F90, Line: 69, Column: 11 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: mod_stdio.F90, Line: 68, Column: 19 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_stdio.F90, Line: 68, Column: 19 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: mod_stdio.F90, Line: 71, Column: 38 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_stdio.F90, Line: 68, Column: 19 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_stdio.F90, Line: 57, Column: 9 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: mod_stdio.F90, Line: 56, Column: 17 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_stdio.F90, Line: 56, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_stdio.F90, Line: 69, Column: 11 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: mod_stdio.F90, Line: 68, Column: 19 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_stdio.F90, Line: 68, Column: 19 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: mod_stdio.F90, Line: 71, Column: 38 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_stdio.F90, Line: 68, Column: 19 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: mod_stdio.F90, Line: 68, Column: 19 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          'sinking '
+  - Inst:            trunc
+    DebugLoc:        { File: mod_stdio.F90, Line: 68, Column: 19 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: mod_stdio.F90, Line: 69, Column: 11 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: mod_stdio.F90, Line: 91, Column: 15 }
+Function:        mod_stdio_mp_file_freeunit_
+Args:
+  - Callee:          for_close
+  - String:          ' will not be inlined into '
+  - Caller:          mod_stdio_mp_file_freeunit_
+    DebugLoc:        { File: mod_stdio.F90, Line: 87, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: mod_stdio.F90, Line: 91, Column: 15 }
+Function:        mod_stdio_mp_file_freeunit_
+Args:
+  - Callee:          for_close
+  - String:          ' will not be inlined into '
+  - Caller:          mod_stdio_mp_file_freeunit_
+    DebugLoc:        { File: mod_stdio.F90, Line: 87, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_stdio.F90, Line: 57, Column: 9 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: mod_stdio.F90, Line: 56, Column: 17 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_stdio.F90, Line: 56, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_stdio.F90, Line: 69, Column: 11 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: mod_stdio.F90, Line: 68, Column: 19 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_stdio.F90, Line: 68, Column: 19 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_stdio.F90, Line: 68, Column: 19 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_stdio.F90, Line: 57, Column: 9 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: mod_stdio.F90, Line: 56, Column: 17 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_stdio.F90, Line: 56, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_stdio.F90, Line: 69, Column: 11 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: mod_stdio.F90, Line: 68, Column: 19 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_stdio.F90, Line: 68, Column: 19 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: mod_stdio.F90, Line: 71, Column: 38 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_stdio.F90, Line: 68, Column: 19 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: mod_stdio.F90, Line: 69, Column: 11 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+Function:        mod_stdio._
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        mod_stdio._
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_0
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+Function:        mod_stdio._
+Args:
+  - NumInstructions: '1'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            LoopSpillReloadCopies
+DebugLoc:        { File: mod_stdio.F90, Line: 69, Column: 16 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - NumVRCopies:     '3'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '2.438095e+01'
+  - String:          ' total copies cost '
+  - String:          generated in loop
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: mod_stdio.F90, Line: 42, Column: 1 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - NumVRCopies:     '6'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '2.595238e+01'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: mod_stdio.F90, Line: 42, Column: 0 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - NumStackBytes:   '168'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_stdio.F90, Line: 42, Column: 40 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_1
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '9'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_stdio.F90, Line: 0, Column: 0 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new4_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_stdio.F90, Line: 0, Column: 0 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new4_then
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_stdio.F90, Line: 0, Column: 0 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb3_else.split
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '14'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_stdio.F90, Line: 0, Column: 0 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb3_else.split
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_stdio.F90, Line: 0, Column: 0 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      do.body15.preheader
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_stdio.F90, Line: 0, Column: 0 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      then.23
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_stdio.F90, Line: 0, Column: 0 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ifmerge.23
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_stdio.F90, Line: 0, Column: 0 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      loop.71
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '14'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_stdio.F90, Line: 0, Column: 0 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      else.23
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_stdio.F90, Line: 0, Column: 0 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      then.31
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_stdio.F90, Line: 0, Column: 0 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      end_label1
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_stdio.F90, Line: 0, Column: 0 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      end_label1.sink.split.loopexit
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_stdio.F90, Line: 0, Column: 0 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      end_label1.sink.split
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_stdio.F90, Line: 0, Column: 0 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      end_label1
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '9'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: mod_stdio.F90, Line: 42, Column: 0 }
+Function:        mod_stdio_mp_file_getunit_
+Args:
+  - NumInstructions: '80'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: mod_stdio.F90, Line: 87, Column: 1 }
+Function:        mod_stdio_mp_file_freeunit_
+Args:
+  - NumVRCopies:     '1'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '5.000000e-01'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: mod_stdio.F90, Line: 87, Column: 0 }
+Function:        mod_stdio_mp_file_freeunit_
+Args:
+  - NumStackBytes:   '104'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_stdio.F90, Line: 87, Column: 30 }
+Function:        mod_stdio_mp_file_freeunit_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      alloca_2
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '7'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_stdio.F90, Line: 0, Column: 0 }
+Function:        mod_stdio_mp_file_freeunit_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb_new30_then.split
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '10'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: mod_stdio.F90, Line: 0, Column: 0 }
+Function:        mod_stdio_mp_file_freeunit_
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      bb18_endif
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: mod_stdio.F90, Line: 87, Column: 0 }
+Function:        mod_stdio_mp_file_freeunit_
+Args:
+  - NumInstructions: '21'
+  - String:          ' instructions in function'
+...

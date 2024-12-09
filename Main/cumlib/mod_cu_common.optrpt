@@ -1,0 +1,84 @@
+Global optimization report for : mod_cu_common._
+=================================================================
+
+Global optimization report for : mod_cu_common_mp_init_mod_cumulus_
+
+LOOP BEGIN at mod_cu_common.F90 (73, 10)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_cu_common.F90 (73, 30)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_cu_common.F90 (86, 27)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_cu_common.F90 (95, 10)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_cu_common.F90 (99, 10)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_cu_common.F90 (99, 30)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_cu_common.F90 (125, 9)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_cu_common_mp_model_cumulus_cloud_
+
+LOOP BEGIN at mod_cu_common.F90 (157, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cu_common.F90 (161, 22)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_cu_common.F90 (167, 11)
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_cu_common.F90 (138, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_cu_common.F90 (143, 22)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_cu_common.F90 (147, 11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: for_dealloc_allocatable_handle
+
+COMPILE FUNC: mod_cu_common_mp_init_mod_cumulus_
+   -> DELETE: for_dealloc_allocatable_handle /scratch_local/ifx0668241302h1tnhs/ifxzxh47F.i90 (128,3)
+
+COMPILE FUNC: mod_cu_common._
+
+COMPILE FUNC: mod_cu_common_mp_model_cumulus_cloud_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0668241302h1tnhs/ifxzxh47F.i90 (135,15)
+   -> llvm.pow.f64 /scratch_local/ifx0668241302h1tnhs/ifxzxh47F.i90 (146,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0668241302h1tnhs/ifxzxh47F.i90 (162,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0668241302h1tnhs/ifxzxh47F.i90 (165,37)
+   -> llvm.smin.i32 /scratch_local/ifx0668241302h1tnhs/ifxzxh47F.i90 (165,25)
+   -> llvm.smax.i32 /scratch_local/ifx0668241302h1tnhs/ifxzxh47F.i90 (165,19)
+
+---- End Inlining Report ------

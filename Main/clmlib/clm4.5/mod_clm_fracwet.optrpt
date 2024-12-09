@@ -1,0 +1,38 @@
+Global optimization report for : mod_clm_fracwet._
+=================================================================
+
+Global optimization report for : mod_clm_fracwet_mp_fracwet_
+
+LOOP BEGIN at mod_clm_fracwet.F90 (65, 30)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed ANTI dependence between (66:9) and (80:9) 
+    remark #15346: vector dependence: assumed ANTI dependence between (66:9) and (81:9) 
+    remark #15346: vector dependence: assumed ANTI dependence between (67:21) and (80:9) 
+    remark #15346: vector dependence: assumed ANTI dependence between (67:21) and (81:9) 
+    remark #15346: vector dependence: assumed ANTI dependence between (67:21) and (80:9) 
+    remark #15346: vector dependence: assumed ANTI dependence between (67:21) and (81:9) 
+    remark #15346: vector dependence: assumed ANTI dependence between (68:11) and (80:9) 
+    remark #15346: vector dependence: assumed ANTI dependence between (68:11) and (81:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (0:0) and (65:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (0:0) and (66:9) 
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_clm_fracwet._
+
+COMPILE FUNC: mod_clm_fracwet_mp_fracwet_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0253585295dEcrNL/ifxmlXND1.i90 (67,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0253585295dEcrNL/ifxmlXND1.i90 (69,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0253585295dEcrNL/ifxmlXND1.i90 (69,22)
+   -> llvm.pow.f64 /scratch_local/ifx0253585295dEcrNL/ifxmlXND1.i90 (69,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0253585295dEcrNL/ifxmlXND1.i90 (74,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0253585295dEcrNL/ifxmlXND1.i90 (74,45)
+
+---- End Inlining Report ------

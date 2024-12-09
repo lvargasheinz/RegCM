@@ -1,0 +1,1475 @@
+Global optimization report for : myabort_
+=================================================================
+
+Global optimization report for : MAIN__
+
+LOOP BEGIN at pgw_icbc.F90 (297, 5)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at pgw_icbc.F90 (297, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+LOOP END
+
+LOOP BEGIN at pgw_icbc.F90 (300, 5)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+LOOP END
+
+LOOP BEGIN at pgw_icbc.F90 (300, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+LOOP END
+
+LOOP BEGIN at pgw_icbc.F90 (305, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at pgw_icbc.F90 (305, 5)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at pgw_icbc.F90 (267, 7)
+    remark #25423: Invariant If condition at line 267 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at pgw_icbc.F90 (267, 7)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at pgw_icbc.F90 (268, 9)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (267, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (268, 9)
+            remark #25563: Load hoisted out of the loop
+            remark #25563: Load hoisted out of the loop
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at pgw_icbc.F90 (319, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at pgw_icbc.F90 (315, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (316:7) and (316:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (316:7) and (316:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (316:7) and (316:20) 
+LOOP END
+
+LOOP BEGIN at pgw_icbc.F90 (348, 12)
+
+    LOOP BEGIN at pgw_icbc.F90 (362, 5)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (362, 5)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (362, 5)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (362, 5)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (363, 5)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (363, 5)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (363, 5)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (363, 5)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (364, 5)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (364, 5)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (364, 5)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (364, 5)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (364, 5)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (364, 5)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (365, 5)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (365, 5)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (365, 5)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (365, 5)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (365, 5)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (365, 5)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (366, 5)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (366, 5)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (366, 5)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (366, 5)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (366, 5)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (366, 5)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (367, 5)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (367, 5)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (367, 5)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (367, 5)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (367, 5)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (367, 5)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (371, 5)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (371, 5)
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (371, 5)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (371, 5)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (372, 5)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (372, 5)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (372, 5)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (372, 5)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (391, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (391, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (391, 7)
+                remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (391, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (391, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (391, 7)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (393, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (393, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (393, 7)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (393, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (393, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (393, 7)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (395, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (395, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (395, 7)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (395, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (395, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (395, 7)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (397, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (397, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (397, 7)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (397, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (397, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (397, 7)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (399, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (399, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (399, 7)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (399, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (399, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (399, 7)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (400, 7)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (400, 7)
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (401, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (401, 7)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (401, 20)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (401, 20)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (401, 20)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (401, 20)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (402, 7)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (402, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (402, 7)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (404, 7)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (404, 7)
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (406, 7)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (406, 7)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (376, 7)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (376, 7)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (380, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (380, 7)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (380, 20)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (380, 20)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (380, 20)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (380, 20)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (381, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (381, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (381, 7)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (381, 18)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (381, 18)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (381, 18)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (381, 18)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (381, 18)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (381, 18)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (381, 18)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (381, 18)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (381, 18)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (381, 18)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (382, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (382, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (382, 7)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (382, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (382, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (382, 7)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (383, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (383, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (383, 7)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (383, 18)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (383, 18)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (383, 18)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (383, 18)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (383, 18)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (383, 18)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (383, 18)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (383, 18)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (383, 18)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (383, 18)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (384, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (384, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (384, 7)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (384, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (384, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (384, 7)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (385, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (385, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (385, 7)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (385, 18)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (385, 18)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (385, 18)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (385, 18)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (385, 18)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (385, 18)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (385, 18)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (385, 18)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (385, 18)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (385, 18)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (386, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (386, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (386, 7)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (386, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (386, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (386, 7)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (387, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (387, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (387, 7)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (387, 18)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (387, 18)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (387, 18)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (387, 18)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (387, 18)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (387, 18)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (387, 18)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (387, 18)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (387, 18)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (387, 18)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (388, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (388, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (388, 7)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (388, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (388, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (388, 7)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (389, 7)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (389, 7)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : pgw_icbc_IP_usage_
+=================================================================
+
+Global optimization report for : pgw_icbc_IP_check_ok_
+=================================================================
+
+Global optimization report for : pgw_icbc_IP_read_pgw_
+=================================================================
+
+Global optimization report for : pgw_icbc_IP_read_icbc_
+=================================================================
+
+Global optimization report for : pgw_icbc_IP_write_icbc_
+=================================================================
+
+Global optimization report for : pgw_icbc_IP_compute_w_
+
+LOOP BEGIN at pgw_icbc.F90 (599, 5)
+    remark #25045: Fused Loops: 599,600
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at pgw_icbc.F90 (599, 5)
+        remark #25045: Fused Loops: 599,600
+        remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (600, 5)
+        remark #25046: Loop lost in Fusion
+    LOOP END
+LOOP END
+
+LOOP BEGIN at pgw_icbc.F90 (600, 5)
+    remark #25046: Loop lost in Fusion
+
+    LOOP BEGIN at pgw_icbc.F90 (600, 5)
+    LOOP END
+LOOP END
+
+LOOP BEGIN at pgw_icbc.F90 (606, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at pgw_icbc.F90 (606, 7)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (609, 9)
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+        LOOP END
+
+        LOOP BEGIN at pgw_icbc.F90 (609, 9)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between qdt (621:11) and qdt (621:11) 
+            remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+        LOOP END
+
+        LOOP BEGIN at pgw_icbc.F90 (623, 9)
+            remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at pgw_icbc.F90 (642, 7)
+    remark #25423: Invariant If condition at line 642 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at pgw_icbc.F90 (642, 7)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at pgw_icbc.F90 (643, 9)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at pgw_icbc.F90 (642, 7)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (646, 9)
+            remark #15300: LOOP WAS VECTORIZED
+            remark #15305: vectorization support: vector length 2
+        LOOP END
+
+        LOOP BEGIN at pgw_icbc.F90 (643, 9)
+        <Remainder loop for vectorization>
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : pgw_icbc_IP_smtdsmt_
+
+LOOP BEGIN at pgw_icbc.F90 (685, 13)
+<Predicate Optimized v4>
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at pgw_icbc.F90 (685, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (692, 9)
+
+            LOOP BEGIN at pgw_icbc.F90 (681, 11)
+            LOOP END
+
+            LOOP BEGIN at pgw_icbc.F90 (691, 11)
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at pgw_icbc.F90 (693, 9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at pgw_icbc.F90 (694, 9)
+        <Multiversioned v1>
+            remark #25399: memcopy generated
+            remark #25562: The loop has been multiversioned for the small trip count
+        LOOP END
+
+        LOOP BEGIN at pgw_icbc.F90 (694, 9)
+        <Multiversioned v2>
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at pgw_icbc.F90 (695, 9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at pgw_icbc.F90 (696, 9)
+        <Multiversioned v1>
+            remark #25399: memcopy generated
+            remark #25562: The loop has been multiversioned for the small trip count
+        LOOP END
+
+        LOOP BEGIN at pgw_icbc.F90 (696, 9)
+        <Multiversioned v2>
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at pgw_icbc.F90 (697, 9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at pgw_icbc.F90 (698, 9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at pgw_icbc.F90 (685, 13)
+<Predicate Optimized v2>
+    remark #25423: Invariant If condition at line 685 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at pgw_icbc.F90 (685, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (685, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (681, 11)
+            LOOP END
+
+            LOOP BEGIN at pgw_icbc.F90 (683, 11)
+                remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                LOOP BEGIN at pgw_icbc.F90 (683, 11)
+                    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                    remark #15346: vector dependence: assumed FLOW dependence between slab (688:15) and slab (687:15) 
+                    remark #15346: vector dependence: assumed FLOW dependence between asv (686:15) and asv (688:49) 
+                    remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+                LOOP END
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at pgw_icbc.F90 (693, 9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at pgw_icbc.F90 (694, 9)
+        <Multiversioned v1>
+            remark #25399: memcopy generated
+            remark #25562: The loop has been multiversioned for the small trip count
+        LOOP END
+
+        LOOP BEGIN at pgw_icbc.F90 (694, 9)
+        <Multiversioned v2>
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at pgw_icbc.F90 (695, 9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at pgw_icbc.F90 (696, 9)
+        <Multiversioned v1>
+            remark #25399: memcopy generated
+            remark #25562: The loop has been multiversioned for the small trip count
+        LOOP END
+
+        LOOP BEGIN at pgw_icbc.F90 (696, 9)
+        <Multiversioned v2>
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at pgw_icbc.F90 (697, 9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at pgw_icbc.F90 (698, 9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at pgw_icbc.F90 (685, 13)
+<Predicate Optimized v3>
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at pgw_icbc.F90 (685, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (685, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (673, 11)
+                remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                LOOP BEGIN at pgw_icbc.F90 (673, 11)
+                    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                    remark #15346: vector dependence: assumed FLOW dependence between slab (678:15) and slab (677:15) 
+                    remark #15346: vector dependence: assumed FLOW dependence between asv (676:15) and asv (678:50) 
+                    remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+                LOOP END
+            LOOP END
+
+            LOOP BEGIN at pgw_icbc.F90 (691, 11)
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at pgw_icbc.F90 (693, 9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at pgw_icbc.F90 (694, 9)
+        <Multiversioned v1>
+            remark #25399: memcopy generated
+            remark #25562: The loop has been multiversioned for the small trip count
+        LOOP END
+
+        LOOP BEGIN at pgw_icbc.F90 (694, 9)
+        <Multiversioned v2>
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at pgw_icbc.F90 (695, 9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at pgw_icbc.F90 (696, 9)
+        <Multiversioned v1>
+            remark #25399: memcopy generated
+            remark #25562: The loop has been multiversioned for the small trip count
+        LOOP END
+
+        LOOP BEGIN at pgw_icbc.F90 (696, 9)
+        <Multiversioned v2>
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at pgw_icbc.F90 (697, 9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at pgw_icbc.F90 (698, 9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at pgw_icbc.F90 (685, 13)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 675 hoisted out of this loop
+    remark #25423: Invariant If condition at line 685 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at pgw_icbc.F90 (685, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (685, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at pgw_icbc.F90 (673, 11)
+                remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                LOOP BEGIN at pgw_icbc.F90 (673, 11)
+                    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                    remark #15346: vector dependence: assumed FLOW dependence between slab (678:15) and slab (677:15) 
+                    remark #15346: vector dependence: assumed FLOW dependence between asv (676:15) and asv (678:50) 
+                    remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+                LOOP END
+            LOOP END
+
+            LOOP BEGIN at pgw_icbc.F90 (683, 11)
+                remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                LOOP BEGIN at pgw_icbc.F90 (683, 11)
+                    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                    remark #15346: vector dependence: assumed FLOW dependence between slab (688:15) and slab (687:15) 
+                    remark #15346: vector dependence: assumed FLOW dependence between asv (686:15) and asv (688:49) 
+                    remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
+                LOOP END
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at pgw_icbc.F90 (693, 9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at pgw_icbc.F90 (694, 9)
+        <Multiversioned v1>
+            remark #25399: memcopy generated
+            remark #25562: The loop has been multiversioned for the small trip count
+        LOOP END
+
+        LOOP BEGIN at pgw_icbc.F90 (694, 9)
+        <Multiversioned v2>
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at pgw_icbc.F90 (695, 9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at pgw_icbc.F90 (696, 9)
+        <Multiversioned v1>
+            remark #25399: memcopy generated
+            remark #25562: The loop has been multiversioned for the small trip count
+        LOOP END
+
+        LOOP BEGIN at pgw_icbc.F90 (696, 9)
+        <Multiversioned v2>
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at pgw_icbc.F90 (697, 9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+
+        LOOP BEGIN at pgw_icbc.F90 (698, 9)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : pgw_icbc_IP_compute_pp_
+
+LOOP BEGIN at pgw_icbc.F90 (714, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at pgw_icbc.F90 (721, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at pgw_icbc.F90 (734, 9)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between (733:11) and (722:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between (733:11) and (722:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between (733:11) and (723:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between (733:11) and (723:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between (733:11) and (726:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between (733:11) and (726:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between (733:11) and (726:18) 
+            remark #15346: vector dependence: assumed FLOW dependence between (733:11) and (728:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between (733:11) and (728:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between (733:11) and (729:28) 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: pgw_icbc_IP_compute_w_
+   -> llvm.smax.i64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (585,14)
+   -> llvm.smax.i64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (585,14)
+   -> llvm.smax.i32 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (585,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (585,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (585,14)
+   -> llvm.smax.i32 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (585,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (585,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (585,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (585,14)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (599,14)
+   -> DELETE: llvm.smin.i32 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (604,12)
+   -> DELETE: llvm.smin.i32 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (607,14)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (618,21)
+   -> DELETE: llvm.smin.i32 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (625,17)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (626,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (630,31)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (635,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (636,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (635,25)
+   -> pgw_icbc_IP_smtdsmt_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (640,10)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (599,14)
+   -> llvm.smin.i32 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (604,12)
+   -> llvm.smin.i32 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (607,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (618,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (635,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (636,26)
+   -> llvm.smin.i32 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (625,17)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (626,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (630,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (635,25)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (585,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (585,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (585,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (585,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (585,14)
+   -> DELETE: llvm.masked.gather.v2f64.v2p0 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (644,11)
+   -> DELETE: llvm.masked.gather.v2f64.v2p0 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (644,28)
+   -> DELETE: llvm.masked.scatter.v2f64.v2p0 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (645,11)
+
+COMPILE FUNC: pgw_icbc_IP_smtdsmt_
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (678,47)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (678,46)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (688,46)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (688,45)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (678,47)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (678,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (688,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (688,45)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (678,47)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (678,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (688,46)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (688,45)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (694,9)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (696,9)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (694,9)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (696,9)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (694,9)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (696,9)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (694,9)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (696,9)
+
+COMPILE FUNC: MAIN__
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (37,9)
+   -> pgw_icbc_IP_usage_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (101,10)
+   -> pgw_icbc_IP_usage_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (107,10)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (123,8)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (125,8)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (127,8)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (129,8)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (131,8)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (133,8)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (135,8)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (138,8)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (140,8)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (142,8)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (144,8)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (146,8)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (148,8)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (151,10)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (153,10)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (157,8)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (159,8)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (161,8)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (163,8)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (165,8)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (167,8)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (169,8)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (171,8)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (174,8)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (176,8)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (178,8)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (180,8)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (246,8)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (248,8)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (250,8)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (252,8)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (254,8)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (256,8)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (269,34)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (296,20)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (302,10)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (304,10)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (275,10)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (278,10)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (280,10)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (282,10)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (284,10)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (286,10)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (288,10)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (290,10)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (292,10)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (308,10)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (310,10)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (259,10)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (261,10)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (263,10)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (265,10)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (316,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (316,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (313,12)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (323,8)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (325,8)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (327,8)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (329,8)
+   -> pgw_icbc_IP_read_pgw_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (337,8)
+   -> pgw_icbc_IP_read_pgw_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (338,8)
+   -> pgw_icbc_IP_read_pgw_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (339,8)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (354,23)
+   -> pgw_icbc_IP_read_icbc_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (369,10)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (371,11)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (391,12)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (400,13)
+   -> pgw_icbc_IP_compute_w_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (403,12)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (404,13)
+   -> pgw_icbc_IP_compute_pp_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (405,12)
+   -> pgw_icbc_IP_write_icbc_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (411,10)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (415,8)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (417,8)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (296,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (296,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (269,34)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (269,34)
+
+COMPILE FUNC: pgw_icbc_IP_usage_
+
+COMPILE FUNC: pgw_icbc_IP_check_ok_
+
+COMPILE FUNC: pgw_icbc_IP_read_pgw_
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (468,10)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (470,10)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (480,10)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (482,10)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (484,10)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (486,10)
+
+COMPILE FUNC: pgw_icbc_IP_read_icbc_
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (511,10)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (513,10)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (523,10)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (525,10)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (527,10)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (529,10)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (532,12)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (534,12)
+
+COMPILE FUNC: pgw_icbc_IP_compute_pp_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (717,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (719,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (720,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (720,45)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (722,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (723,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (726,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (726,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (728,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (731,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (731,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (732,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (732,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (733,55)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (733,24)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (733,68)
+
+COMPILE FUNC: pgw_icbc_IP_write_icbc_
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (558,10)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (560,10)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (570,10)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (572,10)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (574,10)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (576,10)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (579,12)
+   -> pgw_icbc_IP_check_ok_ /scratch_local/ifx1402393294jpJRJv/ifx2yEIhS.i90 (581,12)
+
+COMPILE FUNC: myabort_
+
+---- End Inlining Report ------

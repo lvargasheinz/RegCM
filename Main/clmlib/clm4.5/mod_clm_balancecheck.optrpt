@@ -1,0 +1,264 @@
+Global optimization report for : mod_clm_balancecheck._
+=================================================================
+
+Global optimization report for : mod_clm_balancecheck_mp_beginwaterbalance_
+
+LOOP BEGIN at mod_clm_balancecheck.F90 (103, 19)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (104:9) and (103:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (104:9) and (103:7) 
+LOOP END
+
+LOOP BEGIN at mod_clm_balancecheck.F90 (112, 39)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (0:0) and (110:7) 
+    remark #15346: vector dependence: assumed FLOW dependence
+    remark #15346: vector dependence: assumed FLOW dependence
+    remark #15346: vector dependence: assumed FLOW dependence between (0:0) and (116:34) 
+    remark #15346: vector dependence: assumed FLOW dependence between (0:0) and (116:46) 
+LOOP END
+
+LOOP BEGIN at mod_clm_balancecheck.F90 (120, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_balancecheck.F90 (124, 38)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (127:11) and (122:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (127:11) and (127:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between (127:11) and (127:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between (127:11) and (127:31) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_balancecheck.F90 (135, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (134:7) and (134:7) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_balancecheck_mp_balancecheck_
+
+LOOP BEGIN at mod_clm_balancecheck.F90 (427, 37)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between forc_rain_col (0:0) and (427:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between forc_rain_col (0:0) and (426:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between forc_rain_col (0:0) and (432:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between forc_rain_col (0:0) and (433:9) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between forc_snow_col (0:0) and forc_rain_col (0:0) 
+LOOP END
+
+LOOP BEGIN at mod_clm_balancecheck.F90 (444, 12)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+
+LOOP BEGIN at mod_clm_balancecheck.F90 (462, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between found (458:27) and found (458:27) 
+    remark #15346: vector dependence: assumed FLOW dependence between indexc (458:27) and indexc (458:27) 
+LOOP END
+
+LOOP BEGIN at mod_clm_balancecheck.F90 (519, 19)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed ANTI dependence between (514:7) and (566:9) 
+    remark #15346: vector dependence: assumed ANTI dependence between (514:7) and (567:9) 
+    remark #15346: vector dependence: assumed ANTI dependence between (514:7) and (568:9) 
+    remark #15346: vector dependence: assumed ANTI dependence between (520:9) and (566:9) 
+    remark #15346: vector dependence: assumed ANTI dependence between (520:9) and (567:9) 
+    remark #15346: vector dependence: assumed ANTI dependence between (520:9) and (568:9) 
+    remark #15346: vector dependence: assumed ANTI dependence between (520:9) and (566:9) 
+    remark #15346: vector dependence: assumed ANTI dependence between (520:9) and (567:9) 
+    remark #15346: vector dependence: assumed ANTI dependence between (520:9) and (568:9) 
+    remark #15346: vector dependence: assumed ANTI dependence between (520:45) and (566:9) 
+LOOP END
+
+LOOP BEGIN at mod_clm_balancecheck.F90 (578, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between found (574:23) and found (574:23) 
+    remark #15346: vector dependence: assumed FLOW dependence between indexc (574:23) and indexc (574:23) 
+LOOP END
+
+LOOP BEGIN at mod_clm_balancecheck.F90 (609, 12)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (0:0) and (609:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (0:0) and (610:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (0:0) and (611:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (0:0) and (618:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (0:0) and (619:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (0:0) and (619:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (0:0) and (619:30) 
+    remark #15346: vector dependence: assumed FLOW dependence between (0:0) and (619:30) 
+    remark #15346: vector dependence: assumed FLOW dependence between (0:0) and (620:36) 
+    remark #15346: vector dependence: assumed FLOW dependence between (0:0) and (620:54) 
+LOOP END
+
+LOOP BEGIN at mod_clm_balancecheck.F90 (667, 11)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_balancecheck.F90 (696, 12)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between found (697:35) and found (697:35) 
+    remark #15346: vector dependence: assumed FLOW dependence between indexp (697:35) and indexp (697:35) 
+LOOP END
+
+LOOP BEGIN at mod_clm_balancecheck.F90 (714, 12)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between found (715:29) and found (715:29) 
+    remark #15346: vector dependence: assumed FLOW dependence between indexp (715:29) and indexp (715:29) 
+LOOP END
+
+LOOP BEGIN at mod_clm_balancecheck.F90 (746, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between found (742:31) and found (742:31) 
+    remark #15346: vector dependence: assumed FLOW dependence between indexc (742:31) and indexc (742:31) 
+LOOP END
+
+LOOP BEGIN at mod_clm_balancecheck.F90 (759, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_balancecheck.F90 (759, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_balancecheck.F90 (760, 36)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_balancecheck.F90 (764, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_balancecheck.F90 (766, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_balancecheck.F90 (766, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_balancecheck.F90 (767, 39)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_balancecheck.F90 (771, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_balancecheck.F90 (773, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_balancecheck.F90 (773, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_balancecheck.F90 (774, 36)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_balancecheck.F90 (780, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_balancecheck.F90 (785, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_balancecheck.F90 (785, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_balancecheck.F90 (786, 30)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_balancecheck.F90 (793, 5)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_clm_balancecheck_mp_balancecheck_
+   -> llvm.smax.i32 /scratch_local/ifx1371376012XbVt6s/ifxypzwx4.i90 (151,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1371376012XbVt6s/ifxypzwx4.i90 (151,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1371376012XbVt6s/ifxypzwx4.i90 (151,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1371376012XbVt6s/ifxypzwx4.i90 (446,18)
+   -> llvm.fabs.f64 /scratch_local/ifx1371376012XbVt6s/ifxypzwx4.i90 (458,12)
+   -> llvm.fabs.f64 /scratch_local/ifx1371376012XbVt6s/ifxypzwx4.i90 (472,13)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1371376012XbVt6s/ifxypzwx4.i90 (528,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1371376012XbVt6s/ifxypzwx4.i90 (529,48)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1371376012XbVt6s/ifxypzwx4.i90 (530,44)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1371376012XbVt6s/ifxypzwx4.i90 (535,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1371376012XbVt6s/ifxypzwx4.i90 (537,48)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1371376012XbVt6s/ifxypzwx4.i90 (547,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1371376012XbVt6s/ifxypzwx4.i90 (550,48)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1371376012XbVt6s/ifxypzwx4.i90 (554,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1371376012XbVt6s/ifxypzwx4.i90 (555,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1371376012XbVt6s/ifxypzwx4.i90 (558,48)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1371376012XbVt6s/ifxypzwx4.i90 (563,25)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1371376012XbVt6s/ifxypzwx4.i90 (564,18)
+   -> llvm.fabs.f64 /scratch_local/ifx1371376012XbVt6s/ifxypzwx4.i90 (574,29)
+   -> llvm.fabs.f64 /scratch_local/ifx1371376012XbVt6s/ifxypzwx4.i90 (586,12)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1371376012XbVt6s/ifxypzwx4.i90 (620,20)
+   -> llvm.fabs.f64 /scratch_local/ifx1371376012XbVt6s/ifxypzwx4.i90 (668,42)
+   -> llvm.fabs.f64 /scratch_local/ifx1371376012XbVt6s/ifxypzwx4.i90 (697,42)
+   -> llvm.fabs.f64 /scratch_local/ifx1371376012XbVt6s/ifxypzwx4.i90 (715,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1371376012XbVt6s/ifxypzwx4.i90 (729,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1371376012XbVt6s/ifxypzwx4.i90 (729,17)
+   -> llvm.fabs.f64 /scratch_local/ifx1371376012XbVt6s/ifxypzwx4.i90 (742,12)
+   -> llvm.fabs.f64 /scratch_local/ifx1371376012XbVt6s/ifxypzwx4.i90 (748,11)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1371376012XbVt6s/ifxypzwx4.i90 (759,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1371376012XbVt6s/ifxypzwx4.i90 (759,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1371376012XbVt6s/ifxypzwx4.i90 (766,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1371376012XbVt6s/ifxypzwx4.i90 (766,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1371376012XbVt6s/ifxypzwx4.i90 (773,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1371376012XbVt6s/ifxypzwx4.i90 (773,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1371376012XbVt6s/ifxypzwx4.i90 (785,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx1371376012XbVt6s/ifxypzwx4.i90 (785,5)
+
+COMPILE FUNC: mod_clm_balancecheck._
+
+COMPILE FUNC: mod_clm_balancecheck_mp_beginwaterbalance_
+
+---- End Inlining Report ------

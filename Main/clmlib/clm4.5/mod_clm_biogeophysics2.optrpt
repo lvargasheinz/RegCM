@@ -1,0 +1,161 @@
+Global optimization report for : mod_clm_biogeophysics2._
+=================================================================
+
+Global optimization report for : mod_clm_biogeophysics2_mp_biogeophysics2_
+
+LOOP BEGIN at mod_clm_biogeophysics2.F90 (332, 18)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+
+LOOP BEGIN at mod_clm_biogeophysics2.F90 (372, 20)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (367:7) and (366:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (367:7) and (367:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (367:7) and (367:7) 
+    remark #15346: vector dependence: assumed ANTI dependence between (368:7) and (367:7) 
+    remark #15346: vector dependence: assumed ANTI dependence between (368:7) and (367:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (368:7) and (366:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (368:7) and (367:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (368:7) and (367:7) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between (368:7) and (367:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (368:7) and (368:7) 
+LOOP END
+
+LOOP BEGIN at mod_clm_biogeophysics2.F90 (390, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_biogeophysics2.F90 (393, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_biogeophysics2.F90 (395, 17)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between topsoil_evap_tot (398:13) and topsoil_evap_tot (398:13) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_biogeophysics2.F90 (414, 5)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+
+LOOP BEGIN at mod_clm_biogeophysics2.F90 (427, 22)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (429:9) and (418:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (429:9) and (419:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (429:9) and (420:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (429:9) and (421:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (429:9) and (428:9) 
+    remark #15346: vector dependence: assumed ANTI dependence between (431:12) and (429:9) 
+    remark #15346: vector dependence: assumed ANTI dependence between (430:9) and (429:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (430:9) and (418:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (430:9) and (419:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (430:9) and (420:7) 
+LOOP END
+
+LOOP BEGIN at mod_clm_biogeophysics2.F90 (541, 39)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (533:7) and (532:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (533:7) and (533:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (533:7) and (533:50) 
+    remark #15346: vector dependence: assumed FLOW dependence between (533:7) and (533:50) 
+    remark #15346: vector dependence: assumed FLOW dependence between (533:7) and (533:50) 
+    remark #15346: vector dependence: assumed ANTI dependence between (540:7) and (533:7) 
+    remark #15346: vector dependence: assumed ANTI dependence between (543:9) and (533:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (543:9) and (532:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (543:9) and (533:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (543:9) and (533:50) 
+LOOP END
+
+LOOP BEGIN at mod_clm_biogeophysics2.F90 (548, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_biogeophysics2.F90 (554, 38)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed ANTI dependence between (557:13) and (561:13) 
+        remark #15346: vector dependence: assumed ANTI dependence between (557:13) and (561:13) 
+        remark #15346: vector dependence: assumed ANTI dependence between (557:13) and (561:13) 
+        remark #15346: vector dependence: assumed ANTI dependence between (557:13) and (561:13) 
+        remark #15346: vector dependence: assumed FLOW dependence between (557:13) and (550:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (557:13) and (552:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (557:13) and (556:11) 
+        remark #15346: vector dependence: assumed FLOW dependence between (557:13) and (557:13) 
+        remark #15346: vector dependence: assumed FLOW dependence between (557:13) and (557:13) 
+        remark #15346: vector dependence: assumed FLOW dependence between (557:13) and (557:13) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_biogeophysics2.F90 (582, 21)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed ANTI dependence between (597:9) and (587:9) 
+    remark #15346: vector dependence: assumed ANTI dependence between (597:9) and (592:9) 
+    remark #15346: vector dependence: assumed ANTI dependence between (597:9) and (594:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (597:9) and (578:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (597:9) and (582:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (597:9) and (597:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (597:9) and (577:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (597:9) and (580:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (597:9) and (579:7) 
+    remark #15346: vector dependence: assumed FLOW dependence between (597:9) and (583:9) 
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_clm_biogeophysics2_mp_biogeophysics2_
+   -> llvm.smax.i64 /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (60,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (60,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (60,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (60,14)
+   -> llvm.smax.i32 /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (60,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (60,14)
+   -> llvm.smax.i32 /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (60,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (60,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (60,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (60,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (60,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (60,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (60,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (60,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (334,12)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (337,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (345,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (410,22)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (431,12)
+   -> llvm.powi.f64.i32 /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (440,54)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (441,20)
+   -> llvm.powi.f64.i32 /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (441,70)
+   -> llvm.powi.f64.i32 /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (442,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (440,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (444,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (444,30)
+   -> DELETE: llvm.powi.f64.i32 /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (447,56)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (447,61)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (448,17)
+   -> llvm.powi.f64.i32 /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (459,56)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (465,21)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (497,52)
+   -> DELETE: llvm.fabs.f64 /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (505,30)
+   -> llvm.fabs.f64 /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (507,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (496,15)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (523,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (534,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (535,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (558,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (562,16)
+   -> llvm.powi.f64.i32 /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (583,52)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (584,18)
+   -> llvm.powi.f64.i32 /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (584,68)
+   -> llvm.powi.f64.i32 /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (585,47)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (583,18)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (588,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (588,47)
+   -> llvm.powi.f64.i32 /scratch_local/ifx0646110881cQ3rbx/ifxFYzAbo.i90 (590,45)
+
+COMPILE FUNC: mod_clm_biogeophysics2._
+
+---- End Inlining Report ------

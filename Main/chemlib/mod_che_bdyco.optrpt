@@ -1,0 +1,1419 @@
+Global optimization report for : mod_che_bdyco._
+=================================================================
+
+Global optimization report for : mod_che_bdyco_mp_allocate_mod_che_bdyco_
+=================================================================
+
+Global optimization report for : mod_che_bdyco_mp_che_init_bdy_
+
+LOOP BEGIN at mod_che_bdyco.F90 (169, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (169, 7)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (169, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_bdyco.F90 (169, 7)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (172, 29)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (174, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (175, 15)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_bdyco.F90 (177, 15)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between chib0 (176:17) and ichbdy2trac (176:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between chib0 (176:17) and chebdy (176:17) 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (187, 11)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 188 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (187, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (189, 15)
+        <Multiversioned v2>
+            remark #15319: Loop was not vectorized: novector directive used
+
+            LOOP BEGIN at mod_che_bdyco.F90 (191, 15)
+                remark #15319: Loop was not vectorized: novector directive used
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at mod_che_bdyco.F90 (189, 15)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_bdyco.F90 (191, 15)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (194, 9)
+<Predicate Optimized v2>
+
+    LOOP BEGIN at mod_che_bdyco.F90 (193, 11)
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (234, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (234, 7)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (234, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_bdyco.F90 (234, 7)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (236, 29)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (238, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (239, 15)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_bdyco.F90 (241, 15)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between chib1 (240:17) and ichbdy2trac (240:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between chib1 (240:17) and chebdy (240:17) 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (260, 13)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 260 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (259, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (261, 15)
+        <Multiversioned v2>
+            remark #15319: Loop was not vectorized: novector directive used
+
+            LOOP BEGIN at mod_che_bdyco.F90 (263, 15)
+                remark #15319: Loop was not vectorized: novector directive used
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at mod_che_bdyco.F90 (261, 15)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_bdyco.F90 (263, 15)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (266, 9)
+<Predicate Optimized v2>
+
+    LOOP BEGIN at mod_che_bdyco.F90 (265, 11)
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (272, 13)
+<Predicate Optimized v3>
+    remark #25423: Invariant If condition at line 272 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (271, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (273, 15)
+        <Multiversioned v2>
+            remark #15319: Loop was not vectorized: novector directive used
+
+            LOOP BEGIN at mod_che_bdyco.F90 (275, 15)
+                remark #15319: Loop was not vectorized: novector directive used
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at mod_che_bdyco.F90 (273, 15)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_bdyco.F90 (275, 15)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (278, 9)
+<Predicate Optimized v4>
+
+    LOOP BEGIN at mod_che_bdyco.F90 (277, 11)
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (287, 11)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 287 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (286, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (288, 13)
+        <Multiversioned v2>
+            remark #15319: Loop was not vectorized: novector directive used
+
+            LOOP BEGIN at mod_che_bdyco.F90 (290, 13)
+                remark #15319: Loop was not vectorized: novector directive used
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at mod_che_bdyco.F90 (288, 13)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_bdyco.F90 (290, 13)
+                remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (293, 7)
+<Predicate Optimized v2>
+
+    LOOP BEGIN at mod_che_bdyco.F90 (292, 9)
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_che_bdyco_mp_chem_bdyin_
+
+LOOP BEGIN at mod_che_bdyco.F90 (330, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (330, 7)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (330, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_bdyco.F90 (330, 7)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (330, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (330, 7)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (330, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_bdyco.F90 (330, 7)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (358, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (358, 7)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (358, 7)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_bdyco.F90 (358, 7)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (361, 29)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (363, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (364, 15)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_bdyco.F90 (366, 15)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between chib1 (365:17) and ichbdy2trac (365:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between chib1 (365:17) and chebdy (365:17) 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (374, 11)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 375 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (374, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (376, 15)
+        <Multiversioned v2>
+            remark #15319: Loop was not vectorized: novector directive used
+
+            LOOP BEGIN at mod_che_bdyco.F90 (378, 15)
+                remark #15319: Loop was not vectorized: novector directive used
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at mod_che_bdyco.F90 (376, 15)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_bdyco.F90 (378, 15)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (381, 9)
+<Predicate Optimized v2>
+
+    LOOP BEGIN at mod_che_bdyco.F90 (380, 11)
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (387, 13)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 387 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (386, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (388, 15)
+        <Multiversioned v2>
+            remark #15319: Loop was not vectorized: novector directive used
+
+            LOOP BEGIN at mod_che_bdyco.F90 (390, 15)
+                remark #15319: Loop was not vectorized: novector directive used
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at mod_che_bdyco.F90 (388, 15)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_bdyco.F90 (390, 15)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (393, 9)
+<Predicate Optimized v2>
+
+    LOOP BEGIN at mod_che_bdyco.F90 (392, 11)
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (398, 11)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 398 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (397, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (399, 13)
+        <Multiversioned v2>
+            remark #15319: Loop was not vectorized: novector directive used
+
+            LOOP BEGIN at mod_che_bdyco.F90 (401, 13)
+                remark #15319: Loop was not vectorized: novector directive used
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at mod_che_bdyco.F90 (399, 13)
+        <Multiversioned v1>
+            remark #25228: Loop multiversioned for Data Dependence
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_bdyco.F90 (401, 13)
+                remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (404, 7)
+<Predicate Optimized v2>
+
+    LOOP BEGIN at mod_che_bdyco.F90 (403, 9)
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_che_bdyco_mp_chem_bdyval_uncoupled_
+
+LOOP BEGIN at mod_che_bdyco.F90 (528, 9)
+    remark #25423: Invariant If condition at line 528 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (528, 9)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_che_bdyco.F90 (531, 11)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_che_bdyco.F90 (528, 9)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (531, 11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (537, 9)
+    remark #25423: Invariant If condition at line 537 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (537, 9)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_che_bdyco.F90 (540, 11)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_che_bdyco.F90 (537, 9)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (540, 11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (546, 9)
+    remark #25423: Invariant If condition at line 546 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (546, 9)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_che_bdyco.F90 (549, 11)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_che_bdyco.F90 (546, 9)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (549, 11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (555, 9)
+    remark #25423: Invariant If condition at line 555 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (555, 9)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_che_bdyco.F90 (558, 11)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_che_bdyco.F90 (555, 9)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (558, 11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (442, 11)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (443, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (446, 28)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between chemt (0:0) and (445:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between chemt (0:0) and (445:15) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (460, 11)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (461, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (464, 28)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between chemt (0:0) and (463:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between chemt (0:0) and (463:15) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (478, 11)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (479, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (482, 28)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between chemt (0:0) and (481:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between chemt (0:0) and (481:15) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (496, 11)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (497, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (500, 28)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between chemt (0:0) and (499:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between chemt (0:0) and (499:15) 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_che_bdyco_mp_chem_bdyval_coupled_
+
+LOOP BEGIN at mod_che_bdyco.F90 (588, 11)
+    remark #25423: Invariant If condition at line 588 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (588, 11)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_che_bdyco.F90 (591, 13)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_che_bdyco.F90 (588, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (591, 13)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (600, 11)
+    remark #25423: Invariant If condition at line 600 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (600, 11)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_che_bdyco.F90 (603, 13)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_che_bdyco.F90 (600, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (603, 13)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (612, 11)
+    remark #25423: Invariant If condition at line 612 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (612, 11)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_che_bdyco.F90 (615, 13)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_che_bdyco.F90 (612, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (615, 13)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (621, 11)
+    remark #25423: Invariant If condition at line 621 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (621, 11)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_che_bdyco.F90 (624, 13)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_che_bdyco.F90 (621, 11)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (624, 13)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (723, 9)
+    remark #25423: Invariant If condition at line 723 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (723, 9)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_che_bdyco.F90 (726, 11)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_che_bdyco.F90 (723, 9)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (726, 11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (732, 9)
+    remark #25423: Invariant If condition at line 732 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (732, 9)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_che_bdyco.F90 (735, 11)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_che_bdyco.F90 (732, 9)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (735, 11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (741, 9)
+    remark #25423: Invariant If condition at line 741 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (741, 9)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_che_bdyco.F90 (744, 11)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_che_bdyco.F90 (741, 9)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (744, 11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (750, 9)
+    remark #25423: Invariant If condition at line 750 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (750, 9)
+    <Multiversioned v2>
+        remark #15319: Loop was not vectorized: novector directive used
+
+        LOOP BEGIN at mod_che_bdyco.F90 (753, 11)
+            remark #15319: Loop was not vectorized: novector directive used
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_che_bdyco.F90 (750, 9)
+    <Multiversioned v1>
+        remark #25228: Loop multiversioned for Data Dependence
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (753, 11)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (637, 11)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (638, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (641, 28)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between chia (0:0) and (640:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between chia (0:0) and (640:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between chia (0:0) and (640:34) 
+            remark #15346: vector dependence: assumed FLOW dependence between chia (0:0) and (640:47) 
+            remark #15346: vector dependence: assumed FLOW dependence between chia (0:0) and (639:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between chia (0:0) and (642:17) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (655, 11)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (656, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (659, 28)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between chia (0:0) and (658:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between chia (0:0) and (658:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between chia (0:0) and (658:34) 
+            remark #15346: vector dependence: assumed FLOW dependence between chia (0:0) and (658:47) 
+            remark #15346: vector dependence: assumed FLOW dependence between chia (0:0) and (657:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between chia (0:0) and (660:17) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (673, 11)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (674, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (677, 28)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between chia (0:0) and (676:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between chia (0:0) and (676:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between chia (0:0) and (676:34) 
+            remark #15346: vector dependence: assumed FLOW dependence between chia (0:0) and (676:47) 
+            remark #15346: vector dependence: assumed FLOW dependence between chia (0:0) and (675:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between chia (0:0) and (678:17) 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (691, 11)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (692, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (695, 28)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between chia (0:0) and (694:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between chia (0:0) and (694:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between chia (0:0) and (694:34) 
+            remark #15346: vector dependence: assumed FLOW dependence between chia (0:0) and (694:47) 
+            remark #15346: vector dependence: assumed FLOW dependence between chia (0:0) and (693:15) 
+            remark #15346: vector dependence: assumed FLOW dependence between chia (0:0) and (696:17) 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_che_bdyco_mp_nudge_chiten_
+
+LOOP BEGIN at mod_che_bdyco.F90 (903, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (904, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (905, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_bdyco.F90 (906, 20)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between (915:15) and (906:30) 
+                remark #15346: vector dependence: assumed FLOW dependence between (915:15) and (907:24) 
+                remark #15346: vector dependence: assumed FLOW dependence between (915:15) and chibt (910:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (915:15) and chib0 (910:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (915:15) and (910:23) 
+                remark #15346: vector dependence: assumed FLOW dependence between (915:15) and chibt (911:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (915:15) and chib0 (911:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (915:15) and (911:23) 
+                remark #15346: vector dependence: assumed FLOW dependence between (915:15) and chibt (912:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (915:15) and chib0 (912:15) 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (924, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (925, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (926, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_bdyco.F90 (927, 20)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between (936:15) and (927:30) 
+                remark #15346: vector dependence: assumed FLOW dependence between (936:15) and (928:24) 
+                remark #15346: vector dependence: assumed FLOW dependence between (936:15) and chibt (931:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (936:15) and chib0 (931:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (936:15) and (931:23) 
+                remark #15346: vector dependence: assumed FLOW dependence between (936:15) and chibt (932:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (936:15) and chib0 (932:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (936:15) and (932:23) 
+                remark #15346: vector dependence: assumed FLOW dependence between (936:15) and chibt (933:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (936:15) and chib0 (933:15) 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (945, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (946, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (947, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_bdyco.F90 (948, 20)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between (957:15) and (948:30) 
+                remark #15346: vector dependence: assumed FLOW dependence between (957:15) and (949:24) 
+                remark #15346: vector dependence: assumed FLOW dependence between (957:15) and chibt (952:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (957:15) and chib0 (952:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (957:15) and (952:23) 
+                remark #15346: vector dependence: assumed FLOW dependence between (957:15) and chibt (953:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (957:15) and chib0 (953:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (957:15) and (953:23) 
+                remark #15346: vector dependence: assumed FLOW dependence between (957:15) and chibt (954:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (957:15) and chib0 (954:15) 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (966, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (967, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (968, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_bdyco.F90 (969, 20)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between (978:15) and (969:30) 
+                remark #15346: vector dependence: assumed FLOW dependence between (978:15) and (970:24) 
+                remark #15346: vector dependence: assumed FLOW dependence between (978:15) and chibt (973:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (978:15) and chib0 (973:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (978:15) and (973:23) 
+                remark #15346: vector dependence: assumed FLOW dependence between (978:15) and chibt (974:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (978:15) and chib0 (974:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (978:15) and (974:23) 
+                remark #15346: vector dependence: assumed FLOW dependence between (978:15) and chibt (975:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (978:15) and chib0 (975:15) 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (812, 11)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (813, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (814, 15)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_bdyco.F90 (815, 22)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between (824:17) and (815:32) 
+                remark #15346: vector dependence: assumed FLOW dependence between (824:17) and (816:26) 
+                remark #15346: vector dependence: assumed FLOW dependence between (824:17) and (819:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (824:17) and (819:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (824:17) and (820:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (824:17) and (821:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (824:17) and (821:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (824:17) and (822:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (824:17) and (822:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (824:17) and (823:17) 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (833, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (834, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (835, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_bdyco.F90 (836, 20)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between (845:15) and (836:30) 
+                remark #15346: vector dependence: assumed FLOW dependence between (845:15) and (837:24) 
+                remark #15346: vector dependence: assumed FLOW dependence between (845:15) and (840:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (845:15) and (840:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (845:15) and (841:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (845:15) and (841:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (845:15) and (842:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (845:15) and (842:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (845:15) and (843:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (845:15) and (843:15) 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (854, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (855, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (856, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_bdyco.F90 (857, 20)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between (866:15) and (857:30) 
+                remark #15346: vector dependence: assumed FLOW dependence between (866:15) and (858:24) 
+                remark #15346: vector dependence: assumed FLOW dependence between (866:15) and (861:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (866:15) and (861:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (866:15) and (862:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (866:15) and (862:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (866:15) and (863:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (866:15) and (863:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (866:15) and (864:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (866:15) and (864:15) 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (875, 9)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (876, 11)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (877, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_bdyco.F90 (878, 20)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between (887:15) and (878:30) 
+                remark #15346: vector dependence: assumed FLOW dependence between (887:15) and (879:24) 
+                remark #15346: vector dependence: assumed FLOW dependence between (887:15) and (882:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (887:15) and (882:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (887:15) and (883:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (887:15) and (883:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (887:15) and (884:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (887:15) and (884:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (887:15) and (885:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (887:15) and (885:15) 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_che_bdyco_mp_monudgechi_
+
+LOOP BEGIN at mod_che_bdyco.F90 (1097, 19)
+
+    LOOP BEGIN at mod_che_bdyco.F90 (1100, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (1100, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_bdyco.F90 (1101, 20)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between (1110:15) and (1101:30) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1110:15) and (1102:24) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1110:15) and fg (1105:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1110:15) and cefc (1103:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1110:15) and fg (1106:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1110:15) and fg (1107:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1110:15) and fg (1108:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1110:15) and fg (1109:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1110:15) and cegc (1104:15) 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_che_bdyco.F90 (1119, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (1119, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_bdyco.F90 (1120, 20)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between (1129:15) and (1120:30) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1129:15) and (1121:24) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1129:15) and fg (1124:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1129:15) and cefc (1122:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1129:15) and fg (1125:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1129:15) and fg (1126:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1129:15) and fg (1127:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1129:15) and fg (1128:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1129:15) and cegc (1123:15) 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_che_bdyco.F90 (1138, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (1138, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_bdyco.F90 (1139, 20)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between (1148:15) and (1139:30) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1148:15) and (1140:24) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1148:15) and fg (1143:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1148:15) and cefc (1141:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1148:15) and fg (1144:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1148:15) and fg (1145:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1148:15) and fg (1146:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1148:15) and fg (1147:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1148:15) and cegc (1142:15) 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_che_bdyco.F90 (1157, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (1157, 13)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_bdyco.F90 (1158, 20)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between (1167:15) and (1158:30) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1167:15) and (1159:24) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1167:15) and fg (1162:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1167:15) and cefc (1160:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1167:15) and fg (1163:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1167:15) and fg (1164:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1167:15) and fg (1165:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1167:15) and fg (1166:15) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1167:15) and cegc (1161:15) 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (1009, 21)
+
+    LOOP BEGIN at mod_che_bdyco.F90 (1012, 15)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (1012, 15)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_bdyco.F90 (1013, 22)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between (1022:17) and (1013:32) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1022:17) and (1014:26) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1022:17) and fg (1017:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1022:17) and fg (1017:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1022:17) and fg (1018:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1022:17) and fg (1019:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1022:17) and fg (1019:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1022:17) and fg (1020:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1022:17) and fg (1020:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1022:17) and fg (1021:17) 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_che_bdyco.F90 (1031, 15)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (1031, 15)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_bdyco.F90 (1032, 22)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between (1041:17) and (1032:32) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1041:17) and (1033:26) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1041:17) and fg (1036:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1041:17) and fg (1036:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1041:17) and fg (1037:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1041:17) and fg (1037:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1041:17) and fg (1038:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1041:17) and fg (1038:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1041:17) and fg (1039:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1041:17) and fg (1039:17) 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_che_bdyco.F90 (1050, 15)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (1050, 15)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_bdyco.F90 (1051, 22)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between (1060:17) and (1051:32) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1060:17) and (1052:26) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1060:17) and fg (1055:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1060:17) and fg (1055:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1060:17) and fg (1056:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1060:17) and fg (1056:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1060:17) and fg (1057:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1060:17) and fg (1057:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1060:17) and fg (1058:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1060:17) and fg (1058:17) 
+            LOOP END
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at mod_che_bdyco.F90 (1069, 15)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_che_bdyco.F90 (1069, 15)
+            remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at mod_che_bdyco.F90 (1070, 22)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between (1079:17) and (1070:32) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1079:17) and (1071:26) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1079:17) and fg (1074:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1079:17) and fg (1074:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1079:17) and fg (1075:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1079:17) and fg (1075:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1079:17) and fg (1076:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1079:17) and fg (1076:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1079:17) and fg (1077:17) 
+                remark #15346: vector dependence: assumed FLOW dependence between (1079:17) and fg (1077:17) 
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_che_bdyco_mp_setup_che_bdycon_
+
+LOOP BEGIN at mod_che_bdyco.F90 (1199, 7)
+<Multiversioned v2>
+    remark #15319: Loop was not vectorized: novector directive used
+
+    LOOP BEGIN at mod_che_bdyco.F90 (1199, 7)
+        remark #15319: Loop was not vectorized: novector directive used
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_che_bdyco.F90 (1199, 7)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_che_bdyco.F90 (1202, 7)
+        remark #25563: Load hoisted out of the loop
+        remark #15300: LOOP WAS VECTORIZED
+        remark #15305: vectorization support: vector length 2
+    LOOP END
+
+    LOOP BEGIN at mod_che_bdyco.F90 (1199, 7)
+    <Remainder loop for vectorization>
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_che_bdycosetup_che_bdycon_mp_xfune_
+=================================================================
+
+Global optimization report for : mod_che_bdyco_mp_monudgechi_.DIR.OMP.DISTRIBUTE.PARLOOP.17.split3986.split
+
+LOOP BEGIN at mod_che_bdyco.F90 (1094, 7)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (1094:7) and (1095:42) 
+    remark #15346: vector dependence: assumed FLOW dependence between (1094:7) and (1095:22) 
+    remark #15346: vector dependence: assumed FLOW dependence between (1094:7) and (1095:60) 
+    remark #15346: vector dependence: assumed FLOW dependence between (1094:7) and (1095:9) 
+    remark #15346: vector dependence: assumed FLOW dependence between (1094:7) and (1095:42) 
+    remark #15346: vector dependence: assumed FLOW dependence between (1094:7) and (1095:22) 
+    remark #15346: vector dependence: assumed FLOW dependence between (1094:7) and (1095:60) 
+    remark #15346: vector dependence: assumed FLOW dependence between (1094:7) and (1095:9) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_che_bdyco_mp_monudgechi_.DIR.OMP.TEAMS.11.split4000
+=================================================================
+
+Global optimization report for : mod_che_bdyco_mp_monudgechi_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split4004.split
+
+LOOP BEGIN at mod_che_bdyco.F90 (1006, 9)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between (1006:9) and (1007:23) 
+    remark #15346: vector dependence: assumed FLOW dependence between (1006:9) and (1007:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between (1006:9) and (1007:23) 
+    remark #15346: vector dependence: assumed FLOW dependence between (1006:9) and (1007:11) 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_che_bdyco_mp_monudgechi_.DIR.OMP.TEAMS.2.split4017
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.directive.region.entry
+
+DEAD STATIC FUNC: llvm.directive.region.exit
+
+DEAD STATIC FUNC: llvm.experimental.noalias.scope.decl
+
+COMPILE FUNC: mod_che_bdyco_mp_setup_che_bdycon_
+   -> llvm.smax.i32 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1179,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1179,14)
+   -> INLINE: mod_che_bdycosetup_che_bdycon_mp_xfune_ /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1200,28)
+      -> DELETE: llvm.exp.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1209,17)
+      -> llvm.exp.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1209,17)
+      -> llvm.exp.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1209,17)
+   -> INLINE: mod_che_bdycosetup_che_bdycon_mp_xfune_ /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1201,28)
+      -> DELETE: llvm.exp.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1209,17)
+      -> DELETE: llvm.exp.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1209,17)
+      -> llvm.exp.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1209,17)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1200,28)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1200,28)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1201,28)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1201,28)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1179,14)
+   -> DELETE: llvm.exp.v2f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1209,17)
+   -> DELETE: llvm.masked.scatter.v2f64.v2p0 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1200,9)
+   -> DELETE: llvm.exp.v2f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1209,17)
+   -> DELETE: llvm.masked.scatter.v2f64.v2p0 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1201,9)
+
+COMPILE FUNC: mod_che_bdycosetup_che_bdycon_mp_xfune_
+   -> llvm.exp.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1209,17)
+
+COMPILE FUNC: mod_che_bdyco._
+
+COMPILE FUNC: mod_che_bdyco_mp_allocate_mod_che_bdyco_
+
+COMPILE FUNC: mod_che_bdyco_mp_che_init_bdy_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (117,14)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (129,5)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (130,5)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (140,9)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (152,9)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (198,9)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (217,11)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (252,7)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (289,33)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (302,7)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (129,5)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (130,5)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (140,9)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (154,39)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (219,41)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (252,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (302,7)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (289,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (289,33)
+
+COMPILE FUNC: mod_che_bdyco_mp_chem_bdyin_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (341,11)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (400,33)
+   -> DELETE: llvm.memmove.p0.p0.i64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (414,7)
+   -> DELETE: mod_date_mp_initfromtypedt_ /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (414,7)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (414,7)
+   -> llvm.memmove.p0.p0.i64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (416,7)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (330,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (343,41)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (414,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (416,7)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (400,33)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (400,33)
+
+COMPILE FUNC: mod_che_bdyco_mp_chem_bdyval_uncoupled_
+
+COMPILE FUNC: mod_che_bdyco_mp_chem_bdyval_coupled_
+   -> llvm.memset.p0.i64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (582,10)
+
+COMPILE FUNC: mod_che_bdyco_mp_nudge_chiten_
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (825,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (846,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (867,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (888,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (910,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (911,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (912,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (913,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (914,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (916,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (931,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (932,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (933,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (934,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (935,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (937,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (952,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (953,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (954,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (955,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (956,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (958,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (973,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (974,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (975,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (976,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (977,23)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (979,28)
+
+COMPILE FUNC: mod_che_bdyco_mp_monudgechi_
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1006,9)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1006,9)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1006,9)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1006,9)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1023,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1042,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1061,30)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1080,30)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1094,7)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1095,22)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1094,7)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1094,7)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1094,7)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1111,27)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1130,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1149,28)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1168,28)
+
+COMPILE FUNC: mod_che_bdyco_mp_monudgechi_.DIR.OMP.TEAMS.11.split4000
+
+COMPILE FUNC: mod_che_bdyco_mp_monudgechi_.DIR.OMP.TEAMS.2.split4017
+
+COMPILE FUNC: mod_che_bdyco_mp_monudgechi_.DIR.OMP.DISTRIBUTE.PARLOOP.17.split3986.split
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1568087219fkRGWG/ifxcYDSpU.i90 (1095,22)
+
+COMPILE FUNC: mod_che_bdyco_mp_monudgechi_.DIR.OMP.DISTRIBUTE.PARLOOP.8.split4004.split
+
+---- End Inlining Report ------

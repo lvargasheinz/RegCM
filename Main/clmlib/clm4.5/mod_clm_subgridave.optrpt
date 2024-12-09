@@ -1,0 +1,830 @@
+Global optimization report for : mod_clm_subgridave._
+=================================================================
+
+Global optimization report for : mod_clm_subgridave_mp_p2c_1d_
+
+LOOP BEGIN at mod_clm_subgridave.F90 (111, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (117, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (118, 5)
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (118, 5)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (120, 23)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed ANTI dependence between carr (124:11) and carr (123:35) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between carr (124:11) and carr (123:35) 
+    remark #15346: vector dependence: assumed FLOW dependence between carr (124:11) and carr (124:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between sumwt (125:11) and sumwt (123:11) 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (131, 21)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_subgridave_mp_p2c_2d_
+
+LOOP BEGIN at mod_clm_subgridave.F90 (189, 7)
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (181, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (187, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_subgridave.F90 (187, 5)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (189, 7)
+
+    LOOP BEGIN at mod_clm_subgridave.F90 (189, 7)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_subgridave.F90 (191, 24)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed ANTI dependence between carr (195:13) and carr (194:37) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between carr (195:13) and carr (194:37) 
+        remark #15346: vector dependence: assumed FLOW dependence between carr (195:13) and carr (195:13) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumwt (196:13) and sumwt (194:13) 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_subgridave.F90 (202, 22)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_subgridave_mp_p2c_1d_filter_
+
+LOOP BEGIN at mod_clm_subgridave.F90 (242, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_subgridave.F90 (243, 13)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (243:47) and (243:47) 
+        remark #15346: vector dependence: assumed FLOW dependence between (243:25) and (243:9) 
+        remark #15346: vector dependence: assumed FLOW dependence between (243:25) and (243:25) 
+        remark #15346: vector dependence: assumed FLOW dependence between (243:25) and (243:25) 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_subgridave_mp_p2c_2d_filter_
+
+LOOP BEGIN at mod_clm_subgridave.F90 (272, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_subgridave.F90 (275, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_clm_subgridave.F90 (276, 15)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between (276:53) and (276:53) 
+            remark #15346: vector dependence: assumed FLOW dependence between (276:27) and (276:11) 
+            remark #15346: vector dependence: assumed FLOW dependence between (276:27) and (276:27) 
+            remark #15346: vector dependence: assumed FLOW dependence between (276:27) and (276:27) 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_subgridave_mp_p2l_1d_
+
+LOOP BEGIN at mod_clm_subgridave.F90 (337, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (341, 23)
+    remark #15535: Loop was not vectorized: loop contains switch statement. Consider using if-else statement.
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (359, 23)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (382, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (388, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (389, 5)
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (389, 5)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (391, 23)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed ANTI dependence between larr (396:11) and larr (395:35) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between larr (396:11) and larr (395:35) 
+    remark #15346: vector dependence: assumed FLOW dependence between larr (396:11) and larr (396:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between sumwt (397:11) and sumwt (395:11) 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (403, 21)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_subgridave_mp_p2l_2d_
+
+LOOP BEGIN at mod_clm_subgridave.F90 (526, 7)
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (473, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (477, 23)
+    remark #15535: Loop was not vectorized: loop contains switch statement. Consider using if-else statement.
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (495, 23)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (518, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (524, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_subgridave.F90 (524, 5)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (526, 7)
+
+    LOOP BEGIN at mod_clm_subgridave.F90 (526, 7)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_subgridave.F90 (528, 25)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed ANTI dependence between larr (533:13) and larr (532:39) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between larr (533:13) and larr (532:39) 
+        remark #15346: vector dependence: assumed FLOW dependence between larr (533:13) and larr (533:13) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumwt (535:13) and sumwt (532:13) 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_subgridave.F90 (541, 23)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_subgridave_mp_p2g_1d_
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1483, 6)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (620, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (624, 23)
+    remark #15535: Loop was not vectorized: loop contains switch statement. Consider using if-else statement.
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (642, 23)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (665, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (671, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (672, 5)
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (672, 5)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (674, 23)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed ANTI dependence between garr (681:11) and garr (680:37) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between garr (681:11) and garr (680:37) 
+    remark #15346: vector dependence: assumed FLOW dependence between garr (681:11) and garr (681:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between sumwt (683:11) and sumwt (680:11) 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (689, 21)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_subgridave_mp_p2g_2d_
+
+LOOP BEGIN at mod_clm_subgridave.F90 (819, 7)
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1483, 6)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (766, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (770, 23)
+    remark #15535: Loop was not vectorized: loop contains switch statement. Consider using if-else statement.
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (788, 23)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (811, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (817, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_subgridave.F90 (817, 5)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (819, 7)
+
+    LOOP BEGIN at mod_clm_subgridave.F90 (819, 7)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_subgridave.F90 (821, 25)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed ANTI dependence between garr (828:13) and garr (827:39) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between garr (828:13) and garr (827:39) 
+        remark #15346: vector dependence: assumed FLOW dependence between garr (828:13) and garr (828:13) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumwt (830:13) and sumwt (827:13) 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_subgridave.F90 (836, 23)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_subgridave_mp_c2l_1d_
+
+LOOP BEGIN at mod_clm_subgridave.F90 (894, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (898, 23)
+    remark #15535: Loop was not vectorized: loop contains switch statement. Consider using if-else statement.
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (916, 23)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (936, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (937, 5)
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (937, 5)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (939, 23)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed ANTI dependence between larr (943:11) and larr (942:35) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between larr (943:11) and larr (942:35) 
+    remark #15346: vector dependence: assumed FLOW dependence between larr (943:11) and larr (943:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between sumwt (944:11) and sumwt (942:11) 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (950, 21)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_subgridave_mp_c2l_2d_
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1053, 7)
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1009, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1013, 23)
+    remark #15535: Loop was not vectorized: loop contains switch statement. Consider using if-else statement.
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1031, 23)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1051, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_subgridave.F90 (1051, 5)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1053, 7)
+
+    LOOP BEGIN at mod_clm_subgridave.F90 (1053, 7)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_subgridave.F90 (1055, 25)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed ANTI dependence between larr (1059:13) and larr (1058:39) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between larr (1059:13) and larr (1058:39) 
+        remark #15346: vector dependence: assumed FLOW dependence between larr (1059:13) and larr (1059:13) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumwt (1060:13) and sumwt (1058:13) 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_subgridave.F90 (1066, 23)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_subgridave_mp_c2g_1d_
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1483, 6)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1133, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1137, 23)
+    remark #15535: Loop was not vectorized: loop contains switch statement. Consider using if-else statement.
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1155, 23)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1175, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1176, 5)
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1176, 5)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1178, 23)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed ANTI dependence between garr (1184:11) and garr (1183:37) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between garr (1184:11) and garr (1183:37) 
+    remark #15346: vector dependence: assumed FLOW dependence between garr (1184:11) and garr (1184:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between sumwt (1185:11) and sumwt (1183:11) 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1191, 21)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_subgridave_mp_c2g_2d_
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1303, 7)
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1483, 6)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1259, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1263, 23)
+    remark #15535: Loop was not vectorized: loop contains switch statement. Consider using if-else statement.
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1281, 23)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1301, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_subgridave.F90 (1301, 5)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1303, 7)
+
+    LOOP BEGIN at mod_clm_subgridave.F90 (1303, 7)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_subgridave.F90 (1305, 25)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed ANTI dependence between garr (1311:13) and garr (1310:38) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between garr (1311:13) and garr (1310:38) 
+        remark #15346: vector dependence: assumed FLOW dependence between garr (1311:13) and garr (1311:13) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumwt (1313:13) and sumwt (1310:13) 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_subgridave.F90 (1319, 23)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_subgridave_mp_l2g_1d_
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1483, 6)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1367, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1368, 5)
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1368, 5)
+<Multiversioned v2>
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1370, 23)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed ANTI dependence between garr (1374:11) and garr (1373:37) 
+    remark #15346: vector dependence: assumed OUTPUT dependence between garr (1374:11) and garr (1373:37) 
+    remark #15346: vector dependence: assumed FLOW dependence between garr (1374:11) and garr (1374:11) 
+    remark #15346: vector dependence: assumed FLOW dependence between sumwt (1375:11) and sumwt (1373:11) 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1381, 21)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_subgridave_mp_l2g_2d_
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1433, 7)
+<Multiversioned v1>
+    remark #25408: memset generated
+    remark #25562: The loop has been multiversioned for the small trip count
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1483, 6)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1431, 5)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_subgridave.F90 (1431, 5)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1433, 7)
+
+    LOOP BEGIN at mod_clm_subgridave.F90 (1433, 7)
+    <Multiversioned v2>
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_subgridave.F90 (1435, 25)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed ANTI dependence between garr (1439:13) and garr (1438:39) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between garr (1439:13) and garr (1438:39) 
+        remark #15346: vector dependence: assumed FLOW dependence between garr (1439:13) and garr (1439:13) 
+        remark #15346: vector dependence: assumed FLOW dependence between sumwt (1440:13) and sumwt (1438:13) 
+    LOOP END
+
+    LOOP BEGIN at mod_clm_subgridave.F90 (1446, 23)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_subgridave_mp_build_scale_l2g_
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1483, 6)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_subgridave_mp_create_scale_l2g_lookup_
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1520, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1523, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_subgridave.F90 (1530, 7)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_clm_subgridave_mp_p2c_1d_
+   -> llvm.smax.i32 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (79,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (79,14)
+   -> llvm.smax.i32 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (79,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (79,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (79,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (79,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (118,5)
+
+COMPILE FUNC: mod_clm_subgridave_mp_p2c_2d_
+   -> llvm.smax.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (147,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (147,14)
+   -> llvm.smax.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (147,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (147,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (147,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (147,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (189,7)
+
+COMPILE FUNC: mod_clm_subgridave_mp_p2l_1d_
+   -> llvm.smax.i32 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (285,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (285,14)
+   -> llvm.smax.i32 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (285,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (285,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (285,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (366,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (363,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (363,55)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (361,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (361,55)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (285,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (285,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (285,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (389,5)
+
+COMPILE FUNC: mod_clm_subgridave_mp_p2l_2d_
+   -> llvm.smax.i32 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (419,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (419,14)
+   -> llvm.smax.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (419,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (419,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (419,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (502,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (499,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (499,57)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (497,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (497,57)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (419,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (419,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (419,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (526,7)
+
+COMPILE FUNC: mod_clm_subgridave_mp_p2g_1d_
+   -> llvm.smax.i32 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (559,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (559,14)
+   -> llvm.smax.i32 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (559,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (559,14)
+   -> llvm.smax.i32 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (559,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (559,14)
+   -> llvm.smax.i32 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (559,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (559,14)
+   -> INLINE: mod_clm_subgridave_mp_build_scale_l2g_ /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (615,10)
+      -> mod_clm_subgridave_mp_create_scale_l2g_lookup_ /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1479,11)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (649,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (646,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (646,57)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (644,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (644,57)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (615,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (615,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (615,10)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (615,10)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (559,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (559,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (559,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (559,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (672,5)
+
+COMPILE FUNC: mod_clm_subgridave_mp_build_scale_l2g_
+   -> mod_clm_subgridave_mp_create_scale_l2g_lookup_ /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1479,11)
+
+COMPILE FUNC: mod_clm_subgridave_mp_p2g_2d_
+   -> llvm.smax.i32 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (705,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (705,14)
+   -> llvm.smax.i32 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (705,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (705,14)
+   -> llvm.smax.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (705,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (705,14)
+   -> llvm.smax.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (705,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (705,14)
+   -> INLINE: mod_clm_subgridave_mp_build_scale_l2g_ /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (761,10)
+      -> mod_clm_subgridave_mp_create_scale_l2g_lookup_ /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1479,11)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (795,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (792,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (792,57)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (790,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (790,57)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (761,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (761,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (761,10)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (761,10)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (705,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (705,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (705,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (705,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (819,7)
+
+COMPILE FUNC: mod_clm_subgridave_mp_c2l_1d_
+   -> llvm.smax.i32 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (854,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (854,14)
+   -> llvm.smax.i32 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (854,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (854,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (923,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (920,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (920,57)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (918,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (918,57)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (854,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (854,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (937,5)
+
+COMPILE FUNC: mod_clm_subgridave_mp_c2l_2d_
+   -> llvm.smax.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (966,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (966,14)
+   -> llvm.smax.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (966,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (966,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1038,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1035,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1035,57)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1033,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1033,57)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (966,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (966,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1053,7)
+
+COMPILE FUNC: mod_clm_subgridave_mp_c2g_1d_
+   -> llvm.smax.i32 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1084,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1084,14)
+   -> llvm.smax.i32 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1084,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1084,14)
+   -> llvm.smax.i32 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1084,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1084,14)
+   -> INLINE: mod_clm_subgridave_mp_build_scale_l2g_ /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1128,10)
+      -> mod_clm_subgridave_mp_create_scale_l2g_lookup_ /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1479,11)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1162,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1159,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1159,57)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1157,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1157,57)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1128,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1128,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1128,10)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1128,10)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1084,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1084,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1084,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1176,5)
+
+COMPILE FUNC: mod_clm_subgridave_mp_c2g_2d_
+   -> llvm.smax.i32 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1207,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1207,14)
+   -> llvm.smax.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1207,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1207,14)
+   -> llvm.smax.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1207,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1207,14)
+   -> INLINE: mod_clm_subgridave_mp_build_scale_l2g_ /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1254,10)
+      -> mod_clm_subgridave_mp_create_scale_l2g_lookup_ /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1479,11)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1288,39)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1285,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1285,57)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1283,29)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1283,57)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1254,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1254,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1254,10)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1254,10)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1207,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1207,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1207,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1303,7)
+
+COMPILE FUNC: mod_clm_subgridave_mp_l2g_1d_
+   -> llvm.smax.i32 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1336,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1336,14)
+   -> llvm.smax.i32 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1336,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1336,14)
+   -> INLINE: mod_clm_subgridave_mp_build_scale_l2g_ /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1365,10)
+      -> mod_clm_subgridave_mp_create_scale_l2g_lookup_ /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1479,11)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1365,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1365,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1365,10)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1365,10)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1336,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1336,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1368,5)
+
+COMPILE FUNC: mod_clm_subgridave_mp_l2g_2d_
+   -> llvm.smax.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1397,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1397,14)
+   -> llvm.smax.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1397,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1397,14)
+   -> INLINE: mod_clm_subgridave_mp_build_scale_l2g_ /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1429,10)
+      -> mod_clm_subgridave_mp_create_scale_l2g_lookup_ /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1479,11)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1429,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1429,10)
+   -> DELETE: llvm.experimental.noalias.scope.decl /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1429,10)
+   -> llvm.experimental.noalias.scope.decl /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1429,10)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1397,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1397,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0195100724o8wuMG/ifxKaCmSN.i90 (1433,7)
+
+COMPILE FUNC: mod_clm_subgridave._
+
+COMPILE FUNC: mod_clm_subgridave_mp_p2c_1d_filter_
+
+COMPILE FUNC: mod_clm_subgridave_mp_p2c_2d_filter_
+
+COMPILE FUNC: mod_clm_subgridave_mp_create_scale_l2g_lookup_
+
+---- End Inlining Report ------

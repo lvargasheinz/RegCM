@@ -1,0 +1,62 @@
+Global optimization report for : mod_clm_tridiagonal._
+=================================================================
+
+Global optimization report for : mod_clm_tridiagonal_mp_tridiagonal_
+
+LOOP BEGIN at mod_clm_tridiagonal.F90 (56, 5)
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+
+LOOP BEGIN at mod_clm_tridiagonal.F90 (59, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_tridiagonal.F90 (63, 39)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed ANTI dependence between bet and bet (81:15) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between u (66:15) and u (70:15) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between u (66:15) and u (78:15) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between u (66:15) and u (82:15) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between gam (68:15) and gam (80:15) 
+        remark #15346: vector dependence: assumed FLOW dependence between bet (69:15) and bet 
+        remark #15346: vector dependence: assumed FLOW dependence between bet (69:15) and bet 
+        remark #15346: vector dependence: assumed OUTPUT dependence between bet (69:15) and bet (81:15) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between u (70:15) and u (66:15) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between u (70:15) and u (78:15) 
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_clm_tridiagonal.F90 (90, 7)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_clm_tridiagonal.F90 (94, 39)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed ANTI dependence between u (96:13) and u (102:13) 
+        remark #15346: vector dependence: assumed FLOW dependence between u (96:13) and u (96:13) 
+        remark #15346: vector dependence: assumed FLOW dependence between u (96:13) and u (102:13) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between u (96:13) and u (102:13) 
+        remark #15346: vector dependence: assumed ANTI dependence between u (102:13) and u (96:13) 
+        remark #15346: vector dependence: assumed FLOW dependence between u (102:13) and u (96:13) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between u (102:13) and u (96:13) 
+        remark #15346: vector dependence: assumed FLOW dependence between u (102:13) and u (102:13) 
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_clm_tridiagonal_mp_tridiagonal_
+   -> llvm.smax.i64 /scratch_local/ifx1680054029ZGSlvb/ifx5cTLKy.i90 (20,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1680054029ZGSlvb/ifx5cTLKy.i90 (20,14)
+   -> llvm.smax.i32 /scratch_local/ifx1680054029ZGSlvb/ifx5cTLKy.i90 (20,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx1680054029ZGSlvb/ifx5cTLKy.i90 (20,14)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1680054029ZGSlvb/ifx5cTLKy.i90 (70,26)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1680054029ZGSlvb/ifx5cTLKy.i90 (82,26)
+
+COMPILE FUNC: mod_clm_tridiagonal._
+
+---- End Inlining Report ------

@@ -1,0 +1,37 @@
+Global optimization report for : mod_clm_pftvarcon._
+=================================================================
+
+Global optimization report for : mod_clm_pftvarcon_mp_pftconrd_
+
+LOOP BEGIN at mod_clm_pftvarcon.F90 (443, 5)
+LOOP END
+
+LOOP BEGIN at mod_clm_pftvarcon.F90 (516, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed ANTI dependence between (527:30) and (527:30) 
+    remark #15346: vector dependence: assumed ANTI dependence
+    remark #15346: vector dependence: assumed OUTPUT dependence between (527:30) and (527:30) 
+    remark #15346: vector dependence: assumed OUTPUT dependence
+    remark #15346: vector dependence: assumed FLOW dependence between (527:30) and (527:30) 
+    remark #15346: vector dependence: assumed ANTI dependence between (527:30) and (527:30) 
+    remark #15346: vector dependence: assumed ANTI dependence
+    remark #15346: vector dependence: assumed ANTI dependence
+    remark #15346: vector dependence: assumed OUTPUT dependence between (526:14) and (527:30) 
+    remark #15346: vector dependence: assumed OUTPUT dependence
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: mod_clm_pftvarcon._
+
+COMPILE FUNC: mod_clm_pftvarcon_mp_pftconrd_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0253837684QPg5Td/ifxhij1pW.i90 (287,14)
+   -> llvm.fabs.f64 /scratch_local/ifx0253837684QPg5Td/ifxhij1pW.i90 (539,12)
+
+---- End Inlining Report ------

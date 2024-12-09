@@ -1,0 +1,57 @@
+Global optimization report for : mod_clm_histflds._
+=================================================================
+
+Global optimization report for : mod_clm_histflds_mp_hist_initflds_
+
+LOOP BEGIN at mod_clm_histflds.F90 (706, 8)
+    remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+LOOP END
+=================================================================
+
+Global optimization report for : mod_clm_histflds_mp_hist_addfld_decomp_
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: llvm.for.cpystr.i64.i64.i64
+
+DEAD STATIC FUNC: llvm.memcpy.p0.p0.i64
+
+DEAD STATIC FUNC: llvm.memmove.p0.p0.i64
+
+DEAD STATIC FUNC: llvm.memset.p0.i64
+
+COMPILE FUNC: mod_clm_histflds_mp_hist_initflds_
+   -> DELETE: llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx2037484981AP1rPZ/ifxpDYj9k.i90 (71,7)
+   -> DELETE: llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx2037484981AP1rPZ/ifxpDYj9k.i90 (73,7)
+   -> DELETE: llvm.memmove.p0.p0.i64 /scratch_local/ifx2037484981AP1rPZ/ifxpDYj9k.i90 (243,60)
+   -> DELETE: llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx2037484981AP1rPZ/ifxpDYj9k.i90 (885,5)
+   -> DELETE: llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx2037484981AP1rPZ/ifxpDYj9k.i90 (1169,5)
+   -> DELETE: llvm.memmove.p0.p0.i64 /scratch_local/ifx2037484981AP1rPZ/ifxpDYj9k.i90 (6407,62)
+   -> DELETE: llvm.memmove.p0.p0.i64 /scratch_local/ifx2037484981AP1rPZ/ifxpDYj9k.i90 (6413,62)
+   -> DELETE: llvm.memmove.p0.p0.i64 /scratch_local/ifx2037484981AP1rPZ/ifxpDYj9k.i90 (6419,63)
+   -> DELETE: llvm.memmove.p0.p0.i64 /scratch_local/ifx2037484981AP1rPZ/ifxpDYj9k.i90 (6425,63)
+   -> DELETE: llvm.memmove.p0.p0.i64 /scratch_local/ifx2037484981AP1rPZ/ifxpDYj9k.i90 (6441,62)
+   -> DELETE: llvm.memmove.p0.p0.i64 /scratch_local/ifx2037484981AP1rPZ/ifxpDYj9k.i90 (6447,62)
+   -> DELETE: llvm.memmove.p0.p0.i64 /scratch_local/ifx2037484981AP1rPZ/ifxpDYj9k.i90 (6482,67)
+   -> DELETE: llvm.memmove.p0.p0.i64 /scratch_local/ifx2037484981AP1rPZ/ifxpDYj9k.i90 (6487,65)
+   -> DELETE: llvm.memmove.p0.p0.i64 /scratch_local/ifx2037484981AP1rPZ/ifxpDYj9k.i90 (6492,65)
+   -> DELETE: llvm.memmove.p0.p0.i64 /scratch_local/ifx2037484981AP1rPZ/ifxpDYj9k.i90 (73,7)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx2037484981AP1rPZ/ifxpDYj9k.i90 (73,7)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx2037484981AP1rPZ/ifxpDYj9k.i90 (885,5)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx2037484981AP1rPZ/ifxpDYj9k.i90 (885,5)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx2037484981AP1rPZ/ifxpDYj9k.i90 (1169,5)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx2037484981AP1rPZ/ifxpDYj9k.i90 (1169,5)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx2037484981AP1rPZ/ifxpDYj9k.i90 (71,7)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx2037484981AP1rPZ/ifxpDYj9k.i90 (71,7)
+
+COMPILE FUNC: mod_clm_histflds._
+
+COMPILE FUNC: mod_clm_histflds_mp_hist_addfld_decomp_
+
+---- End Inlining Report ------
