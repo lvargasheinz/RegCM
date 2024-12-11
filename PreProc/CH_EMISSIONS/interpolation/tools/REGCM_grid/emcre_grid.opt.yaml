@@ -32982,7 +32982,7 @@ Args:
     DebugLoc:        { File: emcre_grid.F90, Line: 100, Column: 3 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: emcre_grid.F90, Line: 104, Column: 3 }
+    DebugLoc:        { File: emcre_grid.F90, Line: 103, Column: 3 }
 ...
 --- !Missed
 Pass:            gvn
@@ -32998,7 +32998,7 @@ Args:
     DebugLoc:        { File: emcre_grid.F90, Line: 100, Column: 3 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: emcre_grid.F90, Line: 103, Column: 3 }
+    DebugLoc:        { File: emcre_grid.F90, Line: 104, Column: 3 }
 ...
 --- !Missed
 Pass:            gvn
@@ -33030,7 +33030,7 @@ Args:
     DebugLoc:        { File: emcre_grid.F90, Line: 100, Column: 3 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: emcre_grid.F90, Line: 104, Column: 3 }
+    DebugLoc:        { File: emcre_grid.F90, Line: 103, Column: 3 }
 ...
 --- !Missed
 Pass:            gvn
@@ -33046,7 +33046,7 @@ Args:
     DebugLoc:        { File: emcre_grid.F90, Line: 100, Column: 3 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: emcre_grid.F90, Line: 103, Column: 3 }
+    DebugLoc:        { File: emcre_grid.F90, Line: 104, Column: 3 }
 ...
 --- !Missed
 Pass:            gvn
@@ -33078,7 +33078,7 @@ Args:
     DebugLoc:        { File: emcre_grid.F90, Line: 100, Column: 3 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: emcre_grid.F90, Line: 104, Column: 3 }
+    DebugLoc:        { File: emcre_grid.F90, Line: 103, Column: 3 }
 ...
 --- !Missed
 Pass:            gvn
@@ -33094,7 +33094,7 @@ Args:
     DebugLoc:        { File: emcre_grid.F90, Line: 100, Column: 3 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: emcre_grid.F90, Line: 103, Column: 3 }
+    DebugLoc:        { File: emcre_grid.F90, Line: 104, Column: 3 }
 ...
 --- !Missed
 Pass:            gvn
@@ -33798,7 +33798,55 @@ Args:
     DebugLoc:        { File: emcre_grid.F90, Line: 102, Column: 3 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
+    DebugLoc:        { File: emcre_grid.F90, Line: 103, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: emcre_grid.F90, Line: 106, Column: 3 }
+Function:        MAIN__
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: emcre_grid.F90, Line: 102, Column: 3 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: emcre_grid.F90, Line: 105, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: emcre_grid.F90, Line: 106, Column: 3 }
+Function:        MAIN__
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: emcre_grid.F90, Line: 102, Column: 3 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
     DebugLoc:        { File: emcre_grid.F90, Line: 104, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: emcre_grid.F90, Line: 106, Column: 3 }
+Function:        MAIN__
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: emcre_grid.F90, Line: 102, Column: 3 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: emcre_grid.F90, Line: 102, Column: 3 }
 ...
 --- !Missed
 Pass:            gvn
@@ -33846,7 +33894,7 @@ Args:
     DebugLoc:        { File: emcre_grid.F90, Line: 102, Column: 3 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: emcre_grid.F90, Line: 102, Column: 3 }
+    DebugLoc:        { File: emcre_grid.F90, Line: 104, Column: 3 }
 ...
 --- !Missed
 Pass:            gvn
@@ -33862,7 +33910,7 @@ Args:
     DebugLoc:        { File: emcre_grid.F90, Line: 102, Column: 3 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: emcre_grid.F90, Line: 104, Column: 3 }
+    DebugLoc:        { File: emcre_grid.F90, Line: 102, Column: 3 }
 ...
 --- !Missed
 Pass:            gvn
@@ -33910,55 +33958,7 @@ Args:
     DebugLoc:        { File: emcre_grid.F90, Line: 102, Column: 3 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: emcre_grid.F90, Line: 102, Column: 3 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: emcre_grid.F90, Line: 106, Column: 3 }
-Function:        MAIN__
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     store
-    DebugLoc:        { File: emcre_grid.F90, Line: 102, Column: 3 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
     DebugLoc:        { File: emcre_grid.F90, Line: 104, Column: 3 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: emcre_grid.F90, Line: 106, Column: 3 }
-Function:        MAIN__
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     store
-    DebugLoc:        { File: emcre_grid.F90, Line: 102, Column: 3 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: emcre_grid.F90, Line: 103, Column: 3 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: emcre_grid.F90, Line: 106, Column: 3 }
-Function:        MAIN__
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     store
-    DebugLoc:        { File: emcre_grid.F90, Line: 102, Column: 3 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: emcre_grid.F90, Line: 105, Column: 3 }
 ...
 --- !Missed
 Pass:            gvn

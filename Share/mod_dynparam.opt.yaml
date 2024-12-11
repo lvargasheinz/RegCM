@@ -1177,30 +1177,6 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NoDefinition
-DebugLoc:        { File: mod_dynparam.F90, Line: 843, Column: 5 }
-Function:        mod_dynparam_mp_initparam_
-Args:
-  - Callee:          for_rewind
-  - String:          ' will not be inlined into '
-  - Caller:          mod_dynparam_mp_initparam_
-    DebugLoc:        { File: mod_dynparam.F90, Line: 490, Column: 0 }
-  - String:          ' because its definition is unavailable'
-...
---- !Missed
-Pass:            inline
-Name:            NoDefinition
-DebugLoc:        { File: mod_dynparam.F90, Line: 844, Column: 5 }
-Function:        mod_dynparam_mp_initparam_
-Args:
-  - Callee:          for_read_seq_nml
-  - String:          ' will not be inlined into '
-  - Caller:          mod_dynparam_mp_initparam_
-    DebugLoc:        { File: mod_dynparam.F90, Line: 490, Column: 0 }
-  - String:          ' because its definition is unavailable'
-...
---- !Missed
-Pass:            inline
-Name:            NoDefinition
 DebugLoc:        { File: mod_dynparam.F90, Line: 851, Column: 11 }
 Function:        mod_dynparam_mp_initparam_
 Args:
@@ -2378,30 +2354,6 @@ Args:
 Pass:            inline
 Name:            NoDefinition
 DebugLoc:        { File: mod_dynparam.F90, Line: 833, Column: 7 }
-Function:        mod_dynparam_mp_initparam_
-Args:
-  - Callee:          for_read_seq_nml
-  - String:          ' will not be inlined into '
-  - Caller:          mod_dynparam_mp_initparam_
-    DebugLoc:        { File: mod_dynparam.F90, Line: 490, Column: 0 }
-  - String:          ' because its definition is unavailable'
-...
---- !Missed
-Pass:            inline
-Name:            NoDefinition
-DebugLoc:        { File: mod_dynparam.F90, Line: 843, Column: 5 }
-Function:        mod_dynparam_mp_initparam_
-Args:
-  - Callee:          for_rewind
-  - String:          ' will not be inlined into '
-  - Caller:          mod_dynparam_mp_initparam_
-    DebugLoc:        { File: mod_dynparam.F90, Line: 490, Column: 0 }
-  - String:          ' because its definition is unavailable'
-...
---- !Missed
-Pass:            inline
-Name:            NoDefinition
-DebugLoc:        { File: mod_dynparam.F90, Line: 844, Column: 5 }
 Function:        mod_dynparam_mp_initparam_
 Args:
   - Callee:          for_read_seq_nml
@@ -4033,30 +3985,6 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NoDefinition
-DebugLoc:        { File: mod_dynparam.F90, Line: 843, Column: 5 }
-Function:        mod_dynparam_mp_initparam_
-Args:
-  - Callee:          for_rewind
-  - String:          ' will not be inlined into '
-  - Caller:          mod_dynparam_mp_initparam_
-    DebugLoc:        { File: mod_dynparam.F90, Line: 490, Column: 0 }
-  - String:          ' because its definition is unavailable'
-...
---- !Missed
-Pass:            inline
-Name:            NoDefinition
-DebugLoc:        { File: mod_dynparam.F90, Line: 844, Column: 5 }
-Function:        mod_dynparam_mp_initparam_
-Args:
-  - Callee:          for_read_seq_nml
-  - String:          ' will not be inlined into '
-  - Caller:          mod_dynparam_mp_initparam_
-    DebugLoc:        { File: mod_dynparam.F90, Line: 490, Column: 0 }
-  - String:          ' because its definition is unavailable'
-...
---- !Missed
-Pass:            inline
-Name:            NoDefinition
 DebugLoc:        { File: mod_dynparam.F90, Line: 851, Column: 11 }
 Function:        mod_dynparam_mp_initparam_
 Args:
@@ -5234,30 +5162,6 @@ Args:
 Pass:            inline
 Name:            NoDefinition
 DebugLoc:        { File: mod_dynparam.F90, Line: 833, Column: 7 }
-Function:        mod_dynparam_mp_initparam_
-Args:
-  - Callee:          for_read_seq_nml
-  - String:          ' will not be inlined into '
-  - Caller:          mod_dynparam_mp_initparam_
-    DebugLoc:        { File: mod_dynparam.F90, Line: 490, Column: 0 }
-  - String:          ' because its definition is unavailable'
-...
---- !Missed
-Pass:            inline
-Name:            NoDefinition
-DebugLoc:        { File: mod_dynparam.F90, Line: 843, Column: 5 }
-Function:        mod_dynparam_mp_initparam_
-Args:
-  - Callee:          for_rewind
-  - String:          ' will not be inlined into '
-  - Caller:          mod_dynparam_mp_initparam_
-    DebugLoc:        { File: mod_dynparam.F90, Line: 490, Column: 0 }
-  - String:          ' because its definition is unavailable'
-...
---- !Missed
-Pass:            inline
-Name:            NoDefinition
-DebugLoc:        { File: mod_dynparam.F90, Line: 844, Column: 5 }
 Function:        mod_dynparam_mp_initparam_
 Args:
   - Callee:          for_read_seq_nml
@@ -6922,7 +6826,7 @@ Args:
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: mod_dynparam.F90, Line: 843, Column: 5 }
+DebugLoc:        { File: mod_dynparam.F90, Line: 851, Column: 11 }
 Function:        mod_dynparam_mp_initparam_
 Args:
   - String:          'load of type '
@@ -6938,7 +6842,7 @@ Args:
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: mod_dynparam.F90, Line: 843, Column: 5 }
+DebugLoc:        { File: mod_dynparam.F90, Line: 851, Column: 11 }
 Function:        mod_dynparam_mp_initparam_
 Args:
   - String:          'load of type '
@@ -6950,22 +6854,6 @@ Args:
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
     DebugLoc:        { File: mod_dynparam.F90, Line: 816, Column: 5 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_dynparam.F90, Line: 851, Column: 11 }
-Function:        mod_dynparam_mp_initparam_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: mod_dynparam.F90, Line: 844, Column: 5 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_dynparam.F90, Line: 844, Column: 5 }
 ...
 --- !Missed
 Pass:            gvn
@@ -8593,7 +8481,7 @@ Args:
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: mod_dynparam.F90, Line: 843, Column: 5 }
+DebugLoc:        { File: mod_dynparam.F90, Line: 851, Column: 11 }
 Function:        mod_dynparam_mp_initparam_
 Args:
   - String:          'load of type '
@@ -8609,7 +8497,7 @@ Args:
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: mod_dynparam.F90, Line: 843, Column: 5 }
+DebugLoc:        { File: mod_dynparam.F90, Line: 851, Column: 11 }
 Function:        mod_dynparam_mp_initparam_
 Args:
   - String:          'load of type '
@@ -8621,22 +8509,6 @@ Args:
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
     DebugLoc:        { File: mod_dynparam.F90, Line: 816, Column: 5 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_dynparam.F90, Line: 851, Column: 11 }
-Function:        mod_dynparam_mp_initparam_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: mod_dynparam.F90, Line: 844, Column: 5 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_dynparam.F90, Line: 844, Column: 5 }
 ...
 --- !Missed
 Pass:            gvn
@@ -11092,23 +10964,7 @@ Args:
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: mod_dynparam.F90, Line: 843, Column: 5 }
-Function:        mod_dynparam_mp_initparam_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: mod_dynparam.F90, Line: 773, Column: 5 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_dynparam.F90, Line: 833, Column: 7 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_dynparam.F90, Line: 843, Column: 5 }
+DebugLoc:        { File: mod_dynparam.F90, Line: 851, Column: 11 }
 Function:        mod_dynparam_mp_initparam_
 Args:
   - String:          'load of type '
@@ -11132,10 +10988,10 @@ Args:
   - String:          ' not eliminated'
   - String:          ' in favor of '
   - OtherAccess:     load
-    DebugLoc:        { File: mod_dynparam.F90, Line: 844, Column: 5 }
+    DebugLoc:        { File: mod_dynparam.F90, Line: 773, Column: 5 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_dynparam.F90, Line: 844, Column: 5 }
+    DebugLoc:        { File: mod_dynparam.F90, Line: 833, Column: 7 }
 ...
 --- !Missed
 Pass:            gvn
@@ -11478,9 +11334,9 @@ Args:
   - String:          ' reloads '
   - TotalReloadsCost: '7.701134e-01'
   - String:          ' total reloads cost '
-  - NumVRCopies:     '158'
+  - NumVRCopies:     '153'
   - String:          ' virtual registers copies '
-  - TotalCopiesCost: '1.459483e+01'
+  - TotalCopiesCost: '1.458894e+01'
   - String:          ' total copies cost '
   - String:          generated in function
 ...
@@ -11490,7 +11346,7 @@ Name:            StackSize
 DebugLoc:        { File: mod_dynparam.F90, Line: 490, Column: 0 }
 Function:        mod_dynparam_mp_initparam_
 Args:
-  - NumStackBytes:   '5752'
+  - NumStackBytes:   '5496'
   - String:          ' stack bytes in function'
 ...
 --- !Analysis
@@ -12340,11 +12196,11 @@ DebugLoc:        { File: mod_dynparam.F90, Line: 0, Column: 0 }
 Function:        mod_dynparam_mp_initparam_
 Args:
   - String:          'BasicBlock: '
-  - BasicBlock:      bb140_endif
+  - BasicBlock:      bb140_endif.split
   - String:          "\n"
   - String:          ''
   - String:          ': '
-  - INST_:           '79'
+  - INST_:           '11'
   - String:          "\n"
 ...
 --- !Analysis
@@ -12353,7 +12209,7 @@ Name:            InstructionCount
 DebugLoc:        { File: mod_dynparam.F90, Line: 490, Column: 0 }
 Function:        mod_dynparam_mp_initparam_
 Args:
-  - NumInstructions: '2367'
+  - NumInstructions: '2299'
   - String:          ' instructions in function'
 ...
 --- !Missed
@@ -12398,7 +12254,7 @@ DebugLoc:        { File: mod_dynparam.F90, Line: 0, Column: 0 }
 Function:        mod_dynparam_mp_init_fnestparam_
 Args:
   - String:          'BasicBlock: '
-  - BasicBlock:      dealloc.list.then544
+  - BasicBlock:      dealloc.list.then538
   - String:          "\n"
   - String:          ''
   - String:          ': '
@@ -12412,7 +12268,7 @@ DebugLoc:        { File: mod_dynparam.F90, Line: 0, Column: 0 }
 Function:        mod_dynparam_mp_init_fnestparam_
 Args:
   - String:          'BasicBlock: '
-  - BasicBlock:      bb154_else
+  - BasicBlock:      bb148_else
   - String:          "\n"
   - String:          ''
   - String:          ': '
@@ -12426,7 +12282,7 @@ DebugLoc:        { File: mod_dynparam.F90, Line: 0, Column: 0 }
 Function:        mod_dynparam_mp_init_fnestparam_
 Args:
   - String:          'BasicBlock: '
-  - BasicBlock:      bb_new553_then
+  - BasicBlock:      bb_new547_then
   - String:          "\n"
   - String:          ''
   - String:          ': '
@@ -12440,7 +12296,7 @@ DebugLoc:        { File: mod_dynparam.F90, Line: 0, Column: 0 }
 Function:        mod_dynparam_mp_init_fnestparam_
 Args:
   - String:          'BasicBlock: '
-  - BasicBlock:      bb160_endif.split
+  - BasicBlock:      bb154_endif.split
   - String:          "\n"
   - String:          ''
   - String:          ': '
@@ -12454,7 +12310,7 @@ DebugLoc:        { File: mod_dynparam.F90, Line: 0, Column: 0 }
 Function:        mod_dynparam_mp_init_fnestparam_
 Args:
   - String:          'BasicBlock: '
-  - BasicBlock:      end_label522
+  - BasicBlock:      end_label516
   - String:          "\n"
   - String:          ''
   - String:          ': '
@@ -12512,7 +12368,7 @@ DebugLoc:        { File: mod_dynparam.F90, Line: 0, Column: 0 }
 Function:        mod_dynparam_mp_init_globwindow_
 Args:
   - String:          'BasicBlock: '
-  - BasicBlock:      dealloc.list.then581
+  - BasicBlock:      dealloc.list.then575
   - String:          "\n"
   - String:          ''
   - String:          ': '
@@ -12526,7 +12382,7 @@ DebugLoc:        { File: mod_dynparam.F90, Line: 0, Column: 0 }
 Function:        mod_dynparam_mp_init_globwindow_
 Args:
   - String:          'BasicBlock: '
-  - BasicBlock:      bb168_else
+  - BasicBlock:      bb162_else
   - String:          "\n"
   - String:          ''
   - String:          ': '
@@ -12540,7 +12396,7 @@ DebugLoc:        { File: mod_dynparam.F90, Line: 0, Column: 0 }
 Function:        mod_dynparam_mp_init_globwindow_
 Args:
   - String:          'BasicBlock: '
-  - BasicBlock:      bb_new590_then
+  - BasicBlock:      bb_new584_then
   - String:          "\n"
   - String:          ''
   - String:          ': '
@@ -12554,7 +12410,7 @@ DebugLoc:        { File: mod_dynparam.F90, Line: 0, Column: 0 }
 Function:        mod_dynparam_mp_init_globwindow_
 Args:
   - String:          'BasicBlock: '
-  - BasicBlock:      bb174_endif.split
+  - BasicBlock:      bb168_endif.split
   - String:          "\n"
   - String:          ''
   - String:          ': '
@@ -12568,7 +12424,7 @@ DebugLoc:        { File: mod_dynparam.F90, Line: 0, Column: 0 }
 Function:        mod_dynparam_mp_init_globwindow_
 Args:
   - String:          'BasicBlock: '
-  - BasicBlock:      end_label559
+  - BasicBlock:      end_label553
   - String:          "\n"
   - String:          ''
   - String:          ': '

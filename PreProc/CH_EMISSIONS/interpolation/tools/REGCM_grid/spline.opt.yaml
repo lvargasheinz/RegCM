@@ -22420,7 +22420,7 @@ Args:
   - OtherAccess:     store
     DebugLoc:        { File: spline.F90, Line: 2841, Column: 5 }
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
+  - ClobberedBy:     store
     DebugLoc:        { File: spline.F90, Line: 2804, Column: 3 }
 ...
 --- !Missed
@@ -22436,7 +22436,7 @@ Args:
   - OtherAccess:     store
     DebugLoc:        { File: spline.F90, Line: 2841, Column: 5 }
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
+  - ClobberedBy:     call
     DebugLoc:        { File: spline.F90, Line: 2804, Column: 3 }
 ...
 --- !Missed
@@ -22454,6 +22454,22 @@ Args:
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
     DebugLoc:        { File: spline.F90, Line: 2698, Column: 12 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: spline.F90, Line: 2832, Column: 5 }
+Function:        spline_mp_least_set_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: spline.F90, Line: 2832, Column: 5 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: spline.F90, Line: 2807, Column: 3 }
 ...
 --- !Missed
 Pass:            gvn
@@ -22486,22 +22502,6 @@ Args:
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
     DebugLoc:        { File: spline.F90, Line: 2811, Column: 3 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: spline.F90, Line: 2832, Column: 5 }
-Function:        spline_mp_least_set_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     store
-    DebugLoc:        { File: spline.F90, Line: 2832, Column: 5 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: spline.F90, Line: 2807, Column: 3 }
 ...
 --- !Missed
 Pass:            gvn

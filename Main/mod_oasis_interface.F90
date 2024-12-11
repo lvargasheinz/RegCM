@@ -97,27 +97,19 @@ module mod_oasis_interface
                       l_cpl_ex_qatm, &
                       l_cpl_ex_hgt, &
                       l_cpl_ex_patm, &
-                      l_cpl_ex_thatm, &
-                      l_cpl_ex_sfps, &
                       l_cpl_ex_dwrlwf, &
-                      l_cpl_ex_solar, &
-                      l_cpl_ex_drydepflx, &
-                      l_cpl_ex_wetdepflx, &
                       l_cpl_ex_swdir, &
-                      l_cpl_ex_lwdir, &
+                      l_cpl_ex_swdif, &
                       l_cpl_im_tgbb, &
                       l_cpl_im_t2m, &
                       l_cpl_im_q2m, &
                       l_cpl_im_u10m, &
-!                      l_cpl_im_v10m, &
                       l_cpl_im_sent, &
                       l_cpl_im_evpr, &
                       l_cpl_im_ram1, &
                       l_cpl_im_rah1, &
- !                     l_cpl_im_br, &
                       l_cpl_im_tauy, &
                       l_cpl_im_taux, &
-  !                    l_cpl_im_drag, &
                       l_cpl_im_sncv, &
                       l_cpl_im_wt, &
                       l_cpl_im_zo, &
@@ -165,14 +157,9 @@ module mod_oasis_interface
                                  ex_qatm , & 
                                  ex_hgt , & 
                                  ex_patm , & 
-                                 ex_thatm , & 
-                                 ex_sfps , & 
                                  ex_dwrlwf , & 
                                  ex_swdir , & 
-                                 ex_lwdir , & 
-                                 ex_solar , & 
-                                 ex_drydepflx , & 
-                                 ex_wetdepflx  , & 
+                                 ex_swdif , & 
                                  im_tgbb , & 
                                  im_t2m , & 
                                  im_q2m , & 
@@ -254,33 +241,24 @@ module mod_oasis_interface
     l_make_grdce   = l_cpl_ex_slp
     ! OASIS field +++
     l_make_grdtest = l_cpl_ex_uatm .or. &
-!                      l_cpl_ex_uatm .or. &
                       l_cpl_ex_vatm .or. &
                       l_cpl_ex_qatm .or. &
                       l_cpl_ex_hgt .or. &
                       l_cpl_ex_patm .or. &
-                      l_cpl_ex_thatm .or. &
-                      l_cpl_ex_sfps .or. &
                       l_cpl_ex_dwrlwf .or. &
-                      l_cpl_ex_solar .or. &
-                      l_cpl_ex_drydepflx .or. &
-                      l_cpl_ex_wetdepflx .or. &
                       l_cpl_ex_swdir .or. &
                       l_cpl_ex_tatm .or. & 
-                      l_cpl_ex_lwdir .or. &
+                      l_cpl_ex_swdif .or. &
                       l_cpl_im_tgbb .or. & 
                       l_cpl_im_t2m .or. & 
                       l_cpl_im_q2m .or. & 
                       l_cpl_im_u10m .or. & 
- !                     l_cpl_im_v10m .or. & 
                       l_cpl_im_sent .or. & 
                       l_cpl_im_evpr .or. & 
                       l_cpl_im_ram1 .or. & 
                       l_cpl_im_rah1 .or. & 
- !                     l_cpl_im_br .or. & 
                       l_cpl_im_tauy .or. & 
                       l_cpl_im_taux .or. & 
-!                      l_cpl_im_drag .or. & 
                       l_cpl_im_sncv .or. & 
                       l_cpl_im_wt .or. & 
                       l_cpl_im_zo .or. & 
@@ -369,14 +347,9 @@ module mod_oasis_interface
     if ( l_cpl_ex_qatm ) call oasisxregcm_setup_field(ex_qatm, 'RCM_QATM', grdtest)
     if ( l_cpl_ex_hgt ) call oasisxregcm_setup_field(ex_hgt, 'RCM_HGT', grdtest)
     if ( l_cpl_ex_patm ) call oasisxregcm_setup_field(ex_patm, 'RCM_PATM', grdtest)
-    if ( l_cpl_ex_thatm ) call oasisxregcm_setup_field(ex_thatm, 'RCM_THATM', grdtest)
-    if ( l_cpl_ex_sfps ) call oasisxregcm_setup_field(ex_sfps, 'RCM_SFPS', grdtest)
     if ( l_cpl_ex_dwrlwf ) call oasisxregcm_setup_field(ex_dwrlwf, 'RCM_DWRLWF', grdtest)
     if ( l_cpl_ex_swdir ) call oasisxregcm_setup_field(ex_swdir, 'RCM_SWDIR', grdtest)
-    if ( l_cpl_ex_lwdir ) call oasisxregcm_setup_field(ex_lwdir, 'RCM_LWDIR', grdtest)
-    if ( l_cpl_ex_solar ) call oasisxregcm_setup_field(ex_solar, 'RCM_SOLAR', grdtest)
-    if ( l_cpl_ex_drydepflx ) call oasisxregcm_setup_field(ex_drydepflx, 'RCM_DRYDEPFLX', grdtest)
-    if ( l_cpl_ex_wetdepflx ) call oasisxregcm_setup_field(ex_wetdepflx, 'RCM_WETDEPFLX', grdtest)
+    if ( l_cpl_ex_swdif ) call oasisxregcm_setup_field(ex_swdif, 'RCM_SWDIF', grdtest)
     if ( l_cpl_im_tgbb )  call oasisxregcm_setup_field(im_tgbb,  'RCM_TGBB',grdtest, cpl_tgbb)
     if ( l_cpl_im_t2m )  call oasisxregcm_setup_field(im_t2m,  'RCM_T2M',grdtest, cpl_t2m)
     if ( l_cpl_im_q2m )  call oasisxregcm_setup_field(im_q2m,  'RCM_Q2M',grdtest, cpl_q2m)
@@ -468,12 +441,9 @@ module mod_oasis_interface
     if ( l_cpl_ex_qatm ) call oasisxregcm_def_field(ex_qatm, OASIS_Out)
     if ( l_cpl_ex_hgt ) call oasisxregcm_def_field(ex_hgt, OASIS_Out)
     if ( l_cpl_ex_patm ) call oasisxregcm_def_field(ex_patm, OASIS_Out)
-    if ( l_cpl_ex_thatm ) call oasisxregcm_def_field(ex_thatm, OASIS_Out)
-    if ( l_cpl_ex_sfps ) call oasisxregcm_def_field(ex_sfps, OASIS_Out)
+    if ( l_cpl_ex_swdif ) call oasisxregcm_def_field(ex_swdif, OASIS_Out)
+    if ( l_cpl_ex_swdir ) call oasisxregcm_def_field(ex_swdir, OASIS_Out)
     if ( l_cpl_ex_dwrlwf ) call oasisxregcm_def_field(ex_dwrlwf, OASIS_Out)
-    if ( l_cpl_ex_solar ) call oasisxregcm_def_field(ex_solar, OASIS_Out)
-    if ( l_cpl_ex_drydepflx ) call oasisxregcm_def_field(ex_drydepflx, OASIS_Out)
-    if ( l_cpl_ex_wetdepflx ) call oasisxregcm_def_field(ex_wetdepflx, OASIS_Out)
     if ( l_cpl_im_tgbb )  call oasisxregcm_def_field(im_tgbb,  OASIS_In)
     if ( l_cpl_im_t2m )  call oasisxregcm_def_field(im_t2m,  OASIS_In)
     if ( l_cpl_im_q2m )  call oasisxregcm_def_field(im_q2m,  OASIS_In)
@@ -1135,20 +1105,6 @@ module mod_oasis_interface
            ex_patm, time, .false. .or. l_write_restart)
       nullify(grd)
     end if
-    if ( l_cpl_ex_thatm ) then ! 
-      grd => ex_thatm%grd
-      call oasisxregcm_snd( &
-           lm%thatm( grd%j1:grd%j2 , grd%i1:grd%i2), &
-           ex_thatm, time, .false. .or. l_write_restart)
-      nullify(grd)
-    end if
-    if ( l_cpl_ex_sfps ) then ! 
-      grd => ex_sfps%grd
-      call oasisxregcm_snd( &
-           lm%sfps( grd%j1:grd%j2 , grd%i1:grd%i2), &
-           ex_sfps, time, .false. .or. l_write_restart)
-      nullify(grd)
-    end if
     if ( l_cpl_ex_dwrlwf ) then ! 
       grd => ex_dwrlwf%grd
       call oasisxregcm_snd( &
@@ -1163,32 +1119,11 @@ module mod_oasis_interface
            ex_swdir, time, .false. .or. l_write_restart)
       nullify(grd)
     end if
-    if ( l_cpl_ex_lwdir ) then ! 
-      grd => ex_lwdir%grd
+    if ( l_cpl_ex_swdif ) then ! 
+      grd => ex_swdif%grd
       call oasisxregcm_snd( &
-           lm%lwdir( grd%j1:grd%j2 , grd%i1:grd%i2), &
-           ex_lwdir, time, .false. .or. l_write_restart)
-      nullify(grd)
-    end if
-    if ( l_cpl_ex_solar ) then ! 
-      grd => ex_solar%grd
-      call oasisxregcm_snd( &
-           lm%solar( grd%j1:grd%j2 , grd%i1:grd%i2), &
-           ex_solar, time, .false. .or. l_write_restart)
-      nullify(grd)
-    end if
-    if ( l_cpl_ex_wetdepflx ) then ! 
-      grd => ex_wetdepflx%grd
-      call oasisxregcm_snd( &
-           lm%wetdepflx(grd%j1:grd%j2 , grd%i1:grd%i2,1), & !need to loop over 3 
-           ex_wetdepflx, time, .false. .or. l_write_restart)
-      nullify(grd)
-    end if
-    if ( l_cpl_ex_drydepflx ) then ! 
-      grd => ex_drydepflx%grd
-      call oasisxregcm_snd( &
-           lm%drydepflx(grd%j1:grd%j2 , grd%i1:grd%i2,1), & !need to loop over 3 
-           ex_drydepflx, time, .false. .or. l_write_restart)
+           lm%swdif( grd%j1:grd%j2 , grd%i1:grd%i2), &
+           ex_swdif, time, .false. .or. l_write_restart)
       nullify(grd)
     end if
     if ( l_cpl_ex_snow .or. l_cpl_ex_rainf) then
@@ -1350,14 +1285,9 @@ module mod_oasis_interface
     call oasisxregcm_deallocate_field(ex_qatm)
     call oasisxregcm_deallocate_field(ex_hgt)
     call oasisxregcm_deallocate_field(ex_patm)
-    call oasisxregcm_deallocate_field(ex_thatm)
-    call oasisxregcm_deallocate_field(ex_sfps)
     call oasisxregcm_deallocate_field(ex_dwrlwf)
     call oasisxregcm_deallocate_field(ex_swdir)
-    call oasisxregcm_deallocate_field(ex_lwdir)
-    call oasisxregcm_deallocate_field(ex_solar)
-    call oasisxregcm_deallocate_field(ex_drydepflx)
-    call oasisxregcm_deallocate_field(ex_wetdepflx)
+    call oasisxregcm_deallocate_field(ex_swdif)
     call oasisxregcm_deallocate_field(im_tgbb, cpl_tgbb)
     call oasisxregcm_deallocate_field(im_t2m, cpl_t2m)
     call oasisxregcm_deallocate_field(im_q2m, cpl_q2m)

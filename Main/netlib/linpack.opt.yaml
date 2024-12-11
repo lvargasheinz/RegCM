@@ -29145,19 +29145,6 @@ Args:
   - Type:            ''
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: linpack.F90, Line: 7374, Column: 12 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: linpack.F90, Line: 7275, Column: 5 }
-Function:        linpack_mp_sspfa_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
   - ClobberedBy:     call
     DebugLoc:        { File: linpack.F90, Line: 7350, Column: 17 }
 ...
@@ -29186,6 +29173,19 @@ Args:
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
     DebugLoc:        { File: linpack.F90, Line: 7411, Column: 12 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: linpack.F90, Line: 7275, Column: 5 }
+Function:        linpack_mp_sspfa_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: linpack.F90, Line: 7374, Column: 12 }
 ...
 --- !Missed
 Pass:            gvn

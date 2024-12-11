@@ -887,14 +887,6 @@ LOOP BEGIN at terrain.F90 (616, 5)
     LOOP END
 LOOP END
 
-LOOP BEGIN at terrain.F90 (630, 7)
-    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
-
-    LOOP BEGIN at terrain.F90 (630, 7)
-        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
-    LOOP END
-LOOP END
-
 LOOP BEGIN at terrain.F90 (634, 3)
 <Multiversioned v1>
     remark #25228: Loop multiversioned for Data Dependence
@@ -1132,14 +1124,6 @@ LOOP BEGIN at terrain.F90 (723, 34)
     remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
 
     LOOP BEGIN at terrain.F90 (723, 34)
-        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
-    LOOP END
-LOOP END
-
-LOOP BEGIN at terrain.F90 (731, 9)
-    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
-
-    LOOP BEGIN at terrain.F90 (731, 9)
         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
     LOOP END
 LOOP END
@@ -1513,7 +1497,7 @@ LOOP BEGIN at terrain.F90 (1008, 24)
 LOOP END
 =================================================================
 
-Global optimization report for : MAIN__.DIR.OMP.PARALLEL.LOOP.7.split27339
+Global optimization report for : MAIN__.DIR.OMP.PARALLEL.LOOP.7.split27101
 
 LOOP BEGIN at terrain.F90 (582, 5)
     remark: OpenMP: Outlined parallel loop
@@ -1571,7 +1555,7 @@ LOOP BEGIN at terrain.F90 (582, 5)
 LOOP END
 =================================================================
 
-Global optimization report for : MAIN__.DIR.OMP.PARALLEL.LOOP.227318.split27349
+Global optimization report for : MAIN__.DIR.OMP.PARALLEL.LOOP.227080.split27111
 
 LOOP BEGIN at terrain.F90 (369, 7)
     remark: OpenMP: Outlined parallel loop
@@ -1641,81 +1625,81 @@ DEAD STATIC FUNC: llvm.directive.region.entry
 DEAD STATIC FUNC: llvm.directive.region.exit
 
 COMPILE FUNC: terrain_IP_findaround_
-   -> llvm.smax.i64 /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (961,14)
-   -> DELETE: for_deallocate_handle /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (961,14)
-   -> llvm.smax.i64 /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (988,5)
-   -> llvm.smax.i64 /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (988,5)
-   -> llvm.smin.i32 /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (988,13)
-   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (1016,27)
-   -> llvm.memset.p0.i64 /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (961,14)
-   -> llvm.memset.p0.i64 /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (992,7)
+   -> llvm.smax.i64 /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (961,14)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (961,14)
+   -> llvm.smax.i64 /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (988,5)
+   -> llvm.smax.i64 /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (988,5)
+   -> llvm.smin.i32 /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (988,13)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (1016,27)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (961,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (992,7)
 
 COMPILE FUNC: MAIN__
-   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (36,9)
-   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (36,9)
-   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (36,9)
-   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (36,9)
-   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (210,3)
-   -> DELETE: mod_maputils_mp_getcoord_ /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (247,12)
-   -> DELETE: mod_maputils_mp_corpar_ /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (258,12)
-   -> DELETE: mod_maputils_mp_mappar_ /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (260,12)
-   -> DELETE: llvm.smax.i32 /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (280,20)
-   -> llvm.smin.i32 /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (345,16)
-   -> terrain_IP_findaround_ /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (350,18)
-   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (367,7)
-   -> DELETE: for_allocate_handle /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (369,7)
-   -> DELETE: for_allocate_handle /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (369,7)
-   -> DELETE: for_allocate_handle /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (369,7)
-   -> DELETE: for_allocate_handle /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (369,49)
-   -> DELETE: mod_intldtr_mp_interp_ /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (369,12)
-   -> DELETE: for_deallocate_handle /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (369,12)
-   -> DELETE: for_deallocate_handle /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (369,12)
-   -> DELETE: for_deallocate_handle /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (369,12)
-   -> DELETE: for_deallocate_handle /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (369,12)
-   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (372,7)
-   -> llvm.smax.i32 /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (401,5)
-   -> llvm.smax.i32 /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (401,5)
-   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (229,14)
-   -> DELETE: mod_maputils_mp_getcoord_ /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (450,10)
-   -> DELETE: mod_maputils_mp_corpar_ /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (461,10)
-   -> DELETE: mod_maputils_mp_mappar_ /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (463,10)
-   -> DELETE: llvm.smax.i32 /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (483,16)
-   -> llvm.smin.i32 /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (559,14)
-   -> terrain_IP_findaround_ /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (564,16)
-   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (580,7)
-   -> DELETE: for_allocate_handle /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (582,5)
-   -> DELETE: for_allocate_handle /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (582,5)
-   -> DELETE: for_allocate_handle /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (582,5)
-   -> DELETE: for_allocate_handle /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (582,36)
-   -> DELETE: mod_intldtr_mp_interp_ /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (582,10)
-   -> DELETE: for_deallocate_handle /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (582,10)
-   -> DELETE: for_deallocate_handle /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (582,10)
-   -> DELETE: for_deallocate_handle /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (582,10)
-   -> DELETE: for_deallocate_handle /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (582,10)
-   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (585,7)
-   -> llvm.smax.i32 /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (612,3)
-   -> llvm.smax.i32 /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (612,3)
-   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (874,29)
-   -> llvm.log.f64 /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (877,31)
-   -> llvm.cos.f64 /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (910,36)
-   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (914,19)
-   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (914,19)
-   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (922,20)
-   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (923,32)
-   -> llvm.arithmetic.fence.f32 /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (923,50)
-   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (923,31)
-   -> llvm.pow.f64 /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (923,28)
-   -> DELETE: llvm.smax.i32 /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (348,9)
-   -> DELETE: llvm.smax.i32 /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (390,7)
-   -> DELETE: llvm.smax.i32 /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (405,7)
-   -> DELETE: llvm.smax.i32 /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (562,7)
-   -> DELETE: llvm.smax.i32 /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (603,5)
-   -> DELETE: llvm.smax.i32 /scratch_local/ifx0754801909izg4QN/ifxJ5Oilz.i90 (616,5)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (36,9)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (36,9)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (36,9)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (36,9)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (210,3)
+   -> DELETE: mod_maputils_mp_getcoord_ /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (247,12)
+   -> DELETE: mod_maputils_mp_corpar_ /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (258,12)
+   -> DELETE: mod_maputils_mp_mappar_ /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (260,12)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (280,20)
+   -> llvm.smin.i32 /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (345,16)
+   -> terrain_IP_findaround_ /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (350,18)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (367,7)
+   -> DELETE: for_allocate_handle /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (369,7)
+   -> DELETE: for_allocate_handle /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (369,7)
+   -> DELETE: for_allocate_handle /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (369,7)
+   -> DELETE: for_allocate_handle /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (369,49)
+   -> DELETE: mod_intldtr_mp_interp_ /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (369,12)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (369,12)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (369,12)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (369,12)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (369,12)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (372,7)
+   -> llvm.smax.i32 /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (401,5)
+   -> llvm.smax.i32 /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (401,5)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (229,14)
+   -> DELETE: mod_maputils_mp_getcoord_ /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (450,10)
+   -> DELETE: mod_maputils_mp_corpar_ /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (461,10)
+   -> DELETE: mod_maputils_mp_mappar_ /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (463,10)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (483,16)
+   -> llvm.smin.i32 /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (559,14)
+   -> terrain_IP_findaround_ /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (564,16)
+   -> DELETE: llvm.directive.region.entry /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (580,7)
+   -> DELETE: for_allocate_handle /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (582,5)
+   -> DELETE: for_allocate_handle /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (582,5)
+   -> DELETE: for_allocate_handle /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (582,5)
+   -> DELETE: for_allocate_handle /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (582,36)
+   -> DELETE: mod_intldtr_mp_interp_ /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (582,10)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (582,10)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (582,10)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (582,10)
+   -> DELETE: for_deallocate_handle /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (582,10)
+   -> DELETE: llvm.directive.region.exit /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (585,7)
+   -> llvm.smax.i32 /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (612,3)
+   -> llvm.smax.i32 /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (612,3)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (874,29)
+   -> llvm.log.f64 /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (877,31)
+   -> llvm.cos.f64 /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (910,36)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (914,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (914,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (922,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (923,32)
+   -> llvm.arithmetic.fence.f32 /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (923,50)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (923,31)
+   -> llvm.pow.f64 /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (923,28)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (348,9)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (390,7)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (405,7)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (562,7)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (603,5)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx0421103450ee68mY/ifx7Ldwnm.i90 (616,5)
 
 COMPILE FUNC: myabort_
 
-COMPILE FUNC: MAIN__.DIR.OMP.PARALLEL.LOOP.7.split27339
+COMPILE FUNC: MAIN__.DIR.OMP.PARALLEL.LOOP.7.split27101
 
-COMPILE FUNC: MAIN__.DIR.OMP.PARALLEL.LOOP.227318.split27349
+COMPILE FUNC: MAIN__.DIR.OMP.PARALLEL.LOOP.227080.split27111
 
 ---- End Inlining Report ------

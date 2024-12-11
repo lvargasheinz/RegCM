@@ -11853,8 +11853,8 @@ Args:
   - Type:            ''
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_ensemble.F90, Line: 231, Column: 10 }
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_ensemble.F90, Line: 227, Column: 5 }
 ...
 --- !Missed
 Pass:            gvn
@@ -11866,8 +11866,8 @@ Args:
   - Type:            ''
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: mod_ensemble.F90, Line: 227, Column: 5 }
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_ensemble.F90, Line: 231, Column: 10 }
 ...
 --- !Missed
 Pass:            gvn
@@ -12720,8 +12720,8 @@ Args:
   - Type:            ''
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_ensemble.F90, Line: 293, Column: 10 }
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_ensemble.F90, Line: 289, Column: 5 }
 ...
 --- !Missed
 Pass:            gvn
@@ -12733,8 +12733,8 @@ Args:
   - Type:            ''
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: mod_ensemble.F90, Line: 289, Column: 5 }
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_ensemble.F90, Line: 293, Column: 10 }
 ...
 --- !Missed
 Pass:            gvn

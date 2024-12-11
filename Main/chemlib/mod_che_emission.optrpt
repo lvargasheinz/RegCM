@@ -102,18 +102,12 @@ LOOP END
 
 Global optimization report for : mod_che_emission_mp_emis_tend_
 
-LOOP BEGIN at mod_che_emission.F90 (194, 9)
-<Multiversioned v1>
-    remark #25228: Loop multiversioned for Data Dependence
-    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
-LOOP END
-
-LOOP BEGIN at mod_che_emission.F90 (198, 27)
+LOOP BEGIN at mod_che_emission.F90 (233, 25)
 <Multiversioned v2>
     remark #15319: Loop was not vectorized: novector directive used
 LOOP END
 
-LOOP BEGIN at mod_che_emission.F90 (198, 27)
+LOOP BEGIN at mod_che_emission.F90 (233, 25)
 <Multiversioned v1>
     remark #25228: Loop multiversioned for Data Dependence
     remark #25583: Number of Array Refs Scalar Replaced In Loop: 1
@@ -188,13 +182,13 @@ LOOP BEGIN at mod_che_emission.F90 (286, 14)
     LOOP END
 LOOP END
 
-LOOP BEGIN at mod_che_emission.F90 (333, 9)
+LOOP BEGIN at mod_che_emission.F90 (328, 7)
 <Multiversioned v1>
     remark #25228: Loop multiversioned for Data Dependence
     remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
 LOOP END
 
-LOOP BEGIN at mod_che_emission.F90 (333, 9)
+LOOP BEGIN at mod_che_emission.F90 (328, 7)
 <Multiversioned v1>
     remark #25228: Loop multiversioned for Data Dependence
     remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
@@ -213,29 +207,29 @@ COMPILE FUNC: mod_che_emission._
 COMPILE FUNC: mod_che_emission_mp_chem_emission_
 
 COMPILE FUNC: mod_che_emission_mp_emis_tend_
-   -> DELETE: tan /scratch_local/ifx1931038530R1ppr0/ifxmIxdtb.i90 (197,32)
-   -> DELETE: acos /scratch_local/ifx1931038530R1ppr0/ifxmIxdtb.i90 (202,28)
-   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1931038530R1ppr0/ifxmIxdtb.i90 (206,34)
-   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1931038530R1ppr0/ifxmIxdtb.i90 (206,33)
-   -> DELETE: acos /scratch_local/ifx1931038530R1ppr0/ifxmIxdtb.i90 (207,28)
-   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1931038530R1ppr0/ifxmIxdtb.i90 (207,21)
-   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1931038530R1ppr0/ifxmIxdtb.i90 (207,46)
-   -> DELETE: llvm.sin.f64 /scratch_local/ifx1931038530R1ppr0/ifxmIxdtb.i90 (210,59)
-   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1931038530R1ppr0/ifxmIxdtb.i90 (262,37)
-   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1931038530R1ppr0/ifxmIxdtb.i90 (267,35)
-   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1931038530R1ppr0/ifxmIxdtb.i90 (277,35)
-   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1931038530R1ppr0/ifxmIxdtb.i90 (292,38)
-   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1931038530R1ppr0/ifxmIxdtb.i90 (297,38)
-   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1931038530R1ppr0/ifxmIxdtb.i90 (318,38)
-   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1931038530R1ppr0/ifxmIxdtb.i90 (206,34)
-   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1931038530R1ppr0/ifxmIxdtb.i90 (206,33)
-   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1931038530R1ppr0/ifxmIxdtb.i90 (207,21)
-   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1931038530R1ppr0/ifxmIxdtb.i90 (207,46)
-   -> llvm.sin.f64 /scratch_local/ifx1931038530R1ppr0/ifxmIxdtb.i90 (210,59)
-   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1931038530R1ppr0/ifxmIxdtb.i90 (206,34)
-   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1931038530R1ppr0/ifxmIxdtb.i90 (206,33)
-   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1931038530R1ppr0/ifxmIxdtb.i90 (207,21)
-   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1931038530R1ppr0/ifxmIxdtb.i90 (207,46)
-   -> llvm.sin.f64 /scratch_local/ifx1931038530R1ppr0/ifxmIxdtb.i90 (210,59)
+   -> DELETE: tan /scratch_local/ifx1665031244jtjsOb/ifx3f55Zb.i90 (232,30)
+   -> DELETE: acos /scratch_local/ifx1665031244jtjsOb/ifx3f55Zb.i90 (237,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1665031244jtjsOb/ifx3f55Zb.i90 (241,32)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1665031244jtjsOb/ifx3f55Zb.i90 (241,31)
+   -> DELETE: acos /scratch_local/ifx1665031244jtjsOb/ifx3f55Zb.i90 (242,26)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1665031244jtjsOb/ifx3f55Zb.i90 (242,19)
+   -> DELETE: llvm.arithmetic.fence.f64 /scratch_local/ifx1665031244jtjsOb/ifx3f55Zb.i90 (242,44)
+   -> DELETE: llvm.sin.f64 /scratch_local/ifx1665031244jtjsOb/ifx3f55Zb.i90 (245,57)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1665031244jtjsOb/ifx3f55Zb.i90 (262,37)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1665031244jtjsOb/ifx3f55Zb.i90 (267,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1665031244jtjsOb/ifx3f55Zb.i90 (277,35)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1665031244jtjsOb/ifx3f55Zb.i90 (292,38)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1665031244jtjsOb/ifx3f55Zb.i90 (297,38)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1665031244jtjsOb/ifx3f55Zb.i90 (318,38)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1665031244jtjsOb/ifx3f55Zb.i90 (241,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1665031244jtjsOb/ifx3f55Zb.i90 (241,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1665031244jtjsOb/ifx3f55Zb.i90 (242,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1665031244jtjsOb/ifx3f55Zb.i90 (242,44)
+   -> llvm.sin.f64 /scratch_local/ifx1665031244jtjsOb/ifx3f55Zb.i90 (245,57)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1665031244jtjsOb/ifx3f55Zb.i90 (241,32)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1665031244jtjsOb/ifx3f55Zb.i90 (241,31)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1665031244jtjsOb/ifx3f55Zb.i90 (242,19)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx1665031244jtjsOb/ifx3f55Zb.i90 (242,44)
+   -> llvm.sin.f64 /scratch_local/ifx1665031244jtjsOb/ifx3f55Zb.i90 (245,57)
 
 ---- End Inlining Report ------

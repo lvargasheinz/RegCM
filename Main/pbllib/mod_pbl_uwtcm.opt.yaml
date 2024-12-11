@@ -45642,19 +45642,6 @@ Args:
   - Type:            ''
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_pbl_uwtcm.F90, Line: 982, Column: 5 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_pbl_uwtcm.F90, Line: 1006, Column: 5 }
-Function:        mod_pbl_uwtcm_mp_pblhgt_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
   - ClobberedBy:     store
     DebugLoc:        { File: mod_pbl_uwtcm.F90, Line: 982, Column: 5 }
 ...
@@ -45670,6 +45657,19 @@ Args:
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
     DebugLoc:        { File: mod_pbl_uwtcm.F90, Line: 995, Column: 11 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_pbl_uwtcm.F90, Line: 1006, Column: 5 }
+Function:        mod_pbl_uwtcm_mp_pblhgt_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_pbl_uwtcm.F90, Line: 982, Column: 5 }
 ...
 --- !Missed
 Pass:            gvn
