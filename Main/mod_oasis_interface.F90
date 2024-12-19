@@ -115,7 +115,22 @@ module mod_oasis_interface
                       l_cpl_im_zo, &
                       l_cpl_im_tlef, &
                       l_cpl_ex_rainf, &
-                      l_cpl_ex_snow
+                      l_cpl_ex_snow, &
+                      l_cpl_im_albei, &
+                      l_cpl_im_albed, &
+                      l_cpl_im_flxvoc, &
+                      l_cpl_im_flxdst, &
+                      l_cpl_im_fluxch4, &
+                      l_cpl_im_ddvel, &
+                      l_cpl_im_tlai, &
+                      l_cpl_im_roff, &
+                      l_cpl_im_srfroff, &
+                      l_cpl_im_snwmelt, &
+                      l_cpl_im_tsoi, &
+                      l_cpl_im_h2ovol, &
+                      l_cpl_im_h2oliq, &
+                      l_cpl_im_h2oice, &
+                      l_cpl_im_h2o10cm
   ! OASIS field +++
 ! l_cpl_im_wust
   !--------------------------------------------------------------------
@@ -178,8 +193,22 @@ module mod_oasis_interface
                                  im_zo , & 
                                  im_tlef , & 
                                  ex_rainf , & 
-                                 ex_snow  
-
+                                 ex_snow , & 
+                                 im_albei , & 
+                                 im_albed , & 
+                                 im_flxvoc , & 
+                                 im_flxdst , & 
+                                 im_fluxch4 , & 
+                                 im_ddvel , & 
+                                 im_tlai , & 
+                                 im_roff , & 
+                                 im_srfroff , & 
+                                 im_snwmelt , & 
+                                 im_tsoi , & 
+                                 im_h2ovol , & 
+                                 im_h2oliq , & 
+                                 im_h2oice , & 
+                                 im_h2o10cm  
   ! OASIS needs double precision arrays. These variables are optional.
   ! Required for the fields to import; recommended for the fields to
   ! export which need a bit of work from the model variables.
@@ -204,7 +233,22 @@ module mod_oasis_interface
                                               cpl_sncv , &
                                               cpl_wt , &
                                               cpl_zo , &
-                                              cpl_tlef 
+                                              cpl_tlef , &
+                                              cpl_albei , &
+                                              cpl_albed , &
+                                              cpl_flxdst , &
+                                              cpl_flxvoc , &
+                                              cpl_fluxch4 , &
+                                              cpl_ddvel , &
+                                              cpl_tlai , &
+                                              cpl_roff , &
+                                              cpl_srfroff , &
+                                              cpl_snwmelt , &
+                                              cpl_tsoi , &
+                                              cpl_h2ovol , &
+                                              cpl_h2oliq , &
+                                              cpl_h2oice , &
+                                              cpl_h2o10cm 
   ! OASIS field +++
 
   ! OASIS needs double precision arrays. These variables are optional.
@@ -264,7 +308,21 @@ module mod_oasis_interface
                       l_cpl_im_zo .or. & 
                       l_cpl_im_tlef .or. &  
                       l_cpl_ex_rainf .or. &
-                      l_cpl_ex_snow 
+                      l_cpl_ex_snow .or. & 
+                      l_cpl_im_albei .or. & 
+                      l_cpl_im_albed .or. & 
+                      l_cpl_im_flxvoc .or. & 
+                      l_cpl_im_flxdst .or. & 
+                      l_cpl_im_ddvel .or. & 
+                      l_cpl_im_tlai .or. & 
+                      l_cpl_im_roff .or. & 
+                      l_cpl_im_srfroff .or. & 
+                      l_cpl_im_snwmelt .or. & 
+                      l_cpl_im_tsoi .or. & 
+                      l_cpl_im_h2ovol .or. & 
+                      l_cpl_im_h2oliq .or. & 
+                      l_cpl_im_h2oice .or. & 
+                      l_cpl_im_h2o10cm 
     l_make_grdci   = l_cpl_im_sst  .or. &
 !                     l_cpl_im_sit  .or. &
                      l_cpl_im_wz0  .or. &
@@ -369,6 +427,21 @@ module mod_oasis_interface
     if ( l_cpl_im_tlef )  call oasisxregcm_setup_field(im_tlef,  'RCM_TLEF',grdtest, cpl_tlef)
     if ( l_cpl_ex_rainf ) call oasisxregcm_setup_field(ex_rainf, 'RCM_RAINF', grdtest)
     if ( l_cpl_ex_snow ) call oasisxregcm_setup_field(ex_snow, 'RCM_SNOW', grdtest)
+    if ( l_cpl_im_albei )  call oasisxregcm_setup_field(im_albei,  'RCM_ALBEI',grdtest, cpl_albei)
+    if ( l_cpl_im_albed )  call oasisxregcm_setup_field(im_albed,  'RCM_ALBED',grdtest, cpl_albed)
+    if ( l_cpl_im_flxvoc )  call oasisxregcm_setup_field(im_flxvoc,  'RCM_FLXVOC',grdtest, cpl_flxvoc)
+    if ( l_cpl_im_flxdst )  call oasisxregcm_setup_field(im_flxdst,  'RCM_FLXDST',grdtest, cpl_flxdst)
+    if ( l_cpl_im_fluxch4 )  call oasisxregcm_setup_field(im_fluxch4,  'RCM_FLUXCH4',grdtest, cpl_fluxch4)
+    if ( l_cpl_im_ddvel )  call oasisxregcm_setup_field(im_ddvel,  'RCM_DDVEL',grdtest, cpl_ddvel)
+    if ( l_cpl_im_tlai )  call oasisxregcm_setup_field(im_tlai,  'RCM_TLAI',grdtest, cpl_tlai)
+    if ( l_cpl_im_roff )  call oasisxregcm_setup_field(im_roff,  'RCM_ROFF',grdtest, cpl_roff)
+    if ( l_cpl_im_srfroff )  call oasisxregcm_setup_field(im_srfroff,  'RCM_SRFROFF',grdtest, cpl_srfroff)
+    if ( l_cpl_im_snwmelt )  call oasisxregcm_setup_field(im_snwmelt,  'RCM_SNWMELT',grdtest, cpl_snwmelt)
+    if ( l_cpl_im_tsoi )  call oasisxregcm_setup_field(im_tsoi,  'RCM_TSOI',grdtest, cpl_tsoi)
+    if ( l_cpl_im_h2ovol )  call oasisxregcm_setup_field(im_h2ovol,  'RCM_H2OVOL',grdtest, cpl_h2ovol)
+    if ( l_cpl_im_h2oliq )  call oasisxregcm_setup_field(im_h2oliq,  'RCM_H2OLIQ',grdtest, cpl_h2oliq)
+    if ( l_cpl_im_h2oice )  call oasisxregcm_setup_field(im_h2oice,  'RCM_H2OICE',grdtest, cpl_h2oice)
+    if ( l_cpl_im_h2o10cm )  call oasisxregcm_setup_field(im_h2o10cm,  'RCM_H2O10CM',grdtest, cpl_h2o10cm)
     ! OASIS field +++
   end subroutine oasisxregcm_params
 
@@ -463,6 +536,21 @@ module mod_oasis_interface
     if ( l_cpl_im_tlef )  call oasisxregcm_def_field(im_tlef,  OASIS_In)
     if ( l_cpl_ex_rainf ) call oasisxregcm_def_field(ex_rainf, OASIS_Out)
     if ( l_cpl_ex_snow ) call oasisxregcm_def_field(ex_snow, OASIS_Out)
+    if ( l_cpl_im_albed )  call oasisxregcm_def_field(im_albed,  OASIS_In)
+    if ( l_cpl_im_albei )  call oasisxregcm_def_field(im_albei,  OASIS_In)
+    if ( l_cpl_im_flxvoc )  call oasisxregcm_def_field(im_flxvoc,  OASIS_In)
+    if ( l_cpl_im_flxdst )  call oasisxregcm_def_field(im_flxdst,  OASIS_In)
+    if ( l_cpl_im_fluxch4 )  call oasisxregcm_def_field(im_fluxch4,  OASIS_In)
+    if ( l_cpl_im_ddvel )  call oasisxregcm_def_field(im_ddvel,  OASIS_In)
+    if ( l_cpl_im_tlai )  call oasisxregcm_def_field(im_tlai,  OASIS_In)
+    if ( l_cpl_im_roff )  call oasisxregcm_def_field(im_roff,  OASIS_In)
+    if ( l_cpl_im_srfroff )  call oasisxregcm_def_field(im_srfroff,  OASIS_In)
+    if ( l_cpl_im_snwmelt )  call oasisxregcm_def_field(im_snwmelt,  OASIS_In)
+    if ( l_cpl_im_tsoi )  call oasisxregcm_def_field(im_tsoi,  OASIS_In)
+    if ( l_cpl_im_h2ovol )  call oasisxregcm_def_field(im_h2ovol,  OASIS_In)
+    if ( l_cpl_im_h2oliq )  call oasisxregcm_def_field(im_h2oliq,  OASIS_In)
+    if ( l_cpl_im_h2oice )  call oasisxregcm_def_field(im_h2oice,  OASIS_In)
+    if ( l_cpl_im_h2o10cm )  call oasisxregcm_def_field(im_h2o10cm,  OASIS_In)
 
     ! termination of definition phase
 #ifdef DEBUG
@@ -1130,7 +1218,7 @@ module mod_oasis_interface
      temps=(lm%cprate+lm%ncprate) * syncro_srf%rw
      do i = ici1 , ici2
       do j = jci1 , jci2
-       if ( lm%tatm(j,i)  <273.15 ) then
+       if ( lm%tatm(j,i) -tzero <1.0_rk8 ) then
       !  print *, 2
         temps_rf(j,i)=d_zero
         temps_snw(j,i)=temps(j,i) !lm%cprate+lm%ncprate) * syncro_srf%rw
@@ -1307,6 +1395,21 @@ module mod_oasis_interface
     call oasisxregcm_deallocate_field(im_tlef, cpl_tlef)
     call oasisxregcm_deallocate_field(ex_rainf)
     call oasisxregcm_deallocate_field(ex_snow)
+    call oasisxregcm_deallocate_field(im_albei, cpl_albei)
+    call oasisxregcm_deallocate_field(im_albed, cpl_albed)
+    call oasisxregcm_deallocate_field(im_flxvoc, cpl_flxvoc)
+    call oasisxregcm_deallocate_field(im_flxdst, cpl_flxdst)
+    call oasisxregcm_deallocate_field(im_fluxch4, cpl_fluxch4)
+    call oasisxregcm_deallocate_field(im_ddvel, cpl_ddvel)
+    call oasisxregcm_deallocate_field(im_tlai, cpl_tlai)
+    call oasisxregcm_deallocate_field(im_roff, cpl_roff)
+    call oasisxregcm_deallocate_field(im_srfroff, cpl_srfroff)
+    call oasisxregcm_deallocate_field(im_snwmelt, cpl_snwmelt)
+    call oasisxregcm_deallocate_field(im_tsoi, cpl_tsoi)
+    call oasisxregcm_deallocate_field(im_h2ovol, cpl_h2ovol)
+    call oasisxregcm_deallocate_field(im_h2oliq, cpl_h2oliq)
+    call oasisxregcm_deallocate_field(im_h2oice, cpl_h2oice)
+    call oasisxregcm_deallocate_field(im_h2o10cm, cpl_h2o10cm)
     ! OASIS field +++
     if ( allocated(grdde) ) deallocate(grdde)
     if ( allocated(grddi) ) deallocate(grddi)

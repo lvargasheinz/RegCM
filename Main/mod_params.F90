@@ -236,7 +236,21 @@ module mod_params
                           l_cpl_im_sncv , &
                           l_cpl_im_wt , &
                           l_cpl_im_zo , &
-                          l_cpl_im_tlef
+                          l_cpl_im_tlef , &
+                          l_cpl_im_albei , &
+                          l_cpl_im_albed , &
+                          l_cpl_im_flxvoc , &
+                          l_cpl_im_flxdst , &
+                          l_cpl_im_fluxch4 , &
+                          l_cpl_im_ddvel , &
+                          l_cpl_im_tlai , &
+                          l_cpl_im_roff , &
+                          l_cpl_im_srfroff , &
+                          l_cpl_im_tsoi , &
+                          l_cpl_im_h2ovol , &
+                          l_cpl_im_h2oliq , &
+                          l_cpl_im_h2oice , &
+                          l_cpl_im_h2o10cm 
 #endif
 
     namelist /slabocparam/ do_qflux_adj , do_restore_sst , &
@@ -707,6 +721,21 @@ module mod_params
     l_cpl_im_sncv = .false.
     l_cpl_im_zo = .false.
     l_cpl_im_tlef = .false.
+    l_cpl_im_albei = .false.
+    l_cpl_im_albed = .false.
+    l_cpl_im_flxvoc = .false.
+    l_cpl_im_flxdst = .false.
+    l_cpl_im_fluxch4 = .false.
+    l_cpl_im_ddvel = .false.
+    l_cpl_im_tlai = .false.
+    l_cpl_im_roff = .false.
+    l_cpl_im_srfroff = .false.
+    l_cpl_im_snwmelt = .false.
+    l_cpl_im_tsoi = .false.
+    l_cpl_im_h2ovol = .false.
+    l_cpl_im_h2oliq = .false.
+    l_cpl_im_h2oice = .false.
+    l_cpl_im_h2o10cm = .false.
 
 #endif
 
@@ -1551,6 +1580,21 @@ module mod_params
       call bcast(l_cpl_im_wt)
       call bcast(l_cpl_im_zo)
       call bcast(l_cpl_im_tlef)
+      call bcast(l_cpl_im_albei)
+      call bcast(l_cpl_im_albed)
+      call bcast(l_cpl_im_flxvoc)
+      call bcast(l_cpl_im_flxdst)
+      call bcast(l_cpl_im_fluxch4)
+      call bcast(l_cpl_im_ddvel)
+      call bcast(l_cpl_im_tlai)
+      call bcast(l_cpl_im_roff)
+      call bcast(l_cpl_im_srfroff)
+      call bcast(l_cpl_im_snwmelt)
+      call bcast(l_cpl_im_tsoi)
+      call bcast(l_cpl_im_h2ovol)
+      call bcast(l_cpl_im_h2oice)
+      call bcast(l_cpl_im_h2oliq)
+      call bcast(l_cpl_im_h2o10cm)
       ! OASIS field +++
     end if
 #endif
@@ -2982,6 +3026,21 @@ module mod_params
    l_cpl_im_wt = ( ioasiscpl == 1 ) .and. ( l_cpl_im_wt )
    l_cpl_im_zo = ( ioasiscpl == 1 ) .and. ( l_cpl_im_zo )
    l_cpl_im_tlef = ( ioasiscpl == 1 ) .and. ( l_cpl_im_tlef )
+   l_cpl_im_albei = ( ioasiscpl == 1 ) .and. ( l_cpl_im_albei )
+   l_cpl_im_albed = ( ioasiscpl == 1 ) .and. ( l_cpl_im_albed )
+   l_cpl_im_flxvoc = ( ioasiscpl == 1 ) .and. ( l_cpl_im_flxvoc )
+   l_cpl_im_flxdst = ( ioasiscpl == 1 ) .and. ( l_cpl_im_flxdst )
+   l_cpl_im_fluxch4 = ( ioasiscpl == 1 ) .and. ( l_cpl_im_fluxch4 )
+   l_cpl_im_ddvel = ( ioasiscpl == 1 ) .and. ( l_cpl_im_ddvel )
+   l_cpl_im_tlai = ( ioasiscpl == 1 ) .and. ( l_cpl_im_tlai )
+   l_cpl_im_roff = ( ioasiscpl == 1 ) .and. ( l_cpl_im_roff )
+   l_cpl_im_srfroff = ( ioasiscpl == 1 ) .and. ( l_cpl_im_srfroff )
+   l_cpl_im_snwmelt = ( ioasiscpl == 1 ) .and. ( l_cpl_im_snwmelt )
+   l_cpl_im_tsoi = ( ioasiscpl == 1 ) .and. ( l_cpl_im_tsoi )
+   l_cpl_im_h2ovol = ( ioasiscpl == 1 ) .and. ( l_cpl_im_h2ovol )
+   l_cpl_im_h2oliq = ( ioasiscpl == 1 ) .and. ( l_cpl_im_h2oliq )
+   l_cpl_im_h2oice = ( ioasiscpl == 1 ) .and. ( l_cpl_im_h2oice )
+   l_cpl_im_h2o10cm = ( ioasiscpl == 1 ) .and. ( l_cpl_im_h2o10cm )
    ! OASIS field +++
    if ( ioasiscpl == 1 ) then
      if ( myid == italk ) then
@@ -3046,7 +3105,21 @@ module mod_params
           .not. l_cpl_im_sncv .and. &
           .not. l_cpl_im_wt .and. &
           .not. l_cpl_im_zo .and. &
-          .not. l_cpl_im_tlef ) then
+          .not. l_cpl_im_tlef .and. &
+          .not. l_cpl_im_albei .and. &
+          .not. l_cpl_im_albed .and. &
+          .not. l_cpl_im_flxdst .and. &
+          .not. l_cpl_im_flxvoc .and. &
+          .not. l_cpl_im_fluxch4 .and. &
+          .not. l_cpl_im_ddvel .and. &
+          .not. l_cpl_im_roff .and. &
+          .not. l_cpl_im_srfroff .and. &
+          .not. l_cpl_im_snwmelt .and. &
+          .not. l_cpl_im_tsoi .and. &
+          .not. l_cpl_im_h2ovol .and. &
+          .not. l_cpl_im_h2oliq .and. &
+          .not. l_cpl_im_h2oice .and. &
+          .not. l_cpl_im_h2o10cm ) then
           ! OASIS field +++
        if ( myid == italk ) then
          write(stdout,*) 'Warning: no enabled coupling field found.'

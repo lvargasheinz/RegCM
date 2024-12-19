@@ -46,6 +46,11 @@ module mod_oasis_generic
     module procedure fill_ocean_2d , fill_ocean_3d
   end interface fill_ocean
 
+  interface fill_land
+    module procedure fill_land_2d, fill_land_3d 
+  end interface fill_land
+
+
   public :: oasisxregcm_init , oasisxregcm_finalize
   public :: oasisxregcm_setup_grid
   public :: oasisxregcm_setup_field , oasisxregcm_deallocate_field
@@ -53,7 +58,7 @@ module mod_oasis_generic
   public :: oasisxregcm_allocate_oasisgrids , srf_sqm
   public :: oasisxregcm_write_oasisgrids , oasisxregcm_deallocate_oasisgrids
   public :: oasisxregcm_def_field , oasisxregcm_end_def
-  public :: oasisxregcm_rcv , fill_ocean
+  public :: oasisxregcm_rcv , fill_ocean , fill_land
   public :: oasisxregcm_snd
 
   contains
@@ -437,6 +442,27 @@ module mod_oasis_generic
     end do
   end subroutine fill_ocean_2d
 
+  subroutine fill_land_2d(array_out,array_in,lndcat,grd)
+    implicit none
+    real(rkx) , dimension(:,:) , intent(in) :: array_in
+    real(rkx) , dimension(:,:) , pointer , intent(in) :: lndcat
+    type(infogrd) , intent(in) :: grd
+    real(rkx) , dimension(:,:) , pointer , intent(inout) :: array_out
+    integer(ik4) :: i , j , ishift , jshift
+    !--------------------------------------------------------------------------
+    ! It seems that whether it's on crosses or dots,
+    ! mddom%lndcat is used.
+    do i = grd%i1 , grd%i2
+      ishift = i - grd%i1 + 1
+      do j = grd%j1 , grd%j2
+        jshift = j - grd%j1 + 1
+!        if ( isocean(lndcat(j,i)) ) array_out(j,i) = array_in(jshift,ishift)
+        if (.not. isocean(lndcat(j,i)) .and. .not. islake(lndcat(j,i))) array_out(j,i) = array_in(jshift,ishift)
+      end do
+    end do
+  end subroutine fill_land_2d
+
+
   ! fill the ocean parts of array_out with array_in (with a subgrid dimension)
   subroutine fill_ocean_3d(array_out,array_in,lndcat,grd)
     implicit none
@@ -456,6 +482,27 @@ module mod_oasis_generic
       end do
     end do
   end subroutine fill_ocean_3d
+
+  ! fill the ocean parts of array_out with array_in (with a subgrid dimension)
+  subroutine fill_land_3d(array_out,array_in,lndcat,grd)
+    implicit none
+    real(rkx) , dimension(:,:) , intent(in) :: array_in
+    real(rkx) , dimension(:,:) , pointer , intent(in) :: lndcat
+    type(infogrd) , intent(in) :: grd
+    real(rkx) , dimension(:,:,:) , pointer , intent(inout) :: array_out
+    integer(ik4) :: i , j , ishift , jshift
+    !--------------------------------------------------------------------------
+    ! It seems that whether it's on crosses or dots,
+    ! mddom%lndcat is used.
+    do i = grd%i1 , grd%i2
+      ishift = i - grd%i1 + 1
+      do j = grd%j1 , grd%j2
+        jshift = j - grd%j1 + 1
+!        if ( isocean(lndcat(j,i)) ) array_out(:,j,i) = array_in(jshift,ishift)
+        if (.not. isocean(lndcat(j,i)) .and. .not. islake(lndcat(j,i))) array_out(:,j,i) = array_in(jshift,ishift)
+      end do
+    end do
+  end subroutine fill_land_3d
 
   ! send a single field with id fld_id through oasis_put
   subroutine oasisxregcm_snd(array,fld,time,write_out)
