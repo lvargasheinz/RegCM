@@ -31,15 +31,64 @@ module mod_oasis_interface
   use mod_mppparam
   use mod_runparams ! , only : isocean , dtsec , alarm_out_sav , rcmtimer
   use mod_bats_common , only : rdnnsg
-  use mod_atm_interface , only : atms , sfs , flwd , flw , fsw , sinc , mddom
-  use mod_lm_interface , only : lms , lm
+!  use mod_atm_interface , only : atms , sfs , flwd , flw , fsw , sinc , mddom
+ ! use mod_lm_interface , only : lms , lm
   use mod_date , only : lfdomonth , lmidnight
   use mod_memutil  
+  use mod_regcm_types
 
   use mod_oasis
   use mod_oasis_params
   use mod_oasis_signature
   use mod_oasis_generic
+
+!! IM ADDIND EVERYTHING RIGHTNOW
+  use mod_date
+  use mod_stdio
+  use mod_intkinds
+  use mod_realkinds
+  use mod_dynparam
+  use mod_kdinterp
+  use mod_runparams
+  use mod_ipcc_scenario , only : ghgval , igh_co2 , igh_ch4
+  use mod_memutil
+  use mod_mppparam
+  use mod_ensemble
+  use mod_mpmessage
+  use mod_constants
+  use mod_sunorbit
+  use mod_regcm_types
+  use mod_service
+  use mod_lm_interface 
+  use mod_atm_interface
+  use mod_dynparam
+  use mod_runparams
+  use mod_memutil
+  use mod_regcm_types
+  use mod_outvars
+  use mod_constants
+  use mod_mppparam
+  use mod_mpmessage
+  use mod_service
+  use mod_bats_common
+  use mod_ocn_common
+  use mod_stdio
+  use mod_slabocean
+  use mod_heatindex
+  use mod_dynparam
+  use mod_stdio
+  use mod_date
+  use mod_constants
+  use mod_runparams
+  use mod_mppparam
+  use mod_mpmessage
+  use mod_service
+  use mod_memutil
+  use mod_regcm_types
+  use mod_stdatm
+  use mod_zita
+  use mod_ncio
+
 
   implicit none
 
@@ -47,15 +96,19 @@ module mod_oasis_interface
 
   public :: comp_name , comp_id ! -> mod_oasis_params
   public :: oasis_lag           ! -> mod_oasis_params
-  real(rkx) , dimension(:,:) , pointer :: temps , temps_rf , temps_snw
-  !--------------------------------------------------------------------
+  real(rkx) , dimension(:,:) , pointer :: temps , temps_rf , temps_snw, temp, temp2
+  real(rkx) , dimension(:,:,:) , pointer :: temp3d, temp3d_2
+  real(rkx) , dimension(:,:,:,:) , pointer :: temp4d
+!  real(rkx), dimension(:,:,:), allocatable :: lon3d, lat3d
+!  real(rkx), dimension(:,:,:), pointer :: vocemiss_slice
+  integer :: k, kdim,n  !--------------------------------------------------------------------
   ! for grid and partition activation
   ! (dot/cross , external/internal)
   logical :: l_make_grdde , l_make_grddi , &
-             l_make_grdce , l_make_grdci , l_make_grdtest
+             l_make_grdce , l_make_grdci , l_make_grdtest , l_make_grd3d
   type(infogrd) , target , allocatable :: grdde , grddi , &
-                                          grdce , grdci , grdtest
-
+                                          grdce , grdci , grdtest 
+  type(info3dgrd) , target , allocatable :: grd3d
   !--------------------------------------------------------------------
   ! below the namelist parameters (namelist oasisparam)
   public :: l_write_grids , write_restart_option ! -> mod_oasis_params
@@ -194,22 +247,25 @@ module mod_oasis_interface
                                  im_tlef , & 
                                  ex_rainf , & 
                                  ex_snow , & 
-                                 im_albei , & 
-                                 im_albed , & 
-                                 im_flxvoc , & 
-                                 im_flxdst , & 
+!                                 im_albei , & 
+ !                                im_albed , & 
                                  im_fluxch4 , & 
-                                 im_ddvel , & 
                                  im_tlai , & 
                                  im_roff , & 
                                  im_srfroff , & 
                                  im_snwmelt , & 
-                                 im_tsoi , & 
-                                 im_h2ovol , & 
+                                 im_h2o10cm  
+  type(info3dfld) , allocatable :: im_albei , &
+                                 im_flxdst , & 
+                                 im_flxvoc , & 
+                                 im_ddvel , & 
                                  im_h2oliq , & 
                                  im_h2oice , & 
-                                 im_h2o10cm  
-  ! OASIS needs double precision arrays. These variables are optional.
+                                 im_h2ovol , & 
+                                 im_tsoi , & 
+                                 im_albed 
+
+                               ! OASIS needs double precision arrays. These variables are optional.
   ! Required for the fields to import; recommended for the fields to
   ! export which need a bit of work from the model variables.
   real(rkx) , dimension(:,:) , allocatable :: cpl_sst , &
@@ -234,22 +290,25 @@ module mod_oasis_interface
                                               cpl_wt , &
                                               cpl_zo , &
                                               cpl_tlef , &
-                                              cpl_albei , &
-                                              cpl_albed , &
-                                              cpl_flxdst , &
-                                              cpl_flxvoc , &
+                                              !cpl_albei , &
+                                              !cpl_albed , &
                                               cpl_fluxch4 , &
-                                              cpl_ddvel , &
                                               cpl_tlai , &
                                               cpl_roff , &
                                               cpl_srfroff , &
                                               cpl_snwmelt , &
-                                              cpl_tsoi , &
-                                              cpl_h2ovol , &
-                                              cpl_h2oliq , &
-                                              cpl_h2oice , &
                                               cpl_h2o10cm 
   ! OASIS field +++
+  real(rkx) , dimension(:,:,:) , allocatable :: cpl_albei , &
+                                              cpl_flxdst , &
+                                              cpl_flxvoc , &
+                                              cpl_h2oliq , &
+                                              cpl_ddvel , &
+                                              cpl_h2oice , &
+                                              cpl_h2ovol , &
+                                              cpl_tsoi , &
+                                              cpl_albed 
+
 
   ! OASIS needs double precision arrays. These variables are optional.
   ! They are used when calling the subroutine oasisxregcm_setup_field_array(),
@@ -309,20 +368,22 @@ module mod_oasis_interface
                       l_cpl_im_tlef .or. &  
                       l_cpl_ex_rainf .or. &
                       l_cpl_ex_snow .or. & 
-                      l_cpl_im_albei .or. & 
-                      l_cpl_im_albed .or. & 
-                      l_cpl_im_flxvoc .or. & 
-                      l_cpl_im_flxdst .or. & 
-                      l_cpl_im_ddvel .or. & 
+                   !   l_cpl_im_albei .or. & 
+                     ! l_cpl_im_albed .or. & 
                       l_cpl_im_tlai .or. & 
                       l_cpl_im_roff .or. & 
                       l_cpl_im_srfroff .or. & 
                       l_cpl_im_snwmelt .or. & 
-                      l_cpl_im_tsoi .or. & 
-                      l_cpl_im_h2ovol .or. & 
+                      l_cpl_im_h2o10cm 
+    l_make_grd3d =  l_cpl_im_albei .or. & 
+                      l_cpl_im_flxdst .or. & 
+                      l_cpl_im_flxvoc .or. & 
+                      l_cpl_im_ddvel .or. & 
                       l_cpl_im_h2oliq .or. & 
                       l_cpl_im_h2oice .or. & 
-                      l_cpl_im_h2o10cm 
+                      l_cpl_im_tsoi .or. & 
+                      l_cpl_im_h2ovol .or. & 
+                    l_cpl_im_albed 
     l_make_grdci   = l_cpl_im_sst  .or. &
 !                     l_cpl_im_sit  .or. &
                      l_cpl_im_wz0  .or. &
@@ -367,7 +428,11 @@ module mod_oasis_interface
 
     if ( l_make_grdtest )   call oasisxregcm_setup_grid(grdtest, 'rcin', 'rcim', &
                                jci1, jci2, ici1, ici2, 2, jx-2, 2, iy-2, 4)
-    !
+    if ( l_make_grd3d )   call oasisxregcm_setup_3dgrid(grd3d, 'rcin', 'rcim', &
+                               jci1, jci2, ici1, ici2, 1, nnsg, &
+                               2, jx-2, 2, iy-2, 1, nnsg, 4)
+!nnsg
+                             !
     ! initialize fields: field variable, name, grid, field array (optional), initialization value
     !                                                                        (optional; 0 otherwise)
     if ( l_cpl_im_sst )  call oasisxregcm_setup_field(im_sst,  'RCM_SST',  grdci, cpl_sst, init_sst)
@@ -427,20 +492,20 @@ module mod_oasis_interface
     if ( l_cpl_im_tlef )  call oasisxregcm_setup_field(im_tlef,  'RCM_TLEF',grdtest, cpl_tlef)
     if ( l_cpl_ex_rainf ) call oasisxregcm_setup_field(ex_rainf, 'RCM_RAINF', grdtest)
     if ( l_cpl_ex_snow ) call oasisxregcm_setup_field(ex_snow, 'RCM_SNOW', grdtest)
-    if ( l_cpl_im_albei )  call oasisxregcm_setup_field(im_albei,  'RCM_ALBEI',grdtest, cpl_albei)
-    if ( l_cpl_im_albed )  call oasisxregcm_setup_field(im_albed,  'RCM_ALBED',grdtest, cpl_albed)
-    if ( l_cpl_im_flxvoc )  call oasisxregcm_setup_field(im_flxvoc,  'RCM_FLXVOC',grdtest, cpl_flxvoc)
-    if ( l_cpl_im_flxdst )  call oasisxregcm_setup_field(im_flxdst,  'RCM_FLXDST',grdtest, cpl_flxdst)
+    if ( l_cpl_im_albei )  call oasisxregcm_setup_3dfield(im_albei,  'RCM_ALBEI',grd3d, cpl_albei)
+    if ( l_cpl_im_albed )  call oasisxregcm_setup_3dfield(im_albed,  'RCM_ALBED',grd3d, cpl_albed)
+    if ( l_cpl_im_flxvoc )  call oasisxregcm_setup_3dfield(im_flxvoc,  'RCM_FLXVOC',grd3d, cpl_flxvoc)
+    if ( l_cpl_im_flxdst )  call oasisxregcm_setup_3dfield(im_flxdst,  'RCM_FLXDST',grd3d, cpl_flxdst)
     if ( l_cpl_im_fluxch4 )  call oasisxregcm_setup_field(im_fluxch4,  'RCM_FLUXCH4',grdtest, cpl_fluxch4)
-    if ( l_cpl_im_ddvel )  call oasisxregcm_setup_field(im_ddvel,  'RCM_DDVEL',grdtest, cpl_ddvel)
+    if ( l_cpl_im_ddvel )  call oasisxregcm_setup_3dfield(im_ddvel,  'RCM_DDVEL',grd3d, cpl_ddvel)
     if ( l_cpl_im_tlai )  call oasisxregcm_setup_field(im_tlai,  'RCM_TLAI',grdtest, cpl_tlai)
     if ( l_cpl_im_roff )  call oasisxregcm_setup_field(im_roff,  'RCM_ROFF',grdtest, cpl_roff)
     if ( l_cpl_im_srfroff )  call oasisxregcm_setup_field(im_srfroff,  'RCM_SRFROFF',grdtest, cpl_srfroff)
     if ( l_cpl_im_snwmelt )  call oasisxregcm_setup_field(im_snwmelt,  'RCM_SNWMELT',grdtest, cpl_snwmelt)
-    if ( l_cpl_im_tsoi )  call oasisxregcm_setup_field(im_tsoi,  'RCM_TSOI',grdtest, cpl_tsoi)
-    if ( l_cpl_im_h2ovol )  call oasisxregcm_setup_field(im_h2ovol,  'RCM_H2OVOL',grdtest, cpl_h2ovol)
-    if ( l_cpl_im_h2oliq )  call oasisxregcm_setup_field(im_h2oliq,  'RCM_H2OLIQ',grdtest, cpl_h2oliq)
-    if ( l_cpl_im_h2oice )  call oasisxregcm_setup_field(im_h2oice,  'RCM_H2OICE',grdtest, cpl_h2oice)
+    if ( l_cpl_im_tsoi )  call oasisxregcm_setup_3dfield(im_tsoi,  'RCM_TSOI',grd3d, cpl_tsoi)
+    if ( l_cpl_im_h2ovol )  call oasisxregcm_setup_3dfield(im_h2ovol,  'RCM_H2OVOL',grd3d, cpl_h2ovol)
+    if ( l_cpl_im_h2oliq )  call oasisxregcm_setup_3dfield(im_h2oliq,  'RCM_H2OLIQ',grd3d, cpl_h2oliq)
+    if ( l_cpl_im_h2oice )  call oasisxregcm_setup_3dfield(im_h2oice,  'RCM_H2OICE',grd3d, cpl_h2oice)
     if ( l_cpl_im_h2o10cm )  call oasisxregcm_setup_field(im_h2o10cm,  'RCM_H2O10CM',grdtest, cpl_h2o10cm)
     ! OASIS field +++
   end subroutine oasisxregcm_params
@@ -458,6 +523,7 @@ module mod_oasis_interface
     if ( l_make_grdce ) call oasisxregcm_def_partition(grdce)
     if ( l_make_grdci ) call oasisxregcm_def_partition(grdci)
     if ( l_make_grdtest ) call oasisxregcm_def_partition(grdtest)
+    if ( l_make_grd3d ) call oasisxregcm_def_partition_3d(grd3d)
     ! grid definition
 #ifdef DEBUG
     write(ndebug,*) oasis_prefix, 'definition phase: grids'
@@ -536,20 +602,20 @@ module mod_oasis_interface
     if ( l_cpl_im_tlef )  call oasisxregcm_def_field(im_tlef,  OASIS_In)
     if ( l_cpl_ex_rainf ) call oasisxregcm_def_field(ex_rainf, OASIS_Out)
     if ( l_cpl_ex_snow ) call oasisxregcm_def_field(ex_snow, OASIS_Out)
-    if ( l_cpl_im_albed )  call oasisxregcm_def_field(im_albed,  OASIS_In)
-    if ( l_cpl_im_albei )  call oasisxregcm_def_field(im_albei,  OASIS_In)
-    if ( l_cpl_im_flxvoc )  call oasisxregcm_def_field(im_flxvoc,  OASIS_In)
-    if ( l_cpl_im_flxdst )  call oasisxregcm_def_field(im_flxdst,  OASIS_In)
+    if ( l_cpl_im_albed )  call oasisxregcm_def_3dfield(im_albed,  OASIS_In)
+    if ( l_cpl_im_albei )  call oasisxregcm_def_3dfield(im_albei,  OASIS_In)
+    if ( l_cpl_im_flxvoc )  call oasisxregcm_def_3dfield(im_flxvoc,  OASIS_In)
+    if ( l_cpl_im_flxdst )  call oasisxregcm_def_3dfield(im_flxdst,  OASIS_In)
     if ( l_cpl_im_fluxch4 )  call oasisxregcm_def_field(im_fluxch4,  OASIS_In)
-    if ( l_cpl_im_ddvel )  call oasisxregcm_def_field(im_ddvel,  OASIS_In)
+    if ( l_cpl_im_ddvel )  call oasisxregcm_def_3dfield(im_ddvel,  OASIS_In)
     if ( l_cpl_im_tlai )  call oasisxregcm_def_field(im_tlai,  OASIS_In)
     if ( l_cpl_im_roff )  call oasisxregcm_def_field(im_roff,  OASIS_In)
     if ( l_cpl_im_srfroff )  call oasisxregcm_def_field(im_srfroff,  OASIS_In)
     if ( l_cpl_im_snwmelt )  call oasisxregcm_def_field(im_snwmelt,  OASIS_In)
-    if ( l_cpl_im_tsoi )  call oasisxregcm_def_field(im_tsoi,  OASIS_In)
-    if ( l_cpl_im_h2ovol )  call oasisxregcm_def_field(im_h2ovol,  OASIS_In)
-    if ( l_cpl_im_h2oliq )  call oasisxregcm_def_field(im_h2oliq,  OASIS_In)
-    if ( l_cpl_im_h2oice )  call oasisxregcm_def_field(im_h2oice,  OASIS_In)
+    if ( l_cpl_im_tsoi )  call oasisxregcm_def_3dfield(im_tsoi,  OASIS_In)
+    if ( l_cpl_im_h2ovol )  call oasisxregcm_def_3dfield(im_h2ovol,  OASIS_In)
+    if ( l_cpl_im_h2oliq )  call oasisxregcm_def_3dfield(im_h2oliq,  OASIS_In)
+    if ( l_cpl_im_h2oice )  call oasisxregcm_def_3dfield(im_h2oice,  OASIS_In)
     if ( l_cpl_im_h2o10cm )  call oasisxregcm_def_field(im_h2o10cm,  OASIS_In)
 
     ! termination of definition phase
@@ -567,11 +633,14 @@ module mod_oasis_interface
     real(rkx) , pointer , dimension(:,:) :: xlon , xlat ! cross degree coordinates
     real(rkx) , pointer , dimension(:,:) :: lndcat ! land category (15 for ocean)
     real(rkx) , pointer , dimension(:,:) :: oasisgrid_lon , oasisgrid_lat ! lon, lat
+    real(rkx) , pointer , dimension(:,:,:) :: lon3d, lat3d! lon, lat
     real(rkx) , pointer , dimension(:,:,:) :: oasisgrid_clon , & ! lon &
                                               oasisgrid_clat     ! lat of the corners
     ! note: 4 corners (always the case?) in the third dimension, counterclockwisely.
     real(rkx) , pointer , dimension(:,:) :: oasisgrid_srf ! surface of the grid meshes m2
+    real(rkx) , pointer , dimension(:,:,:) :: srf3d ! surface of the grid meshes m2
     integer(ik4) , pointer , dimension(:,:) :: oasisgrid_mask ! mask, 0 = valid, 1 = mask
+    integer(ik4) , pointer , dimension(:,:,:) :: mask3d! mask, 0 = valid, 1 = mask
     !                                                          (OASIS convention)
     integer(ik4) :: il_flag ! flag for grid writing by proc 0
     integer(ik4) :: ierror
@@ -648,7 +717,37 @@ module mod_oasis_interface
              oasisgrid_lon,oasisgrid_lat,oasisgrid_clon,oasisgrid_clat,oasisgrid_srf,oasisgrid_mask)
         if ( l_make_grdtest ) call oasisxregcm_write_oasisgrids(grdtest, &
              oasisgrid_lon,oasisgrid_lat,oasisgrid_clon,oasisgrid_clat,oasisgrid_srf,oasisgrid_mask)
-        !
+!        if ( l_make_grd3d ) call oasisxregcm_write_oasis3dgrids(grd3d, &
+           !  oasisgrid_lon,oasisgrid_lat,oasisgrid_clon,oasisgrid_clat,oasisgrid_srf,oasisgrid_mask)
+        if (l_make_grd3d) then
+    ! Extend lon and lat to 3D by repeating them along the depth dimension.
+    ! The depth dimension will be added in the 3rd dimension.
+
+    ! Create temporary 3D arrays for lon and lat by replicating the 2D arrays across depth
+
+          allocate(lon3d(grd3d%jgl, grd3d%igl, kdim))
+          allocate(lat3d(grd3d%jgl, grd3d%igl, kdim))
+          allocate(srf3d(grd3d%jgl, grd3d%igl, kdim))
+          allocate(mask3d(grd3d%jgl, grd3d%igl, kdim))
+
+    ! Replicate 2D lon and lat into 3D along the depth (third) dimension
+          do k = 1 , kdim
+            lon3d(:,:, k) = oasisgrid_lon(:,:)
+            lat3d(:,:, k) = oasisgrid_lat(:,:)
+            srf3d(:,:, k) = oasisgrid_srf(:,:)
+            mask3d(:,:, k) = oasisgrid_mask(:,:)
+          end do
+    ! Now, call the subroutine with the 3D arrays
+          call oasisxregcm_write_oasis3dgrids(grd3d, &
+            lon3d, lat3d, oasisgrid_clon, oasisgrid_clat, srf3d,mask3d)
+
+    ! Deallocate temporary 3D arrays
+          deallocate(lon3d)
+          deallocate(lat3d)
+          deallocate(srf3d)
+        end if
+
+           !
         call oasisxregcm_deallocate_oasisgrids( &
              oasisgrid_lon,oasisgrid_lat,oasisgrid_clon,oasisgrid_clat,oasisgrid_srf,oasisgrid_mask)
         !
@@ -911,6 +1010,204 @@ module mod_oasis_interface
     end if
     ! OASIS field +++
     !
+    if ( l_cpl_im_tgbb ) then ! surface friction velocity [s-1]
+      call oasisxregcm_rcv(cpl_tgbb,im_tgbb,time,l_act)
+!      if ( l_act ) then
+        call fill_land(lms%tgbb ,cpl_tgbb,mddom%lndcat,im_tgbb%grd)
+!      end if
+    end if
+    if ( l_cpl_im_t2m ) then ! surface friction velocity [s-1]
+      call oasisxregcm_rcv(cpl_t2m,im_t2m,time,l_act)
+        call fill_land(lms%t2m ,cpl_t2m,mddom%lndcat,im_t2m%grd)
+    end if
+    if ( l_cpl_im_q2m ) then ! surface friction velocity [s-1]
+      call oasisxregcm_rcv(cpl_q2m,im_q2m,time,l_act)
+        call fill_land(lms%q2m ,cpl_q2m,mddom%lndcat,im_q2m%grd)
+    end if
+    if ( l_cpl_im_u10m ) then ! surface friction velocity [s-1]
+      call oasisxregcm_rcv(cpl_u10m,im_u10m,time,l_act)
+        call fill_land(lms%u10m ,cpl_u10m,mddom%lndcat,im_u10m%grd)
+    end if
+    if ( l_cpl_im_sent ) then ! surface friction velocity [s-1]
+      call oasisxregcm_rcv(cpl_sent,im_sent,time,l_act)
+        call fill_land(lms%sent ,cpl_sent,mddom%lndcat,im_sent%grd)
+    end if
+    if ( l_cpl_im_evpr ) then ! surface friction velocity [s-1]
+      call oasisxregcm_rcv(cpl_evpr,im_evpr,time,l_act)
+        call fill_land(lms%evpr ,cpl_evpr,mddom%lndcat,im_evpr%grd)
+    end if
+    if ( l_cpl_im_ram1 ) then ! surface friction velocity [s-1]
+      call oasisxregcm_rcv(cpl_ram1,im_ram1,time,l_act)
+        call fill_land(lms%ram1 ,cpl_ram1,mddom%lndcat,im_ram1%grd)
+    end if
+    if ( l_cpl_im_rah1 ) then ! surface friction velocity [s-1]
+      call oasisxregcm_rcv(cpl_rah1,im_rah1,time,l_act)
+        call fill_land(lms%rah1 ,cpl_rah1,mddom%lndcat,im_rah1%grd)
+    end if
+    if ( l_cpl_im_tauy ) then ! surface friction velocity [s-1]
+      call oasisxregcm_rcv(cpl_tauy,im_tauy,time,l_act)
+        call fill_land(lms%tauy ,cpl_tauy,mddom%lndcat,im_tauy%grd)
+    end if
+    if ( l_cpl_im_taux ) then ! surface friction velocity [s-1]
+      call oasisxregcm_rcv(cpl_taux,im_taux,time,l_act)
+        call fill_land(lms%taux ,cpl_taux,mddom%lndcat,im_taux%grd)
+    end if
+    if ( l_cpl_im_sncv ) then ! surface friction velocity [s-1]
+      call oasisxregcm_rcv(cpl_sncv,im_sncv,time,l_act)
+        call fill_land(lms%sncv ,cpl_sncv,mddom%lndcat,im_sncv%grd)
+    end if
+    if ( l_cpl_im_wt ) then ! surface friction velocity [s-1]
+      call oasisxregcm_rcv(cpl_wt,im_wt,time,l_act)
+        call fill_land(lms%wt ,cpl_wt,mddom%lndcat,im_wt%grd)
+    end if
+    if ( l_cpl_im_zo ) then ! surface friction velocity [s-1]
+      call oasisxregcm_rcv(cpl_zo,im_zo,time,l_act)
+        call fill_land(lms%zo ,cpl_zo,mddom%lndcat,im_zo%grd)
+    end if
+    if ( l_cpl_im_tlef ) then ! surface friction velocity [s-1]
+      call oasisxregcm_rcv(cpl_tlef,im_tlef,time,l_act)
+        call fill_land(lms%tlef ,cpl_tlef,mddom%lndcat,im_tlef%grd)
+    end if
+    if ( l_cpl_im_tlai ) then ! surface friction velocity [s-1]
+      call oasisxregcm_rcv(cpl_tlai,im_tlai,time,l_act)
+        call fill_land(lms%xlai ,cpl_tlai,mddom%lndcat,im_tlai%grd)
+    end if
+    if ( l_cpl_im_roff ) then ! surface friction velocity [s-1]
+      call oasisxregcm_rcv(cpl_roff,im_roff,time,l_act)
+        call fill_land(lms%srnof ,cpl_roff,mddom%lndcat,im_roff%grd)
+    end if
+    if ( l_cpl_im_srfroff ) then ! surface friction velocity [s-1]
+      call oasisxregcm_rcv(cpl_srfroff,im_srfroff,time,l_act)
+        call fill_land(lms%trnof ,cpl_srfroff,mddom%lndcat,im_srfroff%grd)
+    end if
+    if ( l_cpl_im_snwmelt ) then ! surface friction velocity [s-1]
+      call oasisxregcm_rcv(cpl_snwmelt,im_snwmelt,time,l_act)
+        call fill_land(lms%snwm ,cpl_snwmelt,mddom%lndcat,im_snwmelt%grd)
+    end if
+    if ( l_cpl_im_h2o10cm ) then ! surface friction velocity [s-1]
+      call oasisxregcm_rcv(cpl_h2o10cm,im_h2o10cm,time,l_act)
+        call fill_land(lms%tsw ,cpl_h2o10cm,mddom%lndcat,im_h2o10cm%grd)
+    end if
+    if ( l_cpl_im_albed ) then ! surface friction velocity [s-1]
+      call oasisxregcm_rcv_3d(cpl_albed,im_albed,time,l_act)
+        call fill_land(lms%swdiralb ,cpl_albed(:,:,1),mddom%lndcat,im_albed%grd)
+        call fill_land(lms%lwdiralb ,cpl_albed(:,:,2),mddom%lndcat,im_albed%grd)
+    end if
+    if ( l_cpl_im_albei ) then ! surface friction velocity [s-1]
+      call oasisxregcm_rcv_3d(cpl_albei,im_albei,time,l_act)
+        call fill_land(lms%swdifalb ,cpl_albei(:,:,1),mddom%lndcat,im_albei%grd)
+        call fill_land(lms%lwdifalb ,cpl_albei(:,:,2),mddom%lndcat,im_albei%grd)
+    end if
+!    if ( l_cpl_im_tsoi ) then ! surface friction velocity [s-1]
+ !     call oasisxregcm_rcv_3d(cpl_tsoi,im_tsoi,time,l_act)
+  !      n = ubound(tsoi, 3)
+   !     do k = 1 , n
+    !      call fill_land(lms%tsoi(:,:,:,k) ,cpl_tsoi(:,:,k),mddom%lndcat,im_tsoi%grd)
+     !   end do 
+!    end if
+    if ( l_cpl_im_h2ovol ) then ! surface friction velocity [s-1]
+      call oasisxregcm_rcv_3d(cpl_h2ovol,im_h2ovol,time,l_act)
+      n = ubound(cpl_h2ovol, 3)
+ !     call getmem2d(temp,jci1,jci2,ici1,ici2,'sendoasis:temp')
+      call getmem3d(temp3d,1,nnsg,jci1,jci2,ici1,ici2,'sendoasis:temp3d')
+      do k = 1 , n
+        call fill_land(temp3d,cpl_h2ovol(:,:,k),mddom%lndcat,im_h2ovol%grd)
+        lms%sw_vol(:,:,:,k) = temp3d(:,:,:)
+      end do
+      !deallocate(temp)
+      deallocate(temp3d)
+    end if
+!if ( l_cpl_ex_snow .or. l_cpl_ex_rainf) then
+    if ( l_cpl_im_h2oliq .or. l_cpl_im_h2oice ) then ! surface friction velocity [s-1]
+      call oasisxregcm_rcv_3d(cpl_h2oliq,im_h2oliq,time,l_act)
+      n = ubound(cpl_h2oliq, 3)
+!      call getmem2d(temp,jci1,jci2,ici1,ici2,'sendoasis:temp')
+      call getmem3d(temp3d,1,nnsg,jci1,jci2,ici1,ici2,'sendoasis:temp3d')
+      call getmem3d(temp3d_2,1,nnsg,jci1,jci2,ici1,ici2,'sendoasis:temp3d_2')
+      do k = 1 , n
+        call fill_land(temp3d,cpl_h2oliq(:,:,k),mddom%lndcat,im_h2oliq%grd)
+        call fill_land(temp3d_2,cpl_h2oice(:,:,k),mddom%lndcat,im_h2oice%grd)
+        lms%sw(:,:,:,k) = temp3d(:,:,:) + temp3d_2(:,:,:)
+      end do
+     ! deallocate(temp)
+      deallocate(temp3d)
+      deallocate(temp3d_2)
+    end if
+
+    if ( l_cpl_im_tsoi ) then ! surface friction velocity [s-1]
+      call oasisxregcm_rcv_3d(cpl_tsoi,im_tsoi,time,l_act)
+      n = ubound(cpl_tsoi, 3)
+  !    call getmem2d(temp,jci1,jci2,ici1,ici2,'sendoasis:temp')
+      call getmem3d(temp3d,1,nnsg,jci1,jci2,ici1,ici2,'sendoasis:temp3d')
+      do k = 1 , n
+        call fill_land(temp3d,cpl_tsoi(:,:,k),mddom%lndcat,im_tsoi%grd)
+        lms%tsoi(:,:,:,k) = temp3d(:,:,:)
+      end do
+    !  deallocate(temp)
+      deallocate(temp3d)
+    end if
+    if ( l_cpl_im_ddvel ) then ! surface friction velocity [s-1]
+      call oasisxregcm_rcv_3d(cpl_ddvel,im_ddvel,time,l_act)
+      n = ubound(cpl_ddvel, 3)
+   !   call getmem2d(temp,jci1,jci2,ici1,ici2,'sendoasis:temp')
+      call getmem3d(temp3d,1,nnsg,jci1,jci2,ici1,ici2,'sendoasis:temp3d')
+      !do k = 1 , n
+      call fill_land(temp3d,cpl_ddvel,mddom%lndcat,im_ddvel%grd)
+      !end do
+      lms%ddepv(:,:,:,4) = temp3d(:,:,:)
+   !   deallocate(temp)
+      deallocate(temp3d)
+    end if
+    if ( l_cpl_im_flxvoc ) then ! surface friction velocity [s-1]
+      call oasisxregcm_rcv_3d(cpl_flxvoc,im_flxvoc,time,l_act)
+      n = ubound(cpl_flxvoc, 3)
+      call getmem3d(temp3d,1,nnsg,jci1,jci2,ici1,ici2,'sendoasis:temp3d')
+      call fill_land(temp3d,cpl_flxvoc,mddom%lndcat,im_flxvoc%grd)
+      lms%vocemiss(:,:,:,iisop) = temp3d(:,:,:)
+      deallocate(temp3d)
+    end if
+    if ( l_cpl_im_flxdst ) then ! surface friction velocity [s-1]
+      call oasisxregcm_rcv_3d(cpl_flxdst,im_flxdst,time,l_act)
+      n = ubound(cpl_flxdst, 3)
+      call getmem4d(temp4d,1,nnsg,jci1,jci2,ici1,ici2,1,n,'sendoasis:temp3d')
+      call fill_land(temp4d,cpl_flxdst,mddom%lndcat,im_flxdst%grd)
+!      do k = 1 , 4
+       lms%dustemiss(:,:,:,:) = temp4d(:,:,:,:)
+ !     end do
+      deallocate(temp4d)
+    end if
+    if ( l_cpl_im_fluxch4 ) then ! surface friction velocity [s-1]
+      call oasisxregcm_rcv(cpl_fluxch4,im_fluxch4,time,l_act)
+!      call getmem2d(temp,jci1,jci2,ici1,ici2,'sendoasis:temp')
+      call getmem3d(temp3d,1,nnsg,jci1,jci2,ici1,ici2,'sendoasis:temp3d')
+      call getmem2d(temp2,jci1,jci2,ici1,ici2,'sendoasis:temp')
+      temp2=cpl_fluxch4* 1.33_rk8
+       call fill_land(temp3d,temp2,mddom%lndcat,im_fluxch4%grd)
+ !     do k = 1 , 4
+       lms%vocemiss(:,:,:,ich4)=temp3d(:,:,:)
+!      end do
+      deallocate(temp2)
+    end if
+
+
+!    if ( l_cpl_im_fluxch4 ) then ! surface friction velocity [s-1]
+ !     call getmem2d(temp,jci1,jci2,ici1,ici2,'sendoasis:temp')
+  !    temp = 0.0_rk8
+   !   temp = cpl_fluxch4* 1.33_rk8
+!      if (.not. associated(lms%vocemiss)) then
+ !       print *, "Error: lms%vocemiss is not associated!"
+  !      stop
+   !   endif
+      !vocemiss_slice => lms%vocemiss(:,:,:,1)
+    !  call oasisxregcm_rcv(cpl_fluxch4,im_fluxch4,time,l_act)
+     !   call fill_land(lms%vocemiss(:,:,:,ich4) ,temp,mddom%lndcat,im_fluxch4%grd)
+    
+!    end if
+    
+    !if ( l_cpl_im_ddvel ) then ! surface friction velocity [s-1]
+     ! call oasisxregcm_rcv(cpl_ddvel,im_ddvel,time,l_act)
+      !  call fill_land(sfs%ustar ,cpl_ddvel,mddom%lndcat,im_ddvel%grd)
+   ! end if    
   end subroutine oasisxregcm_rcv_all
 
   ! call all subroutines consisting of sending OASIS fields
@@ -1395,20 +1692,20 @@ module mod_oasis_interface
     call oasisxregcm_deallocate_field(im_tlef, cpl_tlef)
     call oasisxregcm_deallocate_field(ex_rainf)
     call oasisxregcm_deallocate_field(ex_snow)
-    call oasisxregcm_deallocate_field(im_albei, cpl_albei)
-    call oasisxregcm_deallocate_field(im_albed, cpl_albed)
-    call oasisxregcm_deallocate_field(im_flxvoc, cpl_flxvoc)
-    call oasisxregcm_deallocate_field(im_flxdst, cpl_flxdst)
+    call oasisxregcm_deallocate_3dfield(im_albei, cpl_albei)
+    call oasisxregcm_deallocate_3dfield(im_albed, cpl_albed)
+    call oasisxregcm_deallocate_3dfield(im_flxvoc, cpl_flxvoc)
+    call oasisxregcm_deallocate_3dfield(im_flxdst, cpl_flxdst)
     call oasisxregcm_deallocate_field(im_fluxch4, cpl_fluxch4)
-    call oasisxregcm_deallocate_field(im_ddvel, cpl_ddvel)
+    call oasisxregcm_deallocate_3dfield(im_ddvel, cpl_ddvel)
     call oasisxregcm_deallocate_field(im_tlai, cpl_tlai)
     call oasisxregcm_deallocate_field(im_roff, cpl_roff)
     call oasisxregcm_deallocate_field(im_srfroff, cpl_srfroff)
     call oasisxregcm_deallocate_field(im_snwmelt, cpl_snwmelt)
-    call oasisxregcm_deallocate_field(im_tsoi, cpl_tsoi)
-    call oasisxregcm_deallocate_field(im_h2ovol, cpl_h2ovol)
-    call oasisxregcm_deallocate_field(im_h2oliq, cpl_h2oliq)
-    call oasisxregcm_deallocate_field(im_h2oice, cpl_h2oice)
+    call oasisxregcm_deallocate_3dfield(im_tsoi, cpl_tsoi)
+    call oasisxregcm_deallocate_3dfield(im_h2ovol, cpl_h2ovol)
+    call oasisxregcm_deallocate_3dfield(im_h2oliq, cpl_h2oliq)
+    call oasisxregcm_deallocate_3dfield(im_h2oice, cpl_h2oice)
     call oasisxregcm_deallocate_field(im_h2o10cm, cpl_h2o10cm)
     ! OASIS field +++
     if ( allocated(grdde) ) deallocate(grdde)
@@ -1416,6 +1713,7 @@ module mod_oasis_interface
     if ( allocated(grdce) ) deallocate(grdce)
     if ( allocated(grdci) ) deallocate(grdci)
     if ( allocated(grdtest) ) deallocate(grdtest)
+    if ( allocated(grd3d) ) deallocate(grd3d)
   end subroutine oasisxregcm_release
 
 end module mod_oasis_interface

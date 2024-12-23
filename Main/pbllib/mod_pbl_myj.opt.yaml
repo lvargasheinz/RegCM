@@ -50782,8 +50782,8 @@ Args:
   - Type:            ''
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_pbl_myj.F90, Line: 533, Column: 7 }
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_pbl_myj.F90, Line: 536, Column: 7 }
 ...
 --- !Missed
 Pass:            gvn
@@ -50795,8 +50795,8 @@ Args:
   - Type:            ''
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: mod_pbl_myj.F90, Line: 536, Column: 7 }
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_pbl_myj.F90, Line: 533, Column: 7 }
 ...
 --- !Missed
 Pass:            gvn
@@ -50874,7 +50874,7 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: mod_pbl_myj.F90, Line: 533, Column: 7 }
+    DebugLoc:        { File: mod_pbl_myj.F90, Line: 590, Column: 7 }
 ...
 --- !Missed
 Pass:            gvn
@@ -50913,7 +50913,7 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: mod_pbl_myj.F90, Line: 590, Column: 7 }
+    DebugLoc:        { File: mod_pbl_myj.F90, Line: 533, Column: 7 }
 ...
 --- !Missed
 Pass:            gvn
@@ -51390,8 +51390,8 @@ Args:
   - Type:            ''
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_pbl_myj.F90, Line: 533, Column: 7 }
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_pbl_myj.F90, Line: 536, Column: 7 }
 ...
 --- !Missed
 Pass:            gvn
@@ -51403,8 +51403,8 @@ Args:
   - Type:            ''
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: mod_pbl_myj.F90, Line: 536, Column: 7 }
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_pbl_myj.F90, Line: 533, Column: 7 }
 ...
 --- !Missed
 Pass:            gvn
@@ -51482,7 +51482,7 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: mod_pbl_myj.F90, Line: 533, Column: 7 }
+    DebugLoc:        { File: mod_pbl_myj.F90, Line: 590, Column: 7 }
 ...
 --- !Missed
 Pass:            gvn
@@ -51521,7 +51521,7 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: mod_pbl_myj.F90, Line: 590, Column: 7 }
+    DebugLoc:        { File: mod_pbl_myj.F90, Line: 533, Column: 7 }
 ...
 --- !Missed
 Pass:            gvn

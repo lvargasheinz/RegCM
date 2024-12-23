@@ -157,10 +157,11 @@ module mod_atm_interface
   real(rkx) , public , pointer , dimension(:,:,:) :: voc_em_clm
   real(rkx) , public , pointer , dimension(:,:,:) :: dustflx_clm
   real(rkx) , public , pointer , dimension(:,:,:) :: ddepv_clm
-  real(rkx) , public , pointer , dimension(:,:,:) :: sw_vol
-  real(rkx) , public , pointer , dimension(:,:,:) :: tsoi
+  !real(rkx) , public , pointer , dimension(:,:,:) :: sw_vol
+  !real(rkx) , public , pointer , dimension(:,:,:) :: tsoi
 #endif
-
+  real(rkx) , public , pointer , dimension(:,:,:) :: tsoi
+  real(rkx) , public , pointer , dimension(:,:,:) :: sw_vol
   !chemistry for surface
   real(rkx) , public , pointer , dimension(:,:,:) :: wetdepflx
   real(rkx) , public , pointer , dimension(:,:,:) :: drydepflx

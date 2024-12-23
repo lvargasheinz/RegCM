@@ -10,33 +10,36 @@ Global optimization report for : mod_oasis_generic_mp_oasisxregcm_finalize_
 Global optimization report for : mod_oasis_generic_mp_oasisxregcm_setup_grid_
 =================================================================
 
+Global optimization report for : mod_oasis_generic_mp_oasisxregcm_setup_3dgrid_
+=================================================================
+
 Global optimization report for : mod_oasis_generic_mp_oasisxregcm_setup_field_
 
-LOOP BEGIN at mod_oasis_generic.F90 (146, 9)
+LOOP BEGIN at mod_oasis_generic.F90 (183, 9)
     remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
 
-    LOOP BEGIN at mod_oasis_generic.F90 (146, 9)
+    LOOP BEGIN at mod_oasis_generic.F90 (183, 9)
         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
     LOOP END
 LOOP END
 
-LOOP BEGIN at mod_oasis_generic.F90 (148, 9)
+LOOP BEGIN at mod_oasis_generic.F90 (185, 9)
 <Predicate Optimized v2>
     remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
 
-    LOOP BEGIN at mod_oasis_generic.F90 (148, 9)
+    LOOP BEGIN at mod_oasis_generic.F90 (185, 9)
     <Multiversioned v2>
         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
     LOOP END
 LOOP END
 
-LOOP BEGIN at mod_oasis_generic.F90 (148, 9)
+LOOP BEGIN at mod_oasis_generic.F90 (185, 9)
 <Predicate Optimized v1>
-    remark #25423: Invariant If condition at line 148 hoisted out of this loop
+    remark #25423: Invariant If condition at line 185 hoisted out of this loop
     remark #25423: Invariant If condition at line 0 hoisted out of this loop
     remark #15527: Loop was not vectorized: function call to  cannot be vectorized
 
-    LOOP BEGIN at mod_oasis_generic.F90 (148, 9)
+    LOOP BEGIN at mod_oasis_generic.F90 (185, 9)
     <Multiversioned v1>
         remark #25408: memset generated
         remark #25562: The loop has been multiversioned for the small trip count
@@ -44,13 +47,75 @@ LOOP BEGIN at mod_oasis_generic.F90 (148, 9)
 LOOP END
 =================================================================
 
+Global optimization report for : mod_oasis_generic_mp_oasisxregcm_setup_3dfield_
+
+LOOP BEGIN at mod_oasis_generic.F90 (206, 13)
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_oasis_generic.F90 (206, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_oasis_generic.F90 (206, 13)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_oasis_generic.F90 (208, 13)
+<Predicate Optimized v3>
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_oasis_generic.F90 (208, 13)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_oasis_generic.F90 (208, 13)
+        <Multiversioned v2>
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_oasis_generic.F90 (208, 13)
+<Predicate Optimized v2>
+
+    LOOP BEGIN at mod_oasis_generic.F90 (208, 13)
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_oasis_generic.F90 (208, 13)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 208 hoisted out of this loop
+    remark #25423: Invariant If condition at line 0 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_oasis_generic.F90 (208, 13)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+
+        LOOP BEGIN at mod_oasis_generic.F90 (208, 13)
+        <Multiversioned v1>
+            remark #25408: memset generated
+            remark #25562: The loop has been multiversioned for the small trip count
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
 Global optimization report for : mod_oasis_generic_mp_oasisxregcm_deallocate_field_
+=================================================================
+
+Global optimization report for : mod_oasis_generic_mp_oasisxregcm_deallocate_3dfield_
 =================================================================
 
 Global optimization report for : mod_oasis_generic_mp_oasisxregcm_def_partition_
 =================================================================
 
 Global optimization report for : mod_oasis_genericoasisxregcm_def_partition_mp_oasisxregcm_box_partition_
+=================================================================
+
+Global optimization report for : mod_oasis_generic_mp_oasisxregcm_def_partition_3d_
+=================================================================
+
+Global optimization report for : mod_oasis_genericoasisxregcm_def_partition_3d_mp_oasisxregcm_box_partition_3d_
 =================================================================
 
 Global optimization report for : mod_oasis_generic_mp_oasisxregcm_allocate_oasisgrids_
@@ -61,23 +126,23 @@ Global optimization report for : mod_oasis_generic_mp_srf_sqm_
 
 Global optimization report for : mod_oasis_generic_mp_oasisxregcm_write_oasisgrids_
 
-LOOP BEGIN at mod_oasis_generic.F90 (305, 5)
+LOOP BEGIN at mod_oasis_generic.F90 (439, 5)
 <Predicate Optimized v2>
     remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
 
-    LOOP BEGIN at mod_oasis_generic.F90 (305, 5)
+    LOOP BEGIN at mod_oasis_generic.F90 (439, 5)
     <Multiversioned v2>
         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
     LOOP END
 LOOP END
 
-LOOP BEGIN at mod_oasis_generic.F90 (305, 5)
+LOOP BEGIN at mod_oasis_generic.F90 (439, 5)
 <Predicate Optimized v1>
-    remark #25423: Invariant If condition at line 305 hoisted out of this loop
+    remark #25423: Invariant If condition at line 439 hoisted out of this loop
     remark #25423: Invariant If condition at line 0 hoisted out of this loop
     remark #15527: Loop was not vectorized: function call to  cannot be vectorized
 
-    LOOP BEGIN at mod_oasis_generic.F90 (305, 5)
+    LOOP BEGIN at mod_oasis_generic.F90 (439, 5)
     <Multiversioned v1>
         remark #25408: memset generated
         remark #25562: The loop has been multiversioned for the small trip count
@@ -85,10 +150,57 @@ LOOP BEGIN at mod_oasis_generic.F90 (305, 5)
 LOOP END
 =================================================================
 
+Global optimization report for : mod_oasis_generic_mp_oasisxregcm_write_oasis3dgrids_
+
+LOOP BEGIN at mod_oasis_generic.F90 (499, 5)
+<Predicate Optimized v3>
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_oasis_generic.F90 (499, 5)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at mod_oasis_generic.F90 (499, 5)
+        <Multiversioned v2>
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_oasis_generic.F90 (499, 5)
+<Predicate Optimized v2>
+
+    LOOP BEGIN at mod_oasis_generic.F90 (499, 5)
+    LOOP END
+LOOP END
+
+LOOP BEGIN at mod_oasis_generic.F90 (499, 5)
+<Predicate Optimized v1>
+    remark #25423: Invariant If condition at line 499 hoisted out of this loop
+    remark #25423: Invariant If condition at line 0 hoisted out of this loop
+    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at mod_oasis_generic.F90 (499, 5)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+
+        LOOP BEGIN at mod_oasis_generic.F90 (499, 5)
+        <Multiversioned v1>
+            remark #25408: memset generated
+            remark #25562: The loop has been multiversioned for the small trip count
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
 Global optimization report for : mod_oasis_generic_mp_oasisxregcm_deallocate_oasisgrids_
 =================================================================
 
+Global optimization report for : mod_oasis_generic_mp_oasisxregcm_deallocate_oasis3dgrids_
+=================================================================
+
 Global optimization report for : mod_oasis_generic_mp_oasisxregcm_def_field_
+=================================================================
+
+Global optimization report for : mod_oasis_generic_mp_oasisxregcm_def_3dfield_
 =================================================================
 
 Global optimization report for : mod_oasis_generic_mp_oasisxregcm_end_def_
@@ -97,13 +209,16 @@ Global optimization report for : mod_oasis_generic_mp_oasisxregcm_end_def_
 Global optimization report for : mod_oasis_generic_mp_oasisxregcm_rcv_
 =================================================================
 
+Global optimization report for : mod_oasis_generic_mp_oasisxregcm_rcv_3d_
+=================================================================
+
 Global optimization report for : mod_oasis_generic_mp_fill_ocean_2d_
 
-LOOP BEGIN at mod_oasis_generic.F90 (438, 7)
-    remark #25423: Invariant If condition at line 438 hoisted out of this loop
+LOOP BEGIN at mod_oasis_generic.F90 (722, 7)
+    remark #25423: Invariant If condition at line 722 hoisted out of this loop
     remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
 
-    LOOP BEGIN at mod_oasis_generic.F90 (438, 7)
+    LOOP BEGIN at mod_oasis_generic.F90 (722, 7)
         remark #15344: Loop was not vectorized: vector dependence prevents vectorization
         remark #15346: vector dependence: assumed FLOW dependence
     LOOP END
@@ -112,25 +227,24 @@ LOOP END
 
 Global optimization report for : mod_oasis_generic_mp_fill_land_2d_
 
-LOOP BEGIN at mod_oasis_generic.F90 (457, 7)
-    remark #25423: Invariant If condition at line 457 hoisted out of this loop
-    remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+LOOP BEGIN at mod_oasis_generic.F90 (741, 7)
 
-    LOOP BEGIN at mod_oasis_generic.F90 (457, 7)
-        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
-        remark #15346: vector dependence: assumed FLOW dependence
-        remark #15346: vector dependence: assumed FLOW dependence
+    LOOP BEGIN at mod_oasis_generic.F90 (744, 40)
+
+        LOOP BEGIN at mod_oasis_generic.F90 (744, 73)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
     LOOP END
 LOOP END
 =================================================================
 
 Global optimization report for : mod_oasis_generic_mp_fill_ocean_3d_
 
-LOOP BEGIN at mod_oasis_generic.F90 (479, 7)
+LOOP BEGIN at mod_oasis_generic.F90 (763, 7)
 
-    LOOP BEGIN at mod_oasis_generic.F90 (481, 14)
+    LOOP BEGIN at mod_oasis_generic.F90 (765, 14)
 
-        LOOP BEGIN at mod_oasis_generic.F90 (481, 37)
+        LOOP BEGIN at mod_oasis_generic.F90 (765, 37)
             remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
         LOOP END
     LOOP END
@@ -139,12 +253,41 @@ LOOP END
 
 Global optimization report for : mod_oasis_generic_mp_fill_land_3d_
 
-LOOP BEGIN at mod_oasis_generic.F90 (499, 7)
+LOOP BEGIN at mod_oasis_generic.F90 (783, 7)
 
-    LOOP BEGIN at mod_oasis_generic.F90 (502, 40)
+    LOOP BEGIN at mod_oasis_generic.F90 (786, 40)
 
-        LOOP BEGIN at mod_oasis_generic.F90 (502, 73)
+        LOOP BEGIN at mod_oasis_generic.F90 (786, 73)
             remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_oasis_generic_mp_fill_land_3d_2_
+
+LOOP BEGIN at mod_oasis_generic.F90 (802, 7)
+
+    LOOP BEGIN at mod_oasis_generic.F90 (805, 40)
+
+        LOOP BEGIN at mod_oasis_generic.F90 (805, 73)
+            remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : mod_oasis_generic_mp_fill_land_4d_
+
+LOOP BEGIN at mod_oasis_generic.F90 (826, 9)
+
+    LOOP BEGIN at mod_oasis_generic.F90 (828, 13)
+
+        LOOP BEGIN at mod_oasis_generic.F90 (830, 49)
+
+            LOOP BEGIN at mod_oasis_generic.F90 (831, 21)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
         LOOP END
     LOOP END
 LOOP END
@@ -161,8 +304,12 @@ Option Values:
   inlineoptsize-threshold: 15
 
 COMPILE FUNC: mod_oasis_generic_mp_oasisxregcm_setup_grid_
-   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (110,5)
-   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (111,5)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (112,5)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (113,5)
+
+COMPILE FUNC: mod_oasis_generic_mp_oasisxregcm_setup_3dgrid_
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (141,5)
+   -> DELETE: llvm.memcpy.p0.p0.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (142,5)
 
 COMPILE FUNC: mod_oasis_generic._
 
@@ -171,112 +318,171 @@ COMPILE FUNC: mod_oasis_generic_mp_oasisxregcm_init_
 COMPILE FUNC: mod_oasis_generic_mp_oasisxregcm_finalize_
 
 COMPILE FUNC: mod_oasis_generic_mp_oasisxregcm_setup_field_
-   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (139,5)
-   -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (141,5)
-   -> llvm.smax.i32 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (144,7)
-   -> llvm.smax.i32 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (144,7)
-   -> llvm.memset.p0.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (131,38)
-   -> llvm.memset.p0.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (131,38)
-   -> llvm.memset.p0.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (148,9)
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (176,5)
+   -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (178,5)
+   -> llvm.smax.i32 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (181,7)
+   -> llvm.smax.i32 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (181,7)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (168,38)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (168,38)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (185,9)
+
+COMPILE FUNC: mod_oasis_generic_mp_oasisxregcm_setup_3dfield_
+   -> llvm.memcpy.p0.p0.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (198,5)
+   -> llvm.for.cpystr.i64.i64.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (200,5)
+   -> llvm.smax.i32 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (204,9)
+   -> llvm.smax.i32 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (204,9)
+   -> llvm.smax.i32 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (204,9)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (189,40)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (189,40)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (208,13)
 
 COMPILE FUNC: mod_oasis_generic_mp_oasisxregcm_deallocate_field_
-   -> llvm.memset.p0.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (154,14)
-   -> llvm.memset.p0.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (154,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (214,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (214,14)
+
+COMPILE FUNC: mod_oasis_generic_mp_oasisxregcm_deallocate_3dfield_
+   -> llvm.memset.p0.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (228,14)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (228,14)
 
 COMPILE FUNC: mod_oasis_genericoasisxregcm_def_partition_mp_oasisxregcm_box_partition_
 
 COMPILE FUNC: mod_oasis_generic_mp_oasisxregcm_def_partition_
-   -> mod_oasis_genericoasisxregcm_def_partition_mp_oasisxregcm_box_partition_ /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (179,10)
-   -> llvm.memset.p0.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (173,45)
-   -> llvm.memset.p0.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (173,45)
+   -> mod_oasis_genericoasisxregcm_def_partition_mp_oasisxregcm_box_partition_ /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (256,10)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (250,45)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (250,45)
+
+COMPILE FUNC: mod_oasis_genericoasisxregcm_def_partition_3d_mp_oasisxregcm_box_partition_3d_
+
+COMPILE FUNC: mod_oasis_generic_mp_oasisxregcm_def_partition_3d_
+   -> mod_oasis_genericoasisxregcm_def_partition_3d_mp_oasisxregcm_box_partition_3d_ /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (307,10)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (300,43)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (300,43)
 
 COMPILE FUNC: mod_oasis_generic_mp_oasisxregcm_allocate_oasisgrids_
-   -> llvm.smax.i32 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (227,5)
-   -> llvm.smax.i32 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (227,5)
-   -> DELETE: llvm.smax.i32 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (227,5)
-   -> DELETE: llvm.smax.i32 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (227,5)
-   -> DELETE: llvm.smax.i32 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (232,5)
-   -> DELETE: llvm.smax.i32 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (232,5)
-   -> DELETE: llvm.smax.i32 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (232,5)
-   -> DELETE: llvm.smax.i32 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (232,5)
-   -> DELETE: llvm.smax.i32 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (237,5)
-   -> DELETE: llvm.smax.i32 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (237,5)
-   -> llvm.smax.i32 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (237,5)
-   -> DELETE: llvm.smax.i32 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (237,5)
-   -> DELETE: llvm.smax.i32 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (237,5)
-   -> DELETE: llvm.smax.i32 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (237,5)
-   -> DELETE: llvm.smax.i32 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (242,5)
-   -> DELETE: llvm.smax.i32 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (242,5)
-   -> DELETE: llvm.smax.i32 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (242,5)
-   -> DELETE: llvm.smax.i32 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (242,5)
-   -> DELETE: llvm.smax.i32 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (242,5)
-   -> DELETE: llvm.smax.i32 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (242,5)
-   -> DELETE: llvm.smax.i32 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (247,5)
-   -> DELETE: llvm.smax.i32 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (247,5)
-   -> DELETE: llvm.smax.i32 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (247,5)
-   -> DELETE: llvm.smax.i32 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (247,5)
-   -> DELETE: llvm.smax.i32 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (252,5)
-   -> DELETE: llvm.smax.i32 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (252,5)
-   -> DELETE: llvm.smax.i32 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (252,5)
-   -> DELETE: llvm.smax.i32 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (252,5)
+   -> llvm.smax.i32 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (361,5)
+   -> llvm.smax.i32 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (361,5)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (361,5)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (361,5)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (366,5)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (366,5)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (366,5)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (366,5)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (371,5)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (371,5)
+   -> llvm.smax.i32 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (371,5)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (371,5)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (371,5)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (371,5)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (376,5)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (376,5)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (376,5)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (376,5)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (376,5)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (376,5)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (381,5)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (381,5)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (381,5)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (381,5)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (386,5)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (386,5)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (386,5)
+   -> DELETE: llvm.smax.i32 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (386,5)
 
 COMPILE FUNC: mod_oasis_generic_mp_srf_sqm_
-   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (270,15)
-   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (271,10)
-   -> llvm.cos.f64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (271,40)
-   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (273,15)
-   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (274,10)
-   -> llvm.cos.f64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (274,40)
-   -> llvm.fabs.f64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (276,9)
-   -> llvm.arithmetic.fence.f64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (278,20)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (404,15)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (405,10)
+   -> llvm.cos.f64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (405,40)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (407,15)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (408,10)
+   -> llvm.cos.f64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (408,40)
+   -> llvm.fabs.f64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (410,9)
+   -> llvm.arithmetic.fence.f64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (412,20)
 
 COMPILE FUNC: mod_oasis_generic_mp_oasisxregcm_write_oasisgrids_
-   -> llvm.smax.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (295,5)
-   -> llvm.smax.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (295,5)
-   -> DELETE: llvm.smax.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (295,5)
-   -> DELETE: llvm.smax.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (295,5)
-   -> DELETE: llvm.smax.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (298,5)
-   -> DELETE: llvm.smax.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (298,5)
-   -> DELETE: llvm.smax.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (298,5)
-   -> DELETE: llvm.smax.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (298,5)
-   -> DELETE: llvm.smax.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (301,5)
-   -> DELETE: llvm.smax.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (301,5)
-   -> DELETE: llvm.smax.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (306,5)
-   -> DELETE: llvm.smax.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (306,5)
-   -> DELETE: llvm.smax.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (315,5)
-   -> DELETE: llvm.smax.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (315,5)
-   -> DELETE: llvm.smax.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (315,5)
-   -> DELETE: llvm.smax.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (315,5)
-   -> DELETE: llvm.smax.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (318,5)
-   -> DELETE: llvm.smax.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (318,5)
-   -> DELETE: llvm.smax.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (318,5)
-   -> DELETE: llvm.smax.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (318,5)
-   -> DELETE: llvm.smax.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (321,5)
-   -> DELETE: llvm.smax.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (321,5)
-   -> DELETE: llvm.smax.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (324,5)
-   -> DELETE: llvm.smax.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (324,5)
-   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (288,52)
-   -> llvm.memset.p0.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (288,52)
-   -> llvm.memset.p0.i64 /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (305,5)
+   -> llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (429,5)
+   -> llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (429,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (429,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (429,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (432,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (432,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (432,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (432,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (435,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (435,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (440,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (440,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (449,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (449,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (449,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (449,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (452,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (452,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (452,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (452,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (455,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (455,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (458,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (458,5)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (422,52)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (422,52)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (439,5)
+
+COMPILE FUNC: mod_oasis_generic_mp_oasisxregcm_write_oasis3dgrids_
+   -> llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (483,5)
+   -> llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (483,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (483,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (483,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (488,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (488,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (488,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (488,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (493,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (493,5)
+   -> llvm.smax.i32 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (497,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (502,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (502,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (513,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (513,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (513,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (513,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (518,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (518,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (518,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (518,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (523,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (523,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (527,5)
+   -> DELETE: llvm.smax.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (527,5)
+   -> DELETE: llvm.memset.p0.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (469,52)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (469,52)
+   -> llvm.memset.p0.i64 /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (499,5)
 
 COMPILE FUNC: mod_oasis_generic_mp_oasisxregcm_deallocate_oasisgrids_
 
+COMPILE FUNC: mod_oasis_generic_mp_oasisxregcm_deallocate_oasis3dgrids_
+
 COMPILE FUNC: mod_oasis_generic_mp_oasisxregcm_def_field_
+
+COMPILE FUNC: mod_oasis_generic_mp_oasisxregcm_def_3dfield_
 
 COMPILE FUNC: mod_oasis_generic_mp_oasisxregcm_end_def_
 
 COMPILE FUNC: mod_oasis_generic_mp_oasisxregcm_rcv_
 
+COMPILE FUNC: mod_oasis_generic_mp_oasisxregcm_rcv_3d_
+
 COMPILE FUNC: mod_oasis_generic_mp_fill_ocean_2d_
-   -> DELETE: mod_runparams_mp_isocean_ /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (440,14)
+   -> DELETE: mod_runparams_mp_isocean_ /scratch_local/ifx06301574010vbPGU/ifxiGSJpu.i90 (724,14)
 
 COMPILE FUNC: mod_oasis_generic_mp_fill_land_2d_
-   -> DELETE: mod_runparams_mp_isocean_ /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (460,19)
-   -> DELETE: mod_runparams_mp_islake_ /scratch_local/ifx0494155964Im1BuV/ifxLC1Vdz.i90 (460,52)
 
 COMPILE FUNC: mod_oasis_generic_mp_fill_ocean_3d_
 
 COMPILE FUNC: mod_oasis_generic_mp_fill_land_3d_
+
+COMPILE FUNC: mod_oasis_generic_mp_fill_land_3d_2_
+
+COMPILE FUNC: mod_oasis_generic_mp_fill_land_4d_
 
 COMPILE FUNC: mod_oasis_generic_mp_oasisxregcm_snd_
 

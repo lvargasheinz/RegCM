@@ -26481,34 +26481,8 @@ Args:
   - Type:            ''
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 172, Column: 11 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 205, Column: 11 }
-Function:        mod_bats_leaftemp_mp_lftemp_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
   - ClobberedBy:     call
     DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 154, Column: 12 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 205, Column: 11 }
-Function:        mod_bats_leaftemp_mp_lftemp_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 177, Column: 24 }
 ...
 --- !Missed
 Pass:            gvn
@@ -26534,7 +26508,33 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 177, Column: 24 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 205, Column: 11 }
+Function:        mod_bats_leaftemp_mp_lftemp_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
     DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 154, Column: 12 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 205, Column: 11 }
+Function:        mod_bats_leaftemp_mp_lftemp_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 172, Column: 11 }
 ...
 --- !Missed
 Pass:            gvn
@@ -26559,8 +26559,8 @@ Args:
   - Type:            ''
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 172, Column: 11 }
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 154, Column: 12 }
 ...
 --- !Missed
 Pass:            gvn
@@ -26572,54 +26572,6 @@ Args:
   - Type:            ''
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 154, Column: 12 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 182, Column: 11 }
-Function:        mod_bats_leaftemp_mp_lftemp_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 159, Column: 27 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 177, Column: 24 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 182, Column: 11 }
-Function:        mod_bats_leaftemp_mp_lftemp_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 159, Column: 27 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 154, Column: 12 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 182, Column: 11 }
-Function:        mod_bats_leaftemp_mp_lftemp_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 159, Column: 27 }
-  - String:          ' because it is clobbered by '
   - ClobberedBy:     store
     DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 172, Column: 11 }
 ...
@@ -26728,9 +26680,70 @@ Args:
   - String:          'load of type '
   - Type:            ''
   - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 159, Column: 27 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
     DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 177, Column: 24 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 182, Column: 11 }
+Function:        mod_bats_leaftemp_mp_lftemp_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 159, Column: 27 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 154, Column: 12 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 182, Column: 11 }
+Function:        mod_bats_leaftemp_mp_lftemp_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 159, Column: 27 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 172, Column: 11 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 182, Column: 11 }
+Function:        mod_bats_leaftemp_mp_lftemp_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 177, Column: 24 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 182, Column: 11 }
+Function:        mod_bats_leaftemp_mp_lftemp_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 154, Column: 12 }
 ...
 --- !Missed
 Pass:            gvn
@@ -26756,7 +26769,7 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 154, Column: 12 }
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 177, Column: 24 }
 ...
 --- !Missed
 Pass:            gvn
@@ -26769,7 +26782,7 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 177, Column: 24 }
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 154, Column: 12 }
 ...
 --- !Missed
 Pass:            gvn
@@ -26795,7 +26808,7 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 154, Column: 12 }
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 177, Column: 24 }
 ...
 --- !Missed
 Pass:            gvn
@@ -26808,7 +26821,7 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 177, Column: 24 }
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 154, Column: 12 }
 ...
 --- !Missed
 Pass:            gvn
@@ -26822,19 +26835,6 @@ Args:
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
     DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 172, Column: 11 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 182, Column: 11 }
-Function:        mod_bats_leaftemp_mp_lftemp_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 154, Column: 12 }
 ...
 --- !Missed
 Pass:            gvn
@@ -28509,8 +28509,8 @@ Args:
   - Type:            ''
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 172, Column: 11 }
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 154, Column: 12 }
 ...
 --- !Missed
 Pass:            gvn
@@ -28522,8 +28522,8 @@ Args:
   - Type:            ''
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 154, Column: 12 }
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 172, Column: 11 }
 ...
 --- !Missed
 Pass:            gvn
@@ -28548,8 +28548,8 @@ Args:
   - Type:            ''
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 172, Column: 11 }
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 154, Column: 12 }
 ...
 --- !Missed
 Pass:            gvn
@@ -28561,8 +28561,8 @@ Args:
   - Type:            ''
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 154, Column: 12 }
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 172, Column: 11 }
 ...
 --- !Missed
 Pass:            gvn
@@ -28587,8 +28587,8 @@ Args:
   - Type:            ''
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 172, Column: 11 }
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 154, Column: 12 }
 ...
 --- !Missed
 Pass:            gvn
@@ -28600,8 +28600,8 @@ Args:
   - Type:            ''
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 154, Column: 12 }
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 172, Column: 11 }
 ...
 --- !Missed
 Pass:            gvn
@@ -42890,34 +42890,8 @@ Args:
   - Type:            ''
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 172, Column: 11 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 205, Column: 11 }
-Function:        mod_bats_leaftemp_mp_lftemp_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
   - ClobberedBy:     call
     DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 154, Column: 12 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 205, Column: 11 }
-Function:        mod_bats_leaftemp_mp_lftemp_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 177, Column: 24 }
 ...
 --- !Missed
 Pass:            gvn
@@ -42943,7 +42917,33 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 177, Column: 24 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 205, Column: 11 }
+Function:        mod_bats_leaftemp_mp_lftemp_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
     DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 154, Column: 12 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 205, Column: 11 }
+Function:        mod_bats_leaftemp_mp_lftemp_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 172, Column: 11 }
 ...
 --- !Missed
 Pass:            gvn
@@ -42968,8 +42968,8 @@ Args:
   - Type:            ''
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 172, Column: 11 }
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 154, Column: 12 }
 ...
 --- !Missed
 Pass:            gvn
@@ -42981,54 +42981,6 @@ Args:
   - Type:            ''
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 154, Column: 12 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 182, Column: 11 }
-Function:        mod_bats_leaftemp_mp_lftemp_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 159, Column: 27 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 177, Column: 24 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 182, Column: 11 }
-Function:        mod_bats_leaftemp_mp_lftemp_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 159, Column: 27 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 154, Column: 12 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 182, Column: 11 }
-Function:        mod_bats_leaftemp_mp_lftemp_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 159, Column: 27 }
-  - String:          ' because it is clobbered by '
   - ClobberedBy:     store
     DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 172, Column: 11 }
 ...
@@ -43137,9 +43089,70 @@ Args:
   - String:          'load of type '
   - Type:            ''
   - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 159, Column: 27 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
     DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 177, Column: 24 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 182, Column: 11 }
+Function:        mod_bats_leaftemp_mp_lftemp_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 159, Column: 27 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 154, Column: 12 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 182, Column: 11 }
+Function:        mod_bats_leaftemp_mp_lftemp_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 159, Column: 27 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 172, Column: 11 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 182, Column: 11 }
+Function:        mod_bats_leaftemp_mp_lftemp_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 177, Column: 24 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 182, Column: 11 }
+Function:        mod_bats_leaftemp_mp_lftemp_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 154, Column: 12 }
 ...
 --- !Missed
 Pass:            gvn
@@ -43165,7 +43178,7 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 154, Column: 12 }
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 177, Column: 24 }
 ...
 --- !Missed
 Pass:            gvn
@@ -43178,7 +43191,7 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 177, Column: 24 }
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 154, Column: 12 }
 ...
 --- !Missed
 Pass:            gvn
@@ -43204,7 +43217,7 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 154, Column: 12 }
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 177, Column: 24 }
 ...
 --- !Missed
 Pass:            gvn
@@ -43217,7 +43230,7 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 177, Column: 24 }
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 154, Column: 12 }
 ...
 --- !Missed
 Pass:            gvn
@@ -43231,19 +43244,6 @@ Args:
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
     DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 172, Column: 11 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 182, Column: 11 }
-Function:        mod_bats_leaftemp_mp_lftemp_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 154, Column: 12 }
 ...
 --- !Missed
 Pass:            gvn
@@ -44918,8 +44918,8 @@ Args:
   - Type:            ''
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 172, Column: 11 }
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 154, Column: 12 }
 ...
 --- !Missed
 Pass:            gvn
@@ -44931,8 +44931,8 @@ Args:
   - Type:            ''
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 154, Column: 12 }
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 172, Column: 11 }
 ...
 --- !Missed
 Pass:            gvn
@@ -44957,8 +44957,8 @@ Args:
   - Type:            ''
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 172, Column: 11 }
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 154, Column: 12 }
 ...
 --- !Missed
 Pass:            gvn
@@ -44970,8 +44970,8 @@ Args:
   - Type:            ''
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 154, Column: 12 }
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 172, Column: 11 }
 ...
 --- !Missed
 Pass:            gvn
@@ -44996,8 +44996,8 @@ Args:
   - Type:            ''
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 172, Column: 11 }
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 154, Column: 12 }
 ...
 --- !Missed
 Pass:            gvn
@@ -45009,8 +45009,8 @@ Args:
   - Type:            ''
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 154, Column: 12 }
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_bats_leaftemp.F90, Line: 172, Column: 11 }
 ...
 --- !Missed
 Pass:            gvn

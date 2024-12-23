@@ -47,19 +47,21 @@ module mod_oasis_generic
   end interface fill_ocean
 
   interface fill_land
-    module procedure fill_land_2d, fill_land_3d 
+    module procedure fill_land_2d, fill_land_3d, fill_land_4d  , fill_land_3d_2
   end interface fill_land
 
 
   public :: oasisxregcm_init , oasisxregcm_finalize
-  public :: oasisxregcm_setup_grid
+  public :: oasisxregcm_setup_grid , oasisxregcm_setup_3dgrid
   public :: oasisxregcm_setup_field , oasisxregcm_deallocate_field
-  public :: oasisxregcm_def_partition
+  public :: oasisxregcm_setup_3dfield , oasisxregcm_deallocate_3dfield
+  public :: oasisxregcm_def_partition , oasisxregcm_def_partition_3d
   public :: oasisxregcm_allocate_oasisgrids , srf_sqm
   public :: oasisxregcm_write_oasisgrids , oasisxregcm_deallocate_oasisgrids
-  public :: oasisxregcm_def_field , oasisxregcm_end_def
-  public :: oasisxregcm_rcv , fill_ocean , fill_land
-  public :: oasisxregcm_snd
+  public ::   oasisxregcm_write_oasis3dgrids,  oasisxregcm_deallocate_oasis3dgrids
+  public :: oasisxregcm_def_field , oasisxregcm_end_def, oasisxregcm_def_3dfield
+  public :: oasisxregcm_rcv , fill_ocean , fill_land , oasisxregcm_rcv_3d
+  public :: oasisxregcm_snd , fill_land_2d, fill_land_3d, fill_land_4d
 
   contains
 
@@ -126,6 +128,41 @@ module mod_oasis_generic
     ! number of corner per cell
     grd%nc = nc
   end subroutine oasisxregcm_setup_grid
+  subroutine oasisxregcm_setup_3dgrid(grd, naNM, naWM, j1, j2, i1, i2, k1, k2, &
+                                  ja, jb, ia, ib, ka, kb, nc)
+    implicit none
+    character(len=4), intent(in) :: naNM, naWM
+    integer, intent(in) :: j1, j2, i1, i2, k1, k2, &
+                           ja, jb, ia, ib, ka, kb, nc
+    type(info3dgrd), allocatable, intent(out) :: grd
+    !--------------------------------------------------------------------------
+    allocate(grd)
+    ! Names
+    grd%naNM = naNM
+    grd%naWM = naWM
+    ! Local indexes
+    grd%j1 = j1
+    grd%j2 = j2
+    grd%jll = j2 - j1 + 1
+    grd%i1 = i1
+    grd%i2 = i2
+    grd%ill = i2 - i1 + 1
+    grd%k1 = k1
+    grd%k2 = k2
+    grd%kll = k2 - k1 + 1
+    ! Global indexes
+    grd%ja = ja
+    grd%jb = jb
+    grd%jgl = jb - ja + 1
+    grd%ia = ia
+    grd%ib = ib
+    grd%igl = ib - ia + 1
+    grd%ka = ka
+    grd%kb = kb
+    grd%kgl = kb - ka + 1
+    ! Number of corners per cell
+    grd%nc = nc
+  end subroutine oasisxregcm_setup_3dgrid
 
   ! initialize a type(infofld) variable
   subroutine oasisxregcm_setup_field(fld, na, grd, array, init_val)
@@ -149,6 +186,29 @@ module mod_oasis_generic
       end if
     end if
   end subroutine oasisxregcm_setup_field
+  subroutine oasisxregcm_setup_3dfield(fld, na, grd, array, init_val)
+    implicit none
+    character(len=*) , intent(in) :: na
+    type(info3dgrd), target, intent(in) :: grd
+    real(rkx), intent(in), optional :: init_val
+    type(info3dfld), allocatable, intent(out) :: fld
+    real(rkx), dimension(:,:,:), allocatable, intent(out), optional :: array
+
+    !--------------------------------------------------------------------------
+    allocate(fld)
+    allocate(character(len=len(na)) :: fld%na)
+    fld%na = na
+    fld%grd => grd
+
+    if (present(array)) then
+        allocate(array(grd%jll, grd%ill, grd%nc))  ! Always allocate as 3D
+        if (present(init_val)) then
+            array(:, :, :) = init_val
+        else
+            array(:, :, :) = 0.0
+        end if
+    end if
+  end subroutine oasisxregcm_setup_3dfield
 
   ! deallocate a type(infofld) variable
   subroutine oasisxregcm_deallocate_field(fld, array)
@@ -165,6 +225,23 @@ module mod_oasis_generic
       if ( allocated(array) ) deallocate(array)
     end if
   end subroutine oasisxregcm_deallocate_field
+  subroutine oasisxregcm_deallocate_3dfield(fld, array)
+    implicit none
+    type(info3dfld), allocatable, intent(inout) :: fld
+    real(rkx), dimension(:,:,:), allocatable, intent(inout), optional :: array
+
+    !--------------------------------------------------------------------------
+    ! Deallocate the field structure
+    if (allocated(fld)) then
+        nullify(fld%grd)
+        deallocate(fld)
+    end if
+
+    ! Deallocate the 3D array if present
+    if (present(array)) then
+        if (allocated(array)) deallocate(array)
+    end if
+  end subroutine oasisxregcm_deallocate_3dfield
 
   ! define an OASIS partition
   subroutine oasisxregcm_def_partition(grd)
@@ -216,6 +293,63 @@ module mod_oasis_generic
 
   end subroutine oasisxregcm_def_partition
 
+
+subroutine oasisxregcm_def_partition_3d(grd)
+    implicit none
+    type(info3dgrd), intent(inout) :: grd
+    integer, dimension(:), allocatable :: il_paral ! OASIS partition instructions
+    character(len=*) , parameter :: sub_name = 'oasisxregcm_def_partition_3d'
+    integer :: ierror
+    !--------------------------------------------------------------------------
+#ifdef DEBUG
+    write(ndebug,*) oasis_prefix, '>> ', grd%naNM, '/', grd%naWM, ' partitions'
+#endif
+    call oasisxregcm_box_partition_3d(il_paral, grd)
+    call oasis_def_partition(grd%id, il_paral, ierror)
+    if (ierror /= 0) then
+        write(stderr,*) 'oasis_def_partition (', grd%naNM, '/', grd%naWM, ') abort compid ', comp_id
+        call oasis_abort(comp_id, sub_name, &
+            'Problem in oasis_def_partition call for '//grd%naNM//'/'//grd%naWM)
+    end if
+#ifdef DEBUG
+    write(ndebug,"(' ',A,A,I2)") oasis_prefix, '-- id: ', grd%id
+#endif
+contains
+
+    ! fill the OASIS partition instruction array in the case
+    ! of a 'box' partition for 3D grid:
+    ! paral(1) = 2 indicates a box partition
+    ! paral(2) = global offset (lower left corner)
+    ! paral(3) = local extent in x
+    ! paral(4) = local extent in y
+    ! paral(5) = local extent in z
+    ! paral(6) = global extent in x
+    ! paral(7) = global extent in y
+    ! paral(8) = global extent in z
+    subroutine oasisxregcm_box_partition_3d(paral, grd)
+        implicit none
+        type(info3dgrd), intent(in) :: grd
+        integer, dimension(:), allocatable, intent(out) :: paral
+        !--------------------------------------------------------------------------
+        allocate(paral(8))  ! Adjusted for 3D partitioning
+        paral(1) = 2  ! Box partition type
+        paral(2) = (grd%i1 - grd%ia) * grd%jgl * grd%kgl + & 
+                  (grd%j1 - grd%ja) * grd%kgl + (grd%k1 - grd%ka)  ! Global offset (lower left)
+        paral(3) = grd%jll  ! Local extent in x (number of grid points in x)
+        paral(4) = grd%ill  ! Local extent in y (number of grid points in y)
+        paral(5) = grd%kll  ! Local extent in z (number of grid points in z)
+        paral(6) = grd%jgl  ! Global extent in x (total grid points in x)
+        paral(7) = grd%igl  ! Global extent in y (total grid points in y)
+        paral(8) = grd%kgl  ! Global extent in z (total grid points in z)
+#ifdef DEBUG
+        write(ndebug,*) oasis_prefix, 'Box definition:'
+        write(ndebug,*) oasis_prefix, 'gl off | lo x | lo y | lo z | gl x | gl y | gl z'
+        write(ndebug,"(' ',A,7(I6,' | '),I6)") oasis_prefix, paral(2), paral(3), paral(4), paral(5), paral(6), paral(7), paral(8)
+#endif
+    end subroutine oasisxregcm_box_partition_3d
+
+  end subroutine oasisxregcm_def_partition_3d
+  
   ! allocate oasisgrids temporary pointers
   subroutine oasisxregcm_allocate_oasisgrids(lon,lat,clon,clat,srf,mask,jsize,isize,csize)
     implicit none
@@ -326,6 +460,74 @@ module mod_oasis_generic
     !
   end subroutine oasisxregcm_write_oasisgrids
 
+  subroutine oasisxregcm_write_oasis3dgrids(grd, lon, lat, clon, clat, srf, mask)
+    implicit none
+    type(info3dgrd), intent(in) :: grd
+    real(rkx), pointer, dimension(:,:,:), intent(in) :: lon, lat, clon, clat
+    real(rkx), pointer, dimension(:,:,:), intent(in) :: srf
+    integer(ik4), pointer, dimension(:,:,:), intent(in) :: mask
+    integer(ik4), allocatable, dimension(:,:,:) :: mask0
+    integer :: k_start, k_end, kdim
+
+    ! Determine the third dimension (depth/layers)
+    k_start = lbound(lon, 3)
+    k_end = ubound(lon, 3)
+    kdim = k_end - k_start + 1  ! Number of vertical levels
+
+#ifdef DEBUG
+    write(ndebug,*) oasis_prefix, '>>       name: ', grd%naNM
+    write(ndebug,"(' ',A,A,I4,A,I4,A,I4)") oasis_prefix, '-- dimensions: ', grd%jgl, 'x', grd%igl, 'x', kdim
+#endif
+
+    ! Write Grid Information (3D Lon, Lat)
+    call oasis_write_grid(grd%naNM, grd%jgl, grd%igl, &
+         lon(grd%ja:grd%jb, grd%ia:grd%ib, k_start), &
+         lat(grd%ja:grd%jb, grd%ia:grd%ib, k_start))
+
+    ! Write Corner Information (clon, clat already 3D)
+    call oasis_write_corner(grd%naNM, grd%jgl, grd%igl, grd%nc, &
+         clon(grd%ja:grd%jb, grd%ia:grd%ib, :), &
+         clat(grd%ja:grd%jb, grd%ia:grd%ib, :))
+
+    ! Write Area (srf) - For all vertical levels (depth)
+    call oasis_write_area(grd%naNM, grd%jgl, grd%igl, &
+         srf(grd%ja:grd%jb, grd%ia:grd%ib, k_start))
+
+    ! Allocate mask0 and initialize to 0
+    allocate(mask0(lbound(mask, 1):ubound(mask, 1), &
+                   lbound(mask, 2):ubound(mask, 2), kdim))
+    mask0(:,:,:) = 0
+
+    ! Write No-Mask Case
+    call oasis_write_mask(grd%naNM, grd%jgl, grd%igl, &
+         mask0(grd%ja:grd%jb, grd%ia:grd%ib, k_start))
+
+    deallocate(mask0)
+
+#ifdef DEBUG
+    write(ndebug,*) oasis_prefix, '>>       name: ', grd%naWM
+    write(ndebug,"(' ',A,A,I4,A,I4,A,I4)") oasis_prefix, '-- dimensions: ', grd%jgl, 'x', grd%igl, 'x', kdim
+#endif
+
+    ! Write Grid Information (With Mask) for 3D field
+    call oasis_write_grid(grd%naWM, grd%jgl, grd%igl, &
+         lon(grd%ja:grd%jb, grd%ia:grd%ib, k_start), &
+         lat(grd%ja:grd%jb, grd%ia:grd%ib, k_start))
+
+    ! Write Corner Information (clon, clat already 3D)
+    call oasis_write_corner(grd%naWM, grd%jgl, grd%igl, grd%nc, &
+         clon(grd%ja:grd%jb, grd%ia:grd%ib, :), &
+         clat(grd%ja:grd%jb, grd%ia:grd%ib, :))
+
+    ! Write Area (srf) for 3D field
+    call oasis_write_area(grd%naWM, grd%jgl, grd%igl, &
+         srf(grd%ja:grd%jb, grd%ia:grd%ib, k_start))
+
+    ! Write Mask for 3D field
+    call oasis_write_mask(grd%naWM, grd%jgl, grd%igl, &
+         mask(grd%ja:grd%jb, grd%ia:grd%ib, k_start))
+  end subroutine oasisxregcm_write_oasis3dgrids
+ 
   ! deallocate oasisgrids temporary pointers
   subroutine oasisxregcm_deallocate_oasisgrids(lon,lat,clon,clat,srf,mask)
     implicit none
@@ -340,7 +542,22 @@ module mod_oasis_generic
     if ( associated(srf) ) nullify(srf)
     if ( associated(mask) ) nullify(mask)
   end subroutine oasisxregcm_deallocate_oasisgrids
+  subroutine oasisxregcm_deallocate_oasis3dgrids(lon, lat, clon, clat, srf, mask)
+    implicit none
+    real(rkx), pointer, dimension(:,:,:), intent(inout) :: lon, lat, srf
+    real(rkx), pointer, dimension(:,:,:), intent(inout) :: clon, clat
+    integer(ik4), pointer, dimension(:,:,:), intent(inout) :: mask
 
+    !--------------------------------------------------------------------------
+    if (associated(lon)) nullify(lon)
+    if (associated(lat)) nullify(lat)
+    if (associated(clon)) nullify(clon)
+    if (associated(clat)) nullify(clat)
+    if (associated(srf)) nullify(srf)
+    if (associated(mask)) nullify(mask)
+  end subroutine oasisxregcm_deallocate_oasis3dgrids
+
+  
   ! define OASIS variables to be used in the coupling
   subroutine oasisxregcm_def_field(fld, kinout)
     implicit none
@@ -380,6 +597,46 @@ module mod_oasis_generic
     write(ndebug,"(' ',A,A,I2)") oasis_prefix, '--        id: ', fld%id
 #endif
   end subroutine oasisxregcm_def_field
+  subroutine oasisxregcm_def_3dfield(fld, kinout)
+    implicit none
+    integer, intent(in) :: kinout ! OASIS_Out or OASIS_In
+    type(info3dfld), intent(inout) :: fld ! field information
+    integer, dimension(3) :: var_nodims, &  ! Adjusted for 3D
+                             var_actual_shape ! 3D dimensions for oasis_def_var
+    integer :: var_type ! type of coupling field array and
+    character(len=*) , parameter :: sub_name = 'oasisxregcm_def_3dfield'
+#ifdef DEBUG
+    character(len=6) :: kinout_char
+#endif
+    data var_nodims / 3 , 1 , 1 /   ! Adjusted for 3D
+    data var_actual_shape / 1 , 1 , 1 /  ! Adjusted for 3D
+    data var_type / OASIS_Real / ! always the case?
+
+    !--------------------------------------------------------------------------
+#ifdef DEBUG
+    if ( kinout == OASIS_Out ) then
+        kinout_char = 'export'
+    else
+        kinout_char = 'import'
+    end if
+    write(ndebug,*) oasis_prefix, '>>      name: ', fld%na
+    write(ndebug,*) oasis_prefix, '--      grid: ', fld%grd%naNM, '/', fld%grd%naWM
+    write(ndebug,*) oasis_prefix, '-- direction: ', kinout_char
+    !write(ndebug,*) oasis_prefix, '--      type: ', 'real'
+#endif
+    ! Now call oasis_def_var for the 3D field
+    call oasis_def_var(fld%id, fld%na, fld%grd%id, &
+                       var_nodims, kinout, var_actual_shape, &
+                       var_type, ierror)
+    if (ierror /= 0) then
+        write(stderr,*) 'oasis_def_var (', fld%na, ') abort compid ', comp_id
+        call oasis_abort(comp_id, sub_name, &
+        'Problem in oasis_def_var call for field '//fld%na)
+    end if
+#ifdef DEBUG
+    write(ndebug,"(' ',A,A,I2)") oasis_prefix, '--        id: ', fld%id
+#endif
+  end subroutine oasisxregcm_def_3dfield
 
   ! terminate the definition phase (posterior to partition and variable definitions)
   subroutine oasisxregcm_end_def
@@ -421,6 +678,33 @@ module mod_oasis_generic
     end if
 #endif
   end subroutine oasisxregcm_rcv
+  subroutine oasisxregcm_rcv_3d(array,fld,time,l_act)
+    implicit none
+    type(info3dfld) , intent(in) :: fld
+    integer(ik4) , intent(in) :: time ! execution time
+    real(rkx) , dimension(:,:,:) , intent(out) :: array
+    logical , intent(out) :: l_act
+    character(len=*) , parameter :: sub_name  = 'oasisxregcm_rcv'
+    !--------------------------------------------------------------------------
+    call oasis_get(fld%id,time,array,ierror)
+    if ( ierror .ne. OASIS_Ok .and. ierror .lt. OASIS_Recvd ) then
+      write(stderr,*) 'oasis_get (', fld%na, ') abort compid ', comp_id
+      call oasis_abort(comp_id,sub_name,'Problem in oasis_get call for '//fld%na)
+    end if
+    l_act = ( ( ierror == OASIS_Recvd ) .or. &
+              ( ierror >= OASIS_FromRest .and. ierror <= OASIS_FromRestOut ) .or. &
+              ( ierror == OASIS_WaitGroup ) )
+#ifdef DEBUG
+    if ( l_act ) then
+      if ( time == 0 .or. debug_level > 0 ) then
+        write(ndebug,"(' ',A,A11,A,ES12.5E2,A,A8,A)") oasis_prefix, &
+        getput_status(ierror), ': ', minval(array), ' < ', fld%na, ' < '
+        write(ndebug,"(' ',A,A11,A,ES12.5E2)") oasis_prefix, &
+        '',                    '  ', maxval(array)
+      end if
+    end if
+#endif
+  end subroutine oasisxregcm_rcv_3d
 
   ! fill the ocean parts of array_out with array_in
   subroutine fill_ocean_2d(array_out,array_in,lndcat,grd)
@@ -447,7 +731,7 @@ module mod_oasis_generic
     real(rkx) , dimension(:,:) , intent(in) :: array_in
     real(rkx) , dimension(:,:) , pointer , intent(in) :: lndcat
     type(infogrd) , intent(in) :: grd
-    real(rkx) , dimension(:,:) , pointer , intent(inout) :: array_out
+    real(rkx) , dimension(:,:,:) , pointer , intent(inout) :: array_out
     integer(ik4) :: i , j , ishift , jshift
     !--------------------------------------------------------------------------
     ! It seems that whether it's on crosses or dots,
@@ -457,7 +741,7 @@ module mod_oasis_generic
       do j = grd%j1 , grd%j2
         jshift = j - grd%j1 + 1
 !        if ( isocean(lndcat(j,i)) ) array_out(j,i) = array_in(jshift,ishift)
-        if (.not. isocean(lndcat(j,i)) .and. .not. islake(lndcat(j,i))) array_out(j,i) = array_in(jshift,ishift)
+        if (.not. isocean(lndcat(j,i)) .and. .not. islake(lndcat(j,i))) array_out(:,j,i) = array_in(jshift,ishift)
       end do
     end do
   end subroutine fill_land_2d
@@ -488,7 +772,7 @@ module mod_oasis_generic
     implicit none
     real(rkx) , dimension(:,:) , intent(in) :: array_in
     real(rkx) , dimension(:,:) , pointer , intent(in) :: lndcat
-    type(infogrd) , intent(in) :: grd
+    type(info3dgrd) , intent(in) :: grd
     real(rkx) , dimension(:,:,:) , pointer , intent(inout) :: array_out
     integer(ik4) :: i , j , ishift , jshift
     !--------------------------------------------------------------------------
@@ -503,6 +787,53 @@ module mod_oasis_generic
       end do
     end do
   end subroutine fill_land_3d
+  subroutine fill_land_3d_2(array_out,array_in,lndcat,grd)
+    implicit none
+    real(rkx) , dimension(:,:,:) , intent(in) :: array_in
+    real(rkx) , dimension(:,:) , pointer , intent(in) :: lndcat
+    type(info3dgrd) , intent(in) :: grd
+    real(rkx) , dimension(:,:,:) , pointer , intent(inout) :: array_out
+    integer(ik4) :: i , j , ishift , jshift
+    !--------------------------------------------------------------------------
+    ! It seems that whether it's on crosses or dots,
+    ! mddom%lndcat is used.
+    do i = grd%i1 , grd%i2
+      ishift = i - grd%i1 + 1
+      do j = grd%j1 , grd%j2
+        jshift = j - grd%j1 + 1
+!        if ( isocean(lndcat(j,i)) ) array_out(:,j,i) = array_in(jshift,ishift)
+        if (.not. isocean(lndcat(j,i)) .and. .not. islake(lndcat(j,i))) array_out(:,j,i) = array_in(jshift,ishift,:)
+      end do
+    end do
+  end subroutine fill_land_3d_2
+  subroutine fill_land_4d(array_out, array_in, lndcat, grd)
+    implicit none
+    real(rkx), dimension(:,:,:), intent(in) :: array_in
+    real(rkx), dimension(:,:), pointer, intent(in) :: lndcat
+    type(info3dgrd), intent(in) :: grd
+    real(rkx), dimension(:,:,:,:), pointer, intent(inout) :: array_out
+    integer(ik4) :: i, j, k, ishift, jshift
+    integer :: kdim
+
+    ! Determine the size of the fourth dimension
+    kdim = ubound(array_out, 4)
+
+    !--------------------------------------------------------------------------
+    ! It seems that whether it's on crosses or dots,
+    ! mddom%lndcat is used.
+    do i = grd%i1, grd%i2
+        ishift = i - grd%i1 + 1
+        do j = grd%j1, grd%j2
+            jshift = j - grd%j1 + 1
+            do k = 1, kdim
+                ! Example logic: Update values in array_out based on conditions
+                if (.not. isocean(lndcat(j, i)) .and. .not. islake(lndcat(j, i))) then
+                    array_out(:, j, i, k) = array_in(jshift, ishift,k)
+                end if
+            end do
+        end do
+    end do
+  end subroutine fill_land_4d
 
   ! send a single field with id fld_id through oasis_put
   subroutine oasisxregcm_snd(array,fld,time,write_out)

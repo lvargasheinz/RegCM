@@ -471,13 +471,18 @@ module mod_regcm_types
     real(rkx) , pointer , dimension(:,:,:) :: ustar
     real(rkx) , pointer , dimension(:,:,:) :: w10m
     real(rkx) , pointer , dimension(:,:,:) :: rhoa
-#ifdef CLM45
+!!! #ifdef CLM45
+    !real(rkx) , pointer , dimension(:,:,:,:) :: vocemiss
+!    real(rkx) , pointer , dimension(:,:,:,:) :: dustemiss
+    !real(rkx) , pointer , dimension(:,:,:,:) :: ddepv
+    !real(rkx) , pointer , dimension(:,:,:,:) :: sw_vol
+    !real(rkx) , pointer , dimension(:,:,:,:) :: tsoi
+!! #endif
     real(rkx) , pointer , dimension(:,:,:,:) :: vocemiss
     real(rkx) , pointer , dimension(:,:,:,:) :: dustemiss
     real(rkx) , pointer , dimension(:,:,:,:) :: ddepv
     real(rkx) , pointer , dimension(:,:,:,:) :: sw_vol
     real(rkx) , pointer , dimension(:,:,:,:) :: tsoi
-#endif
   end type lm_state
 
   type lm_exchange

@@ -47,6 +47,7 @@ module mod_lm_interface
   use perf_mod , only : t_prf , t_finalizef
 #endif
 
+
 #ifdef CLM45
   use mod_clm_regcm
 #endif
@@ -163,7 +164,8 @@ module mod_lm_interface
     call getmem4d(lms%tsoi,1,nnsg,jci1,jci2, &
                                   ici1,ici2,1,num_soil_layers,'lm:tsoi')
 #endif
-
+!   call getmem4d(lms%tsoi,1,nnsg,jci1,jci2, &
+ !                                 ici1,ici2,1,num_soil_layers,'lm:tsoi')
 #ifdef CLM
     call getmem2d(r2ctb,jde1,jde2,ide1,ide2,'clm:r2ctb')
     call getmem2d(r2cqb,jde1,jde2,ide1,ide2,'clm:r2cqb')
@@ -381,6 +383,7 @@ module mod_lm_interface
       call assignpnt(tsoi,lm%tsoi)
       call assignpnt(idust,lm%idust)
 #endif
+!      call assignpnt(tsoi,lm%tsoi)
     end if
     if ( iocncpl == 1 .or. iwavcpl == 1) then
       call assignpnt(sfs%dsrnof,lm%dsrnof)
@@ -514,6 +517,7 @@ module mod_lm_interface
       lm%tsoi = sum(lms%tsoi(:,:,:,:),1)*rdnnsg
       lm%sfracb2d = sum(lms%wt,1)*rdnnsg
 #else
+      !lm%tsoi = sum(lms%tsoi(:,:,:,:),1)*rdnnsg
       ! FAB here take humidity of first soil layer, sw should be always defined
       lm%ssw2da = sum(lms%ssw(:,:,:),1)*rdnnsg
       lm%sfracv2d = sum(lms%sigf,1)*rdnnsg

@@ -7403,7 +7403,7 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_micro_interface.F90, Line: 345, Column: 7 }
+    DebugLoc:        { File: mod_micro_interface.F90, Line: 480, Column: 5 }
 ...
 --- !Missed
 Pass:            gvn
@@ -7416,7 +7416,7 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_micro_interface.F90, Line: 480, Column: 5 }
+    DebugLoc:        { File: mod_micro_interface.F90, Line: 345, Column: 7 }
 ...
 --- !Missed
 Pass:            gvn
@@ -16437,7 +16437,7 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_micro_interface.F90, Line: 480, Column: 5 }
+    DebugLoc:        { File: mod_micro_interface.F90, Line: 361, Column: 9 }
 ...
 --- !Missed
 Pass:            gvn
@@ -16450,7 +16450,7 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_micro_interface.F90, Line: 361, Column: 9 }
+    DebugLoc:        { File: mod_micro_interface.F90, Line: 480, Column: 5 }
 ...
 --- !Missed
 Pass:            gvn
@@ -16541,7 +16541,7 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_micro_interface.F90, Line: 480, Column: 5 }
+    DebugLoc:        { File: mod_micro_interface.F90, Line: 361, Column: 9 }
 ...
 --- !Missed
 Pass:            gvn
@@ -16554,7 +16554,7 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_micro_interface.F90, Line: 361, Column: 9 }
+    DebugLoc:        { File: mod_micro_interface.F90, Line: 480, Column: 5 }
 ...
 --- !Missed
 Pass:            gvn
@@ -16645,7 +16645,7 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_micro_interface.F90, Line: 480, Column: 5 }
+    DebugLoc:        { File: mod_micro_interface.F90, Line: 361, Column: 9 }
 ...
 --- !Missed
 Pass:            gvn
@@ -16658,7 +16658,7 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_micro_interface.F90, Line: 361, Column: 9 }
+    DebugLoc:        { File: mod_micro_interface.F90, Line: 480, Column: 5 }
 ...
 --- !Missed
 Pass:            gvn
@@ -16749,7 +16749,7 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_micro_interface.F90, Line: 480, Column: 5 }
+    DebugLoc:        { File: mod_micro_interface.F90, Line: 361, Column: 9 }
 ...
 --- !Missed
 Pass:            gvn
@@ -16762,7 +16762,7 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_micro_interface.F90, Line: 361, Column: 9 }
+    DebugLoc:        { File: mod_micro_interface.F90, Line: 480, Column: 5 }
 ...
 --- !Missed
 Pass:            gvn
@@ -36595,22 +36595,6 @@ Args:
     DebugLoc:        { File: mod_micro_interface.F90, Line: 247, Column: 5 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_micro_interface.F90, Line: 267, Column: 5 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_micro_interface.F90, Line: 309, Column: 5 }
-Function:        mod_micro_interface_mp_cldfrac_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: mod_micro_interface.F90, Line: 247, Column: 5 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
     DebugLoc:        { File: mod_micro_interface.F90, Line: 274, Column: 14 }
 ...
 --- !Missed
@@ -36659,7 +36643,7 @@ Args:
     DebugLoc:        { File: mod_micro_interface.F90, Line: 247, Column: 5 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_micro_interface.F90, Line: 305, Column: 11 }
+    DebugLoc:        { File: mod_micro_interface.F90, Line: 284, Column: 14 }
 ...
 --- !Missed
 Pass:            gvn
@@ -36675,7 +36659,7 @@ Args:
     DebugLoc:        { File: mod_micro_interface.F90, Line: 247, Column: 5 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_micro_interface.F90, Line: 284, Column: 14 }
+    DebugLoc:        { File: mod_micro_interface.F90, Line: 305, Column: 11 }
 ...
 --- !Missed
 Pass:            gvn
@@ -36724,6 +36708,22 @@ Args:
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
     DebugLoc:        { File: mod_micro_interface.F90, Line: 292, Column: 14 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_micro_interface.F90, Line: 309, Column: 5 }
+Function:        mod_micro_interface_mp_cldfrac_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: mod_micro_interface.F90, Line: 247, Column: 5 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_micro_interface.F90, Line: 267, Column: 5 }
 ...
 --- !Missed
 Pass:            gvn
@@ -37552,19 +37552,6 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_micro_interface.F90, Line: 267, Column: 5 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_micro_interface.F90, Line: 320, Column: 5 }
-Function:        mod_micro_interface_mp_cldfrac_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
     DebugLoc:        { File: mod_micro_interface.F90, Line: 274, Column: 14 }
 ...
 --- !Missed
@@ -37604,7 +37591,7 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_micro_interface.F90, Line: 305, Column: 11 }
+    DebugLoc:        { File: mod_micro_interface.F90, Line: 284, Column: 14 }
 ...
 --- !Missed
 Pass:            gvn
@@ -37617,7 +37604,7 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_micro_interface.F90, Line: 284, Column: 14 }
+    DebugLoc:        { File: mod_micro_interface.F90, Line: 305, Column: 11 }
 ...
 --- !Missed
 Pass:            gvn
@@ -37657,6 +37644,32 @@ Args:
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
     DebugLoc:        { File: mod_micro_interface.F90, Line: 292, Column: 14 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_micro_interface.F90, Line: 320, Column: 5 }
+Function:        mod_micro_interface_mp_cldfrac_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_micro_interface.F90, Line: 267, Column: 5 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_micro_interface.F90, Line: 320, Column: 5 }
+Function:        mod_micro_interface_mp_cldfrac_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_micro_interface.F90, Line: 295, Column: 9 }
 ...
 --- !Missed
 Pass:            gvn
@@ -37670,19 +37683,6 @@ Args:
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
     DebugLoc:        { File: mod_micro_interface.F90, Line: 310, Column: 7 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_micro_interface.F90, Line: 320, Column: 5 }
-Function:        mod_micro_interface_mp_cldfrac_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_micro_interface.F90, Line: 295, Column: 9 }
 ...
 --- !Missed
 Pass:            gvn
@@ -62742,22 +62742,6 @@ Args:
     DebugLoc:        { File: mod_micro_interface.F90, Line: 247, Column: 5 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_micro_interface.F90, Line: 267, Column: 5 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_micro_interface.F90, Line: 309, Column: 5 }
-Function:        mod_micro_interface_mp_cldfrac_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: mod_micro_interface.F90, Line: 247, Column: 5 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
     DebugLoc:        { File: mod_micro_interface.F90, Line: 274, Column: 14 }
 ...
 --- !Missed
@@ -62806,7 +62790,7 @@ Args:
     DebugLoc:        { File: mod_micro_interface.F90, Line: 247, Column: 5 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_micro_interface.F90, Line: 305, Column: 11 }
+    DebugLoc:        { File: mod_micro_interface.F90, Line: 284, Column: 14 }
 ...
 --- !Missed
 Pass:            gvn
@@ -62822,7 +62806,7 @@ Args:
     DebugLoc:        { File: mod_micro_interface.F90, Line: 247, Column: 5 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_micro_interface.F90, Line: 284, Column: 14 }
+    DebugLoc:        { File: mod_micro_interface.F90, Line: 305, Column: 11 }
 ...
 --- !Missed
 Pass:            gvn
@@ -62871,6 +62855,22 @@ Args:
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
     DebugLoc:        { File: mod_micro_interface.F90, Line: 292, Column: 14 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_micro_interface.F90, Line: 309, Column: 5 }
+Function:        mod_micro_interface_mp_cldfrac_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: mod_micro_interface.F90, Line: 247, Column: 5 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_micro_interface.F90, Line: 267, Column: 5 }
 ...
 --- !Missed
 Pass:            gvn
@@ -63699,19 +63699,6 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_micro_interface.F90, Line: 267, Column: 5 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_micro_interface.F90, Line: 320, Column: 5 }
-Function:        mod_micro_interface_mp_cldfrac_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
     DebugLoc:        { File: mod_micro_interface.F90, Line: 274, Column: 14 }
 ...
 --- !Missed
@@ -63751,7 +63738,7 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_micro_interface.F90, Line: 305, Column: 11 }
+    DebugLoc:        { File: mod_micro_interface.F90, Line: 284, Column: 14 }
 ...
 --- !Missed
 Pass:            gvn
@@ -63764,7 +63751,7 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_micro_interface.F90, Line: 284, Column: 14 }
+    DebugLoc:        { File: mod_micro_interface.F90, Line: 305, Column: 11 }
 ...
 --- !Missed
 Pass:            gvn
@@ -63804,6 +63791,32 @@ Args:
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
     DebugLoc:        { File: mod_micro_interface.F90, Line: 292, Column: 14 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_micro_interface.F90, Line: 320, Column: 5 }
+Function:        mod_micro_interface_mp_cldfrac_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_micro_interface.F90, Line: 267, Column: 5 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_micro_interface.F90, Line: 320, Column: 5 }
+Function:        mod_micro_interface_mp_cldfrac_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_micro_interface.F90, Line: 295, Column: 9 }
 ...
 --- !Missed
 Pass:            gvn
@@ -63817,19 +63830,6 @@ Args:
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
     DebugLoc:        { File: mod_micro_interface.F90, Line: 310, Column: 7 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_micro_interface.F90, Line: 320, Column: 5 }
-Function:        mod_micro_interface_mp_cldfrac_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_micro_interface.F90, Line: 295, Column: 9 }
 ...
 --- !Missed
 Pass:            gvn
