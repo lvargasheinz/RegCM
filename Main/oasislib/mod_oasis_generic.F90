@@ -47,7 +47,7 @@ module mod_oasis_generic
   end interface fill_ocean
 
   interface fill_land
-    module procedure fill_land_2d, fill_land_3d, fill_land_4d  , fill_land_3d_2
+    module procedure fill_land_2d, fill_land_3d, fill_land_4d  
   end interface fill_land
 
 
@@ -726,7 +726,7 @@ contains
     end do
   end subroutine fill_ocean_2d
 
-  subroutine fill_land_2d(array_out,array_in,lndcat,grd)
+  subroutine fill_land_2d(array_out,array_in,lndcat,grd)   !! COUNTS LAKES AS LAND
     implicit none
     real(rkx) , dimension(:,:) , intent(in) :: array_in
     real(rkx) , dimension(:,:) , pointer , intent(in) :: lndcat
@@ -741,7 +741,7 @@ contains
       do j = grd%j1 , grd%j2
         jshift = j - grd%j1 + 1
 !        if ( isocean(lndcat(j,i)) ) array_out(j,i) = array_in(jshift,ishift)
-        if (.not. isocean(lndcat(j,i)) .and. .not. islake(lndcat(j,i))) array_out(:,j,i) = array_in(jshift,ishift)
+        if (.not. isocean(lndcat(j,i))) array_out(:,j,i) = array_in(jshift,ishift)
       end do
     end do
   end subroutine fill_land_2d
@@ -783,29 +783,10 @@ contains
       do j = grd%j1 , grd%j2
         jshift = j - grd%j1 + 1
 !        if ( isocean(lndcat(j,i)) ) array_out(:,j,i) = array_in(jshift,ishift)
-        if (.not. isocean(lndcat(j,i)) .and. .not. islake(lndcat(j,i))) array_out(:,j,i) = array_in(jshift,ishift)
+        if (.not. isocean(lndcat(j,i))) array_out(:,j,i) = array_in(jshift,ishift)
       end do
     end do
   end subroutine fill_land_3d
-  subroutine fill_land_3d_2(array_out,array_in,lndcat,grd)
-    implicit none
-    real(rkx) , dimension(:,:,:) , intent(in) :: array_in
-    real(rkx) , dimension(:,:) , pointer , intent(in) :: lndcat
-    type(info3dgrd) , intent(in) :: grd
-    real(rkx) , dimension(:,:,:) , pointer , intent(inout) :: array_out
-    integer(ik4) :: i , j , ishift , jshift
-    !--------------------------------------------------------------------------
-    ! It seems that whether it's on crosses or dots,
-    ! mddom%lndcat is used.
-    do i = grd%i1 , grd%i2
-      ishift = i - grd%i1 + 1
-      do j = grd%j1 , grd%j2
-        jshift = j - grd%j1 + 1
-!        if ( isocean(lndcat(j,i)) ) array_out(:,j,i) = array_in(jshift,ishift)
-        if (.not. isocean(lndcat(j,i)) .and. .not. islake(lndcat(j,i))) array_out(:,j,i) = array_in(jshift,ishift,:)
-      end do
-    end do
-  end subroutine fill_land_3d_2
   subroutine fill_land_4d(array_out, array_in, lndcat, grd)
     implicit none
     real(rkx), dimension(:,:,:), intent(in) :: array_in
@@ -827,7 +808,7 @@ contains
             jshift = j - grd%j1 + 1
             do k = 1, kdim
                 ! Example logic: Update values in array_out based on conditions
-                if (.not. isocean(lndcat(j, i)) .and. .not. islake(lndcat(j, i))) then
+                if (.not. isocean(lndcat(j, i)) ) then
                     array_out(:, j, i, k) = array_in(jshift, ishift,k)
                 end if
             end do

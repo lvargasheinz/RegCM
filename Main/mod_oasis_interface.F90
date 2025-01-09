@@ -921,7 +921,11 @@ module mod_oasis_interface
   subroutine oasisxregcm_rcv_all(time)
     implicit none
     integer(ik4) , intent(in) :: time ! execution time
+    integer(ik4) :: i , j, n
     logical :: l_act
+    character(len=4), allocatable :: megan_specifier(:)
+    integer :: shr_megan_mechcomps_n
+
     !--------------------------------------------------------------------------
 #ifdef DEBUG
     if ( time == 0 ) then
@@ -1044,13 +1048,20 @@ module mod_oasis_interface
       call oasisxregcm_rcv(cpl_rah1,im_rah1,time,l_act)
         call fill_land(lms%rah1 ,cpl_rah1,mddom%lndcat,im_rah1%grd)
     end if
-    if ( l_cpl_im_tauy ) then ! surface friction velocity [s-1]
+    if ( l_cpl_im_tauy .or. l_cpl_im_taux) then ! surface friction velocity [s-1]
       call oasisxregcm_rcv(cpl_tauy,im_tauy,time,l_act)
         call fill_land(lms%tauy ,cpl_tauy,mddom%lndcat,im_tauy%grd)
-    end if
-    if ( l_cpl_im_taux ) then ! surface friction velocity [s-1]
       call oasisxregcm_rcv(cpl_taux,im_taux,time,l_act)
         call fill_land(lms%taux ,cpl_taux,mddom%lndcat,im_taux%grd)
+      call getmem2d(temp,jci1,jci2,ici1,ici2,'sendoasis:temp')
+      !call getmem2d(temp2,jci1,jci2,ici1,ici2,'sendoasis:temp')
+!      call getmem3d(temp3d_2,1,nnsg,jci1,jci2,ici1,ici2,'sendoasis:temp3d')
+      call getmem3d(temp3d,1,nnsg,jci1,jci2,ici1,ici2,'sendoasis:temp3d')
+      temp = lm%uatm**2 +lm%vatm**2
+      do n = 1 , nnsg
+       temp3d(n,:,:)= sqrt(lms%taux(n,:,:)**2+lms%tauy(n,:,:)**2) /temp
+      end do
+      lms%drag=temp3d
     end if
     if ( l_cpl_im_sncv ) then ! surface friction velocity [s-1]
       call oasisxregcm_rcv(cpl_sncv,im_sncv,time,l_act)
@@ -1090,13 +1101,78 @@ module mod_oasis_interface
     end if
     if ( l_cpl_im_albed ) then ! surface friction velocity [s-1]
       call oasisxregcm_rcv_3d(cpl_albed,im_albed,time,l_act)
-        call fill_land(lms%swdiralb ,cpl_albed(:,:,1),mddom%lndcat,im_albed%grd)
-        call fill_land(lms%lwdiralb ,cpl_albed(:,:,2),mddom%lndcat,im_albed%grd)
+        call getmem3d(temp3d,1,nnsg,jci1,jci2,ici1,ici2,'sendoasis:temp3d')
+      ! call getmem2d(temp,jci1,jci2,ici1,ici2,'sendoasis:temp')
+        call fill_land(temp3d,cpl_albed(:,:,1),mddom%lndcat,im_albed%grd)
+        do i = ici1 , ici2
+          do j = jci1 , jci2
+           do n = 1 , nnsg
+            if ( lm%ldmsk1(n,j,i) == 1 ) then
+              if ( temp3d(n,j,i) > 0.9999_rkx ) then
+                temp3d(n,j,i)=0.16_rkx
+              end if
+            end if
+           end do
+          end do
+        end do
+        lms%swdiralb=temp3d
+        deallocate(temp3d)
+        call getmem3d(temp3d,1,nnsg,jci1,jci2,ici1,ici2,'sendoasis:temp3d')
+      ! call getmem2d(temp,jci1,jci2,ici1,ici2,'sendoasis:temp')
+        call fill_land(temp3d,cpl_albed(:,:,2),mddom%lndcat,im_albed%grd)
+        do i = ici1 , ici2
+          do j = jci1 , jci2
+           do n = 1 , nnsg
+            if ( lm%ldmsk1(n,j,i) == 1 ) then
+              if ( temp3d(n,j,i) > 0.9999_rkx ) then
+                temp3d(n,j,i)=0.32_rkx
+              end if
+            end if
+           end do
+          end do
+        end do
+        lms%lwdiralb=temp3d
+        deallocate(temp3d)
+        !call fill_land(lms%swdiralb ,cpl_albed(:,:,1),mddom%lndcat,im_albed%grd)
+        !call fill_land(lms%lwdiralb ,cpl_albed(:,:,2),mddom%lndcat,im_albed%grd)
+!      deallocate(temp3d)
     end if
     if ( l_cpl_im_albei ) then ! surface friction velocity [s-1]
       call oasisxregcm_rcv_3d(cpl_albei,im_albei,time,l_act)
-        call fill_land(lms%swdifalb ,cpl_albei(:,:,1),mddom%lndcat,im_albei%grd)
-        call fill_land(lms%lwdifalb ,cpl_albei(:,:,2),mddom%lndcat,im_albei%grd)
+        call getmem3d(temp3d,1,nnsg,jci1,jci2,ici1,ici2,'sendoasis:temp3d')
+      ! call getmem2d(temp,jci1,jci2,ici1,ici2,'sendoasis:temp')
+        call fill_land(temp3d,cpl_albei(:,:,1),mddom%lndcat,im_albei%grd)
+        do i = ici1 , ici2
+          do j = jci1 , jci2
+           do n = 1 , nnsg
+            if ( lm%ldmsk1(n,j,i) == 1 ) then
+              if ( temp3d(n,j,i) > 0.9999_rkx ) then
+                temp3d=0.16_rkx
+              end if
+            end if
+           end do
+          end do
+        end do
+        lms%swdifalb=temp3d
+        deallocate(temp3d)
+        call getmem3d(temp3d,1,nnsg,jci1,jci2,ici1,ici2,'sendoasis:temp3d')
+      ! call getmem2d(temp,jci1,jci2,ici1,ici2,'sendoasis:temp')
+        call fill_land(temp3d,cpl_albei(:,:,2),mddom%lndcat,im_albei%grd)
+        do i = ici1 , ici2
+          do j = jci1 , jci2
+           do n = 1 , nnsg
+            if ( lm%ldmsk1(n,j,i) == 1 ) then
+              if ( temp3d(n,j,i) > 0.9999_rkx ) then
+                temp3d=0.32_rkx
+              end if
+            end if
+           end do
+          end do
+        end do
+        lms%lwdifalb=temp3d
+        deallocate(temp3d)
+      !        call fill_land(lms%swdifalb ,cpl_albei(:,:,1),mddom%lndcat,im_albei%grd)
+!        call fill_land(lms%lwdifalb ,cpl_albei(:,:,2),mddom%lndcat,im_albei%grd)
     end if
 !    if ( l_cpl_im_tsoi ) then ! surface friction velocity [s-1]
  !     call oasisxregcm_rcv_3d(cpl_tsoi,im_tsoi,time,l_act)
@@ -1146,47 +1222,56 @@ module mod_oasis_interface
     !  deallocate(temp)
       deallocate(temp3d)
     end if
-    if ( l_cpl_im_ddvel ) then ! surface friction velocity [s-1]
+    if ( ichem == 1 ) then
+     if ( l_cpl_im_ddvel ) then ! surface friction velocity [s-1]
       call oasisxregcm_rcv_3d(cpl_ddvel,im_ddvel,time,l_act)
-      n = ubound(cpl_ddvel, 3)
-   !   call getmem2d(temp,jci1,jci2,ici1,ici2,'sendoasis:temp')
-      call getmem3d(temp3d,1,nnsg,jci1,jci2,ici1,ici2,'sendoasis:temp3d')
-      !do k = 1 , n
-      call fill_land(temp3d,cpl_ddvel,mddom%lndcat,im_ddvel%grd)
-      !end do
-      lms%ddepv(:,:,:,4) = temp3d(:,:,:)
-   !   deallocate(temp)
-      deallocate(temp3d)
-    end if
-    if ( l_cpl_im_flxvoc ) then ! surface friction velocity [s-1]
+       n = ubound(cpl_ddvel, 3)
+       call getmem3d(temp3d,1,nnsg,jci1,jci2,ici1,ici2,'sendoasis:temp3d')
+       call fill_land(temp3d,cpl_ddvel(:,:,n),mddom%lndcat,im_ddvel%grd)
+       lms%ddepv(:,:,:,4) = temp3d
+       deallocate(temp3d)
+     end if
+     if ( l_cpl_im_flxvoc ) then ! surface friction velocity [s-1]
+      shr_megan_mechcomps_n = 9
+      allocate(megan_specifier(9))
+      megan_specifier = ['ISOP', 'LIMO', 'APIN', 'BPIN', '3CAR', 'OCIM', 'MYRC', 'SABI', 'OMTP']
       call oasisxregcm_rcv_3d(cpl_flxvoc,im_flxvoc,time,l_act)
-      n = ubound(cpl_flxvoc, 3)
       call getmem3d(temp3d,1,nnsg,jci1,jci2,ici1,ici2,'sendoasis:temp3d')
-      call fill_land(temp3d,cpl_flxvoc,mddom%lndcat,im_flxvoc%grd)
+      do k = 1, shr_megan_mechcomps_n
+         if (megan_specifier(k) == 'ISOP'.and. iisop > 0 ) then
+          call fill_land(temp3d,cpl_flxvoc(:,:,k),mddom%lndcat,im_flxvoc%grd)
+         end if 
+      end do
+!      call fill_land(temp3d,cpl_flxvoc,mddom%lndcat,im_flxvoc%grd)
       lms%vocemiss(:,:,:,iisop) = temp3d(:,:,:)
       deallocate(temp3d)
-    end if
-    if ( l_cpl_im_flxdst ) then ! surface friction velocity [s-1]
+     end if
+     if ( l_cpl_im_flxdst ) then ! surface friction velocity [s-1]
       call oasisxregcm_rcv_3d(cpl_flxdst,im_flxdst,time,l_act)
-      n = ubound(cpl_flxdst, 3)
-      call getmem4d(temp4d,1,nnsg,jci1,jci2,ici1,ici2,1,n,'sendoasis:temp3d')
-      call fill_land(temp4d,cpl_flxdst,mddom%lndcat,im_flxdst%grd)
+      if ( ichdustemd == 3 ) then
+       n = ubound(cpl_flxdst, 3)
+       call getmem4d(temp4d,1,nnsg,jci1,jci2,ici1,ici2,1,n,'sendoasis:temp3d')
+       call fill_land(temp4d,cpl_flxdst,mddom%lndcat,im_flxdst%grd)
 !      do k = 1 , 4
-       lms%dustemiss(:,:,:,:) = temp4d(:,:,:,:)
+        lms%dustemiss(:,:,:,:) = temp4d(:,:,:,:)
  !     end do
-      deallocate(temp4d)
-    end if
-    if ( l_cpl_im_fluxch4 ) then ! surface friction velocity [s-1]
+       deallocate(temp4d)
+      end if
+     end if
+     if ( l_cpl_im_fluxch4 ) then ! surface friction velocity [s-1]
       call oasisxregcm_rcv(cpl_fluxch4,im_fluxch4,time,l_act)
-!      call getmem2d(temp,jci1,jci2,ici1,ici2,'sendoasis:temp')
-      call getmem3d(temp3d,1,nnsg,jci1,jci2,ici1,ici2,'sendoasis:temp3d')
-      call getmem2d(temp2,jci1,jci2,ici1,ici2,'sendoasis:temp')
-      temp2=cpl_fluxch4* 1.33_rk8
-       call fill_land(temp3d,temp2,mddom%lndcat,im_fluxch4%grd)
+      if ( ich4 > 0 ) then
+      !      call getmem2d(temp,jci1,jci2,ici1,ici2,'sendoasis:temp')
+       call getmem3d(temp3d,1,nnsg,jci1,jci2,ici1,ici2,'sendoasis:temp3d')
+       call getmem2d(temp2,jci1,jci2,ici1,ici2,'sendoasis:temp')
+       temp2=cpl_fluxch4* 1.33_rk8
+        call fill_land(temp3d,temp2,mddom%lndcat,im_fluxch4%grd)
  !     do k = 1 , 4
-       lms%vocemiss(:,:,:,ich4)=temp3d(:,:,:)
-!      end do
+        lms%vocemiss(:,:,:,ich4)=temp3d(:,:,:)
+!       end do
+      end if
       deallocate(temp2)
+     end if
     end if
 
 

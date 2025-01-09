@@ -45975,45 +45975,6 @@ Args:
   - Type:            ''
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_che_start.F90, Line: 431, Column: 9 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_che_start.F90, Line: 438, Column: 34 }
-Function:        mod_che_start_mp_start_chem_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_che_start.F90, Line: 423, Column: 10 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_che_start.F90, Line: 438, Column: 34 }
-Function:        mod_che_start_mp_start_chem_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: mod_che_start.F90, Line: 438, Column: 17 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_che_start.F90, Line: 438, Column: 34 }
-Function:        mod_che_start_mp_start_chem_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
   - ClobberedBy:     store
     DebugLoc:        { File: mod_che_start.F90, Line: 438, Column: 17 }
 ...
@@ -46419,6 +46380,45 @@ Args:
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
     DebugLoc:        { File: mod_che_start.F90, Line: 438, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_che_start.F90, Line: 438, Column: 34 }
+Function:        mod_che_start_mp_start_chem_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_che_start.F90, Line: 438, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_che_start.F90, Line: 438, Column: 34 }
+Function:        mod_che_start_mp_start_chem_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_che_start.F90, Line: 431, Column: 9 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_che_start.F90, Line: 438, Column: 34 }
+Function:        mod_che_start_mp_start_chem_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_che_start.F90, Line: 423, Column: 10 }
 ...
 --- !Missed
 Pass:            gvn
