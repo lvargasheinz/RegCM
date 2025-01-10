@@ -1223,14 +1223,14 @@ module mod_oasis_interface
       deallocate(temp3d)
     end if
     if ( ichem == 1 ) then
-     if ( l_cpl_im_ddvel ) then ! surface friction velocity [s-1]
-      call oasisxregcm_rcv_3d(cpl_ddvel,im_ddvel,time,l_act)
-       n = ubound(cpl_ddvel, 3)
-       call getmem3d(temp3d,1,nnsg,jci1,jci2,ici1,ici2,'sendoasis:temp3d')
-       call fill_land(temp3d,cpl_ddvel(:,:,n),mddom%lndcat,im_ddvel%grd)
-       lms%ddepv(:,:,:,4) = temp3d
-       deallocate(temp3d)
-     end if
+!     if ( l_cpl_im_ddvel ) then ! surface friction velocity [s-1]
+ !     call oasisxregcm_rcv_3d(cpl_ddvel,im_ddvel,time,l_act)
+  !     n = ubound(cpl_ddvel, 3)
+   !    call getmem3d(temp3d,1,nnsg,jci1,jci2,ici1,ici2,'sendoasis:temp3d')
+    !   call fill_land(temp3d,cpl_ddvel(:,:,n),mddom%lndcat,im_ddvel%grd)
+     !  lms%ddepv(:,:,:,4) = temp3d
+      ! deallocate(temp3d)
+!     end if
      if ( l_cpl_im_flxvoc ) then ! surface friction velocity [s-1]
       shr_megan_mechcomps_n = 9
       allocate(megan_specifier(9))
