@@ -29437,7 +29437,7 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: mod_interp.F90, Line: 603, Column: 11 }
+    DebugLoc:        { File: mod_interp.F90, Line: 589, Column: 5 }
 ...
 --- !Missed
 Pass:            gvn
@@ -29450,7 +29450,7 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: mod_interp.F90, Line: 589, Column: 5 }
+    DebugLoc:        { File: mod_interp.F90, Line: 603, Column: 11 }
 ...
 --- !Missed
 Pass:            gvn
@@ -35779,8 +35779,8 @@ Args:
   - Type:            ''
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_interp.F90, Line: 882, Column: 30 }
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_interp.F90, Line: 891, Column: 5 }
 ...
 --- !Missed
 Pass:            gvn
@@ -35792,8 +35792,8 @@ Args:
   - Type:            ''
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: mod_interp.F90, Line: 891, Column: 5 }
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_interp.F90, Line: 882, Column: 30 }
 ...
 --- !Missed
 Pass:            gvn

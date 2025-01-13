@@ -220,6 +220,22 @@ if eval "test x"$USEOASIS" = x1"; then
   AC_SUBST(AM_CPPFLAGS)
 fi
 
+USEECLM="0"
+AC_ARG_ENABLE(oasis,
+  AC_HELP_STRING([--enable-eclm],
+                 [Supply this option if you plan on using ECLM option.]),
+  [USEECLM="1"]
+)
+AM_CONDITIONAL(DO_COMPILE_ECLM, [test x"$USEECLM" = x1])
+
+if eval "test x"$USEECLM" = x1"; then
+  AC_MSG_WARN([Compiling ECLM enabled code])
+  AM_CPPFLAGS="\$(DEFINE)ECLM $AM_CPPFLAGS"
+  AC_SUBST(AM_CPPFLAGS)
+fi
+
+
+
 USECLM="0"
 USEMEGAN="0"
 AC_ARG_ENABLE(clm,

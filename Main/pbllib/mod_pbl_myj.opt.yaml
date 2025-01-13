@@ -50782,6 +50782,19 @@ Args:
   - Type:            ''
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_pbl_myj.F90, Line: 533, Column: 7 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_pbl_myj.F90, Line: 553, Column: 7 }
+Function:        mod_pbl_myj_mp_mixlen_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
   - ClobberedBy:     store
     DebugLoc:        { File: mod_pbl_myj.F90, Line: 540, Column: 9 }
 ...
@@ -50810,19 +50823,6 @@ Args:
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
     DebugLoc:        { File: mod_pbl_myj.F90, Line: 536, Column: 7 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_pbl_myj.F90, Line: 553, Column: 7 }
-Function:        mod_pbl_myj_mp_mixlen_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_pbl_myj.F90, Line: 533, Column: 7 }
 ...
 --- !Missed
 Pass:            gvn
@@ -50861,7 +50861,7 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: mod_pbl_myj.F90, Line: 533, Column: 7 }
+    DebugLoc:        { File: mod_pbl_myj.F90, Line: 590, Column: 7 }
 ...
 --- !Missed
 Pass:            gvn
@@ -50887,20 +50887,7 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: mod_pbl_myj.F90, Line: 590, Column: 7 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_pbl_myj.F90, Line: 595, Column: 7 }
-Function:        mod_pbl_myj_mp_mixlen_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: mod_pbl_myj.F90, Line: 590, Column: 7 }
+    DebugLoc:        { File: mod_pbl_myj.F90, Line: 533, Column: 7 }
 ...
 --- !Missed
 Pass:            gvn
@@ -50914,6 +50901,19 @@ Args:
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
     DebugLoc:        { File: mod_pbl_myj.F90, Line: 533, Column: 7 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_pbl_myj.F90, Line: 595, Column: 7 }
+Function:        mod_pbl_myj_mp_mixlen_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_pbl_myj.F90, Line: 590, Column: 7 }
 ...
 --- !Missed
 Pass:            gvn
@@ -51390,6 +51390,19 @@ Args:
   - Type:            ''
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_pbl_myj.F90, Line: 533, Column: 7 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_pbl_myj.F90, Line: 553, Column: 7 }
+Function:        mod_pbl_myj_mp_mixlen_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
   - ClobberedBy:     store
     DebugLoc:        { File: mod_pbl_myj.F90, Line: 540, Column: 9 }
 ...
@@ -51418,19 +51431,6 @@ Args:
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
     DebugLoc:        { File: mod_pbl_myj.F90, Line: 536, Column: 7 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_pbl_myj.F90, Line: 553, Column: 7 }
-Function:        mod_pbl_myj_mp_mixlen_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_pbl_myj.F90, Line: 533, Column: 7 }
 ...
 --- !Missed
 Pass:            gvn
@@ -51469,7 +51469,7 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: mod_pbl_myj.F90, Line: 533, Column: 7 }
+    DebugLoc:        { File: mod_pbl_myj.F90, Line: 590, Column: 7 }
 ...
 --- !Missed
 Pass:            gvn
@@ -51495,20 +51495,7 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: mod_pbl_myj.F90, Line: 590, Column: 7 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_pbl_myj.F90, Line: 595, Column: 7 }
-Function:        mod_pbl_myj_mp_mixlen_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: mod_pbl_myj.F90, Line: 590, Column: 7 }
+    DebugLoc:        { File: mod_pbl_myj.F90, Line: 533, Column: 7 }
 ...
 --- !Missed
 Pass:            gvn
@@ -51522,6 +51509,19 @@ Args:
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
     DebugLoc:        { File: mod_pbl_myj.F90, Line: 533, Column: 7 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_pbl_myj.F90, Line: 595, Column: 7 }
+Function:        mod_pbl_myj_mp_mixlen_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_pbl_myj.F90, Line: 590, Column: 7 }
 ...
 --- !Missed
 Pass:            gvn
@@ -53077,12 +53077,25 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_pbl_myj.F90, Line: 856, Column: 14 }
+    DebugLoc:        { File: mod_pbl_myj.F90, Line: 878, Column: 11 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
 DebugLoc:        { File: mod_pbl_myj.F90, Line: 889, Column: 5 }
+Function:        mod_pbl_myj_mp_vdifh_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_pbl_myj.F90, Line: 856, Column: 14 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_pbl_myj.F90, Line: 891, Column: 7 }
 Function:        mod_pbl_myj_mp_vdifh_
 Args:
   - String:          'load of type '
@@ -53134,32 +53147,6 @@ Args:
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: mod_pbl_myj.F90, Line: 891, Column: 7 }
-Function:        mod_pbl_myj_mp_vdifh_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_pbl_myj.F90, Line: 878, Column: 11 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_pbl_myj.F90, Line: 905, Column: 5 }
-Function:        mod_pbl_myj_mp_vdifh_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_pbl_myj.F90, Line: 856, Column: 14 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
 DebugLoc:        { File: mod_pbl_myj.F90, Line: 905, Column: 5 }
 Function:        mod_pbl_myj_mp_vdifh_
 Args:
@@ -53195,6 +53182,19 @@ Args:
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
     DebugLoc:        { File: mod_pbl_myj.F90, Line: 878, Column: 11 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_pbl_myj.F90, Line: 905, Column: 5 }
+Function:        mod_pbl_myj_mp_vdifh_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_pbl_myj.F90, Line: 856, Column: 14 }
 ...
 --- !Missed
 Pass:            gvn
@@ -53461,12 +53461,25 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_pbl_myj.F90, Line: 856, Column: 14 }
+    DebugLoc:        { File: mod_pbl_myj.F90, Line: 878, Column: 11 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
 DebugLoc:        { File: mod_pbl_myj.F90, Line: 889, Column: 5 }
+Function:        mod_pbl_myj_mp_vdifh_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_pbl_myj.F90, Line: 856, Column: 14 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_pbl_myj.F90, Line: 891, Column: 7 }
 Function:        mod_pbl_myj_mp_vdifh_
 Args:
   - String:          'load of type '
@@ -53518,32 +53531,6 @@ Args:
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: mod_pbl_myj.F90, Line: 891, Column: 7 }
-Function:        mod_pbl_myj_mp_vdifh_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_pbl_myj.F90, Line: 878, Column: 11 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_pbl_myj.F90, Line: 905, Column: 5 }
-Function:        mod_pbl_myj_mp_vdifh_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_pbl_myj.F90, Line: 856, Column: 14 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
 DebugLoc:        { File: mod_pbl_myj.F90, Line: 905, Column: 5 }
 Function:        mod_pbl_myj_mp_vdifh_
 Args:
@@ -53579,6 +53566,19 @@ Args:
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
     DebugLoc:        { File: mod_pbl_myj.F90, Line: 878, Column: 11 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_pbl_myj.F90, Line: 905, Column: 5 }
+Function:        mod_pbl_myj_mp_vdifh_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_pbl_myj.F90, Line: 856, Column: 14 }
 ...
 --- !Missed
 Pass:            gvn

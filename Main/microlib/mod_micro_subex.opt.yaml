@@ -41816,6 +41816,19 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
+    DebugLoc:        { File: mod_micro_subex.F90, Line: 395, Column: 7 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_micro_subex.F90, Line: 421, Column: 9 }
+Function:        mod_micro_subex_mp_subex_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
     DebugLoc:        { File: mod_micro_subex.F90, Line: 272, Column: 7 }
 ...
 --- !Missed
@@ -41856,19 +41869,6 @@ Args:
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
     DebugLoc:        { File: mod_micro_subex.F90, Line: 211, Column: 5 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_micro_subex.F90, Line: 421, Column: 9 }
-Function:        mod_micro_subex_mp_subex_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_micro_subex.F90, Line: 395, Column: 7 }
 ...
 --- !Missed
 Pass:            gvn
@@ -46247,33 +46247,20 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_micro_subex.F90, Line: 272, Column: 7 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_micro_subex.F90, Line: 421, Column: 9 }
-Function:        mod_micro_subex_mp_subex_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_micro_subex.F90, Line: 211, Column: 5 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_micro_subex.F90, Line: 421, Column: 9 }
-Function:        mod_micro_subex_mp_subex_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
     DebugLoc:        { File: mod_micro_subex.F90, Line: 395, Column: 7 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_micro_subex.F90, Line: 421, Column: 9 }
+Function:        mod_micro_subex_mp_subex_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_micro_subex.F90, Line: 272, Column: 7 }
 ...
 --- !Missed
 Pass:            gvn
@@ -46287,6 +46274,19 @@ Args:
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
     DebugLoc:        { File: mod_micro_subex.F90, Line: 401, Column: 13 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_micro_subex.F90, Line: 421, Column: 9 }
+Function:        mod_micro_subex_mp_subex_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_micro_subex.F90, Line: 211, Column: 5 }
 ...
 --- !Missed
 Pass:            gvn

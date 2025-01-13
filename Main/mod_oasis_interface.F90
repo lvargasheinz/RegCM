@@ -141,7 +141,6 @@ module mod_oasis_interface
                       l_cpl_ex_uwsw , &
                       l_cpl_ex_dwsw , &
                       l_cpl_ex_ndsw , &
-                      l_cpl_ex_rhoa , & ! not tested
                   !    l_cpl_ex_pr
 !!!! ECLM
                       l_cpl_ex_tatm, &
@@ -183,9 +182,11 @@ module mod_oasis_interface
                       l_cpl_im_h2ovol, &
                       l_cpl_im_h2oliq, &
                       l_cpl_im_h2oice, &
-                      l_cpl_im_h2o10cm
+                      l_cpl_im_h2o10cm, &
+                      l_cpl_ex_rhoa 
+                                        
   ! OASIS field +++
-! l_cpl_im_wust
+! l_cpl_im_wust1
   !--------------------------------------------------------------------
   ! below the variables for the fields' information
   type(infofld) , allocatable :: im_sst , &
@@ -216,9 +217,10 @@ module mod_oasis_interface
                                  ex_uwsw , &
                                  ex_dwsw , &
                                  ex_ndsw , &
-                                 ex_rhoa , & 
   ! OASIS field +++
   !!! ECLM
+
+#ifdef ECLM
                                  ex_tatm , & 
                                  ex_uatm , & 
                                  ex_vatm , & 
@@ -254,7 +256,11 @@ module mod_oasis_interface
                                  im_roff , & 
                                  im_srfroff , & 
                                  im_snwmelt , & 
-                                 im_h2o10cm  
+                                 im_h2o10cm , &
+#endif
+                                 ex_rhoa 
+                               
+#ifdef ECLM                            
   type(info3dfld) , allocatable :: im_albei , &
                                  im_flxdst , & 
                                  im_flxvoc , & 
@@ -264,7 +270,7 @@ module mod_oasis_interface
                                  im_h2ovol , & 
                                  im_tsoi , & 
                                  im_albed 
-
+#endif
                                ! OASIS needs double precision arrays. These variables are optional.
   ! Required for the fields to import; recommended for the fields to
   ! export which need a bit of work from the model variables.
@@ -273,7 +279,7 @@ module mod_oasis_interface
                                               cpl_wz0 , &
                                               cpl_wust , &
                                               cpl_wdir , &
-                                              cpl_tgbb , &
+#ifdef ECLM
                                               cpl_t2m , &
                                               cpl_q2m , &
                                               cpl_u10m , &
@@ -297,8 +303,12 @@ module mod_oasis_interface
                                               cpl_roff , &
                                               cpl_srfroff , &
                                               cpl_snwmelt , &
-                                              cpl_h2o10cm 
-  ! OASIS field +++
+                                              cpl_h2o10cm, & 
+#endif
+                                              cpl_tgbb 
+#ifdef ECLM
+
+                                            ! OASIS field +++
   real(rkx) , dimension(:,:,:) , allocatable :: cpl_albei , &
                                               cpl_flxdst , &
                                               cpl_flxvoc , &
@@ -308,7 +318,7 @@ module mod_oasis_interface
                                               cpl_h2ovol , &
                                               cpl_tsoi , &
                                               cpl_albed 
-
+#endif
 
   ! OASIS needs double precision arrays. These variables are optional.
   ! They are used when calling the subroutine oasisxregcm_setup_field_array(),
@@ -343,6 +353,7 @@ module mod_oasis_interface
     ! OASIS field +++
     l_make_grdce   = l_cpl_ex_slp
     ! OASIS field +++
+#ifdef ECLM
     l_make_grdtest = l_cpl_ex_uatm .or. &
                       l_cpl_ex_vatm .or. &
                       l_cpl_ex_qatm .or. &
@@ -384,6 +395,7 @@ module mod_oasis_interface
                       l_cpl_im_tsoi .or. & 
                       l_cpl_im_h2ovol .or. & 
                     l_cpl_im_albed 
+#endif
     l_make_grdci   = l_cpl_im_sst  .or. &
 !                     l_cpl_im_sit  .or. &
                      l_cpl_im_wz0  .or. &
@@ -426,12 +438,14 @@ module mod_oasis_interface
     if ( l_make_grdci )   call oasisxregcm_setup_grid(grdci, 'rcin', 'rcim', &
                                jci1, jci2, ici1, ici2, 2, jx-2, 2, iy-2, 4)
 
+#ifdef ECLM
     if ( l_make_grdtest )   call oasisxregcm_setup_grid(grdtest, 'rcin', 'rcim', &
                                jci1, jci2, ici1, ici2, 2, jx-2, 2, iy-2, 4)
     if ( l_make_grd3d )   call oasisxregcm_setup_3dgrid(grd3d, 'rcin', 'rcim', &
                                jci1, jci2, ici1, ici2, 1, nnsg, &
                                2, jx-2, 2, iy-2, 1, nnsg, 4)
-!nnsg
+#endif
+                             !nnsg
                              !
     ! initialize fields: field variable, name, grid, field array (optional), initialization value
     !                                                                        (optional; 0 otherwise)
@@ -464,6 +478,7 @@ module mod_oasis_interface
     if ( l_cpl_ex_dwsw ) call oasisxregcm_setup_field(ex_dwsw, 'RCM_DWSW', grdci)
     if ( l_cpl_ex_ndsw ) call oasisxregcm_setup_field(ex_ndsw, 'RCM_NDSW', grdci)
     if ( l_cpl_ex_rhoa ) call oasisxregcm_setup_field(ex_rhoa, 'RCM_RHOA', grdci)
+#ifdef ECLM
     if ( l_cpl_ex_tatm ) call oasisxregcm_setup_field(ex_tatm, 'RCM_TATM', grdtest)
     if ( l_cpl_ex_uatm ) call oasisxregcm_setup_field(ex_uatm, 'RCM_UATM', grdtest)
     if ( l_cpl_ex_vatm ) call oasisxregcm_setup_field(ex_vatm, 'RCM_VATM', grdtest)
@@ -507,6 +522,7 @@ module mod_oasis_interface
     if ( l_cpl_im_h2oliq )  call oasisxregcm_setup_3dfield(im_h2oliq,  'RCM_H2OLIQ',grd3d, cpl_h2oliq)
     if ( l_cpl_im_h2oice )  call oasisxregcm_setup_3dfield(im_h2oice,  'RCM_H2OICE',grd3d, cpl_h2oice)
     if ( l_cpl_im_h2o10cm )  call oasisxregcm_setup_field(im_h2o10cm,  'RCM_H2O10CM',grdtest, cpl_h2o10cm)
+#endif
     ! OASIS field +++
   end subroutine oasisxregcm_params
 
@@ -522,9 +538,11 @@ module mod_oasis_interface
     if ( l_make_grddi ) call oasisxregcm_def_partition(grddi)
     if ( l_make_grdce ) call oasisxregcm_def_partition(grdce)
     if ( l_make_grdci ) call oasisxregcm_def_partition(grdci)
+#ifdef ECLM
     if ( l_make_grdtest ) call oasisxregcm_def_partition(grdtest)
     if ( l_make_grd3d ) call oasisxregcm_def_partition_3d(grd3d)
-    ! grid definition
+#endif    
+! grid definition
 #ifdef DEBUG
     write(ndebug,*) oasis_prefix, 'definition phase: grids'
 #endif
@@ -573,6 +591,7 @@ module mod_oasis_interface
     if ( l_cpl_ex_ndsw ) call oasisxregcm_def_field(ex_ndsw, OASIS_Out)
     if ( l_cpl_ex_rhoa ) call oasisxregcm_def_field(ex_rhoa, OASIS_Out)
     ! OASIS field +++
+#ifdef ECLM
 !!  ECLM
     if ( l_cpl_ex_tatm ) call oasisxregcm_def_field(ex_tatm, OASIS_Out)
     if ( l_cpl_ex_uatm ) call oasisxregcm_def_field(ex_uatm, OASIS_Out)
@@ -617,7 +636,7 @@ module mod_oasis_interface
     if ( l_cpl_im_h2oliq )  call oasisxregcm_def_3dfield(im_h2oliq,  OASIS_In)
     if ( l_cpl_im_h2oice )  call oasisxregcm_def_3dfield(im_h2oice,  OASIS_In)
     if ( l_cpl_im_h2o10cm )  call oasisxregcm_def_field(im_h2o10cm,  OASIS_In)
-
+#endif
     ! termination of definition phase
 #ifdef DEBUG
     write(ndebug,*) oasis_prefix, 'definition phase: end'
@@ -715,6 +734,7 @@ module mod_oasis_interface
         !
         if ( l_make_grdci ) call oasisxregcm_write_oasisgrids(grdci, &
              oasisgrid_lon,oasisgrid_lat,oasisgrid_clon,oasisgrid_clat,oasisgrid_srf,oasisgrid_mask)
+#ifdef ECLM
         if ( l_make_grdtest ) call oasisxregcm_write_oasisgrids(grdtest, &
              oasisgrid_lon,oasisgrid_lat,oasisgrid_clon,oasisgrid_clat,oasisgrid_srf,oasisgrid_mask)
 !        if ( l_make_grd3d ) call oasisxregcm_write_oasis3dgrids(grd3d, &
@@ -751,6 +771,7 @@ module mod_oasis_interface
         call oasisxregcm_deallocate_oasisgrids( &
              oasisgrid_lon,oasisgrid_lat,oasisgrid_clon,oasisgrid_clat,oasisgrid_srf,oasisgrid_mask)
         !
+#endif 
       end if
       ! terminate the grid writing process
 #ifdef DEBUG
@@ -1014,6 +1035,7 @@ module mod_oasis_interface
     end if
     ! OASIS field +++
     !
+#ifdef ECLM
     if ( l_cpl_im_tgbb ) then ! surface friction velocity [s-1]
       call oasisxregcm_rcv(cpl_tgbb,im_tgbb,time,l_act)
 !      if ( l_act ) then
@@ -1273,7 +1295,7 @@ module mod_oasis_interface
       deallocate(temp2)
      end if
     end if
-
+#endif
 
 !    if ( l_cpl_im_fluxch4 ) then ! surface friction velocity [s-1]
  !     call getmem2d(temp,jci1,jci2,ici1,ici2,'sendoasis:temp')
@@ -1533,6 +1555,7 @@ module mod_oasis_interface
     end if
     ! OASIS field +++
    !!! ECLM
+#ifdef ECLM
     if ( l_cpl_ex_tatm ) then ! 
       grd => ex_tatm%grd
       call oasisxregcm_snd( &
@@ -1641,7 +1664,8 @@ module mod_oasis_interface
            ex_snow, time, .false. .or. l_write_restart)
       nullify(grd)
     end if
-!!!
+#endif
+    !!!
    !
     if ( myid == italk ) then
       if (write_restart_option == 1 .and. time == 0) then
@@ -1749,6 +1773,7 @@ module mod_oasis_interface
     call oasisxregcm_deallocate_field(ex_uwsw)
     call oasisxregcm_deallocate_field(ex_dwsw)
     call oasisxregcm_deallocate_field(ex_ndsw)
+#ifdef ECLM
     call oasisxregcm_deallocate_field(ex_tatm)
     call oasisxregcm_deallocate_field(ex_uatm)
     call oasisxregcm_deallocate_field(ex_vatm)
@@ -1792,13 +1817,16 @@ module mod_oasis_interface
     call oasisxregcm_deallocate_3dfield(im_h2oliq, cpl_h2oliq)
     call oasisxregcm_deallocate_3dfield(im_h2oice, cpl_h2oice)
     call oasisxregcm_deallocate_field(im_h2o10cm, cpl_h2o10cm)
+#endif
     ! OASIS field +++
     if ( allocated(grdde) ) deallocate(grdde)
     if ( allocated(grddi) ) deallocate(grddi)
     if ( allocated(grdce) ) deallocate(grdce)
     if ( allocated(grdci) ) deallocate(grdci)
+#ifdef ECLM
     if ( allocated(grdtest) ) deallocate(grdtest)
     if ( allocated(grd3d) ) deallocate(grd3d)
+#endif
   end subroutine oasisxregcm_release
 
 end module mod_oasis_interface

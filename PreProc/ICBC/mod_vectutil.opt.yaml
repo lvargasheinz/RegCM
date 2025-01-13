@@ -11834,8 +11834,8 @@ Args:
   - OtherAccess:     store
     DebugLoc:        { File: mod_vectutil.F90, Line: 568, Column: 9 }
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_vectutil.F90, Line: 555, Column: 9 }
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_vectutil.F90, Line: 554, Column: 9 }
 ...
 --- !Missed
 Pass:            gvn
@@ -11850,8 +11850,8 @@ Args:
   - OtherAccess:     store
     DebugLoc:        { File: mod_vectutil.F90, Line: 568, Column: 9 }
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: mod_vectutil.F90, Line: 554, Column: 9 }
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_vectutil.F90, Line: 555, Column: 9 }
 ...
 --- !Missed
 Pass:            gvn
@@ -11898,7 +11898,7 @@ Args:
   - OtherAccess:     store
     DebugLoc:        { File: mod_vectutil.F90, Line: 569, Column: 9 }
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
+  - ClobberedBy:     store
     DebugLoc:        { File: mod_vectutil.F90, Line: 555, Column: 9 }
 ...
 --- !Missed
@@ -11914,7 +11914,7 @@ Args:
   - OtherAccess:     store
     DebugLoc:        { File: mod_vectutil.F90, Line: 569, Column: 9 }
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
+  - ClobberedBy:     call
     DebugLoc:        { File: mod_vectutil.F90, Line: 555, Column: 9 }
 ...
 --- !Missed
@@ -12880,8 +12880,8 @@ Args:
   - OtherAccess:     store
     DebugLoc:        { File: mod_vectutil.F90, Line: 665, Column: 9 }
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_vectutil.F90, Line: 652, Column: 9 }
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_vectutil.F90, Line: 658, Column: 11 }
 ...
 --- !Missed
 Pass:            gvn
@@ -12896,8 +12896,8 @@ Args:
   - OtherAccess:     store
     DebugLoc:        { File: mod_vectutil.F90, Line: 665, Column: 9 }
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: mod_vectutil.F90, Line: 658, Column: 11 }
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_vectutil.F90, Line: 652, Column: 9 }
 ...
 --- !Missed
 Pass:            gvn
@@ -12944,8 +12944,8 @@ Args:
   - OtherAccess:     store
     DebugLoc:        { File: mod_vectutil.F90, Line: 666, Column: 9 }
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: mod_vectutil.F90, Line: 652, Column: 9 }
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_vectutil.F90, Line: 659, Column: 11 }
 ...
 --- !Missed
 Pass:            gvn
@@ -12960,8 +12960,8 @@ Args:
   - OtherAccess:     store
     DebugLoc:        { File: mod_vectutil.F90, Line: 666, Column: 9 }
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: mod_vectutil.F90, Line: 659, Column: 11 }
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_vectutil.F90, Line: 652, Column: 9 }
 ...
 --- !Missed
 Pass:            gvn

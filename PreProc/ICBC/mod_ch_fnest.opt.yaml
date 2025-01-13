@@ -56962,19 +56962,6 @@ Args:
   - Type:            ''
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: mod_ch_fnest.F90, Line: 529, Column: 15 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_ch_fnest.F90, Line: 519, Column: 13 }
-Function:        mod_ch_fnest_mp_get_fnest_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
   - ClobberedBy:     call
     DebugLoc:        { File: mod_ch_fnest.F90, Line: 515, Column: 12 }
 ...
@@ -57215,7 +57202,7 @@ Args:
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: mod_ch_fnest.F90, Line: 519, Column: 31 }
+DebugLoc:        { File: mod_ch_fnest.F90, Line: 519, Column: 13 }
 Function:        mod_ch_fnest_mp_get_fnest_
 Args:
   - String:          'load of type '
@@ -57267,7 +57254,7 @@ Args:
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: mod_ch_fnest.F90, Line: 519, Column: 22 }
+DebugLoc:        { File: mod_ch_fnest.F90, Line: 519, Column: 31 }
 Function:        mod_ch_fnest_mp_get_fnest_
 Args:
   - String:          'load of type '
@@ -57423,7 +57410,7 @@ Args:
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: mod_ch_fnest.F90, Line: 521, Column: 13 }
+DebugLoc:        { File: mod_ch_fnest.F90, Line: 519, Column: 22 }
 Function:        mod_ch_fnest_mp_get_fnest_
 Args:
   - String:          'load of type '
@@ -57471,6 +57458,19 @@ Args:
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
     DebugLoc:        { File: mod_ch_fnest.F90, Line: 536, Column: 15 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_ch_fnest.F90, Line: 521, Column: 13 }
+Function:        mod_ch_fnest_mp_get_fnest_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_ch_fnest.F90, Line: 529, Column: 15 }
 ...
 --- !Missed
 Pass:            gvn

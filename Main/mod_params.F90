@@ -210,7 +210,6 @@ module mod_params
                           l_cpl_ex_uwsw , &
                           l_cpl_ex_dwsw , &
                           l_cpl_ex_ndsw , &
-                          l_cpl_ex_rhoa , &
     ! OASIS field +++
                           l_cpl_ex_tatm , &
                           l_cpl_ex_uatm , &
@@ -250,7 +249,8 @@ module mod_params
                           l_cpl_im_h2ovol , &
                           l_cpl_im_h2oliq , &
                           l_cpl_im_h2oice , &
-                          l_cpl_im_h2o10cm 
+                          l_cpl_im_h2o10cm ,&
+                          l_cpl_ex_rhoa  
 #endif
 
     namelist /slabocparam/ do_qflux_adj , do_restore_sst , &
@@ -736,7 +736,6 @@ module mod_params
     l_cpl_im_h2oliq = .false.
     l_cpl_im_h2oice = .false.
     l_cpl_im_h2o10cm = .false.
-
 #endif
 
 #ifdef CLM
@@ -3119,8 +3118,9 @@ module mod_params
           .not. l_cpl_im_h2ovol .and. &
           .not. l_cpl_im_h2oliq .and. &
           .not. l_cpl_im_h2oice .and. &
-          .not. l_cpl_im_h2o10cm ) then
-          ! OASIS field +++
+          .not. l_cpl_im_h2o10cm  .and. &
+          .not. l_cpl_ex_rhoa ) then
+! OASIS field +++
        if ( myid == italk ) then
          write(stdout,*) 'Warning: no enabled coupling field found.'
          write(stdout,*) 'Disable OASIS coupling.'

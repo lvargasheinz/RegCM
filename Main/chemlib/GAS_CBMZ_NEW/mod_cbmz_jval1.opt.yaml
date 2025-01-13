@@ -940,22 +940,6 @@ Args:
     DebugLoc:        { File: mod_cbmz_jval1.F90, Line: 143, Column: 9 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: mod_cbmz_jval1.F90, Line: 143, Column: 9 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_cbmz_jval1.F90, Line: 215, Column: 7 }
-Function:        mod_cbmz_jval1_mp_jvalpro_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     store
-    DebugLoc:        { File: mod_cbmz_jval1.F90, Line: 143, Column: 9 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
     DebugLoc:        { File: mod_cbmz_jval1.F90, Line: 164, Column: 51 }
 ...
 --- !Missed
@@ -973,6 +957,22 @@ Args:
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
     DebugLoc:        { File: mod_cbmz_jval1.F90, Line: 163, Column: 46 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_cbmz_jval1.F90, Line: 215, Column: 7 }
+Function:        mod_cbmz_jval1_mp_jvalpro_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: mod_cbmz_jval1.F90, Line: 143, Column: 9 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_cbmz_jval1.F90, Line: 143, Column: 9 }
 ...
 --- !Missed
 Pass:            licm
@@ -3467,22 +3467,6 @@ Args:
     DebugLoc:        { File: mod_cbmz_jval1.F90, Line: 143, Column: 9 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: mod_cbmz_jval1.F90, Line: 143, Column: 9 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_cbmz_jval1.F90, Line: 215, Column: 7 }
-Function:        mod_cbmz_jval1_mp_jvalpro_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     store
-    DebugLoc:        { File: mod_cbmz_jval1.F90, Line: 143, Column: 9 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
     DebugLoc:        { File: mod_cbmz_jval1.F90, Line: 164, Column: 51 }
 ...
 --- !Missed
@@ -3500,6 +3484,22 @@ Args:
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
     DebugLoc:        { File: mod_cbmz_jval1.F90, Line: 163, Column: 46 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_cbmz_jval1.F90, Line: 215, Column: 7 }
+Function:        mod_cbmz_jval1_mp_jvalpro_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: mod_cbmz_jval1.F90, Line: 143, Column: 9 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_cbmz_jval1.F90, Line: 143, Column: 9 }
 ...
 --- !Missed
 Pass:            gvn

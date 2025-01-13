@@ -36149,19 +36149,6 @@ Args:
   - Type:            ''
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: mod_vmodes.F90, Line: 566, Column: 11 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_vmodes.F90, Line: 369, Column: 5 }
-Function:        mod_vmodes_mp_vmodes_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
   - ClobberedBy:     call
     DebugLoc:        { File: mod_vmodes.F90, Line: 364, Column: 10 }
 ...
@@ -36226,9 +36213,6 @@ Args:
   - String:          'load of type '
   - Type:            ''
   - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: mod_vmodes.F90, Line: 369, Column: 5 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
     DebugLoc:        { File: mod_vmodes.F90, Line: 566, Column: 11 }
@@ -36264,6 +36248,22 @@ Args:
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
     DebugLoc:        { File: mod_vmodes.F90, Line: 369, Column: 5 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_vmodes.F90, Line: 369, Column: 5 }
+Function:        mod_vmodes_mp_vmodes_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: mod_vmodes.F90, Line: 369, Column: 5 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: mod_vmodes.F90, Line: 566, Column: 11 }
 ...
 --- !Missed
 Pass:            gvn

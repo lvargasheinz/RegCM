@@ -13451,7 +13451,7 @@ Args:
     DebugLoc:        { File: mod_kdtree2.F90, Line: 728, Column: 5 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_kdtree2.F90, Line: 753, Column: 10 }
+    DebugLoc:        { File: mod_kdtree2.F90, Line: 1413, Column: 23 }
 ...
 --- !Missed
 Pass:            gvn
@@ -13467,7 +13467,7 @@ Args:
     DebugLoc:        { File: mod_kdtree2.F90, Line: 728, Column: 5 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_kdtree2.F90, Line: 1413, Column: 23 }
+    DebugLoc:        { File: mod_kdtree2.F90, Line: 753, Column: 10 }
 ...
 --- !Missed
 Pass:            gvn
@@ -13515,7 +13515,7 @@ Args:
     DebugLoc:        { File: mod_kdtree2.F90, Line: 727, Column: 5 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_kdtree2.F90, Line: 753, Column: 10 }
+    DebugLoc:        { File: mod_kdtree2.F90, Line: 1413, Column: 23 }
 ...
 --- !Missed
 Pass:            gvn
@@ -13531,7 +13531,7 @@ Args:
     DebugLoc:        { File: mod_kdtree2.F90, Line: 727, Column: 5 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_kdtree2.F90, Line: 1413, Column: 23 }
+    DebugLoc:        { File: mod_kdtree2.F90, Line: 753, Column: 10 }
 ...
 --- !Missed
 Pass:            gvn
@@ -15868,7 +15868,7 @@ Args:
     DebugLoc:        { File: mod_kdtree2.F90, Line: 852, Column: 5 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_kdtree2.F90, Line: 1413, Column: 23 }
+    DebugLoc:        { File: mod_kdtree2.F90, Line: 873, Column: 10 }
 ...
 --- !Missed
 Pass:            gvn
@@ -15884,22 +15884,6 @@ Args:
     DebugLoc:        { File: mod_kdtree2.F90, Line: 852, Column: 5 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_kdtree2.F90, Line: 873, Column: 10 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_kdtree2.F90, Line: 889, Column: 17 }
-Function:        mod_kdtree2_mp_kdtree2_r_nearest_around_point_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: mod_kdtree2.F90, Line: 842, Column: 5 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
     DebugLoc:        { File: mod_kdtree2.F90, Line: 1413, Column: 23 }
 ...
 --- !Missed
@@ -15933,6 +15917,22 @@ Args:
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
     DebugLoc:        { File: mod_kdtree2.F90, Line: 885, Column: 7 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_kdtree2.F90, Line: 889, Column: 17 }
+Function:        mod_kdtree2_mp_kdtree2_r_nearest_around_point_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: mod_kdtree2.F90, Line: 842, Column: 5 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_kdtree2.F90, Line: 1413, Column: 23 }
 ...
 --- !Missed
 Pass:            gvn
@@ -15996,22 +15996,6 @@ Args:
     DebugLoc:        { File: mod_kdtree2.F90, Line: 841, Column: 5 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: mod_kdtree2.F90, Line: 1413, Column: 23 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: mod_kdtree2.F90, Line: 889, Column: 5 }
-Function:        mod_kdtree2_mp_kdtree2_r_nearest_around_point_
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: mod_kdtree2.F90, Line: 841, Column: 5 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
     DebugLoc:        { File: mod_kdtree2.F90, Line: 873, Column: 10 }
 ...
 --- !Missed
@@ -16029,6 +16013,22 @@ Args:
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
     DebugLoc:        { File: mod_kdtree2.F90, Line: 885, Column: 7 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: mod_kdtree2.F90, Line: 889, Column: 5 }
+Function:        mod_kdtree2_mp_kdtree2_r_nearest_around_point_
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: mod_kdtree2.F90, Line: 841, Column: 5 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: mod_kdtree2.F90, Line: 1413, Column: 23 }
 ...
 --- !Missed
 Pass:            gvn

@@ -29885,7 +29885,7 @@ Args:
   - OtherAccess:     store
     DebugLoc:        { File: mod_cu_shallow.F90, Line: 549, Column: 9 }
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
+  - ClobberedBy:     store
     DebugLoc:        { File: mod_cu_shallow.F90, Line: 525, Column: 9 }
 ...
 --- !Missed
@@ -29901,7 +29901,7 @@ Args:
   - OtherAccess:     store
     DebugLoc:        { File: mod_cu_shallow.F90, Line: 549, Column: 9 }
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
+  - ClobberedBy:     call
     DebugLoc:        { File: mod_cu_shallow.F90, Line: 525, Column: 9 }
 ...
 --- !Missed

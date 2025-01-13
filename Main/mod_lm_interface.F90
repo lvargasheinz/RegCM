@@ -258,8 +258,9 @@ module mod_lm_interface
     use mod_atm_interface
     use mod_che_interface
     implicit none
-
+#ifndef ECLM
     call cl_setup(lndcomm,mddom%mask,mdsub%mask)
+#endif
     call cl_setup(ocncomm,mddom%mask,mdsub%mask,.true.)
 
 #ifdef DEBUG
@@ -284,8 +285,9 @@ module mod_lm_interface
     write(ndebug,*) 'Subgrid Linear    p ', ocncomm%linear_npoint_sg
     write(ndebug,*) 'Subgrid Linear    d ', ocncomm%linear_displ_sg
 #endif
-
+#ifndef ECLM
     call allocate_mod_bats_internal(lndcomm)
+#endif
     call allocate_mod_ocn_internal(ocncomm)
 
     if ( idcsst   == 1 ) ldcsst   = .true.
@@ -403,7 +405,11 @@ module mod_lm_interface
 #ifndef CLM45
       call initbats(lm,lms)
 #else
+#if def ECLM
+    PRINT *, "eCLM enabled"
+#else
       call initclm45(lm,lms)
+#endif
 #endif
     end if
     call initocn(lm,lms)
@@ -465,7 +471,11 @@ module mod_lm_interface
       end do
     end if
 #else
+#ifdef ECLM
+    PRINT *, "eCLM enabled"
+#else 
     if ( irceideal == 0 ) call vecbats(lm,lms)
+#endif
 #endif
 #endif
 !FAB
@@ -484,12 +494,16 @@ module mod_lm_interface
       end if
     end do
 #ifndef CLM45
+#ifdef ECLM
+    PRINT *, "eCLM enabled"
+#else 
     do concurrent ( n = 1:nnsg, j = jci1:jci2, i = ici1:ici2 )
       if ( lm%ldmsk1(n,j,i) == 1 ) then
         lms%taux(n,j,i) = lms%drag(n,j,i) * (lms%u10m(n,j,i)/lm%uatm(j,i))
         lms%tauy(n,j,i) = lms%drag(n,j,i) * (lms%v10m(n,j,i)/lm%vatm(j,i))
       end if
     end do
+#endif
 #endif
     lm%hfx = sum(lms%sent,1)*rdnnsg
     lm%qfx = sum(lms%evpr,1)*rdnnsg
@@ -568,7 +582,11 @@ module mod_lm_interface
 #ifdef CLM45
     if ( irceideal == 0 ) call albedoclm45(lm,lms)
 #else
+#ifdef ECLM
+    PRINT *, "eCLM enabled"
+#else
     if ( irceideal == 0 ) call albedobats(lm,lms)
+#endif
 #endif
 #endif
     call albedoocn(lm,lms)
