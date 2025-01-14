@@ -246,6 +246,7 @@ module mod_params
                           l_cpl_im_roff , &
                           l_cpl_im_srfroff , &
                           l_cpl_im_tsoi , &
+                          l_cpl_im_snwmelt , &
                           l_cpl_im_h2ovol , &
                           l_cpl_im_h2oliq , &
                           l_cpl_im_h2oice , &
